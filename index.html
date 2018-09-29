@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>qualify</title>
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#212121" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="system/style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="system/main__initialize.js"></script>
+  <script src="system/main__settings.js"></script>
+  <script src="system/main__filter.js"></script>
+  <script src="system/main.js"></script>
+  <script src="system/main__ajax.js"></script>
+  <script src="system/sub__clipboard.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js" defer></script>
+  <script src="http://localhost/qualify/system/sub__mathjax.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <h1><i id="nav_on" onclick="if($('nav').attr('class')!='on'){$('nav, #nav_bg').addClass('on');}else{$('nav, #nav_bg').removeClass('on');}" class="material-icons">menu</i><span id="title"><span class="hide_mobile"></span> 자격증 취득 도우미</span></h1>
+  </header>
+  <div id="sub_header">
+    <div class="" id="line1">
+
+      <div class="filter_bt on" id="filter_11">
+        <i class="material-icons">indeterminate_check_box</i><span>#1</span>
+        <span class="ink_bar"></span>
+      </div>
+      <div class="filter_bt" id="filter_10">
+        <i class="material-icons">check_box</i><span>#2</span>
+        <span class="ink_bar"></span>
+      </div>
+
+      <!-- <div class="" id="column_bt">
+        <i class="material-icons">account_circle</i><span id="login" style="margin-left:.5em;">log in</span>
+        <span class="ink_bar"></span>
+      </div> -->
+    </div>
+  </div>
+
+  <nav>
+    <div id='nav'>
+      <div id='nav_header'>
+        <div id="to_github" class="" onclick="window.open('http://blog.jinh.kr/guestbook')">
+          <i class="material-icons">home</i><span>누르지마세요</span>
+        </div>
+        <div id="setting_bt">
+          <i class="material-icons">settings</i>
+          <i class="material-icons setting_arrow">play_arrow</i>
+        </div>
+      </div>
+    </div>
+    <div id='nav_footer'><i class='material-icons'>chevron_left</i></div>
+  </nav>
+
+  <div id="nav_bg" onclick="$('nav, #nav_bg').removeClass('on');"></div>
+
+
+  <div id="setting_bg" onclick="$('#setting, #setting_bg').removeClass('on');"></div>
+  <dl id="setting">
+    <div class="header">
+      <i class="material-icons" onclick="$('#setting, #setting_bg').removeClass('on');">arrow_back</i><span>설정</span>
+    </div>
+    <div class="setting_title">일반</div>
+    <div class="setting_item" id="auto_ost">
+      <input type="checkbox" checked> <dt>test</dt>
+      <dd class="on">test.on</dd>
+      <dd class="off">test.off</dd>
+    </div>
+    <!-- <div class="setting_title">퍼가기</div>
+      <div class="setting_item" id="cccv">
+          <input type="checkbox" checked> <dt>퍼가기</dt>
+          <dd class="on">안내: 마우스 오른쪽 버튼을 눌러 조의를 표하십시오.</dd>
+          <dd class="off">더이상 귀찮게 굴지 않습니다.</dd>
+      </div>
+      <div class="setting_item" id="cccv__style">
+          <input type="checkbox" checked> <dt>스타일 포함</dt>
+          <dd class="on">이게 빠지면 뒤틀린황천비둘기처럼 보입니다.</dd>
+          <dd class="off">그런데 여러번 붙여넣을 필요는 없죠.</dd>
+      </div>
+      <div class="setting_item" id="cccv__to_here">
+          <input type="checkbox" checked> <dt>출처 표시</dt>
+          <dd class="on">카드 위에 제목이 표시됩니다.</dd>
+          <dd class="off">카드를 구성하는 코드만 복사합니다.</dd>
+      </div> -->
+  </dl>
+
+  <footer>
+    <p class="copyright">© 2018-<script>
+        document.write(new Date().getFullYear());
+      </script> JinH</p>
+  </footer>
+  <div id='img_wrap'><img class='shadow' src=''></img>
+  </div>
+  <!-- <section id="contextmenu">
+    <div id="open_sop">
+      <i class="material-icons">open_in_new</i>열기
+    </div>
+    <textarea class="output" id="for_copy_output"></textarea>
+  </section> -->
+
+  <div id="browser_alert">
+    <div>
+      <p style="font-size:24px; font-weight:bold;">구형 브라우저 감지!</p>
+      <p>초보자 가이드™를 제대로 감상하기 위해서는 아래의 최신 브라우저로 접속하세요.</p>
+      <ul>
+        <li><a href="https://www.google.com/chrome" target="_blank">Chrome - by Google</a></li>
+        <li><a href="https://www.mozilla.org/ko/firefox/new/" target="_blank">Firefox - by Mozilla</a></li>
+        <!-- <li><a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">Internet Explorer 11 - by Microsoft</a></li> -->
+      </ul>
+      <p><a onclick="$('#browser_alert').remove()">닫기</a></p>
+    </div>
+  </div>
+</body>
+
+</html>
