@@ -248,7 +248,7 @@ function ajax_filter(id) {
 function load(id, content) {
   var full_id = id + "_" + content;
   $.ajax({
-    type: 'post',
+    type: 'get',
     url: id + "/" + content + ".html",
     dataType: 'html',
     success: function(data) {
