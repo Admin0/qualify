@@ -261,7 +261,7 @@ function load(id, content) {
         html: data
       }).appendTo('#main_item');
 
-      $('#' + full_id + ', #' + full_id + " .contents").addClass("on");
+      $("#main_item .contents").addClass("on");
       if ($('#' + full_id + "+a+.loading").length == 0) {
         $('#' + full_id + '+a').after("<div class='loading'><i class='material-icons spin'>autorenew</i>LOADING...</div>");
       }

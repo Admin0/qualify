@@ -1,4 +1,3 @@
-
 function nav_create() {
   // $("body").prepend("<nav><div id='nav_header'></div><div id='nav'></div><div id='nav_footer'><i class='material-icons'>chevron_left</i></div></nav>");
   // $("nav").prepend("<section id='in-page'></section>");
@@ -15,17 +14,17 @@ function nav_create() {
 
   function nav_expand() {
     $("nav, #sub_header, #nav_footer > i").removeClass("fold");
-    setTimeout(function() {
+    // setTimeout(function() {
       $("body").removeClass("fold");
-    }, 300);
+    // }, 300);
     window.localStorage['nav_fold'] = "false";
   }
 
   function nav_fold() {
     $("nav, #sub_header, #nav_footer > i").addClass("fold");
-    setTimeout(function() {
+    // setTimeout(function() {
       $("body").addClass("fold");
-    }, 300);
+    // }, 300);
     window.localStorage['nav_fold'] = "true";
   }
 
