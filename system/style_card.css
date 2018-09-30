@@ -9,11 +9,7 @@ body {
 }
 
 .contents {
-  font-family: 'Noto Serif KR', serif;
-}
-
-section .contents {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Noto Serif', serif;
 }
 
 body>section {
@@ -72,46 +68,43 @@ section>h3+a:hover {
 }
 
 .contents {
+  column-count: 2;
+  column-gap: 4em;
   counter-reset: question;
 }
 
-.contents:not(.on) {
-  /* max-width: 1280px; */
+#main_item .contents {
   margin: auto;
-  column-width: 48em;
-  column-gap: 4em;
-  max-height: calc(100vh - 4em);
+  column-width: 40em;
+  max-height: calc(100vh - 2em - 138px);
   padding: 2em;
   overflow-y: visible;
   overflow-x: auto;
   transform: translateX(0);
 }
 
+.contents:not(.on) {
+  /* max-width: 1280px; */
+}
+
 .q_wrap {
   position: relative;
-  padding: 1em 0 0 3em;
-  margin-top: 1.5em;
+  padding: 0 0 0 3em;
+  margin-top: 2.5em;
   counter-reset: question_sub;
 }
 
-section.on .q_wrap {
-  padding: 1em 0 0 .25em;
+.q_wrap:first-child {
+  margin-top: 0;
 }
 
-.q_wrap::before {
+.q_wrap:not(.sub)::before {
   content: counter(question);
   counter-increment: question;
   position: absolute;
-  top: 0.25em;
+  top: -0.25em;
   right: calc(100% - 1em);
   font: bold 2em Sans-Serif;
-}
-
-section.on .q_wrap::before {
-  content: counter(question) ".";
-  top: 1em;
-  right: calc(100%);
-  font: bold 1em Sans-Serif;
 }
 
 .q_wrap .question {
@@ -119,15 +112,24 @@ section.on .q_wrap::before {
   padding-bottom: 1em;
 }
 
+.q_wrap.sub {
+padding: 0 0 0 1.75em;
+}
+
+.q_wrap .question.sub {
+  position: relative;
+}
+
 .q_wrap .question.sub::before {
   content: "("counter(question_sub) ") ";
   counter-increment: question_sub;
-  top: 0.25em;
-  right: calc(100% - 1em);
+  position: absolute;
+  right: calc(100% + .5em)
 }
 
 .q_wrap .answer {
   padding-bottom: 1em;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .q_wrap .comment {

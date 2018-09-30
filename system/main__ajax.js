@@ -253,13 +253,13 @@ function load(id, content) {
     dataType: 'html',
     success: function(data) {
 
-      $("#card__" + full_id).remove();
+      $("#main_item").html("");
 
       $("<div/>", {
         "id": "card__" + full_id,
         "class": "card",
         html: data
-      }).appendTo('#' + full_id);
+      }).appendTo('#main_item');
 
       $('#' + full_id + ', #' + full_id + " .contents").addClass("on");
       if ($('#' + full_id + "+a+.loading").length == 0) {
