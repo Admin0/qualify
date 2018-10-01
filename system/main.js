@@ -490,11 +490,11 @@ $(window).scroll(function() {
         "color": color.material_500[color.i]
       });
       if ($('section.on').length >= 1 && target.parent().hasClass("on")) {
-        document.title = '#' + target.children("span").text();
-        $('#title').html('#' + target.children("span").text());
+        // document.title = '#' + target.children("span").text();
+        // $('#title').html('#' + target.children("span").text());
       } else {
-        document.title = "qualify";
-        $('#title').html('<span class="hide_mobile"></span>스크롤하면 어지러웡');
+        // document.title = "qualify";
+        // $('#title').html('<span class="hide_mobile"></span>스크롤하면 어지러웡');
       }
       // console.log(target.children("span").text());
       // console.log('<span class="hide_mobile">초보자 가이드 > </span>' + target.children("span").text()));

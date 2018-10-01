@@ -5,7 +5,7 @@ $.getJSON("index.json", function(data) {
       "id": key,
       "class": key,
       html: val.title
-    }).insertBefore("nav");
+    }).appendTo("#item_list");
     $.each(val.contents, function(index, element) {
       var onclick = "load('" + key + "','" + element + "')";
       $("<section/>", {
@@ -13,7 +13,7 @@ $.getJSON("index.json", function(data) {
         "class": key + " item",
         "target": element,
         html: "<h3 onclick=" + onclick + "><i class='material-icons'>directions_run</i><span>" + element + "<span></h3>"
-      }).insertBefore("nav").append("<a href='" + key + "/" + element + ".html' target='_blank'><i class='material-icons'>open_in_new</i></a>");
+      }).appendTo("#item_list").append("<a href='" + key + "/" + element + ".html' target='_blank'><i class='material-icons'>open_in_new</i></a>");
     });
   });
 });

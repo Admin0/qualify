@@ -98,6 +98,31 @@ body.fold {
   transition: .3s;
 }
 
+#item_list {
+  padding: 1em 2em;
+  display: flex;
+  flex-flow: wrap;
+}
+
+#item_list section.item {
+  padding: 1em;
+  /* position: relative; */
+  /* display: inline-block; */
+  margin: 0 1em 1em 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+  background: #fff;
+  /* width: 10em; */
+  transition: .25s;
+  border-top: 1px rgba(0, 0, 0, .12) solid;
+  z-index: 1;
+  flex: auto;
+  max-width: 10em;
+}
+
+#item_list h2 {
+  width: 100%;
+}
+
 body.fold #main_item {
   width: calc(100% - 68px);
 }

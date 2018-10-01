@@ -253,6 +253,7 @@ function load(id, content) {
     dataType: 'html',
     success: function(data) {
 
+      $('#title').html(id + "-" + content);
       $("#main_item").html("");
 
       $("<div/>", {
