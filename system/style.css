@@ -3,13 +3,13 @@
 @import url('https://fonts.googleapis.com/css?family=family=Material+Icons|Nanum+Gothic+Coding');
 /*@import url(iconfont/material-icons.css);*/
 @import url('style_card.css');
+@import url('style_ad.css');
 
 ::selection {
   background: rgba(0, 0, 0, 0);
 }
 
 ::-webkit-scrollbar-track {
-  /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
   background-color: inherit;
 }
 
@@ -29,11 +29,9 @@ input::selection, textarea::selection {
 }
 
 body {
-  /* max-width: calc(800px - 2em); */
-  padding: 0 0 0 300px;
+  padding: 0 300px 0 300px;
   margin: 104px 0 0;
-  background: #e5e5e5;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   color: rgba(0, 0, 0, .87);
   cursor: default;
   overflow-x: hidden;
@@ -84,7 +82,7 @@ body.columns {
 }
 
 body.fold {
-  padding: 0 0 0 68px;
+  padding: 0 300px 0 68px;
 }
 
 #main_item {
@@ -129,18 +127,20 @@ body.fold #main_item {
 
 header {
   position: fixed;
-  color: rgba(255, 255, 255, .98);
-  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .12), 0 1px 8px 0 rgba(0, 0, 0, .2);
-  width: 100%;
-  height: 48px;
+  color: rgba(0, 0, 0, .98);
+  box-shadow: 0 2px 6px 0 rgba(60, 64, 67, .15);
+  padding-left: 300px;
+  width: calc(100% - 300px);
+  height: 56px;
   left: 0;
   top: 0;
-  z-index: 5;
+  z-index: 4;
   background: #fff;
   text-align: center
 }
 
 #sub_header {
+  display: none;
   width: calc(100% - 300px);
   position: fixed;
   top: 48px;
@@ -290,9 +290,10 @@ nav {
   left: 0;
   width: 300px;
   background: #fff;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, .25);
-  padding-top: 48px;
-  height: calc(100% - 48px);
+  /* box-shadow: 2px 0 5px rgba(0, 0, 0, .25); */
+  border-right: solid 1px var(--black-transparent-12, rgba(0, 0, 0, .12));
+  /* padding-top: 48px; */
+  height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
   transition: .3s
@@ -665,8 +666,10 @@ h2, h3 {
 
 h1 {
   /* text-transform: uppercase; */
-  font-size: 22px;
-  margin: 8px 0
+  font-size: 20px;
+  margin: 14px 2em;
+  font-weight: normal;
+  text-align: left;
 }
 
 h1 .percentage:before {
@@ -773,6 +776,15 @@ input[type="checkbox"] {
 .copyright a {
   color: inherit !important;
   font-weight: inherit;
+}
+
+/* ------------------------------------------------------------------- */
+/* ***** footer ***** */
+/* ------------------------------------------------------------------- */
+footer {
+  width: calc(100% - 300px);
+  position: absolute;
+  bottom: 0;
 }
 
 /* ------------------------------------------------------------------- */
