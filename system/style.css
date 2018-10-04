@@ -99,7 +99,7 @@ body.fold {
 }
 
 #item_list {
-  padding: 1em 2em;
+  padding: 0 2em;
   display: flex;
   flex-flow: wrap;
 }
@@ -1036,8 +1036,13 @@ input[type="checkbox"] {
 
 @media handheld, only screen and (max-device-width:480px), only screen and (max-device-width:320px), screen and (max-width:1080px) {
   body {
-    /* width: calc(100% - 2em) !important; */
-    padding: 1em !important
+    padding: 1em;
+    margin: 96px 0 0;
+  }
+
+  #main_item {
+    width: 100%;
+    position: static;
   }
 
   header {

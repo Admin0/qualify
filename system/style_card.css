@@ -150,6 +150,20 @@ section>h3+a:hover {
     width: 100%;
   }
 
+  #main_item .contents {
+    max-height: inherit;
+  }
+
+  .q_wrap {
+    padding: 0;
+  }
+
+  .q_wrap:not(.sub)::before {
+    content: counter(question)".";
+    position: static;
+    font: bold 1em Serif;
+  }
+
   .tip, .caution, .warning {
     display: inline-block;
     position: static;
