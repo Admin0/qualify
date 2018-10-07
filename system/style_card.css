@@ -9,7 +9,7 @@ body {
 }
 
 .contents {
-  font-family: 'Noto Serif', serif;
+  font-family: 'Noto Serif', 'Noto Serif KR', serif;
 }
 
 dl#setting {
@@ -61,7 +61,7 @@ section>h3+a:hover {
 #main_item .contents {
   margin: auto;
   column-width: 40em;
-  height: calc(100vh - 4em - 48px);
+  height: calc(100vh - 4em - 56px);
   padding: 2em;
   overflow-y: visible;
   overflow-x: auto;
@@ -90,7 +90,7 @@ section>h3+a:hover {
   content: counter(question);
   counter-increment: question;
   position: absolute;
-  top: -0.25em;
+  line-height: 1;
   right: calc(100% - 1em);
   font: bold 2em Serif;
 }
@@ -129,7 +129,7 @@ section>h3+a:hover {
 
 .q_wrap .answer {
   padding-bottom: 1em;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans', 'Noto Sans KR', sans-serif;
 }
 
 .q_wrap .comment {
