@@ -47,7 +47,7 @@ section>h3+a:hover {
 }
 
 .contents {
-  line-height: 1.6;
+  line-height: 1.75;
   column-gap: 2.5em;
   counter-reset: question;
   transition: .25s;
@@ -126,7 +126,7 @@ section>h3+a:hover {
 
 .q_wrap .answer {
   padding-bottom: 1em;
-  font-style: oblique;
+  /* font-style: oblique; */
   /* font-family: 'Noto Sans KR', sans-serif; */
 }
 
