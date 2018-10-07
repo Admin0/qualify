@@ -416,7 +416,6 @@ $(document).ready(function() {
   checkbox();
   // columns();
   title_tooltip();
-  coloring();
 });
 
 $(window).on('load', function() {

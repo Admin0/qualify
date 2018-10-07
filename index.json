@@ -13,11 +13,11 @@
       "작업"
     ]
   },
-  "engineer-chemical-industry": {
+  "화공기사": {
     "title": "화공기사",
     "contents": [
-      "필답-2000-1",
-      "작업"
+      "test-1",
+      "test-2"
     ]
   }
 }

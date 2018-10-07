@@ -1,15 +1,10 @@
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-@import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
-
-/*@import url(iconfont/material-icons.css);*/
 body {
   padding: 0;
   margin: 0;
 }
 
 .contents {
-  font-family: 'Noto Serif', 'Noto Serif KR', serif;
+  font-family: 'Noto Serif KR', serif;
 }
 
 dl#setting {
@@ -52,7 +47,7 @@ section>h3+a:hover {
 }
 
 .contents {
-  column-count: 2;
+  line-height: 1.6;
   column-gap: 2.5em;
   counter-reset: question;
   transition: .25s;
@@ -69,6 +64,7 @@ section>h3+a:hover {
 }
 
 .contents:not(.on) {
+  column-count: 2;
   max-width: 210mm;
   column-gap: 10mm;
   margin: 16pt auto;
@@ -114,6 +110,7 @@ section>h3+a:hover {
 
 .q_wrap.sub {
   padding: 0 0 0 1.75em;
+  margin: 0;
 }
 
 .q_wrap .question.sub {
@@ -129,11 +126,13 @@ section>h3+a:hover {
 
 .q_wrap .answer {
   padding-bottom: 1em;
-  font-family: 'Noto Sans', 'Noto Sans KR', sans-serif;
+  font-style: oblique;
+  /* font-family: 'Noto Sans KR', sans-serif; */
 }
 
 .q_wrap .comment {
-  font-size: .8em;
+  /* font-size: .8em; */
+  font-style:  italic;
   color: #1e88e5;
 }
 

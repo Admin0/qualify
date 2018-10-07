@@ -47,9 +47,7 @@ function nav_create() {
   });
 
   $('body').append('<div id="tooltip_nav"><div id="tooltip_nav_text"></div><div id="tooltip_nav_before"></div></div>');
-  $("#tooltip_nav").css({
-    "background": color.material_700[color.i]
-  });
+
   $("#tooltip_nav").append($("#tooltip_before"));
   $("#nav h3").hover(function() {
       if ($("nav").attr("class") == "fold") {
@@ -64,7 +62,7 @@ function nav_create() {
           'left': 68 + 16 + 'px'
         });
         $("#tooltip_nav_before").css({
-          "border-color": "transparent " + color.material_700[color.i] + " transparent transparent",
+          "border-color": "transparent #212121 transparent transparent",
           "border-width": "1ex 1ex 1ex 0",
           "left": "-.9ex",
           "bottom": "calc(50% - .5em)"
@@ -90,7 +88,7 @@ function nav_create() {
           'left': 68 + 16 + 'px'
         });
         $("#tooltip_nav_before").css({
-          "border-color": "transparent " + color.material_700[color.i] + " transparent transparent",
+          "border-color": "transparent #212121 transparent transparent",
           "border-width": "1ex 1ex 1ex 0",
           "left": "-.9ex",
           "bottom": "calc(50% - .5em)"
@@ -116,7 +114,7 @@ function nav_create() {
           'left': 68 + 16 + 'px'
         });
         $("#tooltip_nav_before").css({
-          "border-color": "transparent " + color.material_700[color.i] + " transparent transparent",
+          "border-color": "transparent #212121 transparent transparent",
           "border-width": "1ex 1ex 1ex 0",
           "left": "-.9ex",
           "bottom": "calc(50% - .5em)"
