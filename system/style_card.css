@@ -61,7 +61,7 @@ section>h3+a:hover {
 #main_item .contents {
   margin: auto;
   column-width: 40em;
-  height: calc(100vh - 4em - 104px);
+  height: calc(100vh - 4em - 48px);
   padding: 2em;
   overflow-y: visible;
   overflow-x: auto;

@@ -11,11 +11,17 @@ jQuery(function($) {
         $('nav').css({
           'box-shadow': '2px 0 6px 0 rgba(60, 64, 67, .15)'
         });
+        $('header').css({
+          'box-shadow': '0 2px 6px 0 rgba(60, 64, 67, .15)'
+        });
       } else {
         $('nav').css({
           'box-shadow': 'none'
         });
-      }
+        $('header').css({
+          'box-shadow': 'none'
+        });
+      } 
       $(this).scrollLeft(position);
       event.preventDefault();
     })
