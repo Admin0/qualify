@@ -53,6 +53,12 @@ section>h3+a:hover {
   transition: .25s;
 }
 
+.contents::after {
+  font-weight: bold;
+  margin-top: 1em;
+  content: "끝."
+}
+
 #main_item .contents {
   margin: auto;
   column-width: 40em;
@@ -88,7 +94,8 @@ section>h3+a:hover {
   position: absolute;
   line-height: 1;
   right: calc(100% - 1em);
-  font: bold 2em Serif;
+  font: bold 2em "Noto Serif KR", Serif;
+  line-height: 1;
 }
 
 .contents:not(.on) .q_wrap {
@@ -131,8 +138,8 @@ section>h3+a:hover {
 }
 
 .q_wrap .comment {
-  /* font-size: .8em; */
-  font-style:  italic;
+  font-size: .75em;
+  font-style: italic;
   color: #1e88e5;
 }
 
@@ -151,6 +158,7 @@ section>h3+a:hover {
 
   #main_item .contents {
     max-height: inherit;
+    font-size: 14px;
   }
 
   .q_wrap {
@@ -159,8 +167,17 @@ section>h3+a:hover {
 
   .q_wrap:not(.sub)::before {
     content: counter(question)".";
-    position: static;
-    font: bold 1em Serif;
+    font-size: 1em;
+    line-height: 1.75;
+    left: 0;
+  }
+
+  .q_wrap .question:not(.sub) {
+    text-indent: 1.5em;
+  }
+
+  .q_wrap:nth-child(n+10) .question:not(.sub) {
+    text-indent: 2em;
   }
 
   .tip, .caution, .warning {

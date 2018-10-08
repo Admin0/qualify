@@ -104,14 +104,10 @@ body.fold {
 
 #item_list section.item {
   padding: 1em;
-  /* position: relative; */
-  /* display: inline-block; */
   margin: 0 1em 1em 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
   background: #fff;
-  /* width: 10em; */
   transition: .25s;
-  border-top: 1px rgba(0, 0, 0, .12) solid;
   z-index: 1;
   flex: auto;
   max-width: 10em;
@@ -1054,12 +1050,12 @@ footer {
 
 @media handheld, only screen and (max-device-width:480px), only screen and (max-device-width:320px), screen and (max-width:1080px) {
   body {
-    padding: 0!important;
+    padding: 0 !important;
     margin: 56px 0 0;
   }
 
   #main_item {
-    width: 100%!important;
+    width: 100% !important;
     position: static;
   }
 
@@ -1067,7 +1063,7 @@ footer {
     width: 100%;
     font-size: .75em;
     position: fixed;
-    padding-left: 0!important;
+    padding-left: 0 !important;
   }
 
   h1 {
@@ -1232,6 +1228,17 @@ footer {
     column-count: 1;
     height: inherit;
     padding: 1em;
+  }
+
+  #item_list {
+    padding: 0 1em;
+  }
+
+  #item_list section.item {
+    width: 100%;
+    max-width: none;
+    margin:0;
+    border-top: 1px rgba(0, 0, 0, .12) solid;
   }
 
   footer {
