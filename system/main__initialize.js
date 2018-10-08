@@ -1,3 +1,5 @@
+var is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
 $.getJSON("index.json", function(data) {
   var items = [];
   $.each(data, function(key, val) {

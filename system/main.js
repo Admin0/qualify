@@ -375,9 +375,6 @@ $(window).scroll(function() {
       $("nav h3 a").css({
         "color": "inherit"
       });
-      $("nav h3:nth(" + i + ") a").css({
-        "color": color.material_500[color.i]
-      });
       if ($('section.on').length >= 1 && target.parent().hasClass("on")) {
         // document.title = '#' + target.children("span").text();
         // $('#title').html('#' + target.children("span").text());
