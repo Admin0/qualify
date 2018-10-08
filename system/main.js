@@ -88,14 +88,14 @@ function scroll_smooth() {
     }
 
     scroll(target, event);
-    bg_change(target, color.material_a100[color.i], ".25s");
+    bg_change(target, "#ffa", ".25s");
 
     if (isNotNav) {
       toast("원래 자리로 가려면 더블 클릭.", "refresh", 2500);
       document.ondblclick = function(event) {
         if (reversible) {
           scroll(target_reverse, event);
-          bg_change(target_reverse, color.material_a100[color.i], ".25s");
+          bg_change(target_reverse, "#ffa", ".25s");
           reversible = false;
         }
       };
@@ -115,7 +115,7 @@ function scroll_at_open() {
         scrollTop: target.offset().top - $('header').height() - $('#sub_header').height() - 12 //116
       }, 500);
       target.css({
-        "background-color": color.material_a100[color.i],
+        "background-color": '#aaf',
         "transition": ".75s"
       });
       load($(target).attr("id"));

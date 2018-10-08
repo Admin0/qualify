@@ -35,9 +35,9 @@ jQuery(function($) {
 });
 
 $(document).ready(function() {
-  if (!is_mobile) {
-    $('.contents').hScroll(300); // You can pass (optionally) scrolling amount
-  }
+  // if (!is_mobile) {
+  //   $('.contents').hScroll(300); // You can pass (optionally) scrolling amount
+  // }
 });
 
 $(window).scroll(function() {

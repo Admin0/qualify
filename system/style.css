@@ -28,7 +28,7 @@ input::selection, textarea::selection {
 }
 
 body {
-  padding: 0 300px 0 300px;
+  padding: 0 0 0 300px;
   margin-top: 56px;
   font-family: 'Noto Sans', sans-serif;
   color: rgba(0, 0, 0, .87);

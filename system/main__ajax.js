@@ -19,7 +19,15 @@ function load(id, content) {
       if ($('#' + full_id + "+a+.loading").length == 0) {
         $('#' + full_id + '+a').after("<div class='loading'><i class='material-icons spin'>autorenew</i>LOADING...</div>");
       }
+
+      // mathjax reload (sub__mathjax.js)
       MathJax.Hub.Typeset();
+
+      // x axis scroller reload (sub__scroll.js)
+      if (!is_mobile) {
+        $('.contents').hScroll(300); // You can pass (optionally) scrolling amount
+      }
+
     }
   });
 }
