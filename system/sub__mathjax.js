@@ -1,6 +1,6 @@
 MathJax.Ajax.config.path["mhchem"] = "https://cdnjs.cloudflare.com/ajax/libs/mathjax-mhchem/3.3.0";
 MathJax.Hub.Config({
-  HTML: ["input/TeX", "output/SVG"],
+  HTML: ["input/TeX", "output/HTML-CSS"],
   TeX: {
     extensions: ["AMSmath.js", "AMSsymbols.js"],
     equationNumbers: {
@@ -8,7 +8,7 @@ MathJax.Hub.Config({
     }
   },
   extensions: ["tex2jax.js", "[mhchem]/mhchem.js"],
-  jax: ["input/TeX", "output/SVG"],
+  jax: ["input/TeX", "output/HTML-CSS"],
   tex2jax: {
     inlineMath: [
       ['$', '$'],
@@ -22,6 +22,7 @@ MathJax.Hub.Config({
   },
   "HTML-CSS": {
     availableFonts: ["TeX"],
+    mtextFontInherit: true,
     linebreaks: {
       automatic: true
     }
