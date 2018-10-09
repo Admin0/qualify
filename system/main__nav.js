@@ -5,17 +5,13 @@ function nav_create() {
 
   function nav_expand() {
     $("nav, #sub_header, #nav_footer > i").removeClass("fold");
-    // setTimeout(function() {
-      $("body").removeClass("fold");
-    // }, 300);
+    $("body").removeClass("fold");
     window.localStorage['nav_fold'] = "false";
   }
 
   function nav_fold() {
     $("nav, #sub_header, #nav_footer > i").addClass("fold");
-    // setTimeout(function() {
-      $("body").addClass("fold");
-    // }, 300);
+    $("body").addClass("fold");
     window.localStorage['nav_fold'] = "true";
   }
 
@@ -31,10 +27,6 @@ function nav_create() {
     } else {
       nav_expand();
     }
-    setTimeout(function() {
-      // columns();
-    }, 300);
-    // columns();
   });
 
   $('body').append('<div id="tooltip_nav"><div id="tooltip_nav_text"></div><div id="tooltip_nav_before"></div></div>');

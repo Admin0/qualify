@@ -318,11 +318,9 @@ $(window).resize(function() {
 $(document).ready(function() {
   browser_alert();
   // percentage();
-  card_wrap();
   filter();
   nav_create();
   scroll_smooth();
-  checkbox();
   // columns();
   title_tooltip();
 });
