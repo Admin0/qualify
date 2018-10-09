@@ -1,15 +1,6 @@
 function nav_create() {
-  // $("body").prepend("<nav><div id='nav_header'></div><div id='nav'></div><div id='nav_footer'><i class='material-icons'>chevron_left</i></div></nav>");
-  // $("nav").prepend("<section id='in-page'></section>");
-  $("h2, h3").each(function() {
-    $(this).clone()
-      .html("<a href='#" + $(this).attr("id") + "'>" + $(this).html() + "</a>")
-      .attr("id", null)
-      .appendTo($("#nav"));
-    // .appendTo($("#in-page"));
-  })
 
-  var nav_w = 256;
+  var nav_w = 300;
   var nav_w_folded = 68;
 
   function nav_expand() {

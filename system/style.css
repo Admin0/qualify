@@ -97,20 +97,21 @@ body.fold {
 }
 
 #item_list {
-  padding: 0 2em;
+  padding: 0 1em 0 2em;
   display: flex;
   flex-flow: wrap;
 }
 
 #item_list section.item {
-  padding: 1em;
+  position: relative;
+  padding: 1em 2.5em 1em 1em;
   margin: 0 1em 1em 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
   background: #fff;
   transition: .25s;
   z-index: 1;
   flex: auto;
-  max-width: 10em;
+  max-width: 12em;
 }
 
 #item_list h2 {
@@ -339,6 +340,7 @@ nav h2:first-of-type {
 }
 
 nav h3 {
+  position: relative;
   margin: .25em 0;
   padding: 0
 }
@@ -347,7 +349,7 @@ nav h4 {
   margin: .25em 0
 }
 
-nav h2 a, nav h3 a {
+nav h2 a, nav h3 a:nth-child(1) {
   padding-left: 22px;
 }
 
@@ -1138,6 +1140,10 @@ footer {
     display: none;
   }
 
+  nav #nav_item_list {
+    display: none;
+  }
+
   #setting {
     z-index: 6;
     top: 0 !important;
@@ -1237,7 +1243,7 @@ footer {
   #item_list section.item {
     width: 100%;
     max-width: none;
-    margin:0;
+    margin: 0;
     border-top: 1px rgba(0, 0, 0, .12) solid;
   }
 

@@ -28,16 +28,26 @@ section h3 {
   cursor: pointer;
 }
 
-section>h3+a {
+section>h3+a,
+nav h3>a:nth-child(2) {
   position: absolute !important;
   right: 0;
-  top: 1.35em;
+  top: 1.4em;
   opacity: 0;
   color: rgba(0, 0, 0, 0.38) !important;
 }
 
-section>h3:hover+a {
+nav h3>a:nth-child(2) {
+  top: .4em;
+  z-index: 1;
+  width: 20px;
+  overflow: visible;
+}
+
+section>h3:hover+a,
+nav h3:hover>a:nth-child(2) {
   opacity: 1;
+  background: none;
 }
 
 section>h3+a:hover {
@@ -45,7 +55,7 @@ section>h3+a:hover {
   background: none;
   opacity: 1;
 }
-
+nav.fold h3:hover>a:nth-child(2){display: none;}
 .contents {
   line-height: 1.75;
   column-gap: 2.5em;
@@ -92,7 +102,6 @@ section>h3+a:hover {
   content: counter(question);
   counter-increment: question;
   position: absolute;
-  line-height: 1;
   right: calc(100% - 1em);
   font: bold 2em "Noto Serif KR", Serif;
   line-height: 1;

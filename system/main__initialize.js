@@ -1,25 +1,51 @@
 var is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
+function load_navigat_title(key, val) {
+  $("<h2/>", {
+    "id": key,
+    "class": key,
+    html: "<a href='#" + val.title + "'>" + val.title + "</a>"
+  }).appendTo("#nav_item_list");
+}
+
+function load_navigat_items(category, item) {
+  var onclick = "load('" + category + "','" + item + "')";
+  $("<h3/>", {
+    "id": category + "_" + item,
+    "class": category + " item",
+    "target": item,
+    html: "<a onclick=" + onclick + "><i class='material-icons'>directions_run</i><span>" + item + "<span></a>"
+  }).appendTo("#nav_item_list").append("<a href='" + category + "/" + item + ".html' target='_blank'><i class='material-icons'>open_in_new</i></a>");
+}
+
+function load_content_title(key, val) {
+  $("<h2/>", {
+    "id": key,
+    "class": key,
+    html: val.title
+  }).appendTo("#item_list");
+}
+
+function load_content_items(category, item) {
+  var onclick = "load('" + category + "','" + item + "')";
+  $("<section/>", {
+    "id": category + "_" + item,
+    "class": category + " item",
+    "target": item,
+    html: "<h3 onclick=" + onclick + "><i class='material-icons'>directions_run</i><span>" + item + "<span></h3>"
+  }).appendTo("#item_list").append("<a href='" + category + "/" + item + ".html' target='_blank'><i class='material-icons'>open_in_new</i></a>");
+}
+
 $.getJSON("index.json", function(data) {
   var items = [];
   $.each(data, function(key, val) {
-    $("<h2/>", {
-      "id": key,
-      "class": key,
-      html: val.title
-    }).appendTo("#item_list");
+    load_content_title(key, val);
+    load_navigat_title(key, val);
     $.each(val.contents, function(index, element) {
-      var onclick = "load('" + key + "','" + element + "')";
-      $("<section/>", {
-        "id": key + "_" + element,
-        "class": key + " item",
-        "target": element,
-        html: "<h3 onclick=" + onclick + "><i class='material-icons'>directions_run</i><span>" + element + "<span></h3>"
-      }).appendTo("#item_list").append("<a href='" + key + "/" + element + ".html' target='_blank'><i class='material-icons'>open_in_new</i></a>");
+      load_content_items(key, element);
+      load_navigat_items(key, element);
     });
   });
 });
 
-$(document).ready(function() {
-
-});
+$(document).ready(function() {});
