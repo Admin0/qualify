@@ -1,0 +1,11 @@
+.q_wrap .answer {
+  opacity: 0;
+  background: #FFFACD;
+  padding: .5em 1em;
+  margin: -.5em -1em .5em;
+  border-radius: .5em;
+  display: inline-block;
+}
+.q_wrap:hover .answer {
+  opacity: 1;
+}

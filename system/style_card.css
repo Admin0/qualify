@@ -142,8 +142,7 @@ nav.fold h3:hover>a:nth-child(2){display: none;}
 
 .q_wrap .answer {
   padding-bottom: 1em;
-  /* font-style: oblique; */
-  /* font-family: 'Noto Sans KR', sans-serif; */
+  transition: .25s;
 }
 
 .q_wrap .comment {
