@@ -1,0 +1,22 @@
+body.general__dark,
+body.general__dark header,
+body.general__dark nav,
+body.general__dark .copyright,
+body.general__dark #main_item {
+  background: rgba(50, 54, 57, 1);
+  color: rgb(189, 193, 198);
+}
+
+body.general__dark nav #nav_header,
+body.general__dark #to_github,
+body.general__dark nav a, body.general__dark nav h2 a,
+body.general__dark h2, body.general__dark h3,
+body.general__dark #item_list section.item,
+body.general__dark dl#setting {
+  background: rgba(50, 54, 57, 1);
+  color: rgb(189, 193, 198);
+}
+
+body.general__dark #setting .setting_title, body.general__dark #setting dt, body.general__dark #setting input[checked]+dt, body.general__dark #setting dd {
+  color: rgb(189, 193, 198);
+}

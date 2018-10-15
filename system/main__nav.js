@@ -15,14 +15,14 @@ function nav_create() {
     window.localStorage['nav_fold'] = "true";
   }
 
-  if (window.localStorage['nav_fold'] == "true") {
+  if (window.localStorage['nav_fold'] == "true" && !is_mobile) {
     nav_fold();
   } else {
     nav_expand();
   }
 
   $("#nav_footer").on("click", function() {
-    if (window.localStorage['nav_fold'] != "true") {
+    if (window.localStorage['nav_fold'] != "true" && !is_mobile) {
       nav_fold();
     } else {
       nav_expand();

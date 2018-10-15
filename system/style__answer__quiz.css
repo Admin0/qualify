@@ -1,4 +1,4 @@
-.q_wrap .answer {
+body.answer__quiz .q_wrap .answer {
   opacity: 0;
   background: #FFFACD;
   padding: .5em 1em;
@@ -6,6 +6,7 @@
   border-radius: .5em;
   display: inline-block;
 }
-.q_wrap:hover .answer {
+
+body.answer__quiz .q_wrap:hover .answer {
   opacity: 1;
 }

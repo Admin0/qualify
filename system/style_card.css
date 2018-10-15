@@ -55,7 +55,11 @@ section>h3+a:hover {
   background: none;
   opacity: 1;
 }
-nav.fold h3:hover>a:nth-child(2){display: none;}
+
+nav.fold h3:hover>a:nth-child(2) {
+  display: none;
+}
+
 .contents {
   line-height: 1.75;
   column-gap: 2.5em;
@@ -143,6 +147,7 @@ nav.fold h3:hover>a:nth-child(2){display: none;}
 .q_wrap .answer {
   padding-bottom: 1em;
   transition: .25s;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .q_wrap .comment {

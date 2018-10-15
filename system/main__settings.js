@@ -1,6 +1,7 @@
 function setting() {
 
   var item = [
+    "general__dark",
     "answer__serif", "answer__quiz",
     // "cccv", "cccv__style", "cccv__to_here",
     "dev__login"
@@ -28,31 +29,16 @@ function setting() {
 
     function css_option() {
       for (var i = 0; i < arguments.length; i++) {
-        $("#option__" + arguments[i]).remove();
-        if (window.localStorage[arguments[i]] != "true") {
-          $.ajax({
-            url: "system/style__" + arguments[i] + "_off.css",
-            dataType: "script",
-            success: function(data) {
-              $("<style id='option__" + arguments[i] + "'></style>").appendTo("head").html(data);
-              console.log("option: " + arguments[i] + " = off")
-            }
-          });
+        if (window.localStorage[arguments[i]] == "true") {
+          $('body').addClass(arguments[i]);
         } else {
-          $.ajax({
-            url: "system/style__" + arguments[i] + "_on.css",
-            dataType: "script",
-            success: function(data) {
-              $("<style id='option__" + arguments[i] + "'></style>").appendTo("head").html(data);
-              console.log("option: " + arguments[i] + " = on")
-            }
-          });
+          $('body').removeClass(arguments[i]);
         }
       }
     }
     // 개별 적용
-    css_option("answer__serif", "answer__quiz");
-    
+    css_option("general__dark", "answer__serif", "answer__quiz");
+
   }
   check_setting();
 

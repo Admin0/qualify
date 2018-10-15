@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
 /*@import url(iconfont/material-icons.css);*/
 @import url('style_card.css');
+@import url('style__general__dark.css');
+@import url('style__answer__serif.css');
+@import url('style__answer__quiz.css');
 @import url('style_ad.css');
 
 ::selection {
@@ -30,7 +33,7 @@ input::selection, textarea::selection {
 body {
   padding: 0 0 0 300px;
   margin-top: 56px;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
   color: rgba(0, 0, 0, .87);
   cursor: default;
   overflow-x: hidden;
@@ -418,6 +421,22 @@ nav.fold #to_github {
   flex: 1;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+#setting dd {
+  font-size: .9em;
+  color: rgba(0, 0, 0, .5);
+  white-space: normal;
+}
+
+#setting i {
+  line-height: .75;
+}
+
+#setting input[checked]+dt {
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
 }
 
 #setting_bt {
@@ -1043,12 +1062,6 @@ footer {
 /* ------------------------------------------------------------------- */
 /* ***** mobile ***** */
 /* ------------------------------------------------------------------- */
-@media only screen and (max-width:500px) {
-  body {
-    /* width: calc(100% - 2em) !important; */
-    /* padding: 1em !important */
-  }
-}
 
 @media handheld, only screen and (max-device-width:480px), only screen and (max-device-width:320px), screen and (max-width:1080px) {
   body {
