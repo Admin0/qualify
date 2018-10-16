@@ -12,7 +12,7 @@ dl#setting {
   box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
   background: #fff;
   width: calc(100% - 2em);
-  transition: .25s;
+  transition: .25s, background 0s, color 0s;
   /*border-top: 1px rgba(0, 0, 0, .12) solid;*/
 }
 
@@ -75,7 +75,7 @@ nav.fold h3:hover>a:nth-child(2) {
 
 #main_item .contents {
   margin: auto;
-  column-width: 40em;
+  column-width: 34em;
   height: calc(100vh - 4em - 56px);
   padding: 2em;
   overflow-y: visible;
@@ -146,14 +146,14 @@ nav.fold h3:hover>a:nth-child(2) {
 
 .q_wrap .answer {
   padding-bottom: 1em;
-  transition: .25s;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
 .q_wrap .comment {
   font-size: .75em;
-  font-style: italic;
-  color: #1e88e5;
+  /* font-style: italic; */
+  color: #2196f3;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .contents table {

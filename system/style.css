@@ -141,7 +141,8 @@ header {
 }
 
 body.fold header {
-  padding-left: 59px;
+  padding-left: 68px;
+  width: calc(100% - 68px);
 }
 
 #sub_header {

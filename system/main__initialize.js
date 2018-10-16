@@ -14,7 +14,7 @@ function load_navigat_items(category, item) {
     "id": category + "_" + item,
     "class": category + " item",
     "target": item,
-    html: "<a onclick=" + onclick + "><i class='material-icons'>directions_run</i><span>" + item + "<span></a>"
+    html: "<a onclick=" + onclick + "><i class='material-icons'>book</i><span>" + item + "<span></a>"
   }).appendTo("#nav_item_list").append("<a href='" + category + "/" + item + ".html' target='_blank'><i class='material-icons'>open_in_new</i></a>");
 }
 
@@ -32,7 +32,7 @@ function load_content_items(category, item) {
     "id": category + "_" + item,
     "class": category + " item",
     "target": item,
-    html: "<h3 onclick=" + onclick + "><i class='material-icons'>directions_run</i><span>" + item + "<span></h3>"
+    html: "<h3 onclick=" + onclick + "><i class='material-icons'>book</i><span>" + item + "<span></h3>"
   }).appendTo("#item_list").append("<a href='" + category + "/" + item + ".html' target='_blank'><i class='material-icons'>open_in_new</i></a>");
 }
 
