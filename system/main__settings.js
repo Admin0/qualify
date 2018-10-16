@@ -39,6 +39,12 @@ function setting() {
     // 개별 적용
     css_option("general__dark", "answer__serif", "answer__quiz");
 
+    if (window.localStorage["general__dark"] == "true") {
+      $("meta[name='theme-color']").attr("content", "#ffffff");
+    } else {
+      $("meta[name='theme-color']").attr("content", "rgb(189, 193, 198)");
+    }
+
   }
   check_setting();
 
