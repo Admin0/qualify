@@ -3,11 +3,9 @@ body.general__dark,
 body.general__dark header,
 body.general__dark nav,
 body.general__dark .copyright,
-body.general__dark h2, body.general__dark h3, body.general__dark nav #nav a>*,
 body.general__dark #main_item,
 body.general__dark nav #nav_header,
 body.general__dark #to_github, body.general__dark nav #nav_header span,
-body.general__dark nav a, body.general__dark nav h2 a,
 body.general__dark h2, body.general__dark h3,
 body.general__dark #item_list section.item,
 body.general__dark dl#setting, body.general__dark nav #nav_footer {
@@ -17,7 +15,10 @@ body.general__dark dl#setting, body.general__dark nav #nav_footer {
 }
 
 /* only color */
-body.general__dark #setting .setting_title, body.general__dark #setting .setting_item, body.general__dark #setting dt, body.general__dark #setting input[checked]+dt, body.general__dark #setting dd {
+body.general__dark #setting .setting_title, body.general__dark #setting .setting_item, body.general__dark #setting dt, body.general__dark #setting input[checked]+dt, body.general__dark #setting dd,
+body.general__dark h2, body.general__dark h3, body.general__dark nav #nav a>*,
+body.general__dark nav a, body.general__dark nav h2 a,
+body.general__dark section>h3+a, body.general__dark nav h3>a:nth-child(2) {
   color: rgb(189, 193, 198);
 }
 
