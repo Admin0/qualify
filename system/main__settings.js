@@ -40,9 +40,9 @@ function setting() {
     css_option("general__dark", "answer__serif", "answer__quiz");
 
     if (window.localStorage["general__dark"] == "true") {
-      $("meta[name='theme-color']").attr("content", "#ffffff");
+      $("meta[name='theme-color']").attr("content", "rgba(50, 54, 57, 1)");
     } else {
-      $("meta[name='theme-color']").attr("content", "rgb(189, 193, 198)");
+      $("meta[name='theme-color']").attr("content", "#ffffff");
     }
 
   }
