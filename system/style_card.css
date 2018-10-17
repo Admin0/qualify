@@ -70,7 +70,7 @@ nav.fold h3:hover>a:nth-child(2) {
 .contents::after {
   font-weight: bold;
   margin-top: 1em;
-  content: "끝."
+  content: "끝.";
 }
 
 #main_item .contents {
@@ -154,6 +154,23 @@ nav.fold h3:hover>a:nth-child(2) {
   /* font-style: italic; */
   color: #2196f3;
   font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* ad: 광고가 끼면 first-child 선택자가 안 먹기 때문에 first-of-type 으로 우회합니당^^ */
+.contents .ad {
+  margin: 1em 0;
+}
+
+.contents .ad:first-child {
+  margin: 0 0 1em;
+}
+
+.q_wrap:first-of-type {
+  margin-top: 0;
+}
+
+.q_wrap:last-of-type {
+  margin-bottom: 0;
 }
 
 .contents table {
