@@ -7,6 +7,11 @@ body.answer__quiz .q_wrap .answer {
   display: inline-block;
 }
 
-body.answer__quiz .q_wrap:hover .answer {
+body.answer__quiz .q_wrap .comment {
+  opacity: 0;
+}
+
+body.answer__quiz .q_wrap:hover .answer,
+body.answer__quiz .q_wrap:hover .comment {
   opacity: 1;
 }
