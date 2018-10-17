@@ -38,6 +38,11 @@ function load(id, content) {
 
       $("#main_item .contents").append(ad).prepend(ad);
 
+      // scroll to top for mobile
+      $('html, body').animate({
+        scrollTop: 0
+      }, 500);
+
       // mathjax reload (sub__mathjax.js)
       MathJax.Hub.Typeset();
 
