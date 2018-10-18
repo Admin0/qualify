@@ -30,3 +30,23 @@ body.general__dark .q_wrap .comment {
 body.general__dark.answer__quiz .q_wrap .answer {
   background: #424242;
 }
+
+/* nav */
+body.general__dark nav {
+  border-right: solid 1px var(--black-transparent-12, rgba(0, 0, 0, .45));
+}
+body.general__dark nav #nav_header {
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.45) inset !important;
+}
+body.general__dark #setting_bt {
+  border-left: 1px solid rgba(0, 0, 0, 0.45);
+}
+
+/* misc */
+body.general__dark .shadow-right {
+  box-shadow: 2px 0 6px 0 rgba(0, 0, 0, .45);
+}
+
+body.general__dark .shadow-bottom {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .45);
+}

@@ -1,20 +1,12 @@
 function scroll_style(is_true) {
   if (is_true) {
     if (!is_mobile) {
-      $('nav').css({
-        'box-shadow': '2px 0 6px 0 rgba(60, 64, 67, .15)'
-      });
+      $('nav').addClass('shadow-right');
+      $('header').addClass('shadow-bottom');
     }
-    $('header').css({
-      'box-shadow': '0 2px 6px 0 rgba(60, 64, 67, .15)'
-    });
   } else {
-    $('nav').css({
-      'box-shadow': 'none'
-    });
-    $('header').css({
-      'box-shadow': 'none'
-    });
+    $('nav').removeClass('shadow-right');
+    $('header').removeClass('shadow-bottom');
   }
 }
 

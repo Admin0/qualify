@@ -1,6 +1,5 @@
 const ad =
   '<section class="ad">' +
-  '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>' +
   '<!-- 반응형 -->' +
   '<ins class="adsbygoogle"' +
   '     style="display:block"' +
@@ -12,7 +11,6 @@ const ad =
   '(adsbygoogle = window.adsbygoogle || []).push({});' +
   '</script>' +
   '</section>'
-
 
 function load(id, content) {
   var full_id = id + "_" + content;
@@ -36,6 +34,7 @@ function load(id, content) {
         $('#' + full_id + '+a').after("<div class='loading'><i class='material-icons spin'>autorenew</i>LOADING...</div>");
       }
 
+      // adsense
       $("#main_item .contents").append(ad).prepend(ad);
 
       // scroll to top for mobile

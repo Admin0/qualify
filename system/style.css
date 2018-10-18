@@ -219,6 +219,14 @@ body.fold header {
   margin: 0 !important;
 }
 
+.shadow-right {
+  box-shadow: 2px 0 6px 0 rgba(60, 64, 67, .15);
+}
+
+.shadow-bottom {
+  box-shadow: 0 2px 6px 0 rgba(60, 64, 67, .15);
+}
+
 section.sub {
   width: 100%;
   text-align: center
@@ -1063,7 +1071,6 @@ footer {
 /* ------------------------------------------------------------------- */
 /* ***** mobile ***** */
 /* ------------------------------------------------------------------- */
-
 @media handheld, only screen and (max-device-width:480px), only screen and (max-device-width:320px), screen and (max-width:1080px) {
   body {
     padding: 0 !important;
