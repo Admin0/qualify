@@ -1,52 +1,58 @@
 /* general */
-body.general__dark,
-body.general__dark header,
-body.general__dark nav,
-body.general__dark .copyright,
-body.general__dark #main_item,
-body.general__dark nav #nav_header,
-body.general__dark #to_github, body.general__dark nav #nav_header span,
-body.general__dark h2, body.general__dark h3,
-body.general__dark #item_list section.item,
-body.general__dark dl#setting, body.general__dark nav #nav_footer {
+.general__dark,
+.general__dark header,
+.general__dark nav,
+.general__dark .copyright,
+.general__dark #main_item,
+.general__dark nav #nav_header,
+.general__dark #to_github,
+.general__dark h2, .general__dark h3,
+.general__dark #item_list section.item,
+.general__dark dl#setting, .general__dark nav #nav_footer {
   background: rgba(50, 54, 57, 1);
   color: rgb(189, 193, 198);
   transition: .3s, background-color 0s, color 0s;
 }
 
+.general__dark nav #nav_footer {
+  transition: 0s;
+}
+
 /* only color */
-body.general__dark #setting .setting_title, body.general__dark #setting .setting_item, body.general__dark #setting dt, body.general__dark #setting input[checked]+dt, body.general__dark #setting dd,
-body.general__dark h2, body.general__dark h3, body.general__dark nav #nav a>*,
-body.general__dark nav a, body.general__dark nav h2 a,
-body.general__dark section>h3+a, body.general__dark nav h3>a:nth-child(2) {
+.general__dark #setting .setting_title, .general__dark #setting .setting_item, .general__dark #setting dt, .general__dark #setting input[checked]+dt, .general__dark #setting dd,
+.general__dark h2, .general__dark h3, .general__dark nav #nav a>*,
+.general__dark nav a, .general__dark nav h2 a,
+.general__dark section>h3+a, .general__dark nav h3>a:nth-child(2) {
   color: rgb(189, 193, 198);
 }
 
 /* contents */
-body.general__dark .q_wrap .comment {
+.general__dark .q_wrap .comment {
   color: #c8b900;
 }
 
-body.general__dark.answer__quiz .q_wrap .answer {
+.general__dark.answer__quiz .q_wrap .answer {
   background: #424242;
 }
 
 /* nav */
-body.general__dark nav {
-  border-right: solid 1px var(--black-transparent-12, rgba(0, 0, 0, .45));
+.general__dark nav {
+  border-right: solid 1px var(--black-transparent-12, rgba(30, 34, 37, .45));
 }
-body.general__dark nav #nav_header {
-    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.45) inset !important;
+
+.general__dark nav #nav_header {
+  box-shadow: 0 -1px 0 rgba(30, 34, 37, .45) inset !important;
 }
-body.general__dark #setting_bt {
-  border-left: 1px solid rgba(0, 0, 0, 0.45);
+
+.general__dark #setting_bt {
+  border-left: 1px solid rgba(30, 34, 37, .45);
 }
 
 /* misc */
-body.general__dark .shadow-right {
-  box-shadow: 2px 0 6px 0 rgba(0, 0, 0, .45);
+.general__dark .shadow-right {
+  box-shadow: 2px 0 6px 0 rgba(30, 34, 37, .45);
 }
 
-body.general__dark .shadow-bottom {
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .45);
+.general__dark .shadow-bottom {
+  box-shadow: 0 2px 6px 0 rgba(30, 34, 37, .45);
 }
