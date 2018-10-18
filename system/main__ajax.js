@@ -12,6 +12,20 @@ const ad =
   '</script>' +
   '</section>'
 
+  // <!-- Global site tag (gtag.js) - Google Analytics -->
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39552694-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-39552694-1', {
+      'page_path': '/화학분석기사/필답-2018-1.html'
+    });
+  </script>
 function load(id, content) {
   var full_id = id + "_" + content;
   $.ajax({
