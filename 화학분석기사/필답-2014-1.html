@@ -10,8 +10,34 @@
       잡음비를 정수로 나타내는 방법에 대하여 설명하시오.
     </div>
     <div class="answer">
+      신호대잡음비는 분석물 신호의 상대 표준편차의 역수가 된다.
+    </div>
+    <div class="comment">
       Fourier 변환을 이용하여 분석신호와 잡음비를 분리하고 rectangle 함수를 이용하여 정수화한다.
     </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      아래에 측정된 흡광도를 이용하여 분석물의 몰농도를 구하시오. 셀의 길이는 1.0 cm이다.
+      $\begin{array}{|c|c|c|c|}
+      \hline
+      & \text{농도}( M) & \text{분석물의 흡광도} & \text{바탕 용액의 흡광도}\\
+      \hline
+      \text{표준 용액} & 3.15\times 10^{-6} & 0.267 & 0.019\\
+      \hline
+      \text{시료 용액} & x & 0.176 & \\
+      \hline
+      \end{array}$
+
+    </div>
+    <div class="answer">
+      $A= \varepsilon bc \\
+      \text{표준 용액}\ 0.248 = \varepsilon \times 1.0\ \ce{cm} \times 3.15 \times 10^{-6}\ \ce{M} \\
+      \therefore \varepsilon = 7873 \times 10^{-6}\ \ce{cm^{-1}M^{-1}}\\
+      \text{시료 용액}\ 0.157 = 7.873 \times 10^{4}\ \ce{cm^{-1}M^{-1}} \times 1.0\ \ce{cm} \times c \\
+      \therefore c = 1.994 \times 10^{-6} \ce{M}$
+    </div>
     <div class="comment">
 
     </div>
@@ -19,42 +45,16 @@
 
   <div class="q_wrap">
     <div class="question">
-      아래에 측정된 흡광도를 이용하여 분석물의 몰농도를 구하시오. 셀의 길이는 1.0cm이다.
-
-
-      농도(M)
-      분석물의 흡광도
-      바탕 용액의 흡광도
-      표준 용액
-      3.15×10-6
-      0.267
-      0.019
-      시료 용액
-      x
-      0.176
-
+      적외선 분광계에 빈 시료 용기를 넣고 스펙트럼을 얻었을 때 파장 6.0~14 μm에서 14개의 간섭 봉우리가 나타났다. 시료 용기의 빛살 통과 길이 b는 얼마인가?
     </div>
     <div class="answer">
-      $$A= epsilon bC#
-      표준용액`A=0.267-0.019= epsilon TIMES 1 TIMES (3.15 TIMES 10 ^{-6} )#
-      epsilon =78730.15873#
-      시료용액`x= {0.176-0.019} over {78730.15873} =1.994 TIMES 10 ^{-6} M$$
-    </div>
-    <div class="comment">
-
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-      적외선 분광계에 빈 시료 용기를 넣고 스펙트럼을 얻었을 때 파장 6.0~14um에서 14개의 간섭 봉우리가 나타났다. 시료 용기의 빛살 통과 길이 b는 얼마인가?
-    </div>
-    <div class="answer">
-      $$파수` bar{v} = {1} over {lambda }#
-      6.0 mu m`파수= {1} over {6.0 TIMES 10 ^{-4} cm} =1667cm ^{-1}#
-      14 mu m`파수= {1} over {14 TIMES 10 ^{-4} cm} =714cm ^{-1}#
-      b= {N} over {2( bar{v _{1}} - bar{v _{2}} )} = {14} over {2(1667-714)cm ^{-1}} =7.34 TIMES 10 ^{-3} cm#
-      =0.0734mm$$
+      $\ce{
+      \text{파수}\ \bar{v} = {\cfrac{1}{\lambda }}\\
+      6.0\ \ce{\mu m}\ \text{파수}= {{1} \over {6.0 \times 10 ^{-4} cm}} =1667cm ^{-1}\\
+      14\ \mu m\ \text{파수}= {{1} \over {14 \times 10 ^{-4} cm}} =714cm ^{-1}\\
+      b= {{N} \over {2( \bar{v _{1}} - bar{v _{2}} )}} = {{14} \over {2(1667-714)cm ^{-1}}} =7.34 \times 10 ^{-3} cm\\
+      =0.0734\ \ce{mm}
+      }$
     </div>
     <div class="comment">
 
