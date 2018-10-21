@@ -110,7 +110,7 @@ body.fold {
   padding: 1em 2.5em 1em 1em;
   margin: 0 1em 1em 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
-  background: #fff;
+  /* background: #fff; */
   transition: .25s;
   z-index: 1;
   flex: auto;
@@ -808,6 +808,10 @@ input[type="checkbox"] {
 .copyright a {
   color: inherit !important;
   font-weight: inherit;
+}
+
+.targeted {
+  background: gold;
 }
 
 /* ------------------------------------------------------------------- */

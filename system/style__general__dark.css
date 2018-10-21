@@ -6,7 +6,6 @@
 .general__dark #main_item,
 .general__dark nav #nav_header,
 .general__dark #to_github,
-.general__dark h2, .general__dark h3,
 .general__dark #item_list section.item,
 .general__dark dl#setting, .general__dark nav #nav_footer {
   background: rgba(50, 54, 57, 1);
@@ -55,4 +54,8 @@
 
 .general__dark .shadow-bottom {
   box-shadow: 0 2px 6px 0 rgba(30, 34, 37, .45);
+}
+
+.general__dark .targeted {
+  background: gold;
 }

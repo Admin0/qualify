@@ -11,9 +11,9 @@ function load_navigat_title(key, val) {
 function load_navigat_items(category, item) {
   var onclick = "load('" + category + "','" + item + "')";
   $("<h3/>", {
-    "id": category + "_" + item,
-    "class": category + " item",
-    "target": item,
+    "class": category + " item " + category + "-" + item,
+    "name": category,
+    "round": item,
     html: "<a onclick=" + onclick + "><i class='material-icons'>book</i><span>" + item + "<span></a>"
   }).appendTo("#nav_item_list").append("<a href='" + category + "/" + item + ".html' target='_blank'><i class='material-icons'>open_in_new</i></a>");
 }
@@ -29,9 +29,10 @@ function load_content_title(key, val) {
 function load_content_items(category, item) {
   var onclick = "load('" + category + "','" + item + "')";
   $("<section/>", {
-    "id": category + "_" + item,
+    "id": category + "-" + item,
     "class": category + " item",
-    "target": item,
+    "name": category,
+    "round": item,
     html: "<h3 onclick=" + onclick + "><i class='material-icons'>book</i><span>" + item + "<span></h3>"
   }).appendTo("#item_list").append("<a href='" + category + "/" + item + ".html' target='_blank'><i class='material-icons'>open_in_new</i></a>");
 }

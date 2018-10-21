@@ -114,12 +114,10 @@ function scroll_at_open() {
       $('html, body').animate({
         scrollTop: target.offset().top - $('header').height() - $('#sub_header').height() - 12 //116
       }, 500);
-      target.css({
-        "background-color": '#aaf',
-        "transition": ".75s"
-      });
-      load($(target).attr("id"));
-    }, 1000)
+      target.addClass("targeted");
+      load($(target).attr("name"), $(target).attr("round"));
+      // load($(target).attr("class"));
+    }, 0)
   }
 }
 
@@ -316,9 +314,6 @@ $(window).resize(function() {
 });
 
 $(document).ready(function() {
-  browser_alert();
-  // percentage();
-  filter();
   nav_create();
   scroll_smooth();
   // columns();

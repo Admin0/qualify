@@ -13,14 +13,14 @@ const ad =
   '</section>'
 
 function load(id, content) {
-  var full_id = id + "_" + content;
+  var full_id = id + "-" + content;
   $.ajax({
     type: 'get',
     url: id + "/" + content + ".html",
     dataType: 'html',
     success: function(data) {
 
-      $('#title').html(id + "-" + content);
+      $('#title').html(full_id);
       $("#main_item").html("");
 
       $("<div/>", {
@@ -42,7 +42,7 @@ function load(id, content) {
       }
       gtag('js', new Date());
       gtag('config', 'UA-39552694-1', {
-        'page_title': id + "-" + content,
+        'page_title': full_id,
         'page_path': '/qualify/' + id + '/' + content
       });
 
@@ -52,7 +52,7 @@ function load(id, content) {
       // scroll to top for mobile
       $('html, body').animate({
         scrollTop: 0
-      }, 500);
+      }, 3000);
 
       // mathjax reload (sub__mathjax.js)
       MathJax.Hub.Typeset();
