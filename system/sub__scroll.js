@@ -2,8 +2,8 @@ function scroll_style(is_true) {
   if (is_true) {
     if (!is_mobile) {
       $('nav').addClass('shadow-right');
-      $('header').addClass('shadow-bottom');
     }
+    $('header').addClass('shadow-bottom');
   } else {
     $('nav').removeClass('shadow-right');
     $('header').removeClass('shadow-bottom');
