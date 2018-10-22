@@ -52,7 +52,7 @@ function load(id, content) {
       // scroll to top for mobile
       $('html, body').animate({
         scrollTop: 0
-      }, 3000);
+      }, pageYOffset/1.5 );
 
       // mathjax reload (sub__mathjax.js)
       MathJax.Hub.Typeset();

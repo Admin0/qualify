@@ -192,8 +192,9 @@ nav.fold h3:hover>a:nth-child(2) {
   }
 
   #main_item .contents {
-    max-height: inherit;
+    height: inherit;
     font-size: 14px;
+    padding: 1em;
   }
 
   .q_wrap {
