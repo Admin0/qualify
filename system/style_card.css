@@ -68,7 +68,7 @@ nav.fold h3:hover>a:nth-child(2) {
   content: "끝.";
 }
 
-#main_item .contents {
+#main_item .contents:not(.on) {
   margin: auto;
   column-width: 34em;
   height: calc(100vh - 4em - 56px);
