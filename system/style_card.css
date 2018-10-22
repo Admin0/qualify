@@ -68,7 +68,6 @@ nav.fold h3:hover>a:nth-child(2) {
   content: "끝.";
 }
 
-#main_item .contents {
   margin: auto;
   column-width: 34em;
   height: calc(100vh - 4em - 56px);
@@ -192,8 +191,9 @@ nav.fold h3:hover>a:nth-child(2) {
   }
 
   #main_item .contents {
-    max-height: inherit;
+    height: inherit;
     font-size: 14px;
+    padding: 1em;
   }
 
   .q_wrap {

@@ -26,7 +26,6 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="system/main__initialize.js"></script>
   <script src="system/main__settings.js"></script>
-  <script src="system/main__filter.js"></script>
   <script src="system/main__nav.js"></script>
   <script src="system/main.js"></script>
   <script src="system/main__ajax.js"></script>
@@ -43,26 +42,9 @@
   <header>
     <h1><i id="nav_on" onclick="if($('nav').attr('class')!='on'){$('nav, #nav_bg').addClass('on');}else{$('nav, #nav_bg').removeClass('on');}" class="material-icons">menu</i><span id="title"><span class="hide_mobile"></span>#qualify</span></h1>
   </header>
-  <div id="sub_header">
-    <div class="" id="line1">
-
-      <div class="filter_bt on" id="filter_11">
-        <i class="material-icons">indeterminate_check_box</i><span>#1</span>
-        <span class="ink_bar"></span>
-      </div>
-      <div class="filter_bt" id="filter_10">
-        <i class="material-icons">check_box</i><span>#2</span>
-        <span class="ink_bar"></span>
-      </div>
-
-      <!-- <div class="" id="column_bt">
-        <i class="material-icons">account_circle</i><span id="login" style="margin-left:.5em;">log in</span>
-        <span class="ink_bar"></span>
-      </div> -->
-    </div>
-  </div>
 
   <section id="main_item"> </section>
+
   <section id="item_list"> </section>
 
   <nav>
@@ -147,18 +129,17 @@
     <textarea class="output" id="for_copy_output"></textarea>
   </section> -->
 
-  <div id="browser_alert">
+  <!-- <div id="browser_alert">
     <div>
       <p style="font-size:24px; font-weight:bold;">구형 브라우저 감지!</p>
       <p>초보자 가이드™를 제대로 감상하기 위해서는 아래의 최신 브라우저로 접속하세요.</p>
       <ul>
         <li><a href="https://www.google.com/chrome" target="_blank">Chrome - by Google</a></li>
         <li><a href="https://www.mozilla.org/ko/firefox/new/" target="_blank">Firefox - by Mozilla</a></li>
-        <!-- <li><a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">Internet Explorer 11 - by Microsoft</a></li> -->
       </ul>
       <p><a onclick="$('#browser_alert').remove()">닫기</a></p>
     </div>
-  </div>
+  </div> -->
 </body>
 
 </html>
