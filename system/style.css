@@ -1270,7 +1270,7 @@ footer {
     max-width: none;
     margin: 0;
     border-top: 1px rgba(0, 0, 0, .12) solid;
-    background: #fff;
+    background: #fff; 
   }
 
   footer {
