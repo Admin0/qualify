@@ -2,16 +2,6 @@
 <html>
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39552694-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-39552694-1');
-  </script>
-
   <title>#qualify</title>
   <meta charset="utf-8">
   <meta name="description" content="자격증 취득 도우미. 기출 중심. 버킷리스트의 하위 프로젝트로 개발되었습니다." />
@@ -31,10 +21,21 @@
   <script src="system/main__ajax.js"></script>
   <script src="system/sub__clipboard.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js' async></script>
-  <script src="system/sub__mathjax.js" async></script>
+  <script src="system/sub__mathjax.js" defer></script>
   <script src="system/sub__scroll.js" async></script>
+
   <!-- adsense -->
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39552694-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-39552694-1');
+    </script>
 </head>
 
 <body>
@@ -59,12 +60,17 @@
         </div>
       </div>
       <div id="nav_item_list"></div>
+      <div id="nav_menu">
+        <h2 id="" class=""><a href="">메뉴</a></h2>
+        <h3 class=""><a href="http://blog.jinh.kr/guestbook/" target="_blank"><i class="material-icons">message</i><span>리뷰 남기기<span></span></span></a></h3>
+        <h3 class=""><a href="http://blog.jinh.kr/guestbook/" target="_blank"><i class="material-icons">share</i><span>공유하기<span></span></span></a></h3>
+        <h3 class=""><a onclick="load_other('update_log')" target="_blank"><i class="material-icons">share</i><span>업데이트 기록<span></span></span></a></h3>
+      </div>
     </div>
     <div id='nav_footer'><i class='material-icons'>chevron_left</i></div>
   </nav>
 
   <div id="nav_bg" onclick="$('nav, #nav_bg').removeClass('on');"></div>
-
 
   <div id="setting_bg" onclick="$('#setting, #setting_bg').removeClass('on');"></div>
   <dl id="setting">
@@ -106,13 +112,22 @@
       </div> -->
   </dl>
 
-  <div id="ad">
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- 세로로 길쭉한 거 -->
-    <ins class="adsbygoogle" style="display:inline-block;width:300px;height:1050px" data-ad-client="ca-pub-8175591114279139" data-ad-slot="9760109917"></ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+  <div id="share" style="display:none;">
+    <div class="share kakao">
+      kakao
+    </div>
+    <div class="share google" onclick="window.open('https://plus.google.com/share?url=https://jinh.kr/qualify/')">
+      google
+    </div>
+    <div class="share facebook">
+      facebook
+    </div>
+    <div class="share twitter">
+      twitter
+    </div>
+    <div class="share link">
+      link
+    </div>
   </div>
 
   <footer>

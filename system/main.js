@@ -108,13 +108,15 @@ function scroll_at_open() {
 
   if (window.location.href.substring(window.location.href.length - 8, window.location.href.length) != window.location.pathname.substring(window.location.pathname.length - 8, window.location.pathname.length)) {
     setTimeout(function() {
-      var target_pre = window.location.href.substring(window.location.href.indexOf("#"));
-      var target = (target_pre.substring(1, 2) == "%" ? $(decodeURIComponent(target_pre)) : $(target_pre));
+      var target_pre = window.location.href.substring(window.location.href.indexOf("#") + 1);
+      var target = (target_pre.substring(0, 1) == "%" ? $(decodeURIComponent("#" + target_pre)) : $("#" + target_pre));
+      var target_by_class = (target_pre.substring(0, 1) == "%" ? $(decodeURIComponent("." +target_pre)) : $("." + target_pre)); //use for <nav>
       // console.log(target.prop("tagName"));
-      $('html, body').animate({
-        scrollTop: target.offset().top - $('header').height() - $('#sub_header').height() - 12 //116
-      }, 500);
+      // $('html, body').animate({
+      //   scrollTop: target.offset().top - $('header').height() - $('#sub_header').height() - 12 //116
+      // }, 500);
       target.addClass("targeted");
+      target_by_class.addClass("targeted");
       load($(target).attr("name"), $(target).attr("round"));
       // load($(target).attr("class"));
     }, 0)

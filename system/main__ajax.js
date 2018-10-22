@@ -12,6 +12,28 @@ const ad =
   '</script>' +
   '</section>'
 
+function after_load(full_id, data) {
+  $('#title').html(full_id);
+  $("#main_item").html("");
+
+  $('#main_item').append(data);
+
+  $("#main_item .contents").addClass("on");
+  if ($('#' + full_id + "+a+.loading").length == 0) {
+    $('#' + full_id + '+a').after("<div class='loading'><i class='material-icons spin'>autorenew</i>LOADING...</div>");
+  }
+
+  // scroll to top for mobile
+  $('html, body').animate({
+    scrollTop: 0
+  }, pageYOffset / 2);
+
+  // x axis scroller reload (sub__scroll.js)
+  if (!is_mobile) {
+    $('.contents').hScroll(300); // You can pass (optionally) scrolling amount
+  }
+}
+
 function load(id, content) {
   var full_id = id + "-" + content;
   $.ajax({
@@ -20,19 +42,7 @@ function load(id, content) {
     dataType: 'html',
     success: function(data) {
 
-      $('#title').html(full_id);
-      $("#main_item").html("");
-
-      $("<div/>", {
-        "id": "card__" + full_id,
-        "class": "card",
-        html: data
-      }).appendTo('#main_item');
-
-      $("#main_item .contents").addClass("on");
-      if ($('#' + full_id + "+a+.loading").length == 0) {
-        $('#' + full_id + '+a').after("<div class='loading'><i class='material-icons spin'>autorenew</i>LOADING...</div>");
-      }
+      after_load(full_id, data);
 
       // analytics
       window.dataLayer = window.dataLayer || [];
@@ -49,19 +59,20 @@ function load(id, content) {
       // adsense
       $("#main_item .contents").append(ad).prepend(ad);
 
-      // scroll to top for mobile
-      $('html, body').animate({
-        scrollTop: 0
-      }, pageYOffset/1.5 );
-
       // mathjax reload (sub__mathjax.js)
       MathJax.Hub.Typeset();
+    }
+  });
+}
 
-      // x axis scroller reload (sub__scroll.js)
-      if (!is_mobile) {
-        $('.contents').hScroll(300); // You can pass (optionally) scrolling amount
-      }
+function load_other(full_id) {
+  $.ajax({
+    type: 'get',
+    url: full_id + ".html",
+    dataType: 'html',
+    success: function(data) {
 
+      after_load(full_id, data);
     }
   });
 }
