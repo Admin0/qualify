@@ -149,7 +149,7 @@
     text-indent: 1.5em;
   }
 
-  .q_wrap:nth-child(n+10) .question:not(.sub) {
+  .q_wrap:nth-of-type(n+10) .question:not(.sub) {
     text-indent: 2em;
   }
 
