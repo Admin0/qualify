@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Serif+KR');
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
 /*@import url(iconfont/material-icons.css);*/
-@import url('style_card.css');
+/* @import url('style_card.css'); */
 @import url('style__general__dark.css');
 @import url('style__answer__serif.css');
 @import url('style__answer__quiz.css');
@@ -99,6 +99,16 @@ body.fold {
   transition: .3s;
 }
 
+#main_item .contents {
+  margin: auto;
+  column-width: 34em;
+  height: calc(100vh - 4em - 56px);
+  padding: 2em;
+  overflow-y: visible;
+  overflow-x: auto;
+  transform: translateX(0);
+}
+
 #item_list {
   padding: 0 1em 0 2em;
   display: flex;
@@ -119,6 +129,59 @@ body.fold {
 
 #item_list h2 {
   width: 100%;
+}
+
+section.on {
+  margin: 1em -1em;
+  padding: 2em;
+  box-shadow: 0 5px 11px rgba(0, 0, 0, .2);
+  /*width: 100%;*/
+}
+
+section h3 {
+  margin: 0;
+  cursor: pointer;
+}
+
+dl#setting {
+  padding: 1em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+  background: #fff;
+  width: calc(100% - 2em);
+  transition: .25s, background 0s, color 0s;
+  /*border-top: 1px rgba(0, 0, 0, .12) solid;*/
+}
+
+section>h3+a,
+nav h3>a:nth-child(2) {
+  position: absolute !important;
+  right: 0;
+  top: 1.4em;
+  opacity: 0;
+  color: rgba(0, 0, 0, 0.38);
+}
+
+nav h3>a:nth-child(2) {
+  top: .4em;
+  z-index: 1;
+  width: 20px;
+  overflow: visible;
+}
+
+section>h3:hover+a,
+nav h3:hover>a:nth-child(2) {
+  opacity: 1;
+  background: none;
+}
+
+section>h3+a:hover {
+  box-shadow: none;
+  background: none;
+  opacity: 1;
+}
+
+nav.fold h3:hover>a:nth-child(2) {
+  display: none;
 }
 
 body.fold #main_item {

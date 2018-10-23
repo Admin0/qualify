@@ -1,13 +1,69 @@
 <link rel="stylesheet" href="/qualify/system/style_card.css">
 <style media="screen">
+  .update_log {
+    /* font-family: "Noto Sans-serif KR", sans-serif; */
+  }
 
+  .update_log .ver {
+    position: absolute;
+    right: calc(100% - 1.4em);
+    color: rgba(0, 0, 0, .87);
+    line-height: 1;
+    font-size: 1.5em;
+  }
+
+  .update_log .q_wrap::before {
+    content: "";
+  }
 </style>
-<div class="contents">
-  <ul>
-    <li>ver.1.0 2018.10.22. 남들한테 자랑해도 꿀리지 않을 만큼 멋지게 만든 정식 버전을 런칭했습니다!</li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
-</div>
+
+<div class="contents update_log"></div>
+
+<script>
+  var update_log = [ {
+    "ver": "1.0",
+    "date": "2018.10.22.",
+    "update": "남들한테 자랑해도 꿀리지 않을 만큼 멋지게 만든 정식 버전을 런칭했습니다!"
+  }, {
+    "ver": "0.7",
+    "date": "2018.10.08.",
+    "update": "흰색이 가끔 눈 아플때가 있어서 다크 모드 추가. <br/> 기타 설정 기능의 추가."
+  }, {
+    "ver": "0.6",
+    "date": "2018.10.05.",
+    "update": "공부에 집중할 수 있도록 깔끔한 흰색을 테마색으로 지정."
+  }, {
+    "ver": "0.5",
+    "date": "2018.10.04.",
+    "update": "횡스크롤 형태의 모습을 갖춤. <br/> 기출문제를 비동기로 불러오기 시스템 완성. <br/> Mathjax 수식 출력 기능 추가."
+  }, {
+    "ver": "0.0",
+    "date": "2018.09.29.",
+    "update": "화학분석기사 자격 취득에 도전하면서 자격증 취득 도무미 사이드를 만듦."
+  }, {
+    "ver": "",
+    "date": "",
+    "update": ""
+  }, ]
+
+
+  for (var i = 0; i < update_log.length; i++) {
+    $("<div/>", {
+      class: "q_wrap"
+    }).appendTo(".contents");
+    $("<h3/>", {
+      class: "ver",
+      html: update_log[i].ver
+    }).appendTo(".contents .q_wrap:last-child");
+    $("<div/>", {
+      class: "update",
+      html: update_log[i].update
+    }).appendTo(".contents .q_wrap:last-child");
+    $("<div/>", {
+      class: "date",
+      html: update_log[i].date
+    }).appendTo(".contents .q_wrap:last-child");
+
+
+  }
+</script>
