@@ -217,7 +217,7 @@ $(window).resize(function() {
 });
 
 $(document).ready(function() {
-  nav_create();
+  // nav_create();
   scroll_smooth();
   // columns();
   title_tooltip();

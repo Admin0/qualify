@@ -37,18 +37,25 @@ function load_content_items(category, item) {
   }).appendTo("#item_list").append("<a href='" + category + "/" + item + ".html' target='_blank'><i class='material-icons'>open_in_new</i></a>");
 }
 
-$.getJSON("index.json", function(data) {
-  var items = [];
-  $.each(data, function(key, val) {
-    load_content_title(key, val);
-    load_navigat_title(key, val);
-    $.each(val.contents, function(index, element) {
-      load_content_items(key, element);
-      load_navigat_items(key, element);
+function initialize() {
+  $.getJSON("index.json", function(data) {
+    var items = [];
+    $.each(data, function(key, val) {
+      load_content_title(key, val);
+      load_navigat_title(key, val);
+      $.each(val.contents, function(index, element) {
+        load_content_items(key, element);
+        load_navigat_items(key, element);
+      });
     });
   });
-});
+}
 
 $(document).ready(function() {
-  load_to("#share", "system/module/share");
+  initialize();
+  $("#nav_menu").load("system/module/nav_menu.html");
+  $("#share").load("system/module/share.html", function() {
+    nav_create();
+  });
+
 });

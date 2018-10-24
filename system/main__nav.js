@@ -31,7 +31,7 @@ function nav_create() {
 
   $('body').append('<div id="tooltip_nav"><div id="tooltip_nav_text"></div><div id="tooltip_nav_before"></div></div>');
 
-  $("#tooltip_nav").append($("#tooltip_before"));
+  // $("#tooltip_nav").append($("#tooltip_before"));
   $("#nav h3").hover(function() {
       if ($("nav").attr("class") == "fold") {
         if (document.height === null) {

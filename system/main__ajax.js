@@ -12,12 +12,8 @@ const ad =
   '</script>' +
   '</section>'
 
-function after_load(full_id, data) {
+function after_load(full_id) {
   $('#title').html(full_id);
-  $("#main_item").html("");
-
-  $('#main_item').append(data);
-
   $("#main_item .contents").addClass("on");
   // if ($('#' + full_id + "+a+.loading").length == 0) {
   //   $('#' + full_id + '+a').after("<div class='loading'><i class='material-icons spin'>autorenew</i>LOADING...</div>");
@@ -42,7 +38,9 @@ function load(id, content) {
     dataType: 'html',
     success: function(data) {
 
-      after_load(full_id, data);
+      $("#main_item").html("");
+      $('#main_item').append(data);
+      after_load(full_id);
 
       // analytics
       window.dataLayer = window.dataLayer || [];
@@ -61,32 +59,6 @@ function load(id, content) {
 
       // mathjax reload (sub__mathjax.js)
       MathJax.Hub.Typeset();
-    }
-  });
-}
-
-// 광고 없음. 추적 없음. 수식 없음.
-function load_other(full_id) {
-  $.ajax({
-    type: 'get',
-    url: full_id + ".html",
-    dataType: 'html',
-    success: function(data) {
-
-      after_load(full_id, data);
-    }
-  });
-}
-
-// #main_item > .contents 가 아닌 특정 위치에 로드하기 위한...
-function load_to(location, full_id) {
-  $.ajax({
-    type: 'get',
-    url: full_id + ".html",
-    dataType: 'html',
-    success: function(data) {
-
-      $(location).append(data);
     }
   });
 }
