@@ -228,5 +228,5 @@ $(window).on('load', function() {
     // columns();
     scroll_at_open();
   }, 0);
-  imgReady();
+  // imgReady();
 });

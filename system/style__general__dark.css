@@ -7,7 +7,7 @@
 .general__dark nav #nav_header,
 .general__dark #to_github,
 .general__dark #item_list section.item,
-.general__dark dl#setting, .general__dark nav #nav_footer {
+.general__dark dl#setting, .general__dark #share, .general__dark nav #nav_footer {
   background: rgba(50, 54, 57, 1);
   color: rgb(189, 193, 198);
   transition: .3s, background-color 0s, color 0s;
@@ -57,5 +57,14 @@
 }
 
 .general__dark .targeted {
-  background: gray!important;
+  background: gray !important;
+}
+
+/* anchor */
+.general__dark a {
+  color: #f0f0f0;
+}
+
+.general__dark a:hover {
+  background: rgba(50, 54, 57, 1);
 }

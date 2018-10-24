@@ -1,7 +1,7 @@
 #share {
   display: none;
   align-items: center;
-  z-index: 7;
+  z-index: 5;
   position: fixed;
   width: 600px;
   height: 100px;
@@ -32,6 +32,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  margin-top: .5em;
 }
 
 @media handheld, only screen and (max-device-width:480px), only screen and (max-device-width:320px), screen and (max-width:1080px) {
@@ -49,5 +50,13 @@
 
   #share.on {
     bottom: 0;
+  }
+
+  #share .share .icon {
+    width: 32px;
+  }
+
+  #share .share .title {
+    font-size: 12px;
   }
 }

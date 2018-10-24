@@ -19,25 +19,25 @@
   <div class="q_wrap">
     <div class="question">
       XRF에 사용되는 파장은 0.1~25 Å이다. 이 파장을
-      전압에너지(eV 또는 keV)로 계산하시오. $\ce{(1Å = 10^{-10} m, 1eV = 1.602 × 10^{-19} J})$
+      전압에너지(eV 또는 keV)로 계산하시오. $\ce{(1 Å = 10^{-10} m, 1 eV = 1.602 × 10^{-19} J})$
     </div>
     <div class="answer">
       $\ce{25\text{ Å의 경우}, \\<br>
       \begin{align*}
-      E & = \cfrac{hc}{\lambda} =
-      \cfrac{(6.626 \times 10^{-34}\ce{ Js}) \times {(3 \times 10^{8} m/s)}}{25 \times 10^{-10} m}\\
-      & = \cfrac{7.9512 \times 10^{-17} J}{1.602 \times 10^{-10} J/eV} \\
-      & = 494.33 eV
+      \textit{E} & = \cfrac{hc}{\lambda} =
+      \cfrac{(6.626 \times 10^{-34}\ \ce{ Js}) \times {(3 \times 10^{8}\ \ce{m/s})}}{25 \times 10^{-10}\ \ce{m}}\\
+      & = \cfrac{7.9512 \times 10^{-17}\ \ce{J}}{1.602 \times 10^{-10}\ \ce{J/\text{e}V}} \\
+      & = 494.33\ \text{eV}
       \end{align*}
       }$
       <br>
 
       0.1Å 경우도 위와 같이 풀면,
 
-      답은 0.496~12.4eV
+      답은 0.496 ~ 12.4 eV
     </div>
     <div class="comment">
-      저렇게 범위가 아닌 파장범위 차이(24.9Å)를 eV로 계산한 사람도 있으나 어떤 것이 정답인지는 모르겠음.
+      저렇게 범위가 아닌 파장범위 차이(24.9 Å)를 eV로 계산한 사람도 있으나 어떤 것이 정답인지는 모르겠음.
     </div>
   </div>
 
@@ -47,11 +47,7 @@
     </div>
     <div class="answer">
       $\ce{
-      4 = f\sqrt{1}
-      }$ 이므로 $\ce{
-      f = 4
-      }$<br>
-      $\ce{
+      4 = \mathcal{f}\sqrt{1} -> \mathcal{f} = 4 \\
       S/N = 4\sqrt{50} = 28.28
       }$
     </div>
@@ -87,20 +83,20 @@
 
   <div class="q_wrap">
     <div class="question">
-      내부표준물 Mg을 사용하여 Ca을 정량하려 한다. 1.0 ppm의 Ca과 Mg의 각각 흡광도는 0.5외 0.4이다. 미지 시료 10 mL에 2.0 ppm Mg 10 mL를 가하여 각각 흡광도를 측정하였더니 Ca는 0.6 Mg는 0.8이었다. 시료 내 Ca의 농도는 얼마인가?
+      내부표준물 Mg을 사용하여 Ca을 정량하려 한다. 1.0 ppm의 Ca과 Mg의 각각 흡광도는 0.5와 0.4이다. 미지 시료 10 mL에 2.0 ppm Mg 10 mL를 가하여 각각 흡광도를 측정하였더니 Ca는 0.6 Mg는 0.8이었다. 시료 내 Ca의 농도는 얼마인가?
     </div>
     <div class="answer">
-      ${분석물`흡광도} over {분석물`농도} =Rf TIMES {표준물질`흡광도} over {표준물질`농도}#
-      {0.5} over {1ppm} =Rf TIMES {0.4} over {1ppm} `,``Rf=1.25#
-      {0.6} over {xppm} =1.25 TIMES {0.8} over {1ppm}#
-      ````````````````````````````````````````````````````````````````` HOOKRIGHT Mg``2ppm``10ml가`시료용액으로#
-      ``````````````````````````````````````````````````````````````````````````20ml로`묽어져서`1ppm이`됨#
-      x=0.6ppm#
-      THEREFORE Ca용액이`10ml에서`20ml로`묽혀진`거니까`원래의#
-      용액`농도는`1.2ppm$
+      $\ce{
+      \dfrac{\text{분석물 흡광도}}{\text{분석물 농도}} = RF \times \dfrac{\text{표준물질 흡광도}}{\text{표준물질 농도}} \\
+      \dfrac{0.5}{1ppm} =Rf \times \dfrac{0.4}{1ppm} `,``RF=1.25 \\
+      \dfrac{0.6}{xppm} =1.25 \times \dfrac{0.8}{1ppm} \\
+      Mg 2 ppm 10 ml가 시료용액으로 20ml로 묽어져서 1 ppm이 됨 \\
+      x=0.6ppm \\
+      \therefore Ca용액이 10 ml에서 20 ml로 묽혀진 거니까 원래 용액 농도는 1.2 ppm
+      }$
     </div>
     <div class="comment">
-
+      감응 계수 (RF, response factor)
     </div>
   </div>
 
@@ -219,21 +215,12 @@
 
   <div class="q_wrap">
     <div class="question">
-      12.47 / 12.56 / 12.53 / 12.67 / 12.48 일 때 12.67을 버릴지 말지 Q-test로 결정하라.
-      <table>
-        <tr>
-          <th>관측수</th>
-          <th>4</th>
-          <th>5</th>
-          <th>6</th>
-        </tr>
-        <tr>
-          <td>Q (신뢰도 90%)</td>
-          <td>0.76</td>
-          <td>0.64</td>
-          <td>0.56</td>
-        </tr>
-      </table>
+      12.47 / 12.56 / 12.53 / 12.67 / 12.48 일 때 12.67을 버릴지 말지 Q-test로 결정하라.<br>
+
+      $ \begin{array}{|c|c|c|c|} \hline
+      \text{측정수} & 4 & 5 & 6 \\ \hline
+      \text{Q (90% 신뢰수준)} & 0.76 & 0.64 & 0.56 \\ \hline
+      \end{array}$
     </div>
     <div class="answer">
       $Q = \cfrac{|12.67 - 12.56|}{12.67-12.47} = 0.55$<br>

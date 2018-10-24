@@ -270,7 +270,7 @@ li a:hover {
 
 #nav_bg, #setting_bg {
   position: fixed;
-  z-index: 5;
+  z-index: 4;
   left: 0;
   top: 0;
   transition: .3s;
@@ -1184,7 +1184,7 @@ footer {
   }
 
   #setting_bg.on {
-    z-index: 6;
+    /* z-index: 6; */
   }
 
   #setting .header {
