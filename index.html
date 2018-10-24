@@ -13,16 +13,19 @@
   <link rel="apple-touch-icon" href="../images/icon__qualify.png">
   <link rel="icon" type="image/png" href="../images/icon__qualify.png">
   <link rel="stylesheet" href="system/style.css">
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="system/main__ajax.js"></script>
   <script src="system/main__initialize.js"></script>
   <script src="system/main__settings.js"></script>
   <script src="system/main__nav.js"></script>
   <script src="system/main.js"></script>
-  <script src="system/main__ajax.js"></script>
   <script src="system/sub__clipboard.min.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js' async></script>
   <script src="system/sub__mathjax.js" defer></script>
   <script src="system/sub__scroll.js" async></script>
+  <!-- sharer -->
+  <script src='system/sub__kakao.js' defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
 
   <!-- adsense -->
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -48,6 +51,8 @@
 
   <section id="item_list"> </section>
 
+  <section id="share"> </section>
+
   <nav>
     <div id='nav'>
       <div id='nav_header'>
@@ -63,7 +68,7 @@
       <div id="nav_menu">
         <h2 id="" class=""><a href="">메뉴</a></h2>
         <h3 class=""><a href="http://blog.jinh.kr/guestbook/" target="_blank"><i class="material-icons">message</i><span>리뷰 남기기<span></span></span></a></h3>
-        <h3 class=""><a onclick="load_other('기타/공유하기')" target="_blank"><i class="material-icons">share</i><span>공유하기<span></span></span></a></h3>
+        <h3 class=""><a onclick="$('#share, #setting_bg').addClass('on');"><i class="material-icons">share</i><span>공유하기<span></span></span></a></h3>
         <h3 class=""><a onclick="load_other('license')" target="_blank"><i class="material-icons">group_work</i><span>오픈 소스 라이선스<span></span></span></a></h3>
         <h3 class=""><a onclick="load_other('update_log')" target="_blank"><i class="material-icons">update</i><span>업데이트 기록<span></span></span></a></h3>
       </div>
@@ -73,7 +78,7 @@
 
   <div id="nav_bg" onclick="$('nav, #nav_bg').removeClass('on');"></div>
 
-  <div id="setting_bg" onclick="$('#setting, #setting_bg').removeClass('on');"></div>
+  <div id="setting_bg" onclick="$('#setting, #setting_bg, #share').removeClass('on');"></div>
   <dl id="setting">
     <div class="header">
       <i class="material-icons" onclick="$('#setting, #setting_bg').removeClass('on');">arrow_back</i><span>설정</span>

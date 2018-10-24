@@ -49,4 +49,6 @@ $.getJSON("index.json", function(data) {
   });
 });
 
-$(document).ready(function() {});
+$(document).ready(function() {
+  load_to("#share", "system/module/share");
+});

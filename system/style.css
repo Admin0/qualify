@@ -5,7 +5,8 @@
 @import url('style__general__dark.css');
 @import url('style__answer__serif.css');
 @import url('style__answer__quiz.css');
-@import url('style_ad.css');
+@import url('style_share.css');
+/* @import url('style_ad.css'); */
 
 ::selection {
   background: rgba(0, 0, 0, 0);
@@ -283,7 +284,7 @@ li a:hover {
 }
 
 #setting_bg {
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, .1);
 }
 
 #setting_bg.on {
@@ -1165,6 +1166,10 @@ footer {
 
   nav #nav_item_list {
     display: none;
+  }
+
+  nav h3 {
+    margin: .5em 0;
   }
 
   #setting {

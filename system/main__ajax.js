@@ -19,9 +19,9 @@ function after_load(full_id, data) {
   $('#main_item').append(data);
 
   $("#main_item .contents").addClass("on");
-  if ($('#' + full_id + "+a+.loading").length == 0) {
-    $('#' + full_id + '+a').after("<div class='loading'><i class='material-icons spin'>autorenew</i>LOADING...</div>");
-  }
+  // if ($('#' + full_id + "+a+.loading").length == 0) {
+  //   $('#' + full_id + '+a').after("<div class='loading'><i class='material-icons spin'>autorenew</i>LOADING...</div>");
+  // }
 
   // scroll to top for mobile
   $('html, body').animate({
@@ -65,6 +65,7 @@ function load(id, content) {
   });
 }
 
+// 광고 없음. 추적 없음. 수식 없음.
 function load_other(full_id) {
   $.ajax({
     type: 'get',
@@ -73,6 +74,19 @@ function load_other(full_id) {
     success: function(data) {
 
       after_load(full_id, data);
+    }
+  });
+}
+
+// #main_item > .contents 가 아닌 특정 위치에 로드하기 위한...
+function load_to(location, full_id) {
+  $.ajax({
+    type: 'get',
+    url: full_id + ".html",
+    dataType: 'html',
+    success: function(data) {
+
+      $(location).append(data);
     }
   });
 }
