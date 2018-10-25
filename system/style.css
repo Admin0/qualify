@@ -7,10 +7,20 @@
 @import url('style__answer__quiz.css');
 @import url('style_nav.css');
 @import url('style_share.css');
-/* @import url('style_ad.css'); */
 
 ::selection {
   background: rgba(0, 0, 0, 0);
+}
+
+.contents ::selection {
+  color: rgba(0, 0, 0, .87);
+  /* text-shadow: 1px 2px 1px #c8b900; */
+  background: #ffeb3b;
+  padding: 1em;
+}
+
+:focus {
+  outline: none;
 }
 
 ::-webkit-scrollbar-track {
@@ -24,8 +34,8 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, .225);
-  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, .1);
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 input::selection, textarea::selection {

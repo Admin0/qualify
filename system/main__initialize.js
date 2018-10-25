@@ -39,7 +39,7 @@ function load_content_items(category, item) {
 
 function initialize() {
   $.getJSON("index.json", function(data) {
-    var items = [];
+    // var items = [];
     $.each(data, function(key, val) {
       load_content_title(key, val);
       load_navigat_title(key, val);
