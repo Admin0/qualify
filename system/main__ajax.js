@@ -42,6 +42,9 @@ function load(id, content) {
       $('#main_item').append(data);
       after_load(full_id);
 
+      // mathjax reload (sub__mathjax.js)
+      MathJax.Hub.Typeset();
+
       // analytics
       window.dataLayer = window.dataLayer || [];
 
@@ -60,9 +63,6 @@ function load(id, content) {
         google_ad_client: "ca-pub-8175591114279139",
         enable_page_level_ads: true
       });
-
-      // mathjax reload (sub__mathjax.js)
-      MathJax.Hub.Typeset();
     }
   });
 }
