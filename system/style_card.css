@@ -1,5 +1,4 @@
 /* style_card.css 는 카드에서만 불러올 수 있습니다. */
-
 .contents {
   font-family: 'Noto Serif KR', serif;
 }
@@ -23,6 +22,10 @@
   column-gap: 10mm;
   margin: 16pt auto;
   font-size: 9pt;
+}
+
+.question, .answer, .comment {
+  transform: translateX(0);
 }
 
 .q_wrap {
@@ -153,13 +156,6 @@
 
   .q_wrap:nth-of-type(n+10) .question:not(.sub) {
     text-indent: 2em;
-  }
-
-  .tip, .caution, .warning {
-    display: inline-block;
-    position: static;
-    transform: rotate(0);
-    /*margin: 0;*/
   }
 
   ol, ul {
