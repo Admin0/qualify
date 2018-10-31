@@ -58,6 +58,7 @@
   top: 0;
   right: calc(100% - 1em);
   font: bold 1em Serif;
+  line-height: 1.75;
 }
 
 .q_wrap .question {
