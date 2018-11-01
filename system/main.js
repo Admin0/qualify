@@ -221,6 +221,7 @@ $(document).ready(function() {
   scroll_smooth();
   // columns();
   title_tooltip();
+  contextmenu();
 });
 
 $(window).on('load', function() {
