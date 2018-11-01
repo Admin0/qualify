@@ -1,6 +1,6 @@
 const card_ad =
   '<ins class="adsbygoogle"' +
-  '     style="display:block"' +
+  '     style="display:block; text-align:center;"' +
   '     data-ad-client="ca-pub-8175591114279139"' +
   '     data-ad-slot="5452657644"' +
   '     data-ad-format="auto"' +
