@@ -1,6 +1,5 @@
 const card_ad =
   '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>' +
-  '<section class="ad">' +
   '<!-- qualify 반응형 -->' +
   '<ins class="adsbygoogle"' +
   '     style="display:block"' +
@@ -10,14 +9,13 @@ const card_ad =
   '     data-full-width-responsive="true"></ins>' +
   '<script>' +
   '(adsbygoogle = window.adsbygoogle || []).push({});' +
-  '</script>' +
-  '</section>'
+  '</script>' ;
 
 const is_card = document.querySelector("#main_item") == null;
 
 if (is_card) {
   var card_title = decodeURIComponent(window.location.pathname);
-  card_title = card_title.substring(decodeURIComponent(window.location.host).length);
+  card_title = card_title.substring(card_title.indexOf('/', 2) + 1);
   card_title = card_title.substring(0, card_title.indexOf('/')) + '-' + card_title.substring(card_title.indexOf('/') + 1);
   card_title = '#' + card_title.substring(0, card_title.indexOf('.'));
 
