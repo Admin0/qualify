@@ -121,6 +121,16 @@
   padding: 0.25em 0.75em;
 }
 
+#card_title {
+  text-align: center;
+  font-size: 1.25em;
+}
+
+#card_footer {
+  text-align: center;
+  font-size: 12px;
+}
+
 /* ***** mobile ***** */
 @media handheld, only screen and (max-device-width:480px), only screen and (max-device-width:320px), screen and (max-width:600px) {
   section .contents h4 {
