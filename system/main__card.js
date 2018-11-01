@@ -20,7 +20,7 @@ if (is_card) {
   card_title = '#' + card_title.substring(0, card_title.indexOf('.'));
 
   const card_title_html = '<h1 id="card_title">' + card_title + '</h1>'
-  const card_footer_html = '<div id="card_footer">https://' + window.location.host + '/qualify/</div>'
+  const card_footer_html = '<div id="card_footer">https://' + window.location.host + '/qualify/' + card_title + '</div>'
   document.querySelector('.contents').insertAdjacentHTML('beforebegin', card_title_html + card_ad);
   (adsbygoogle = window.adsbygoogle || []).push({});
   document.querySelector('.contents').insertAdjacentHTML('afterend', card_ad + card_footer_html);
