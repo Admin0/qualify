@@ -19,6 +19,9 @@ function after_load(full_id) {
   //   $('#' + full_id + '+a').after("<div class='loading'><i class='material-icons spin'>autorenew</i>LOADING...</div>");
   // }
 
+  $('.targeted').removeClass('targeted');
+  $('#' + full_id + ', .' + full_id).addClass('targeted');
+
   // scroll to top for mobile
   $('html, body').animate({
     scrollTop: 0

@@ -26,6 +26,11 @@
 
 .question, .answer, .comment {
   transform: translateX(0);
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid-column;
+  /* display: list-item;
+  list-style: none; */
 }
 
 .q_wrap {
