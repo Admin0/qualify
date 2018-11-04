@@ -14,7 +14,7 @@ function load_navigat_items(category, item) {
     "class": category + " item " + category + "-" + item,
     "name": category,
     "round": item,
-    html: "<a onclick=" + onclick + "><i class='material-icons'>book</i><span>" + item + "<span></a>"
+    html: "<a href=#" + category + "-" + item + " onclick=" + onclick + "><i class='material-icons'>book</i><span>" + item + "<span></a>"
   }).appendTo("#nav_item_list").append("<a href='" + category + "/" + item + ".html' target='_blank'><i class='material-icons'>open_in_new</i></a>");
 }
 

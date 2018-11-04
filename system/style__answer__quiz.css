@@ -1,9 +1,10 @@
 .answer__quiz .q_wrap .answer {
   opacity: 0;
   background: #FFFACD;
-  padding: .5em 1em;
-  margin: -.5em -1em .5em;
-  border-radius: .5em;
+  /* padding: .5em 1em;
+  margin: -.5em -1em .5em; */
+  /* border-radius: .5em; */
+  outline: .75em solid #FFFACD;
   display: inline-block;
 }
 

@@ -20,7 +20,7 @@ function after_load(full_id) {
   // }
 
   $('.targeted').removeClass('targeted');
-  $('#' + full_id + ', .' + full_id).addClass('targeted');
+  $('#item_list #' + full_id + ', #nav_item_list .' + full_id).addClass('targeted');
 
   // scroll to top for mobile
   $('html, body').animate({

@@ -32,6 +32,7 @@
 
 .general__dark.answer__quiz .q_wrap .answer {
   background: #424242;
+  outline-color: #424242;
 }
 
 /* nav */

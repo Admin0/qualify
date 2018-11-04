@@ -117,8 +117,9 @@ function scroll_at_open() {
       // }, 500);
       target.addClass("targeted");
       target_by_class.addClass("targeted");
+
+      // very important
       load($(target).attr("name"), $(target).attr("round"));
-      // load($(target).attr("class"));
     }, 0)
   }
 }

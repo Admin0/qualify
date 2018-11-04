@@ -68,7 +68,7 @@
 
 .q_wrap .question {
   font-weight: bold;
-  padding-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .q_wrap.sub {
@@ -88,7 +88,7 @@
 }
 
 .q_wrap .answer {
-  padding-bottom: 1em;
+  margin-bottom: 1em;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -166,11 +166,15 @@
     left: 0;
   }
 
-  .q_wrap .question:not(.sub) {
+  .contents:not(.on) .q_wrap:not(.sub)::before {
+    left: inherit;
+  }
+
+  .contents.on .q_wrap .question:not(.sub) {
     text-indent: 1.5em;
   }
 
-  .q_wrap:nth-of-type(n+10) .question:not(.sub) {
+  .contents.on .q_wrap:nth-of-type(n+10) .question:not(.sub) {
     text-indent: 2em;
   }
 
