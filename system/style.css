@@ -385,7 +385,7 @@ input[type="checkbox"] {
 }
 
 .targeted {
-  background: #9ACFF9!important;
+  background: #9ACFF9 !important;
 }
 
 /* ------------------------------------------------------------------- */
@@ -757,6 +757,7 @@ footer {
   #item_list {
     height: inherit;
     padding: 0 1em;
+    overflow: initial;
   }
 
   #item_list section.item {
