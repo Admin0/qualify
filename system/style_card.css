@@ -136,6 +136,13 @@
   font-size: 12px;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+  /* cursor: pointer; */
+  margin: auto;
+}
+
 /* ***** mobile ***** */
 @media handheld, only screen and (max-device-width:480px), only screen and (max-device-width:320px), screen and (max-width:600px) {
   section .contents h4 {

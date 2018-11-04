@@ -44,7 +44,7 @@ input::selection, textarea::selection {
 
 body {
   padding: 0 0 0 300px;
-  margin-top: 56px;
+  margin: 56px 0 0;
   font-family: 'Noto Sans KR', sans-serif;
   color: rgba(0, 0, 0, .87);
   cursor: default;
@@ -125,6 +125,8 @@ body.fold {
   padding: 0 1em 0 2em;
   display: flex;
   flex-flow: wrap;
+  height: calc(100vh - 64px - 64px);
+  overflow: auto;
 }
 
 #item_list section.item {
@@ -343,13 +345,6 @@ h4:first-of-type {
   background: #fff;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-  cursor: pointer;
-  margin: auto;
-}
-
 #img_wrap>img {
   /* 클릭했을 때 크게 보이는 것 */
   max-width: 90%;
@@ -381,6 +376,7 @@ input[type="checkbox"] {
   color: rgba(0, 0, 0, .54);
   /*font-size: .8em;*/
   padding: 1em;
+  margin: 0;
 }
 
 .copyright a {
@@ -389,7 +385,7 @@ input[type="checkbox"] {
 }
 
 .targeted {
-  background: #9ACFF9;
+  background: #9ACFF9!important;
 }
 
 /* ------------------------------------------------------------------- */
@@ -759,6 +755,7 @@ footer {
   }
 
   #item_list {
+    height: inherit;
     padding: 0 1em;
   }
 
@@ -768,6 +765,10 @@ footer {
     margin: 0;
     border-top: 1px rgba(0, 0, 0, .12) solid;
     background: #fff;
+  }
+
+  #item_list section.item:last-child {
+    margin-bottom: 1em;
   }
 
   footer {

@@ -1,6 +1,6 @@
 function scroll_style(is_true) {
   if (is_true) {
-    if (!is_mobile) {
+    if (!is_mobile && $(window).width() > 1080) {
       $('nav').addClass('shadow-right');
     }
     $('header').addClass('shadow-bottom');
@@ -19,7 +19,9 @@ jQuery(function($) {
         position = $(this).scrollLeft();
       position += direction > 0 ? -amount : amount;
       $(this).scrollLeft(position);
-      event.preventDefault();
+      if ($(window).width() > 1080) {
+        event.preventDefault();
+      }
       scroll_style($(this).scrollLeft() > 0);
     })
   };
