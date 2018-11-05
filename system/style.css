@@ -118,6 +118,7 @@ body.fold {
   padding: 2em;
   overflow-y: visible;
   overflow-x: auto;
+  column-fill: auto;
   transform: translateX(0);
 }
 

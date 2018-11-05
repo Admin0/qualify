@@ -1,13 +1,29 @@
 <link rel="stylesheet" href="/qualify/system/style_card.css">
 <script src="/qualify/system/main__card.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" async></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" defer></script>
 <script src="/qualify/system/sub__mathjax.js" defer></script>
 
-<div class="contents" style="display:none;">
+<div class="contents">
 
   <div class="q_wrap">
     <div class="question">
+      비중 $1.84$ 인 유체를 펌프를 이용하여 높이 $30\ m$로 유출시키려고 한다. 손실수두는 $20\ m$, 유입관경 $10\ cm$&nbsp; &nbsp; 출구관경이 $5\ cm$ 이고 입구에서의 속도 $50\ cm/s$이다 펌프의 효율이 $80%$ 일 때 실제 펌프의 동력은? (단위 : $W$)
+    </div>
+    <div class="answer">
+      <p style="margin-left: 2em;">$u_{2} =\cfrac{A_{1}}{A_{2}} u_{!} =\cfrac{( 0.1\ m)^{2}}{( 0.05\ m)^{2}} \times 0.5\ m/s=2\ m/s$ 이고,</p>
+      <p style="margin-left: 2em;">$\eta W_{p} =\cfrac{\Delta P}{\rho } +\cfrac{\Delta u^{2}}{2} +g\Delta Z+h_{f}$ 에서,</p>
+      <p style="margin-left: 2em;">$0.8\times W_{p} =[ 0] +\left[\cfrac{9.8\ m}{s} \times 30\ m\right] +\left[\cfrac{( 2\ m/s)^{2} -( 0.5\ m/s)^{2}}{2}\right] +\left[\cfrac{9.8\ m}{s} \times 20\ m\right]$이므로,</p>
+      <p style="margin-left: 2em;">$W_{p} =614.84375\ m^{2} /s^{2}$</p>
+      <p style="margin-left: 2em;">$\therefore P=W_{p} \cdot \dot{m} =\begin{array}{ c|c|c|c }618.84375\ J &amp; 0.5\ m &amp; \pi \cdot ( 0.1\ m)^{2} &amp; 1840\ kg\\\hline kg &amp; s &amp; 4 &amp; m^{3}\end{array} =4471.58\ W$ &nbsp;</p>
+    </div>
+    <div class="comment">
+      $\ce{}$
+    </div>
+  </div>
 
+  <div class="q_wrap">
+    <div class="question">
+      ?
     </div>
     <div class="answer">
 
@@ -19,10 +35,15 @@
 
   <div class="q_wrap">
     <div class="question">
-
+      외관의 내경 $0.33\ m$, 내관의 외경 $0.17\ m$, 관 길이 $200\ m$ 액체가 물일경우 이중관 유로에서 압력강하를 구하시오 ($\rho=1000\ kg/ms, \mu=0.001\ kg/m\cdot s, Q=1\ m^3/hr$)
     </div>
     <div class="answer">
-
+      <p style="margin-left: 2em;">$D_{e} =D_{o} -D_{i} =0.16\ m,\ A=\left(\cfrac{\pi \cdotp ( 0.33\ m)^{2}}{4}\right) -\left(\cfrac{\pi \cdotp ( 0.17m)^{2}}{4}\right) =0.0628\ m^{2} ,$</p>
+      <p style="margin-left: 2em;">$u=\cfrac{Q}{A} =\cfrac{1}{0.0628\cdotp 3600} =4.067\times 10^{-3} \ m/s,$</p>
+      <p style="margin-left: 2em;">$Re=650.72&lt; 2100$ 이므로 층류흐름이고 $f=\cfrac{16}{Re} =0.024588$</p>
+      <p style="margin-left: 2em;">$h_{f} =\cfrac{\Delta P}{\rho } =4f\cfrac{L}{D}\cfrac{u^{2}}{2} =\begin{array}{ c|c|c|c }4 &amp; 0.024588 &amp; 200\ m &amp; ( 0.004067\ m/s)^{2}\\\hline &amp;&nbsp; &amp; 0.16\ m &amp; 2\end{array} =0.0010167\
+        m^{2} /s^{2}$</p>
+      <p style="margin-left: 2em;">$\therefore \Delta P=0.0010167\ m^{2} /s^{2} \times 1000\ kg/m^{3} =1.02\ kg/m\cdotp s^{2}$&nbsp;</p>
     </div>
     <div class="comment">
       $\ce{}$ </div>
@@ -30,10 +51,23 @@
 
   <div class="q_wrap">
     <div class="question">
-
+      ?
     </div>
     <div class="answer">
 
+    </div>
+    <div class="comment">
+      $\ce{}$
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      질량유량 $314\ g/s$ 이고 점도 $10\ cP$ 직경 $10\ cm$ 일 때 레이놀즈 수를 구하고 층류 및 난류인지 판별하라
+    </div>
+    <div class="answer">
+      <p style="margin-left: 2em;">$u=\cfrac{314\ g}{s} \times \cfrac{cm^{3}}{1\ g} \times \cfrac{4}{\pi \cdotp ( 10\ m)^{2}} =3.998\ cm/s$ 일 때,</p>
+      <p style="margin-left: 2em;">$Re=\cfrac{D\nu \rho }{\mu } =\begin{array}{ c|c|c|c }10\ cm &amp; 3.998\ cm &amp; 1\ g &amp; cm\cdot s\\\hline &amp; s &amp; cm^{3} &amp; 0.1\ g\end{array} =399.8&lt; 2100$ 이므로 층류.</p>
     </div>
     <div class="comment">
       $\ce{}$ </div>
@@ -41,7 +75,93 @@
 
   <div class="q_wrap">
     <div class="question">
+      $50℃$에서 포화습도가 $0.086$이고 포화수증기압 $60\%$일 때 절대습도를 구하시오
+    </div>
+    <div class="answer">
+      <p style="margin-left: 2em;">$\cfrac{P_{s}}{P-P_{s}} \times \cfrac{18}{29} =0.086\Longrightarrow P_{s} =92.5136\ mmHg$ 이면,</p>
+      <p style="margin-left: 2em;">$\cfrac{P_{w}}{P_{s}} =0.6\Longrightarrow P_{w} =55.50816\ mmHg$ 이고,</p>
+      <p style="margin-left: 2em;">$H_{a} =\cfrac{P_{w}}{P-P_{w}} \times \cfrac{18}{29} =\cfrac{55.50816}{760-55.50816} \times \cfrac{18}{29} =0.0489$</p>
 
+    </div>
+    <div class="comment">
+      $\ce{}$
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      반사율 $0.1$ 투과율 $0.2$ 일 때 흡수율을 구하시오
+    </div>
+    <div class="answer">
+      <p style="margin-left: 2em;">$\begin{array}{l}<br />0.1+0.2+흡수율=1\\<br />\therefore 흡수율=0.7<br />\end{array}$</p>
+    </div>
+    <div class="comment">
+      $\ce{}$
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      $10\ wt\%\ NaOH\ 100\ kg$를 가지고 $80\ wt\%\ NaOH$를 만들 때 증발한 물의 양?
+    </div>
+    <div class="answer">
+      <p style="margin-left: 2em;">$10\ kg_{NaOH} =0.8L\Longrightarrow L=12.5\ kg_{solution}$</p>
+      <p style="margin-left: 2em;">$m=90\ kg_{H_{2} O} -( 12.5\ kg_{solution} -10\ kg_{NaOH}) =87.5\ kg_{H_{2} O}$</p>
+      <p><br /></p>
+
+    </div>
+    <div class="comment">
+      $\ce{}$
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      지름이 $0.5\ m$ 평균속도 $4.45\ m/s$ 길이가 $1000\ m$ 인 관 마찰계수 $f=0.03$일 때 손실수두($m$)는?
+    </div>
+    <div class="answer">
+      <ol>
+        <p>$h_{f} =4f\cfrac{L}{D}\cfrac{u^{2}}{2} =\begin{array}{ c|c|c|c }<br />4 &amp; 0.03 &amp; 1000\ m &amp; ( 4.45\ m/s)^{2}\\<br />\hline<br />&nbsp;&amp;&nbsp; &amp; 0.5\ m &amp; 2<br />\end{array} =2376.3\ m^{2} /s^{2}$</p>
+        <p>$\therefore H=\begin{array}{ c|c }<br />2376.3\ m^{2} &amp; s^{2}\\<br />\hline<br />s^{2} &amp; 9.8\ m<br />\end{array} =242.48\ m$</p>
+    </div>
+    <div class="comment">
+      $\ce{}$
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      부피유량 $2\ m^3/hr$인 물이 $80℃$에서 $30℃$로 흐르고 다른 유체가 $15℃$에서 $60℃$로 향류조작으로 흐른다. 관은 직경이 $20\ mm$이고 길이는 $6m,\ U(총괄)=170\ kcal/m^2ㆍhrㆍ℃$일 때 관은 몇 개가 필요한가?
+    </div>
+    <div class="answer">
+      <p style="margin-left: 2em;">$q=\dot{m} \cdot C_{p} \cdot \Delta T=U\cdot A\cdot \Delta T_{LM}$ 에서,</p>
+      <p style="margin-left: 2em;">$\dot{m} \cdot C_{p} \cdot \Delta T=\begin{array}{ c|c|c }<br />2000\ kg &amp; 1\ kcal &amp; ( 80-30) ℃&nbsp;\\<br />\hline<br />hr &amp; kg\cdotp ℃&nbsp;&nbsp;&amp; <br />\end{array} =100000\ kcal/hr$ 이고,</p>
+      <p style="margin-left: 2em;">$\Delta T_{LM} =\cfrac{20-15}{\ln( 20/15)} =17.38℃&nbsp;,\ A=\pi DL\times n=\pi \times 0.02\ m\times 6\ m\times n=( 0.377\times n) \ m^{2}$ 이므로,</p>
+      <p style="margin-left: 2em;">$U\cdot A\cdot \Delta T_{LM} =\begin{array}{ c|c|c }<br />170\ kcal &amp; ( 0.377\times n) \ m^{2} &amp; 17.38℃&nbsp;\\<br />\hline<br />m^{2} \cdotp hr\cdotp ℃&nbsp;&nbsp;&amp;&nbsp; &amp; <br />\end{array}
+        =100000\ kcal/hr$</p>
+      <p style="margin-left: 2em;">$\therefore n=89.76\approx 90\ 개$</p>
+    </div>
+    <div class="comment">
+      $\ce{}$
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      벤젠 $0.45$ 톨루엔 $0.55$ $P_{Tol}=480\ mmHg, P_{Bz} =800\ mmHg$ 일 때 각성분의 증기 몰 분율($\%$)는?
+    </div>
+    <div class="answer">
+      <p style="margin-left: 2em;">$P=( 0.45\times 480\ mmHg) +( 0.55\times 800\ mmHg) =656\ mmHg$ 이므로,</p>
+      <p style="margin-left: 2em;">$y_{B} =\cfrac{0.45\times 480\ mmHg}{656\ mmHg} =0.33,\ y_{T} =\cfrac{0.55\times 800\ mmHg}{656\ mmHg} =0.67$</p>
+    </div>
+    <div class="comment">
+      $\ce{}$
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      ?
     </div>
     <div class="answer">
 
@@ -53,115 +173,7 @@
 
   <div class="q_wrap">
     <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
+      ?
     </div>
     <div class="answer">
 
@@ -172,98 +184,3 @@
   </div>
 
 </div>
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
-  MathJax.Hub.Config({
-    HTML: ["input/TeX", "output/SVG"],
-    TeX: {
-      extensions: ["AMSmath.js", "AMSsymbols.js"],
-      equationNumbers: {
-        autoNumber: "AMS"
-      }
-    },
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX", "output/HTML-CSS"],
-    tex2jax: {
-      inlineMath: [
-        ['$', '$'],
-        ["\\(", "\\)"]
-      ],
-      displayMath: [
-        ['$$', '$$'],
-        ["\\[", "\\]"]
-      ],
-      processEscapes: true
-    },
-    "HTML-CSS": {
-      availableFonts: ["TeX"],
-      linebreaks: {
-        automatic: true
-      }
-    }
-  });
-</script><p>
-
-
-</p><ol style="list-style-type: decimal;">
-  <li>비중 $1.84$ 인 유체를 펌프를 이용하여 높이 $30\ m$로 유출시키려고 한다. 손실수두는 $20\ m$, 유입관경 $10\ cm$&nbsp; &nbsp; 출구관경이 $5\ cm$ 이고 입구에서의 속도 $50\ cm/s$이다 펌프의 효율이 $80%$ 일 때 실제 펌프의 동력은? (단위 : $W$)</li>
-<p style="margin-left: 2em;">$u_{2} =\cfrac{A_{1}}{A_{2}} u_{!} =\cfrac{( 0.1\ m)^{2}}{( 0.05\ m)^{2}} \times 0.5\ m/s=2\ m/s$ 이고,</p>
-<p style="margin-left: 2em;">$\eta W_{p} =\cfrac{\Delta P}{\rho } +\cfrac{\Delta u^{2}}{2} +g\Delta Z+h_{f}$ 에서,</p>
-<p style="margin-left: 2em;">$0.8\times W_{p} =[ 0] +\left[\cfrac{9.8\ m}{s} \times 30\ m\right] +\left[\cfrac{( 2\ m/s)^{2} -( 0.5\ m/s)^{2}}{2}\right] +\left[\cfrac{9.8\ m}{s} \times 20\ m\right]$이므로,</p>
-<p style="margin-left: 2em;">$W_{p} =614.84375\ m^{2} /s^{2}$</p>
-<p style="margin-left: 2em;">$\therefore P=W_{p} \cdot \dot{m} =\begin{array}{ c|c|c|c }618.84375\ J &amp; 0.5\ m &amp; \pi \cdot ( 0.1\ m)^{2} &amp; 1840\ kg\\\hline kg &amp; s &amp; 4 &amp; m^{3}\end{array} =4471.58\ W$ &nbsp;</p>
-<p><br /></p>
-
-  <li>?</li>
-<p style="margin-left: 2em;"><br /></p>
-
-  <li>외관의 내경 $0.33\ m$, 내관의 외경 $0.17\ m$, 관 길이 $200\ m$ 액체가 물일경우 이중관 유로에서 압력강하를 구하시오 ($\rho=1000\ kg/ms, \mu=0.001\ kg/m\cdot s, Q=1\ m^3/hr$)</li><ol style="list-style-type: decimal;">
-  </ol>
-
-<p style="margin-left: 2em;">$D_{e} =D_{o} -D_{i} =0.16\ m,\ A=\left(\cfrac{\pi \cdotp ( 0.33\ m)^{2}}{4}\right) -\left(\cfrac{\pi \cdotp ( 0.17m)^{2}}{4}\right) =0.0628\ m^{2} ,$</p>
-<p style="margin-left: 2em;">$u=\cfrac{Q}{A} =\cfrac{1}{0.0628\cdotp 3600} =4.067\times 10^{-3} \ m/s,$</p>
-<p style="margin-left: 2em;">$Re=650.72&lt; 2100$ 이므로 층류흐름이고 $f=\cfrac{16}{Re} =0.024588$</p>
-<p style="margin-left: 2em;">$h_{f} =\cfrac{\Delta P}{\rho } =4f\cfrac{L}{D}\cfrac{u^{2}}{2} =\begin{array}{ c|c|c|c }4 &amp; 0.024588 &amp; 200\ m &amp; ( 0.004067\ m/s)^{2}\\\hline &amp;&nbsp; &amp; 0.16\ m &amp; 2\end{array} =0.0010167\ m^{2} /s^{2}$</p>
-<p style="margin-left: 2em;">$\therefore \Delta P=0.0010167\ m^{2} /s^{2} \times 1000\ kg/m^{3} =1.02\ kg/m\cdotp s^{2}$&nbsp;</p>
-<p><br /></p>
-  <li>?</li><p style="margin-left: 2em;"><br /></p><li>질량유량 $314\ g/s$ 이고 점도 $10\ cP$ 직경 $10\ cm$ 일 때 레이놀즈 수를 구하고 층류 및 난류인지 판별하라</li>
-<p style="margin-left: 2em;">$u=\cfrac{314\ g}{s} \times \cfrac{cm^{3}}{1\ g} \times \cfrac{4}{\pi \cdotp ( 10\ m)^{2}} =3.998\ cm/s$ 일 때,</p>
-<p style="margin-left: 2em;">$Re=\cfrac{D\nu \rho }{\mu } =\begin{array}{ c|c|c|c }10\ cm &amp; 3.998\ cm &amp; 1\ g &amp; cm\cdot s\\\hline &amp; s &amp; cm^{3} &amp; 0.1\ g\end{array} =399.8&lt; 2100$ 이므로 층류.</p>
-<p><br /></p>
-
-<li>$50℃$에서 포화습도가 $0.086$이고 포화수증기압 $60\%$일 때 절대습도를 구하시오</li>
-
-<p style="margin-left: 2em;">$\cfrac{P_{s}}{P-P_{s}} \times \cfrac{18}{29} =0.086\Longrightarrow P_{s} =92.5136\ mmHg$ 이면,</p>
-<p style="margin-left: 2em;">$\cfrac{P_{w}}{P_{s}} =0.6\Longrightarrow P_{w} =55.50816\ mmHg$ 이고,</p>
-<p style="margin-left: 2em;">$H_{a} =\cfrac{P_{w}}{P-P_{w}} \times \cfrac{18}{29} =\cfrac{55.50816}{760-55.50816} \times \cfrac{18}{29} =0.0489$</p>
-<p><br /></p>
-<li>반사율 $0.1$ 투과율 $0.2$ 일 때 흡수율을 구하시오</li>
-<p style="margin-left: 2em;">$\begin{array}{l}<br />0.1+0.2+흡수율=1\\<br />\therefore 흡수율=0.7<br />\end{array}$</p>
-<p><br /></p>
-
-
-<li>$10\ wt\%\ NaOH\ 100\ kg$를 가지고 $80\ wt\%\ NaOH$를 만들 때 증발한 물의 양?</li>
-
-<p style="margin-left: 2em;">$10\ kg_{NaOH} =0.8L\Longrightarrow L=12.5\ kg_{solution}$</p>
-<p style="margin-left: 2em;">$m=90\ kg_{H_{2} O} -( 12.5\ kg_{solution} -10\ kg_{NaOH}) =87.5\ kg_{H_{2} O}$</p>
-<p><br /></p><li>지름이 $0.5\ m$ 평균속도 $4.45\ m/s$ 길이가 $1000\ m$ 인 관 마찰계수 $f=0.03$일 때 손실수두($m$)는?</li>
-<ol><p>$h_{f} =4f\cfrac{L}{D}\cfrac{u^{2}}{2} =\begin{array}{ c|c|c|c }<br />4 &amp; 0.03 &amp; 1000\ m &amp; ( 4.45\ m/s)^{2}\\<br />\hline<br />&nbsp;&amp;&nbsp; &amp; 0.5\ m &amp; 2<br />\end{array} =2376.3\ m^{2} /s^{2}$</p>
-<p>$\therefore H=\begin{array}{ c|c }<br />2376.3\ m^{2} &amp; s^{2}\\<br />\hline<br />s^{2} &amp; 9.8\ m<br />\end{array} =242.48\ m$</p>
-<p style="margin-left: 2em;"><br /></p></ol>
-<li>부피유량 $2\ m^3/hr$인 물이 $80℃$에서 $30℃$로 흐르고 다른 유체가 $15℃$에서 $60℃$로 향류조작으로 흐른다. 관은 직경이 $20\ mm$이고 길이는 $6m,\ U(총괄)=170\ kcal/m^2ㆍhrㆍ℃$일 때 관은 몇 개가 필요한가?</li>
-
-<p style="margin-left: 2em;">$q=\dot{m} \cdot C_{p} \cdot \Delta T=U\cdot A\cdot \Delta T_{LM}$ 에서,</p>
-<p style="margin-left: 2em;">$\dot{m} \cdot C_{p} \cdot \Delta T=\begin{array}{ c|c|c }<br />2000\ kg &amp; 1\ kcal &amp; ( 80-30) ℃&nbsp;\\<br />\hline<br />hr &amp; kg\cdotp ℃&nbsp;&nbsp;&amp; <br />\end{array} =100000\ kcal/hr$ 이고,</p>
-<p style="margin-left: 2em;">$\Delta T_{LM} =\cfrac{20-15}{\ln( 20/15)} =17.38℃&nbsp;,\ A=\pi DL\times n=\pi \times 0.02\ m\times 6\ m\times n=( 0.377\times n) \ m^{2}$ 이므로,</p>
-<p style="margin-left: 2em;">$U\cdot A\cdot \Delta T_{LM} =\begin{array}{ c|c|c }<br />170\ kcal &amp; ( 0.377\times n) \ m^{2} &amp; 17.38℃&nbsp;\\<br />\hline<br />m^{2} \cdotp hr\cdotp ℃&nbsp;&nbsp;&amp;&nbsp; &amp; <br />\end{array} =100000\ kcal/hr$</p>
-<p style="margin-left: 2em;">$\therefore n=89.76\approx 90\ 개$</p>
-<p><br /></p>
-<li>벤젠 $0.45$ 톨루엔 $0.55$ $P_{Tol}=480\ mmHg, P_{Bz} =800\ mmHg$ 일 때 각성분의 증기 몰 분율($\%$)는?</li>
-<p style="margin-left: 2em;">$P=( 0.45\times 480\ mmHg) +( 0.55\times 800\ mmHg) =656\ mmHg$ 이므로,</p>
-<p style="margin-left: 2em;">$y_{B} =\cfrac{0.45\times 480\ mmHg}{656\ mmHg} =0.33,\ y_{T} =\cfrac{0.55\times 800\ mmHg}{656\ mmHg} =0.67$</p>
-<p style="margin-left: 2em;"><br /></p>
-<li>?</li><p><span style="white-space:pre">	</span></p>
-<li>?</li>
-<p style="margin-left: 2em;"><br /></p></ol>
-
-<p>끝.</p>
-<h2>더 보기: <a href="/890" target="_blank" class="tx-link">화공기사 실기</a></h2><p><br /></p>

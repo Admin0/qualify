@@ -88,6 +88,7 @@
 }
 
 .q_wrap .answer {
+  outline: .75em solid #fff0;
   margin-bottom: 1em;
   font-family: 'Noto Sans KR', sans-serif;
 }
