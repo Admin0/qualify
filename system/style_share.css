@@ -28,6 +28,10 @@
   margin: auto;
 }
 
+#share .share .icon img{
+  width: 100%;
+}
+
 #share .share .title {
   white-space: nowrap;
   text-overflow: ellipsis;
