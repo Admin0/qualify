@@ -31,10 +31,7 @@ $(document).ready(function() {
   // $('.contents').hScroll(300); // main_ajax.js 로 대체되었다.
 });
 
-$('#item_list').scroll(function() { // #main_item shadow for desktop
-  scroll_style($(this).scrollTop() > 0);
-});
-
 $(window).scroll(function() { // #main_item shadow for mobile
-  scroll_style($('#main_item').offset().top < pageYOffset);
+  // scroll_style($('#main_item').offset().top < pageYOffset);
+  scroll_style(pageYOffset > 0);
 });

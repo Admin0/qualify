@@ -126,7 +126,7 @@ body.fold {
   padding: 0 1em 0 2em;
   display: flex;
   flex-flow: wrap;
-  max-height: calc(100vh - 64px - 64px);
+  /* max-height: calc(100vh - 64px - 64px); */
   overflow: auto;
 }
 
@@ -393,9 +393,9 @@ input[type="checkbox"] {
 /* ***** footer ***** */
 /* ------------------------------------------------------------------- */
 footer {
-  width: calc(100% - 300px);
+  /* width: calc(100% - 300px);
   position: absolute;
-  bottom: 0;
+  bottom: 0; */
 }
 
 /* ------------------------------------------------------------------- */
@@ -760,10 +760,5 @@ footer {
 
   #item_list section.item:last-child {
     margin-bottom: 1em;
-  }
-
-  footer {
-    position: static;
-    width: 100%;
   }
 }
