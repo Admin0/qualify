@@ -2,11 +2,15 @@
   opacity: 0;
   background: #FFFACD;
   outline: .75em solid #FFFACD;
-  transition: .25s opacity, .25s background, .25s outline;
 }
 
 .answer__quiz .q_wrap .comment {
   opacity: 0;
+}
+
+.answer__quiz .q_wrap .answer,
+.answer__quiz .q_wrap .comment {
+  transition: .25s opacity, .25s background, .25s outline;
 }
 
 .answer__quiz .q_wrap:hover .answer,

@@ -137,7 +137,7 @@
   font-size: 12px;
 }
 
-img {
+img, svg, object {
   max-width: 100%;
   display: block;
   /* cursor: pointer; */
