@@ -672,18 +672,6 @@ footer {
     text-align: center;
   }
 
-  h1 #percentage {
-    margin: 0
-  }
-
-  h1 #percentage:before {
-    content: ""
-  }
-
-  .percentage {
-    display: none
-  }
-
   #sub_header {
     padding-left: 0 !important;
     width: 100% !important
@@ -759,6 +747,7 @@ footer {
     height: inherit;
     padding: 0 1em;
     overflow: initial;
+    max-height: initial;
   }
 
   #item_list section.item {
