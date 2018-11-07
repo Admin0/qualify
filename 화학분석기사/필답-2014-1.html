@@ -88,7 +88,15 @@
       van Deemter 식인 H=A+B/u+Cu을 이용하여 액체 크로마토그래피와 기체 크로마토그래피의 van Deemter 도시를 비교하시오.
     </div>
     <div class="answer">
-      <img src="/qualify/화학분석기사/필답-2014-1-4.png" alt="">
+    <div class="img" id="필답-2014-1-4" style="width:500px;"> </div>
+    <script>
+      var ajax_4 = new XMLHttpRequest();
+      ajax_4.open("GET", '/qualify/화학분석기사/필답-2014-1-4.svg', true);
+      ajax_4.send();
+      ajax_4.onload = function(e) {
+        document.querySelector('#필답-2014-1-4').innerHTML=ajax_4.responseText;
+      }
+    </script>
       H값이 최소가 되는 지점의 이동상 흐름속도는 LC가 GC보다 작다. 최소점이 나타나는 것은 주로 세로확산 때문이다. 기체의 확산계수가 액체보다 더 크기 때문에 LC에서 더 낮은 흐름속도에서 최소점이 나타난다.
     </div>
     <div class="comment">
@@ -232,7 +240,16 @@
   <div class="q_wrap">
     <div class="question">
       약산을 강염기로 적정한 아래의 적정곡선으로부터 이 약산의 pKa값을 구하라. 근거는?<br>
-      <object type="image/svg+xml" data="/qualify/화학분석기사/필답-2014-1-14.svg" style="width:300px;">
+      <div class="img" id="필답-2014-1-14" style="width:300px;"> </div>
+      <script>
+        var ajax_14 = new XMLHttpRequest();
+        ajax_14.open("GET", '/qualify/화학분석기사/필답-2014-1-14.svg', true);
+        ajax_14.send();
+        ajax_14.onload = function(e) {
+          document.querySelector('#필답-2014-1-14').innerHTML=ajax_14.responseText;
+        }
+      </script>
+      <!-- <object type="image/svg+xml" data="/qualify/화학분석기사/필답-2014-1-14.svg" style="width:300px;"> -->
     </div>
     <div class="answer">
       적정반응 $\ce{HA + NaOH → NaA + H2O}$<br>

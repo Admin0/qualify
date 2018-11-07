@@ -35,6 +35,9 @@
   outline-color: #424242;
 }
 
+.general__dark .contents .img,
+.general__dark .contents img, 
+.general__dark .contents svg, 
 .general__dark .contents object {
   fill: rgb(189, 193, 198);
 }
