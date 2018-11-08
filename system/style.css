@@ -126,7 +126,7 @@ body.fold {
   padding: 0 1em 0 2em;
   display: flex;
   flex-flow: wrap;
-  max-height: calc(100vh - 64px - 64px);
+  /* max-height: calc(100vh - 64px - 64px); */
   overflow: auto;
 }
 
