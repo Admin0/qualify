@@ -137,11 +137,13 @@
   font-size: 12px;
 }
 
-img {
+.img, img, svg, object {
   max-width: 100%;
   display: block;
+  height: inherit;
   /* cursor: pointer; */
   margin: auto;
+  transition: .25s fill;
 }
 
 /* ***** mobile ***** */

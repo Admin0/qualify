@@ -30,6 +30,7 @@ function after_load(full_id) {
   // x axis scroller reload (sub__scroll.js)
   if (!is_mobile) {
     $('.contents').hScroll(300); // You can pass (optionally) scrolling amount
+    scroll_style(false);
   }
 }
 

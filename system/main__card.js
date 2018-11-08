@@ -1,7 +1,6 @@
 var is_card = document.querySelector("#main_item") == null;
 
 if (is_card) {
-  console.log("Sex");
   const card_ad =
     '<ins class="adsbygoogle"' +
     '     style="display:block; text-align:center;"' +

@@ -35,6 +35,13 @@
   outline-color: #424242;
 }
 
+.general__dark .contents .img,
+.general__dark .contents img, 
+.general__dark .contents svg, 
+.general__dark .contents object {
+  fill: rgb(189, 193, 198);
+}
+
 /* nav */
 .general__dark nav {
   border-right: solid 1px var(--black-transparent-12, rgba(30, 34, 37, .45));

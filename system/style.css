@@ -393,9 +393,9 @@ input[type="checkbox"] {
 /* ***** footer ***** */
 /* ------------------------------------------------------------------- */
 footer {
-  width: calc(100% - 300px);
+  /* width: calc(100% - 300px);
   position: absolute;
-  bottom: 0;
+  bottom: 0; */
 }
 
 /* ------------------------------------------------------------------- */
@@ -672,18 +672,6 @@ footer {
     text-align: center;
   }
 
-  h1 #percentage {
-    margin: 0
-  }
-
-  h1 #percentage:before {
-    content: ""
-  }
-
-  .percentage {
-    display: none
-  }
-
   #sub_header {
     padding-left: 0 !important;
     width: 100% !important
@@ -759,6 +747,7 @@ footer {
     height: inherit;
     padding: 0 1em;
     overflow: initial;
+    max-height: initial;
   }
 
   #item_list section.item {
@@ -771,10 +760,5 @@ footer {
 
   #item_list section.item:last-child {
     margin-bottom: 1em;
-  }
-
-  footer {
-    position: static;
-    width: 100%;
   }
 }

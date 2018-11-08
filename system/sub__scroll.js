@@ -1,6 +1,6 @@
 function scroll_style(is_true) {
   if (is_true) {
-    if (!is_mobile && $(window).width() > 1080) {
+    if (!is_mobile && $(window).width() > 1080 && $('.contents').length != 0) {
       $('nav').addClass('shadow-right');
     }
     $('header').addClass('shadow-bottom');
@@ -28,9 +28,10 @@ jQuery(function($) {
 });
 
 $(document).ready(function() {
-  // main_ajax.js 로 대체되었다.
+  // $('.contents').hScroll(300); // main_ajax.js 로 대체되었다.
 });
 
-$(window).scroll(function() {
-  scroll_style($('#main_item').offset().top < pageYOffset);
+$(window).scroll(function() { // #main_item shadow for mobile
+  // scroll_style($('#main_item').offset().top < pageYOffset);
+  scroll_style(pageYOffset > 0);
 });
