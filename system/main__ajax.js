@@ -38,10 +38,9 @@ function load(id, content) {
   var full_id = id + "-" + content;
   $.ajax({
     type: 'get',
-    url: id + "/" + content + ".html",
+    url: content != null ? id + "/" + content + ".html" : id + ".html",
     dataType: 'html',
     success: function(data) {
-
       $("#main_item").html("");
       $('#main_item').append(data);
       after_load(full_id);
