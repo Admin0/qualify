@@ -36,8 +36,8 @@
 }
 
 .general__dark .contents .img,
-.general__dark .contents img, 
-.general__dark .contents svg, 
+.general__dark .contents img,
+.general__dark .contents svg,
 .general__dark .contents object {
   fill: rgb(189, 193, 198);
 }
@@ -72,7 +72,9 @@
 .general__dark a {
   color: #f0f0f0;
 }
-
+.general__dark h3 a {
+  color: rgb(189, 193, 198);
+}
 .general__dark a:hover {
   background: rgba(50, 54, 57, 1);
 }

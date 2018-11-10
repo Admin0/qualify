@@ -255,7 +255,7 @@ a {
   margin: -.75em
 }
 
-a:hover {
+.contents a:hover {
   box-shadow: 0 2px 5px rgba(0, 0, 0, .25);
   background: #fff;
   position: relative;
@@ -272,7 +272,7 @@ li a:hover {
   background: rgba(0, 0, 0, .05);
 }
 
-h2, h3 {
+h2, h3, h2 a, h3 a {
   color: rgba(0, 0, 0, .54);
   /* transition: .25s; */
 }
