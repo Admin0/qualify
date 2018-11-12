@@ -78,13 +78,14 @@
 
 .q_wrap .question.sub {
   position: relative;
+  margin-top: 1.5em;
 }
 
 .q_wrap .question.sub::before {
   content: "("counter(question_sub) ") ";
   counter-increment: question_sub;
   position: absolute;
-  right: calc(100% + .5em)
+  right: calc(100% + .5em);
 }
 
 .q_wrap .answer {
@@ -123,7 +124,7 @@
 
 .contents table th,
 .contents table td {
-  border: 1px solid #000;
+  border: 1px solid;
   padding: 0.25em 0.75em;
 }
 
@@ -139,7 +140,7 @@
 
 .img, img, svg, object {
   max-width: 100%;
-  display: block;
+  display: inline-block;
   height: inherit;
   /* cursor: pointer; */
   margin: auto;
