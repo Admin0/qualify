@@ -29,9 +29,9 @@ if (is_card) {
 
 // load svg
 
-document.querySelectorAll('.svg').forEach(function(element) {
+document.querySelectorAll('.load').forEach(function(element) {
   var ajax = new XMLHttpRequest();
-  ajax.open("GET", element.innerText, true);
+  ajax.open("GET", '/qualify/' + element.innerText, true);
   ajax.send();
   ajax.onload = function(e) {
     element.innerHTML = ajax.responseText;
