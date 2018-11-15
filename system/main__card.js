@@ -26,3 +26,15 @@ if (is_card) {
   document.querySelector('.contents').insertAdjacentHTML('afterend', card_ad + card_footer_html);
   (adsbygoogle = window.adsbygoogle || []).push({});
 }
+
+// load svg
+
+document.querySelectorAll('.svg').forEach(function(element) {
+  var ajax = new XMLHttpRequest();
+  ajax.open("GET", element.innerText, true);
+  ajax.send();
+  ajax.onload = function(e) {
+    element.innerHTML = ajax.responseText;
+  }
+});
+// <div class="svg">/qualify/위험물산업기사/chemical__2,4,6-Trinitrophenol(picric_acid).svg</div>

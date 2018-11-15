@@ -138,7 +138,7 @@
   font-size: 12px;
 }
 
-.img, img, svg, object {
+.img, img, .svg, svg, object {
   max-width: 100%;
   display: inline-block;
   height: inherit;
