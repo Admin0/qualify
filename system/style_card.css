@@ -142,7 +142,6 @@
   max-width: 100%;
   display: inline-block;
   height: inherit;
-  /* cursor: pointer; */
   margin: auto;
   transition: .25s fill;
 }

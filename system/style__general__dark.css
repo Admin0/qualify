@@ -40,7 +40,6 @@
 .general__dark .contents svg,
 .general__dark .contents object {
   fill: rgb(189, 193, 198);
-  transition: .3s fill;
 }
 
 /* nav */
