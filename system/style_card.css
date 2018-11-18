@@ -140,9 +140,8 @@
 
 .img, img, .svg, svg, object, .load {
   max-width: 100%;
-  display: inline-block;
   height: inherit;
-  margin: auto;
+  margin-left: 0;
   transition: .25s fill;
 }
 
