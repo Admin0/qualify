@@ -37,4 +37,4 @@ document.querySelectorAll('.load').forEach(function(element) {
     element.innerHTML = ajax.responseText;
   }
 });
-// <div class="svg">/qualify/위험물산업기사/chemical__2,4,6-Trinitrophenol(picric_acid).svg</div>
+// <div class="svg">위험물산업기사/chemical__2,4,6-Trinitrophenol(picric_acid).svg</div>
