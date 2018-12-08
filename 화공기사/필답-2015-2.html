@@ -3,14 +3,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" defer></script>
 <script src="/qualify/system/sub__mathjax.js" defer></script>
 
-<div class="contents" style="display:none;">
+<div class="contents">
 
   <div class="q_wrap">
     <div class="question">
-
+      비중 $1.6$인 액체를 관을 통해 $100\ m$ 위의 탱크로 유출한다. 평균유속은 $10\ m/s$이고 점도는 $10^{-2}\ kg/m\cdot s$ 이다. 유로는 총 $200\ m$에 달하고 관 직경은 $0.125\ m$, 기계의 효율은 $70\%$이다. 확대 손실이나 축소 손실은 없다고 할 때, $W_p$ 의 값은? ($J/kg$.&nbsp;단, $f = 0.007$ 이다.)&nbsp;(4점)
     </div>
     <div class="answer">
-
+      $\ce{\eta W_{p} =\cfrac{\Delta P}{\rho } +\cfrac{\Delta u^{2}}{2} +g\Delta Z+h_{f} =0.7\cdot W_{p} =0&nbsp;+\cfrac{10^{2} \ \pu{m^{2} /s^{2}}}{2} +9.8\ m/s^{2} \cdot 100\ m\ +h_{f} 에서,\\
+      $h_{f} = 4f$\cfrac{L}{D}\cfrac{u^{2}}{2} =\begin{array}{ c|c|c|c } 4 &amp; 0.007 &amp; 200\ m &amp; 10^{2} \ m^{2}\\ \hline &amp;&nbsp; &amp; 0.125\ m &amp; 2\ s^{2} \end{array} =2240\ m^{2}/s^{2} 이므로, \\
+      W_{p} =( 50+980+2240) /0.7=4671.43\ J/kg}$
     </div>
     <div class="comment">
       $\ce{}$
@@ -19,7 +21,18 @@
 
   <div class="q_wrap">
     <div class="question">
+      물이 $10\ m$짜리 유로를 내경 $10\ mm$인 관내를 통해 유속 $0.1\ m/s$로 흐른다. 글로브 밸브는 $1$개 있으며 값이 $10$, 엘보우는 $2$개 있으며 값이 $0.9$이다. 이 관을 통과하는 유체의 손실수두($h_f$)는? (5점)
+    </div>
+    <div class="answer">
+      <p style="margin-left: 2em;">$h_f = ({4 f {L \over D} + 10 + 0.9 \times 2}){u^2 \over 2} = 0.379 J/kg$</p>
+    </div>
+    <div class="comment">
+      $\ce{}$ </div>
+  </div>
 
+  <div class="q_wrap">
+    <div class="question">
+      증류탑에서 환류비를 증가시키면 제품의 순도는 (<u>높아</u>, 낮아)지고 유출액량은 (증가, <u>감소</u>)한다. 이때 환류비가 증가할수록 단수는 (증가, <u>감소</u>)하며 일정한 처리량을 위해 탑 지름이 (<u>증가</u>, 감소)한다. (3점)
     </div>
     <div class="answer">
 
@@ -30,21 +43,10 @@
 
   <div class="q_wrap">
     <div class="question">
-
+      $A$, $B$두 유체를 섞은 혼합액이 있다. $A$의 증기압은 $2\ atm$이고 몰분율은 $0.4$, $B$는 $1\ atm$이고 몰분율은 $0.6$이다. 전압은 어떻게 되는가? (3점)
     </div>
     <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$ </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
-    </div>
-    <div class="answer">
-
+      <p style="margin-left: 2em;">$P_{total} = 2\ atm \times 0.4 + 1\ atm \times 0.6 = 1.4\ atm$</p>
     </div>
     <div class="comment">
       $\ce{}$
@@ -53,10 +55,35 @@
 
   <div class="q_wrap">
     <div class="question">
+      (5점)
+    </div>
+    <div class="q_wrap sub">
+      <div class="question sub">
+        키르히호프 식을 쓰고 그 변수의 의미도 같이 설명하라.
+      </div>
+      <div class="answer sub">
+        $\begin{array}{l} \cfrac{\omega _{1}}{\alpha _{1}} =\cfrac{\omega _{2}}{\alpha _{2}}\\ \omega =복사능,\ \alpha =흡수능 \end{array}$
+      </div>
+      <div class="question sub">
+        키르히호프 식이 의미하는 바를 서술하라.
+      </div>
+      <div class="answer sub">
+        온도가 평형인 상태에서 흡수율에 대한 복사의 비는 그 물체의 온도에 비례한다.
+      </div>
+    </div>
+  </div>
 
+  <div class="q_wrap">
+    <div class="question">
+      내경이 $0.15\ m$인 글로브 밸브가 $60\ L/s$의 유량을 통과시킨다. 손실계수&nbsp;$k_f=10$일 때 상당 길이 $L_e$ 값은? (단, 동점도는 $1.01\times1^-5m^2/s$, 마찰계수 $f=0.0791Re^{-0.25}$) (5점)
     </div>
     <div class="answer">
-
+      <p>표면마찰과 밸브마찰이 같을 때 $L=L_{e}$ 이므로,</p>
+      <p style="margin-left: 2em;">$Re=\cfrac{D\nu \rho }{\mu } =\begin{array}{ c|c|c|c|c }0.15\ m &amp; 60\ L &amp; m^{3} &amp; 4 &amp; s\\\hline &amp; s &amp; 1000\ L &amp; \pi \cdot 0.15^{2} \ m^{2} &amp; 1.01\times 10^{-5} \ m^{2}\end{array}
+        =50425.33$ 이고,</p>
+      <p style="margin-left: 2em;">$f=0.0791\times 50425.33^{-0.25} =0.0052785$ 이므로,</p>
+      <p style="margin-left: 2em;">$4f\cfrac{L_{e}}{D}\cfrac{u^{2}}{2} =k_{f}\cfrac{u^{2}}{2}$ 에서, $4f\cfrac{L_{e}}{D} =k_{f}$ 이다.</p>
+      <p style="margin-left: 2em;">$\therefore L_{e} =\begin{array}{ c|c|c|c }10 &amp; 0.15\ m &amp;&nbsp; &amp; \\\hline &amp;&nbsp; &amp; 0.0052785 &amp; 4\end{array} =71.04\ m$</p>
     </div>
     <div class="comment">
       $\ce{}$
@@ -65,10 +92,15 @@
 
   <div class="q_wrap">
     <div class="question">
-
+      $20^\circ C, 760\ mmHg$의 공기를 지름 $1\ m$인 송풍기를 통해 $7\ m/s$로 흐르게 한다. 총 길이가 $30\ m$일 때 일률을 $Watt$로 나타내면? (기체의 밀도는 $1.205\ kg/m^3$, 마찰계수는 $0.0045$, 점도는 $0.0181\ cP$, 모터의 효율은 $0.9$이고 송풍기의 효율은 $0.2$이다.) (5점)
     </div>
     <div class="answer">
-
+      <p style="margin-left: 2em;">$Re=\cfrac{D\nu \rho }{\mu } =\begin{array}{ c|c|c|c }1\ m &amp; 7\ m &amp; 1.205\ kg &amp; m\cdot s\\\hline &amp; s &amp; m^{3} &amp; 0.0000181\ kg\end{array} =466022 &gt;4000$ 이므로 난류 흐름이고,</p>
+      <p style="margin-left: 2em;">$h_{f} =4f\cfrac{L}{D}\cfrac{u^{2}}{2} =\begin{array}{ c|c|c|c }4 &amp; 0.0045 &amp; 30m &amp; 7^{2} \ m^{2}\\\hline &amp;&nbsp; &amp; 1m &amp; 2\ s^{2}\end{array} =13.23\ J/kg$ 이다.</p>
+      <p style="margin-left: 2em;">$\eta W_{p} =\cfrac{\Delta P}{\rho } +\cfrac{\Delta u^{2}}{2} +g\Delta Z+h_{f} =( 0.9\times 0.2) \cdot W_{p} =( 0+24.5+0+13.23) \ J/kg$에서,</p>
+      <p style="margin-left: 2em;">$W_{p} =\cfrac{( 24.5+13.23) \ J/kg}{0.9\times 0.2} =209.61\ J/kg=\begin{array}{ c|c|c|c }209.61\ J &amp; 7\ m &amp; \pi \cdot 1^{2} \ m^{2} &amp; 1.205\ kg\\\hline kg &amp; s &amp; 4 &amp; m^{3}\end{array}
+        =1388.63\ W$</p>
+      <p><br /></p>
     </div>
     <div class="comment">
       $\ce{}$
@@ -77,10 +109,16 @@
 
   <div class="q_wrap">
     <div class="question">
-
+      안지름이 $200\ mm$인 유로에 밀도가 $1.2\ kg/m^3$인 공기가 $1,000\ m^3/hr$로 흐른다. 오리피스의 지름이 $120\ mm$이고 마노미터 유체는 물일 때 차압된 높이는? (단, $ C_o = 0.65 $) (4점)
     </div>
     <div class="answer">
-
+      <p style="margin-left: 2em;">유량 $&nbsp;\begin{equation*} Q_{_{o}} =A\cdot u_{o} =\cfrac{\pi \cdot D^{2}_{o}}{4}&nbsp; \cfrac{C_{o}}{\sqrt{1-m^{2}}}&nbsp;\sqrt{\cfrac{2g( \rho '-\rho )}{\rho } \cdot R} =1000\ m^{3} /hr\ =\ 0.278\
+        m^{3} /s\end{equation*} $</p>
+      <p style="margin-left: 2em;">이고, 개구비 $ \begin{equation*} m\ =\frac{D^{2}_{o}}{D^{2}_{i}} =0.36 \end{equation*} $</p>
+      <p style="margin-left: 2em;">이므로, (1), (2)에서,</p>
+      <p style="margin-left: 2em;">$ \begin{equation*} R\ =\ \left(\begin{array}{ c|c|c } 0.278\ m^{3} &amp; 4 &amp; \sqrt{1-0.36^{2}}\\ \hline s &amp; \pi \cdot ( 0.12)^{2} \ m^{2} &amp; 0.65 \end{array}\right)^{2} \times \begin{array}{ c|c } s^{2}
+        &amp; 1.2\ kg /m^{3}\\ \hline 2\cdot
+        9.8\ m &amp; ( 1000-1.2) \ kg/m^{3} \end{array} =0.0763\ m \end{equation*} $</p>
     </div>
     <div class="comment">
       $\ce{}$
@@ -89,10 +127,11 @@
 
   <div class="q_wrap">
     <div class="question">
-
+      내경이 $5\ \pu{cm}$인 관에서 흐르는 유체가 층류에서 난류로 변할 때의 유속은?<br />(유체의 밀도는 $0.789\ \pu{g/cm^3}$이고 점도는 $1.25\ \pu{cP}$이다. 임계 레이놀즈 수는 $2,100$) (4점)
     </div>
     <div class="answer">
-
+      $Re=\cfrac{D\nu \rho }{\mu } =2100 \text{이므로,} \\
+      \ce{u=\begin{array}{ c|c|c|c }2100 &amp;&nbsp; &amp; cm^{2} &amp; 0.0125\ g\\\hline &amp; 5\ cm &amp; 0.789\ g &amp; cm\cdot s\end{array} =6.65\ cm/s}$
     </div>
     <div class="comment">
       $\ce{}$
@@ -101,10 +140,10 @@
 
   <div class="q_wrap">
     <div class="question">
-
+      허용 응력이 $200\ \pu{kg_F/cm^2}$이고 작업 응력이 $8\ \pu{kg_F/cm^3}$일 때 $\text{Schedule No.}$는? (3점)
     </div>
     <div class="answer">
-
+      $\text{Schedule No.} = \cfrac{\text{작업 응력}}{\text{허용 응력}} \times 1000 = \cfrac{8\ \pu{kg_F/cm^3}}{200\ \pu{kg_F/cm^3}}\times 1000 = 40 $
     </div>
     <div class="comment">
       $\ce{}$
@@ -113,10 +152,10 @@
 
   <div class="q_wrap">
     <div class="question">
-
+      $k$가 $0.2\ W/m\cdot ℃$ 인 관을 석면이 둘러싸고 있다. 실내의 공기는 $25℃$&nbsp;이고 $h$는 $3\&nbsp;W/m^2\cdot ℃$ 일 때, 임계절연 반지름은? (5점)
     </div>
     <div class="answer">
-
+      $r=\cfrac{3\ W/m^{2} \ ℃&nbsp;}{0.2\ W/m\ ℃&nbsp;}=15\ m$
     </div>
     <div class="comment">
       $\ce{}$
@@ -125,10 +164,13 @@
 
   <div class="q_wrap">
     <div class="question">
-
+      $10\ cm$ 물을 총 길이 $20\ m$인 유로를 따라 $2\ m/s$로 운반한다. 이 때 $f=\frac{16}{Re}$로 간주하면 $kg_f\cdot m/kg$은? (4점)
     </div>
     <div class="answer">
-
+      <p style="margin-left: 2em;">$Re=\cfrac{D\nu \rho }{\mu } =\begin{array}{ c|c|c|c }10\ cm &amp; 200\ cm &amp; 1\ g &amp; cm\cdot s\\\hline &amp; s &amp; cm^{3} &amp; 0.01\ g\end{array} =200000$ 에서,</p>
+      <p style="margin-left: 2em;">$f=\cfrac{16}{Re} =0.00008$ 이고,</p>
+      <p style="margin-left: 2em;">$h_{f} =4f\cfrac{L}{D}\cfrac{u^{2}}{2} =\begin{array}{ c|c|c|c|c }4 &amp; 0.00008 &amp; 30\ cm &amp; 20^{2} \ m^{2} &amp; kg_{f}\\\hline &amp;&nbsp; &amp; 10\ cm &amp; 2\ s^{2} &amp; 9.8\ N\end{array} =0.01306\
+        kg_{f} \cdot m/kg$&nbsp;&nbsp;&nbsp;&nbsp;</p>
     </div>
     <div class="comment">
       $\ce{}$
@@ -137,158 +179,14 @@
 
   <div class="q_wrap">
     <div class="question">
-
+      비중이 $0.8\ g/cm^3$이고 점도가 $2\ cP$인 유속 $20\ cm/s$의 액체를 다음 그림과 같이 외경 $5\ cm$, 내경 $3\ cm$인 이중 원관을 통해서 흘려보낸다. $Re$ 값을 구하고 층류인지, 난류인지 구하여라. (5점)
     </div>
     <div class="answer">
-
+      <p style="margin-left: 2em;">$&nbsp;Re=\cfrac{D\nu \rho }{\mu } =\begin{array}{ c|c|c|c }2\ cm &amp; 20\ cm &amp; 0.8\ g &amp; cm\cdotp s\\\hline &amp; s &amp; cm^{3} &amp; 0.02\ g\end{array} =1600&nbsp;$</p>
+      <p style="margin-left: 2em;">$1600 &lt; 2100 $ 이므로 층류.</p>
     </div>
     <div class="comment">
       $\ce{}$
     </div>
   </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
 </div>
-
-<script type="text/javascript" async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
-
-  MathJax.Hub.Config({
-    HTML: ["input/TeX", "output/SVG"],
-    TeX: {
-      extensions: ["AMSmath.js", "AMSsymbols.js"],
-      equationNumbers: {
-        autoNumber: "AMS"
-      }
-    },
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX", "output/SVG"],
-    tex2jax: {
-      inlineMath: [
-        ['$', '$'],
-        ["\\(", "\\)"]
-      ],
-      displayMath: [
-        ['$$', '$$'],
-        ["\\[", "\\]"]
-      ],
-      processEscapes: true
-    },
-    "HTML-CSS": {
-      availableFonts: ["TeX"],
-      linebreaks: {
-        automatic: true
-      }
-    }
-  });
-</script>
-<ol style="list-style-type: decimal;">
-  <li>비중 $1.6$인 액체를 관을 통해 $100\ m$ 위의 탱크로 유출한다. 평균유속은 $10\ m/s$이고 점도는 $10^{-2}\ kg/m\cdot s$ 이다. 유로는 총 $200\ m$에 달하고 관 직경은 $0.125\ m$, 기계의 효율은 $70\%$이다. 확대 손실이나 축소 손실은 없다고 할 때, $W_p$ 의 값은? ($J/kg$.&nbsp;단, $f = 0.007$ 이다.)&nbsp;(4점)</li>
-
-  <p style="margin-left: 2em;">$\eta W_{p} =\cfrac{\Delta P}{\rho } +\cfrac{\Delta u^{2}}{2} +g\Delta Z+h_{f} =0.7\cdot W_{p} =0&nbsp;+\cfrac{10^{2} \ m^{2} /s^{2}}{2} +9.8\ m/s^{2} \cdot 100\ m\ +h_{f}$</p>
-  <p style="margin-left: 2em;">에서,</p>
-  <p style="margin-left: 2em;">$h_{f} =4f\cfrac{L}{D}\cfrac{u^{2}}{2} =\begin{array}{ c|c|c|c } 4 &amp; 0.007 &amp; 200\ m &amp; 10^{2} \ m^{2}\\ \hline &amp;&nbsp; &amp; 0.125\ m &amp; 2\ s^{2} \end{array} =2240\ m^{2} /s^{2}$</p>
-  <p style="margin-left: 2em;">이므로,</p>
-  <p style="margin-left: 2em;">$W_{p} =( 50+980+2240) /0.7=4671.43\ J/kg$</p>
-  <p><br /></p>
-  <li>물이 $10\ m$짜리 유로를 내경 $10\ mm$인 관내를 통해 유속 $0.1\ m/s$로 흐른다. 글로브 밸브는 $1$개 있으며 값이 $10$, 엘보우는 $2$개 있으며 값이 $0.9$이다. 이 관을 통과하는 유체의 손실수두($h_f$)는? (5점)</li>
-
-  <p style="margin-left: 2em;">$h_f = ({4 f {L \over D} + 10 + 0.9 \times 2}){u^2 \over 2} = 0.379 J/kg$</p>
-  <p><br /></p>
-  <li>증류탑에서 환류비를 증가시키면 제품의 순도는 (<u>높아</u>, 낮아)지고 유출액량은 (증가, <u>감소</u>)한다. 이때 환류비가 증가할수록 단수는 (증가, <u>감소</u>)하며 일정한 처리량을 위해 탑 지름이 (<u>증가</u>, 감소)한다. (3점)</li>
-
-  <p><br /></p>
-  <li>$A$, $B$두 유체를 섞은 혼합액이 있다. $A$의 증기압은 $2\ atm$이고 몰분율은 $0.4$, $B$는 $1\ atm$이고 몰분율은 $0.6$이다. 전압은 어떻게 되는가? (3점)</li>
-
-  <p style="margin-left: 2em;">$P_{total} = 2\ atm \times 0.4 + 1\ atm \times 0.6 = 1.4\ atm$</p>
-  <p><br /></p>
-
-  <li>(5점)</li>
-  <ol style="list-style-type: upper-alpha;">
-    <li>키르히호프 식을 쓰고 그 변수의 의미도 같이 설명하라.</li>
-    <p>$\begin{array}{l} \cfrac{\omega _{1}}{\alpha _{1}} =\cfrac{\omega _{2}}{\alpha _{2}}\\ \omega =복사능,\ \alpha =흡수능 \end{array}$</p>
-    <li>키르히호프 식이 의미하는 바를 서술하라.</li>
-  <p>온도가 평형인 상태에서 흡수율에 대한 복사의 비는 그 물체의 온도에 비례한다.</p>
-  </ol>
-
-
-
-
-  <p><br /></p>
-
-  <li>내경이 $0.15\ m$인 글로브 밸브가 $60\ L/s$의 유량을 통과시킨다. 손실계수&nbsp;$k_f=10$일 때 상당 길이 $L_e$ 값은? (단, 동점도는 $1.01\times1^-5m^2/s$, 마찰계수 $f=0.0791Re^{-0.25}$) (5점)</li>
-
-  <p>표면마찰과 밸브마찰이 같을 때 $L=L_{e}$ 이므로,</p>
-<p style="margin-left: 2em;">$Re=\cfrac{D\nu \rho }{\mu } =\begin{array}{ c|c|c|c|c }0.15\ m &amp; 60\ L &amp; m^{3} &amp; 4 &amp; s\\\hline &amp; s &amp; 1000\ L &amp; \pi \cdot 0.15^{2} \ m^{2} &amp; 1.01\times 10^{-5} \ m^{2}\end{array} =50425.33$ 이고,</p>
-<p style="margin-left: 2em;">$f=0.0791\times 50425.33^{-0.25} =0.0052785$ 이므로,</p>
-<p style="margin-left: 2em;">$4f\cfrac{L_{e}}{D}\cfrac{u^{2}}{2} =k_{f}\cfrac{u^{2}}{2}$ 에서, $4f\cfrac{L_{e}}{D} =k_{f}$ 이다.</p>
-<p style="margin-left: 2em;">$\therefore L_{e} =\begin{array}{ c|c|c|c }10 &amp; 0.15\ m &amp;&nbsp; &amp; \\\hline &amp;&nbsp; &amp; 0.0052785 &amp; 4\end{array} =71.04\ m$</p>
-  <p><br /></p>
-  <li>$20^\circ C, 760\ mmHg$의 공기를 지름 $1\ m$인 송풍기를 통해 $7\ m/s$로 흐르게 한다. 총 길이가 $30\ m$일 때 일률을 $Watt$로 나타내면? (기체의 밀도는 $1.205\ kg/m^3$, 마찰계수는 $0.0045$, 점도는 $0.0181\ cP$, 모터의 효율은 $0.9$이고 송풍기의 효율은 $0.2$이다.) (5점)</li>
-
-  <p style="margin-left: 2em;">$Re=\cfrac{D\nu \rho }{\mu } =\begin{array}{ c|c|c|c }1\ m &amp; 7\ m &amp; 1.205\ kg &amp; m\cdot s\\\hline &amp; s &amp; m^{3} &amp; 0.0000181\ kg\end{array} =466022 &gt;4000$ 이므로 난류 흐름이고,</p>
-<p style="margin-left: 2em;">$h_{f} =4f\cfrac{L}{D}\cfrac{u^{2}}{2} =\begin{array}{ c|c|c|c }4 &amp; 0.0045 &amp; 30m &amp; 7^{2} \ m^{2}\\\hline &amp;&nbsp; &amp; 1m &amp; 2\ s^{2}\end{array} =13.23\ J/kg$ 이다.</p>
-<p style="margin-left: 2em;">$\eta W_{p} =\cfrac{\Delta P}{\rho } +\cfrac{\Delta u^{2}}{2} +g\Delta Z+h_{f} =( 0.9\times 0.2) \cdot W_{p} =( 0+24.5+0+13.23) \ J/kg$에서,</p>
-<p style="margin-left: 2em;">$W_{p} =\cfrac{( 24.5+13.23) \ J/kg}{0.9\times 0.2} =209.61\ J/kg=\begin{array}{ c|c|c|c }209.61\ J &amp; 7\ m &amp; \pi \cdot 1^{2} \ m^{2} &amp; 1.205\ kg\\\hline kg &amp; s &amp; 4 &amp; m^{3}\end{array} =1388.63\ W$</p>
-<p><br /></p>
-  <li>안지름이 $200\ mm$인 유로에 밀도가 $1.2\ kg/m^3$인 공기가 $1,000\ m^3/hr$로 흐른다. 오리피스의 지름이 $120\ mm$이고 마노미터 유체는 물일 때 차압된 높이는? (단, $ C_o = 0.65 $) (4점)</li>
-  <p style="margin-left: 2em;">유량 $&nbsp;\begin{equation*} \label{eq1} Q_{_{o}} =A\cdot u_{o} =\cfrac{\pi \cdot D^{2}_{o}}{4}&nbsp; \cfrac{C_{o}}{\sqrt{1-m^{2}}}&nbsp;\sqrt{\cfrac{2g( \rho '-\rho )}{\rho } \cdot R} =1000\ m^{3} /hr\ =\ 0.278\ m^{3} /s\end{equation*} $</p>
-  <p style="margin-left: 2em;">이고, 개구비 $ \begin{equation*} m\ =\frac{D^{2}_{o}}{D^{2}_{i}} =0.36 \end{equation*} $</p>
-  <p style="margin-left: 2em;">이므로, (1), (2)에서,</p>
-  <p style="margin-left: 2em;">$ \begin{equation*} R\ =\ \left(\begin{array}{ c|c|c } 0.278\ m^{3} &amp; 4 &amp; \sqrt{1-0.36^{2}}\\ \hline s &amp; \pi \cdot ( 0.12)^{2} \ m^{2} &amp; 0.65 \end{array}\right)^{2} \times \begin{array}{ c|c } s^{2} &amp; 1.2\ kg /m^{3}\\ \hline 2\cdot
-    9.8\ m &amp; ( 1000-1.2) \ kg/m^{3} \end{array} =0.0763\ m \end{equation*} $</p>
-  <p><br /></p>
-
-  <li>내경이 $5\ cm$인 관에서 흐르는 유체가 층류에서 난류로 변할 때의 유속은?<br />(유체의 밀도는 $0.789\ g/cm^3$이고 점도는 $1.25\ cP$이다. 임계 레이놀즈 수는 $2,100$) (4점)</li>
-  <p style="margin-left: 2em;">$Re=\cfrac{D\nu \rho }{\mu } =2100$ 이므로,</p>
-<p style="margin-left: 2em;">$u=\begin{array}{ c|c|c|c }2100 &amp;&nbsp; &amp; cm^{2} &amp; 0.0125\ g\\\hline &amp; 5\ cm &amp; 0.789\ g &amp; cm\cdot s\end{array} =6.65\ cm/s$</p>
-
-
-  <li>허용 응력이 $200\ kg_f/cm^2$이고 작업 응력이 $8\ kg_f/cm^3$일 때 $Schedule No.$는? (3점)</li>
-  <p style="margin-left: 2em;">$&nbsp;Schedule\ No. = \cfrac{작업\ 응력}{허용\ 응력} \times 1000 = \cfrac{8\ kg_f/cm^3}{200\ kg_f/cm^3}\times 1000 = 40 $</p>
-  <p><br /></p>
-
-
-  <li>$k$가 $0.2\ W/m\cdot ℃$ 인 관을 석면이 둘러싸고 있다. 실내의 공기는 $25℃$&nbsp;이고 $h$는 $3\&nbsp;W/m^2\cdot ℃$ 일 때, 임계절연 반지름은? (5점)</li>
-  <p style="margin-left: 2em;">$r=\cfrac{3\ W/m^{2} \ ℃&nbsp;}{0.2\ W/m\ ℃&nbsp;}=15\ m$</p>
-  <p><br /></p>
-  <p><br /></p>
-
-  <li>$10\ cm$ 물을 총 길이 $20\ m$인 유로를 따라 $2\ m/s$로 운반한다. 이 때 $f=\frac{16}{Re}$로 간주하면 $kg_f\cdot m/kg$은? (4점)</li>
-  <p style="margin-left: 2em;">$Re=\cfrac{D\nu \rho }{\mu } =\begin{array}{ c|c|c|c }10\ cm &amp; 200\ cm &amp; 1\ g &amp; cm\cdot s\\\hline &amp; s &amp; cm^{3} &amp; 0.01\ g\end{array} =200000$ 에서,</p>
-<p style="margin-left: 2em;">$f=\cfrac{16}{Re} =0.00008$ 이고,</p>
-<p style="margin-left: 2em;">$h_{f} =4f\cfrac{L}{D}\cfrac{u^{2}}{2} =\begin{array}{ c|c|c|c|c }4 &amp; 0.00008 &amp; 30\ cm &amp; 20^{2} \ m^{2} &amp; kg_{f}\\\hline &amp;&nbsp; &amp; 10\ cm &amp; 2\ s^{2} &amp; 9.8\ N\end{array} =0.01306\ kg_{f} \cdot m/kg$&nbsp;&nbsp;&nbsp;&nbsp;</p>
-  <p><br /></p>
-
-
-
-  <li>비중이 $0.8\ g/cm^3$이고 점도가 $2\ cP$인 유속 $20\ cm/s$의 액체를 다음 그림과 같이 외경 $5\ cm$, 내경 $3\ cm$인 이중 원관을 통해서 흘려보낸다. $Re$ 값을 구하고 층류인지, 난류인지 구하여라. (5점)</li>
-
-  <p style="margin-left: 2em;">$&nbsp;Re=\cfrac{D\nu \rho }{\mu } =\begin{array}{ c|c|c|c }2\ cm &amp; 20\ cm &amp; 0.8\ g &amp; cm\cdotp s\\\hline &amp; s &amp; cm^{3} &amp; 0.02\ g\end{array} =1600&nbsp;$</p>
-  <p style="margin-left: 2em;">$1600 &lt; 2100 $ 이므로 층류.</p>
-  <p><br /></p>
-</ol>
-<p>끝.</p>
-<h2>더 보기: <a href="/890" target="_blank" class="tx-link">화공기사 실기</a></h2><p><br /></p>
