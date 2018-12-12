@@ -3,14 +3,20 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" defer></script>
 <script src="/qualify/system/sub__mathjax.js" defer></script>
 
-<div class="contents" style="display:none;">
+<div class="contents">
 
   <div class="q_wrap">
     <div class="question">
-
+      복사능 $0.6$, 전열면적 $\pu{3 m^2}$, 온도 $100℃$ 인 물질이 복사능 $0.9$, 전열면적 $\pu{10 m^2}$, 온도 $300℃$ 인 물질 속에 둘러싸여 복사 전열이 일어날 때의 복사에너지의 크기는?
     </div>
     <div class="answer">
-
+      $\epsilon _{1} =0.6,\ A_{1} =\pu{3 m^{2}} ,\ T_{1} =\pu{373 K} \\
+      \epsilon _{2} =0.9,\ A_{2} =\pu{10 m^{2}} ,\ T_{2} =\pu{573 K} \\
+      F_{1, 2} =\cfrac{1}{\tfrac{1}{f_{1, 2}} +\left(\tfrac{1}{\epsilon _{1}} -1\right) +\tfrac{A_{1}}{A_{2}}\left(\tfrac{1}{\epsilon _{2}} -1\right)}\ \text{에서,} \\
+      \because A_{1} \text{이}\ A_{2} \text{만 볼 경우}\ f_{1,2} =1 \\
+      F_{1, 2} =\cfrac{1}{\tfrac{1}{1} +\left(\tfrac{1}{0.6} -1\right) +\tfrac{\pu{3 m^{2}}}{\pu{10 m^{2}}}\left(\tfrac{1}{0.9} -1\right)} =\cfrac{10}{17} \\
+      q=4.88A_{1} F_{1, 2}\left[\left(\cfrac{T_{1}}{100}\right)^{4} -\left(\cfrac{T_{2}}{100}\right)^{4}\right] =\begin{array}{ c|c|c } \pu{4.88 kcal} & \pu{3 m^{2}} & 10\\ \hline \pu{m^{2} \cdotp hr\cdotp K^{4}}
+      & & 17<br />\end{array} \times \left[\left(\cfrac{\pu{373 K}}{100}\right)^{4} -\left(\cfrac{\pu{573 K}}{100}\right)^{4}\right] =\pu{7616.51 kcal/hr}$
     </div>
     <div class="comment">
       $\ce{}$
@@ -19,10 +25,14 @@
 
   <div class="q_wrap">
     <div class="question">
-
+      흡수탑에서 기체의 흡수를 증가시키는 3가지 방법은?
     </div>
     <div class="answer">
-
+      <ol style="list-style-type: decimal;">
+        <li>$k_{L} ,\ k_{G}$ 값을 크게 한다. $( k_{L} =\text{총괄 액상 물질 전달 계수},\ k_{G} =\text{총괄 기체 물질 전달 계수})$</li>
+        <li>기상과 액상의 접촉면적 및 접촉시간을 크게 한다.</li>
+        <li>농도차나 분압차를 크게 한다.</li>
+      </ol>
     </div>
     <div class="comment">
       $\ce{}$ </div>
@@ -30,10 +40,13 @@
 
   <div class="q_wrap">
     <div class="question">
-
+      물이 있는 탱크의 높이가 $\pu{100 cm}$ 일 때 하부압력은? ($\pu{kg_f/cm^2}$)
     </div>
     <div class="answer">
-
+      <p style="margin-left: 2em;">$P=P_{0} +\Delta P,\ \Delta P=\rho gh$</p>
+      <p style="margin-left: 2em;">$P=\begin{array}{ c|c }<br />\pu{1 atm} &amp; \pu{101325 Pa}\\<br />\hline<br />&nbsp;&amp; \pu{atm}<br />\end{array} \ +\ \begin{array}{ c|c|c }<br />\pu{1000 kg} &amp; \pu{9.8 m} &amp; \pu{1 m}\\<br />\hline<br />\pu{m^{3}} & \pu{s} & <br />\end{array}
+        =\pu{111125 Pa}$ 에서,</p>
+      <p style="margin-left: 2em;">$\begin{array}{ c|c|c }<br />\pu{111125 kg} &amp; \pu{kg_f} & (\pu{1m})^{2}\\<br />\hline<br />m\cdotp s^{2} &amp; 9.8\ N &amp; ( 100\ cm)^{2}<br />\end{array} =1.13\ kg_{f} /cm^{2}$</p>
     </div>
     <div class="comment">
       $\ce{}$ </div>
@@ -41,7 +54,111 @@
 
   <div class="q_wrap">
     <div class="question">
+      펌프 효율 ($η$) $50\%$, 비중 $0.9$, 높이 $25\ m$, 유량 $30\ m3/hr$, 지름 $0.01\ m$ 일 때 펌프의 동력은? ($hp$)
+    </div>
+    <div class="answer">
+      <p style="margin-left: 2em;">$\eta W_{p} =\cfrac{\Delta P}{\rho } +\cfrac{\Delta u^{2}}{2} +g\Delta Z+h_{f}$ 에서,</p>
+      <p style="margin-left: 2em;">$0.8\times W_{p} =[ 0] +\left[\cfrac{9.8\ m}{s} \times 25\ m\right] +\left[\cfrac{( 106.1033\ m/s)^{2}}{2}\right] +[ 0] =599.38\ kg_{f} \cdot m/s$이므로,</p>
+      <p style="margin-left: 2em;">$W_{p} =\begin{array}{ c|c|c|c|c }<br />599.38\ kg_{f} \cdot m &amp; 30\ m^{3} &amp; hr &amp; 900\ kg &amp; \\<br />\hline<br />s &amp; hr &amp; 3600\ s &amp; m^{3} &amp; 0.5<br />\end{array} =8990.7\ kg_{f} \cdot
+        m/s$</p>
+      <p style="margin-left: 2em;">$\therefore W_{p} =\begin{array}{ c|c }<br />8990.7\ kg_{f} \cdot m &amp; hp\\<br />\hline<br />s &amp; 76\ kg_{f} \cdot m/s<br />\end{array} =118.30\ hp$</p>
+      <p style="margin-left: 2em;"><br /></p>
+    </div>
+    <div class="comment">
+      $\ce{}$
+    </div>
+  </div>
 
+  <div class="q_wrap">
+    <div class="question">
+      정상상태이고 관경이 일정한 관 입구에서의 압력은 $\ 50kN/m^2$, 출구에서의 압력은 $90\ kN/m^2$ 이다.&nbsp; &nbsp;관의 길이는 $400\ m$, 높이차는 $10\ m$ 이고, 레이놀즈수는 $40000$ 이다.&nbsp; &nbsp;펌프가 한 일이 $150\ J/kg$ 일 때, 마찰손실은? (단, 유체는 물이다.)
+    </div>
+    <div class="answer">
+      <p style="margin-left: 2em;">$\eta W_{p} =\cfrac{\Delta P}{\rho } +\cfrac{\Delta u^{2}}{2} +g\Delta Z+h_{f}$ 에서,</p>
+      <p style="margin-left: 2em;">$150\ J/kg=\left[\cfrac{( 90000-50000) \ N/m^{2}}{1000\ kg/m^{3}}\right] +\left[\cfrac{9.8\ m}{s} \times 10\ m\right] +[ 0] +h_{f}$이므로,</p>
+      <p style="margin-left: 2em;">$\therefore h_{f} =12\ m^{2} /s^{2}$</p>
+    </div>
+    <div class="comment">
+      $\ce{}$
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      평판 A의 두께는 $10\ cm$, 열전도도는 $5\ kcal/m\cdot hr\cdot℃$ 이고,&nbsp; &nbsp;평판 B의 두께는 $5\ cm$, 열전도도는 $0.1\ kcal/m\cdot&nbsp;hr\cdot&nbsp;℃$ 이다.&nbsp; &nbsp;평판 $A$쪽 내부 온도는 $200℃ $이고, 평판 $B$쪽 외부 온도가 $20℃ $일 때, 단위 면적당 열손실은?
+    </div>
+    <div class="answer">
+      <p style="margin-left: 2em;">$\cfrac{q}{A} =\cfrac{\Delta T}{\tfrac{l_{1}}{k_{1}} +\tfrac{l_{2}}{k_{2}}} =\cfrac{180℃&nbsp;}{\tfrac{0.1\ m}{0.5\ kcal/m\cdotp hr\cdotp ℃&nbsp;} +\tfrac{0.05\ m}{0.1\ kcal/m\cdotp hr\cdotp ℃&nbsp;}} =346.15\
+        kcal/m^{2} \cdotp hr$</p>
+    </div>
+    <div class="comment">
+      $\ce{}$
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      차압식 유량계의 원리와 종류 3가지는?
+    </div>
+    <div class="answer">
+      <ol style="list-style-type: decimal;">
+        <li>유체가 흐름으로써 생기는 차압을 이용하여 유체의 유량을 측정하는 방식</li>
+        <li>오리피스, 벤츄리, 피토관, 노즐</li>
+      </ol>
+    </div>
+    <div class="comment">
+      $\ce{}$
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      비중 $0.9$, 점도 $2\ cP$, 관 내경 $10\ cm$ 이고 유속이 $1\ m/s$ 일 때, 평균유속은?
+    </div>
+    <div class="answer">
+      <p style="margin-left: 2em;">$Re=\cfrac{D\nu \rho }{\mu } =\begin{array}{ c|c|c|c }<br />10\ cm &amp; 100\ cm &amp; 0.9\ g &amp; cm\cdot s\\<br />\hline<br />&nbsp;&amp; s &amp; cm^{3} &amp; 0.02\ g<br />\end{array} =45000 &gt;4000$ 이므로 난류.</p>
+      <p style="margin-left: 2em;">$\because u_{average}( 난류) =0.8u_{max}$</p>
+      <p style="margin-left: 2em;">$\therefore u_{average} =0.8\times 1\ m/s=0.8\ m/s$</p>
+    </div>
+    <div class="comment">
+      $\ce{}$
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      점도 $8\ P$,&nbsp;평판 사이의 간격 $4\ mm$, 전단력 $0.1\ kg_f/cm^2$이고, 한 쪽 평판은 고정되어 있을 때 다른 쪽 판의 속도는? ($m/s$)
+    </div>
+    <div class="answer">
+      <ol>
+        <p>$\mu =8\ P=0.8\ kg/m\cdotp s$</p>
+        <p>$\tau =\begin{array}{ c|c|c }<br />0.1\ kg_{f} &amp; ( 100\ cm)^{2} &amp; 9.8\ kg\cdot m/s^{2}\\<br />\hline<br />cm^{2} &amp; 1\ m^{2} &amp; kg_{f}<br />\end{array} =9800\ kg/m\cdot s^{2}$</p>
+        <p>$\tau =-\mu \cfrac{du}{dy} \Longrightarrow \int\nolimits ^{0.004\ m}_{0} \tau dy=\int\nolimits ^{u}_{0} \mu du\Longrightarrow 0.004\ m\times 9800\ kg/m\cdot s^{2} =0.8\ kg/m\cdot s^{2}$</p>
+        <p>$\therefore u=49\ m/s$</p>
+        <p style="margin-left: 2em;"><br /></p>
+      </ol>
+    </div>
+    <div class="comment">
+      $\ce{}$
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      벤젠(B)과 톨루엔(T)의 혼합액이 있다. $1\ atm$ 에서 벤젠의 기상 몰분율은?&nbsp; &nbsp;(단, 순수한 성분의 증기압은 각각 1520mmHg, 260mmHg이다.)
+    </div>
+    <div class="answer">
+      <p style="margin-left: 2em;">$P=x_{B} P'_{B} +( 1-x_{B}) P'_{T} \Longrightarrow x_{B} =0.3968$</p>
+      <p style="margin-left: 2em;">$\therefore y_{B} =\cfrac{x_{B} P'_{B}}{P} =\cfrac{0.3968\times 1520\ mmHg}{760\ mmHg} =0.79$</p>
+    </div>
+    <div class="comment">
+      $\ce{}$
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      $f = 0.0072$ 일 때 마찰손실은?
     </div>
     <div class="answer">
 
@@ -53,10 +170,26 @@
 
   <div class="q_wrap">
     <div class="question">
-
+      밸브의 사용 목적 및 원리를 설명하시오.
     </div>
     <div class="answer">
-
+      <ol style="list-style-type: decimal;">
+        <li>게이트 밸브</li>
+        <ol style="list-style-type: decimal;">
+          <li>유량의 개폐.</li>
+          <li>유체 흐름과 직각으로 움직이는 문의 상하운동에 의해 유량 조절.</li>
+        </ol>
+        <li>글로브 밸브</li>
+        <ol style="list-style-type: decimal;">
+          <li>유량의 세밀한 조절.</li>
+          <li>수도꼭지와 같으며, 유체가 밸브의 디스크 옆을 거쳐서 흐르게 되어 섬세한 유량을 조절할 수 있다.</li>
+        </ol>
+        <li>체크 밸브</li>
+        <ol style="list-style-type: decimal;">
+          <li>유체의 역류 억제.</li>
+          <li>한 방향으로 흐르지만 역 발향으로는 자동적으로 폐새되어 유체 흐름 차단.</li>
+        </ol>
+      </ol>
     </div>
     <div class="comment">
       $\ce{}$
@@ -65,103 +198,7 @@
 
   <div class="q_wrap">
     <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
+      ?
     </div>
     <div class="answer">
 
@@ -172,68 +209,3 @@
   </div>
 
 </div>
-
-
-
-</p><ol style="list-style-type: decimal;">
-  <li>복사능 $0.6$, 전열면적 $3\ m^2$, 온도 $100℃$ 인 물질이 복사능 $0.9$, 전열면적 $10\ m^2$, 온도 $300℃$ 인 물질 속에 둘러싸여 복사 전열이 일어날 때의 복사에너지의 크기는?</li>
-<p style="margin-left: 2em;">$\epsilon _{1} =0.6,\ A_{1} =3\ m^{2} ,\ T_{1} =373\ K$</p>
-<p style="margin-left: 2em;">$\epsilon _{2} =0.9,\ A_{2} =10\ m^{2} ,\ T_{2} =573\ K$</p>
-<p style="margin-left: 2em;">$F_{1,\ 2} =\cfrac{1}{\tfrac{1}{f_{1,\ 2}} +\left(\tfrac{1}{\epsilon _{1}} -1\right) +\tfrac{A_{1}}{A_{2}}\left(\tfrac{1}{\epsilon _{2}} -1\right)}$ 에서,</p>
-<p style="margin-left: 2em;">$\because A_{1} 이\ A_{2} 만\ 볼\ 결우\ f_{1,\ 2} =1$</p>
-<p style="margin-left: 2em;">$F_{1,\ 2} =\cfrac{1}{\tfrac{1}{1} +\left(\tfrac{1}{0.6} -1\right) +\tfrac{3\ m^{2}}{10\ m^{2}}\left(\tfrac{1}{0.9} -1\right)} =\cfrac{10}{17}$</p>
-<p style="margin-left: 2em;">$q=4.88A_{1} F_{1,\ 2}\left[\left(\cfrac{T_{1}}{100}\right)^{4} -\left(\cfrac{T_{2}}{100}\right)^{4}\right] =\begin{array}{ c|c|c }4.88<br />\ kcal &amp; 3\ m^{2} &amp; 10\\\hline <br />m^{2} \cdotp hr\cdotp K^{4} &amp;&nbsp; &amp; 17<br />\end{array} \times \left[\left(\cfrac{373\ K}{100}\right)^{4} -\left(\cfrac{573\ K}{100}\right)^{4}\right] =7616.51\ kcal/hr$</p>
-<p><br /></p>
-
-  <li>흡수탑에서 기체의 흡수를 증가시키는 3가지 방법은?</li><ol style="list-style-type: decimal;"><li>&nbsp;$k_{L} ,\ k_{G}$ 값을 크게 한다. $( k_{L} =총괄액상물질전달계수,\ k_{G} =총괄기체물질전달계수)$</li><li>기상과 액상의 접촉면적 및 접촉시간을 크게 한다.</li><li>농도차나 분압차를 크게 한다.</li></ol>
-<p style="margin-left: 2em;"><br /></p>
-
-  <li>물이 있는 탱크의 높이가 $100\ cm$ 일 때 하부압력은? ($kg_f/cm^2$)</li><ol style="list-style-type: decimal;">
-  </ol>
-
-<p style="margin-left: 2em;">$P=P_{0} +\Delta P,\ \Delta P=\rho gh$</p>
-<p style="margin-left: 2em;">$P=\begin{array}{ c|c }<br />1\ atm &amp; 101325\ Pa\\<br />\hline<br />&nbsp;&amp; atm<br />\end{array} \ +\ \begin{array}{ c|c|c }<br />1000\ kg &amp; 9.8\ m &amp; 1\ m\\<br />\hline<br />m^{3} &amp; s &amp; <br />\end{array} =111125\ Pa$ 에서,</p>
-<p style="margin-left: 2em;">$\begin{array}{ c|c|c }<br />111125\ kg &amp; kg_{f} &amp; ( 1m)^{2}\\<br />\hline<br />m\cdotp s^{2} &amp; 9.8\ N &amp; ( 100\ cm)^{2}<br />\end{array} =1.13\ kg_{f} /cm^{2}$</p>
-<p><br /></p>
-  <li>펌프 효율 ($η$) $50\%$, 비중 $0.9$, 높이 $25\ m$, 유량 $30\ m3/hr$, 지름 $0.01\ m$ 일 때 펌프의 동력은? ($hp$)</li><p style="margin-left: 2em;">$\eta W_{p} =\cfrac{\Delta P}{\rho } +\cfrac{\Delta u^{2}}{2} +g\Delta Z+h_{f}$ 에서,</p>
-<p style="margin-left: 2em;">$0.8\times W_{p} =[ 0] +\left[\cfrac{9.8\ m}{s} \times 25\ m\right] +\left[\cfrac{( 106.1033\ m/s)^{2}}{2}\right] +[ 0] =599.38\ kg_{f} \cdot m/s$이므로,</p>
-<p style="margin-left: 2em;">$W_{p} =\begin{array}{ c|c|c|c|c }<br />599.38\ kg_{f} \cdot m &amp; 30\ m^{3} &amp; hr &amp; 900\ kg &amp; \\<br />\hline<br />s &amp; hr &amp; 3600\ s &amp; m^{3} &amp; 0.5<br />\end{array} =8990.7\ kg_{f} \cdot m/s$</p>
-<p style="margin-left: 2em;">$\therefore W_{p} =\begin{array}{ c|c }<br />8990.7\ kg_{f} \cdot m &amp; hp\\<br />\hline<br />s &amp; 76\ kg_{f} \cdot m/s<br />\end{array} =118.30\ hp$</p>
-<p style="margin-left: 2em;"><br /></p><li>정상상태이고 관경이 일정한 관 입구에서의 압력은 $\ 50kN/m^2$, 출구에서의 압력은 $90\ kN/m^2$ 이다.&nbsp; &nbsp;관의 길이는 $400\ m$, 높이차는 $10\ m$ 이고, 레이놀즈수는 $40000$ 이다.&nbsp; &nbsp;펌프가 한 일이 $150\ J/kg$ 일 때, 마찰손실은? (단, 유체는 물이다.)</li>
-<p style="margin-left: 2em;">$\eta W_{p} =\cfrac{\Delta P}{\rho } +\cfrac{\Delta u^{2}}{2} +g\Delta Z+h_{f}$ 에서,</p>
-<p style="margin-left: 2em;">$150\ J/kg=\left[\cfrac{( 90000-50000) \ N/m^{2}}{1000\ kg/m^{3}}\right] +\left[\cfrac{9.8\ m}{s} \times 10\ m\right] +[ 0] +h_{f}$이므로,</p>
-<p style="margin-left: 2em;">$\therefore h_{f} =12\ m^{2} /s^{2}$</p>
-<p><br /></p>
-
-<li>평판 A의 두께는 $10\ cm$, 열전도도는 $5\ kcal/m\cdot hr\cdot℃$ 이고,&nbsp; &nbsp;평판 B의 두께는 $5\ cm$, 열전도도는 $0.1\ kcal/m\cdot&nbsp;hr\cdot&nbsp;℃$ 이다.&nbsp; &nbsp;평판 $A$쪽 내부 온도는 $200℃ $이고, 평판 $B$쪽 외부 온도가 $20℃ $일 때, 단위 면적당 열손실은?</li>
-
-<p style="margin-left: 2em;">$\cfrac{q}{A} =\cfrac{\Delta T}{\tfrac{l_{1}}{k_{1}} +\tfrac{l_{2}}{k_{2}}} =\cfrac{180℃&nbsp;}{\tfrac{0.1\ m}{0.5\ kcal/m\cdotp hr\cdotp ℃&nbsp;} +\tfrac{0.05\ m}{0.1\ kcal/m\cdotp hr\cdotp ℃&nbsp;}} =346.15\ kcal/m^{2} \cdotp hr$</p>
-<p><br /></p>
-<li>차압식 유량계의 원리와 종류 3가지는?</li><ol style="list-style-type: decimal;"><li>유체가 흐름으로써 생기는 차압을 이용하여 유체의 유량을 측정하는 방식</li><li>오리피스, 벤츄리, 피토관, 노즐</li></ol>
-<p style="margin-left: 2em;"><br /></p>
-
-
-<li>비중 $0.9$, 점도 $2\ cP$, 관 내경 $10\ cm$ 이고 유속이 $1\ m/s$ 일 때, 평균유속은?</li>
-
-<p style="margin-left: 2em;">$Re=\cfrac{D\nu \rho }{\mu } =\begin{array}{ c|c|c|c }<br />10\ cm &amp; 100\ cm &amp; 0.9\ g &amp; cm\cdot s\\<br />\hline<br />&nbsp;&amp; s &amp; cm^{3} &amp; 0.02\ g<br />\end{array} =45000 &gt;4000$ 이므로 난류.</p>
-<p style="margin-left: 2em;">$\because u_{average}( 난류) =0.8u_{max}$</p>
-<p style="margin-left: 2em;">$\therefore u_{average} =0.8\times 1\ m/s=0.8\ m/s$</p>
-<p style="margin-left: 2em;"><br /></p><li>점도 $8\ P$,&nbsp;평판 사이의 간격 $4\ mm$, 전단력 $0.1\ kg_f/cm^2$이고, 한 쪽 평판은 고정되어 있을 때 다른 쪽 판의 속도는? ($m/s$)</li>
-<ol><p>$\mu =8\ P=0.8\ kg/m\cdotp s$</p>
-<p>$\tau =\begin{array}{ c|c|c }<br />0.1\ kg_{f} &amp; ( 100\ cm)^{2} &amp; 9.8\ kg\cdot m/s^{2}\\<br />\hline<br />cm^{2} &amp; 1\ m^{2} &amp; kg_{f}<br />\end{array} =9800\ kg/m\cdot s^{2}$</p>
-<p>$\tau =-\mu \cfrac{du}{dy} \Longrightarrow \int\nolimits ^{0.004\ m}_{0} \tau dy=\int\nolimits ^{u}_{0} \mu du\Longrightarrow 0.004\ m\times 9800\ kg/m\cdot s^{2} =0.8\ kg/m\cdot s^{2}$</p>
-<p>$\therefore u=49\ m/s$</p>
-<p style="margin-left: 2em;"><br /></p></ol>
-<li>벤젠(B)과 톨루엔(T)의 혼합액이 있다. $1\ atm$ 에서 벤젠의 기상 몰분율은?&nbsp; &nbsp;(단, 순수한 성분의 증기압은 각각 1520mmHg, 260mmHg이다.)</li>
-
-<p style="margin-left: 2em;">$P=x_{B} P'_{B} +( 1-x_{B}) P'_{T} \Longrightarrow x_{B} =0.3968$</p>
-<p style="margin-left: 2em;">$\therefore y_{B} =\cfrac{x_{B} P'_{B}}{P} =\cfrac{0.3968\times 1520\ mmHg}{760\ mmHg} =0.79$</p>
-<p><br /></p>
-<li>$f = 0.0072$ 일 때 마찰손실은?</li>
-<p style="margin-left: 2em;"><br /></p>
-<li>밸브의 사용 목적 및 원리를 설명하시오.</li><ol style="list-style-type: decimal;"><li>게이트 밸브</li><ol style="list-style-type: decimal;"><li>유량의 개폐.</li><li>유체 흐름과 직각으로 움직이는 문의 상하운동에 의해 유량 조절.</li></ol><li>글로브 밸브</li><ol style="list-style-type: decimal;"><li>유량의 세밀한 조절.</li><li>수도꼭지와 같으며, 유체가 밸브의 디스크 옆을 거쳐서 흐르게 되어 섬세한 유량을 조절할 수 있다.</li></ol><li>체크 밸브</li><ol style="list-style-type: decimal;"><li>유체의 역류 억제.</li><li>한 방향으로 흐르지만 역 발향으로는 자동적으로 폐새되어 유체 흐름 차단.</li></ol></ol><p><span style="white-space:pre">	</span></p>
-<li>?</li>
-<p style="margin-left: 2em;"><br /></p></ol>
-
-<p>끝.</p>
-<h2>더 보기: <a href="/890" target="_blank" class="tx-link">화공기사 실기</a></h2><p><br /></p>
