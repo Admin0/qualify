@@ -1,7 +1,7 @@
 .answer__quiz .q_wrap .answer {
   opacity: 0;
-  background: #FFFACD;
-  outline: .75em solid #FFFACD;
+  background: #FFFACDC0;
+  outline: .75em solid #FFFACDC0;
 }
 
 .answer__quiz .q_wrap .comment {
