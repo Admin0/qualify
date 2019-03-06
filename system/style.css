@@ -156,6 +156,9 @@ section.on {
 section h3 {
   margin: 0;
   cursor: pointer;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 dl#setting {

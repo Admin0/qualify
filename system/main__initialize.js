@@ -4,7 +4,7 @@ function load_navigat_title(key, val) {
   $("<h2/>", {
     "id": key,
     "class": key,
-    html: "<a href='#" + val.title + "'>" + val.title + "</a>"
+    html: "<a href='#" + key + "'>" + val.title + "</a>"
   }).appendTo("#nav_item_list");
 }
 

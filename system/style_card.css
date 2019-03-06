@@ -1,3 +1,5 @@
+@import url('style_card_print.css') print;
+
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
 @import url('style__general__dark.css');
@@ -7,6 +9,7 @@
 body.page {
   position: relative;
   width: 210mm;
+  height: auto;
   margin: 15mm auto;
   padding: 10mm;
   box-shadow: 0 2px 5px 2px rgba(0, 0, 0, .2);
@@ -35,6 +38,7 @@ body.page {
   column-gap: 10mm;
   /* margin: 16pt auto; */
   font-size: 8pt;
+  column-fill: auto;
 }
 
 .question, .answer, .comment {
@@ -249,10 +253,13 @@ body.page {
     padding: 0;
     border: none;
     box-shadow: none;
+    border: 1px solid silver;
   }
 
   @page {
     margin: 10mm;
+    width: 210mm;
+    height: 297mm;
   }
 
   #card_title {

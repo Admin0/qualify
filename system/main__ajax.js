@@ -46,7 +46,8 @@ function load(id, content) {
       after_load(full_id);
 
       // mathjax reload (sub__mathjax.js)
-      MathJax.Hub.Typeset();
+      // MathJax.Hub.Typeset();
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]); // same as above, but you should use this.
 
       // analytics
       window.dataLayer = window.dataLayer || [];
