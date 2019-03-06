@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
-/* @import url('style__general__dark.css'); */
 
+@import url('style__general__dark.css');
+@import url('style__answer__serif.css');
+@import url('style__answer__quiz.css');
 /* style_card.css 는 카드에서만 불러올 수 있습니다. */
 body.page {
   position: relative;
@@ -132,6 +134,7 @@ body.page {
 
 .contents table {
   border-collapse: collapse;
+  font-size: inherit;
 }
 
 .contents table th,
@@ -241,7 +244,7 @@ body.page {
 }
 
 @media print {
-  body {
+  body.page {
     margin: auto;
     padding: 0;
     border: none;

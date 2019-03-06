@@ -31,14 +31,23 @@ if (is_card) {
   // document.querySelector('head').insertAdjacentHTML('beforebegin', '<meta name="charset" content="utf-8">');
 
   document.addEventListener("DOMContentLoaded", function() {
-    // set UTF-8
-    // document.querySelector('head').insertAdjacentHTML('beforebegin', '<meta name="charset" content="utf-8">');
     // dark mode
-    //   if (window.localStorage["general__dark"] == "true") {
-    //     document.querySelector('body').classList.add("general__dark")
-    //   } else {
-    //     document.querySelector('body').classList.remove("general__dark");
-    //   }
+      // if (window.localStorage["general__dark"] == "true") {
+      //   document.querySelector('body').classList.add("general__dark")
+      // } else {
+      // }
+
+      function css_option() {
+        for (var i = 0; i < arguments.length; i++) {
+          if (window.localStorage[arguments[i]] == "true") {
+            document.querySelector('body').classList.add(arguments[i]);
+          } else {
+            document.querySelector('body').classList.remove(arguments[i]);
+          }
+        }
+      }
+      // 개별 적용
+      css_option("general__dark", "answer__serif", "answer__quiz");
   });
 }
 
