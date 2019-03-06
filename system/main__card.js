@@ -19,12 +19,27 @@ if (is_card) {
   card_title = card_title.substring(0, card_title.indexOf('/')) + '-' + card_title.substring(card_title.indexOf('/') + 1);
   card_title = '#' + card_title.substring(0, card_title.indexOf('.'));
 
-  const card_title_html = '<h1 id="card_title">' + card_title + '<span class="btn_card_print" onclick="window.print()"><i class="material-icons">print</i> 인쇄하기</span></h1>'
+  const card_title_html = '<h1 id="card_title">' + card_title + '</h1><span class="btn_card_print" onclick="window.print()"><i class="material-icons">print</i> 인쇄하기</span>'
   const card_footer_html = '<div id="card_footer">https://' + window.location.host + '/qualify/' + card_title + '</div>'
   document.querySelector('.contents').insertAdjacentHTML('beforebegin', card_title_html + card_ad);
   (adsbygoogle = window.adsbygoogle || []).push({});
   document.querySelector('.contents').insertAdjacentHTML('afterend', card_ad + card_footer_html);
   (adsbygoogle = window.adsbygoogle || []).push({});
+
+  //set class for page style
+  document.querySelector('body').classList.add("page")
+  // document.querySelector('head').insertAdjacentHTML('beforebegin', '<meta name="charset" content="utf-8">');
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // set UTF-8
+    // document.querySelector('head').insertAdjacentHTML('beforebegin', '<meta name="charset" content="utf-8">');
+    // dark mode
+    //   if (window.localStorage["general__dark"] == "true") {
+    //     document.querySelector('body').classList.add("general__dark")
+    //   } else {
+    //     document.querySelector('body').classList.remove("general__dark");
+    //   }
+  });
 }
 
 // load svg
