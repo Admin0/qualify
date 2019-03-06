@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
+/* @import url('style__general__dark.css'); */
 
 /* style_card.css 는 카드에서만 불러올 수 있습니다. */
+body {
+  position: relative;
+  width: 210mm;
+  margin: 15mm auto;
+  padding: 10mm;
+  /* border: 1px solid #d3d3d3; */
+  /* border-radius: 5px; */
+  box-shadow: 0 2px 5px 2px rgba(0, 0, 0, .2);
+}
+
 .contents {
   font-family: 'Noto Serif KR', serif;
 }
@@ -20,9 +31,9 @@
 
 .contents:not(.on) {
   column-count: 2;
-  max-width: 210mm;
+  /* max-width: 210mm; */
   column-gap: 10mm;
-  margin: 16pt auto;
+  /* margin: 16pt auto; */
   font-size: 8pt;
 }
 
@@ -154,14 +165,17 @@
   box-shadow: 0 6px #e0e0e0;
   border: 1px solid #e0e0e0;
   border-radius: 5px;
-  margin: -.5em .25em .25em 1em;
+  margin: -.5em .25em .25em;
   padding: .25em .75em;
   background: white;
   color: #212121;
   font-size: .75em;
   vertical-align: top;
   display: inline-block;
-  cursor: pointer;position: absolute;
+  cursor: pointer;
+  position: absolute;
+  right: 1.5em;
+  top: 2em;
 }
 
 .btn_card_print:active {
@@ -229,7 +243,39 @@
 }
 
 @media print {
+  body {
+    margin: auto;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  @page {
+    margin: 10mm;
+  }
+
+  #card_title {
+    margin: 0 auto 2em;
+    /* position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0 auto 2em; */
+  }
+
+  .contents:not(.on) {
+    page-break-after: always;
+    /* padding-top: 15mm; */
+  }
+
   .adsbygoogle, .btn_card_print {
     display: none !important;
+  }
+
+  #card_footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
   }
 }
