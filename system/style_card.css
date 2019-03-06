@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
+
 /* style_card.css 는 카드에서만 불러올 수 있습니다. */
 .contents {
   font-family: 'Noto Serif KR', serif;
@@ -21,7 +23,7 @@
   max-width: 210mm;
   column-gap: 10mm;
   margin: 16pt auto;
-  font-size: 9pt;
+  font-size: 8pt;
 }
 
 .question, .answer, .comment {
@@ -146,6 +148,31 @@
   transition: .25s fill;
 }
 
+.btn_card_print {
+  transition: .25s;
+  text-shadow: 0 -1px #e0e0e0;
+  box-shadow: 0 6px #e0e0e0;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin: -.5em .25em .25em 1em;
+  padding: .25em .75em;
+  background: white;
+  color: #212121;
+  font-size: .75em;
+  vertical-align: top;
+  display: inline-block;
+  cursor: pointer;position: absolute;
+}
+
+.btn_card_print:active {
+  box-shadow: 0 0px #e0e0e0;
+  margin: 0 .25em -.25em;
+}
+
+.btn_card_print i {
+  vertical-align: text-top;
+}
+
 /* ***** mobile ***** */
 @media handheld, only screen and (max-device-width:480px), only screen and (max-device-width:320px), screen and (max-width:600px) {
   section .contents h4 {
@@ -198,5 +225,11 @@
 
   table {
     font-size: 12px;
+  }
+}
+
+@media print {
+  .adsbygoogle, .btn_card_print {
+    display: none !important;
   }
 }
