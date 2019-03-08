@@ -1,0 +1,240 @@
+body.page {
+  position: relative;
+  width: 210mm;
+  height: auto;
+  margin: 15mm auto;
+  padding: 10mm;
+  box-shadow: 0 2px 5px 2px rgba(0, 0, 0, .2);
+}
+
+.contents {
+  font-family: 'Noto Serif KR', serif;
+}
+
+.contents {
+  line-height: 1.75;
+  column-gap: 2.5em;
+  counter-reset: question;
+  transition: .25s;
+}
+
+.contents::after {
+  font-weight: bold;
+  margin-top: 1em;
+  content: "끝.";
+}
+
+.contents:not(.on) {
+  column-count: 2;
+  /* max-width: 210mm; */
+  column-gap: 10mm;
+  /* margin: 16pt auto; */
+  font-size: 8pt;
+  column-fill: auto;
+}
+
+.question, .answer, .comment {
+  transform: translateX(0);
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid-column;
+  /* display: list-item;
+  list-style: none; */
+}
+
+.q_wrap {
+  position: relative;
+  padding: 0 2em 0 3em;
+  margin-top: 2.5em;
+  counter-reset: question_sub;
+}
+
+.q_wrap:first-child {
+  margin-top: 0;
+}
+
+.q_wrap:not(.sub)::before {
+  content: counter(question);
+  counter-increment: question;
+  position: absolute;
+  right: calc(100% - 1em);
+  font: bold 2em "Noto Serif KR", Serif;
+  line-height: 1;
+}
+
+.contents:not(.on) .q_wrap {
+  padding: 0 0 0 1.25em;
+}
+
+.contents:not(.on) .q_wrap:not(.sub)::before {
+  content: counter(question) ".";
+  position: absolute;
+  top: 0;
+  right: calc(100% - 1em);
+  font: bold 1em Serif;
+  line-height: 1.75;
+}
+
+.q_wrap .question {
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.q_wrap.sub {
+  padding: 0 0 0 1.75em;
+  margin: 0;
+}
+
+.q_wrap .question.sub {
+  position: relative;
+  margin-top: 1.5em;
+}
+
+.q_wrap .question.sub::before {
+  content: "("counter(question_sub) ") ";
+  counter-increment: question_sub;
+  position: absolute;
+  right: calc(100% + .5em);
+}
+
+.q_wrap .answer {
+  outline: .75em solid #fff0;
+  margin-bottom: 1em;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: normal;
+}
+
+.q_wrap .comment {
+  font-size: .75em;
+  /* font-style: italic; */
+  color: #2196f3;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* ad: 광고가 끼면 first-child 선택자가 안 먹기 때문에 first-of-type 으로 우회합니당^^ */
+.contents .ad {
+  margin: 1em 0;
+}
+
+.contents .ad:first-child {
+  margin: 0 0 1em;
+}
+
+.q_wrap:first-of-type {
+  margin-top: 0;
+}
+
+.q_wrap:last-of-type {
+  margin-bottom: 0;
+}
+
+.contents table {
+  border-collapse: collapse;
+  font-size: inherit;
+}
+
+.contents table th,
+.contents table td {
+  border: 1px solid;
+  padding: 0.25em 0.75em;
+}
+
+#card_title {
+  text-align: center;
+  font-size: 1.25em;
+}
+
+#card_footer {
+  text-align: center;
+  font-size: 12px;
+}
+
+.img, img, .svg, svg, object, .load {
+  max-width: 100%;
+  height: inherit;
+  margin-left: 0;
+  transition: .25s fill;
+}
+
+.btn_card_print {
+  transition: .25s;
+  text-shadow: 0 -1px #e0e0e0;
+  box-shadow: 0 6px #e0e0e0;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin: -.5em .25em .25em;
+  padding: .25em .75em;
+  background: white;
+  color: #212121;
+  font-size: .75em;
+  vertical-align: top;
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  right: 1.5em;
+  top: 2em;
+}
+
+.btn_card_print:active {
+  box-shadow: 0 0px #e0e0e0;
+  margin: 0 .25em -.25em;
+}
+
+.btn_card_print i {
+  vertical-align: text-top;
+}
+
+/* ***** mobile ***** */
+@media handheld, only screen and (max-device-width:480px), only screen and (max-device-width:320px), screen and (max-width:600px) {
+  section .contents h4 {
+    margin-left: 0;
+    padding: 0.5em 1em !important;
+  }
+
+  section.on {
+    padding: 1em;
+    margin: 1em -1em;
+    width: 100%;
+  }
+
+  #main_item .contents {
+    height: inherit;
+    font-size: 14px;
+    padding: 1em;
+  }
+
+  .q_wrap {
+    padding: 0;
+  }
+
+  .q_wrap:not(.sub)::before {
+    content: counter(question)".";
+    font-size: 1em;
+    line-height: 1.75;
+    left: 0;
+  }
+
+  .contents:not(.on) .q_wrap:not(.sub)::before {
+    left: inherit;
+  }
+
+  .contents.on .q_wrap .question:not(.sub) {
+    text-indent: 1.5em;
+  }
+
+  .contents.on .q_wrap:nth-of-type(n+10) .question:not(.sub) {
+    text-indent: 2em;
+  }
+
+  ol, ul {
+    margin-left: -1.5em;
+  }
+
+  li ol, li ul {
+    margin-left: -1em;
+  }
+
+  table {
+    font-size: 12px;
+  }
+}
