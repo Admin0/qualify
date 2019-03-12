@@ -15,7 +15,7 @@ body.page {
   line-height: 1.75;
   column-gap: 2.5em;
   counter-reset: question;
-  transition: .25s;
+  /* transition: .25s; */
 }
 
 .contents::after {
