@@ -21,8 +21,8 @@
   <script src="system/main__context.js"></script>
   <script src="system/main.js"></script>
   <script src="system/sub__clipboard.min.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js' async></script>
-  <script src="system/sub__mathjax.js" defer></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js'></script>
+  <script src="system/sub__mathjax.js" async></script>
   <script src="system/sub__scroll.js" async></script>
   <!-- sharer -->
   <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
@@ -45,7 +45,7 @@
 <body>
 
   <header>
-    <h1><i id="nav_on" onclick="if($('nav').attr('class')!='on'){$('nav, #nav_bg').addClass('on');}else{$('nav, #nav_bg').removeClass('on');}" class="material-icons">menu</i><span id="title"><span class="hide_mobile"></span>#qualify</span></h1>
+    <h1><i id="nav_on" onclick="if($('nav').attr('class')!='on'){$('nav, #nav_bg').addClass('on');}else{$('nav, #nav_bg').removeClass('on');};" class="material-icons">menu</i><span id="title"><span class="hide_mobile"></span>#qualify</span></h1>
   </header>
 
   <section id="main_item"></section>
@@ -57,7 +57,7 @@
   <nav>
     <div id='nav'>
       <div id='nav_header'>
-        <div id="to_github" class="" onclick="$('#main_item .contents.on').remove();">
+        <div id="to_github" class="" onclick="$('#main_item .contents.on').remove();$('#title').text('#qualify');">
           <i class="material-icons">home</i><span>#qualify</span>
         </div>
         <div id="setting_bt">

@@ -103,7 +103,14 @@
 
 <div class="q_wrap">
   <div class="question">
-
+    <script>
+      var ajax_9 = new XMLHttpRequest();
+      ajax_9.open("GET", '/qualify/화학분석기사/필답-2010-4-9.svg', true);
+      ajax_9.send();
+      ajax_9.onload = function(e) {
+        document.querySelector('#필답-2010-4-9').innerHTML = ajax_9.responseText;
+      }
+    </script>
   </div>
   <div class="answer">
 
