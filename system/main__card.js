@@ -31,12 +31,7 @@ if (is_card) {
   // document.querySelector('head').insertAdjacentHTML('beforebegin', '<meta name="charset" content="utf-8">');
 
   document.addEventListener("DOMContentLoaded", function() {
-    // dark mode
-      // if (window.localStorage["general__dark"] == "true") {
-      //   document.querySelector('body').classList.add("general__dark")
-      // } else {
-      // }
-
+    // settings
       function css_option() {
         for (var i = 0; i < arguments.length; i++) {
           if (window.localStorage[arguments[i]] == "true") {
@@ -47,7 +42,7 @@ if (is_card) {
         }
       }
       // 개별 적용
-      css_option("general__dark", "answer__serif", "answer__quiz");
+      css_option(/*"general__dark",*/ "answer__serif", "answer__quiz");
   });
 }
 
