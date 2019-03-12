@@ -17,6 +17,7 @@
       "필답-2017-1",
       "필답-2017-4",
       "필답-2018-1",
+      "필답-2018-4",
       "작업~2019"
     ]
   },
@@ -61,25 +62,25 @@
   "기타": {
     "title": "기타 ☆☆☆★★★★",
     "contents": [
-      "컴퓨터활용능력 1급",
-      "워드프로세서 1급",
+      "컴퓨터활용능력-1급",
+      "워드프로세서-1급",
       "정보처리기능사",
-      "Microsoft Office Specialist MASTER",
-      "Microsoft Office PowerPoint 2010 Core",
-      "Microsoft Office Access 2010 Core",
-      "Microsoft Office Word 2010 Expert",
-      "Microsoft Office Excel 2010 Expert",
-      "비서 1급",
-      "비서 2급",
-      "비서 3급",
-      "수렵면허 1종",
-      "자동차운전면허 1종보통",
-      "ISO 9001 내부심사자격",
-      "ISO 9001 / TS 16949 내부심사원",
-      "ISO 14001 내부심사자격",
-      "OHSAS 18001 내부심사자격",
-      "태권도 1단",
-      "한자능력 5급"
+      "Microsoft-Office-Specialist-MASTER",
+      "Microsoft-Office-PowerPoint-2010-Core",
+      "Microsoft-Office-Access-2010-Core",
+      "Microsoft-Office-Word-2010-Expert",
+      "Microsoft-Office-Excel-2010-Expert",
+      "비서-1급",
+      "비서-2급",
+      "비서-3급",
+      "수렵면허-1종",
+      "자동차운전면허-1종보통",
+      "ISO-9001-내부심사자격",
+      "ISO-9001-/-TS-16949-내부심사원",
+      "ISO-14001-내부심사자격",
+      "OHSAS-18001-내부심사자격",
+      "태권도-1단",
+      "한자능력-5급"
     ]
   }
 }
