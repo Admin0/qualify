@@ -15,15 +15,6 @@
   content: "끝.";
 }
 
-.contents:not(.on) {
-  column-count: 2;
-  /* max-width: 210mm; */
-  column-gap: 10mm;
-  /* margin: 16pt auto; */
-  font-size: 8pt;
-  column-fill: auto;
-}
-
 .question, .answer, .comment {
   transform: translateX(0);
   -webkit-column-break-inside: avoid;
@@ -36,12 +27,8 @@
 .q_wrap {
   position: relative;
   padding: 0 2em 0 3em;
-  margin-top: 2.5em;
+  margin: 3em 0;
   counter-reset: question_sub;
-}
-
-.q_wrap:first-child {
-  margin-top: 0;
 }
 
 .q_wrap:not(.sub)::before {
@@ -51,19 +38,6 @@
   right: calc(100% - 1em);
   font: bold 2em "Noto Serif KR", Serif;
   line-height: 1;
-}
-
-.contents:not(.on) .q_wrap {
-  padding: 0 0 0 1.25em;
-}
-
-.contents:not(.on) .q_wrap:not(.sub)::before {
-  content: counter(question) ".";
-  position: absolute;
-  top: 0;
-  right: calc(100% - 1em);
-  font: bold 1em Serif;
-  line-height: 1.75;
 }
 
 .q_wrap .question {
@@ -107,10 +81,6 @@
   margin: 1em 0;
 }
 
-.contents .ad:first-child {
-  margin: 0 0 1em;
-}
-
 .q_wrap:first-of-type {
   margin-top: 0;
 }
@@ -145,34 +115,6 @@
   height: inherit;
   margin-left: 0;
   transition: .25s fill;
-}
-
-.btn_card_print {
-  transition: .25s;
-  text-shadow: 0 -1px #e0e0e0;
-  box-shadow: 0 6px #e0e0e0;
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-  margin: -.5em .25em .25em;
-  padding: .25em .75em;
-  background: white;
-  color: #212121;
-  font-size: .75em;
-  vertical-align: top;
-  display: inline-block;
-  cursor: pointer;
-  position: absolute;
-  right: 1.5em;
-  top: 2em;
-}
-
-.btn_card_print:active {
-  box-shadow: 0 0px #e0e0e0;
-  margin: 0 .25em -.25em;
-}
-
-.btn_card_print i {
-  vertical-align: text-top;
 }
 
 /* ***** mobile ***** */
