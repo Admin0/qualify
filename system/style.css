@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
 /*@import url(iconfont/material-icons.css);*/
 /* @import url('style_card.css'); */
-@import url('style__general__dark.css');
+@import url('style__general__dark.css') screen;
 @import url('style__answer__serif.css');
 @import url('style__answer__quiz.css');
 @import url('style_nav.css');
 @import url('style_share.css');
+@import url('style_card.css');
 
 ::selection {
   background: rgba(0, 0, 0, 0);
