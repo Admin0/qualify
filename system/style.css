@@ -756,7 +756,7 @@ footer {
 
   #item_list section.item {
     width: 100%;
-    max-width: none;
+    max-width: calc(100% - 3.5em);
     margin: 0;
     border-top: 1px rgba(0, 0, 0, .12) solid;
     background: #fff;
