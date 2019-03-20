@@ -4,6 +4,10 @@
   outline: .75em solid #FFFACDC0;
 }
 
+.answer__quiz .q_wrap span.answer {
+  outline: .35em solid #FFFACDC0;
+}
+
 .answer__quiz .q_wrap .comment {
   opacity: 0;
 }

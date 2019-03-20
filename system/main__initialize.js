@@ -15,7 +15,7 @@ function load_navigat_items(category, item) {
     "name": category,
     "round": item,
     html: "<a href=#" + category + "-" + item + " onclick=" + onclick + "><i class='material-icons'>book</i><span>" + item + "<span></a>"
-  }).appendTo("#nav_item_list");
+    }).appendTo("#nav_item_list").append("<a href='" + category + "/" + item + ".html' target='_blank'><i class='material-icons'>open_in_new</i></a>");
 }
 
 function load_content_title(key, val) {
