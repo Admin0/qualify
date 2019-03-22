@@ -1,6 +1,6 @@
-var is_card = document.querySelector("#main_item") == null;
+var is_card = document.querySelector("#main_item") == null; //단일 페이지인지 확인.
 
-if (is_card) {
+if (is_card) { //단일 페이지일 경우.
   const card_ad =
     '<ins class="adsbygoogle"' +
     '     style="display:block; text-align:center;"' +
@@ -26,28 +26,27 @@ if (is_card) {
   document.querySelector('.contents').insertAdjacentHTML('afterend', card_ad + card_footer_html);
   (adsbygoogle = window.adsbygoogle || []).push({});
 
-  //set class for page style
-  document.querySelector('body').classList.add("page")
-  // document.querySelector('head').insertAdjacentHTML('beforebegin', '<meta name="charset" content="utf-8">');
+  // add important header items
+  const card_style = document.createElement('link');
+  card_style.href = '/qualify/system/style_card.css';
+  card_style.rel = "stylesheet";
+  document.head.appendChild(card_style);
+  const card_mathjax = document.createElement('script');
+  card_mathjax.src = '//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js';
+  card_mathjax.defer = true;
+  document.head.appendChild(card_mathjax);
+  const card_mathjax_sub = document.createElement('script');
+  card_mathjax_sub.src = '/qualify/system/sub__mathjax.js';
+  card_mathjax_sub.defer = true;
+  document.head.appendChild(card_mathjax_sub);
 
-  document.addEventListener("DOMContentLoaded", function() {
-    // settings
-      function css_option() {
-        for (var i = 0; i < arguments.length; i++) {
-          if (window.localStorage[arguments[i]] == "true") {
-            document.querySelector('body').classList.add(arguments[i]);
-          } else {
-            document.querySelector('body').classList.remove(arguments[i]);
-          }
-        }
-      }
-      // 개별 적용
-      css_option(/*"general__dark",*/ "answer__serif", "answer__quiz");
-  });
+  // set class for page style
+  document.querySelector('body').classList.add("page")
+  document.querySelector('html').style.backgroundColor = '#e5e5e5';
 }
 
+// 모든 경우에 적용.
 // load svg
-
 document.querySelectorAll('.load').forEach(function(element) {
   var ajax = new XMLHttpRequest();
   ajax.open("GET", '/qualify/' + element.innerText, true);
@@ -56,4 +55,3 @@ document.querySelectorAll('.load').forEach(function(element) {
     element.innerHTML = ajax.responseText;
   }
 });
-// <div class="svg">위험물산업기사/chemical__2,4,6-Trinitrophenol(picric_acid).svg</div>

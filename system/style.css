@@ -227,6 +227,19 @@ body.fold header {
   width: calc(100% - 68px);
 }
 
+header #print_icon {
+  float: right;
+  cursor: pointer;
+  line-height: 1.25;
+  margin: 0;
+  opacity: 0;
+  transition: .25s;
+}
+
+header:hover #print_icon {
+  opacity: 1;
+}
+
 .disabled {
   color: rgba(255, 255, 255, 0.3);
 }

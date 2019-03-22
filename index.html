@@ -46,7 +46,10 @@
 <body>
 
   <header>
-    <h1><i id="nav_on" onclick="if($('nav').attr('class')!='on'){$('nav, #nav_bg').addClass('on');}else{$('nav, #nav_bg').removeClass('on');};" class="material-icons">menu</i><span id="title"><span class="hide_mobile"></span>#qualify</span></h1>
+    <h1>
+      <i id="nav_on" onclick="if($('nav').attr('class')!='on'){$('nav, #nav_bg').addClass('on');}else{$('nav, #nav_bg').removeClass('on');};" class="material-icons">menu</i><span id="title"><span class="hide_mobile"></span>#qualify</span>
+      <i id="print_icon" onclick="window.print();" class="material-icons">print</i>
+    </h1>
   </header>
 
   <section id="main_item"></section>
