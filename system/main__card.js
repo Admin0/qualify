@@ -20,7 +20,7 @@ if (is_card) { //단일 페이지일 경우.
   card_title = '#' + card_title.substring(0, card_title.indexOf('.'));
 
   const card_title_html = '<h1 id="card_title">' + card_title + '</h1>'
-  const card_footer_html = '<div id="card_footer">https://' + window.location.host + '/qualify/' + card_title + '</div>'
+  const card_footer_html = '<div id="card_footer"><a href="//' + window.location.host + '/qualify/' + card_title + '">//' + window.location.host + '/qualify/' + card_title + '</a></div>'
   document.querySelector('.contents').insertAdjacentHTML('beforebegin', card_title_html + card_ad);
   (adsbygoogle = window.adsbygoogle || []).push({});
   document.querySelector('.contents').insertAdjacentHTML('afterend', card_ad + card_footer_html);
@@ -33,12 +33,14 @@ if (is_card) { //단일 페이지일 경우.
   document.head.appendChild(card_style);
   const card_mathjax = document.createElement('script');
   card_mathjax.src = '//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js';
-  card_mathjax.defer = true;
+  // card_mathjax.defer = true;
+  card_mathjax.onload = function() {
+    const card_mathjax_sub = document.createElement('script');
+    card_mathjax_sub.src = '/qualify/system/sub__mathjax.js';
+    // card_mathjax_sub.defer = true;
+    document.head.appendChild(card_mathjax_sub);
+  };
   document.head.appendChild(card_mathjax);
-  const card_mathjax_sub = document.createElement('script');
-  card_mathjax_sub.src = '/qualify/system/sub__mathjax.js';
-  card_mathjax_sub.defer = true;
-  document.head.appendChild(card_mathjax_sub);
 
   // set class for page style
   document.querySelector('body').classList.add("page")
