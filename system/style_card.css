@@ -30,7 +30,7 @@ body.page {
 
 .contents ol {
   list-style: none;
-  padding-left: 1.1em;
+  padding-left: 1.65em;
   counter-reset: numList;
 }
 
@@ -38,7 +38,7 @@ body.page {
   counter-increment: numList;
   content: counter(numList);
   font-size: 0.85em;
-  margin: 0 .5ex 0 -1em;
+  margin: 0 .5em 0 -1.85em;
   padding: 0.25ex;
   border: 0.5px solid black;
   border-radius: 50%;
