@@ -37,7 +37,7 @@ body.page {
 .contents ol li:before {
   counter-increment: numList;
   content: counter(numList);
-  font-size: 0.85em;
+  font-size: 0.7em;
   margin: 0 .5em 0 -1.85em;
   padding: 0.25ex;
   border: 0.5px solid black;
@@ -46,6 +46,8 @@ body.page {
   line-height: 1;
   display: inline-block;
   text-align: center;
+  position: relative;
+  top: -.125em;
 }
 
 .contents:not(.on) {
@@ -221,7 +223,7 @@ body.page {
   }
 
   ol, ul {
-    margin-left: -1.5em;
+    /* margin-left: -1.5em; */
   }
 
   li ol, li ul {
