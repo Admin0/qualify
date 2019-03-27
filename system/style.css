@@ -133,7 +133,7 @@ body.fold {
 
 #item_list section.item {
   position: relative;
-  padding: 1em 2.5em 1em 1em;
+  padding: 1em;
   margin: 0 1em 1em 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
   /* background: #fff; */
