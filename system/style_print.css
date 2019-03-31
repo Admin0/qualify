@@ -38,6 +38,7 @@ header {
   position: static;
   padding: 0;
   width: inherit;
+  box-shadow: none!important;
 }
 
 header>h1 {
@@ -152,6 +153,12 @@ header>h1 {
   /* font-style: italic; */
   color: #2196f3;
   font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* style__answer__quiz.css */
+.answer__quiz .q_wrap:hover .answer,
+.answer__quiz .q_wrap:hover .comment {
+  opacity: 0;
 }
 
 /* ad: 광고가 끼면 first-child 선택자가 안 먹기 때문에 first-of-type 으로 우회합니당^^ */

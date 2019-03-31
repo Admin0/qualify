@@ -64,14 +64,18 @@
       농도를 모르는 페놀 용액 50 mL의 흡광도는 0.2였고, 이 페놀 용액에 0.5 M 페놀 1.0 mL를 첨가한 후의 흡광도는 0.3이었다. 이 페놀의 몰농도는 얼마인가?
     </div>
     <div class="answer">
-$\ce{
-\text{1) 미지시료} \\ \ \ \ \ \ A_{1} = εbc_{x} = 0.2 \\
-\text{2) 미지시료 + 첨가용액} \\ \ \ \ \ \ A_{2} = εbc_{x}\dfrac{V _{x}}{V _{t}} + εbc_{s}\dfrac{V_{s}}{V_{t}} \\
-= εbc_{x} \dfrac{\pu{50 ml}}{\pu{51 ml}} + εb(0.5M)\dfrac{\pu{1 ml}}{\pu{51 ml}} = 0.3 \\
+      $
+      \text{1) 미지시료} \\
 
+      A_{1} = εbc_{x} = 0.2 \\
 
-\therefore c_{x} = 0.02 M
-}$
+      \text{2) 미지시료 + 첨가용액} \\
+      \begin{align*}
+      A_{2} &= εbc_{x}\dfrac{V _{x}}{V _{t}} + εbc_{s}\dfrac{V_{s}}{V_{t}} \\
+      &= εbc_{x} \dfrac{\pu{50 ml}}{\pu{51 ml}} + εb(\pu{0.5M})\dfrac{\pu{1 ml}}{\pu{51 ml}} = 0.3
+      \end{align*} \\
+      \therefore c_{x} = \pu{0.02 M}
+      $
     </div>
     <div class="comment">
       표준물 첨가법
@@ -80,15 +84,21 @@ $\ce{
 
   <div class="q_wrap">
     <div class="question">
-      자연수 10mL씩을 5개의 50mL 부피 플라스크에 각각 취하고 각 부피 플라스크에 11.1ppm Fe3+ 표준용액을 0, 5, 10, 15, 20mL씩 첨가하고 모든 부치 플라스크에 발색시약 SCN-를 같은 양 가한 후 표선까지 묽히고 흡광도를 측정하였더니 0.240, 0.437, 0.621, 0.809 및 1.009이었다. 자연수에 들어 있는 철의 농도는 몇 ppm인가?
+      자연수 $\ce{10 mL}$씩을 5개의 $\ce{50 mL}$ 부피 플라스크에 각각 취하고 각 부피 플라스크에 $\ce{11.1ppm Fe3+}$ 표준용액을 0, 5, 10, 15, 20mL씩 첨가하고 모든 부치 플라스크에 발색시약 $\ce{SCN-}$를 같은 양 가한 후 표선까지 묽히고 흡광도를 측정하였더니 0.240, 0.437, 0.621, 0.809 및 1.009이었다. 자연수에 들어 있는 철의 농도는 몇 ppm인가?
     </div>
     <div class="answer">
-    $
-    \text{흡광도(S)와 표준용액의 첨가부피(Vs)에 대한 직선식을 계산기를 이용하여 구하면,} \\
-      S = m∙V_s + b = 0.03820 V_s + 0.2412 가 된다. (선형회귀) \\
-      미지시료 농도 C_x = (b∙Cs)/(m∙V_x) (최소제곱법) \\
-      =(0.2412 \times 11.1 ppm)/(0.03820 ml^{-1} \times 10 ml) = 7.01 ppm \\
-      (m: \text{기울기}, b: \text{y 절편}, C_s: \text{표준용액농도}, V_x: \text{미지시료 부피})
+      $
+      \text{흡광도($S$)와 표준용액의 첨가부피($V_s$)에 대한 직선식을 계산기를 이용하여 구하면,} \\
+      \begin{align*}
+      S &= m \cdot V_s + b \\ &= 0.03820 V_s + 0.2412 \text{ (선형회귀)} \\
+      \end{align*} \\
+      $
+      $
+      \begin{align*}
+      C_x &= (b \cdot C_s)/(m \cdot V_x) \text{(미지시료 농도)(최소제곱법)} \\
+      \ce{&= (0.2412 \times 11.1 ppm)/(0.03820 ml^{-1} \times 10 ml) \\ &= 7.01 ppm }\\
+      \end{align*} \\
+      (\text{$m$: 기울기, $b$: y 절편, $C_s$: 표준용액농도, $V_x$: 미지시료 부피})
       $
     </div>
     <div class="comment">
@@ -116,7 +126,38 @@ $\ce{
       높은 전기장을 이용하여 휘발성이 낮거나 열에 불안정한 분석물을 이온화시킬 수 있다.
     </div>
     <div class="comment">
+      장 탈착법(field desorption) <br>
+      질량분석법의 이온화 방법 중 하나.
+      <br><br>
 
+      <table>
+        <tr>
+          <th colspan="2">이온화법(Ionization)</th>
+        </tr>
+        <tr>
+          <th rowspan="3">기체 상태 이온화법<br>(gas phase source)</th>
+          <td>전자 충격(Electron Impact,EI)</td>
+        </tr>
+        <tr>
+          <td>화학적 이온화(Chemical Ionization, CI)</td>
+        </tr>
+        <tr>
+          <td>장 이온화(Field Ionization, FI)</td>
+        </tr>
+        <tr>
+          <th rowspan="4">탈착 이온화법<br>(desorption source)</th>
+          <td>장 탈착(Field Desorption, FD)</td>
+        </tr>
+        <tr>
+          <td>매트릭스지원 레이저 탈착 이온화법<br>(Matrix-Assisted Laser Desorption Ionization, MALDI)</td>
+        </tr>
+        <tr>
+          <td>전자 분무 이온화(Electrospray ionization, ESI)</td>
+        </tr>
+        <tr>
+          <td>빠른 원자 충격법(Fast Atom Bombardment, FAB)</td>
+        </tr>
+      </table>
     </div>
   </div>
 
@@ -139,7 +180,7 @@ $\ce{
     <div class="answer">
       $\ce{
       ( 388.40 g/mol \times 0.23 ) / 18 g/mol = 4.96 \\
-      \therefore \mathcal{x} \approx 5
+      \therefore $x$ \approx 5
       }$
     </div>
     <div class="comment">
@@ -165,11 +206,11 @@ $\ce{
     </div>
     <div class="answer">
       $\ce{
-      0.02M*50ml=1mmol OH⁻ \\
-      0.1M*5ml=0.5mmol H⁺ \\
-      반응 후 0.5mmol OH⁻ 남음 \\
-      [OH⁻]=0.5mmol/55ml=9.091*10⁻³M \\
-      pOH=-log[OH⁻]=2.04, ∴pH=14-2.04=11.96
+      0.02 M \times 50ml = 1mmol OH⁻ \\
+      0.1 M \times 5ml = 0.5mmol H⁺ \\
+      반응 후 0.5 mmol OH⁻ 남음 \\
+      [OH⁻] = 0.5 mmol / 55 ml = \pu{9.091E10-3 M} \\
+      pOH = -\log[OH⁻] = 2.04, ∴ pH = 14 - 2.04 = 11.96
       }$
     </div>
     <div class="comment">
