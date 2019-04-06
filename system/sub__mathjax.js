@@ -21,7 +21,7 @@ MathJax.Hub.Config({
     processEscapes: true
   },
   "HTML-CSS": {
-    availableFonts: ["TeX"],
+    fonts: ["TeX"],
     mtextFontInherit: true, // use inherit font
     showMathMenu: false, // turn off context
     linebreaks: {

@@ -180,6 +180,14 @@ body.page {
   transition: .25s fill;
 }
 
+.translation {
+  /* color: rgba(0, 0, 0, .38); */
+  opacity: .65;
+  font-size: .75em;
+  font-style: italic;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
 /* ***** mobile ***** */
 @media handheld, only screen and (max-device-width:480px), only screen and (max-device-width:320px), screen and (max-width:600px) {
   section .contents h4 {

@@ -81,6 +81,8 @@
   color: rgb(189, 193, 198);
 }
 
-.general__dark a:hover {
-  background: rgba(50, 54, 57, 1) !important;
+.general__dark a:hover,
+.general__dark .contents a:hover,
+.general__dark nav a:hover {
+  background: rgba(158, 158, 158, .2);
 }

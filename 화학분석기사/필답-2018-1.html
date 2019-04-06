@@ -19,7 +19,7 @@
 
   <div class="q_wrap">
     <div class="question">
-      이산화탄소 진동수 근거와 수 계산하여라?
+      이산화탄소의 진동수를 계산하고, 그 근거는 무엇인지 답하시오.
     </div>
     <div class="answer">
       이산화탄소의 구조는 직선형 (3N - 5) <br>
@@ -51,10 +51,10 @@
 
   <div class="q_wrap">
     <div class="question">
-      매트릭스 변형제 의 역할을 설명하시오.
+      매트릭스 변형제의 역할을 설명하시오.
     </div>
     <div class="answer">
-      매트릭스와 반응하여 매트릭스가 분석물보다 더 잘 휘발되게 하거나, 분석물과 반응하여 분석물의 휘발성을 낮추어 방해효과를 제거한다.
+      매트릭스와 반응하여 매트릭스가 분석물보다 더 잘 휘발되게 하거나, <br>분석물과 반응하여 분석물의 휘발성을 낮추어 방해효과를 제거한다.
     </div>
     <div class="comment">
       $\ce{}$
@@ -68,7 +68,6 @@
     <div class="answer">
       $\ce{
       2M3+ + 3C2H2O4 <--> 2M2(C2O4)3 + 3H2 \\
-
         [M3+] = 3.84 mM
         }$
     </div>
@@ -146,12 +145,49 @@
 
   <div class="q_wrap">
     <div class="question">
-      $\ce{0.5 M Sn^{4+} 10 ml}$를 $\ce{1.0M Ce^{4+}}$로 적정하고자 한다. 다음 물음에 답하시오. <br>
-      a) 당량점에서의 전위차를 구하여라 <br>
-      b) 당량점에서 $\ce{Ce^{4+}, Ce^{2+}}$ 농도를 구하여라.
+      $\ce{0.5 M Sn^{2+} 10 ml}$를 $\ce{1.0M Ce^{4+}}$로 적정하고자 한다. 다음 물음에 답하시오.
+      $$\ce{\begin{align*}
+      Ce^4+ + e- -> Ce^3+ \ \ \ \ \ \ \ \ \ \ &E^0 = 1.61 V \\
+      Sn^4+ + 2e- -> Sn^2+ \ \ \ \ \ \ \ \ \ \ &E^0 = 0.15 V
+      \end{align*}}$$
     </div>
-    <div class="answer">
-
+    <div class="q_wrap sub">
+      <div class="question sub">
+        당량점에서의 전위차를 구하여라.
+      </div>
+      <div class="answer">
+        $
+        E = E^0 - \left(\dfrac{RT}{nF}\right)\log{Q} \text{ 이므로,} \\
+        \begin{align*}
+        E = 1.61 - 0.05916\log{\frac{\ce{[Ce^3+]}}{\ce{[Ce^4+]}}} \\
+        E = 0.15 - \frac{0.05916}{2}\log{\frac{\ce{[Sn^2+]}}{\ce{[Sn^4+]}}}
+        \end{align*}
+        $
+      </div>
+      <div class="answer">
+        아래 식에 2를 곱하고 두 식을 더하면, <br>
+        $
+        3E = (1.61 + 2 \times 0.15 - (0.05916\log{\frac{\ce{[Ce^3+][Sn^2+]}}{\ce{[Ce^4+][Sn^4+]}}})_{(= 0)}) \pu{ V} \\
+        \therefore E = \frac{1.61 + 2 \times 0.15}{3} = \pu{0.6367 V}
+        $
+      </div>
+      <div class="question sub">
+        당량점에서 $\ce{Ce^{4+}, Ce^{3+}}$ 농도를 구하여라.
+      </div>
+      <div class="answer">
+        $\ce{
+        (0.5 M \times 10 ml)_{Sn^{2+}} = (1/2 \times 1.0 M \times $x$)_{Ce^{4+}} \\
+        $x$ = 10 ml
+        }$
+      </div>
+      <div class="answer">
+        당량점에서 대부분의 $\ce{[Ce^4+]}$ 는 $\ce{[Ce^3+]}$ 로 바뀌었으므로,
+        $\ce{
+        [Ce^3+] \approx (1.0 M \times 10 ml)/(10 ml + 10 ml) \\ = 0.5 M \\
+        0.6367 = 1.61 - 0.05916\log{\frac{0.5-[\ce{Ce^4+}]}{[\ce{Ce^4+}]}} \\
+        \therefore [Ce^3+] = 0.5 M, [Ce^4+] = \pu{5.30E-16 M}
+        }$
+      </div>
     </div>
     <div class="comment">
 
@@ -175,8 +211,10 @@
       GC에서 전처리로써, 시료를 유도체화(derivatization) 하는 이유 두 가지를 서술하시오.
     </div>
     <div class="answer">
-      - 분리를 빠르게 해준다 <br>
-      - 감도를 높여준다
+      <ol>
+        <li>분리를 빠르게 해준다</li>
+        <li>감도를 높여준다</li>
+      </ol>
     </div>
     <div class="comment">
       $\ce{}$
@@ -188,8 +226,12 @@
       원자흡수분광기(AAS)에서 일반적으로 사용하는 원자화장치 네 가지를 서술하시오.
     </div>
     <div class="answer">
-      불꽃 원자화 장치, 전열 원자화 장치, <br>
-      글로우 방전 원자화 장치, 수소화물 생성 원자화 장치
+      <ol>
+        <li>불꽃 원자화 장치</li>
+        <li>전열 원자화 장치</li>
+        <li>글로우 방전 원자화 장치</li>
+        <li>수소화물 생성 원자화 장치</li>
+      </ol>
     </div>
     <div class="comment">
 
