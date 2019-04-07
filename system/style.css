@@ -53,36 +53,6 @@ body {
   transition: .3s;
 }
 
-body.quick {
-  background: #E8EAF6;
-}
-
-body.quick::before {
-  content: "directions_run";
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10em;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
-  position: fixed;
-  opacity: .54;
-  right: 0;
-  bottom: 24px;
-  z-index: 0;
-}
-
-body.quick::after {
-  content: "QUICK MANUAL MODE ACTIVATED!";
-  position: fixed;
-  opacity: .54;
-  right: 12px;
-  bottom: 6px;
-  z-index: -1;
-}
-
 h2 {
   margin: 1em 0;
 }
@@ -170,38 +140,6 @@ dl#setting {
   width: calc(100% - 2em);
   transition: .25s, background 0s, color 0s;
   /*border-top: 1px rgba(0, 0, 0, .12) solid;*/
-}
-
-section>h3+a,
-nav h3>a:nth-child(2) {
-  position: absolute !important;
-  right: 0;
-  top: 1.4em;
-  opacity: 0;
-  color: rgba(0, 0, 0, 0.38);
-}
-
-nav h3>a:nth-child(2) {
-  top: .4em;
-  z-index: 1;
-  width: 20px;
-  overflow: visible;
-}
-
-section>h3:hover+a,
-nav h3:hover>a:nth-child(2) {
-  opacity: 1;
-  background: none;
-}
-
-section>h3+a:hover {
-  box-shadow: none;
-  background: none;
-  opacity: 1;
-}
-
-nav.fold h3:hover>a:nth-child(2) {
-  display: none;
 }
 
 body.fold #main_item {
@@ -325,10 +263,19 @@ h1:hover .percentage, h2:hover .percentage, h3:hover .percentage {
   opacity: .75;
 }
 
-h3 .material-icons {
+h3 .material-icons>svg {
+  fill: rgba(0, 0, 0, .54);
+}
+
+nav h3 .material-icons {
   vertical-align: bottom;
-  font-size: 1.25em !important;
-  margin-right: 1em
+  font-size: 20px;
+  margin-right: 1em;
+}
+
+nav h3 .material-icons>svg {
+  width: 20px;
+  max-width: none;
 }
 
 h4 {
@@ -379,6 +326,11 @@ h4:first-of-type {
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga';
+}
+
+.material-icons>svg {
+  width: 24px;
+  margin-bottom: 5%;
 }
 
 a:not(nav a)>.material-icons {

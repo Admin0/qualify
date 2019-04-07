@@ -38,7 +38,8 @@
 .general__dark .contents .img,
 .general__dark .contents img,
 .general__dark .contents svg,
-.general__dark .contents object {
+.general__dark .contents object,
+.general__dark .material-icons svg {
   fill: rgb(189, 193, 198);
 }
 

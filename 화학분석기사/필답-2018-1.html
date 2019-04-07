@@ -157,11 +157,9 @@
       </div>
       <div class="answer">
         $
-        E = E^0 - \left(\dfrac{RT}{nF}\right)\log{Q} \text{ 이므로,} \\
-        \begin{align*}
+        E = E^0 - \frac{RT}{nF}\log{\frac{[a_\pu{Red}]}{[a_\pu{Ox}]}} \text{ 이므로,} \\
         E = 1.61 - 0.05916\log{\frac{\ce{[Ce^3+]}}{\ce{[Ce^4+]}}} \\
         E = 0.15 - \frac{0.05916}{2}\log{\frac{\ce{[Sn^2+]}}{\ce{[Sn^4+]}}}
-        \end{align*}
         $
       </div>
       <div class="answer">
@@ -183,8 +181,10 @@
       <div class="answer">
         당량점에서 대부분의 $\ce{[Ce^4+]}$ 는 $\ce{[Ce^3+]}$ 로 바뀌었으므로,
         $\ce{
-        [Ce^3+] \approx (1.0 M \times 10 ml)/(10 ml + 10 ml) \\ = 0.5 M \\
-        0.6367 = 1.61 - 0.05916\log{\frac{0.5-[\ce{Ce^4+}]}{[\ce{Ce^4+}]}} \\
+        [Ce^3+] \approx \frac{1.0 M \times 10 ml}{10 ml + 10 ml} = 0.5 M \\
+        \text{Nernst 식에 대입하면, } \\
+        0.6367 = 1.61 - 0.05916\log{\frac{\ce{0.5 M - [Ce^4+]}}{[\ce{Ce^4+}]}} \text{ 이고,} \\
+        \log{\frac{\ce{0.5 M - [Ce^4+]}}{[\ce{Ce^4+}]}}\text{에서 } [\ce{Ce^4+}] \text{는 무시할 수 있을 만큼 아주 작으므로 분모의 } [\ce{Ce^4+}] = 0\text{으로 두고 풀면,} \\
         \therefore [Ce^3+] = 0.5 M, [Ce^4+] = \pu{5.30E-16 M}
         }$
       </div>

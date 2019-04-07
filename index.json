@@ -1,58 +1,129 @@
 {
   "화학분석기사": {
     "title": "화학분석기사",
-    "contents": [
-      "필답-2006-4",
-      "필답-2007-4",
-      "필답-2008-4",
-      "필답-2009-2",
-      "필답-2009-4",
-      "필답-2010-2",
-      "필답-2010-4",
-      "필답-2011-1",
-      "필답-2011-4",
-      "필답-2012-1",
-      "필답-2012-4",
-      "필답-2013-1",
-      "필답-2013-4",
-      "필답-2014-1",
-      "필답-2014-4",
-      "필답-2015-1",
-      "필답-2015-4",
-      "필답-2016-1",
-      "필답-2016-4",
-      "필답-2017-1",
-      "필답-2017-4",
-      "필답-2018-1",
-      "필답-2018-4",
-      "작업~2019"
-    ]
+    "contents": [{
+      "title": "필답-2006-4",
+      "icon": "test_tube"
+    }, {
+      "title": "필답-2007-4",
+      "icon": "test_tube"
+    }, {
+      "title": "필답-2008-4",
+      "icon": "test_tube"
+    }, {
+      "title": "필답-2009-2",
+      "icon": "test_tube"
+    }, {
+      "title": "필답-2009-4",
+      "icon": "test_tube"
+    }, {
+      "title": "필답-2010-2",
+      "icon": "test_tube"
+    }, {
+      "title": "필답-2010-4",
+      "icon": "test_tube"
+    }, {
+      "title": "필답-2011-1",
+      "icon": "test_tube"
+    }, {
+      "title": "필답-2011-4",
+      "icon": "test_tube"
+    }, {
+      "title": "필답-2012-1",
+      "icon": "test_tube"
+    }, {
+      "title": "필답-2012-4",
+      "icon": "test_tube"
+    }, {
+      "title": "필답-2013-1",
+      "icon": "test_tube"
+    }, {
+      "title": "필답-2013-4",
+      "icon": "test_tube"
+    }, {
+      "title": "필답-2014-1",
+      "icon": "test_tube"
+    }, {
+      "title": "필답-2014-4",
+      "icon": "test_tube"
+    }, {
+      "title": "필답-2015-1",
+      "icon": "test_tube"
+    }, {
+      "title": "필답-2015-4",
+      "icon": "test_tube"
+    }, {
+      "title": "필답-2016-1",
+      "icon": "test_tube"
+    }, {
+      "title": "필답-2016-4",
+      "icon": "test_tube"
+    }, {
+      "title": "필답-2017-1",
+      "icon": "test_tube"
+    }, {
+      "title": "필답-2017-4",
+      "icon": "test_tube"
+    }, {
+      "title": "필답-2018-1",
+      "icon": "test_tube"
+    }, {
+      "title": "필답-2018-4",
+      "icon": "test_tube"
+    }, {
+      "title": "작업~2019",
+      "icon": "test_tube"
+    }]
   },
   "위험물산업기사": {
     "title": "위험물산업기사",
-    "contents": [
-      "필답-2015-2",
-      "필답-2015-4",
-      "필답-2016-1",
-      "필답-2016-2",
-      "필답-2018-2",
-      "작업-2018-2"
-    ]
+    "contents": [{
+      "title": "필답-2015-2",
+      "icon": "fire_extinguisher"
+    }, {
+      "title": "필답-2015-4",
+      "icon": "fire_extinguisher"
+    }, {
+      "title": "필답-2016-1",
+      "icon": "fire_extinguisher"
+    }, {
+      "title": "필답-2016-2",
+      "icon": "fire_extinguisher"
+    }, {
+      "title": "필답-2018-2",
+      "icon": "fire_extinguisher"
+    }, {
+      "title": "작업-2018-2",
+      "icon": "fire_extinguisher"
+    }]
   },
   "화공기사": {
     "title": "화공기사 ★",
-    "contents": [
-      "필답-2013-4",
-      "필답-2014-1",
-      "필답-2015-2",
-      "필답-2016-1",
-      "필답-2016-2",
-      "필답-2017-1",
-      "후기"
-    ]
+    "contents": [{
+      "title": "필답-2013-4",
+      "icon": "oil_industry"
+    }, {
+      "title": "필답-2014-1",
+      "icon": "oil_industry"
+    }, {
+      "title": "필답-2015-2",
+      "icon": "oil_industry"
+    }, {
+      "title": "필답-2016-1",
+      "icon": "oil_industry"
+    }, {
+      "title": "필답-2016-2",
+      "icon": "oil_industry"
+    }, {
+      "title": "필답-2017-1",
+      "icon": "oil_industry"
+    }, {
+      "title": "후기",
+      "icon": "contract"
+    }]
   },
   "화약류제조기사": {
-    "title": "화약류제조기사 (준비중) (2020년 2회까지 필기 2과목 면제)"
+    "title": "화약류제조기사 (준비중) (2020년 2회까지 필기 3과목 면제)"
   },
   "품질경영기사": {
     "title": "품질경영기사 (준비중)"
@@ -68,26 +139,63 @@
   },
   "기타": {
     "title": "기타 ☆☆☆★★★★",
-    "contents": [
-      "컴퓨터활용능력-1급",
-      "워드프로세서-1급",
-      "정보처리기능사",
-      "Microsoft-Office-Specialist-MASTER",
-      "Microsoft-Office-PowerPoint-2010-Core",
-      "Microsoft-Office-Access-2010-Core",
-      "Microsoft-Office-Word-2010-Expert",
-      "Microsoft-Office-Excel-2010-Expert",
-      "비서-1급",
-      "비서-2급",
-      "비서-3급",
-      "수렵면허-1종",
-      "자동차운전면허-1종보통",
-      "ISO-9001-내부심사자격",
-      "ISO-9001-/-TS-16949-내부심사원",
-      "ISO-14001-내부심사자격",
-      "OHSAS-18001-내부심사자격",
-      "태권도-1단",
-      "한자능력-5급"
-    ]
+    "contents": [{
+      "title": "컴퓨터활용능력-1급",
+      "icon": "contract"
+    }, {
+      "title": "워드프로세서-1급",
+      "icon": "contract"
+    }, {
+      "title": "정보처리기능사",
+      "icon": "contract"
+    }, {
+      "title": "Microsoft-Office-Specialist-MASTER",
+      "icon": "contract"
+    }, {
+      "title": "Microsoft-Office-PowerPoint-2010-Core",
+      "icon": "contract"
+    }, {
+      "title": "Microsoft-Office-Access-2010-Core",
+      "icon": "contract"
+    }, {
+      "title": "Microsoft-Office-Word-2010-Expert",
+      "icon": "contract"
+    }, {
+      "title": "Microsoft-Office-Excel-2010-Expert",
+      "icon": "contract"
+    }, {
+      "title": "비서-1급",
+      "icon": "contract"
+    }, {
+      "title": "비서-2급",
+      "icon": "contract"
+    }, {
+      "title": "비서-3급",
+      "icon": "contract"
+    }, {
+      "title": "수렵면허-1종",
+      "icon": "contract"
+    }, {
+      "title": "자동차운전면허-1종보통",
+      "icon": "contract"
+    }, {
+      "title": "ISO-9001-내부심사자격",
+      "icon": "contract"
+    }, {
+      "title": "ISO-9001-/-TS-16949-내부심사원",
+      "icon": "contract"
+    }, {
+      "title": "ISO-14001-내부심사자격",
+      "icon": "contract"
+    }, {
+      "title": "OHSAS-18001-내부심사자격",
+      "icon": "contract"
+    }, {
+      "title": "태권도-1단",
+      "icon": "contract"
+    }, {
+      "title": "한자능력-5급",
+      "icon": "contract"
+    }]
   }
 }

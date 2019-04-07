@@ -20,6 +20,7 @@
   flex: auto;
   text-align: center;
   overflow: hidden;
+  width: 25%;
 }
 
 #share .share .icon {
@@ -28,7 +29,7 @@
   margin: auto;
 }
 
-#share .share .icon img{
+#share .share .icon svg {
   width: 100%;
 }
 
