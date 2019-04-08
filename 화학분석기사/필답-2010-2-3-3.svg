@@ -1,0 +1,162 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="921px" height="210px" viewBox="-0.5 -0.5 921 210" style="fill:none;"><defs/>
+  <g><path d="M 50.19 154.1 L 93.82 154.1" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 99.07 154.1 L 92.07 157.6 L 93.82 154.1 L 92.07 150.6 Z" stroke-miterlimit="10" pointer-events="none"/>
+    <g transform="translate(84.5,133.5)">
+      <switch>
+        <foreignObject style="overflow:visible;" pointer-events="all" width="11" height="11" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica;   line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit; ">
+              <i>hv</i>
+            </div>
+          </div>
+        </foreignObject>
+        <text x="6" y="11" text-anchor="middle" font-size="11px" font-family="Helvetica">[Not supported by viewer]</text>
+      </switch>
+    </g><ellipse cx="25" cy="154" rx="25" ry="25" pointer-events="none"/>
+    <g transform="translate(8.5,140.5)">
+      <switch>
+        <foreignObject style="overflow:visible;" pointer-events="all" width="32" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div
+            xmlns="http://www.w3.org/1999/xhtml"
+            style="display: inline-block; font-size: 12px; font-family: Helvetica;   line-height: 1.2; vertical-align: top; width: 33px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">광원<br/>
+              <font style="font-size: 10px">Source</font><br/></div>
+          </div>
+        </foreignObject>
+        <text x="16" y="19" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text>
+      </switch>
+    </g><path d="M 220 154 L 283.49 154" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 288.74 154 L 281.74 157.5 L 283.49 154 L 281.74 150.5 Z" stroke-miterlimit="10" pointer-events="none"/><rect x="100" y="124" width="120" height="60" pointer-events="none"/>
+    <g transform="translate(106.5,140.5)">
+      <switch>
+        <foreignObject style="overflow:visible;" pointer-events="all" width="107" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div
+            xmlns="http://www.w3.org/1999/xhtml"
+            style="display: inline-block; font-size: 12px; font-family: Helvetica;   line-height: 1.2; vertical-align: top; width: 108px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">필터 혹은 단색화장치<br/>
+              <font style="font-size: 10px">Filter or monochromator</font><br/></div>
+          </div>
+        </foreignObject>
+        <text x="54" y="19" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text>
+      </switch>
+    </g><path d="M 323 122 L 323 38.37" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 323 33.12 L 326.5 40.12 L 323 38.37 L 319.5 40.12 Z" stroke-miterlimit="10" pointer-events="none"/><path d="M 323 32 L 423.63 31.06" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 428.88 31.01 L 421.92 34.58 L 423.63 31.06 L 421.85 27.58 Z" stroke-miterlimit="10" pointer-events="none"/>
+    <rect x="294" y="23" width="50" height="10" transform="rotate(-45,319,28)" pointer-events="none"/><path d="M 490 31 L 553.63 31" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 558.88 31 L 551.88 34.5 L 553.63 31 L 551.88 27.5 Z" stroke-miterlimit="10" pointer-events="none"/>
+    <rect x="430" y="0.5" width="60" height="60" pointer-events="none"/>
+    <g transform="translate(431.5,10.5)">
+      <switch>
+        <foreignObject style="overflow:visible;" pointer-events="all" width="56" height="40" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div
+            xmlns="http://www.w3.org/1999/xhtml"
+            style="display: inline-block; font-size: 12px; font-family: Helvetica;   line-height: 1.2; vertical-align: top; width: 56px; white-space: normal; overflow-wrap: normal; text-align: center;">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">바탕셀<br/>
+              <font style="font-size: 10px">Reference cell</font><br/></div>
+          </div>
+        </foreignObject>
+        <text x="28" y="26" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text>
+      </switch>
+    </g><path d="M 490 154 L 565.63 153.08" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 570.88 153.01 L 563.93 156.6 L 565.63 153.08 L 563.84 149.6 Z" stroke-miterlimit="10" pointer-events="none"/><rect x="430" y="124" width="60" height="60" pointer-events="none"/>
+    <g transform="translate(433.5,140.5)">
+      <switch>
+        <foreignObject style="overflow:visible;" pointer-events="all" width="52" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div
+            xmlns="http://www.w3.org/1999/xhtml"
+            style="display: inline-block; font-size: 12px; font-family: Helvetica;   line-height: 1.2; vertical-align: top; width: 53px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">시료셀<br/>
+              <font style="font-size: 10px">Sample cell</font><br/></div>
+          </div>
+        </foreignObject>
+        <text x="26" y="19" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text>
+      </switch>
+    </g>
+    <g transform="translate(252.5,183.5)">
+      <switch>
+        <foreignObject style="overflow:visible;" pointer-events="all" width="65" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div
+            xmlns="http://www.w3.org/1999/xhtml"
+            style="display: inline-block; font-size: 12px; font-family: Helvetica;   line-height: 1.2; vertical-align: top; width: 66px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">토막틀<br/>
+              <font style="font-size: 10px">Beam chopper</font>
+            </div>
+          </div>
+        </foreignObject>
+        <text x="33" y="19" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text>
+      </switch>
+    </g><path d="M 680 31 L 733.63 31" stroke-miterlimit="10" pointer-events="none"/><path d="M 738.88 31 L 731.88 34.5 L 733.63 31 L 731.88 27.5 Z" stroke-miterlimit="10" pointer-events="none"/><rect x="620" y="0.5" width="60" height="60" pointer-events="none"/>
+    <g transform="translate(621.5,10.5)">
+      <switch>
+        <foreignObject style="overflow:visible;" pointer-events="all" width="56" height="40" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div
+            xmlns="http://www.w3.org/1999/xhtml"
+            style="display: inline-block; font-size: 12px; font-family: Helvetica;   line-height: 1.2; vertical-align: top; width: 56px; white-space: normal; overflow-wrap: normal; text-align: center;">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">검출기<br/>
+              <font style="font-size: 10px">Photo detector</font><br/></div>
+          </div>
+        </foreignObject>
+        <text x="28" y="26" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text>
+      </switch>
+    </g><path d="M 800 31 L 853.63 31" stroke-miterlimit="10" pointer-events="none"/><path d="M 858.88 31 L 851.88 34.5 L 853.63 31 L 851.88 27.5 Z" stroke-miterlimit="10" pointer-events="none"/><rect x="740" y="0.5" width="60" height="60" pointer-events="none"/>
+    <g transform="translate(741.5,10.5)">
+      <switch>
+        <foreignObject style="overflow:visible;" pointer-events="all" width="56" height="40" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div
+            xmlns="http://www.w3.org/1999/xhtml"
+            style="display: inline-block; font-size: 12px; font-family: Helvetica;   line-height: 1.2; vertical-align: top; width: 56px; white-space: normal; overflow-wrap: normal; text-align: center;">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">증폭기<br/>
+              <font style="font-size: 10px">Amplifier</font><br/></div>
+          </div>
+        </foreignObject>
+        <text x="28" y="26" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text>
+      </switch>
+    </g><rect x="860" y="0.5" width="60" height="60" pointer-events="none"/>
+    <g transform="translate(867.5,17.5)">
+      <switch>
+        <foreignObject style="overflow:visible;" pointer-events="all" width="44" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div
+            xmlns="http://www.w3.org/1999/xhtml"
+            style="display: inline-block; font-size: 12px; font-family: Helvetica;   line-height: 1.2; vertical-align: top; width: 45px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">판독장치<br/>
+              <font style="font-size: 10px">Readout</font><br/></div>
+          </div>
+        </foreignObject>
+        <text x="22" y="19" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text>
+      </switch>
+    </g><rect x="247.5" y="82" width="10" height="60" pointer-events="none"/><path d="M 237.5 135.63 L 237.5 88.37" stroke-miterlimit="10" pointer-events="none"/><path d="M 237.5 140.88 L 234 133.88 L 237.5 135.63 L 241 133.88 Z" stroke-miterlimit="10" pointer-events="none"/><path d="M 237.5 83.12 L 241 90.12 L 237.5 88.37 L 234 90.12 Z" stroke-miterlimit="10" pointer-events="none"/>
+    <g transform="translate(235.5,47.5)">
+      <switch>
+        <foreignObject style="overflow:visible;" pointer-events="all" width="33" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div
+            xmlns="http://www.w3.org/1999/xhtml"
+            style="display: inline-block; font-size: 12px; font-family: Helvetica;   line-height: 1.2; vertical-align: top; width: 34px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">셔터<br/>
+              <font style="font-size: 10px">Shutter</font><br/></div>
+          </div>
+        </foreignObject>
+        <text x="17" y="19" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text>
+      </switch>
+    </g>
+    <g transform="translate(277.5,6.5)">
+      <switch>
+        <foreignObject style="overflow:visible;" pointer-events="all" width="26" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div
+            xmlns="http://www.w3.org/1999/xhtml"
+            style="display: inline-block; font-size: 12px; font-family: Helvetica;   line-height: 1.2; vertical-align: top; width: 27px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">거울<br/>
+              <font style="font-size: 10px">Mirror</font><br/></div>
+          </div>
+        </foreignObject>
+        <text x="13" y="19" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text>
+      </switch>
+    </g><path d="M 355 154 L 423.63 154" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 428.88 154 L 421.88 157.5 L 423.63 154 L 421.88 150.5 Z" stroke-miterlimit="10" pointer-events="none"/><ellipse cx="323" cy="154" rx="32.5" ry="32.5" pointer-events="none"/><path d="M 299.42 130.92 L 345.58 177.08" stroke-miterlimit="10" pointer-events="none"/><path d="M 345.58 130.92 L 299.42 177.08" stroke-miterlimit="10" pointer-events="none"/><path d="M 572 153 L 572 40.37" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 572 35.12 L 575.5 42.12 L 572 40.37 L 568.5 42.12 Z" stroke-miterlimit="10" pointer-events="none"/><rect x="551" y="152" width="50" height="10" transform="rotate(-45,576,157)" pointer-events="none"/><path d="M 575 31 L 609 31 L 600 31 L 613.63 31" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 618.88 31 L 611.88 34.5 L 613.63 31 L 611.88 27.5 Z" stroke-miterlimit="10" pointer-events="none"/><rect x="543" y="25.5" width="50" height="10" transform="rotate(-45,568,30.5)" pointer-events="none"/>
+    <g transform="translate(504.5,52.5)">
+      <switch>
+        <foreignObject style="overflow:visible;" pointer-events="all" width="59" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <div
+            xmlns="http://www.w3.org/1999/xhtml"
+            style="display: inline-block; font-size: 12px; font-family: Helvetica;   line-height: 1.2; vertical-align: top; width: 60px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+            <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">그리드 거울<br/>
+              <font style="font-size: 10px">Grid mirror</font><br/></div>
+          </div>
+        </foreignObject>
+        <text x="30" y="19" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text>
+      </switch>
+    </g><path d="M 572 34 L 564 27" stroke-miterlimit="10" pointer-events="none"/><path d="M 563 43 L 556 36" stroke-miterlimit="10" pointer-events="none"/><path d="M 580 25 L 573 18" stroke-miterlimit="10" pointer-events="none"/></g>
+</svg>

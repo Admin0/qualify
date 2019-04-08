@@ -180,6 +180,10 @@ body.page {
   transition: .25s fill;
 }
 
+svg {
+  stroke: rgb(0, 0, 0);
+}
+
 .translation {
   /* color: rgba(0, 0, 0, .38); */
   opacity: .65;

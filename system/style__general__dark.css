@@ -35,12 +35,15 @@
   outline-color: #424242C0;
 }
 
+/* imgs */
 .general__dark .contents .img,
 .general__dark .contents img,
 .general__dark .contents svg,
 .general__dark .contents object,
 .general__dark .material-icons svg {
   fill: rgb(189, 193, 198);
+  stroke: rgb(189, 193, 198);
+  color: rgb(189, 193, 198);
 }
 
 .general__dark .contents ol li:before {
