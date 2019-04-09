@@ -160,13 +160,17 @@
 
   <div class="q_wrap">
     <div class="question">
-      $\ce{0.05 M HCl}$ 용액 $\ce{50 mL}$에 0.1M $\ce{NaOH}$ 용액 $\ce{10 mL}$룰 가했을 때의 pH는 얼마인가?
+      $\ce{0.05 M HCl}$ 용액 $\ce{50 mL}$에 $\ce{0.1 M NaOH}$ 용액 $\ce{10 mL}$룰 가했을 때의 pH는 얼마인가?
     </div>
     <div class="answer">
-      $\ce{ HCl = 2.5 mmol, NaOH = 1 mmol \\
-      \text{반응하면 } H+ 1.5 mmol \text{ 남음} \\
-      [H+]=1.5 mmol / 60 ml = 0.025M \\
-      pH=-\log[H+]=-\log(0.025) = 1.6 }$
+      $\ce{
+      \begin{align*}
+      [H+] &= \frac{(0.05 M \times 50 ml)_\ce{HCl} - (0.1 M \times 10 ml)_\ce{NaOH}}{50 ml + 10 ml} \\
+      &= 1.5 mmol / 60 ml \\
+      &= 0.025 M
+      \end{align*} \\
+      pH = -\log[H+] = -\log(0.025) = 1.6
+      }$
     </div>
     <div class="comment">
 
@@ -245,16 +249,7 @@
   <div class="q_wrap">
     <div class="question">
       약산을 강염기로 적정한 아래의 적정곡선으로부터 이 약산의 pKa값을 구하라. 근거는?<br>
-      <div class="img" id="필답-2014-1-14" style="width:300px;"> </div>
-      <script>
-        var ajax_14 = new XMLHttpRequest();
-        ajax_14.open("GET", '/qualify/화학분석기사/필답-2014-1-14.svg', true);
-        ajax_14.send();
-        ajax_14.onload = function(e) {
-          document.querySelector('#필답-2014-1-14').innerHTML = ajax_14.responseText;
-        }
-      </script>
-      <!-- <object type="image/svg+xml" data="/qualify/화학분석기사/필답-2014-1-14.svg" style="width:300px;"> -->
+      <div class="load" style="width:300px;">화학분석기사/필답-2014-1-14.svg</div>
     </div>
     <div class="answer">
       적정반응 $\ce{HA + NaOH → NaA + H2O}$<br>

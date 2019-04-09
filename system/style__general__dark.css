@@ -25,11 +25,6 @@
   color: rgb(189, 193, 198);
 }
 
-/* contents */
-.general__dark .q_wrap .comment {
-  color: #c8b900;
-}
-
 .general__dark.answer__quiz .q_wrap .answer {
   background: #424242C0;
   outline-color: #424242C0;
@@ -39,11 +34,25 @@
 .general__dark .contents .img,
 .general__dark .contents img,
 .general__dark .contents svg,
-.general__dark .contents object,
-.general__dark .material-icons svg {
+.general__dark .contents object {
   fill: rgb(189, 193, 198);
   stroke: rgb(189, 193, 198);
   color: rgb(189, 193, 198);
+}
+
+.general__dark .material-icons svg {
+  fill: rgb(189, 193, 198);
+  color: rgb(189, 193, 198);
+}
+
+/* contents */
+.general__dark .q_wrap .comment {
+  color: #c8b900;
+}
+
+.general__dark .q_wrap .comment svg {
+  color: #c8b900;
+  stroke: #c8b900;
 }
 
 .general__dark .contents ol li:before {
@@ -85,8 +94,6 @@
   color: rgb(189, 193, 198);
 }
 
-.general__dark a:hover,
-.general__dark .contents a:hover,
-.general__dark nav a:hover {
+.general__dark .contents a:hover {
   background: rgba(158, 158, 158, .2);
 }

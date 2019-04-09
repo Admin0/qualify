@@ -138,7 +138,7 @@
     "title": "사무자동화산업기사 ★ (준비중)"
   },
   "기타": {
-    "title": "기타 ☆☆☆★★★★",
+    "title": "기타 ★",
     "contents": [{
       "title": "컴퓨터활용능력-1급",
       "icon": "contract"
@@ -150,19 +150,19 @@
       "icon": "contract"
     }, {
       "title": "Microsoft-Office-Specialist-MASTER",
-      "icon": "contract"
+      "icon": "microsoft_office"
     }, {
       "title": "Microsoft-Office-PowerPoint-2010-Core",
-      "icon": "contract"
+      "icon": "microsoft_powerpoint"
     }, {
       "title": "Microsoft-Office-Access-2010-Core",
-      "icon": "contract"
+      "icon": "microsoft_access"
     }, {
       "title": "Microsoft-Office-Word-2010-Expert",
-      "icon": "contract"
+      "icon": "microsoft_word"
     }, {
       "title": "Microsoft-Office-Excel-2010-Expert",
-      "icon": "contract"
+      "icon": "microsoft_excel"
     }, {
       "title": "비서-1급",
       "icon": "contract"
@@ -174,7 +174,7 @@
       "icon": "contract"
     }, {
       "title": "수렵면허-1종",
-      "icon": "contract"
+      "icon": "deer"
     }, {
       "title": "자동차운전면허-1종보통",
       "icon": "contract"
@@ -182,7 +182,7 @@
       "title": "ISO-9001-내부심사자격",
       "icon": "contract"
     }, {
-      "title": "ISO-9001-/-TS-16949-내부심사원",
+      "title": "ISO-9001/TS-16949-내부심사자격",
       "icon": "contract"
     }, {
       "title": "ISO-14001-내부심사자격",
@@ -191,8 +191,20 @@
       "title": "OHSAS-18001-내부심사자격",
       "icon": "contract"
     }, {
+      "title": "헌혈-유공장-은장",
+      "icon": "water"
+    }, {
+      "title": "헌혈-유공장-금장",
+      "icon": "water"
+    }, {
+      "title": "헌혈-유공장-명예장",
+      "icon": "water"
+    }, {
+      "title": "자전거-국토종주-인증",
+      "icon": "directions_bike"
+    }, {
       "title": "태권도-1단",
-      "icon": "contract"
+      "icon": "kicking"
     }, {
       "title": "한자능력-5급",
       "icon": "contract"

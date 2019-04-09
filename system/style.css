@@ -330,6 +330,7 @@ h4:first-of-type {
 
 .material-icons>svg {
   width: 24px;
+  height: inherit;
   margin-bottom: 5%;
 }
 

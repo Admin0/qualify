@@ -21,7 +21,7 @@ function load_navigat_title(key, val) {
   $("<h2/>", {
     "id": key,
     "class": key,
-    html: "<a href='#" + key + "'>" + val.title + "</a>"
+    html: "<a href='#" + key + "'>" + val.title + (val.contents != null ? " <span class='translation'>(" + val.contents.length + ")</span>" : "") + "</a>"
   }).appendTo("#nav_item_list").append("<a onclick='$(\"h3." + key + "\").slideToggle();'><i class='material-icons'>unfold_less</i></a>");
 }
 
@@ -40,8 +40,9 @@ function load_content_title(key, val) {
   $("<h2/>", {
     "id": key,
     "class": key,
-    html: val.title
+    html: val.title + (val.contents != null ? " <span class='translation'>(" + val.contents.length + ")</span>" : "")
   }).appendTo("#item_list");
+  console.log(val);
 }
 
 function load_content_items(category, item) {

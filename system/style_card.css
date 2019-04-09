@@ -126,6 +126,10 @@ body.page {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
+.q_wrap .comment svg {
+  stroke: #2196f3;
+}
+
 /* ad: 광고가 끼면 first-child 선택자가 안 먹기 때문에 first-of-type 으로 우회합니당^^ */
 .contents .ad {
   margin: 1em 0;
@@ -173,14 +177,14 @@ body.page {
   font-size: 12px;
 }
 
-.img, img, .svg, svg, object, .load {
+.contents .img, .contents img, .contents .svg, .contents svg, .contents object, .contents .load {
   max-width: 100%;
   height: inherit;
   margin-left: 0;
   transition: .25s fill;
 }
 
-svg {
+.contents svg {
   stroke: rgb(0, 0, 0);
 }
 
