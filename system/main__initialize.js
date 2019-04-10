@@ -17,12 +17,56 @@ function get_icon(name) {
   return result;
 }
 
+function slide(target) {
+  var time = 10;
+  switch (!$("#" + target).hasClass("slided")) {
+    case true:
+      // console.log("true");
+      $("#nav_item_list .item." + target).each(function(index) {
+        var t = $(this);
+        setTimeout(function() {
+          t.hide();
+        }, time * index);
+        // console.log(index);
+      });
+      $("#" + target + " i").text("unfold_more");
+      $("#" + target).addClass("slided");
+      window.localStorage["item_" + target + "_is_folded"] = "true";
+      break;
+    case false:
+      // console.log("false");
+      $("nav .item." + target).each(function(index) {
+        var t = $(this);
+        setTimeout(function() {
+          t.show();
+        }, time * index);
+        // console.log(index);
+      });
+      $("#" + target + " i").text("unfold_less");
+      $("#" + target).removeClass("slided");
+      window.localStorage["item_" + target + "_is_folded"] = "false";
+      break;
+    default:
+  }
+}
+
+function check_item_folded() {
+  $("#nav_item_list h2").each(function(index) {
+    if (window.localStorage["item_" + $(this).attr("id") + "_is_folded"] == "true") {
+      // console.log(window.localStorage["item_" + $(this).attr("id") + "_is_folded"]);
+      $("#nav_item_list h3." + $(this).attr("id")).hide();
+      $("#" + $(this).attr("id") + " i").text("unfold_more");
+      $("#" + $(this).attr("id")).addClass("slided");
+    }
+  });
+}
+
 function load_navigat_title(key, val) {
   $("<h2/>", {
     "id": key,
     "class": key,
     html: "<a href='#" + key + "'>" + val.title + (val.contents != null ? " <span class='translation'>(" + val.contents.length + ")</span>" : "") + "</a>"
-  }).appendTo("#nav_item_list").append("<a onclick='$(\"h3." + key + "\").slideToggle();'><i class='material-icons'>unfold_less</i></a>");
+  }).appendTo("#nav_item_list").append("<a onclick='slide(\"" + key + "\");'><i class='material-icons'>unfold_less</i></a>");
 }
 
 function load_navigat_items(category, item) {
@@ -42,7 +86,7 @@ function load_content_title(key, val) {
     "class": key,
     html: val.title + (val.contents != null ? " <span class='translation'>(" + val.contents.length + ")</span>" : "")
   }).appendTo("#item_list");
-  console.log(val);
+  // console.log(val);
 }
 
 function load_content_items(category, item) {
@@ -68,6 +112,7 @@ function initialize() {
         load_navigat_items(key, element);
       });
     });
+    check_item_folded();
   });
 }
 
