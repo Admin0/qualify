@@ -99,7 +99,7 @@
     </div>
     <div class="answer">
       $
-      R_s = \dfrac{\sqrt{N}}{4}\left(\dfrac{\alpha - 1}{\alpha}\right)\left(\dfrac{k_\ce{B}}{k_\ce{B}}\right) \text{ 이므로,} \\
+      R_s = \underset{\text{Effeciency}}{\dfrac{\sqrt{N}}{4}}\underset{\text{Selectivity}}{\left(\dfrac{\alpha - 1}{\alpha}\right)}\underset{\text{Retention}}{\left(\dfrac{k}{k + 1}\right)} \text{ 이므로,} \\
       \text{분리능은 }\sqrt{2}\text{배 증가한다.} $
     </div>
     <div class="comment">
@@ -113,8 +113,8 @@
     </div>
     <div class="answer">
       $
-      \dfrac{(\pu{0.05 M × 50 ml)_\ce{Mg^2+} - (\pu{0.05 M × 5 ml}})_\ce{EDTA}}{\pu{(50 + 5) ml}} = \pu{0.0409 M} \\
-      \pu{pMg} = -\log 0.0409 = 1.3883
+      \begin{align*} \ce{[Mg^2+]} & =\dfrac{(\pu{0.05 M × 50 ml)_\ce{Mg^2+} - (\pu{0.05 M × 5 ml}})_\ce{EDTA}}{\pu{(50 + 5) ml}} = \pu{0.0409 M} \\
+      \therefore \pu{pMg} &= -\log{\ce{[Mg^2+]}}= -\log 0.0409 \\ &= 1.3883 \end{align*}
       $
     </div>
     <div class="comment">
@@ -146,13 +146,12 @@
     </div>
     <div class="answer">
       $
-      \bar{x} = (782 + 794 + 833 + 854)/4 = \pu{815.75 hours}\\
       \begin{align*}
+      \bar{x} &= (782 + 794 + 833 + 854)/4 \\ &= \pu{815.75 hours}\\
       s & = \sqrt{\dfrac{\sum_{i=1}^n (x_i - \bar{x})^2}{n-1}} \\
-      & = \sqrt{\dfrac{(782 - 815.75)^2 + (794 - 815.75)^2 + (833 - 815.75)^2 + (854 - 815.75)^2}{4-1}} \\
+      & = \sqrt{\tfrac{(782 - 815.75)^2 + (794 - 815.75)^2 + (833 - 815.75)^2 + (854 - 815.75)^2}{4-1}} \\
       & = \pu{33.52 hours} \\
-      \end{align*} \\
-      \therefore \pu{33.52 hours}
+      \end{align*}
       $
     </div>
     <div class="comment">
@@ -164,7 +163,7 @@
 
   <div class="q_wrap">
     <div class="question">
-      염기성 물질의 pKa가 9일 때 유기용매에서 이 염기성 물질이 추출될 수 있는 최소 pH는 ( <span class="answer"> 10 </span> )이다.
+      염기성 물질의 pKa가 9일 때 유기용매에서 이 염기성 물질이 추출될 수 있는 최소 pH는 ( <span class="answer">10</span> )이다.
     </div>
     <div class="comment">
       pH = 10일 경우 예상되는 partition coefficient는 10이다. (90% 추출)
