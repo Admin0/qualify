@@ -379,7 +379,7 @@ footer {
   visibility: hidden;
   opacity: 0;
   filter: alpha(opacity=0);
-  background: #212121;
+  background: #424242;
   -webkit-transition: .5s opacity;
   transition: .5s opacity;
   padding: 1ex;
@@ -395,7 +395,7 @@ footer {
 }
 
 #tooltip_before, #tooltip_nav_before {
-  border-color: #212121 transparent transparent;
+  border-color: #424242 transparent transparent;
   border-width: 1ex 1ex 0;
   border-style: solid;
   content: " ";
@@ -723,7 +723,7 @@ footer {
 
   #item_list section.item {
     width: 100%;
-    max-width: calc(100% - 3.5em);
+    max-width: calc(100% - 2em);
     margin: 0;
     border-top: 1px rgba(0, 0, 0, .12) solid;
     background: #fff;

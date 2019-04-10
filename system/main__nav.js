@@ -42,7 +42,7 @@ function nav_create() {
           'left': 68 + 16 + 'px'
         });
         $("nav.fold #tooltip_nav_before").css({
-          "border-color": "transparent #212121 transparent transparent",
+          "border-color": "transparent #424242 transparent transparent",
           "border-width": "1ex 1ex 1ex 0",
           "left": "-.9ex",
           "bottom": "calc(50% - .5em)"

@@ -146,11 +146,11 @@ function title_tooltip() {
   });
   $('body').append('<div id="tooltip"><div id="tooltip_text"></div><div id="tooltip_before"></div></div>');
   $("#tooltip").css({
-    "background": "#000"
+    "background": "#424242"
   });
   $("#tooltip").append($("#tooltip_before"));
   $("#tooltip_before").css({
-    "border-color": "#000 transparent transparent transparent"
+    "border-color": "#424242 transparent transparent transparent"
   });
   $('[data-title]').each(function() {
     $(this).hover(
