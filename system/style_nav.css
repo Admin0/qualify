@@ -108,8 +108,8 @@ nav h4 a {
   padding-left: 3em
 }
 
-nav h2>a:nth-child(2),
-nav h3>a:nth-child(2) {
+nav h2 a.btn_item_fold,
+nav h3 a.btn_item_open {
   position: absolute !important;
   right: 0;
   opacity: 0;

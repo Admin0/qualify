@@ -74,7 +74,7 @@
           <td>(1) 제한된 스펙트럼을 제공하는 파장 선택기 <br>
             (2) 안정된 복사선 에너지를 방출하는 광원 <br>
             (3) 시료 용기 <br>
-            (4)신호 처리 및 판독 장치 <br>
+            (4) 신호 처리 및 판독 장치 <br>
             (5) 복사선을 유용한 신호로 변환시키는 검출기</td>
         </tr>
       </table>
@@ -111,23 +111,30 @@
     <div class="answer">
       무게달기 상대오차가 적어져 더 정확한 농도의 표준용액을 만들 수 있다.
     </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
   </div>
 
   <div class="q_wrap">
     <div class="question">
-      염기성 물질의 Kpa가 9일 때 유기용매에서 이 염기성 물질이 추출될 수 있는 최소 pH는 얼마인가?
+      염기성 물질의 $\ce{p$K$_a}$가 $9$일 때 유기용매에서 이 염기성 물질이 추출될 수 있는 최소 $\pu{pH}$는 얼마인가?
     </div>
     <div class="answer">
-      $\ce{ HA <-> H+ + A- , pH = pKa + log([A-]/[HA]) \\
-        BOH <-> B+ + OH-, pOH = pKb + log([B+]/[BOH]) \\
-          pOH = 14-pH, pKb = 14 - pKa -> 위 식에 대입하면 \\
-          pKa - pH = log([B+]/[BOH]) \\
-          pH = 9이면, 0 = log([B+]/[BOH]), [B+]=[BOH] -> 50\%해리, 유기용매 50\% 추출 \\
-          pH = 10이면, -1 = log([B+]/[BOH]), [B+]=1/10*[BOH] -> 10\%해리, 유기용매 90\% 추출 \\
-          ∴ 최소 pH는 10}$
+      $$\ce{
+      \begin{align*}
+      HA &<-> H+ + A- &&(pH = p$K$_a + \log{\tfrac{[A-]}{[HA]}}) \\
+        BOH &<-> B+ + OH- &&(pOH = p$K$_b + \log{\tfrac{[B+]}{[BOH]}})
+          \end{align*} \\
+          }$$
+    </div>
+    <div class="answer">
+      $\ce{
+      pOH = 14 - pH, p$K$_b = 14 - p$K$_a \text{에서} \\
+      p$K$_a - pH = \log{\tfrac{[B+]}{[BOH]}} \text{이므로}, \\
+      pH = 9 \text{이면}, 0 = \log{\tfrac{[B+]}{[BOH]}},\\
+      [B+]=[BOH] -> 50\%해리, 유기용매 50\% 추출 \\
+      pH = 10 \text{이면}, -1 = \log{\tfrac{[B+]}{[BOH]}},\\
+      [B+]=1/10*[BOH] -> 10\%해리, 유기용매 90\% 추출 \\
+      ∴ 최소 pH는 10
+      }$
     </div>
     <div class="comment">
       이 문제 조건만으로는 문제를 풀 수 없다는 의견 있음.
@@ -141,9 +148,6 @@
     <div class="answer">
       $ 0.99^2 + 2.3^2 = 6.27\ \pu{ppm} $
     </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
   </div>
 
   <div class="q_wrap">
@@ -153,9 +157,6 @@
     <div class="answer">
       등흡광점.
     </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
   </div>
 
   <div class="q_wrap">
@@ -163,10 +164,12 @@
       원자 분광법에서 선넓힘이 일어나는 4가지 원인은?
     </div>
     <div class="answer">
-      불확정성 효과(전이 상태의 수명이 달라 생기는 효과), 도플러 효과(빠르게 움직이는 원자에 의함), 압력 효과(다른 원자와의 충돌), 전기장∙자기장 효과(센 자기장에서 에너지 준위가 분리됨).
-    </div>
-    <div class="comment">
-      $\ce{}$
+      <ol>
+        <li>불확정성 효과(전이 상태의 수명이 달라 생기는 효과)</li>
+        <li>도플러 효과(빠르게 움직이는 원자에 의함)</li>
+        <li>압력 효과(다른 원자와의 충돌)</li>
+        <li>전기장∙자기장 효과(센 자기장에서 에너지 준위가 분리됨)</li>
+      </ol>
     </div>
   </div>
 
@@ -174,25 +177,28 @@
     <div class="question">
       HPLC에서 이동상을 (1)한 가지 조성의 용매만을 사용하는 방법과 (2)주 가지 이상의 조성을 사용하는 방법을 각각 무엇이라고 하는가?
     </div>
-    <div class="answer">
-      (1)등용매 용리법, (2)기울기 용리법
-    </div>
-    <div class="comment">
-      $\ce{}$
+    <div class="q_wrap sub">
+      <div class="question sub">
+        <span class="answer">
+          등용매 용리법
+        </span>
+      </div>
+      <div class="question sub">
+        <span class="answer">
+          기울기 용리법
+        </span>
+      </div>
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question">
-      충치 예방을 위하여 $\ce{1.6 mg F-/Kg}$의 농도 음료수 1톤의 제조 시 필요한 $\ce{NaF}$의 얼마나 필요한가.(단 원자량은 $\ce{Na:23, F:19}$)
+      충치 예방을 위하여 $\ce{1.6 mg F-/kg}$의 농도 음료수 1톤의 제조 시 필요한 $\ce{NaF}$의 얼마나 필요한가.(단 원자량은 $\ce{Na:23, F:19}$)
     </div>
     <div class="answer">
       $\ce{1.6 mg/kg = 1.6 g/ton \\
-      NaF : F- = 42 : 19 = $x$ : 16 \\
+      NaF : F- = 42 : 19 = $x$ : 1.6 \\
       $x$ = 3.5368 g}$
-    </div>
-    <div class="comment">
-      $\ce{}$
     </div>
   </div>
 

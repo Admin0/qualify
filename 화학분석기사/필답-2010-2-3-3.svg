@@ -4,7 +4,7 @@
     <g transform="translate(84.5,133.5)">
       <switch>
         <foreignObject style="overflow:visible;" pointer-events="all" width="11" height="11" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-          <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px; font-family: Helvetica;   line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 11px;    line-height: 1.2; vertical-align: top; white-space: nowrap; text-align: center;">
             <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit; ">
               <i>hv</i>
             </div>
@@ -16,9 +16,7 @@
     <g transform="translate(8.5,140.5)">
       <switch>
         <foreignObject style="overflow:visible;" pointer-events="all" width="32" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-          <div
-            xmlns="http://www.w3.org/1999/xhtml"
-            style="display: inline-block; font-size: 12px; font-family: Helvetica;   line-height: 1.2; vertical-align: top; width: 33px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px;    line-height: 1.2; vertical-align: top; width: 33px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
             <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">광원<br/>
               <font style="font-size: 10px">Source</font><br/></div>
           </div>
@@ -29,9 +27,7 @@
     <g transform="translate(106.5,140.5)">
       <switch>
         <foreignObject style="overflow:visible;" pointer-events="all" width="107" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-          <div
-            xmlns="http://www.w3.org/1999/xhtml"
-            style="display: inline-block; font-size: 12px; font-family: Helvetica;   line-height: 1.2; vertical-align: top; width: 108px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px;    line-height: 1.2; vertical-align: top; width: 108px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
             <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">필터 혹은 단색화장치<br/>
               <font style="font-size: 10px">Filter or monochromator</font><br/></div>
           </div>
@@ -44,9 +40,7 @@
     <g transform="translate(431.5,10.5)">
       <switch>
         <foreignObject style="overflow:visible;" pointer-events="all" width="56" height="40" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-          <div
-            xmlns="http://www.w3.org/1999/xhtml"
-            style="display: inline-block; font-size: 12px; font-family: Helvetica;   line-height: 1.2; vertical-align: top; width: 56px; white-space: normal; overflow-wrap: normal; text-align: center;">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px;    line-height: 1.2; vertical-align: top; width: 56px; white-space: normal; overflow-wrap: normal; text-align: center;">
             <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">바탕셀<br/>
               <font style="font-size: 10px">Reference cell</font><br/></div>
           </div>
@@ -57,9 +51,7 @@
     <g transform="translate(433.5,140.5)">
       <switch>
         <foreignObject style="overflow:visible;" pointer-events="all" width="52" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-          <div
-            xmlns="http://www.w3.org/1999/xhtml"
-            style="display: inline-block; font-size: 12px; font-family: Helvetica;   line-height: 1.2; vertical-align: top; width: 53px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px;    line-height: 1.2; vertical-align: top; width: 53px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
             <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">시료셀<br/>
               <font style="font-size: 10px">Sample cell</font><br/></div>
           </div>
@@ -70,9 +62,7 @@
     <g transform="translate(252.5,183.5)">
       <switch>
         <foreignObject style="overflow:visible;" pointer-events="all" width="65" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-          <div
-            xmlns="http://www.w3.org/1999/xhtml"
-            style="display: inline-block; font-size: 12px; font-family: Helvetica;   line-height: 1.2; vertical-align: top; width: 66px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px;    line-height: 1.2; vertical-align: top; width: 66px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
             <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">토막틀<br/>
               <font style="font-size: 10px">Beam chopper</font>
             </div>
@@ -84,9 +74,7 @@
     <g transform="translate(621.5,10.5)">
       <switch>
         <foreignObject style="overflow:visible;" pointer-events="all" width="56" height="40" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-          <div
-            xmlns="http://www.w3.org/1999/xhtml"
-            style="display: inline-block; font-size: 12px; font-family: Helvetica;   line-height: 1.2; vertical-align: top; width: 56px; white-space: normal; overflow-wrap: normal; text-align: center;">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px;    line-height: 1.2; vertical-align: top; width: 56px; white-space: normal; overflow-wrap: normal; text-align: center;">
             <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">검출기<br/>
               <font style="font-size: 10px">Photo detector</font><br/></div>
           </div>
@@ -97,9 +85,7 @@
     <g transform="translate(741.5,10.5)">
       <switch>
         <foreignObject style="overflow:visible;" pointer-events="all" width="56" height="40" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-          <div
-            xmlns="http://www.w3.org/1999/xhtml"
-            style="display: inline-block; font-size: 12px; font-family: Helvetica;   line-height: 1.2; vertical-align: top; width: 56px; white-space: normal; overflow-wrap: normal; text-align: center;">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px;    line-height: 1.2; vertical-align: top; width: 56px; white-space: normal; overflow-wrap: normal; text-align: center;">
             <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">증폭기<br/>
               <font style="font-size: 10px">Amplifier</font><br/></div>
           </div>
@@ -110,9 +96,7 @@
     <g transform="translate(867.5,17.5)">
       <switch>
         <foreignObject style="overflow:visible;" pointer-events="all" width="44" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-          <div
-            xmlns="http://www.w3.org/1999/xhtml"
-            style="display: inline-block; font-size: 12px; font-family: Helvetica;   line-height: 1.2; vertical-align: top; width: 45px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px;    line-height: 1.2; vertical-align: top; width: 45px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
             <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">판독장치<br/>
               <font style="font-size: 10px">Readout</font><br/></div>
           </div>
@@ -123,9 +107,7 @@
     <g transform="translate(235.5,47.5)">
       <switch>
         <foreignObject style="overflow:visible;" pointer-events="all" width="33" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-          <div
-            xmlns="http://www.w3.org/1999/xhtml"
-            style="display: inline-block; font-size: 12px; font-family: Helvetica;   line-height: 1.2; vertical-align: top; width: 34px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px;    line-height: 1.2; vertical-align: top; width: 34px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
             <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">셔터<br/>
               <font style="font-size: 10px">Shutter</font><br/></div>
           </div>
@@ -136,9 +118,7 @@
     <g transform="translate(277.5,6.5)">
       <switch>
         <foreignObject style="overflow:visible;" pointer-events="all" width="26" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-          <div
-            xmlns="http://www.w3.org/1999/xhtml"
-            style="display: inline-block; font-size: 12px; font-family: Helvetica;   line-height: 1.2; vertical-align: top; width: 27px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px;    line-height: 1.2; vertical-align: top; width: 27px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
             <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">거울<br/>
               <font style="font-size: 10px">Mirror</font><br/></div>
           </div>
@@ -149,9 +129,7 @@
     <g transform="translate(504.5,52.5)">
       <switch>
         <foreignObject style="overflow:visible;" pointer-events="all" width="59" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-          <div
-            xmlns="http://www.w3.org/1999/xhtml"
-            style="display: inline-block; font-size: 12px; font-family: Helvetica;   line-height: 1.2; vertical-align: top; width: 60px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
+          <div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px;    line-height: 1.2; vertical-align: top; width: 60px; white-space: nowrap; overflow-wrap: normal; text-align: center;">
             <div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">그리드 거울<br/>
               <font style="font-size: 10px">Grid mirror</font><br/></div>
           </div>

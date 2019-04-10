@@ -116,6 +116,11 @@ body.fold {
 
 #item_list h2 {
   width: 100%;
+  position: relative;
+}
+
+#item_list h2 a.btn_item_fold {
+  opacity: 0;
 }
 
 section.on {
@@ -731,5 +736,15 @@ footer {
 
   #item_list section.item:last-child {
     margin-bottom: 1em;
+  }
+
+  #item_list h2 a.btn_item_fold {
+    position: absolute;
+    right: 0;
+    opacity: 1;
+    /* top: .4em; */
+    z-index: 1;
+    width: 20px;
+    overflow: visible;
   }
 }

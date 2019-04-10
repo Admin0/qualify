@@ -22,6 +22,13 @@ function slide(target) {
   switch (!$("#" + target).hasClass("slided")) {
     case true:
       // console.log("true");
+      $("#item_list .item." + target).each(function(index) {
+        var t = $(this);
+        setTimeout(function() {
+          t.hide();
+        }, time * index);
+        // console.log(index);
+      });
       $("#nav_item_list .item." + target).each(function(index) {
         var t = $(this);
         setTimeout(function() {
@@ -35,7 +42,14 @@ function slide(target) {
       break;
     case false:
       // console.log("false");
-      $("nav .item." + target).each(function(index) {
+      $("#item_list .item." + target).each(function(index) {
+        var t = $(this);
+        setTimeout(function() {
+          t.show();
+        }, time * index);
+        // console.log(index);
+      });
+      $("#nav_item_list .item." + target).each(function(index) {
         var t = $(this);
         setTimeout(function() {
           t.show();
@@ -54,6 +68,7 @@ function check_item_folded() {
   $("#nav_item_list h2").each(function(index) {
     if (window.localStorage["item_" + $(this).attr("id") + "_is_folded"] == "true") {
       // console.log(window.localStorage["item_" + $(this).attr("id") + "_is_folded"]);
+      $("#item_list section." + $(this).attr("id")).hide();
       $("#nav_item_list h3." + $(this).attr("id")).hide();
       $("#" + $(this).attr("id") + " i").text("unfold_more");
       $("#" + $(this).attr("id")).addClass("slided");
@@ -65,8 +80,9 @@ function load_navigat_title(key, val) {
   $("<h2/>", {
     "id": key,
     "class": key,
+    "onclick": "slide(\"" + key + "\")",
     html: "<a href='#" + key + "'>" + val.title + (val.contents != null ? " <span class='translation'>(" + val.contents.length + ")</span>" : "") + "</a>"
-  }).appendTo("#nav_item_list").append("<a onclick='slide(\"" + key + "\");'><i class='material-icons'>unfold_less</i></a>");
+  }).appendTo("#nav_item_list").append("<a class='btn_item_fold'><i class='material-icons'>unfold_less</i></a>");
 }
 
 function load_navigat_items(category, item) {
@@ -77,15 +93,16 @@ function load_navigat_items(category, item) {
     "name": category,
     "round": item.title,
     html: "<a href=#" + category + "-" + item.title + " onclick=" + onclick + ">" + icon + "<span>" + item.title + "<span></a>"
-  }).appendTo("#nav_item_list").append("<a href='" + category + "/" + item.title + ".html' target='_blank'><i class='material-icons'>open_in_new</i></a>");
+  }).appendTo("#nav_item_list").append("<a class='btn_item_open' href='" + category + "/" + item.title + ".html' target='_blank'><i class='material-icons'>open_in_new</i></a>");
 }
 
 function load_content_title(key, val) {
   $("<h2/>", {
     "id": key,
     "class": key,
+    "onclick": "slide(\"" + key + "\")",
     html: val.title + (val.contents != null ? " <span class='translation'>(" + val.contents.length + ")</span>" : "")
-  }).appendTo("#item_list");
+  }).appendTo("#item_list").append("<a class='btn_item_fold'><i class='material-icons'>unfold_less</i></a>");;
   // console.log(val);
 }
 
