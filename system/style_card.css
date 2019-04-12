@@ -157,8 +157,10 @@ body.page {
 }
 
 .contents table {
+  margin-top: .25em;
   border-collapse: collapse;
-  font-size: inherit;
+  /* font-size: .85em; */
+  text-indent: 0;
 }
 
 .contents table th,
@@ -234,6 +236,10 @@ body.page {
     text-indent: 1.5em;
   }
 
+  .contents.on .q_wrap h3 {
+    text-indent: 1.5em;
+  }
+
   .contents.on .q_wrap:nth-of-type(n+10) .question:not(.sub) {
     text-indent: 2em;
   }
@@ -244,9 +250,5 @@ body.page {
 
   li ol, li ul {
     margin-left: -1em;
-  }
-
-  table {
-    font-size: 12px;
   }
 }
