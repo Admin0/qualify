@@ -48,7 +48,7 @@
   <header>
     <h1>
       <i id="nav_on" onclick="if($('nav').attr('class')!='on'){$('nav, #nav_bg').addClass('on');}else{$('nav, #nav_bg').removeClass('on');};" class="material-icons">menu</i><span id="title"><span class="hide_mobile"></span>#qualify</span>
-      <i id="print_icon" onclick="window.print();" class="material-icons">print</i>
+      <i id="print_icon" onclick="window.print();" class="material-icons hide_mobile">print</i>
     </h1>
   </header>
 
@@ -61,7 +61,7 @@
   <nav>
     <div id='nav'>
       <div id='nav_header'>
-        <div id="to_github" class="" onclick="$('#main_item .contents.on').remove();$('#title').text('#qualify');">
+        <div id="to_github" class="" onclick="$('#main_item .contents.on').remove();$('#title').text('#qualify');$('nav, #nav_bg').removeClass('on');">
           <i class="material-icons">home</i><span>#qualify</span>
         </div>
         <div id="setting_bt">
@@ -75,7 +75,7 @@
     <div id='nav_footer'><i class='material-icons'>chevron_left</i></div>
   </nav>
 
-  <section id="contextmenu"> 안녕아세오? </section>
+  <section id="contextmenu"> 안녕아새오? </section>
 
   <div id="nav_bg" onclick="$('nav, #nav_bg').removeClass('on');"></div>
 
@@ -134,17 +134,6 @@
     <textarea class="output" id="for_copy_output"></textarea>
   </section> -->
 
-  <!-- <div id="browser_alert">
-    <div>
-      <p style="font-size:24px; font-weight:bold;">구형 브라우저 감지!</p>
-      <p>초보자 가이드™를 제대로 감상하기 위해서는 아래의 최신 브라우저로 접속하세요.</p>
-      <ul>
-        <li><a href="https://www.google.com/chrome" target="_blank">Chrome - by Google</a></li>
-        <li><a href="https://www.mozilla.org/ko/firefox/new/" target="_blank">Firefox - by Mozilla</a></li>
-      </ul>
-      <p><a onclick="$('#browser_alert').remove()">닫기</a></p>
-    </div>
-  </div> -->
 </body>
 
 </html>
