@@ -58,7 +58,7 @@ function load(id, content) {
       gtag('js', new Date());
       gtag('config', 'UA-39552694-1', {
         'page_title': full_id,
-        'page_path': '/qualify/' + id + '/' + content
+        'page_path': '/qualify/#' + id + '-' + content
       });
 
       // adsense
