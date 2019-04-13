@@ -139,5 +139,6 @@ $(document).ready(function() {
   $("#share").load("system/module/share.html", function() {
     nav_create();
   });
+  $("#context_menu").load("system/module/context_menu.html");
 
 });

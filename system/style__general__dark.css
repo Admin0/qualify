@@ -97,3 +97,8 @@
 .general__dark .contents a:hover {
   background: rgba(158, 158, 158, .2);
 }
+
+/* context */
+.general__dark #context_menu {
+  background: #424242;
+}

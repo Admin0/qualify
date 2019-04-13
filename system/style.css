@@ -123,14 +123,14 @@ body.fold {
   opacity: 0;
 }
 
-section.on {
+#item_list section.on {
   margin: 1em -1em;
   padding: 2em;
   box-shadow: 0 5px 11px rgba(0, 0, 0, .2);
   /*width: 100%;*/
 }
 
-section h3 {
+#item_list section h3 {
   margin: 0;
   cursor: pointer;
   text-overflow: ellipsis;
@@ -463,30 +463,26 @@ footer {
 /* ------------------------------------------------------------------- */
 /* ***** context-menu ***** */
 /* ------------------------------------------------------------------- */
-#contextmenu {
-  z-index: 1000;
+#context_menu {
+  z-index: 5;
   position: fixed;
   opacity: 0;
   visibility: hidden;
   cursor: default;
+  padding: 1em;
   color: rgba(0, 0, 0, .5);
   background-color: #fff;
-  border: 1px solid #bbb;
+  /* border: 1px solid #bbb; */
+  border-radius: 3px;
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
   transition: .25s;
   transition-property: opacity, transform, margin;
   top: 50%;
   font-size: 14px;
+  width: 250px;
 }
 
-#contextmenu {
-  top: 2em;
-  left: -302px;
-  transform: perspective(500px) rotateX(15deg);
-  margin-top: -2em;
-}
-
-#contextmenu.on {
+#context_menu.on {
   transform: none;
   transform-origin: 50% 100%;
   margin-top: 0;
@@ -494,35 +490,12 @@ footer {
   opacity: 1;
 }
 
-#contextmenu>.output {
-  overflow: hidden;
-  width: 300px;
-  height: 100px;
-  border: none;
-  padding: .5em;
+#context_menu h3 {
+  margin: .25em 0;
 }
-
-#contextmenu>.output:focus {
-  outline: none;
-}
-
-#contextmenu>.output::selection {
-  background: rgba(0, 0, 0, 0.1);
-}
-
-#contextmenu i {
-  font-size: 1.25em;
-}
-
-#contextmenu>div {
-  padding: 1ex 2ex;
-  color: #212121;
-}
-
-#contextmenu>div:hover {
-  background: rgba(158, 158, 158, .2);
-  box-shadow: none;
-  z-index: 1
+#context_menu h3 a {
+  width: 100%;
+  display: block;
 }
 
 .logo_inline {
@@ -584,8 +557,7 @@ footer {
   }
 }
 
-/*#contextmenu > #for_copy { position: absolute; top: 0; margin: 0; }*/
-
+/*#context_menu > #for_copy { position: absolute; top: 0; margin: 0; }*/
 /* ------------------------------------------------------------------- */
 /* ***** mobile ***** */
 /* ------------------------------------------------------------------- */
@@ -676,7 +648,7 @@ footer {
   }
 
   .hide_mobile {
-    display: none!important;
+    display: none !important;
   }
 
   #main_item .contents {

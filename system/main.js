@@ -222,7 +222,7 @@ $(document).ready(function() {
   scroll_smooth();
   // columns();
   title_tooltip();
-  contextmenu();
+  context_menu();
 });
 
 $(window).on('load', function() {
