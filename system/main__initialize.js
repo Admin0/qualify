@@ -108,7 +108,7 @@ function load_content_title(key, val) {
 }
 
 function load_content_items(category, item) {
-  var onclick = "load('" + category + "','" + item.title + "')";
+  var onclick = !item.locked ? "load('" + category + "','" + item.title + "')" : "load('기타','공지')";
   var icon = !item.locked ? (item.icon != null ? "<i class='material-icons'>" + get_icon(item.icon) + "</i>" : "<i class='material-icons'>book</i>") : "<i class='material-icons'>lock</i>";
   $("<section/>", {
     "id": category + "-" + item.title,
@@ -142,5 +142,5 @@ $(document).ready(function() {
     nav_create();
   });
   $("#context_menu").load("system/module/context_menu.html");
-
+  $.getScript("system/main__initialize_locked.js");
 });
