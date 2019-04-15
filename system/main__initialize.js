@@ -86,7 +86,7 @@ function load_navigat_title(key, val) {
 }
 
 function load_navigat_items(category, item) {
-  var onclick = !item.locked ? "load('" + category + "','" + item.title + "')" : "load('기타','공지')";
+  var onclick = !item.locked ? "load('" + category + "','" + item.title + "')" : "$('#main_item').load('notice.html',function(){after_load('notice');});";
   var icon = !item.locked ? (item.icon != null ? "<i class='material-icons'>" + get_icon(item.icon) + "</i>" : "<i class='material-icons'>book</i>") : "<i class='material-icons'>lock</i>";
   $("<h3/>", {
     "class": category + " item " + category + "-" + item.title,
@@ -108,7 +108,7 @@ function load_content_title(key, val) {
 }
 
 function load_content_items(category, item) {
-  var onclick = !item.locked ? "load('" + category + "','" + item.title + "')" : "load('기타','공지')";
+  var onclick = !item.locked ? "load('" + category + "','" + item.title + "')" : "$('#main_item').load('notice.html',function(){after_load('notice');});";
   var icon = !item.locked ? (item.icon != null ? "<i class='material-icons'>" + get_icon(item.icon) + "</i>" : "<i class='material-icons'>book</i>") : "<i class='material-icons'>lock</i>";
   $("<section/>", {
     "id": category + "-" + item.title,
