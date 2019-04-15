@@ -60,19 +60,24 @@
       "icon": "test_tube"
     }, {
       "title": "필답-2017-1",
-      "icon": "test_tube"
+      "icon": "test_tube",
+      "locked": true
     }, {
       "title": "필답-2017-4",
-      "icon": "test_tube"
+      "icon": "test_tube",
+      "locked": true
     }, {
       "title": "필답-2018-1",
-      "icon": "test_tube"
+      "icon": "test_tube",
+      "locked": true
     }, {
       "title": "필답-2018-4",
-      "icon": "test_tube"
+      "icon": "test_tube",
+      "locked": true
     }, {
       "title": "필답-2019-1",
-      "icon": "test_tube"
+      "icon": "test_tube",
+      "locked": true
     }, {
       "title": "작업~2019",
       "icon": "water"
@@ -94,10 +99,12 @@
       "icon": "fire_extinguisher"
     }, {
       "title": "필답-2018-2",
-      "icon": "fire_extinguisher"
+      "icon": "fire_extinguisher",
+      "locked": true
     }, {
       "title": "작업-2018-2",
-      "icon": "fire_extinguisher"
+      "icon": "fire_extinguisher",
+      "locked": true
     }]
   },
   "화공기사": {
@@ -120,6 +127,10 @@
     }, {
       "title": "필답-2017-1",
       "icon": "oil_industry"
+    }, {
+      "title": "필답-2018-2",
+      "icon": "oil_industry",
+      "locked": true
     }, {
       "title": "후기",
       "icon": "contract"

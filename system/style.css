@@ -260,15 +260,6 @@ h1 .percentage:before {
   margin-left: .5em
 }
 
-nav .percentage {
-  margin-right: 1em;
-  right: 0;
-}
-
-h1:hover .percentage, h2:hover .percentage, h3:hover .percentage {
-  opacity: .75;
-}
-
 h3 .material-icons>svg {
   fill: rgba(0, 0, 0, .54);
 }
@@ -494,6 +485,7 @@ footer {
 #context_menu h3 {
   margin: .25em 0;
 }
+
 #context_menu h3 a {
   width: 100%;
   display: block;
@@ -558,7 +550,23 @@ footer {
   }
 }
 
-/*#context_menu > #for_copy { position: absolute; top: 0; margin: 0; }*/
+/* ------------------------------------------------------------------- */
+/* ***** .locked ***** */
+/* ------------------------------------------------------------------- */
+[locked="true"] a span::before {
+  content: "(";
+}
+
+[locked="true"] a span::after {
+  content: ")";
+}
+
+[locked="true"] a {
+  /* color: #f00; */
+  opacity: .65;
+  /* text-decoration: line-through; */
+}
+
 /* ------------------------------------------------------------------- */
 /* ***** mobile ***** */
 /* ------------------------------------------------------------------- */

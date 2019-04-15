@@ -86,14 +86,15 @@ function load_navigat_title(key, val) {
 }
 
 function load_navigat_items(category, item) {
-  var onclick = "load('" + category + "','" + item.title + "')";
-  var icon = item.icon != null ? "<i class='material-icons'>" + get_icon(item.icon) + "</i>" : "<i class='material-icons'>book</i>";
+  var onclick = !item.locked ? "load('" + category + "','" + item.title + "')" : "load('기타','공지')";
+  var icon = !item.locked ? (item.icon != null ? "<i class='material-icons'>" + get_icon(item.icon) + "</i>" : "<i class='material-icons'>book</i>") : "<i class='material-icons'>lock</i>";
   $("<h3/>", {
     "class": category + " item " + category + "-" + item.title,
     "name": category,
     "round": item.title,
-    html: "<a href=#" + category + "-" + item.title + " onclick=" + onclick + ">" + icon + "<span>" + item.title + "<span></a>"
-  }).appendTo("#nav_item_list").append("<a class='btn_item_open' href='" + category + "/" + item.title + ".html' target='_blank'><i class='material-icons'>open_in_new</i></a>");
+    "locked": item.locked,
+    html: "<a href=#" + (!item.locked ? category + "-" + item.title : "") + " onclick=" + onclick + ">" + icon + "<span>" + item.title + "</span></a>"
+  }).appendTo("#nav_item_list").append(!item.locked ? "<a class='btn_item_open' href='" + category + "/" + item.title + ".html' target='_blank'><i class='material-icons'>open_in_new</i></a>" : "");
 }
 
 function load_content_title(key, val) {
@@ -108,13 +109,14 @@ function load_content_title(key, val) {
 
 function load_content_items(category, item) {
   var onclick = "load('" + category + "','" + item.title + "')";
-  var icon = item.icon != null ? "<i class='material-icons'>" + get_icon(item.icon) + "</i>" : "<i class='material-icons'>book</i>";
+  var icon = !item.locked ? (item.icon != null ? "<i class='material-icons'>" + get_icon(item.icon) + "</i>" : "<i class='material-icons'>book</i>") : "<i class='material-icons'>lock</i>";
   $("<section/>", {
     "id": category + "-" + item.title,
     "class": category + " item",
     "name": category,
     "round": item.title,
-    html: "<h3 onclick=" + onclick + "><a href=#" + category + "-" + item.title + " onclick=" + onclick + ">" + icon + "<span>" + item.title + "<span></a></h3>"
+    "locked": item.locked,
+    html: "<h3 onclick=" + onclick + "><a href=#" + category + "-" + item.title + " onclick=" + onclick + ">" + icon + "<span>" + item.title + "</span></a></h3>"
   }).appendTo("#item_list");
 }
 

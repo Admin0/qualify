@@ -160,7 +160,7 @@ body.page {
 .contents table {
   margin-top: .25em;
   border-collapse: collapse;
-  /* font-size: .85em; */
+  font-size: 1em;
   text-indent: 0;
 }
 

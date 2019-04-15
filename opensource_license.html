@@ -1,43 +1,9 @@
-<!-- <script src="/qualify/system/main__card.js" defer></script> -->
-<script type="text/javascript">
-  function title_tooltip__contents() {
-    $('.contents [title]').attr({
-      'data-title': function() {
-        return this.title;
-      },
-      'title': null
-    });
-    $('.contents [data-title]').each(function() {
-      $(this).hover(
-        function() {
-          // console.log($(this).attr('data-title'));
-          if (document.height === null) {
-            pageYOffset = document.documentElement.scrollTop;
-          }
-          $('#tooltip_text').html($(this).attr('data-title'));
-          var left = $(this).offset().left + ($(this).outerWidth() - $('#tooltip').outerWidth()) / 2;
-          if (left <= 0) {
-            left = 0;
-          }
-          $('#tooltip').css({
-            'visibility': 'visible',
-            'opacity': 1,
-            'top': $(this).offset().top - $('#tooltip').outerHeight() /*+ pageYOffset*/ - 16 + 'px',
-            'left': left + 'px'
-          });
-        },
-        function() {
-          $('#tooltip').css({
-            'visibility': 'hidden',
-            'opacity': 0
-          });
-        }
-      );
-    });
-  }
-  title_tooltip__contents();
-</script>
+<script src="/qualify/system/main__card.js" defer></script>
 <style media="screen">
+  .ad {
+    display: none;
+  }
+
   section h3 {
     cursor: default;
   }
@@ -50,104 +16,9 @@
   .license h3:not(:first-of-type) {
     margin-top: 3em;
   }
-
-  .special_thanks_to {
-    font-family: monospace;
-  }
-
-  .special_thanks_to span[data-title],
-  .special_thanks_to a[data-title] {
-    text-decoration: underline;
-  }
-
-  .special_thanks_to a {
-    font-weight: normal;
-  }
-
-  .special_thanks_to h3 {
-    display: inline;
-    font-size: 1em;
-  }
 </style>
 
 <div class="contents">
-
-  <h2>도움을 주신 분들<span class="translation">Special thanks to</span></h2>
-  <div class="special_thanks_to">
-
-    지금 여러분이 방문 중이신 <strong>#qualify</strong> 프로젝트를 진행하는 데에 도움을 주신 분들입니다. <br>
-    <a href="/bucket/#license" title="이 프로젝트는 버킷리스트의 하위 프로젝트로 개발되었습니다.">#버킷리스트</a>, <a href="https://github.com/" title="이 프로젝트를 호스팅 중인 개발 플랫폼입니다.">github</a>, <a href="https://stackoverflow.com/
-" title="막힐때마다 해결책을 제시해주는 아쥬 조은 사이트죠.">Stack Overflow</a>,
-    <span title="여수 소재의 화학회사입니다. 개발 비용(본인쟝 월급)을 대주었습니다.">재원산업(주)</span>, <span title="이 프로젝트가 방문해 주신 여러분의 시험 합격에 도움이 되고, 그걸로 님들의 영혼을 양껏 채웠다면... 저에겐 그보다 더한 기쁨이 없습니다!">손님 여러분</span> <br>
-    아래는 각 자격을 취득하는 데에 도움을 주신 분들입니다. 순서는 자격 취득의 역순입니다.
-    <br><br>
-
-    <h3>화공기사 (2018)</h3>
-    <a href="https://cafe.naver.com/kisa">네이버 화공월드 카페</a>, 한인채, 강철, 김예슬, 강송희, 양민열, 유진욱, <span title="동아대학교 화학공학과 08 B.T.X MJ, 작업형 정리.">동아대 화공과 08 B.T.X</span> |
-
-    <h3>비서 1, 2, 3급 (2018)</h3>
-    대한상공회의소 |
-
-    <h3>수렵면허 (2017)</h3>
-    송치호, SK고용디딤돌 생산품질B, (주)에코솔루션, 김현우, Quizlet |
-
-    <h3>적십자헌혈유공장 명예장 (2017)</h3>
-    헌혈의집 서울대역센터, 구로디지털단지역센터, 여수센터, 유재석 |
-
-    <h3>정보처리기사 (2016)</h3>
-    유재석, <a href="https://www.comcbt.com/">전자문제집 CBT</a> |
-
-    <h3>ISO 9001 내부심사원</h3>, <h3>ISO/TS 16949 내부심사원</h3>, <h3>ISO 14001 내부심사원</h3>, <h3>OHSAS 18001 내부심사원 (2015)</h3>
-    한국산업기술시험원, 전동진, 임관택, 송성진, 유재석, 김진세, 박혜은, 김근림, 통합경영시스템 전문인력 3기, 김민수, 한국고용인적자원진흥협회, 김은옥 |
-
-    <h3>산업안전기사 (2015)</h3>
-    전남대학교 정밀화학과 학사조교쌤, <a href="https://cafe.naver.com/anjun/">네이버 산업안전기사 카페</a>, <span title="필답형 정리.">바닷비</span>, <span title="작업형 정리.">아라슈</span>, Quizlet |
-
-    <h3>힛갤곤볼 1성구 (2015)</h3>
-    DC인사이드, 윈도우 무비 메이커, 유튜브 |
-
-    <h3>자전거 국토종주 인증 (2015)</h3>
-    <a href="https://cafe.naver.com/anjun/">1155km 일본 자전거 여행한 오타쿠</a>, <a href="https://www.youtube.com/watch?v=a1OFg92FA6w">슬리퍼신고 완주한 러시아인</a>, 이호용, 외삼촌, 외숙모, 이름모를 공무원 아조시, 네이버 지도 |
-
-    <h3>적십자헌혈유공장 금장 (2014)</h3>
-    헌혈의집 전남대센터 |
-
-    <h3>MOS 2010 Master (2013)</h3>
-    <span title="취득시 응시료 일부 환급 개꿀 이벤트 진행.">전남대학교 정보전산원</span> |
-
-    <h3>적십자헌혈유공장 은장 (2013)</h3>
-    이호용, 헌혈의집 전남대센터 |
-
-    <h3>사무자동화산업기사 (2012)</h3>
-    <a href="https://www.comcbt.com/">전자문제집 CBT</a> |
-
-    <h3>정보처리기능사 (2012)</h3>
-    <a href="https://www.comcbt.com/">전자문제집 CBT</a> |
-
-    <h3>워드프로세서 1급</h3>, <h3>컴퓨터활용능력 1급 (2011)</h3>
-    <a href="https://www.comcbt.com/">전자문제집 CBT</a>, <a href="http://www.testinter.net">testinter.net</a> |
-
-    <h3>태권도 1단 (2011)</h3>
-    국방부, 공군제19전투비행단 |
-
-    <h3>자동차운전면허 1종보통 (2008)</h3>
-    아버지, 어머니 |
-
-    <br><br>
-    그리고 도전중인 것들.<br>
-    <h3>화학분석기사</h3>
-    <a title="구글에서 기기분석 검색하면 거의 항상 맨 위에 나오는 사이트 http://www1.suwon.ac.kr/~choihs 운영하심. 여기 들어가서 메뉴에서 강의노트 찾아서 누르고 첨부터 정독하면 책도 필요없음. (근데 본인은 책 샀는데 나중에 저자 보니 최희선 적혀있음 ㅎㄷㄷ.)" href="http://www1.suwon.ac.kr/~choihs">수원대 최희선 교수</a>,
-    <a href="https://cafe.naver.com/kisa">네이버 화공월드 카페</a>, <span title="필답형 정리.">서영</span>, <span title="필답형 정리.">엘조</span>, 최태기, 최화영 |
-
-    <h3>위험물산업기사</h3>
-    이엠테크(주), 박대웅, 장용석 |
-
-    <h3>적십자헌혈유공장 명예대장</h3>
-    헌혈의집 여수센터, 광주터미널센터, 강송희, 유진욱 |
-
-  </div>
-
-
   <h2>오픈 소스 라이선스<span class="translation">Open-source license</span></h2>
   <div class="license">
     <h3><a href="https://clipboardjs.com/">clipboard.js</a></h3>
