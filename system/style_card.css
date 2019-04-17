@@ -180,6 +180,11 @@ body.page {
   font-size: 12px;
 }
 
+
+/****************************************/
+/*                 img                  */
+/****************************************/
+
 .contents .img, .contents img, .contents .svg, .contents svg, .contents object, .contents .load {
   max-width: 100%;
   height: inherit;
@@ -197,6 +202,33 @@ body.page {
   font-size: .75em;
   font-style: italic;
   font-family: 'Noto Sans KR', sans-serif;
+}
+
+/****************************************/
+/*                 key                  */
+/****************************************/
+
+.key {
+  transition: .25s;
+  text-shadow: 0 -1px #e0e0e0;
+  box-shadow: 0 6px #e0e0e0;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin: -.5em .25em .25em;
+  padding: .25em .75em;
+  background: white;
+  color: #212121;
+  font-size: .75em;
+  vertical-align: top;
+  display: inline-block;
+  cursor: pointer;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.key:active,
+.key.on {
+  box-shadow: 0 0px #e0e0e0;
+  margin: 0 .25em -.25em;
 }
 
 /* ***** mobile ***** */
