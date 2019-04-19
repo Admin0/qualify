@@ -409,14 +409,21 @@ footer {
 /* ***** toast ***** */
 /* ------------------------------------------------------------------- */
 #toast {
+  line-height: 1;
   position: fixed;
   background-color: #424242;
   color: rgba(255, 255, 255, .9);
+  fill: rgba(255, 255, 255, .9);
   padding: 1em 1.5em 1em .75em;
   min-width: 350px;
   max-width: calc(100% - 2em);
   bottom: 1em;
   z-index: 5;
+}
+
+#toast i.material-icons {
+  font-size: 20px;
+  margin-bottom: 1px;
 }
 
 @keyframes snackbar_on {
