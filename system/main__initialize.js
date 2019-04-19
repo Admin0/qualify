@@ -17,9 +17,9 @@ function get_icon(name) {
   return result;
 }
 
-function slide(target) {
+function slide(target, wanna_fold) {
   var time = 10;
-  switch (!$("#" + target).hasClass("slided")) {
+  switch (wanna_fold != null ? wanna_fold : !$("#" + target).hasClass("slided")) {
     case true:
       // console.log("true");
       $("#item_list .item." + target).each(function(index) {
@@ -142,5 +142,5 @@ $(document).ready(function() {
     nav_create();
   });
   $("#context_menu").load("system/module/context_menu.html");
-  $.getScript("system/main__initialize_locked.js");
+  $.getScript("system/main__initialize_console.js");
 });
