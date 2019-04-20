@@ -86,6 +86,24 @@
   "위험물산업기사": {
     "title": "위험물산업기사",
     "contents": [{
+      "title": "필답-2012-1",
+      "icon": "fire_extinguisher"
+    },{
+      "title": "필답-2012-2",
+      "icon": "fire_extinguisher"
+    },{
+      "title": "필답-2012-4",
+      "icon": "fire_extinguisher"
+    },{
+      "title": "필답-2013-1",
+      "icon": "fire_extinguisher"
+    },{
+      "title": "필답-2013-2",
+      "icon": "fire_extinguisher"
+    },{
+      "title": "필답-2013-4",
+      "icon": "fire_extinguisher"
+    },{
       "title": "필답-2014-1",
       "icon": "fire_extinguisher"
     }, {
