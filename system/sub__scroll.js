@@ -27,8 +27,36 @@ jQuery(function($) {
   };
 });
 
+function scroll__item_list(t) {
+  // var t = $('#item_list');
+  if (t.scrollTop() != 0) {
+    if (!is_mobile && $(window).width() > 1080) {
+      t.addClass('shadow-top-inset');
+    }
+  } else {
+    t.removeClass('shadow-top-inset');
+  }
+  if ((t.scrollTop() + t.height()) != t[0].scrollHeight) {
+    if (!is_mobile && $(window).width() > 1080) {
+      t.addClass('shadow-bottom-inset');
+    }
+  } else {
+    t.removeClass('shadow-bottom-inset');
+  }
+  // console.log(
+  //   "scrollTop         : " + t.scrollTop() +
+  //   "\nscrollHeight      : " + t[0].scrollHeight +
+  //   "\nheight            : " + t.height() +
+  //   "\nheight + scrollTop: " + (t.scrollTop() + t.height())
+  // );
+}
+
 $(document).ready(function() {
   // $('.contents').hScroll(300); // main_ajax.js 로 대체되었다.
+
+  $('#item_list').scroll(function() {
+    scroll__item_list($('#item_list'));
+  });
 });
 
 $(window).scroll(function() { // #main_item shadow for mobile

@@ -98,8 +98,9 @@ body.fold {
   padding: 0 1em 0 2em;
   display: flex;
   flex-flow: wrap;
-  max-height: calc(100vh - 64px - 64px);
+  max-height: calc(100vh - 56px - 45px);
   overflow: auto;
+  transition: box-shadow .25s;
 }
 
 #item_list section.item {
@@ -200,6 +201,18 @@ header:hover #print_icon {
 
 .shadow-bottom {
   box-shadow: 0 2px 6px 0 rgba(60, 64, 67, .15);
+}
+
+.shadow-top-inset {
+  box-shadow: inset 0 7px 6px -5px rgba(60, 64, 67, .15);
+}
+
+.shadow-bottom-inset {
+  box-shadow: inset 0 -7px 6px -5px rgba(60, 64, 67, .15);
+}
+
+.shadow-top-inset.shadow-bottom-inset {
+  box-shadow: inset 0 7px 6px -5px rgba(60, 64, 67, .15), inset 0 -7px 6px -5px rgba(60, 64, 67, .15);
 }
 
 section.sub {
@@ -344,7 +357,7 @@ input[type="checkbox"] {
   background: none;
   color: rgba(0, 0, 0, .54);
   /*font-size: .8em;*/
-  padding: 1em;
+  padding: .5em;
   margin: 0;
 }
 

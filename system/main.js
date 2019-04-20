@@ -186,12 +186,6 @@ $(window).scroll(function() {
       break;
     }
   }
-  // $("h2:not(nav h2), h3:not(nav h3)").each(function(){
-  //     if($(this).offset().top < pageYOffset){
-  //         console.log($(this).text());
-  //     }
-  // });
-  // console.log("sex");
 });
 
 function clear() {

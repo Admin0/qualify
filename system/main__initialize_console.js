@@ -73,6 +73,10 @@ function console_event(code) {
       $('#main_item .contents.on').remove();
       $('#title').text('#qualify');
       $('nav, #nav_bg').removeClass('on');
+      history.pushState(null, null, "/qualify/");
+
+      $('nav').removeClass('shadow-right');
+      $('header').removeClass('shadow-bottom');
       break;
     case "f":
       if (!$("#item_list h2").hasClass("slided")) {
