@@ -20,7 +20,7 @@ function after_load(full_id) {
   // }
 
   $('.targeted').removeClass('targeted');
-  $('#item_list #' + full_id + ', #nav_item_list .' + full_id).addClass('targeted');
+  $('#item_list #' + full_id + ', #nav_item_list .' + full_id + ', #nav_menu .' + full_id).addClass('targeted');
 
   // scroll to top for mobile
   $('html, body').animate({
@@ -35,7 +35,7 @@ function after_load(full_id) {
 }
 
 function load(id, content) {
-  var full_id = id + "-" + content;
+  var full_id = content != null ? id + "-" + content : id;
   $.ajax({
     type: 'get',
     url: content != null ? id + "/" + content + ".html" : id + ".html",

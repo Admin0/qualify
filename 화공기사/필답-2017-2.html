@@ -131,14 +131,11 @@
       Q &= Cm \Delta T \\
       &= \ce{(1 kcal/kg*^\circ C)(50 kg)(90^\circ C - 10^\circ C)} = \ce{4000 kcal} \\
       &= UA \Delta T_\ce{LM}      \\
-      A &= \dfrac{\ce{4000 kcal}}{\ce{100 kcal/h*m^2*^\circ C \times 115.42^\circ C}} \left(\because T_\ce{LM} = \frac{160 - 80}{\ln{\frac{160}{80}}} \pu{^\circ C} \right) \\
+      A &= \dfrac{\ce{4000 kcal}}{\ce{100 kcal/h*m^2*^\circ C \times 115.42^\circ C}} \left(\because T_\ce{LM} = \frac{(160 - 80)}{\ln{(160 / 80)}} \pu{^\circ C} \right) \\
       &= \pu{0.35 m^2}
       \end{align*}
       $
 
-    </div>
-    <div class="comment">
-      $\ce{}$
     </div>
   </div>
 
@@ -147,10 +144,10 @@
       비중 0.8, 직경 20 cm, 점도가 5 cP인 유체의 임계속도를 구하시오. (임계 레이놀즈수는 2100) [3점]
     </div>
     <div class="answer">
-      0.07 m/s
-    </div>
-    <div class="comment">
-      $\ce{}$
+      $
+        Re = \dfrac{Dv_c\rho}{\mu} = 2100 \\
+        v_c = \dfrac{2100 \cdot (\pu{5E-3 Pa \cdot s})}{(\ce{800 kg/m^3)*(0.2 m)}} = \pu{0.0656 m/s}
+      $
     </div>
   </div>
 
@@ -159,7 +156,10 @@
       관의 외경 100cm, 내경 40cm, 길이 10m의 원통형 관이 있다. 내면의 온도가 500℃, 관 외면의 온도가 320℃이며 열전도도 k=0.2W/m‧K일 때, 열손실량을 kW 단위로 구하시오. 단, 유체의 흐름은 1차원으로 가정. [5점]
     </div>
     <div class="answer">
-      2.47 kW
+      $
+        Q = \dfrac{\Delta T}{\frac{\ln{r_o/r_i}}{2 \pi kL}} = \dfrac{(500 -320)\ce{^\circ C}}{\frac{\ln\ce{1 m/0.4 m}}{\ce{2 \pi(0.2 W/m*K)(10 m)}}} = \pu{2.47 kW}
+
+      $
     </div>
     <div class="comment">
       $\ce{}$
@@ -185,26 +185,36 @@
 
   <div class="q_wrap">
     <div class="question">
-      직경 100mm의 관을 이용하여 25m 높이에 있는 탱크로 기름을 끌어올린다. 수평관의 길이는 400m이고, 유속 60m3/h, 비중 0.9인 기름의 점도는 2P이다. 펌프의 효율은 50%일 때, 실제 필요한 펌프의 동력을 J/s 단위로 구하시오. [5점]
+      직경 $\ce{100 mm}$의 관을 이용하여 $\ce{25 m}$ 높이에 있는 탱크로 기름을 끌어올린다. 수평관의 길이는 $\ce{400 m}$이고, 유속 $\ce{60 m3/h}$, 비중 $\ce{0.9}$인 기름의 점도는 $\ce{2 P}$이다. 펌프의 효율은 $50\%$일 때, 실제 필요한 펌프의 동력을 $\ce{J/s}$ 단위로 구하시오. [5점]
     </div>
     <div class="answer">
-      25517.25 J/s
-    </div>
-    <div class="comment">
-      $\ce{}$
+      $
+        Re = \dfrac{Dv\rho}{\mu} = 955 \text{이므로, 층류이다.} \\
+        \text{층류에서 } f = 16Re = 0.01678, \\
+        u = \frac{\pu{60 m3/h}}{\ce{\frac{\pi}{4}(0.1 m)^2}}\frac{\ce{1 h}}{\ce{3600 s}} = \pu{2.12 m/s},\ \dot{m} = \frac{\pu{60 m3}}{\pu{3600 s}}\frac{\pu{9090 kg}}{\pu{m3}} = \pu{15 kg/s} \\
+        h_f = 4f\dfrac{L}{D}\dfrac{u^2}{2} = 4(0.01678)\left(\dfrac{\pu{400 m}}{\pu{0.1 m}}\right)\left(\dfrac{\pu{2.12^2 m2/s2}}{2}\right) = \pu{603.33 J/kg} \\
+        \eta W_{p} =\dfrac{\Delta P}{\rho } +\dfrac{\alpha \Delta u^{2}}{2} +g\Delta Z + h_{f} \\
+        0.5 W_{p} = (0) + \left(\dfrac{\pu{2.12^2 m2}}{2}\right) + \ce{(9.8 m/s^2 \times 25 m) + (603.33 J/kg)} \\
+        = \pu{1701.15 J/kg} \\
+        P = \dot{m}W_p = \ce{(15 kg/s)(1701.15 J/kg) = 25517.25 J/s}
+      $
+
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question">
-      벤젠 45mol%, 톨루엔 55mol%의 혼합액의 비점은 1atm에서 93.9℃이다. 원액이 55℃로 공급될 때, 원료선의 방정식을 구하시오.
-      (단, 혼합액의 정적비열은 40kcal/kg‧℃이고, 잠열은 7620kcal/kg이다.) [4점]
+      벤젠 45 mol%, 톨루엔 55 mol%의 혼합액의 비점은 1 atm에서 93.9℃이다. 원액이 55℃로 공급될 때, 원료선의 방정식을 구하시오.
+      (단, 혼합액의 정적비열은 40 kcal/kg‧℃이고, 잠열은 7620 kcal/kg이다.) [4점]
     </div>
     <div class="answer">
-      y = 5.90 x - 2.21
+    $
+    q = 1 + \dfrac{C_p(t_b - t_F)}{\lambda} = 1 + \dfrac{\ce{40 kcal/kg*^\circ C(93.9^\circ C - 55^\circ C)}}{\ce{7620 kcal/kg}} = 1.204 \\
+      y = \dfrac{q}{q -1}x - \dfrac{x_F}{q -1} = 5.90 x - 2.21
+      $
     </div>
     <div class="comment">
-      $\ce{}$
+
     </div>
   </div>
 

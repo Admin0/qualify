@@ -86,6 +86,12 @@
   "위험물산업기사": {
     "title": "위험물산업기사",
     "contents": [{
+      "title": "필답-2014-1",
+      "icon": "fire_extinguisher"
+    }, {
+      "title": "필답-2014-2",
+      "icon": "fire_extinguisher"
+    }, {
       "title": "필답-2014-4",
       "icon": "fire_extinguisher"
     }, {
@@ -104,9 +110,15 @@
       "title": "필답-2016-2",
       "icon": "fire_extinguisher"
     }, {
+      "title": "필답-2017-4",
+      "icon": "fire_extinguisher"
+    },{
       "title": "필답-2018-2",
       "icon": "fire_extinguisher",
       "locked": true
+    }, {
+      "title": "작업-2017-4",
+      "icon": "fire_extinguisher"
     }, {
       "title": "작업-2018-2",
       "icon": "fire_extinguisher",
@@ -118,7 +130,7 @@
     "contents": [{
       "title": "필답-2013-4",
       "icon": "oil_industry"
-    },{
+    }, {
       "title": "필답-2014-1",
       "icon": "oil_industry"
     }, {

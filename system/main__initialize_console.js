@@ -44,6 +44,12 @@ $("body").keyup(function(event) {
       case 70: // f
         console_event("f");
         break;
+      case 188: // ,
+        console_event(",");
+        break;
+      case 190: // .
+        console_event(".");
+        break;
       default:
 
     }
@@ -51,6 +57,8 @@ $("body").keyup(function(event) {
 });
 
 function console_event(code) {
+  var t = $("section.targeted");
+  var url;
   switch (code) {
     case "s":
       $('#setting, #setting_bg').toggleClass('on');
@@ -80,13 +88,30 @@ function console_event(code) {
       }
       break;
     case "o":
-      var t = $("section.targeted");
-      var url = "/qualify/" + t.attr("name") + "/" + t.attr("round") + ".html"
+      url = "/qualify/" + t.attr("name") + "/" + t.attr("round") + ".html"
       console.log(t.attr("name") + "-" + t.attr("round"));
       window.open(url, "_blank");
       break;
     case "r":
       location.reload(true);
+      break;
+    case ",":
+      if (t.prev('section.item').length != 0 && t.prev('section.item').attr('locked') != "true") {
+        load(t.attr('name'), t.prev('section.item').attr('round'));
+        url = '/qualify/#' + t.attr('name') + "-" + t.prev('section.item').attr('round');
+        history.pushState(null, null, url);
+      } else {
+        toast("이동할 수 있는 이전 항목이 없습니다.");
+      }
+      break;
+    case ".":
+      if (t.next('section.item').length != 0 && t.next('section.item').attr('locked') != "true") {
+        load(t.attr('name'), t.next('section.item').attr('round'));
+        url = '/qualify/#' + t.attr('name') + "-" + t.next('section.item').attr('round');
+        history.pushState(null, null, url);
+      } else {
+        toast("이동할 수 있는 다음 항목이 없습니다.");
+      }
       break;
     default:
 
