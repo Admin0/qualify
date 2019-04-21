@@ -16,8 +16,8 @@ $(document).keyup(function(event) {
           $("[locked=true] i").text("lock_open");
           $("[locked=true]").removeAttr("locked");
           toast("잠긴 문서가 해제되었습니다.", get_icon("lock_open"));
-          break;
         }
+        break;
       case 65: // a
         if ($(".ad").length != 0) {
           $(".ad").remove();
@@ -128,18 +128,23 @@ function console_event(code) {
         $("meta[name='theme-color']").attr("content", "rgba(50, 54, 57, 1)");
         $('body').addClass("general__dark");
         window.localStorage["general__dark"] = "true"
+        toast("다크 모드가 적용되었습니다.");
       } else {
         $("meta[name='theme-color']").attr("content", "#ffffff");
         $('body').removeClass("general__dark");
         window.localStorage["general__dark"] = "false"
+        toast("다크 모드가 해제되었습니다.");
       }
+      break;
     case "a":
       if (window.localStorage["answer__quiz"] != "true") {
         $('body').addClass("answer__quiz");
         window.localStorage["answer__quiz"] = "true"
+        toast("퀴즈 모드가 적용되었습니다.");
       } else {
         $('body').removeClass("answer__quiz");
         window.localStorage["answer__quiz"] = "false"
+        toast("퀴즈 모드가 해제되었습니다.");
       }
       break;
     default:
