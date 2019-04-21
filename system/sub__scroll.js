@@ -36,7 +36,7 @@ function scroll__item_list(t) {
   } else {
     t.removeClass('shadow-top-inset');
   }
-  if ((t.scrollTop() + t.height()) != t[0].scrollHeight) {
+  if ((t.scrollTop() + t.height() + 1) < t[0].scrollHeight) {
     if (!is_mobile && $(window).width() > 1080) {
       t.addClass('shadow-bottom-inset');
     }

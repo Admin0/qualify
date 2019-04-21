@@ -1,4 +1,4 @@
-$("body").keyup(function(event) {
+$(document).keyup(function(event) {
   // console.log("key is up");
   var shortcut_trriger = $("#setting").hasClass("on");
   if (shortcut_trriger) {
@@ -49,6 +49,12 @@ $("body").keyup(function(event) {
         break;
       case 190: // .
         console_event(".");
+        break;
+      case 68: // d
+        console_event("d");
+        break;
+      case 65: // a
+        console_event("a");
         break;
       default:
 
@@ -115,6 +121,25 @@ function console_event(code) {
         history.pushState(null, null, url);
       } else {
         toast("이동할 수 있는 다음 항목이 없습니다.");
+      }
+      break;
+    case "d":
+      if (window.localStorage["general__dark"] != "true") {
+        $("meta[name='theme-color']").attr("content", "rgba(50, 54, 57, 1)");
+        $('body').addClass("general__dark");
+        window.localStorage["general__dark"] = "true"
+      } else {
+        $("meta[name='theme-color']").attr("content", "#ffffff");
+        $('body').removeClass("general__dark");
+        window.localStorage["general__dark"] = "false"
+      }
+    case "a":
+      if (window.localStorage["answer__quiz"] != "true") {
+        $('body').addClass("answer__quiz");
+        window.localStorage["answer__quiz"] = "true"
+      } else {
+        $('body').removeClass("answer__quiz");
+        window.localStorage["answer__quiz"] = "false"
       }
       break;
     default:
