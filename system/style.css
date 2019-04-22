@@ -247,8 +247,13 @@ li a:hover {
   background: rgba(0, 0, 0, .05);
 }
 
-.item h2, .item h3, .item h2 a, .item h3 a {
+h2, h3, h2 a, h3 a {
   color: rgba(0, 0, 0, .54);
+  /* transition: .25s; */
+}
+
+.contents h2, .contents h3, .contents h2 a, .contents h3 a {
+  color: rgba(0, 0, 0, .98);
   /* transition: .25s; */
 }
 

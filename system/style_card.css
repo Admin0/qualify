@@ -196,6 +196,10 @@ body.page {
   stroke: rgb(0, 0, 0);
 }
 
+.contents .w100px {max-width: 100px;}
+.contents .w200px {max-width: 200px;}
+.contents .w300px {max-width: 300px;}
+
 .translation {
   /* color: rgba(0, 0, 0, .38); */
   opacity: .65;

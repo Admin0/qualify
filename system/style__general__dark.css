@@ -18,7 +18,8 @@
 
 /* only color */
 .general__dark #setting .setting_title, .general__dark #setting .setting_item, .general__dark #setting dt, .general__dark #setting input[checked]+dt, .general__dark #setting dd,
-.general__dark h2, .general__dark h2 a, .general__dark h3, .general__dark nav #nav a>*,
+.general__dark h2, .general__dark h2 a, .general__dark h3, .general__dark h3 a, .general__dark nav #nav a>*,
+.contents h2, .general__dark .contents h2 a, .general__dark .contents h3, .general__dark .contents h3 a,
 .general__dark nav a,
 .general__dark section>h3+a, .general__dark nav h3>a:nth-child(2) {
   color: rgb(189, 193, 198);
