@@ -8,13 +8,17 @@
 
   th.answer,
   td.answer {
-    background: #E3F2FD;
     transform: none;
     text-align: center;
   }
 
-  .general__dark th.answer,
-  .general__dark td.answer {
+  th.answer.on,
+  td.answer.on {
+    background: #E3F2FD;
+  }
+
+  .general__dark th.answer.on,
+  .general__dark td.answer.on {
     background: #424242;
   }
 </style>
@@ -25,7 +29,7 @@
       <table>
         <tr>
           <th>온도 측정</th>
-          <td class="answer">20$\pu{^{\circ}C}$</td>
+          <td class="answer on">20$\pu{^{\circ}C}$</td>
           <td>(확인)</td>
         </tr>
       </table>
@@ -46,15 +50,15 @@
           <th rowspan="2">(확인)</th>
         </tr>
         <tr>
-          <td rowspan="3" class="answer">19.7234</td>
-          <td class="answer">44.8009</td>
+          <td rowspan="3" class="answer on">19.7234</td>
+          <td class="answer on">44.8009</td>
         </tr>
         <tr>
           <th>지급된 [A]용액 + 비중병무게 (g)</th>
           <th rowspan="2">(확인)</th>
         </tr>
         <tr>
-          <td class="answer">40.0684</td>
+          <td class="answer on">40.0684</td>
         </tr>
       </table>
       계산 :
@@ -81,7 +85,15 @@
   </div>
 
   <div class="q_wrap">
-    여기부터는 아직 제작 중인 곳입니다!
+    <div class="comment">
+      <p>$\pu{30 wt\% 300 ml}$ 시약A 용액 제조.</p>
+      $ \ce{
+      \frac{300 ml}{}\frac{0.95382 g}{ml} = 286.146 g A\\
+      86.146 g \times 0.3 = 85.54 g EtOH \Longrightarrow \frac{85.54 g}{0.8098 g/ml} = 106.01 ml EtOH \\
+      286.146 g A - 85.54 g EtOH = 300.30 g H2O \Longrightarrow \frac{300.30 g}{0.99823 g/ml} = 200.35 ml H2O \\
+      } $
+      <p>따라서 미지시료 $ \ce{106 ml} $ + 물 $ \ce{200.35 ml} $ 을 이용해서 수용액을 제조한다.</p>
+    </div>
     <div class="question">
 
       <table style="font-size:.75em;">
@@ -94,254 +106,156 @@
         </tr>
         <tr>
           <th>비중병 + 제조한 용액 무게 (g)</th>
-          <td class="answer" colspan="2">42.8100</td>
-          <td class="answer">　　　　</td>
+          <td class="answer on" colspan="2">42.8100</td>
+          <td class="">　　　　</td>
           <td>(확인)</td>
-          <td class="answer"></td>
+          <td class=""></td>
           <td>(확인)</td>
-          <td>-</td>
+          <td class="answer">-</td>
         </tr>
         <tr>
           <th>빈 플라스크 무게 (g)</th>
-          <td class="answer" colspan="3">196.74<br><span class="translation">(둥근플라스크 + 끓임쪽)</span></td>
+          <td class="answer on" colspan="3">196.74<br><span class="translation">(둥근플라스크 + 끓임쪽)</span></td>
           <td>(확인)</td>
-          <td class="answer">109.64<br><span class="translation">(삼각플라스크)</span></td>
+          <td class="answer"><span class="translation">(삼각플라스크)</span></td>
           <td>(확인)</td>
-          <td>-</td>
+          <td class="answer">-</td>
         </tr>
         <tr>
           <th>플라스크 + 용액무게 (g)</th>
-          <td class="answer">325.75<br><span class="translation">(둥근플라스크 + 끓임쪽 + 미지용액)</span></td>
+          <td class="answer on">325.75<br><span class="translation">(둥근플라스크 + 끓임쪽 + 미지용액)</span></td>
           <td>(확인)</td>
           <td></td>
           <td>(확인)</td>
           <td class="answer"><span class="translation">(삼각플라스크)</span></td>
           <td>(확인)</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <th>밀도 (g/cm3)</th>
-          <td class="answer" colspan="2">0.9190</td>
-          <td class="answer" colspan="2"></td>
-          <td class="answer" colspan="2"></td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <th>양 (g)</th>
-          <td class="answer" colspan="2">129.01</td>
-          <td class="answer" colspan="2"></td>
-          <td class="answer" colspan="2"></td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <th>조성 (wt%)</th>
-          <td class="answer" colspan="2"></td>
-          <td class="answer" colspan="2"></td>
-          <td class="answer" colspan="2"></td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <th>시약[A]의양 (g)</th>
-          <td class="answer" colspan="2"></td>
-          <td class="answer" colspan="2"></td>
-          <td class="answer" colspan="2"></td>
-          <td>-</td>
-        </tr>
-      </table>
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-      <table>
-        <tr>
-          <th>측정값</th>
-          <th colspan="2">수용액</th>
-          <th colspan="2">잔류액</th>
-          <th colspan="2">유출액</th>
-          <th>손실</th>
-        </tr>
-        <tr>
-          <th>비중병 + 제조한 용액 무게 (g)</th>
-          <td class="answer" colspan="2"><span class="translation">비중병 + 제조한 용액 무게 (g)</span></td>
-          <td class="answer"></td>
-          <td>(확인)</td>
-          <td class="answer"></td>
-          <td>(확인)</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <th>빈 플라스크 무게 (g)</th>
-          <td class="answer" colspan="3"><span class="translation">(둥근플라스크 + 끓임쪽)</span></td>
-          <td>(확인)</td>
-          <td class="answer"><span class="translation">(삼각플라스크)</span></td>
-          <td>(확인)</td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <th>플라스크 + 용액무게 (g)</th>
-          <td class="answer"><span class="translation">(둥근플라스크 + 끓임쪽 + 미지용액)</span></td>
-          <td>(확인)</td>
-          <td></td>
-          <td>(확인)</td>
-          <td class="answer"><span class="translation">(삼각플라스크)</span></td>
-          <td>(확인)</td>
-          <td>-</td>
+          <td class="answer">-</td>
         </tr>
         <tr>
           <th>밀도 (g/cm3)</th>
           <td class="answer" colspan="2"></td>
           <td class="answer" colspan="2"></td>
           <td class="answer" colspan="2"></td>
-          <td>-</td>
+          <td class="answer">-</td>
         </tr>
         <tr>
           <th>양 (g)</th>
           <td class="answer" colspan="2"></td>
           <td class="answer" colspan="2"></td>
           <td class="answer" colspan="2"></td>
-          <td>-</td>
+          <td class="answer"></td>
         </tr>
         <tr>
           <th>조성 (wt%)</th>
           <td class="answer" colspan="2"></td>
           <td class="answer" colspan="2"></td>
           <td class="answer" colspan="2"></td>
-          <td>-</td>
+          <td class="answer">-</td>
         </tr>
         <tr>
-          <th>시약[A]의양 (g)</th>
+          <th>시약[A]의 양 (g)</th>
           <td class="answer" colspan="2"></td>
           <td class="answer" colspan="2"></td>
           <td class="answer" colspan="2"></td>
-          <td>-</td>
+          <td class="answer"></td>
         </tr>
       </table>
     </div>
-    <div class="answer">
-
-    </div>
     <div class="comment">
-      $\ce{}$ </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
+      <p>용액 증류하기 전에 입력할 수 있는 값들을 입력한다.</p>
+      <p>단증류 실험을 시작한다.</p>
     </div>
-    <div class="answer">
 
-    </div>
+
+    <table style="font-size:.75em;">
+      <tr>
+        <th>측정값</th>
+        <th colspan="2">수용액</th>
+        <th colspan="2">잔류액</th>
+        <th colspan="2">유출액</th>
+        <th>손실</th>
+      </tr>
+      <tr>
+        <th>비중병 + 제조한 용액 무게 (g)</th>
+        <td class="answer " colspan="2">42.8100</td>
+        <td class="">　　　　</td>
+        <td>(확인)</td>
+        <td class=""></td>
+        <td>(확인)</td>
+        <td class="answer">-</td>
+      </tr>
+      <tr>
+        <th>빈 플라스크 무게 (g)</th>
+        <td class="answer " colspan="3">196.74</td>
+        <td>(확인)</td>
+        <td class="answer"><span class="translation">(삼각플라스크)</span></td>
+        <td>(확인)</td>
+        <td class="answer">-</td>
+      </tr>
+      <tr>
+        <th>플라스크 + 용액무게 (g)</th>
+        <td class="answer ">325.75</td>
+        <td>(확인)</td>
+        <td></td>
+        <td>(확인)</td>
+        <td class="answer"><span class="translation">(삼각플라스크)</span></td>
+        <td>(확인)</td>
+        <td class="answer">-</td>
+      </tr>
+      <tr>
+        <th>밀도 (g/cm3)</th>
+        <td class="answer on" colspan="2">0.9190</td>
+        <td class="answer" colspan="2"></td>
+        <td class="answer" colspan="2"></td>
+        <td class="answer">-</td>
+      </tr>
+      <tr>
+        <th>양 (g)</th>
+        <td class="answer on" colspan="2">129.01</td>
+        <td class="answer" colspan="2"></td>
+        <td class="answer" colspan="2"></td>
+        <td class="answer"></td>
+      </tr>
+      <tr>
+        <th>조성 (wt%)</th>
+        <td class="answer on" colspan="2">47.65</td>
+        <td class="answer" colspan="2"></td>
+        <td class="answer" colspan="2"></td>
+        <td class="answer">-</td>
+      </tr>
+      <tr>
+        <th>시약[A]의 양 (g)</th>
+        <td class="answer on" colspan="2">61.47</td>
+        <td class="answer" colspan="2"></td>
+        <td class="answer" colspan="2"></td>
+        <td class="answer"></td>
+      </tr>
+    </table>
     <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
+      <p>증류를 하는 동안 수용액 관련 계산을 하면 된다.</p>
+      <h3>수용액의 밀도</h3>
+      <p>$\ce{
+        \rho_\text{용액} = \dfrac{m_\text{용액 + 비중병} - m_\text{비중병}}{V_\text{비중병}} = \dfrac{\pu{(42.8100 - 19.7234) g}}{\pu{25.1220 ml}} = 0.9190 g/ml
+        }$</p>
+        <h3>수용액의 양</h3>
+        <p>$\ce{
+          m\text{용액} = m_\text{용액 + 플라스크 } - m_\text{플라스크 } = 129.01 g
+        }$</p>
+        <h3>조성</h3>
+        <p>$\ce{
+          \dfrac{47 - 48}{0.92041 - 0.91823} = \dfrac{x - 48}{0.9190 - 0.91823} \\
+          \therefore $x$ = 47.65 wt\%
+        }$</p>
+        <h3>시약 [A]의 양</h3>
+        <p>$\ce{
+          129.01 g \times 0.4765 = 61.47 g
+        }$</p>
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question">
-
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-
+제작중입니다.
     </div>
     <div class="answer">
 
