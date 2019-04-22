@@ -511,6 +511,10 @@ footer {
   display: block;
 }
 
+hr {
+  border-width: 1px 0 0 0;
+}
+
 .logo_inline {
   display: inline-block !important;
   margin: -12px -10px -22px -12px !important;

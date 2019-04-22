@@ -35,6 +35,19 @@
     display: none;
   }
 
+  table {
+    text-align: center;
+    margin: auto;
+  }
+
+  .page {
+    text-align: center;
+  }
+
+  .button {
+    margin: 2.5em 0;
+  }
+
   /* .general__dark th.answer,
   .general__dark td.answer {
     background: gray;
@@ -47,17 +60,56 @@
 </style>
 
 <div class="contents">
-  <div class="button">
-    <span class="key on" id="K">$\ce{Kh3PO4}$</span><span class="key" id="N">$\ce{NH4h3PO4}$</span>
+
+  <div>
+    <p>[공개]</p>
+    <h3 style="text-align:center;">국가기술자격 실기시험문제</h3>
+    <table style="width:100%;">
+      <tr>
+        <th>자격종목</th>
+        <th>화학분석기사</th>
+        <th>과제명</th>
+        <th>분광광도법에 의한 인산전량 정량분석</th>
+      </tr>
+    </table>
+    ※ 문제는 시험 종료 후 본인이 가져갈 수 있습니다.
+    <table style="width:100%;">
+      <tr>
+        <th>비번호</th>
+        <th>　　　　</th>
+        <th>시험일시</th>
+        <th>　　　　</th>
+        <th>시험장명</th>
+        <th>　　　　</th>
+      </tr>
+    </table>
+    ※ 시험시간 : 3시간 30분
   </div>
-  <div class="q_wrap">
-    <h3>실험 목적</h3>
-    <p>흡광광도법에 의한 인산전량 정량분석: 바나드몰리덴산암모늄법에 의한 인산전량 정량분석</p>
+  <div class="">
+    <h3>1. 요구사항</h3>
+    <p>※ 지급된 재료 및 시설을 사용하여 아래 작업을 완성하시오.</p>
+    <div class="q_wrap sub">
+      <div class="question sub">
+        <p>다음 [조건]에 따라 바나드몰리브덴산암모늄법에 의한 인산정량 작업을 하시오.</p>
+        <p>-바나드몰리브덴산암모늄법에 의한 인산전량 정량분석 방법(4-3 페이지 참조)</p>
+        <ol>
+          <li>시료칭량 : 주어진 시료를 성분시험 분석조건에 맞게 미지시료를 조제하시오.</li>
+          <li>미지시료 희석 및 발색 : 조제된 미지시료를 기기조건에 맞게 희석하고 발색 시약으로 발색시키시오.</li>
+          <li>흡광도 측정 : 분광광도계를 이용하여 발색된 미지시료의 흡광도를 측정하여, 농도를 계산하시오. <br>
+            - 검량선은 검량선 작성란에 30 cm 자를 이용하여 반드시 일직선으로 나타내고 미지시료의 농도가 표준액 농도 값의 중간 (5~15 ppm 범위)에 위치하도록 희석하시오.<br>
+            - 그래프 용지에 미지시료의 농도 값을 농도 축 하단에 화살표 (↑)로 표시하고 그 값을 그래프용지 하단에 기록하시오.
+          </li>
+          <li>성적계산서 작성 : 시료칭량무게, 희석배수, 흡광도 또는 농도를 근거로 소수점이하 4째 자리까지 반올림하여 계산하고 분석성적은 인산($\ce{P2O5}$)의 함량(%)으로 구하시오.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="page">4 - 1</div>
   </div>
 
-  <div class="q_wrap">
-    <h3>시약 조제</h3>
+  <hr>
 
+  <div class="">
+    <h3>◇ 바나드몰리브덴산암모늄법에 의한 인산전량 정량분석</h3>
     <div class="q_wrap sub">
       <p class="question sub">표준인산액</p>
       <p>황산데시케이터에서 건조한 특급 <span class="K">제1인산칼륨</span><span class="N">제1인산암모늄</span>(순도는 시약병에 명기된 내용을 감안하여 계산하되, 순도가 명기되지 않은 경우에는 99.99%를 기준으로 계산하시오)[(<span class="K">$\ce{Kh3PO4}$</span><span class="N">$\ce{NH4h3PO4}$</span>)의 분자량은 <span class="K">136.08934</span><span
@@ -67,21 +119,31 @@
 
       <p class="question sub">발색 시약</p>
       <p>메타바나드산암모늄$\ce{(NH4VO3) 0.56 g}$을 약 $\pu{150 ml}$의 물에 완전히 녹이고 잘 녹자 않을 경우애는 Hot plate 등애서 조금 가열시켜준 다음 메스플라스크를 이용하여 질산 $\pu{125 ml}$를 가한다. 이 액에 몰리브댄산암모늄$\ce{[(NH4)6Mo7O24*4h3O] 13.5 g}$을 물에 녹여 부어주고 물을 가해 $\pu{500 ml}$로 한다.</p>
+
+      <div class="question sub">
+        <h3>미지시료 조제</h3>
+      </div>
+      <p>시험위원이 제시한 공시품(<span class="K">$\ce{Kh3PO4}$</span><span class="N">$\ce{NH4h3PO4}$</span>)을 저울로 정확하게 취하고(저울의 소숫점 4째 자리에 나타나나 값을 시료 채취량으로 할 수 있습니다.) 적당량의 물을 이용하여 완전히 녹인 후 염산 약 $\pu{30 ml}$ 및 질산 약 $\pu{10 ml}$를 가한 다음 공시품이 완전히 녹은 것을 확인한 후 물을
+        가하여
+        정확하게 $\pu{1 L}$를 조제한다.</p>
+
+      <div class="question sub">
+        <h3>정량</h3>
+      </div>
+      <p>표준 인상액을 정확하게 100 mL의 메스플라스크에 미지시료 중의 인(인산)의 양이 0~15 mg/L(0, 5, 10, 15 ppm)가 되도록 수단계로 하여 표준액 사이의 인산($\ce{P2O2}$)으로써 취해 A시약 20 mL를 넣고 눈금까지 증류수를 가하고 흔들어 10분~20분간 놓아 둔 후 파장 415 nm에서 흡광도를 측정한다.</p>
+      <p>미지시료의 일정향을 100 mL 메스플라스크에 취하고,(필요시, 강산성일 때는 암모니아수로 중화 한 후 질산을 가해 약산성으로 한 후) 표준인산액과 마찬가지로 흡광도를 측정한다. 측정한 흡관도가 정량범위를 벗어난 경우에는 다시 20 ppm 이하가 되도록 미지시료를 일정량 취한 후 다시 미지시료의 흡광도를 측정한 다음 인산($\ce{P2O2}$)의 함량(%)을 구한다.</p>
+      <p>- Blank 처리나, 검량선 기울기 보정은 실험의 정확도 향상을 위하여 수험자 개인에 맞게 가장 적합한 방법으로 할 수 있습니다.</p>
     </div>
+    <div class="page">4 - 3</div>
   </div>
 
-  <div class="q_wrap">
-    <h3>미지시료 조제</h3>
-    <p>시험위원이 제시한 공시품(<span class="K">$\ce{Kh3PO4}$</span><span class="N">$\ce{NH4h3PO4}$</span>)을 저울로 정확하게 취하고(저울의 소숫점 4째 자리에 나타나나 값을 시료 채취량으로 할 수 있습니다.) 적당량의 물을 이용하여 완전히 녹인 후 염산 약 $\pu{30 ml}$ 및 질산 약 $\pu{10 ml}$를 가한 다음 공시품이 완전히 녹은 것을 확인한 후 물을 가하여
-      정확하게 $\pu{1 L}$를 조제한다.</p>
+  <hr>
+
+  <div class="button">
+    <span class="key on" id="K">$\ce{Kh3PO4}$</span><span class="key" id="N">$\ce{NH4h3PO4}$</span>
   </div>
 
-  <div class="q_wrap">
-    <h3>정량</h3>
-    <p>표준 인상액을 정확하게 100 mL의 메스플라스크에 미지시료 중의 인(인산)의 양이 0~15 mg/L(0, 5, 10, 15 ppm)가 되도록 수단계로 하여 표준액 사이의 인산($\ce{P2O2}$)으로써 취해 A시약 20 mL를 넣고 눈금까지 증류수를 가하고 흔들어 10분~20분간 놓아 둔 후 파장 415 nm에서 흡광도를 측정한다.</p>
-    <p>미지시료의 일정향을 100 mL 메스플라스크에 취하고,(필요시, 강산성일 때는 암모니아수로 중화 한 후 질산을 가해 약산성으로 한 후) 표준인산액과 마찬가지로 흡광도를 측정한다. 측정한 흡관도가 정량범위를 벗어난 경우에는 다시 20 ppm 이하가 되도록 미지시료를 일정량 취한 후 다시 미지시료의 흡광도를 측정한 다음 인산($\ce{P2O2}$)의 함량(%)을 구한다.</p>
-    <p>- Blank 처리나, 검량선 기울기 보정은 실험의 정확도 향상을 위하여 수험자 개인에 맞게 가장 적합한 방법으로 할 수 있습니다.</p>
-  </div>
+  <hr>
 
   <div class="q_wrap">
     <div class="question">
@@ -106,7 +168,7 @@
     <div class="comment">
       <p><span class="K">$\ce{Kh3PO4 1.9177 g}$</span><span class="N">$\ce{NH4h3PO4 1.6209 g}$</span>을 $\ce{1 L}$ 부피 플라스크에 넣고 표선까지 물을 채워, $\ce{1000 ppm}$ 용액을 만든다.</p>
       <p>$\ce{1000 ppm}$ 용액을 $\ce{250 mL}$ 부피플라스크(준배된 적당한 크기의 플라스크에 만들면 된다)에 $\ce{25 mL}$ 넣고 표선까지 물을 채워 $\ce{100 ppm}$ 용액을 만든다.</p>
-      <p>$\ce{100 mL}$ 부피플라스크에  표준용액을 각각 $\ce{0, 5, 10, 15 mL}$ 씩 넣고, 각 플라스크에 발색시약을 $\ce{20 mL}$ 씩 넣은 뒤 표선까지 물을 채워 $\ce{0, 5, 10, 15 ppm}$ 표준용액을 만든다.</p>
+      <p>$\ce{100 mL}$ 부피플라스크에 표준용액을 각각 $\ce{0, 5, 10, 15 mL}$ 씩 넣고, 각 플라스크에 발색시약을 $\ce{20 mL}$ 씩 넣은 뒤 표선까지 물을 채워 $\ce{0, 5, 10, 15 ppm}$ 표준용액을 만든다.</p>
     </div>
   </div>
 
@@ -145,7 +207,7 @@
   <div class="q_wrap">
     <div class="question">바탕용액, 표준용액, 공시액의 흡광도를 측정하여 표를 채우시오.
 
-      <table style="width:100%;">
+      <table>
         <tr>
           <th></th>
           <th>blank</th>
@@ -190,13 +252,13 @@
       y = mx + b \\
       m = \frac{n\sum(xy) - \sum(x)\sum(y)}{n\sum(x^2) - (\sum(x))^2}, \ b = \frac{\sum(y)\sum(x^2) - \sum(x)\sum(xy)}{n\sum(x^2) - (\sum(x))^2}
       $
-      <table style="width:100%; font-size:1em;" class="answer">
+      <table class="answer">
         <tr>
           <th></th>
-          <th>x (ppm)</th>
-          <th>y</th>
-          <th>xy</th>
-          <th>x²</th>
+          <th>$x$</th>
+          <th>$y$</th>
+          <th>$xy$</th>
+          <th>$x^2$</th>
         </tr>
         <tr>
           <th>STD1</th>

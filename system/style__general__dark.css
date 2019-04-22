@@ -116,14 +116,14 @@
 
 /* .key */
 .general__dark .key {
-  background: #9e9e9e;
-  text-shadow: 0 -1px #616161;
-  box-shadow: 0 6px #616161;
-  border: 1px solid #616161;
-  /* color: #e0e0e0; */
+  background: #424242;
+  text-shadow: 0 -1px #212121;
+  box-shadow: 0 6px #212121;
+  border: 1px solid #212121;
+  color: #e0e0e0;
 }
 
 .general__dark .key:active,
 .general__dark .key.on {
-  box-shadow: 0 0px #616161;
+  box-shadow: 0 0px #212121;
 }
