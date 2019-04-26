@@ -1,9 +1,12 @@
 <script src="/qualify/system/main__card.js" defer></script>
 <style>
   .ad {
-    display: none;
-  }
-  .u{text-decoration:underline;}
+display: none;
+}
+.u{text-decoration:underline;}
+.key{width:1em; text-align:center;}
+.shortcut{overflow: scroll;}
+.shortcut_row{margin:1em 0;}
 </style>
 <div class="contents">
 
@@ -22,14 +25,70 @@
 
   <div class="q_wrap">
     <h3>단축키<span class="translation">Keyboard shortcut</span></h3>
-    <p><span class="key" onclick="console_event('q');">Q</span> #qualify 첫화면 열기<span class="translation">Go to #<span class="u">q</span>ualify home</span></p>
-    <p><span class="key" onclick="console_event('o');">O</span> 새 탭에서 열기<span class="translation"><span class="u">O</span>pen to new</span></p>
-    <p><span class="key" onclick="console_event('s');">S</span> 설정 열기<span class="translation">Open the <span class="u">S</span>ettings</span></p>
-    <p><span class="key" onclick="console_event('r');">R</span> 페이지 새로고침 (캐시지우기)<span class="translation"><span class="u">R</span>eold page (hard)</span></p>
-    <p><span class="key" onclick="console_event('f');">F</span> 리스트 접기/펼치기<span class="translation"><span class="u">F</span>old or Un<span class="u">f</span>old lists</span></p>
-    <p><span class="key" onclick="console_event(',');">,</span> 이전 컨텐츠 열기<span class="translation">Load prev content</span></p>
-    <p><span class="key" onclick="console_event('.');">.</span> 다음 컨텐츠 열기<span class="translation">Load next content</span></p>
-    <!-- <p>추가 예정 단축키.</p> -->
+    <div class="shortcut">
+      <div class="shortcut_wrap" style="min-width:40em;">
+        <div class="shortcut_row">
+          <span class="key disabled">`</span>
+          <span class="key disabled">1</span>
+          <span class="key disabled">2</span>
+          <span class="key disabled">3</span>
+          <span class="key disabled">4</span>
+          <span class="key disabled">5</span>
+          <span class="key disabled">6</span>
+          <span class="key disabled">7</span>
+          <span class="key disabled">8</span>
+          <span class="key disabled">9</span>
+          <span class="key disabled">0</span>
+          <span class="key disabled">-</span>
+          <span class="key disabled">=</span>
+          <span class="key disabled">\</span>
+          <span class="key disabled">←</span>
+        </div>
+        <div class="shortcut_row">
+          <span class="key disabled" style="width:3em;">Tab</span>
+          <span class="key" onclick="console_event('q');" title='#qualify 첫화면 열기<span class="translation">Go to #<span class="u">q</span>ualify home</span>'>Q</span>
+          <span class="key disabled">W</span>
+          <span class="key disabled">E</span>
+          <span class="key" onclick="console_event('r');" title='페이지 새로고침 (캐시지우기)<span class="translation"><span class="u">R</span>eold page (hard)</span>'>R</span>
+          <span class="key disabled">T</span>
+          <span class="key disabled">Y</span>
+          <span class="key disabled">U</span>
+          <span class="key disabled">I</span>
+          <span class="key" onclick="console_event('o');" title='새 탭에서 열기<span class="translation"><span class="u">O</span>pen to new</span>'>O</span>
+          <span class="key disabled">P</span>
+          <span class="key disabled">[</span>
+          <span class="key disabled">]</span>
+        </div>
+        <div class="shortcut_row">
+          <span class="key disabled" style="width:4em;">Caps</span>
+          <span class="key disabled">A</span>
+          <span class="key" onclick="console_event('s');" title='설정 열기<span class="translation">Open the <span class="u">S</span>ettings</span>'>S</span>
+          <span class="key" onclick="console_event('d');" title='다크 모드<span class="translation"><span class="u">D</span>ark mode</span>'>D</span>
+          <span class="key" onclick="console_event('f');" title='리스트 접기/펼치기<span class="translation"><span class="u">F</span>old or Un<span class="u">f</span>old lists</span>'>F</span>
+          <span class="key disabled">G</span>
+          <span class="key disabled">H</span>
+          <span class="key disabled">J</span>
+          <span class="key disabled">K</span>
+          <span class="key disabled">L</span>
+          <span class="key disabled">;</span>
+          <span class="key disabled">'</span>
+          <span class="key disabled" style="width:5em;">Enter</span>
+        </div>
+        <div class="shortcut_row">
+          <span class="key disabled" style="width:6em;">Shift</span>
+          <span class="key disabled">Z</span>
+          <span class="key disabled">X</span>
+          <span class="key disabled">C</span>
+          <span class="key disabled">V</span>
+          <span class="key disabled">B</span>
+          <span class="key" onclick="console_event('n');" title='내비게이션 접기/펼치기<span class="translation">Fold the <span class="u">N</span>avigation'>N</span>
+          <span class="key disabled">M</span>
+          <span class="key" onclick="console_event(',');" title='이전 컨텐츠 열기<span class="translation">Load prev content</span>'>,</span><span class="key" onclick="console_event('.');" title='다음 컨텐츠 열기<span class="translation">Load next content</span>'>.</span>
+          <span class="key disabled">/</span>
+          <span class="key disabled" style="width:7em;">Shift</span>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="q_wrap">

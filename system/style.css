@@ -31,7 +31,7 @@
 
 ::-webkit-scrollbar {
   width: 6px;
-  height: 0;
+  height: 6px;
   background-color: inherit;
 }
 
@@ -39,6 +39,8 @@
   background-color: rgba(0, 0, 0, .1);
   -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+::-webkit-scrollbar-corner {opacity: 0;}
 
 input::selection, textarea::selection {
   background: rgba(0, 0, 0, .2);
@@ -187,7 +189,7 @@ header:hover #print_icon {
 }
 
 .disabled {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3) !important;
 }
 
 .hide {
@@ -372,7 +374,13 @@ input[type="checkbox"] {
 }
 
 .targeted {
-  background: #9ACFF9 !important;
+  background: #e3f2fd !important;
+  /* background: rgba(158, 158, 158, .2) !important; */
+}
+
+.targeted a, .targeted i, .targeted i svg {
+  fill: #2196f3;
+  color: #2196f3;
 }
 
 /* ------------------------------------------------------------------- */

@@ -90,10 +90,26 @@ nav h2:first-of-type {
   margin-top: 1em
 }
 
-nav h3 {
+nav h3.item {
   position: relative;
   margin: .25em 0;
   padding: 0
+}
+
+nav h3.item:after {
+  position: absolute;
+  content: ' ';
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background-color: #2196f3;
+  opacity: 0;
+  transition: opacity .25s linear;
+}
+
+nav h3.item.targeted:after {
+  opacity: 1;
 }
 
 nav h4 {

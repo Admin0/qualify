@@ -56,6 +56,9 @@ $(document).keyup(function(event) {
       case 65: // a
         console_event("a");
         break;
+      case 78: // n
+        console_event("n");
+        break;
       default:
 
     }
@@ -145,6 +148,13 @@ function console_event(code) {
         $('body').removeClass("answer__quiz");
         window.localStorage["answer__quiz"] = "false"
         toast("퀴즈 모드가 해제되었습니다.");
+      }
+      break;
+    case "n":
+      if (window.localStorage['nav_fold'] == "true" && !is_mobile) {
+        nav_expand();
+      } else {
+        nav_fold();
       }
       break;
     default:

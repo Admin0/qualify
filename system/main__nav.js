@@ -1,19 +1,19 @@
+function nav_expand() {
+  $("nav, #sub_header, #nav_footer > i").removeClass("fold");
+  $("body").removeClass("fold");
+  window.localStorage['nav_fold'] = "false";
+}
+
+function nav_fold() {
+  $("nav, #sub_header, #nav_footer > i").addClass("fold");
+  $("body").addClass("fold");
+  window.localStorage['nav_fold'] = "true";
+}
+
 function nav_create() {
 
   var nav_w = 300;
   var nav_w_folded = 68;
-
-  function nav_expand() {
-    $("nav, #sub_header, #nav_footer > i").removeClass("fold");
-    $("body").removeClass("fold");
-    window.localStorage['nav_fold'] = "false";
-  }
-
-  function nav_fold() {
-    $("nav, #sub_header, #nav_footer > i").addClass("fold");
-    $("body").addClass("fold");
-    window.localStorage['nav_fold'] = "true";
-  }
 
   if (window.localStorage['nav_fold'] == "true" && !is_mobile) {
     nav_fold();
@@ -62,11 +62,11 @@ function nav_create() {
     }
   }
   $("#nav #nav_item_list h3").hover(function() {
-        if (document.height === null) {
-          pageYOffset = document.documentElement.scrollTop;
-        }
-        $('#tooltip_nav_text').html($(this).attr("name") + "-" + $(this).attr("round"));
-        tooltip_nav("on", this);
+      if (document.height === null) {
+        pageYOffset = document.documentElement.scrollTop;
+      }
+      $('#tooltip_nav_text').html($(this).attr("name") + "-" + $(this).attr("round"));
+      tooltip_nav("on", this);
     },
     function() {
       tooltip_nav("after");
