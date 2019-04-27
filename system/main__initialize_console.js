@@ -33,7 +33,7 @@ $(document).keyup(function(event) {
         console_event("s");
         break;
       case 82: // r
-        console_event("r");
+        // console_event("r");
         break;
       case 79: // o
         console_event("o");

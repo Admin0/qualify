@@ -1,12 +1,18 @@
 <script src="/qualify/system/main__card.js" defer></script>
 <style>
   .ad {
-display: none;
-}
-.u{text-decoration:underline;}
-.key{width:1em; text-align:center;}
-.shortcut{overflow: scroll;}
-.shortcut_row{margin:1em 0;}
+    display: none;
+  }
+  .u {
+    text-decoration:underline;
+  }
+  .key {
+    width:1em; text-align:center;
+  }
+  .shortcut {
+    /* overflow: scroll; */
+  }
+  .shortcut_row{margin:1em 0;}
 </style>
 <div class="contents">
 
@@ -49,7 +55,7 @@ display: none;
           <span class="key" onclick="console_event('q');" title='#qualify 첫화면 열기<span class="translation">Go to #<span class="u">q</span>ualify home</span>'>Q</span>
           <span class="key disabled">W</span>
           <span class="key disabled">E</span>
-          <span class="key" onclick="console_event('r');" title='페이지 새로고침 (캐시지우기)<span class="translation"><span class="u">R</span>eold page (hard)</span>'>R</span>
+          <span class="key disabled">R</span>
           <span class="key disabled">T</span>
           <span class="key disabled">Y</span>
           <span class="key disabled">U</span>
@@ -61,7 +67,7 @@ display: none;
         </div>
         <div class="shortcut_row">
           <span class="key disabled" style="width:4em;">Caps</span>
-          <span class="key disabled">A</span>
+          <span class="key" onclick="console_event('a');" title='퀴즈 모드<span class="translation">Q&<span class="u">A</span> mode</span>'>A</span>
           <span class="key" onclick="console_event('s');" title='설정 열기<span class="translation">Open the <span class="u">S</span>ettings</span>'>S</span>
           <span class="key" onclick="console_event('d');" title='다크 모드<span class="translation"><span class="u">D</span>ark mode</span>'>D</span>
           <span class="key" onclick="console_event('f');" title='리스트 접기/펼치기<span class="translation"><span class="u">F</span>old or Un<span class="u">f</span>old lists</span>'>F</span>
