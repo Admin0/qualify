@@ -7,12 +7,18 @@
     text-decoration:underline;
   }
   .key {
-    width:1em; text-align:center;
+    text-align:center;
+    padding:.25em 0;
+    min-width:2.25em;
+    flex:auto;
   }
   .shortcut {
     /* overflow: scroll; */
   }
-  .shortcut_row{margin:1em 0;}
+  .shortcut_row{
+    margin:.75em 0;
+    display:flex;
+  }
 </style>
 <div class="contents">
 
@@ -32,10 +38,25 @@
   <div class="q_wrap">
     <h3>단축키<span class="translation">Keyboard shortcut</span></h3>
     <div class="shortcut">
-      <div class="shortcut_wrap" style="min-width:40em;">
+      <div class="shortcut_wrap" style="min-width:100%;">
+        <div class="shortcut_row">
+          <span class="key" onclick="console_event('q');" style="margin-right:2em;" title='#qualify 첫화면 열기<span class="translation">Go to #<span class="u">q</span>ualify home</span>'>Esc</span>
+          <span class="key disabled">F1</span>
+          <span class="key disabled">F2</span>
+          <span class="key disabled">F3</span>
+          <span class="key disabled" style="margin-right:1.5em;">F4</span>
+          <span class="key disabled">F5</span>
+          <span class="key disabled">F6</span>
+          <span class="key disabled">F7</span>
+          <span class="key disabled" style="margin-right:1.5em;">F8</span>
+          <span class="key disabled">F9</span>
+          <span class="key disabled">F10</span>
+          <span class="key disabled">F11</span>
+          <span class="key disabled">F12</span>
+        </div>
         <div class="shortcut_row">
           <span class="key disabled">`</span>
-          <span class="key disabled">1</span>
+          <span class="key" onclick="console_event('1');" title='도움말<span class="translation">Help</span>'>1</span>
           <span class="key disabled">2</span>
           <span class="key disabled">3</span>
           <span class="key disabled">4</span>
@@ -47,8 +68,7 @@
           <span class="key disabled">0</span>
           <span class="key disabled">-</span>
           <span class="key disabled">=</span>
-          <span class="key disabled">\</span>
-          <span class="key disabled">←</span>
+          <span class="key" style="width:3.25em;"  onclick="console_event('q');" title='#qualify 첫화면 열기<span class="translation">Go to #<span class="u">q</span>ualify home</span>'>←</span>
         </div>
         <div class="shortcut_row">
           <span class="key disabled" style="width:3em;">Tab</span>
@@ -64,6 +84,7 @@
           <span class="key disabled">P</span>
           <span class="key disabled">[</span>
           <span class="key disabled">]</span>
+          <span class="key disabled" style="width:2.5em;">\</span>
         </div>
         <div class="shortcut_row">
           <span class="key disabled" style="width:4em;">Caps</span>
@@ -91,7 +112,7 @@
           <span class="key disabled">M</span>
           <span class="key" onclick="console_event(',');" title='이전 컨텐츠 열기<span class="translation">Load prev content</span>'>,</span><span class="key" onclick="console_event('.');" title='다음 컨텐츠 열기<span class="translation">Load next content</span>'>.</span>
           <span class="key disabled">/</span>
-          <span class="key disabled" style="width:7em;">Shift</span>
+          <span class="key disabled" style="width:6.5em;">Shift</span>
         </div>
       </div>
     </div>

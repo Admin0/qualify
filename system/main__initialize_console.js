@@ -1,5 +1,6 @@
 $(document).keyup(function(event) {
   // console.log("key is up");
+  event.preventDefault();
   var shortcut_trriger = $("#setting").hasClass("on");
   if (shortcut_trriger) {
     switch (event.which) {
@@ -39,15 +40,21 @@ $(document).keyup(function(event) {
         console_event("o");
         break;
       case 81: // q
+      case 27: // Esc
+      case 8: // BS(←)
         console_event("q");
         break;
       case 70: // f
         console_event("f");
         break;
       case 188: // ,
+      case 37: // ←
+      case 38: // ↑
         console_event(",");
         break;
       case 190: // .
+      case 39: // →
+      case 40: // ↓
         console_event(".");
         break;
       case 68: // d
@@ -58,6 +65,9 @@ $(document).keyup(function(event) {
         break;
       case 78: // n
         console_event("n");
+        break;
+      case 49: // 1
+        console_event("1");
         break;
       default:
 
@@ -156,6 +166,9 @@ function console_event(code) {
       } else {
         nav_fold();
       }
+      break;
+    case "1":
+      load('notice');
       break;
     default:
 

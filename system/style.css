@@ -40,7 +40,9 @@
   -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-::-webkit-scrollbar-corner {opacity: 0;}
+::-webkit-scrollbar-corner {
+  opacity: 0;
+}
 
 input::selection, textarea::selection {
   background: rgba(0, 0, 0, .2);
@@ -349,6 +351,7 @@ h4:first-of-type {
   width: 24px;
   height: inherit;
   margin-bottom: 5%;
+  transition: .3s;
 }
 
 a:not(nav a)>.material-icons {
@@ -494,7 +497,7 @@ footer {
   opacity: 0;
   visibility: hidden;
   cursor: default;
-  padding: 1em;
+  padding: .5em 0;
   color: rgba(0, 0, 0, .5);
   background-color: #fff;
   /* border: 1px solid #bbb; */
@@ -503,7 +506,7 @@ footer {
   transition: .25s;
   transition-property: opacity, transform, margin;
   top: 50%;
-  font-size: 14px;
+  font-size: 12px;
   width: 250px;
 }
 
@@ -516,12 +519,23 @@ footer {
 }
 
 #context_menu h3 {
-  margin: .25em 0;
+  margin: 0;
+  font-weight: normal;
+}
+
+#context_menu h3:hover {
+  background: rgba(0, 0, 0, 0.2);
 }
 
 #context_menu h3 a {
   width: 100%;
   display: block;
+  padding: .5em 0;
+  margin: 0 1em;
+}
+
+#context_menu h3 i {
+  font-size: 20px;
 }
 
 hr {
