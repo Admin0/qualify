@@ -138,3 +138,9 @@
   fill: #c8b900;
   color: #c8b900;
 }
+
+@media handheld, only screen and (max-device-width: 480px), only screen and (max-device-width: 320px), screen and (max-width: 1080px) {
+  .general__dark #item_list section.item {
+    background: rgba(50, 54, 57, 1);
+  }
+}
