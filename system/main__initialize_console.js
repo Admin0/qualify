@@ -69,6 +69,9 @@ $(document).keyup(function(event) {
       case 49: // 1
         console_event("1");
         break;
+      case 220: // \
+        console_event("helper");
+        break;
       default:
 
     }
@@ -169,6 +172,9 @@ function console_event(code) {
       break;
     case "1":
       load('notice');
+      break;
+    case "helper":
+      load('helper');
       break;
     default:
 
