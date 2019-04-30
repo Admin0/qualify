@@ -8,6 +8,7 @@
 @import url('style__answer__quiz.css');
 @import url('style_nav.css');
 @import url('style_share.css');
+@import url('style_context.css');
 @import url('style_card.css');
 
 ::selection {
@@ -486,56 +487,6 @@ footer {
   animation-name: snackbar_off;
   animation-duration: .3s;
   z-index: 0;
-}
-
-/* ------------------------------------------------------------------- */
-/* ***** context-menu ***** */
-/* ------------------------------------------------------------------- */
-#context_menu {
-  z-index: 5;
-  position: fixed;
-  opacity: 0;
-  visibility: hidden;
-  cursor: default;
-  padding: .5em 0;
-  color: rgba(0, 0, 0, .5);
-  background-color: #fff;
-  /* border: 1px solid #bbb; */
-  border-radius: 3px;
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
-  transition: .25s;
-  transition-property: opacity, transform, margin;
-  top: 50%;
-  font-size: 12px;
-  width: 250px;
-}
-
-#context_menu.on {
-  transform: none;
-  transform-origin: 50% 100%;
-  margin-top: 0;
-  visibility: visible;
-  opacity: 1;
-}
-
-#context_menu h3 {
-  margin: 0;
-  font-weight: normal;
-}
-
-#context_menu h3:hover {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-#context_menu h3 a {
-  width: 100%;
-  display: block;
-  padding: .5em 0;
-  margin: 0 1em;
-}
-
-#context_menu h3 i {
-  font-size: 20px;
 }
 
 hr {

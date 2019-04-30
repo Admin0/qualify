@@ -42,7 +42,7 @@ body.page {
   font-size: 0.7em;
   margin: 0 .5em 0 -1.85em;
   padding: 0.25ex;
-  border: 0.5px solid black;
+  border: 0.5px solid;
   border-radius: 50%;
   width: 1em;
   line-height: 1;

@@ -55,10 +55,6 @@
   stroke: #c8b900;
 }
 
-.general__dark .contents ol li:before {
-  border-color: rgb(189, 193, 198);
-}
-
 /* nav */
 .general__dark nav {
   border-right: solid 1px var(--black-transparent-12, rgba(30, 34, 37, .45));
@@ -109,6 +105,8 @@
 /* context */
 .general__dark #context_menu {
   background: #424242;
+  color: rgb(189, 193, 198);
+  ;
 }
 
 /* .key */

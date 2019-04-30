@@ -34,6 +34,7 @@ $(document).keyup(function(event) {
         console_event("s");
         break;
       case 82: // r
+        console_event("share");
         // console_event("r");
         break;
       case 79: // o
@@ -175,6 +176,9 @@ function console_event(code) {
       break;
     case "helper":
       load('helper');
+      break;
+    case "share":
+      $('#share, #setting_bg').addClass('on');
       break;
     default:
 

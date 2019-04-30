@@ -1,10 +1,30 @@
 <!-- <h2 id="" class=""><a href="">메뉴</a></h2> -->
-<h3 class=""><a onclick="$('#setting, #setting_bg').toggleClass('on');$('#setting').css({ 'top': $('#context_menu').offset().top - pageYOffset, 'left': $('#context_menu').offset().left});$('#context_menu').removeClass('on');"><i
-      class="material-icons">settings</i><span>설정<span></span></span></a></h3>
-<hr style="margin: 1em 0;    border-width: 1px 0 0;">
-<h3 class=""><a onclick="load('notice');" target="_blank"><i class="material-icons">notifications</i><span>안내<span></span></span></a></h3>
-<h3 class=""><a href="//blog.jinh.kr/guestbook/" target="_blank"><i class="material-icons">message</i><span>리뷰 & 오류 제보<span></span></span></a></h3>
-<h3 class=""><a href="//jinh.kr/bucket/#license" target="_blank"><i class="material-icons">playlist_add_check</i><span>#버킷리스트 바로가기<span></span></span></a></h3>
-<h3 class=""><a onclick="$('#share, #setting_bg').addClass('on');$('#context_menu').removeClass('on');"><i class="material-icons">share</i><span>#qulify 공유하기<span></span></span></a></h3>
-<h3 class=""><a onclick="$('#main_item').load('opensource_license.html',function(){after_load('opensource_license');});$('#context_menu').removeClass('on');" href="#opensource_license"><i class="material-icons">favorite</i><span>오픈소스 라이선스<span></span></span></a></h3>
-<h3 class=""><a onclick="$('#main_item').load('update_log.html',function(){after_load('update_log');});$('#context_menu').removeClass('on');" href="#update_log"><i class="material-icons">update</i><span>업데이트 기록<span></span></span></a></h3>
+
+<div onclick="$('#setting, #setting_bg').toggleClass('on');$('#setting').css({ 'top': $('#context_menu').offset().top - pageYOffset, 'left': $('#context_menu').offset().left});$('#context_menu').removeClass('on');">
+  <i class="material-icons">settings</i><span>설정</span>
+  <span class="shortcut">S</span>
+</div>
+
+<hr>
+
+<div class="" onclick="load('notice');">
+  <i class="material-icons">notifications</i><span>안내</span>
+  <span class="shortcut">1</span>
+</div>
+<div class="" onclick="window.open('//blog.jinh.kr/guestbook/');">
+  <i class="material-icons">message</i><span>리뷰 & 오류 제보</span>
+</div>
+<div class="" onclick="window.open('//jinh.kr/bucket/#license');">
+  <i class="material-icons">playlist_add_check</i><span>#버킷리스트 바로가기</span>
+  <span class="shortcut">Q</span>
+</div>
+<div onclick="$('#share, #setting_bg').addClass('on');$('#context_menu').removeClass('on');">
+  <i class="material-icons">share</i><span>#qulify 공유하기</span>
+  <span class="shortcut">R</span>
+</div>
+<div onclick="$('#main_item').load('opensource_license.html',function(){after_load('opensource_license');});$('#context_menu').removeClass('on');">
+  <i class="material-icons">favorite</i><span>오픈소스 라이선스</span>
+</div>
+<div onclick="$('#main_item').load('update_log.html',function(){after_load('update_log');});$('#context_menu').removeClass('on');">
+  <i class="material-icons">update</i><span>업데이트 기록</span>
+</div>
