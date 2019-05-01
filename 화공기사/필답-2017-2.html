@@ -70,7 +70,12 @@
     </div>
     <div class="answer">
       $\ce{
-      $w_1$ = 320 kg, $s_1$ = 680 kg, $x_1$ = 1000 kg ->[\text{건조}] $w_2$ = ?, $s_2$ = 680 kg, $x_2$ = ? \\
+      \begin{array}{l c l}
+       $w_1$ = 320 kg & & $w_2$ = ? \\
+       $s_1$ = 680 kg & -> & $s_2$ = 680 kg \\
+       $x_1$ = 1000 kg & & $x_2$ = ? \\
+      \end{array} \\
+
       $x_2$ = 680 \times \frac{100}{97} \\
       $w_2$ = 680 \times \frac{100}{97} \times \frac{3}{100} = 21.03 kg \\
       $w_1$ - $w_2$ = 320 - 21.03 = \pu{298.97 kg}
@@ -130,7 +135,7 @@
       \begin{align*}
       Q &= Cm \Delta T \\
       &= \ce{(1 kcal/kg*^\circ C)(50 kg)(90^\circ C - 10^\circ C)} = \ce{4000 kcal} \\
-      &= UA \Delta T_\ce{LM}      \\
+      &= UA \Delta T_\ce{LM} \\
       A &= \dfrac{\ce{4000 kcal}}{\ce{100 kcal/h*m^2*^\circ C \times 115.42^\circ C}} \left(\because T_\ce{LM} = \frac{(160 - 80)}{\ln{(160 / 80)}} \pu{^\circ C} \right) \\
       &= \pu{0.35 m^2}
       \end{align*}
@@ -145,8 +150,8 @@
     </div>
     <div class="answer">
       $
-        Re = \dfrac{Dv_c\rho}{\mu} = 2100 \\
-        v_c = \dfrac{2100 \cdot (\pu{5E-3 Pa \cdot s})}{(\ce{800 kg/m^3)*(0.2 m)}} = \pu{0.0656 m/s}
+      Re = \dfrac{Dv_c\rho}{\mu} = 2100 \\
+      v_c = \dfrac{2100 \cdot (\pu{5E-3 Pa \cdot s})}{(\ce{800 kg/m^3)*(0.2 m)}} = \pu{0.0656 m/s}
       $
     </div>
   </div>
@@ -157,7 +162,7 @@
     </div>
     <div class="answer">
       $
-        Q = \dfrac{\Delta T}{\frac{\ln{r_o/r_i}}{2 \pi kL}} = \dfrac{(500 -320)\ce{^\circ C}}{\frac{\ln\ce{1 m/0.4 m}}{\ce{2 \pi(0.2 W/m*K)(10 m)}}} = \pu{2.47 kW}
+      Q = \dfrac{\Delta T}{\frac{\ln{r_o/r_i}}{2 \pi kL}} = \dfrac{(500 -320)\ce{^\circ C}}{\frac{\ln\ce{1 m/0.4 m}}{\ce{2 \pi(0.2 W/m*K)(10 m)}}} = \pu{2.47 kW}
 
       $
     </div>
@@ -189,14 +194,14 @@
     </div>
     <div class="answer">
       $
-        Re = \dfrac{Dv\rho}{\mu} = 955 \text{이므로, 층류이다.} \\
-        \text{층류에서 } f = 16Re = 0.01678, \\
-        u = \frac{\pu{60 m3/h}}{\ce{\frac{\pi}{4}(0.1 m)^2}}\frac{\ce{1 h}}{\ce{3600 s}} = \pu{2.12 m/s},\ \dot{m} = \frac{\pu{60 m3}}{\pu{3600 s}}\frac{\pu{9090 kg}}{\pu{m3}} = \pu{15 kg/s} \\
-        h_f = 4f\dfrac{L}{D}\dfrac{u^2}{2} = 4(0.01678)\left(\dfrac{\pu{400 m}}{\pu{0.1 m}}\right)\left(\dfrac{\pu{2.12^2 m2/s2}}{2}\right) = \pu{603.33 J/kg} \\
-        \eta W_{p} =\dfrac{\Delta P}{\rho } +\dfrac{\alpha \Delta u^{2}}{2} +g\Delta Z + h_{f} \\
-        0.5 W_{p} = (0) + \left(\dfrac{\pu{2.12^2 m2}}{2}\right) + \ce{(9.8 m/s^2 \times 25 m) + (603.33 J/kg)} \\
-        = \pu{1701.15 J/kg} \\
-        P = \dot{m}W_p = \ce{(15 kg/s)(1701.15 J/kg) = 25517.25 J/s}
+      Re = \dfrac{Dv\rho}{\mu} = 955 \text{이므로, 층류이다.} \\
+      \text{층류에서 } f = 16Re = 0.01678, \\
+      u = \frac{\pu{60 m3/h}}{\ce{\frac{\pi}{4}(0.1 m)^2}}\frac{\ce{1 h}}{\ce{3600 s}} = \pu{2.12 m/s},\ \dot{m} = \frac{\pu{60 m3}}{\pu{3600 s}}\frac{\pu{9090 kg}}{\pu{m3}} = \pu{15 kg/s} \\
+      h_f = 4f\dfrac{L}{D}\dfrac{u^2}{2} = 4(0.01678)\left(\dfrac{\pu{400 m}}{\pu{0.1 m}}\right)\left(\dfrac{\pu{2.12^2 m2/s2}}{2}\right) = \pu{603.33 J/kg} \\
+      \eta W_{p} =\dfrac{\Delta P}{\rho } +\dfrac{\alpha \Delta u^{2}}{2} +g\Delta Z + h_{f} \\
+      0.5 W_{p} = (0) + \left(\dfrac{\pu{2.12^2 m2}}{2}\right) + \ce{(9.8 m/s^2 \times 25 m) + (603.33 J/kg)} \\
+      = \pu{1701.15 J/kg} \\
+      P = \dot{m}W_p = \ce{(15 kg/s)(1701.15 J/kg) = 25517.25 J/s}
       $
 
     </div>
@@ -208,8 +213,8 @@
       (단, 혼합액의 정적비열은 40 kcal/kg‧℃이고, 잠열은 7620 kcal/kg이다.) [4점]
     </div>
     <div class="answer">
-    $
-    q = 1 + \dfrac{C_p(t_b - t_F)}{\lambda} = 1 + \dfrac{\ce{40 kcal/kg*^\circ C(93.9^\circ C - 55^\circ C)}}{\ce{7620 kcal/kg}} = 1.204 \\
+      $
+      q = 1 + \dfrac{C_p(t_b - t_F)}{\lambda} = 1 + \dfrac{\ce{40 kcal/kg*^\circ C(93.9^\circ C - 55^\circ C)}}{\ce{7620 kcal/kg}} = 1.204 \\
       y = \dfrac{q}{q -1}x - \dfrac{x_F}{q -1} = 5.90 x - 2.21
       $
     </div>

@@ -49,3 +49,9 @@
   /* opacity: .75; */
   font-size: 20px;
 }
+#context_menu .shortcut::before{
+  content: "(";
+}
+#context_menu .shortcut::after{
+  content: ")";
+}
