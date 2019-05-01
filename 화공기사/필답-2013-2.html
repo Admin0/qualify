@@ -55,7 +55,11 @@
       마노미터 읽음이 $\pu{54 mm}$ 일 때, 관 중심의 유속은?
     </div>
     <div class="answer">
-
+      $
+      \Delta P = gR(\rho_A - \rho_B) = \ce{(9.8 m/s) \times (0.054 m) \times (1000 - 1.21) kg/m^3} = \pu{528.559668 kg/m*s^2} \\
+      \Delta \dfrac{P}{\rho} = \dfrac{\Delta u^2}{2} \\
+      \therefore u = \sqrt{ 2\times \dfrac{\ce{528.559668 kg/m*s^2}}{\ce{1.21 kg/m^3}} } = \ce{29.55 m/s}
+      $
     </div>
     <div class="comment">
       $\ce{}$
@@ -67,7 +71,15 @@
       비중 $1.40$, 점도 $\ce{0.5 cP}$ 의 액체가, 직경 $\ce{15 cm}$, 길이 $\ce{10 m}$ 의 관을 $\ce{30 L/hr}$로 흐를 때, 압력손실은? ($\ce{N/m2}$)
     </div>
     <div class="answer">
-
+      $
+      u = \dfrac{Q}{A} = \dfrac{(\pu{30 L/hr})\times(\pu{0.001 m3/L})\times(\pu{1 hr / 3600 s})}{\frac{\pi}{4}\times\pu{(0.15 m)2}} = \pu{4.7157E-4 m/s}\\
+      Re = \dfrac{Du\rho}{\mu} = \dfrac{(\pu{1400 kg/m3})\times(\pu{0.15 m})\times(\pu{4.7157E-4 m/s})}{\pu{5E-4 kg /m.s}} = 198.0594 &lt 2100 (\text{층류}) \\
+      \because \dfrac{\Delta P}{\rho} = \dfrac{32 \mu u L}{\rho D^2} \\
+      \begin{align*} \Delta P &= \dfrac{\ce{(32)\times(5\times 10^-4 kg/m*s)\times(4.7157 \times 10^-4 m/s)\times(10 m)}}{\pu{0.15 m2}}\\
+      & = \pu{3.35E-3 kg/m\cdot s2}\\
+      &= \pu{2.25E-3 N/m2}
+      \end{align*}
+      $
     </div>
     <div class="comment">
       $\ce{}$
@@ -80,7 +92,13 @@
       유체를 모두 배출하는데 걸리는 시간은?
     </div>
     <div class="answer">
-
+      $
+      V = \frac{\pi}{4}D^2h = \frac{\pi}{4}\times\pu{(1 m)2}\times \pu{(1.25 m)} = \pu{0.9817 m3} \\
+      D = \pu{(41.6 mm)}\times\pu{(1m / 1000 mm)} = \pu{0.0416 m} \\
+      A = \frac{\pi}{4}\times\pu{(0.0416 m)2}=\pu{1.3592E-3 m2}\\
+      Q = u\cdot A = \pu{(1.2 m/s)}\times \pu{(1.3592E-3 m2)} = \pu{1.631E-3 m3/s} \\
+      \therefore \dfrac{\pu{0.9817 m3}}{\pu{1.631E-3 m3/s}} = \pu{601.9 s}
+      $
     </div>
     <div class="comment">
       $\ce{}$
@@ -89,13 +107,19 @@
 
   <div class="q_wrap">
     <div class="question">
-      물을 $\ce{50 kg/hr}$ 로 $\ce{10℃}$에서 $\ce{90℃}$ 로 가열하고자 한다.
-      폐열의 온도는 $\ce{170℃}$ 로 유지되며 총괄열전달계수는 $\ce{100 kcal/m2∙hr∙℃ }$이고
-      물의 비열은 $\ce{1 cal/g∙℃}$ 로 일정하게 유지된다.
+      물을 $\ce{50 kg/hr}$ 로 $\ce{10^\circ C}$에서 $\ce{90^\circ C}$ 로 가열하고자 한다.
+      폐열의 온도는 $\ce{170^\circ C}$ 로 유지되며 총괄열전달계수는 $\ce{100 kcal/m2*hr*^\circ C }$이고
+      물의 비열은 $\ce{1 cal/g*^\circ C}$ 로 일정하게 유지된다.
       이때 열교환기의 면적은?
     </div>
     <div class="answer">
-
+      $
+      q = mC\Delta T = \pu{4000 kcal/hr} \\
+      \Delta T_L =\pu{\dfrac{160 - 80}{\frac{160}{80}} ^\circ C} =\pu{115.4156^\circ C} \\
+      \because q = UA\Delta T_L,\\
+      \begin{align*} A &= \dfrac{q}{UA\Delta T_L} = \dfrac{\pu{4000 kcal/hr}}{\pu{(100 kcal/m2.hr.^\circ C)}\times\pu{(115.4156^\circ C)}} \\
+    &=  \pu{0.35 m^2}
+      \end{align*} $
     </div>
     <div class="comment">
       $\ce{}$
@@ -107,7 +131,7 @@
       환상형 관의 외관이 $\ce{200 mm}$이고, 내관이 $\ce{100 mm}$ 일 때, 상당지름은?
     </div>
     <div class="answer">
-
+      $ D_e = D_o - D_i = \pu{100 mm} $
     </div>
     <div class="comment">
       $\ce{}$
@@ -119,7 +143,10 @@
       추제비가 4 이고, 남은 추제의 양이 $\ce{20 kg/hr}$ 일 때, 분리된 추제의 양은?
     </div>
     <div class="answer">
-
+      $
+      \alpha = \dfrac{\nu}{v} \\
+      \ce{\nu = 4 \times 20 kg/hr = 80 kg/hr}
+      $
     </div>
     <div class="comment">
       $\ce{}$
@@ -128,9 +155,9 @@
 
   <div class="q_wrap">
     <div class="question">
-      질산바륨이 100℃ 에서 물에 대한 용해도가 $\pu{30 g_\ce{Ba(No3)2} / 100 g_\ce{H20}}$ 이고,
-      0℃ 에서는 $\pu{5 g_\ce{Ba(No3)2} / 100 g_\ce{H20}}$ 이다.
-      질산바륨 $\pu{150 g}$ 을 이용하여 100℃ 에서 포화수용액을 제조한 뒤 0℃로 냉각할 때, 석출되는 바륨의 양은?
+      질산바륨이 $\ce{100^\circ C}$ 에서 물에 대한 용해도가 $\pu{30 g_\ce{Ba(NO3)2} / 100 g_\ce{H2O}}$ 이고,
+      $\ce{0^\circ C}$ 에서는 $\pu{5 g_\ce{Ba(NO3)2} / 100 g_\ce{H2O}}$ 이다.
+      질산바륨 $\pu{150 g}$ 을 이용하여 $\ce{100^\circ C}$ 에서 포화수용액을 제조한 뒤 $\ce{0^\circ C}$로 냉각할 때, 석출되는 바륨의 양은?
     </div>
     <div class="answer">
 
