@@ -4,19 +4,20 @@
 
   <div class="q_wrap">
     <div class="question">
-      탱크 안에 있는 유체 (밀도 $0.9\ g/cm3$, 점도 $2\ poise$)를 내경 $10\ cm$의 관을 통해 멀리 이동시킨 후 $10\ m$ 위로 올려 유량 $70\ m^3/hr$ 로 유출시키려 한다. 이때, 총 관로는 $0.99\ km$ 이고 펌프의 효율이 $60\%$ 라면 필요한 동력은? ($kW$) (단, 부수적인 마찰손실은 무시한다.)
+      탱크 안에 있는 유체 (밀도 $\ce{0.9\ g/cm^3}$, 점도 $\ce{2\ poise}$)를 내경 $\ce{10\ cm}$의 관을 통해 멀리 이동시킨 후 $\ce{10\ m}$ 위로 올려 유량 $\ce{70\ m^3/hr}$ 로 유출시키려 한다. 이때, 총 관로는 $\ce{0.99\ km}$ 이고 펌프의 효율이 $60\%$ 라면 필요한 동력은? ($\pu{kW}$) (단, 부수적인 마찰손실은 무시한다.)
     </div>
     <div class="answer">
       $\ce{\mathcal{u} = \cfrac{Q}{A} = \begin{array}{ c|c|c } 70\ m^{3} & hr & \\ \hline
       hr & 3600\ s& \pi / 4 \times ( 0.1\ m)^{2} \end{array} = 2.48\ m/s \\
 
-      $Re$ = \cfrac{Dv\rho }{\mu } =\begin{array}{ c|c|c|c } 0.1\ m & 2.48\ m & 900\ kg & m\cdotp s\\ \hline &nbsp;& s & m^{3} & 0.2\ kg \end{array}
+      $Re$ = \cfrac{Dv\rho }{\mu } =\begin{array}{ c|c|c|c } 0.1\ m & 2.48\ m & 900\ kg & m\cdotp s\\ \hline & s & m^{3} & 0.2\ kg \end{array}
       =1116 &lt; 2100\ \text{이므로 층류이고,}\\
       \because $f$=\cfrac{16}{Re} ,\ $h_{f}$ =$4f$\cfrac{L}{D}\cfrac{u^{2}}{2} =4\cfrac{16}{1116}\cfrac{990\ \pu{m}}{0.1\ \pu{m}}\cfrac{2.48^{2} \ \pu{m/s}}{2} =1745.92\ \pu{m^{2}/s^{2}}}$
 
-      $\begin{align*} \eta W_{p} &=\cfrac{\alpha&nbsp;\Delta P}{\rho } +\cfrac{\Delta u^{2}}{2} +g\Delta Z+h_{f}\\ 0.6\times W_{p} &=[ 0] +\left[\cfrac{2 \cdot ( 2.48\
-      m/s)^{2}}{2}\right] +\left[\cfrac{9.8\ m}{s^{2}} \times 10\ m\right] +\left[\cfrac{1745.92\ m^{2}}{s^{2}}\right]\\ W_{p} &=3078.33\ m^{2} /s^{2}\\ P&=\begin{array}{ c|c|c|c|c } 3078.33\ J & 70\ m^{3} & hr &
-      900\ kg & kJ\\ \hline kg & hr & 3600\ s & m^{3} & 1000\ J \end{array} =53.87\ kW \end{align*}$
+      $\begin{align*} \eta W_{p} &=\cfrac{\alpha \Delta P}{\rho } +\cfrac{\Delta u^{2}}{2} +g\Delta Z+h_{f}\\ 0.6\times W_{p} &=[ 0] +\left[\cfrac{2 \cdot ( \ce{2.48\
+      m/}s)^{2}}{2}\right] +\left[\cfrac{\ce{9.8\ m}}{\ce{s^{2}}} \times \ce{10\ m}\right] +\left[\cfrac{\ce{1745.92\ m^{2}}}{\ce{s^{2}}}\right]\\ W_{p} &=\ce{3078.33\ m^{2} /s^{2}}\\ P&=\begin{array}{ c|c|c|c|c }
+      \ce{3078.33\ J & 70\ m^{3} & hr & 900\ kg & kJ}\\ \hline
+      \ce{kg & hr & 3600\ s & m^{3} & 1000\ J} \end{array} \\&=\pu{53.87 kW} \end{align*}$
 
     </div>
     <div class="comment">
@@ -44,8 +45,8 @@
       (특정온도에서) 상대습도는 $50\%$ 이다. 포화습도가 일 때, 비교습도는?
     </div>
     <div class="answer">
-      $\cfrac{P_{w}}{P_{s}} =0.5,\ \cfrac{P_{s}}{P-P_{s}} \times \cfrac{18}{29} =0.3095$<br />$\begin{align*}\begin{array}{l}<br />P_{s} &amp;=0.3095\times \cfrac{29}{18} \times ( 760\ mmHg-P_{s})\\<br />&amp;=252.86\
-        mmHg<br />\end{array}\end{align*}$
+      $\cfrac{P_{w}}{P_{s}} =0.5,\ \cfrac{P_{s}}{P-P_{s}} \times \cfrac{18}{29} =0.3095$<br />$\begin{align*}\begin{array}{l}<br />P_{s} &=0.3095\times \cfrac{29}{18} \times ( 760\ mmHg-P_{s})\\<br />&=252.86\
+      mmHg<br />\end{array}\end{align*}$
       $P_{w} =0.5P_{s} =126.43\ mmHg$
       $H_{p} =\cfrac{P_{w}}{P_{s}} \times \cfrac{P-P_{s}}{P-P_{w}} =\cfrac{126.43}{252.86} \times \cfrac{760-252.86}{760-126.43} =40\%$
     </div>
@@ -55,27 +56,44 @@
 
   <div class="q_wrap">
     <div class="question">
-      $\ce{30\ m}$ 높이에 있는 높이 $\ce{3\ m}$ 의 탱크에 내경 $\ce{5\ cm}$의 관이 $\ce{300\ m}$ 연결되어 있다. 탱크 안에는 밀도 $\ce{1.23\ g/cm^3}$, 점도 $\ce{97 cP}$ 의 글리세린이 들어있다. 이 글리세린을 내경 $\ce{5\ cm}$의 관을 통해 탱크에서 유출시킨 뒤 $\ce{300 m}$를 이동시킨다고 할 때, 유출된 총 글리세린의 질량 유량은? (단, 관 내의 부속 손실 등을 포함한 상당길이는 $\ce{400\ m}$ 이다.)
+      $\ce{30\ m}$ 높이에 있는 높이 $\ce{3\ m}$ 의 탱크에 내경 $\ce{5\ cm}$의 관이 $\ce{300\ m}$ 연결되어 있다. 탱크 안에는 밀도 $\ce{1.23\ g/cm^3}$, 점도 $\ce{97 cP}$ 의 글리세린이 들어있다. 이 글리세린을 내경 $\ce{5\ cm}$의 관을 통해 탱크에서 유출시킨 뒤 $\ce{300 m}$를 이동시킨다고 할 때, 유출된 총 글리세린의 질량 유량은? (단, 관 내의
+      부속 손실 등을 포함한 상당길이는 $\ce{400\ m}$ 이다.)
     </div>
     <div class="answer">
-      $\eta W_{p} =\cfrac{\Delta P}{\rho } +\cfrac{\alpha \Delta u^{2}}{2} +g\Delta Z+h_{f} =0$
-      $\begin{array}{l}<br />h_{f} &amp;=4f\cfrac{L}{D}\cfrac{u^{2}}{2} \ 에서,\ 층류라\ 가정하면\\<br />&amp;=\begin{array}{ c|c|c|c }<br />4 &amp; 16\cdotp \mu&nbsp; &amp; L &amp; u2\\<br />\hline<br />&nbsp;&amp; Du\rho&nbsp;
-        &amp; D &amp; 2<br />\end{array} =\cfrac{32\cdot \mu \cdot L\cdot u}{D^{2} \cdot \rho } =403.77\ m\cdot u<br />\end{array}$
-      $u^{2} +403.77\ m\cdot u-323.4\ m^{2} /s^{2}$<br />$x=\cfrac{-b\pm \sqrt{b^{2} -4ac}}{2a} =\cfrac{-403.77\pm \sqrt{403.77^{2} +4\cdotp 323.4}}{2} =0.7994\ m/s$
-      $Re=\cfrac{Dv\rho }{\mu } =\begin{array}{ c|c|c|c }<br />0.05\ m &amp; 0.7994\ m &amp; 1230\ kg &amp; m\cdotp s\\<br />\hline<br />&nbsp;&amp; s &amp; m^{3} &amp; 0.097\ kg<br />\end{array} =507&lt; 2100\ 이므로\ 층류$
-      $\therefore \dot{m} =uA\rho =\begin{array}{ c |c |c }<br />0.7994\ m &amp; \pi \times 0.05^{2} \ m^{2} &amp; 1230\ kg\\<br />\hline<br />s &amp; 4 &amp; m^{3}<br />\end{array} =1.93\ kg/s$
-    </div>
-    <div class="comment">
-      $\ce{}$
+      $
+      \eta W_{p} =\cfrac{\Delta P}{\rho } +\cfrac{\alpha \Delta u^{2}}{2} +g\Delta Z+h_{f} =0 \\
+      \begin{align*}
+      h_{f} &=4f\cfrac{L}{D}\cfrac{u^{2}}{2} \text{ 에서, 층류라 가정하면}\\
+      &=
+      \begin{array}{ c|c|c|c }
+      4 & 16 \mu & L & u2 \\\hline
+      & Du\rho & D & 2
+      \end{array}
+      =\cfrac{32\ \mu \ L\ u}{D^{2} \rho } =\pu{403.77 m.u}
+      \end{align*}\\
+      u^{2} + 403.77 m \cdot u - \pu{323.4 m2/s2} \\
+      x = \dfrac{-b\pm \sqrt{b^{2} -4ac}}{2a}
+      =\dfrac{-403.77\pm \sqrt{403.77^{2} +4\cdotp 323.4}}{2} = \pu{0.7994 m/s} \\
+      Re=\cfrac{Dv\rho }{\mu } =
+      \begin{array}{ c|c|c|c }
+      \ce{0.05\ m & 0.7994\ m & 1230\ kg & m\cdotp s}\\ \hline
+      \ce{& s & m^{3} & 0.097\ kg}
+      \end{array} = 507 &lt; 2100 \text{ 이므로 층류} \\
+      \therefore \dot{m} =uA\rho =
+      \begin{array}{ c |c |c }
+      \ce{0.7994\ m & \pi \times 0.05^{2} \ m^{2} & 1230\ kg}\\ \hline
+      \ce{s & 4 & m^{3}}
+      \end{array} = \pu{1.93 kg/s}
+      $
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question">
-      열교환기에서 한 유체의 온도가&nbsp;$80℃$에서 $35℃$ 로 떨어지고 다른 유체는 $20℃$에서 $60℃$ 로 올랐다. 이때 온도의 평균을 구하면?
+      열교환기에서 한 유체의 온도가 $80℃$에서 $35℃$ 로 떨어지고 다른 유체는 $20℃$에서 $60℃$ 로 올랐다. 이때 온도의 평균을 구하면?
     </div>
     <div class="answer">
-      $\Delta T_{LM} =\cfrac{\Delta T_{H} -\Delta T_{C}}{\ln( \Delta T_{H} /\Delta T_{C})} =\cfrac{20-15}{\ln( 20/15)} =17.38℃&nbsp;$
+      $\Delta T_{LM} =\cfrac{\Delta T_{H} -\Delta T_{C}}{\ln( \Delta T_{H} /\Delta T_{C})} =\cfrac{20-15}{\ln( 20/15)} =17.38℃ $
     </div>
     <div class="comment">
       $\ce{}$
@@ -87,11 +105,17 @@
       외경이 $10\ cm$ 이고 내경이 $5\ cm$인 유로 내부에 $0.5\ m^3/hr$ 로 냉각수가 흐른다. 냉각수의 점도는 $1\ cP$, 비중은 $1$ 이고, $50\ m$를 흘렀을 때, 압력강하는?
     </div>
     <div class="answer">
-      $u=\cfrac{Q}{A} =\cfrac{\tfrac{0.5\ m^{3}}{hr} \times \tfrac{1\ hr}{3600\ s}}{\tfrac{\pi }{4} 0.05^{2} \ m^{2}} =0.02358\ m/s$
-      $Re=\cfrac{D_{e} v\rho }{\mu } =\begin{array}{ c|c|c|c }<br />0.05\ m &amp; 0.02358\ m &amp; 1000\ kg &amp; m\cdotp s\\<br />\hline<br />&nbsp;&amp; s &amp; m^{2} &amp; 0.001\ kg<br />\end{array} =1179&lt;
-        2100\Longrightarrow 층류$
-      $\Delta P=\cfrac{32Lu\mu }{D^{2}} =\begin{array}{ c|c|c|c|c }<br />32 &amp; 50\ m &amp; 0.02358\ m &amp; 0.001\ kg &amp; \\<br />\hline<br />&nbsp;&amp;&nbsp; &amp; s &amp; m\cdotp s &amp; 0.05^{2} \ m^{2}<br />\end{array}
-        =15.0921\ Pa$
+      $u=\cfrac{Q}{A} =\cfrac{\tfrac{\ce{0.5\ m^{3}}}{\ce{hr}} \times \tfrac{\ce{1\ hr}}{\ce{3600\ s}}}{\tfrac{\pi }{4}\ce{ 0.05^{2} \ m^{2}}} =0.02358\ m/s$
+      $Re=\cfrac{D_{e} v\rho }{\mu } =\begin{array}{ c|c|c|c }
+      \ce{0.05\ m & 0.02358\ m & 1000\ kg & m\cdotp s}\\ \hline
+      \ce{& s & m^{2} & 0.001\ kg }
+      \end{array} =1179&lt;
+      2100\Longrightarrow 층류$
+      $\Delta P=\cfrac{32Lu\mu }{D^{2}} =\begin{array}{ c|c|c|c|c }
+      \ce{32 & 50\ m & 0.02358\ m & 0.001\ kg &} \\ \hline
+      \ce{& & s & m\cdotp s & 0.05^{2} \ m^{2}}
+      \end{array}
+      =\pu{15.0921 Pa}$
       <br />
     </div>
     <div class="comment">
@@ -113,14 +137,20 @@
 
   <div class="q_wrap">
     <div class="question">
-      $20℃$ 의 $10%\ NaOH\ 4500\ kg/hr$ 를 포화수증기로 증발시켜 $20%$ 로 만들려고 한다. 이때 $A = 40\ m^2$ 이고, 포화수증기의 온도는 $110℃$ 이다. (단, $NaOH\ 10%$ 의 비열은 $0.92\ kcal/kg∙℃$ 이고, 비점은 $90℃$ 이며, 증발잠열은 $545\ kcal/kg$ 이다. 또한 포화 수증기의 상변화열은 $532\ kcal/kg$ 이다.)
+      $20℃$ 의 $\ce{10\%\ NaOH\ 4500\ kg/hr}$ 를 포화수증기로 증발시켜 $\ce{20\%}$ 로 만들려고 한다. 이때 $\ce{A = 40\ m^2}$ 이고, 포화수증기의 온도는 $110℃$ 이다. (단, $\ce{NaOH\ 10\%}$ 의 비열은 $\ce{0.92\ kcal/kg.℃}$ 이고, 비점은 $90℃$ 이며, 증발잠열은 $\ce{545\ kcal/kg}$ 이다. 또한 포화 수증기의 상변화열은
+      $\ce{532\ kcal/kg}$ 이다.)
     </div>
     <div class="q_wrap sub">
       <div class="question sub">
         이때 $U$는?
       </div>
       <div class="answer">
-
+        $
+        q=mC_p\Delta T + y\lambda = \left[ \ce{(4500 kg/hr)(0.92 kcal/kg ^\circ C)(90^\circ C - 20^\circ C)} \right] + \left[ \ce{(2250 kg/hr)(545 kcal/kg)} \right] = \pu{1516050 kcal/kg}\\
+        T_L = 46/54 ^\circ C \\
+        \because q = UA\Delta T_L \\
+        U = \pu{814.38 kcal/m2.^\circ C.hr}
+        $
       </div>
       <div class="comment">
         $\ce{}$
@@ -128,10 +158,13 @@
     </div>
     <div class="q_wrap sub">
       <div class="question sub">
-        이때 시간당 필요한 포화수증기의 양은 몇 $kg$ 인가?
+        이때 시간당 필요한 포화수증기의 양은 몇 $\ce{kg}$ 인가?
       </div>
       <div class="answer">
-
+        $
+        q=\dot{m}\lambda \Longrightarrow \dfrac{\ce{1516050 kcal}}{\ce{hr}} = x \times \dfrac{\ce{532 kcal}}{\ce{kg}}\\
+        \therefore x = \pu{2849.72 kg/hr}
+        $
       </div>
       <div class="comment">
         $\ce{}$
@@ -141,7 +174,7 @@
 
   <div class="q_wrap">
     <div class="question">
-      어떤 유체의 동점도는 $6×10^{-4}\ m^2/s$ 이고 밀도는 $1.2 × 10^3\ kg/m3$ 이다. 가로 $5\ m$, 세로 $3\ m$ 의 벽을 이 유체가 중력 $2\ N$ 하에 흘러내릴 때 질량유량은? ($kg/s$)
+      어떤 유체의 동점도는 $\ce{6×10^{-4}\ m^2/s}$ 이고 밀도는 $\ce{1.2 × 10^3\ kg/m^3}$ 이다. 가로 $\ce{5\ m}$, 세로 $\ce{3\ m}$ 의 벽을 이 유체가 중력 $\ce{2\ N}$ 하에 흘러내릴 때 질량유량은? ($\ce{kg/s}$)
     </div>
     <div class="answer">
 
@@ -153,7 +186,7 @@
 
   <div class="q_wrap">
     <div class="question">
-      헵탄과 옥탄의 혼합이 $70\ mol%, 30\ mol%$ 인 혼합액이 있다. 유출액 $D$는 헵탄 $98\ mol%$ 이고 $W$는 헵탄 $1\ mol%$ 이다. ($α = 2$)
+      헵탄과 옥탄의 혼합이 $\ce{70\ mol\%, 30\ mol\%}$ 인 혼합액이 있다. 유출액 $D$는 헵탄 $\ce{98\ mol\%}$ 이고 $W$는 헵탄 $\ce{1 mol\%}$ 이다. ($α = 2$)
     </div>
     <div class="q_wrap sub">
       <div class="question sub">
@@ -181,10 +214,16 @@
 
   <div class="q_wrap">
     <div class="question">
-      맑은 날 태양에 의한 지구 표면의 복사량은 $1 W/m2$ 이고, 대기층에 흡수되는 양은 $0.3 W/m2$ 이다. 이로부터 구한 태양의 온도는? (단, 태양과 지구와의 거리는 $150,000,000 m$, 태양의 반경은 $700,000 m$ 이다. 태양을 흑체로 가정하고, 슈테판-볼츠만 상수는 $5.67 × 10^{-8} /m2∙K4$ 이다.)
+      맑은 날 태양에 의한 지구 표면의 복사량은 $\pu{1 W/m2}$ 이고, 대기층에 흡수되는 양은 $\pu{0.3 W/m2}$ 이다. 이로부터 구한 태양의 온도는? (단, 태양과 지구와의 거리는 $\ce{150,000,000 m}$, 태양의 반경은 $\ce{700,000 m}$ 이다. 태양을 흑체로 가정하고, 슈테판-볼츠만 상수는 $\pu{5.67E-8 /m2.K4}$ 이다.)
     </div>
     <div class="answer">
-
+      $
+      \text{슈테판-볼츠만 식 } E = \sigma T^4, \\
+      \text{태양상수} = \pu{1 kW/m2} + \pu{0.3 kW/m2} = \pu{1300 W/m2} \\
+      4\pi r^2 E = 4\pi r'^2 \times \pu{1300 W/m2} \\
+      \Rightarrow \left[ 4\pi \times \pu{(700 000 km)2} \right] \times \left[\dfrac{\pu{5.67E-8 W}}{\pu{m2.K4}}\times\pu{T4}\right] = [4\pi \times \pu{(150 000 000 km)2}] \times [\pu{1300 W/m2}] \\
+      \therefore T = \pu{5696.22 K}
+      $
     </div>
     <div class="comment">
       $\ce{}$
@@ -193,13 +232,12 @@
 
   <div class="q_wrap">
     <div class="question">
-      공기를 $20℃$ 에서 $90℃$ 로 열교환기를 통해 온도를 높이려 한다. 관을 통과하면서 압력이 입구 $1\ atm$에서 수주 $30\ mmHg_{H_2O}$ 의 압력 강하가 일어났다. 공기의 유속이 $10\ /s$ 이고 비열이 $0.29\ cal/kg∙℃$ 일 때, 공기가 얻은 열량은? (공기의 질량유량은 일정하다.)
+      공기를 $\pu{20℃}$ 에서 $\pu{90℃}$ 로 열교환기를 통해 온도를 높이려 한다. 관을 통과하면서 압력이 입구 $\pu{1 atm}$에서 수주 $\pu{30 mmHg_{H_2O}}$ 의 압력 강하가 일어났다. 공기의 유속이 $\pu{10 m/s}$ 이고 비열이 $\pu{0.29 cal/kg.℃}$ 일 때, 공기가 얻은 열량은? (공기의 질량유량은 일정하다.)
     </div>
     <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
+      $
+      \pu{84.96 kJ/kg}
+      $
     </div>
   </div>
 
