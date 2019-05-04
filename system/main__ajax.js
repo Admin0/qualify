@@ -35,10 +35,10 @@ function after_load(full_id) {
 }
 
 function load(id, content) {
-  var full_id = content != null ? id + "-" + content : id;
+  var full_id = id + (content != null ? "-" + content : "");
   $.ajax({
     type: 'get',
-    url: content != null ? id + "/" + content + ".html" : id + ".html",
+    url: id + (content != null ? "/" + content + ".html" : +".html"),
     dataType: 'html',
     success: function(data) {
       $("#main_item").html("");
@@ -58,7 +58,7 @@ function load(id, content) {
       gtag('js', new Date());
       gtag('config', 'UA-39552694-1', {
         'page_title': full_id,
-        'page_path': '/qualify/#' + content != null ? id + "-" + content : id;
+        'page_path': '/qualify/#' + id + (content != null ? "-" + content : "")
       });
 
       // adsense
