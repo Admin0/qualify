@@ -143,4 +143,7 @@ $(document).ready(function() {
   });
   $("#context_menu").load("system/module/context_menu.html");
   $.getScript("system/main__initialize_console.js");
+  setTimeout(function() {
+    $("div#splash").fadeOut();
+  }, 0);
 });

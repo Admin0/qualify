@@ -570,6 +570,28 @@ hr {
 }
 
 /* ------------------------------------------------------------------- */
+/* ***** splash ***** */
+/* ------------------------------------------------------------------- */
+div#splash {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 6;
+  background: #fff;
+  text-align: center;
+}
+
+div#splash svg {
+  top: calc(50% - 32px);
+  position: relative;
+  width: 64px;
+  height: 64px;
+  fill: gold;
+}
+
+/* ------------------------------------------------------------------- */
 /* ***** mobile ***** */
 /* ------------------------------------------------------------------- */
 @media handheld, only screen and (max-device-width:480px), only screen and (max-device-width:320px), screen and (max-width:1080px) {
