@@ -172,22 +172,24 @@ body.page {
 }
 
 /* .q_list */
-.contents .q_list {
-  border: 1px solid;
-  padding: .5em;
-  margin: .5em 0;
-  width: calc(100% - 1em - 2px);
-}
-
 .contents .q_list .q_list__head {
   text-align: center;
 }
 
+.contents ol.q_list,
 .contents .q_list ol {
   display: flex;
   flex-flow: wrap;
   padding-left: 0;
   margin: 0;
+}
+
+.contents ol.q_list,
+.contents .q_list {
+  border: 1px solid;
+  padding: .5em;
+  margin: .5em 0;
+  width: calc(100% - 1em - 2px);
 }
 
 .contents .q_list li {
@@ -215,6 +217,10 @@ body.page {
   transition: .25s fill;
 }
 
+.contents .question .load {
+  margin: auto;
+}
+
 .contents svg {
   stroke: rgb(0, 0, 0);
 }
@@ -229,6 +235,14 @@ body.page {
 
 .contents .w300px {
   max-width: 300px;
+}
+
+.contents .w400px {
+  max-width: 400px;
+}
+
+.contents .w500px {
+  max-width: 500px;
 }
 
 .translation {

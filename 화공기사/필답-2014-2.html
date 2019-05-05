@@ -4,13 +4,15 @@
 
   <div class="q_wrap">
     <div class="question">
-      밀도 1.3g/cm3이고 높이 0.5m인 개방형 탱크의 하부 절대압력(atm)을 구하시오. [4점]
+      밀도 $\pu{1.3 g/cm3}$이고 높이 $\pu{0.5 m}$인 개방형 탱크의 하부 절대압력($\pu{atm}$)을 구하시오. [4점]
     </div>
     <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
+      $
+      \rho = \dfrac{\pu{1.3 g}}{\pu{cm3}} \times \dfrac{\pu{1 kg}}{\pu{1000 g}} \times \dfrac{\pu{100 cm}}{\pu{1 m}} = \pu{1300 kg/m3, h = 0.5 min} \\
+      \Delta P = \rho g h = \left[ \dfrac{\pu{1300 kg}}{\pu{m3}} \times \dfrac{\pu{9.8 m}}{\pu{s2}} \times \pu{0.5 m} \right] \times \left[ \dfrac{\pu{ 1 kPa }}{\pu{ 1000 kg/m.s2 }} \right] \times \left[ \dfrac{\pu{ 1 atm }}{\pu{ 101.3 kPa }}
+      \right] = \pu{ 0.0629 atm } \\
+      \therefore P = P_0 + \Delta P = \pu{ 1 atm + 0.0629 atm = 1.063 atm}
+      $
     </div>
   </div>
 
@@ -19,7 +21,13 @@
       상부조작선식 세우기 환류비 3.5, 상부 벤젠 몰분율 0.97 [4점]
     </div>
     <div class="answer">
-
+      $
+      \begin{align*}
+      y &= \dfrac{\pu{ R_D }}{\pu{ R_D + 1 }}x_n + \dfrac{\pu{ x_D }}{\pu{ R_D + 1 }} \\
+      \Longrightarrow y &= \dfrac{\pu{ 3.5 }}{\pu{ 3.5 + 1 }}x_n + \dfrac{\pu{ x_D }}{\pu{ 3.5 + 1 }} \\
+      \Longrightarrow y &= \dfrac{\pu{ 7 }}{\pu{ 9 }}x_n + \dfrac{\pu{ 2 }}{\pu{ 9 }} x_D
+      \end{align*}
+      $
     </div>
     <div class="comment">
       $\ce{}$ </div>
@@ -27,26 +35,34 @@
 
   <div class="q_wrap">
     <div class="question">
-      내경 5cm, 길이 13m, 유량 4L/s인 오리피스 마노미터 읽음을 구하시오. [6점]
+      내경 $\pu{5 cm}$, 길이 $\pu{13 m}$, 유량 $\pu{4 L/s}$인 오리피스 마노미터 읽음을 구하시오. [6점]
     </div>
     <div class="q_wrap sub">
       <div class="question sub">
-        내경이 10cm일 때와의 압력차이는 얼마인가?
+        내경이 $\pu{10 cm}$일 때와의 압력차이는 얼마인가?
       </div>
       <div class="answer">
-
+        $
+        \Delta P = dfrac{ g }{ g_c }(\rho_1 - \rho_2)R = \left[ \dfrac{\pu{ 9.8 m/s2 }}{\pu{ 9.8 kg.m/kgf.s2 }} \right] \times \left[ \dfrac{\pu{ 13600 kg }}{\pu{ m3 }} - \dfrac{\pu{ 1000 kg }}{\pu{ m3 }} \right] \times \left[ \pu{0.1 m} \right] =
+        \pu{1260 kgf/m2}
+        $
       </div>
       <div class="question sub">
-        ∆P와 계수 f의 관계식을 구하시오.
+        $∆P$와 계수 $f$의 관계식을 구하시오.
       </div>
       <div class="answer">
-
+        $
+        \Delta P = \dfrac{ 2 \rho f u^2 L }{ g_c D }
+        $
       </div>
       <div class="question sub">
-        계수 f를 구하시오.
+        계수 $f$를 구하시오.
       </div>
       <div class="answer">
-
+        $
+        \dfrac{\pu{ 1260 kgf }}{\pu{ m2 }} = \dfrac{\ce{ 2 \times \frac{ 1000 kg }{ m3 } \times f \times (\frac{ 2.037 m }{ s })2 \times 13 m }}{\ce{ \frac{ 9.8 kg.m }{ kgf.s2 } \times 0.05 m }} \\
+        \therefore f = \pu{ 5.27E-3 }
+        $
       </div>
     </div>
     <div class="comment">
@@ -55,7 +71,64 @@
 
   <div class="q_wrap">
     <div class="question">
-      전압 760mmH,g 수소분압 200mmHg 일 때, 물 100kg에 녹은 수소기체의 양을 구하시오. [H=5.19×107atm] [4점]
+      전압 $\pu{760 mmHg}$ 수소분압 $\pu{200 mmHg}$ 일 때, 물 $\pu{100 kg}$에 녹은 수소기체의 양을 구하시오. $H = \pu{[5.19×10^7 atm}$] [4점]
+    </div>
+    <div class="answer">
+      $
+      H = \pu{ 5.19E7 atm } \times \dfrac{\pu{ 760 mmHg }}{\pu{ 1 atm }} = \pu{ 3.9444E16 mmHg } \\
+      n_\ce{H2O} = \pu{ 100 kg } \times \dfrac{\pu{ 1 kmol }}{\pu{ 18 kg }} = \pu{ \dfrac{ 50 }{ 9 } kmol } \\
+      P_\ce{H2} = H\cdot x_\ce{H2} \Longrightarrow x_\ce{H2} = \dfrac{\pu{ 200 mmHg }}{\pu{ 3.9444E10 mmHg }} = \pu{ 5.0705E-9 } \\
+      \begin{align*}
+      x_\ce{H2} &= \dfrac{ n_\ce{H2} }{ n_\ce{H2O} + n_\ce{H2}} (\text{분모의 } n_\ce{H2} \text{는 } n_\ce{H2O} \text{에 비해 너무 작으므로 무시 가능하다.}) \\
+      \Longrightarrow \pu{ 5.0705E-9 } &= \dfrac{ n_\ce{H2} }{ \pu{ 50/9 kmol } } \\
+      \end{align*}
+      \therefore n_\ce{H2} = \pu{ 2.8169E-8 kmol }
+      $
+    </div>
+    <div class="comment">
+      $\ce{}$
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      $k = \pu{0.038688 kcal/h.m.^\circ C}$, 두께 \pu{15.24 cm} 면적 $\pu{2.32 m2}$, 내부온도가 $\pu{82.2^\circ C}$, 외부온도가 $\pu{4.4^\circ C}$일 때 $q$를 구하시오. [5점]
+    </div>
+    <div class="answer">
+      $
+      L = \pu{ 0.1524 m },\ A = \pu{ 2.32 m2 }, \\
+      T_1 = \pu{ 82.2^\circ C },\ T_2 = \pu{ 4.4^\circ C },\ \Delta T = \pu{ 4.4^\circ C - 82.2^\circ C = -77.8^\circ C } \\
+      \therefore q = \dfrac{ \Delta T }{\frac{ L }{ kA } } = \dfrac{\ce{ -77.8^\circ C }}{\ce{ \frac{ 0.1524 m }{ 0.038688 kcal/h.m.^\circ C \times 2.32 m^2 } } } = \pu{ 45.82 kcal/hr }
+      $
+    </div>
+    <div class="comment">
+      $\ce{}$
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      질량유량 $\pu{1000 kg/h}$, 초기 $\pu{50^\circ C}$ 메탄올을 열교환기로 보낼 때 최종온도 $\pu{30^\circ C}$, 냉각기의 내경 $\pu{40 mm}$ 외경 $\pu{80 mm}$이고, 냉각수는 향류로 흐른다. 냉각수 초기온도 $\pu{20^\circ C}$에서 최종온도 $\pu{23^\circ C}$일 때 열교환기의 길이 $L$을 구하시오. [$U = \pu{150 kcal/m2.h.^\circ
+      C, Cp = 0.6 kcal/kg.^\circ C}$] [5점]
+    </div>
+    <div class="answer">
+      $
+      D_i = \pu{ 0.04 m },\ D_o = \pu{ 0.08 m },\ D_L = \frac{\pu{ 0.04 m - 0.08 m }}{ \ln{\pu{0.04 m /0.08 m} }} = \pu{ 0.05770 m } \\
+      \Delta T_1 = \pu{ 27^\circ C },\ \Delta T_2 = \pu{ 10^\circ C },\ \Delta T_L = \frac{ \Delta T_1 - \Delta T_2 }{ \ln{\Delta T_1 / \Delta T_2} } = \pu{ 17.115^\circ C } \\
+      q = \dot{m}C_p \Delta T = \dfrac{\pu{ 1000 kg }}{\pu{ hr }} \times \dfrac{\pu{ 0.6 kcal }}{\pu{ kg.^\circ C }} \times \pu{(50 - 30)^\circ C} = \pu{ 12000 kcal/hr } \\
+      q = UA\Delta T_L \Longrightarrow \pu{ 12000 kcal/hr } = \pu{ 150 kcal/m2.hr.^\circ C } \times A \times \pu{ 17.115^\circ C } \\
+      \Longrightarrow A = \pu{ 4.67 m2 } = \pi D_L L \\
+      \therefore L = \pu{25.76 m}
+      $
+    </div>
+    <div class="comment">
+      $\ce{}$
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      $\pu{35^\circ C}$물 $\pu{25 kg/s}$을 사용하여 $\pu{20 kg/s}$로 흐르는 물을 $\pu{95^\circ C}$에서 $\pu{75^\circ C}$로 냉각시킨다. 향류흐름일때 면적 A($\pu{m2}$)을 구하시오. [$U = \pu{2000 W/m2.^\circ C}$] [5점]
     </div>
     <div class="answer">
 
@@ -67,43 +140,7 @@
 
   <div class="q_wrap">
     <div class="question">
-      k=0.038688kcal/hㆍmㆍ℃, 두께 15.24cm 면적 2.32m2, 내부온도가 82.2℃, 외부온도가 4.4℃일 때 q를 구하시오. [5점]
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-      질량유량 1000kg/h, 초기 50℃ 메탄올을 열교환기로 보낼 때 최종온도 30℃, 냉각기의 내경 40mm 외경 80mm이고, 냉각수는 향류로 흐른다. 냉각수 초기온도 20℃에서 최종온도 23℃일 때 열교환기의 길이 L을 구하시오. [U=150kcal/m2ㆍhㆍ℃, Cp=0.6kcal/kgㆍ℃] [5점]
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-      35℃물 25kg/s을 사용하여 20kg/s로 흐르는 물을 95℃에서 75℃로 냉각시킨다. 향류흐름일때 면적 A(m2)을 구하시오. [U=2000W/m2ㆍ℃] [5점]
-    </div>
-    <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
-    </div>
-  </div>
-
-  <div class="q_wrap">
-    <div class="question">
-      Pipe 내경 50mm, 오리피스 직경 20mm, 비중0.9인 기름을 수송할 때 오리피스 눈금읽음이 520mm이다. 유량을 구하시오. [유량계수 C=0.61] [4점]
+      Pipe 내경 $\pu{50 mm}$, 오리피스 직경 $\pu{20 mm}$, 비중 $0.9$인 기름을 수송할 때 오리피스 눈금읽음이 $\pu{520 mm}$이다. 유량을 구하시오. [유량계수 $C = 0.61$] [4점]
     </div>
     <div class="answer">
 
@@ -118,7 +155,10 @@
       Navier-Stokes식을 벡터로 설명하시오. [5점]
     </div>
     <div class="answer">
-
+$
+\rho, \mu \text{가 일정할 때,}\\
+\rho  \dfrac{ dV }{ dy } = -\nabla P + \mu \nabla^2 V + \rho g
+$
     </div>
     <div class="comment">
       $\ce{}$
@@ -127,7 +167,7 @@
 
   <div class="q_wrap">
     <div class="question">
-      직경 0.4cm, 밀도 0.0012g/cm3, 점도 0.00018g/cmㆍs일 때 종말속도를 구하시오. [5점]
+      직경 $\pu{0.4 cm}$, 밀도 $\pu{0.0012 g/cm3}$, 점도 $\pu{0.00018 g/cm.s}$일 때 종말속도를 구하시오. [5점]
     </div>
     <div class="answer">
 
@@ -151,8 +191,8 @@
 
   <div class="q_wrap">
     <div class="question">
-      안지름 15cm 유량을 최대로 하기 위한 높이 H를 구하시오. <br>
-      [포화증기압 0.16kgf/cm2, 대기압 1.033kgf/cm2]
+      안지름 $\pu{15 cm}$ 유량을 최대로 하기 위한 높이 $H$를 구하시오. <br>
+      [포화증기압 $\pu{0.16 kgf/cm2}$, 대기압 $\pu{1.033 kgf/cm2}$]
     </div>
     <div class="answer">
 
