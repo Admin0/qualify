@@ -43,7 +43,7 @@
       </div>
       <div class="answer">
         $
-        \Delta P = dfrac{ g }{ g_c }(\rho_1 - \rho_2)R = \left[ \dfrac{\pu{ 9.8 m/s2 }}{\pu{ 9.8 kg.m/kgf.s2 }} \right] \times \left[ \dfrac{\pu{ 13600 kg }}{\pu{ m3 }} - \dfrac{\pu{ 1000 kg }}{\pu{ m3 }} \right] \times \left[ \pu{0.1 m} \right] =
+        \Delta P = \dfrac{ g }{ g_c }(\rho_1 - \rho_2)R = \left[ \dfrac{\pu{ 9.8 m/s2 }}{\pu{ 9.8 kg.m/kgf.s2 }} \right] \times \left[ \dfrac{\pu{ 13600 kg }}{\pu{ m3 }} - \dfrac{\pu{ 1000 kg }}{\pu{ m3 }} \right] \times \left[ \pu{0.1 m} \right] =
         \pu{1260 kgf/m2}
         $
       </div>
@@ -131,7 +131,16 @@
       $\pu{35^\circ C}$물 $\pu{25 kg/s}$을 사용하여 $\pu{20 kg/s}$로 흐르는 물을 $\pu{95^\circ C}$에서 $\pu{75^\circ C}$로 냉각시킨다. 향류흐름일때 면적 A($\pu{m2}$)을 구하시오. [$U = \pu{2000 W/m2.^\circ C}$] [5점]
     </div>
     <div class="answer">
-
+      $
+      q = dot{m}C_p\Delta T = \dfrac{\pu{ 10 kg }}{\pu{ s }} \times \dfrac{\pu{ 1 kcal }}{\pu{ kg.^\circ C }} \times (95^\circ C - 75^\circ C) = \pu{ 400 kcal/s } \\
+      \pu{ 400 kcal/s } = \dfrac{\pu{ 25 kg }}{\pu{ s }} \times \dfrac{\pu{ 1 kcal }}{\pu{ jg.^\circ C }} \Longrightarrow T_2 = \pu{51^\circ C} \\
+      \Delta T_1 = \pu{95^\circ C - 51^\circ C} = \pu{44^\circ C}, \\
+      \Delta T_2 = \pu{75^\circ C - 35^\circ C} = \pu{40^\circ C}, \\
+      \Delta T_{LM} = \dfrac{\ce{ 44^\circ C - 40^\circ C }}{\ce{ \ln{44^\circ C/40^\circ C} }} = 41.97^\circ C \\
+      q = UA \Delta T_{LM} = \dfrac{\pu{ 400 kcal }}{\pu{ s }} = \left[ \dfrac{\pu{ 2000 W }}{\pu{ m2.^\circ C }} \times \dfrac{\pu{ 1 J/s }}{\pu{ 1 W }} \times \dfrac{\pu{ 4.184 cal }}{\pu{ J }} \times \dfrac{\pu{ 1 kcal }}{\pu{ 1000 cal }} \right]
+      \times [A] \times [\pu{41.97^\circ C}] \\
+      \therefore A = \pu{1.14 m2}
+      $
     </div>
     <div class="comment">
       $\ce{}$
@@ -143,7 +152,14 @@
       Pipe 내경 $\pu{50 mm}$, 오리피스 직경 $\pu{20 mm}$, 비중 $0.9$인 기름을 수송할 때 오리피스 눈금읽음이 $\pu{520 mm}$이다. 유량을 구하시오. [유량계수 $C = 0.61$] [4점]
     </div>
     <div class="answer">
-
+      $
+      m = \frac{ A_0 }{ A_1 } = \frac{ D_0^2 }{ D_1^2 } = \frac{\pu{ (0.02 m)2 }}{\pu{ (0.05 m)2 }} = 0.16 \\
+      \begin{align*}
+      Q_0 &= \dfrac{ \pi }{ 4 } D_0^2 \dfrac{ C_0 }{ \sqrt{ 1 - m^2 } } \sqrt{ \dfrac{ 2g(\rho_1 - \rho_0) R }{ \rho_0 } } \\
+      &= \dfrac{ \pi }{ 4 } \pu{ (0.02 m)2 } \dfrac{ 0.61 }{ \sqrt{ 1 - 0.16^2 } } \sqrt{ \dfrac{ 2 \times \pu{ 9.8 m/s2 } \times ( \pu{ 13600 kg/m3 } - \pu{ 900 kg/m3 } ) \times \pu{0.52 m} }{ \pu{ 900 kg/m3 } } } \\
+      &= \pu{ 2.33E-3 m3/s }
+      \end{align*}
+      $
     </div>
     <div class="comment">
       $\ce{}$
@@ -155,10 +171,10 @@
       Navier-Stokes식을 벡터로 설명하시오. [5점]
     </div>
     <div class="answer">
-$
-\rho, \mu \text{가 일정할 때,}\\
-\rho  \dfrac{ dV }{ dy } = -\nabla P + \mu \nabla^2 V + \rho g
-$
+      $
+      \rho, \mu \text{가 일정할 때,}\\
+      \rho \dfrac{ dV }{ dy } = -\nabla P + \mu \nabla^2 V + \rho g
+      $
     </div>
     <div class="comment">
       $\ce{}$
@@ -170,10 +186,25 @@ $
       직경 $\pu{0.4 cm}$, 밀도 $\pu{0.0012 g/cm3}$, 점도 $\pu{0.00018 g/cm.s}$일 때 종말속도를 구하시오. [5점]
     </div>
     <div class="answer">
-
+      $
+      \begin{align*}
+      K &= D_P\left[ \dfrac{ g\rho(\rho_P - \rho) }{ \mu^2 } \right]^\frac{1}{3}\\
+      &= \pu{0.004 m} \times \left[ \dfrac{ \pu{ 9.8 m/s2 } \times \pu{ 1000 kg/m3 } \times \left(\pu{ 1.2 kg/m3 } - \pu{ 1000 kg/m3 } \right) }{ \pu{ 0.000018 kg/m.s^2} }
+      \right] \\
+      &= 1245.79 \Longrightarrow 68.9 &lt; K &lt; 2360 \text{이므로, Newton's law 적용.}
+      \end{align*} \\
+      $
+      $ \begin{align*}
+      \therefore u_t &=1.75\sqrt{ \dfrac{ g\rho(\rho_P - \rho) }{ \mu^2 } } \\
+      &= 1.75 \times \sqrt{ \dfrac{ \pu{ 9.8 m/s2 } \times \pu{ 0.004 m } \times \left(\pu{ 1.2 kg/m3 } - \pu{ 1000 kg/m3 } \right) }{ \pu{ 1000 kg/m.s^2} } }\\
+      & = \pu{ 0.35 m/s }
+      \end{align*}$
     </div>
     <div class="comment">
-      $\ce{}$
+      $
+      K &lt; 2.6 \Rightarrow \text{ Stroke's law} \\
+      68.9 &lt; K &lt; 2360 \Rightarrow \text{ Newton's law}
+      $
     </div>
   </div>
 
@@ -182,7 +213,18 @@ $
       평형증류에 대해 설명하시오. [3점]
     </div>
     <div class="answer">
-
+      <ol>
+        <li>= 플래시 증류</li>
+        <li>혼합액의 일부만 증발시킨 후 잔액과 증기를 충분히 접촉시켜 평형에 도달하게 하며 기상과 액상으로 성분을 분리하는 방법.</li>
+        <li>연속식 단증류로서 연속적으로 공급하여 발생하는 증기(D)와 잔류액(W)이 평형을 유지하도록 하는 증류방식.</li>
+        <li>2성분계에 대하여 원액이 유출액(D)과 관출액(W)으로 분리된다고 하면, <br>
+          $
+          F = D + W \\
+          F_{x_F} = D_{x_D} + F_{x_F} \\
+          \dfrac{ W }{ D } = \dfrac{ x_D - x_F }{ x_F - x_W }
+          $
+        </li>
+      </ol>
     </div>
     <div class="comment">
       $\ce{}$
@@ -195,10 +237,7 @@ $
       [포화증기압 $\pu{0.16 kgf/cm2}$, 대기압 $\pu{1.033 kgf/cm2}$]
     </div>
     <div class="answer">
-
-    </div>
-    <div class="comment">
-      $\ce{}$
+      $\pu{ 0.15 m }$
     </div>
   </div>
 

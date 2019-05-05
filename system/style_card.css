@@ -197,6 +197,9 @@ body.page {
   padding-left: 1.65em;
 }
 
+.contents .q_list.ul li:before{display: none;}
+.contents .q_list.ul li:not(:last-child):after{content: ", ";}
+
 #card_title {
   text-align: center;
   font-size: 1.25em;
