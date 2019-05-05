@@ -86,6 +86,9 @@
   "위험물산업기사": {
     "title": "위험물산업기사",
     "contents": [{
+      "title": "요점-반응식",
+      "icon": "fire_extinguisher"
+    },{
       "title": "필답-2011-1",
       "icon": "fire_extinguisher"
     }, {

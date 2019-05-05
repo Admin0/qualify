@@ -116,7 +116,7 @@ function load_content_items(category, item) {
     "name": category,
     "round": item.title,
     "locked": item.locked,
-    html: "<h3 onclick=" + onclick + "><a href=#" + category + "-" + item.title + " onclick=" + onclick + ">" + icon + "<span>" + item.title + "</span></a></h3>"
+    html: "<h3><a href=#" + category + "-" + item.title + " onclick=" + onclick + ">" + icon + "<span>" + item.title + "</span></a></h3>"
   }).appendTo("#item_list");
 }
 

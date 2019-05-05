@@ -55,5 +55,7 @@ document.querySelectorAll('.load').forEach(function(element) {
   ajax.send();
   ajax.onload = function(e) {
     element.innerHTML = ajax.responseText;
+    
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, element]);
   }
 });
