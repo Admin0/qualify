@@ -145,5 +145,5 @@ $(document).ready(function() {
   $.getScript("system/main__initialize_console.js");
   setTimeout(function() {
     $("div#splash").fadeOut();
-  }, 0);
+  }, 30);
 });
