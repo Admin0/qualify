@@ -1,34 +1,36 @@
 <script src="/qualify/system/main__card.js" defer></script>
 <script>
-  $('.b06').append("<span class='b06 shadow'>06</span>");
-  $('.b07').append("<span class='b07 shadow'>07</span>");
-  $('.b08').append("<span class='b08 shadow'>08</span>");
-  $('.b09').append("<span class='b09 shadow'>09</span>");
-  $('.b10').append("<span class='b10 shadow'>10</span>");
-  $('.b11').append("<span class='b11 shadow'>11</span>");
-  $('.b12').append("<span class='b12 shadow'>12</span>");
-  $('.b13').append("<span class='b13 shadow'>13</span>");
-  $('.b14').append("<span class='b14 shadow'>14</span>");
-  $('.b15').append("<span class='b15 shadow'>15</span>");
-  $('.b16').append("<span class='b16 shadow'>16</span>");
-  $('.b17').append("<span class='b17 shadow'>17</span>");
-  $('.b18').append("<span class='b18 shadow'>18</span>");
-  $('.b19').append("<span class='b19 shadow'>19</span>");
+  $(document).ready(function() {
+    $('.b06').append("<span class='b06 shadow'>06</span>");
+    $('.b07').append("<span class='b07 shadow'>07</span>");
+    $('.b08').append("<span class='b08 shadow'>08</span>");
+    $('.b09').append("<span class='b09 shadow'>09</span>");
+    $('.b10').append("<span class='b10 shadow'>10</span>");
+    $('.b11').append("<span class='b11 shadow'>11</span>");
+    $('.b12').append("<span class='b12 shadow'>12</span>");
+    $('.b13').append("<span class='b13 shadow'>13</span>");
+    $('.b14').append("<span class='b14 shadow'>14</span>");
+    $('.b15').append("<span class='b15 shadow'>15</span>");
+    $('.b16').append("<span class='b16 shadow'>16</span>");
+    $('.b17').append("<span class='b17 shadow'>17</span>");
+    $('.b18').append("<span class='b18 shadow'>18</span>");
+    $('.b19').append("<span class='b19 shadow'>19</span>");
 
-  $('.a06').append("<span class='a06 shadow'>06</span>");
-  $('.a07').append("<span class='a07 shadow'>07</span>");
-  $('.a08').append("<span class='a08 shadow'>08</span>");
-  $('.a09').append("<span class='a09 shadow'>09</span>");
-  $('.a10').append("<span class='a10 shadow'>10</span>");
-  $('.a11').append("<span class='a11 shadow'>11</span>");
-  $('.a12').append("<span class='a12 shadow'>12</span>");
-  $('.a13').append("<span class='a13 shadow'>13</span>");
-  $('.a14').append("<span class='a14 shadow'>14</span>");
-  $('.a15').append("<span class='a15 shadow'>15</span>");
-  $('.a16').append("<span class='a16 shadow'>16</span>");
-  $('.a17').append("<span class='a17 shadow'>17</span>");
-  $('.a18').append("<span class='a18 shadow'>18</span>");
-  $('.a19').append("<span class='a19 shadow'>19</span>");
+    $('.a06').append("<span class='a06 shadow'>06</span>");
+    $('.a07').append("<span class='a07 shadow'>07</span>");
+    $('.a08').append("<span class='a08 shadow'>08</span>");
+    $('.a09').append("<span class='a09 shadow'>09</span>");
+    $('.a10').append("<span class='a10 shadow'>10</span>");
+    $('.a11').append("<span class='a11 shadow'>11</span>");
+    $('.a12').append("<span class='a12 shadow'>12</span>");
+    $('.a13').append("<span class='a13 shadow'>13</span>");
+    $('.a14').append("<span class='a14 shadow'>14</span>");
+    $('.a15').append("<span class='a15 shadow'>15</span>");
+    $('.a16').append("<span class='a16 shadow'>16</span>");
+    $('.a17').append("<span class='a17 shadow'>17</span>");
+    $('.a18').append("<span class='a18 shadow'>18</span>");
+    $('.a19').append("<span class='a19 shadow'>19</span>");
+  });
 </script>
 <style>
   .prev span {
@@ -48,13 +50,17 @@
     margin: 0;
   }
 
-  .contents {
-    counter-reset: table_list;
-  }
-
   .contents table#reactions tr td:first-child {
     font-weight: bold;
     text-align: center;
+  }
+
+  .contents {
+    counter-reset: table_list question;
+  }
+
+  .contents table caption {
+    text-align: left;
   }
 
   .contents table caption:before {
@@ -64,419 +70,18 @@
 </style>
 <div class="contents">
 
-  <table id="reactions" style="width:100%; font-size:.75em;">
-    <tr>
-      <th>반응</th>
-      <th>반응식</th>
-      <th>기출</th>
-    </tr>
-    <tr>
-      <td>과망간산칼륨 + 염산</td>
-      <td>$$\ce{ 2\underset{\text{과망간산칼륨}}{KMnO4} + 16 \underset{ \text{ 염산 }}{ HCl } → 2 \underset{ \text{ 염화칼륨 }}{ KCl } + 2MnCl2 + 8 \underset{ \text{ 물 }}{ H2O } + 5Cl2 }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>과망간산칼륨 + 황산</td>
-      <td>$$\ce{ 4\underset{\text{과망간산칼륨}}{KMnO4} + 6 \underset{ \text{ 황산 }}{ H2SO4 } → 2 \underset{ \text{ 황산칼륨 }}{ K2SO4 } + 4 \underset{ \text{ 황산망간 }}{ MnSO4 } + 6 \underset{ \text{ 물 }}{ H2O } + 5 \underset{ \text{ 산소 }}{ O2 } }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>과망간산칼륨 열분해식</td>
-      <td>$$\ce{ 2\underset{\text{과망간산칼륨}}{KMnO4} → \underset{\text{ 망간산칼륨 }}{ K2MnO4 } + \underset{\text{ 이산화망간 }}{ MnO2 } + \underset{ \text{ 산소 }}{ O2 } }$$</td>
-      <td class="prev b17"></td>
-    </tr>
-    <tr>
-      <td>과산화나트륨 + 물</td>
-      <td>$$\ce{ 2\underset{\text{과산화나트륨}}{Na2O2} + 2 \underset{ \text{ 물 }}{ H2O } → 4 \underset{ \text{ 수산화나트륨 }}{ NaOH }+ \underset{\text{ 산소 }}{ O2 } }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>과산화나트륨 + 이산화탄소</td>
-      <td>$$\ce{ 2 \underset{ \text{ 과산화나트륨 }}{ Na2O2 } + 2 \underset{\text{이산화탄소}}{ CO2 } → 2 \underset{ \text{ 탄산나트륨 }}{ Na2CO3 } + \underset{\text{산소}}{O2} }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>과산화바륨 + 물</td>
-      <td>$$\ce{ 2 \underset{ \text{ 과산화바륨 }}{ BaO2 } + 2 \underset{ \text{ 물 }}{ H2O } + 2 \underset{ \text{ 수산화바륨 }}{ Ba(OH)2 } → \underset{\text{산소}}{O2} }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td> 과산화바륨 + 염산</td>
-      <td>$$\ce{ \underset{ \text{ 과산화바륨 }}{ BaO2 } + 2 \underset{ \text{ 염산 }}{ HCl } →  \underset{ \text{ 염화바륨 }}{ BaCl2 }+ \underset{ \text{ 과산화수소 }}{ H2O2 }}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>과산화바륨 + 황산 </td>
-      <td>$$\ce{ \underset{ \text{ 과산화바륨 }}{ BaO2 } + \underset{ \text{ 황산 }}{ H2SO4 } →  \underset{ \text{ 황산바륨 }}{ BaSO4 }+ \underset{ \text{ 과산화수소 }}{ H2O2 } }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>과산화수소 + 히드라진</td>
-      <td>$$\ce{2 \underset{ \text{ 과산화수소 }}{ H2O2 } + \underset{ \text{ 히드라진 }}{ N2H4 } → 4 \underset{ \text{ 물 }}{ H2O } + \underset{ \text{ 질소 }}{ N2 } }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>과산화수소 분해식</td>
-      <td>$$\ce{2 \underset{ \text{ 과산화수소 }}{ H2O2 } → 2 \underset{ \text{ 물 }}{ H2O } + \underset{\text{산소}}{O2} }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>과산화칼륨 + 물</td>
-      <td>$$\ce{2 \underset{ \text{ 과산화칼륨 }}{ K2O2 }+ 2 \underset{ \text{ 물 }}{ H2O } → 4 \underset{ \text{ 수산화칼륨 }}{ KOH }+ \underset{\text{산소}}{O2} }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>과염소산 + 분해식</td>
-      <td>$$\ce{ HClO4 → \underset{ \text{ 염산 }}{ HCl } + 2O2}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>과염소산나트륨 + 염화칼륨 </td>
-      <td>$$\ce{ NaClO4 + \underset{ \text{ 염화칼륨 }}{ KCl } → KClO4 + NaCl}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>과염소산칼륨 610℃ 열분해식</td>
-      <td>$$\ce{ KClO4 → \underset{ \text{ 염화칼륨 }}{ KCl } + 2 \underset{\text{산소}}{ O2 } }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>구리 + 진한질산 </td>
-      <td>$$\ce{ Cu + 4HNO3 → Cu(NO3)2 + 2NO2 + 2 \underset{ \text{ 물 }}{ H2O } }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>나트륨 + 물</td>
-      <td>$$\ce{ 2Na + 2 \underset{ \text{ 물 }}{ H2O } → 2 \underset{ \text{ 수산화나트륨 }}{ NaOH }+ H2}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>나트륨 + 에탄올</td>
-      <td>$$\ce{2Na + 2C2H5OH → 2C2H5ONa + H2 }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>나트륨 + 이산화탄소</td>
-      <td>$$\ce{4Na + 3CO2 → 2 \underset{ \text{ 탄산나트륨 }}{ Na2CO3 } + C }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>나트륨 연소식</td>
-      <td>$$\ce{ 4Na + \underset{\text{산소}}{O2} → 2Na2O}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>니트로글리세린 열분해식</td>
-      <td>$$\ce{4C3H5(ONO2)3 → 12CO2 + 6N2 + \underset{\text{산소}}{O2} + 10 \underset{ \text{ 물 }}{ H2O } }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>니트로글리세린 제조</td>
-      <td>$$\ce{C3H5(OH)3 + 3HNO3 ->[C-H2SO4] C3H5(ONO2)3 + 3 \underset{ \text{ 물 }}{ H2O } }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>니트로벤젠 제조</td>
-      <td>$$\ce{C6H6 + HNO3 ->[C-H2SO4][니트로화] C6H5NO2 + \underset{ \text{ 물 }}{ H2O } }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>디에틸에테르 제조</td>
-      <td>$$\ce{ 2C2H5OH ->[C-H2SO4][니트로화] C2H5OC2H5 + H2O}$$</td>
-      <td class="prev a16"></td>
-    </tr>
-    <tr>
-      <td>마그네슘 + 물</td>
-      <td>$$\ce{ Mg + 2 \underset{ \text{ 물 }}{ H2O } → Mg(OH)2 + H2}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>마그네슘 + 염산</td>
-      <td>$$\ce{ Mg + 2 \underset{ \text{ 염산 }}{ HCl } → MgCl2 + H2}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>마그네슘 + 이산화탄소</td>
-      <td>$$\ce{2Mg + CO2 → 2MgO + C }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>마그네슘 + 황산</td>
-      <td>$$\ce{ Mg + \underset{ \text{ 황산 }}{ H2SO4 } → MgSO4 + H2}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>마그네슘 연소식</td>
-      <td>$$\ce{ 2Mg + \underset{\text{산소}}{O2} → 2MgO}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>메탄 분해식</td>
-      <td>$$\ce{CH4 + 2 \underset{\text{산소}}{ O2 } → CO2 + 2 \underset{ \text{ 물 }}{ H2O } }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>메탄올 (메틸알코올) 연소식</td>
-      <td>$$\ce{2CH3OH + 3 \underset{\text{산소}}{ O2 } → 2 \underset{\text{이산화탄소}}{ CO2 } + 4 \underset{ \text{ 물 }}{ H2O } }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>메틸리튬 + 물</td>
-      <td>$$\ce{ (CH3)Li + \underset{ \text{ 물 }}{ H2O } → LiOH + CH4}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>삼산화크롬 + 물</td>
-      <td>$$\ce{ CrO3 + \underset{ \text{ 물 }}{ H2O } → H2CrO4}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>삼산화크롬 열분해식</td>
-      <td>$$\ce{ 4CrO3 → 2Cr2O3 + 3O2}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>삼황화린 연소식</td>
-      <td>$$\ce{ P4S3 + 8O2 → 2P2O5 + 3SO2}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>수소화알루미늄리튬 + 물</td>
-      <td>$$\ce{LiAlH4 + 4 \underset{ \text{ 물 }}{ H2O } → LiOH + Al(OH)3 + 4H2 }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>수소화칼륨 + 물</td>
-      <td>$$\ce{ KH + \underset{ \text{ 물 }}{ H2O } →  \underset{ \text{ 수산화칼륨 }}{ KOH }+ H2}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>아세톤 연소식</td>
-      <td>$$\ce{CH3COCH3 + 4O2 → 3CO2 + 3 \underset{ \text{ 물 }}{ H2O } }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>아세트산 + 과산화나트륨</td>
-      <td>$$\ce{2CH3COOH + 2 \underset{ \text{ 과산화나트륨 }}{ Na2O2 } → 2CH3COONa + \underset{ \text{ 과산화수소 }}{ H2O2 } }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>아세트산 연소식</td>
-      <td>$$\ce{CH3COOH + 2 \underset{\text{산소}}{ O2 } → 2 \underset{\text{이산화탄소}}{ CO2 } + 2 \underset{ \text{ 물 }}{ H2O } }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>아세트알데히드 산화식</td>
-      <td>$$\ce{ CH3CHO + 1/2O2 → CH3COOH}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>아세틸렌 + 구리</td>
-      <td>$$\ce{ C2H2 + 2Cu → Cu2C2 + H2}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>아세틸렌 연소식</td>
-      <td>$$\ce{ 2C2H2 + 5 \underset{ \text{ 산소 }}{ O2 } → 4CO2 + 2H2O}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>아연 + 염산</td>
-      <td>$$\ce{ Zn + 2 \underset{ \text{ 염산 }}{ HCl } → ZnCl2 + H2}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>아연 + 황산</td>
-      <td>$$\ce{Zn + \underset{ \text{ 황산 }}{ H2SO4 } → ZnSO4 + H2 }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>아염소산나트륨 + 알루미늄</td>
-      <td>$$\ce{3NaClO2 + 4Al → 2Al2O3 + 3NaCl }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>알루미늄 + 물</td>
-      <td>$$\ce{ 2Al + 6 \underset{ \text{ 물 }}{ H2O } → 2Al(OH)3 + 3H}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>알루미늄 연소식</td>
-      <td>$$\ce{ 4Al + 3 \underset{\text{산소}}{ O2 } → 2Al2O3}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>에탄올(에틸알코올) + 칼륨</td>
-      <td>$$\ce{ 2C2H5OH + 2K → 2C2H5OK + H2}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>에탄올(에틸알코올) 연소식</td>
-      <td>$$\ce{C2H5OH + 3 \underset{\text{산소}}{ O2 } → 2 \underset{\text{이산화탄소}}{ CO2 } + 3H2 }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>에틸렌 산화식</td>
-      <td>$$\ce{ C2H4 + PdCl2 + \underset{ \text{ 물 }}{ H2O } → CH3CHO + Pd + 2HCl}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>염산 + 질산은</td>
-      <td>$$\ce{ \underset{ \text{ 염산 }}{ HCl } + AgNO3 → HNO3 + AgCl}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>염소산칼륨 + 황산</td>
-      <td>$$\ce{ 6KClO3 + 3 \underset{ \text{ 황산 }}{ H2SO4 } → 2HClO4 + 3 \underset{ \text{ 황산칼륨 }}{ K2SO4 } + 4ClO2 + 2H2O}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>염소산칼륨 400℃ 열분해식</td>
-      <td>$$\ce{ 2KClO3 → \underset{ \text{ 염화칼륨 }}{ KCl } + KClO4 + O2}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>염소산칼륨 540~560℃ 열분해식</td>
-      <td>$$\ce{2KClO3 → 2 \underset{ \text{ 염화칼륨 }}{ KCl } + 3 \underset{\text{산소}}{ O2 } }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>오황화린 + 물</td>
-      <td>$$\ce{ P2S5 + 8 \underset{ \text{ 물 }}{ H2O } → 2H3PO4 + 5H2S}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>이산화망간 + 과산화수소</td>
-      <td>$$\ce{ \underset{\text{이산화망간}}{MnO2} + 2 \underset{ \text{ 과산화수소 }}{ H2O2 } → \underset{\text{이산화망간}}{MnO2} + 2 \underset{ \text{ 물 }}{ H2O } + O2}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>이황화탄소 + 물</td>
-      <td>$$\ce{ CS2 + 2 \underset{ \text{ 물 }}{ H2O } → 2H2S + CO2}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>이황화탄소 연소식</td>
-      <td>$$\ce{CS2 + 3 \underset{\text{산소}}{ O2 } → 2SO2 + CO2 }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>인화알루미늄 + 물</td>
-      <td>$$\ce{ AlP + 3 \underset{ \text{ 물 }}{ H2O } → Al(OH)3 + PH3}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>인화칼슘 + 물</td>
-      <td>$$\ce{Ca3P2 + 6 \underset{ \text{ 물 }}{ H2O } 3Ca(OH) → 2 + 2PH }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>적린 연소식</td>
-      <td>$$\ce{ 4P + 5 \underset{ \text{ 산소 }}{ O2 } → 2P2O5}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>중크롬산칼륨 열분해식</td>
-      <td>$$\ce{ 4K2Cr2O7 2Cr → 2O3 + 4K2CrO4 + 3O2}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>질산 열분해식</td>
-      <td>$$\ce{4HNO3 2H → 2O + 4NO2 + \underset{\text{산소}}{O2} }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>질산암모늄 열분해식</td>
-      <td>$$\ce{ 2NH4NO3 2N → 2 + \underset{\text{산소}}{O2} + 4H2O}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>질산칼륨 열분해식</td>
-      <td>$$\ce{ 2KNO3 → 2KNO2 + O2}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>철 + 염산</td>
-      <td>$$\ce{ Fe + 2 \underset{ \text{ 염산 }}{ HCl } → FeCl2 + H2}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>초산에틸 제조</td>
-      <td>$$\ce{CH3COOH + C2H5OH ->[C-H2SO4][\text{에스테르화}] CH3COOC2H5 + \underset{ \text{ 물 }}{ H2O } }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>칼륨 + 물</td>
-      <td>$$\ce{2K + 2 \underset{ \text{ 물 }}{ H2O } → 2 \underset{ \text{ 수산화칼륨 }}{ KOH }+ H2 }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>칼륨 + 이산화탄소</td>
-      <td>$$\ce{4K + 3CO2 → 2K2CO3 + C}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>칼슘 + 물</td>
-      <td>$$\ce{ Ca + 2 \underset{ \text{ 물 }}{ H2O } → Ca(OH)2 + H2}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>탄산마그네슘 산화식</td>
-      <td>$$\ce{MgCO3 → MgO + CO2 }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>탄산수소나트륨 + 황산</td>
-      <td>$$\ce{ 2NaHCO3 + \underset{ \text{ 황산 }}{ H2SO4 } Na → 2SO4 + 2 \underset{\text{이산화탄소}}{ CO2 } + 2H2O}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>탄화알루미늄 + 물</td>
-      <td>$$\ce{ Al4C3 + 12 \underset{ \text{ 물 }}{ H2O } 4Al(OH) → 3 + 3CH4}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>탄화칼슘 + 물</td>
-      <td>$$\ce{CaC2 + 2 \underset{ \text{ 물 }}{ H2O } → Ca(OH)2 + C2H2 }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>트리니트로톨루엔 분해식</td>
-      <td>$$\ce{2C6H2CH3(NO2)3 → 12CO + 5H2 + 3N2+ 2C }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>트리니트로톨루엔 제조</td>
-      <td>$$\ce{C6H5CH3 + 3HNO3 ->[C-H2SO4][\text{니트로화}] C6H2CH3(NO2)3 + 3 \underset{ \text{ 물 }}{ H2O } }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>트리에틸알루미늄 + 메틸알코올</td>
-      <td>$$\ce{(C2H5)3Al + 3CH3OH Al → (CH3O)3 + 3C2H6 }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>트리에틸알루미늄 + 물</td>
-      <td>$$\ce{ (C2H5)3Al + 3 \underset{ \text{ 물 }}{ H2O } Al(OH) → 3 + 3C2H6}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>트리에틸알루미늄 연소식</td>
-      <td>$$\ce{2(C2H5)3Al + 21O2 12CO → 2 + Al2O3 + 15 \underset{ \text{ 물 }}{ H2O } }$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>황(유황) + 산소</td>
-      <td>$$\ce{ S + \underset{\text{산소}}{O2} → SO2}$$</td>
-      <td class="prev"></td>
-    </tr>
-    <tr>
-      <td>황린 연소식</td>
-      <td>$$\ce{P4 + 5 \underset{ \text{ 산소 }}{ O2 } → 2P2O5}$$</td>
-      <td class="prev"></td>
-    </tr>
-  </table>
+  <div class="q_wrap">
 
-  <div class="load">위험물산업기사\table__소화약제.html</div>
+    <div class="load">위험물산업기사\table__반응식_ㄱ.html</div>
+    <div class="load">위험물산업기사\table__반응식_ㄴ.html</div>
+    <div class="load">위험물산업기사\table__반응식_ㅁ.html</div>
+    <div class="load">위험물산업기사\table__반응식_ㅅ.html</div>
+    <div class="load">위험물산업기사\table__반응식_ㅈ.html</div>
+
+  </div>
+
+  <div class="q_wrap">
+    <div class="load">위험물산업기사\table__소화약제.html</div>
+  </div>
 
 </div>
