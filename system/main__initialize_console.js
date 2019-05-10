@@ -115,8 +115,8 @@ function console_event(code) {
       }
       break;
     case "o":
-      url = "/qualify/" + t.attr("name") + "/" + t.attr("round") + ".html"
-      console.log(t.attr("name") + "-" + t.attr("round"));
+      url = "/qualify/" + (t.length != 0 ? t.attr("name") + "/" + t.attr("round") : $('#title').text()) + ".html"
+      console.log("open_in_new: " + url);
       window.open(url, "_blank");
       break;
     case "r":
@@ -173,9 +173,11 @@ function console_event(code) {
       break;
     case "1":
       load('notice');
+      history.pushState(null, null, '/qualify/#notice');
       break;
     case "helper":
       load('helper');
+      history.pushState(null, null, '/qualify/#helper');
       break;
     case "share":
       $('#share, #setting_bg').addClass('on');
