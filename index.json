@@ -79,6 +79,9 @@
       "icon": "test_tube",
       "locked": true
     }, {
+      "title": "후기",
+      "icon": "contract"
+    }, {
       "title": "작업",
       "icon": "water"
     }]
