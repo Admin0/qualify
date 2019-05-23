@@ -6,7 +6,9 @@ $(".share").on("click", function() {
 Kakao.init('f27e2f52c6d1e181e147def81e2b3b28');
 
 function kakao_share() {
-  Kakao.Link.sendCustom({
-    templateId: 12918
+  $.get("//developers.kakao.com/sdk/js/kakao.min.js", function(data) {
+    Kakao.Link.sendCustom({
+      templateId: 12918
+    });
   });
 }
