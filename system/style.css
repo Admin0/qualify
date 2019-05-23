@@ -97,6 +97,7 @@ body.fold {
   overflow-x: auto;
   column-fill: auto;
   transform: translateX(0);
+  will-change: scroll-position;
 }
 
 #item_list {
@@ -106,6 +107,7 @@ body.fold {
   max-height: calc(100vh - 56px - 45px);
   overflow: auto;
   transition: box-shadow .25s;
+  will-change: scroll-position;
 }
 
 #item_list section.item {
