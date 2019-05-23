@@ -31,17 +31,21 @@ function scroll__item_list(t) {
   // var t = $('#item_list');
   if (t.scrollTop() != 0) {
     if (!is_mobile && $(window).width() > 1080) {
-      t.addClass('shadow-top-inset');
+      $('header').addClass('shadow-bottom');
+      // t.addClass('shadow-top-inset'); // 병목현상 유발
     }
   } else {
-    t.removeClass('shadow-top-inset');
+    $('header').removeClass('shadow-bottom');
+    // t.removeClass('shadow-top-inset'); // 병목현상 유발
   }
   if ((t.scrollTop() + t.height() + 1) < t[0].scrollHeight) {
     if (!is_mobile && $(window).width() > 1080) {
-      t.addClass('shadow-bottom-inset');
+      $('footer').addClass('shadow-top');
+      // t.addClass('shadow-bottom-inset'); // 병목현상 유발
     }
   } else {
-    t.removeClass('shadow-bottom-inset');
+    $('footer').removeClass('shadow-top');
+    // t.removeClass('shadow-bottom-inset'); // 병목현상 유발
   }
   // console.log(
   //   "scrollTop         : " + t.scrollTop() +

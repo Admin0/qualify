@@ -96,8 +96,8 @@ body.fold {
   overflow-y: visible;
   overflow-x: auto;
   column-fill: auto;
-  transform: translateX(0);
-  will-change: scroll-position;
+  /* transform: translateX(0); */
+  will-change: transform;
 }
 
 #item_list {
@@ -107,7 +107,7 @@ body.fold {
   max-height: calc(100vh - 56px - 45px);
   overflow: auto;
   transition: box-shadow .25s;
-  will-change: scroll-position;
+  will-change: transform;
 }
 
 #item_list section.item {
@@ -204,6 +204,10 @@ header:hover #print_icon {
 
 .shadow-right {
   box-shadow: 2px 0 6px 0 rgba(60, 64, 67, .15);
+}
+
+.shadow-top {
+  box-shadow: 0 -2px 6px 0 rgba(60, 64, 67, .15);
 }
 
 .shadow-bottom {
@@ -719,5 +723,9 @@ div#splash svg {
     z-index: 1;
     width: 20px;
     overflow: visible;
+  }
+
+  footer {
+    box-shadow: none!important;
   }
 }
