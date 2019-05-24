@@ -18,7 +18,7 @@ body.page {
 .contents {
   line-height: 1.75;
   column-gap: 2.5em;
-  counter-reset: question;
+  counter-reset: question table_list;
   /* transition: .25s; */
 }
 
@@ -175,6 +175,15 @@ body.page {
 .contents table td {
   border: 1px solid;
   padding: 0.25em 0.5em;
+}
+
+.contents table caption {
+  text-align: left;
+}
+
+.contents table caption:before {
+  counter-increment: table_list;
+  content: "표 "counter(table_list) ". ";
 }
 
 /* .q_list */
