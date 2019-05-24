@@ -43,10 +43,9 @@ body.page {
 
 .contents ol li:before,
 .contents .encircled {
-  /* ver.1 */
-  /* font-size: 0.75em;
+  font-size: 0.75em;
   margin: 0 .5em 0 -1.85em;
-  border: 0.15ex solid;
+  border: 0.5px solid;
   border-radius: 50%;
   width: 1.2em;
   height: 1.2em;
@@ -55,20 +54,8 @@ body.page {
   text-align: center;
   position: relative;
   top: -.1em;
-  font-weight: inherit; */
-  /* ver.2 */
-  font-size: 12px;
-  margin: 4px calc(2px + 4px) 4px calc(2px - 18px);
-  border: 0.5px solid;
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  line-height: 1.2;
-  display: inline-block;
-  text-align: center;
-  position: relative;
-  top: -2px;
   font-weight: inherit;
+  /* .comment font-size가 본문보다 작으니깐, 상대크기로 지정해야함. */
 }
 
 .contents:not(.on) {
