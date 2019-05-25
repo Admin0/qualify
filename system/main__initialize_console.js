@@ -1,3 +1,48 @@
+shortcut.add("Ctrl+Q", function() {
+  $("[locked=true]").each(function() {
+    $(this).attr("onclick", "load('" + $(this).attr("name") + "','" + $(this).attr("round") + "')");
+    // console.log(this);
+  });
+  $("[locked=true] i").text("lock_open");
+  $("[locked=true]").removeAttr("locked");
+  toast("잠긴 문서가 해제되었습니다.", get_icon("lock_open"));
+});
+
+shortcut.add("Ctrl+Shift+A", function() {
+  if ($(".ad").length != 0) {
+    $(".ad").remove();
+    toast("광고가 해제되었습니다.");
+  }
+});
+
+shortcut.add("Q", function() {
+  console_event("q");
+});
+
+shortcut.add("Q", function() {
+  console_event("q");
+});
+
+shortcut.add("R", function() {
+  console_event("share");
+});
+
+shortcut.add("A", function() {
+  console_event("a");
+});
+
+shortcut.add("S", function() {
+  console_event("s");
+});
+
+shortcut.add("D", function() {
+  console_event("d");
+});
+
+shortcut.add("F", function() {
+  console_event("f");
+});
+
 $(document).keyup(function(event) {
   // console.log("key is up");
   event.preventDefault();
@@ -10,13 +55,7 @@ $(document).keyup(function(event) {
         break;
       case 81: // q
         if ($("[locked=true]").length != 0) {
-          $("[locked=true]").each(function() {
-            $(this).attr("onclick", "load('" + $(this).attr("name") + "','" + $(this).attr("round") + "')");
-            // console.log(this);
-          });
-          $("[locked=true] i").text("lock_open");
-          $("[locked=true]").removeAttr("locked");
-          toast("잠긴 문서가 해제되었습니다.", get_icon("lock_open"));
+
         }
         break;
       case 65: // a
@@ -30,23 +69,12 @@ $(document).keyup(function(event) {
     }
   } else {
     switch (event.which) {
-      case 83: // s
-        console_event("s");
-        break;
-      case 82: // r
-        console_event("share");
-        // console_event("r");
-        break;
       case 79: // o
         console_event("o");
         break;
-      case 81: // q
       case 27: // Esc
       case 8: // BS(←)
         console_event("q");
-        break;
-      case 70: // f
-        console_event("f");
         break;
       case 188: // ,
       case 37: // ←
@@ -57,12 +85,6 @@ $(document).keyup(function(event) {
       case 39: // →
       case 40: // ↓
         console_event(".");
-        break;
-      case 68: // d
-        console_event("d");
-        break;
-      case 65: // a
-        console_event("a");
         break;
       case 78: // n
         console_event("n");
