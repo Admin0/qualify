@@ -236,7 +236,7 @@ a {
   text-decoration: none;
   font-weight: 700;
   color: #000;
-  transition: .25s;
+  transition: .25s, font-size 0s;
   padding: .5em .75em;
   margin: -.75em
 }
