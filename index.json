@@ -256,6 +256,12 @@
   "사무자동화산업기사": {
     "title": "사무자동화산업기사 ★ <span class='translation'>(준비중)</span>"
   },
+  "전기기사": {
+    "title": "전기기사 <span class='translation'>(준비중)</span>",
+    "contents": [{
+      "title": "전기기사-따야하는-이유"
+    }]
+  },
   "기타": {
     "title": "기타 ★ <span class='translation'>(취득 후기)</span>",
     "contents": [{
