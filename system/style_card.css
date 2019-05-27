@@ -74,6 +74,7 @@ body.page {
 }
 
 .question, .answer, .comment, .q_wrap>p {
+  will-change: transform;
   /* transform: translateX(0); */
   /* -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
