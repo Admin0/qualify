@@ -73,12 +73,12 @@ body.page {
   content: "끝.";
 }
 
-.question, .answer, .comment, .q_wrap>p {
+.question, .answer, .comment {
   will-change: transform;
   /* transform: translateX(0); */
-  /* -webkit-column-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
-  break-inside: avoid-column; */
+  break-inside: avoid-column;
   /* display: list-item;
   list-style: none; */
 }
