@@ -41,10 +41,20 @@
 
   <div class="q_wrap">
     <div class="question">
-      비열 0.45kcal/kg.℃인 기름을 1800kg/hr로 열교환기에 흘려보내 온도를 110℃에서 45℃로 내렸다. 관 바깥에는 총전열계수가 500kcal/m2.hr.℃인 수증기의 온도가 20℃에서 50℃로 변했다고 한다. 이 때 전열면적은 몇 m2인가?
+      비열 $\pu{ 0.45 kcal/kg.^\circ C }$인 기름을 $\pu{ 1800 kg/hr }$로 열교환기에 흘려보내 온도를 $\pu{ 110^\circ C }$에서 $\pu{ 45^\circ C }$로 내렸다. 관 바깥에는 총전열계수가 $\pu{ 500 kcal/m2.hr.^\circ C }$인 수증기의 온도가 $\pu{ 20^\circ C }$에서 $\pu{ 50^\circ C }$로 변했다고 한다. 이 때 전열면적은 몇
+      $\pu{ m2 }$인가?
     </div>
     <div class="answer">
+      $
+      q = \dot{m}C_p\Delta T = \frac{\pu{ 1800 kg }}{\pu{ hr }} \times \frac{\pu{ 0.45 kcal }}{\pu{ kg * ^\circ C }} \times \pu{ (110 - 45)^\circ C } = \pu{ 52,650 kcal/hr } \\
 
+      \Delta T_1 = \pu{ (110 - 50)^\circ C } = \pu{ 60^\circ C }, \Delta T_2 = \pu{ (45 - 20)^\circ C } = \pu{ 25^\circ C },
+      \Longrightarrow \Delta T_{LM} = \dfrac{ \Delta T_1 - \Delta T_2 }{ \ln{ (\Delta T_1 / \Delta T_2) } } = \dfrac{ 60^\circ C - 25^\circ C }{ \ln{ (60^\circ C / 25^\circ C) } } = 39.9786^\circ C \\
+
+      q = UA \Delta T_{LM} = \pu{ 52,650 kcal/hr } = \pu{ 500 kcal/m2.hr.^\circ C } \times A \times \pu{ 39.9786^\circ C } \\
+
+      \therefore A = \pu{ 2.63 m2 }
+      $
     </div>
     <div class="comment">
       $\ce{}$ </div>
@@ -52,10 +62,14 @@
 
   <div class="q_wrap">
     <div class="question">
-      벤젠과 톨루엔 혼합액이 있는데 혼합액에서 톨루엔의 몰분율은 0.4이다. 이 때 기상에서 톨루엔의 몰분율은 몇 %인가? [단, 순수한 벤젠과 톨루엔의 증기압은 각각 780mmHg, 480mmHg이다.]
+      벤젠과 톨루엔 혼합액이 있는데 혼합액에서 톨루엔의 몰분율은 0.4이다. 이 때 기상에서 톨루엔의 몰분율은 몇 %인가? [단, 순수한 벤젠과 톨루엔의 증기압은 각각 780 mmHg, 480 mmHg이다.]
     </div>
     <div class="answer">
+      $
+      P = x_\ce{T} P'_\ce{T} + x_\ce{B} P'_\ce{B} = (0.4 \times \pu{480 mmHg}) + (0.6 \times \pu{780 mmHg}) = \pu{ 660 mmHg } \\
 
+      y_\ce{T} = \dfrac{ x_\ce{T} P'_\ce{T} }{ P } = \dfrac{\pu{ 0.4 \times 480 mmHg}}{\pu{ 660 mmHg }} = 0.29 = 29\%
+      $
     </div>
     <div class="comment">
       $\ce{}$
@@ -64,10 +78,12 @@
 
   <div class="q_wrap">
     <div class="question">
-      다음 그림에서 상당직경을 구하라.
+      다음 그림에서 상당직경을 구하라. (밑변 10 m, 윗변 14 m, 높이 4 m의 사다리꼴)
     </div>
     <div class="answer">
-
+      $
+      \text{상당직경} = 4 \times \dfrac{ \text{유로의 단면적} }{ \text{유체가 접한 총길이} } = 4 \times \dfrac{\ce{ \frac{1}{2} \times (10 + 14) m \times 4 m }}{\ce{ 10 m + 14 m + (2\sqrt{2^2 + 4^2}) m }} = \pu{5.83 m}
+      $
     </div>
     <div class="comment">
       $\ce{}$
@@ -80,16 +96,14 @@
     </div>
     <div class="q_wrap sub">
       <div class="question sub">
-        의미비점 아래 차가운 액체
       </div>
       <div class="answer">
-
+        공비혼합물(azeotrope)은 기체의 조성과 액체의 조성이 동일한 혼합물을 말한다.
       </div>
       <div class="question sub">
-        증류방법 2가지 쓰기.
       </div>
       <div class="answer">
-
+        추출 증류(extraction distillation), 공비증류(azeotropic distillnation)
       </div>
     </div>
     <div class="answer">
@@ -105,7 +119,13 @@
       1wt%인 용액을 10,000kg/h로 증류기에 넣고 있다. 70℃, 1기압의 조건으로 증류를 하여 2wt% 용액으로 만들었다. 이 때 증발한 증기양은? (kg/h 단위로 쓰라.)
     </div>
     <div class="answer">
+      $
+      \pu{10,000 kg/hr} \times 0.01 = L \times 0.02 \Longrightarrow L = \pu{5,000 kg/hr} \\
 
+      \pu{10,000 kg/hr} \times 0.99 = y + (L \times 0.98) \Longrightarrow L \\
+
+      \therefore y = \pu{5,000 kg/hr}
+      $
     </div>
     <div class="comment">
       $\ce{}$
@@ -118,16 +138,16 @@
     </div>
     <div class="q_wrap sub">
       <div class="question sub">
-        식
       </div>
       <div class="answer">
-
+        $ N_\ce{Nu} = \dfrac{ hD }{ k } $
       </div>
       <div class="question sub">
-        물리적 의미
       </div>
       <div class="answer">
-
+        $
+        \dfrac{ (D/k) }{ (1/h) } = \dfrac{ \text{전도열저항} }{ \text{대류열저항} } = \dfrac{ \text{표면온도구배} }{ \text{전체온도구배} }
+        $
       </div>
     </div>
     <div class="comment">
@@ -144,13 +164,26 @@
         탱크의 압력
       </div>
       <div class="answer">
+        $
+        \rho = \pu{ 1840 kg/m3 }, D = \pu{ 0.076 m }, u = \pu{ 1 m/s }, z = \pu{ 10 m }, \eta = 0.7, f = \pu{ 3 m }, \\
+        \dot{m} = uA\rho = \left(\frac{\pu{ 1 m }}{\pu{ s }}\right) \times \left(\frac{\pu{ \pi }}{\pu{ 4 }} \times (\pu{0.076 m})^2\right) \times \left(\frac{\pu{ 1840 kg }}{\pu{ m3 }}\right) = \pu{ 8.3471 kg/s } \\
 
+        \begin{align*}
+        W_\ce{P} & = \frac{\pu{ \Delta P }}{\pu{ \rho }} + \frac{\pu{ \Delta u2 }}{\pu{ 2 }} +g\Delta z + f \\
+        & = \left[0\right] + \left[\frac{\pu{ (1 m/s)2 }}{\pu{ 2 }}\right] + \left[ \frac{\pu{ 9.8 m/s2 }}{\pu{ 10 m }} \times \pu{10 m} \right] + \left[ \frac{\pu{ 9.8 m/s2 }}{\pu{ 10 m }} \times \pu{3 m} \right] \\ & = \pu{235336 kg/m.s2} \\ &=
+        \pu{235336 N/m2}
+        \end{align*}
+        $
       </div>
       <div class="question sub">
         물필요 동력
       </div>
       <div class="answer">
-
+        $
+        \begin{align*}
+        P &= \frac{ W_\ce{P}.\dot{m} }{ \eta } = \frac{ \pu{ 127.9 m2/s2 }\times \pu{ 8.3471 kg/s } }{0.7} \\ &= \pu{1525.13 J/s}
+        \end{align*}
+        $
       </div>
     </div>
     <div class="comment">
@@ -167,13 +200,17 @@
         점도
       </div>
       <div class="answer">
-
+        중력에 관계없이 측정된 물체의 고유 특성으로써 단위 넓이당의 전달력은 그 위치에 속도구배에
+        비례하는데, 이 비례계수를 점도라고 한다. <br>
+        $\tau = \dfrac{F}{A} = \mu\dfrac{du}{dy}$ <br>
+        $\text{단위}: \dfrac{\ce{g}}{\ce{cm}\cdot \ce{s}}$
       </div>
       <div class="question sub">
-        비점도
+        동점도
       </div>
       <div class="answer">
-
+        액체의 점도를 그 액체의 밀도로 나눈 값 <br>
+        $\text{단위}: \ce{\dfrac{\pu{g/(cm.s)}}{\pu{g/cm3}} =\dfrac{\pu{cm2}}{\pu{s}}}$
       </div>
       <div class="comment">
         $\ce{}$
@@ -186,7 +223,15 @@
       A, B 두 물질 혼합액 10mol을 회분증류한다. 이 때 A의 몰분율은 0.6이다. 이를 증발시켰을 때 액상의 A 몰분율은 0.4이다 몇 몰을 증발시켰는가?(단, A의 경우 Y=1.2X를 따르며 Y는 기상의 몰분율 조성, X는 액상의 몰분율 조성이다.)
     </div>
     <div class="answer">
+      $
+      \int_{w_0}^{w_1}{ \frac{dw}{w} } = \ln{\frac{w_1}{w_0}} = \int_{w_0}^{w_1}{ \frac{dx}{y - x} } \Longrightarrow \int_{w_0}^{w_1}{ \frac{dx}{1.2 x - x} } = \int_{w_0}^{w_1}{ \frac{dx}{0.2 x} }\\
 
+      \Longrightarrow \ln{\frac{w_1}{\pu{10 mol}}} = \frac{1}{0.2}\ln{\frac{x_1}{x_0}} \Longrightarrow \frac{m_1}{\pu{10 mol}} = e^{\frac{1}{0.2}\ln{\frac{0.4}{0.6}}} \\
+
+      \Longrightarrow m_1 = \pu{10 mol} \times \frac{32}{243} = \pu{1.32 mol} \\
+
+      \therefore \pu{10 mol - 1.32 mol = 8.68 mol}
+      $
     </div>
     <div class="comment">
       $\ce{}$
