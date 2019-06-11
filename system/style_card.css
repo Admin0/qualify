@@ -73,6 +73,10 @@ body.page {
   content: "끝.";
 }
 
+.contents pre {
+  line-height: 1;
+}
+
 .question, .answer, .comment {
   will-change: transform;
   /* transform: translateX(0); */
