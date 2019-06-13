@@ -49,7 +49,7 @@ $(document).keyup(function(event) {
   var shortcut_trriger = $("#setting").hasClass("on");
   if (shortcut_trriger) {
     switch (event.which) {
-      case 83: // s
+      // case 83: // s
       case 27: // ESC
         $('#setting, #setting_bg').removeClass('on');
         break;
