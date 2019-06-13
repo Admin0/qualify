@@ -108,7 +108,7 @@ function console_event(code) {
     case "s":
       $('#setting, #setting_bg').toggleClass('on');
       $('#setting').css({
-        "top": $("#setting_bt").offset().top - pageYOffset,
+        "top": 8,
         "left": $("#nav").width() - 16
       });
       check_setting();
