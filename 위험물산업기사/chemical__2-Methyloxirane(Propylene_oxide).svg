@@ -1,205 +1,22 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="2"?>
 <svg
-   xmlns:cdml="http://www.freesoftware.fsf.org/bkchem/cdml"
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   height="15.61042mm"
-   version="1.0"
-   viewBox="0 0 79 59"
-   width="20.90208mm"
-   id="svg3360"
-   inkscape:version="0.48.1 "
-   sodipodi:docname="Propylene_oxide.svg">
-  <metadata
-     id="metadata3386">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <defs
-     id="defs3384" />
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="640"
-     inkscape:window-height="480"
-     id="namedview3382"
-     showgrid="false"
-     inkscape:zoom="4.6644058"
-     inkscape:cx="37.031246"
-     inkscape:cy="27.656256"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
-     inkscape:current-layer="svg3360" />
-  <g
-     font-family="Helvetica"
-     font-size="12pt"
-     stroke-linecap="round"
-     transform="translate(-71,-129)"
-     id="g3362">
-    <g
-
-       stroke-width="1.0"
-       id="g3364">
-      <path
-         style=""
-         d="m 88.773407,175.84718 0,-18.47622"
-         id="line3366" />
-    </g>
-    <g
-
-       stroke-width="1.0"
-       id="g3368">
-      <path
-         style=""
-         d="m 95.68454,153.37993 16.00264,9.23508"
-         id="line3370" />
-    </g>
-    <g
-
-       stroke-width="1.0"
-       id="g3372">
-      <path
-         style=""
-         d="M 111.68718,162.61501 88.773407,175.84718"
-         id="line3374" />
-    </g>
-    <g
-
-       stroke-width="1.0"
-       id="g3376">
-      <path
-         style=""
-         d="m 111.68718,162.61501 26.45564,0"
-         id="line3378" />
-    </g>
-    <g
-       style="fill:#000000;font-family:helvetica"
-       id="text3380">
-      <path
-         d="m 83.025101,147.16205 c -1e-6,-1.78222 0.478514,-3.17748 1.435547,-4.18579 0.957028,-1.00829 2.192378,-1.51244 3.706054,-1.51245 0.991204,1e-5 1.884758,0.23682 2.680664,0.71045 0.795889,0.47364 1.402578,1.13404 1.820069,1.9812 0.417469,0.84717 0.626209,1.80786 0.62622,2.88208 -1.1e-5,1.08887 -0.219737,2.06299 -0.659179,2.92236 -0.439463,0.85938 -1.062021,1.51001 -1.867676,1.9519 -0.805672,0.4419 -1.674812,0.66285 -2.607422,0.66285 -1.010747,0 -1.914066,-0.24414 -2.709961,-0.73243 -0.795901,-0.48828 -1.398927,-1.15478 -1.809082,-1.99951 -0.410157,-0.84472 -0.615235,-1.73827 -0.615234,-2.68066 z m 1.464843,0.022 c -2e-6,1.29395 0.347898,2.31324 1.043702,3.05786 0.695796,0.74463 1.568598,1.11695 2.618408,1.11695 1.069329,0 1.949455,-0.37598 2.640381,-1.12793 0.690908,-0.75195 1.036367,-1.81885 1.036377,-3.20069 -1e-5,-0.87401 -0.147715,-1.63695 -0.443116,-2.28882 -0.295419,-0.65184 -0.727547,-1.15721 -1.296386,-1.51611 -0.568855,-0.35888 -1.207282,-0.53832 -1.915284,-0.53833 -1.005864,1e-5 -1.871341,0.34547 -2.596435,1.03638 -0.7251,0.69092 -1.087649,1.84449 -1.087647,3.46069 z"
-         style="fill:#000000;font-family:helvetica"
-         id="path3393" />
-    </g>
-  </g>
-  <cdml:cdml
-     version="0.15">
-    <cdml:info>
-      <cdml:author_program
-         version="0.12.0_pre1">BKchem</cdml:author_program>
-    </cdml:info>
-    <cdml:paper
-       crop_margin="10"
-       crop_svg="1"
-       orientation="portrait"
-       replace_minus="0"
-       type="A4"
-       use_real_minus="0" />
-    <cdml:viewport
-       viewport="0.000000 0.000000 640.000000 480.000000" />
-    <cdml:standard
-       area_color=""
-       font_family="helvetica"
-       font_size="12"
-       line_color="#000"
-       line_width="1.0px"
-       paper_crop_margin="10"
-       paper_crop_svg="1"
-       paper_orientation="portrait"
-       paper_type="A4">
-      <cdml:bond
-         double-ratio="0.75"
-         length="0.7cm"
-         wedge-width="5.0px"
-         width="6.0px" />
-      <cdml:arrow
-         length="1.6cm" />
-    </cdml:standard>
-    <cdml:molecule
-       id="molecule33931"
-       name="">
-      <cdml:atom
-         id="atom87618"
-         name="C"
-         valency="4">
-        <cdml:point
-           x="2.349cm"
-           y="4.653cm" />
-      </cdml:atom>
-      <cdml:atom
-         id="atom13969"
-         name="C"
-         valency="4">
-        <cdml:point
-           x="2.955cm"
-           y="4.303cm" />
-      </cdml:atom>
-      <cdml:atom
-         id="atom91976"
-         name="C"
-         valency="4">
-        <cdml:point
-           x="3.655cm"
-           y="4.303cm" />
-      </cdml:atom>
-      <cdml:atom
-         id="atom11226"
-         name="O"
-         pos="center-first"
-         valency="2">
-        <cdml:point
-           x="2.349cm"
-           y="3.953cm" />
-      </cdml:atom>
-      <cdml:bond
-         double_ratio="0.75"
-         end="atom11226"
-         equithick="1"
-         id="bond52356"
-         line_width="1.0"
-         start="atom87618"
-         type="n1" />
-      <cdml:bond
-         double_ratio="0.75"
-         end="atom13969"
-         equithick="1"
-         id="bond94248"
-         line_width="1.0"
-         start="atom11226"
-         type="n1" />
-      <cdml:bond
-         double_ratio="0.75"
-         end="atom87618"
-         equithick="1"
-         id="bond55952"
-         line_width="1.0"
-         start="atom13969"
-         type="n1" />
-      <cdml:bond
-         double_ratio="0.75"
-         end="atom91976"
-         equithick="1"
-         id="bond11481"
-         line_width="1.0"
-         start="atom13969"
-         type="n1" />
-    </cdml:molecule>
-  </cdml:cdml>
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:cml="http://www.xml-cml.org/schema"
+  viewBox="0 0 154.641 134.641"
+  width="154.641"
+  height="134.641"
+  x="0"
+  y="0"
+  font-family="sans-serif"
+  stroke-width="1"
+  stroke-linecap="round">
+  <line x1="103.4" y1="46.5" x2="80.0" y2="60.0" stroke-width="2"/>
+  <line x1="80.0" y1="60.0" x2="60.0" y2="94.6" stroke-width="2"/>
+  <line x1="60.0" y1="94.6" x2="46.5" y2="71.3" stroke-width="2"/>
+  <line x1="53.0" y1="60.0" x2="80.0" y2="60.0" stroke-width="2"/>
+  <text x="110.641016" y="48.000000" fill="rgb(102,102,102)" stroke="rgb(102,102,102)" stroke-width="1" font-size="16">CH</text>
+  <text x="134.641016" y="51.680000" fill="rgb(102,102,102)" stroke="rgb(102,102,102)" stroke-width="1" font-size="13">3</text>
+  <text x="34.000000" y="68.000000" fill="rgb(255,12,12)" stroke="rgb(255,12,12)" stroke-width="1" font-size="16">O</text>
+  <text font-size="18.000000" fill="black" font-family="sans-serif" x="10.000000" y="20.000000"></text>
 </svg>

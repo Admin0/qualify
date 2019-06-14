@@ -1,16 +1,18 @@
-<?xml version="2"?>
+<?xml version="1.0"?>
 <svg
   xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:cml="http://www.xml-cml.org/schema"
-  width="149.282"
-  height="160"
+  width="183.923"
+  height="200"
   x="0"
   y="0"
-  viewBox="0 0 149.282 160"
+  viewBox="0 0 183.923 200"
   font-family="sans-serif"
   stroke-width="1"
   stroke-linecap="round">
+  <line x1="74.6" y1="147.0" x2="74.6" y2="120.0" stroke-width="2"/>
+  <line x1="109.3" y1="100.0" x2="132.7" y2="113.5" stroke-width="2"/>
   <line x1="74.6" y1="120.0" x2="40.0" y2="100.0" stroke-width="2"/>
   <line x1="73.0" y1="110.8" x2="48.8" y2="96.8" stroke-width="2"/>
   <line x1="40.0" y1="100.0" x2="40.0" y2="60.0" stroke-width="2"/>
@@ -20,5 +22,9 @@
   <line x1="109.3" y1="60.0" x2="109.3" y2="100.0" stroke-width="2"/>
   <line x1="102.1" y1="66.0" x2="102.1" y2="94.0" stroke-width="2"/>
   <line x1="109.3" y1="100.0" x2="74.6" y2="120.0" stroke-width="2"/>
+  <text x="70.641016" y="168.000000" fill="rgb(102,102,102)" stroke="rgb(102,102,102)" stroke-width="1" font-size="16">CH</text>
+  <text x="94.641016" y="171.680000" fill="rgb(102,102,102)" stroke="rgb(102,102,102)" stroke-width="1" font-size="13">3</text>
+  <text x="139.923048" y="128.000000" fill="rgb(102,102,102)" stroke="rgb(102,102,102)" stroke-width="1" font-size="16">CH</text>
+  <text x="163.923048" y="131.680000" fill="rgb(102,102,102)" stroke="rgb(102,102,102)" stroke-width="1" font-size="13">3</text>
   <text font-size="18.000000" fill="black" font-family="sans-serif" x="10.000000" y="20.000000"></text>
 </svg>
