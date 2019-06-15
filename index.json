@@ -95,7 +95,13 @@
       "title": "요약-반응식",
       "icon": "poison"
     }, {
-      "title": "필답-2011-1",
+      "title": "필답-2010-1",
+      "icon": "fire_extinguisher"
+    }, {
+      "title": "필답-2010-2",
+      "icon": "fire_extinguisher"
+    }, {
+      "title": "필답-2010-4",
       "icon": "fire_extinguisher"
     }, {
       "title": "필답-2011-2",
@@ -170,6 +176,9 @@
       "icon": "fire_extinguisher",
       "locked": true
     }, {
+      "title": "작업-2013-1",
+      "icon": "exit_sign"
+    }, {
       "title": "작업-2013-2",
       "icon": "exit_sign"
     }, {
@@ -204,6 +213,9 @@
       "icon": "exit_sign"
     }, {
       "title": "작업-2017-4",
+      "icon": "exit_sign"
+    }, {
+      "title": "작업-2018-1",
       "icon": "exit_sign"
     }, {
       "title": "작업-2018-2",
@@ -397,9 +409,6 @@
       "title": "비서-3급",
       "icon": "contract"
     }, {
-      "title": "IT-Plus-Level5",
-      "icon": "microsoft_office"
-    }, {
       "title": "수렵면허-1종",
       "icon": "deer"
     }, {
@@ -418,13 +427,13 @@
       "title": "OHSAS-18001-내부심사자격",
       "icon": "contract"
     }, {
-      "title": "헌혈-유공장-은장",
+      "title": "헌혈-유공장-명예장",
       "icon": "water"
     }, {
       "title": "헌혈-유공장-금장",
       "icon": "water"
     }, {
-      "title": "헌혈-유공장-명예장",
+      "title": "헌혈-유공장-은장",
       "icon": "water"
     }, {
       "title": "자전거-국토종주-인증",

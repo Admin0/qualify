@@ -48,10 +48,13 @@
     margin: 2.5em 0;
   }
 
-  /* .general__dark th.answer,
-  .general__dark td.answer {
-    background: gray;
-  } */
+  .q_wrap.sub p {
+    will-change: transform;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid-column;
+  }
+
 </style>
 
 <div class="contents">
@@ -107,7 +110,7 @@
     <h3>◇ 바나드몰리브덴산암모늄법에 의한 인산전량 정량분석</h3>
     <div class="q_wrap sub">
       <p class="question sub">표준인산액</p>
-      <p>황산데시케이터에서 건조한 특급 <span class="K">제1인산칼륨</span><span class="N">제1인산암모늄</span>(순도는 시약병에 명기된 내용을 감안하여 계산하되, 순도가 명기되지 않은 경우에는 99.99%를 기준으로 계산하시오)[(<span class="K">$\ce{KH3PO4}$</span><span class="N">$\ce{NH4H3PO4}$</span>)의 분자량은 <span class="K">136.08934</span><span
+      <p>황산데시케이터에서 건조한 특급 <span class="K">제1인산칼륨</span><span class="N">제1인산암모늄</span>(순도는 시약병에 명기된 내용을 감안하여 계산하되, 순도가 명기되지 않은 경우에는 99.99%를 기준으로 계산하시오)[(<span class="K">$\ce{KH3PO4}$</span><span class="N">$\ce{NH4H2PO4}$</span>)의 분자량은 <span class="K">136.08934</span><span
           class="N">115.0255</span>, 원자량은 각각 K는 39.102, P는 30.9738, O는 15.9994, N는 14.0097, H는
         1.00797]으로 액 1 mL 중에 $\ce{P2O5}$로써 1 mg이 함유되도록 1
         L를 조제한다.</p>
@@ -118,7 +121,7 @@
       <div class="question sub">
         <h3>미지시료 조제</h3>
       </div>
-      <p>시험위원이 제시한 공시품(<span class="K">$\ce{KH3PO4}$</span><span class="N">$\ce{NH4H3PO4}$</span>)을 저울로 정확하게 취하고(저울의 소숫점 4째 자리에 나타나나 값을 시료 채취량으로 할 수 있습니다.) 적당량의 물을 이용하여 완전히 녹인 후 염산 약 $\pu{30 ml}$ 및 질산 약 $\pu{10 ml}$를 가한 다음 공시품이 완전히 녹은 것을 확인한 후 물을
+      <p>시험위원이 제시한 공시품(<span class="K">$\ce{KH3PO4}$</span><span class="N">$\ce{NH4H2PO4}$</span>)을 저울로 정확하게 취하고(저울의 소숫점 4째 자리에 나타나나 값을 시료 채취량으로 할 수 있습니다.) 적당량의 물을 이용하여 완전히 녹인 후 염산 약 $\pu{30 ml}$ 및 질산 약 $\pu{10 ml}$를 가한 다음 공시품이 완전히 녹은 것을 확인한 후 물을
         가하여
         정확하게 $\pu{1 L}$를 조제한다.</p>
 
@@ -135,14 +138,14 @@
   <hr>
 
   <div class="button">
-    <span class="key on" id="K">$\ce{KH3PO4}$</span><span class="key" id="N">$\ce{NH4H3PO4}$</span>
+    <span class="key on" id="K">$\ce{KH3PO4}$</span><span class="key" id="N">$\ce{NH4H2PO4}$</span>
   </div>
 
   <hr>
 
   <div class="q_wrap">
     <div class="question">
-      표준물 <span class="K">$\ce{KH3PO4}$</span><span class="N">$\ce{NH4H3PO4}$</span>를 이용하여 $\ce{P2O5}$ 농도가 1000 ppm이 되는 용액 1 L를 만들려고 한다. 이때 취해야할 <span class="K">$\ce{KH3PO4}$</span><span class="N">$\ce{NH4H3PO4}$</span>의 질량(g)은 얼마인가?
+      표준물 <span class="K">$\ce{KH3PO4}$</span><span class="N">$\ce{NH4H2PO4}$</span>를 이용하여 $\ce{P2O5}$ 농도가 1000 ppm이 되는 용액 1 L를 만들려고 한다. 이때 취해야할 <span class="K">$\ce{KH3PO4}$</span><span class="N">$\ce{NH4H2PO4}$</span>의 질량(g)은 얼마인가?
     </div>
     <div class="answer K">
       $\ce{
@@ -155,20 +158,20 @@
     <div class="answer N">
       $\ce{
       \begin{array}{ c | c | c | c | c }
-      \ce{1 g P2O5} & mol & 2 NH4H3PO4 & \ce{115.0255 g NH4H3PO4} & 100\\ \hline
+      \ce{1 g P2O5} & mol & 2 NH4H2PO4 & \ce{115.0255 g NH4H2PO4} & 100\\ \hline
       L & \ce{141.9446 g P2O5} & 1 P2O5 & mol & 99.99
-      \end{array} \\ = \ce{1.6209 g NH4H3PO4}
+      \end{array} \\ = \ce{1.6209 g NH4H2PO4}
       }$
     </div>
     <div class="comment">
-      <p><span class="K">$\ce{KH3PO4 1.9177 g}$</span><span class="N">$\ce{NH4H3PO4 1.6209 g}$</span>을 $\ce{1 L}$ 부피 플라스크에 넣고 표선까지 물을 채워, $\ce{1000 ppm}$ 용액을 만든다.</p>
+      <p><span class="K">$\ce{KH3PO4 1.9177 g}$</span><span class="N">$\ce{NH4H2PO4 1.6209 g}$</span>을 $\ce{1 L}$ 부피 플라스크에 넣고 표선까지 물을 채워, $\ce{1000 ppm}$ 용액을 만든다.</p>
       <p>$\ce{1000 ppm}$ 용액을 $\ce{250 mL}$ 부피플라스크(준비된 적당한 크기의 플라스크에 만들면 된다)에 $\ce{25 mL}$ 넣고 표선까지 물을 채워 $\ce{100 ppm}$ 용액을 만든다.</p>
       <p>$\ce{100 mL}$ 부피플라스크에 표준용액을 각각 $\ce{0, 5, 10, 15 mL}$ 씩 넣고, 각 플라스크에 발색시약을 $\ce{20 mL}$ 씩 넣은 뒤 표선까지 물을 채워 $\ce{0, 5, 10, 15 ppm}$ 표준용액을 만든다.</p>
     </div>
   </div>
 
   <div class="q_wrap">
-    <div class="question">미지시료(공시료) <span class="K">$\ce{KH3PO4}$</span><span class="N">$\ce{NH4H3PO4}$</span> 0.3000 g으로 1 L 용액을 만든 후 20 ppm 이하가 되도록 100 mL 플라스크에 취했다면, 이 용액에 들어있는 $\ce{P2O5}$의 ppm 농도는 얼마인가?
+    <div class="question">미지시료(공시료) <span class="K">$\ce{KH3PO4}$</span><span class="N">$\ce{NH4H2PO4}$</span> 0.3000 g으로 1 L 용액을 만든 후 20 ppm 이하가 되도록 100 mL 플라스크에 취했다면, 이 용액에 들어있는 $\ce{P2O5}$의 ppm 농도는 얼마인가?
     </div>
     <div class="answer K">
       $\ce{
@@ -318,7 +321,7 @@
     <div class="answer N">
       $
       \pu{7.542 ppm} \times \frac{\pu{100 ml}}{\pu{3.81 ml}} = \ce{197.95 ppm P2O5}\text{이므로,} \\
-      \frac{\ce{197.95 ppm P2O5}}{\ce{300 ppm NH4H3PO4}} \times 100 = 65.98\% (\text{이론 값} = 61.7\%)
+      \frac{\ce{197.95 ppm P2O5}}{\ce{300 ppm NH4H2PO4}} \times 100 = 65.98\% (\text{이론 값} = 61.7\%)
       $
     </div>
   </div>
