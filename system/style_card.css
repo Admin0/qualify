@@ -181,6 +181,18 @@ body.page {
   text-indent: 0;
 }
 
+.contents table .small {
+  font-size: .75em;
+}
+
+.contents table span {
+  white-space: nowrap;
+}
+
+.contents table .no {
+  text-align: right;
+}
+
 .contents table th,
 .contents table td {
   border: 1px solid;
