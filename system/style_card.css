@@ -199,6 +199,18 @@ body.page {
   padding: 0.25em 0.5em;
 }
 
+.contents table.no-border th,
+.contents table.no-border td {
+  border: 0;
+}
+
+.contents table.center th,
+.contents table.center td,
+.contents table tr.center th,
+.contents table tr.center td {
+  text-align: center;
+}
+
 .contents table caption {
   text-align: left;
 }
@@ -267,8 +279,10 @@ body.page {
 /*                 img                  */
 /****************************************/
 .contents .img, .contents img, .contents .svg, .contents svg, .contents object, .contents .load {
+  width: inherit;
   max-width: 100%;
   height: inherit;
+  max-height: inherit;
   margin-left: 0;
   transition: .25s fill;
 }
@@ -303,6 +317,18 @@ body.page {
 
 .contents .w500px {
   max-width: 500px;
+}
+
+.contents .h50px {
+  max-height: 50px;
+}
+
+.contents .h75px {
+  max-height: 75px;
+}
+
+.contents .h100px {
+  max-height: 100px;
 }
 
 .translation {
