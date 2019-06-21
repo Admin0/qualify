@@ -92,6 +92,9 @@
       "title": "요약-지정수량",
       "icon": "poison"
     }, {
+      "title": "요약-제5류위험물",
+      "icon": "poison"
+    }, {
       "title": "요약-보유공지",
       "icon": "poison"
     }, {
