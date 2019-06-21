@@ -189,10 +189,6 @@ body.page {
   white-space: nowrap;
 }
 
-.contents table .no {
-  text-align: right;
-}
-
 .contents table th,
 .contents table td {
   border: 1px solid;
@@ -207,8 +203,16 @@ body.page {
 .contents table.center th,
 .contents table.center td,
 .contents table tr.center th,
-.contents table tr.center td {
+.contents table tr.center td,
+.contents table tr th.center,
+.contents table tr td.center {
   text-align: center;
+}
+
+.contents table .no,
+.contents table.right td,
+.contents table tr.right td {
+  text-align: right;
 }
 
 .contents table caption {
