@@ -207,5 +207,9 @@ function console_event(code) {
     default:
 
   }
+  $('#tooltip').css({
+    'visibility': 'hidden',
+    'opacity': 0
+  });
 }
 // console.log("loaded main__initialize_console.js");
