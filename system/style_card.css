@@ -283,7 +283,7 @@ body.page {
 /*                 img                  */
 /****************************************/
 .contents .img, .contents img, .contents .svg, .contents svg, .contents object, .contents .load {
-  width: inherit;
+  width: fit-content;
   max-width: 100%;
   height: inherit;
   max-height: inherit;
