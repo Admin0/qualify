@@ -255,7 +255,7 @@ body.page {
 
 .contents .q_list ul li {
   flex: auto;
-  /* padding-left: 0; */
+  padding-left: .5em;
   list-style: none;
 }
 
@@ -282,8 +282,8 @@ body.page {
 /****************************************/
 /*                 img                  */
 /****************************************/
-.contents .img, .contents img, .contents .svg, .contents svg, .contents object, .contents .load {
-  width: fit-content;
+.contents .img, .contents img, .contents .svg, .contents svg, .contents object {
+  width: auto;
   max-width: 100%;
   height: inherit;
   max-height: inherit;
