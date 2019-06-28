@@ -1,33 +1,100 @@
 <!-- <h2 id="" class=""><a href="">메뉴</a></h2> -->
 
-<div onclick="$('#setting, #setting_bg').toggleClass('on');$('#setting').css({ 'top': $('#context_menu').offset().top - pageYOffset, 'left': $('#context_menu').offset().left});$('#context_menu').removeClass('on');">
-  <i class="material-icons">settings</i><span>설정</span>
-  <span class="shortcut">S</span>
+<div class="">
+  <div onclick="$('#setting, #setting_bg').toggleClass('on');$('#setting').css({ 'top': $('#context_menu').offset().top - pageYOffset, 'left': $('#context_menu').offset().left});$('#context_menu').removeClass('on');">
+    <i class="material-icons">settings</i><span>설정</span>
+    <span class="shortcut">S</span>
+  </div>
 </div>
-
-<hr>
-
-<div class="" onclick="load('notice');">
-  <i class="material-icons">notifications</i><span>안내</span>
-  <span class="shortcut">1</span>
+<div class="">
+  <div class="" onclick=console_event(".");>
+    <i class="material-icons">control_camera</i><span>다음 문제로</span>
+    <span class="shortcut">오른쪽 화살표</span>
+  </div>
+  <div class="" onclick='console_event(",");'>
+    <i class="material-icons"></i><span>이전 문제로</span>
+    <span class="shortcut">왼쪽 화살표</span>
+  </div>
+  <div class="" onclick='console_event("o");'>
+    <i class="material-icons"></i><span>새창으로 열기</span>
+    <span class="shortcut">O</span>
+  </div>
+  <div class="" onclick='console_event("q");'>
+    <i class="material-icons"></i><span>초기 화면으로 나가기</span>
+    <span class="shortcut">ESC</span>
+  </div>
 </div>
-<div class="" onclick="window.open('https://open.kakao.com/o/gEhgBDqb');">
-  <i class="material-icons">flag</i><span>문제 오류 알려주기</span>
+<div class="">
+  <div class="" onclick="setTimeout(function(){window.print();},300);">
+    <i class="material-icons">print</i><span>인쇄</span>
+    <span class="shortcut">Ctrl + P</span>
+  </div>
+  <div onclick="/*$('#share, #setting_bg').addClass('on');$('#context_menu').removeClass('on');*/">
+    <i class="material-icons"></i><span>#qulify 공유하기</span>
+    <span class="shortcut">R</span>
+    <span style="float:right;">▸</span>
+    <section class="context_menu">
+      <div>
+        <p onclick="kakao_share();"><i class="material-icons"> <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="136.000000pt" height="138.000000pt" viewBox="0 0 136.000000 138.000000" preserveAspectRatio="xMidYMid meet">
+              <g transform="translate(0.000000,138.000000) scale(0.100000,-0.100000)" stroke="none">
+                <path d="M510 1164 c-159 -42 -293 -142 -353 -263 -29 -59 -32 -74 -32 -156 0
+            -77 4 -98 27 -148 31 -66 114 -158 175 -194 24 -14 43 -30 43 -36 0 -7 -11
+            -52 -24 -102 -37 -139 -39 -139 174 10 44 31 50 32 175 38 137 5 188 18 295
+            72 79 40 161 123 201 203 31 61 34 75 34 157 0 82 -3 96 -34 157 -62 124 -193
+            221 -356 263 -75 19 -251 19 -325 -1z m-37 -308 c8 -20 -13 -36 -45 -36 l-28
+            0 0 -99 c0 -75 -4 -101 -15 -111 -31 -26 -44 5 -47 108 -3 95 -4 97 -28 100
+            -33 5 -50 20 -43 38 7 20 198 20 206 0z m116 0 c10 -12 61 -143 81 -208 11
+            -34 -11 -58 -35 -38 -8 7 -15 19 -15 26 0 10 -15 14 -58 14 -53 0 -60 -2 -70
+            -25 -13 -29 -24 -31 -42 -10 -11 13 -10 25 7 68 12 29 29 75 39 102 28 79 64
+            107 93 71z m169 -93 l3 -103 29 0 c41 0 60 -10 60 -30 0 -22 -19 -30 -71 -30
+            -75 0 -79 6 -79 130 0 125 4 142 34 138 20 -3 21 -10 24 -105z m170 72 c6 -60
+            10 -61 60 -12 50 49 69 57 78 32 4 -9 -10 -33 -35 -60 l-41 -45 45 -62 c42
+            -56 45 -63 30 -77 -15 -15 -19 -13 -48 19 -18 19 -39 46 -48 59 -21 34 -39 19
+            -39 -34 0 -44 -22 -67 -44 -45 -12 12 -21 176 -12 225 6 30 11 36 29 33 16 -2
+            23 -11 25 -33z" />
+                <path d="M552 788 c-6 -8 -15 -28 -18 -45 -5 -27 -3 -31 21 -35 34 -7 39 7 22
+            56 -11 31 -15 35 -25 24z" />
+              </g>
+            </svg></i>kakao talk</p>
+        <p onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=https://jinh.kr/qualify/', '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes')"><i class="material-icons"><svg xmlns="http://www.w3.org/2000/svg" x="0px"
+              y="0px" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M19,3H5C3.895,3,3,3.895,3,5v14c0,1.105,0.895,2,2,2h7.621v-6.961h-2.343v-2.725h2.343V9.309 c0-2.324,1.421-3.591,3.495-3.591c0.699-0.002,1.397,0.034,2.092,0.105v2.43h-1.428c-1.13,0-1.35,0.534-1.35,1.322v1.735h2.7 l-0.351,2.725h-2.365V21H19c1.105,0,2-0.895,2-2V5C21,3.895,20.105,3,19,3z"></path>
+            </svg></i>facebook</p>
+        <p onclick="window.open('https://twitter.com/intent/tweet?url=https://jinh.kr/qualify/&hashtags=자격증%2CQ-net&text=자격왕이될테야&original_referer=', '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes')"><i class="material-icons">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="96px" height="96px">
+              <path d="M19,3H5C3.895,3,3,3.895,3,5v14c0,1.105,0.895,2,2,2h14c1.105,0,2-0.895,2-2V5C21,3.895,20.105,3,19,3z M17.05,9.514 c0,0.086,0,0.171,0,0.343c0,3.257-2.486,7.029-7.029,7.029c-1.371,0-2.657-0.429-3.771-1.114c0.171,0,0.429,0,0.6,0 c1.114,0,2.229-0.429,3.086-1.029c-1.114,0-1.971-0.771-2.314-1.714c0.171,0,0.343,0.086,0.429,0.086c0.257,0,0.429,0,0.686-0.086 c-1.114-0.257-1.971-1.2-1.971-2.4c0.343,0.171,0.686,0.257,1.114,0.343c-0.686-0.6-1.114-1.286-1.114-2.143 c0-0.429,0.086-0.857,0.343-1.2c1.2,1.457,3,2.486,5.057,2.571c0-0.171-0.086-0.343-0.086-0.6c0-1.371,1.114-2.486,2.486-2.486 c0.686,0,1.371,0.257,1.8,0.771c0.6-0.086,1.114-0.343,1.543-0.6c-0.171,0.6-0.6,1.029-1.114,1.371 c0.514-0.086,0.943-0.171,1.457-0.429C17.907,8.743,17.479,9.171,17.05,9.514z" />
+            </svg></i>twitter</p>
+        <p onclick="toast('링크가 복사되었습니다.')"><i class="material-icons"><img style="width:24px;" src="//jinh.kr/images/icon__qualify.png" alt=""></i>link</p>
+      </div>
+    </section>
+  </div>
 </div>
-<div class="" onclick="window.open('//blog.jinh.kr/guestbook/');">
-  <i class="material-icons">create</i><span>리뷰남기기</span>
+<div class="">
+  <div class="" onclick="load('notice');">
+    <i class="material-icons">flag</i><span>도움말</span>
+    <span class="shortcut">1</span>
+  </div>
+  <div class="" onclick="window.open('https://open.kakao.com/o/gEhgBDqb');">
+    <i class="material-icons"></i><span>문제 오류 제보하기</span>
+    <section class="context_menu">
+      
+    </section>
+  </div>
+  <div class="" onclick="window.open('//blog.jinh.kr/guestbook/');">
+    <i class="material-icons"></i><span>리뷰남기기</span>
+  </div>
 </div>
-<div class="" onclick="window.open('//jinh.kr/bucket/#license');">
-  <i class="material-icons">playlist_add_check</i><span>#버킷리스트 바로가기</span>
-  <span class="shortcut">Q</span>
-</div>
-<div onclick="$('#share, #setting_bg').addClass('on');$('#context_menu').removeClass('on');">
-  <i class="material-icons">share</i><span>#qulify 공유하기</span>
-  <span class="shortcut">R</span>
-</div>
-<div onclick="$('#main_item').load('opensource_license.html',function(){after_load('opensource_license');});$('#context_menu').removeClass('on');">
-  <i class="material-icons">favorite</i><span>오픈소스 라이선스</span>
-</div>
-<div onclick="$('#main_item').load('update_log.html',function(){after_load('update_log');});$('#context_menu').removeClass('on');">
-  <i class="material-icons">update</i><span>업데이트 기록</span>
+<div class="">
+  <div class="" onclick="window.open('//jinh.kr/bucket/#license');">
+    <i class="material-icons">favorite</i><span>#버킷리스트 바로가기</span>
+    <span class="shortcut"></span>
+  </div>
+  <div onclick="$('#main_item').load('opensource_license.html',function(){after_load('opensource_license');});$('#context_menu').removeClass('on');">
+    <i class="material-icons"></i><span>오픈소스 라이선스</span>
+    <span class="shortcut"></span>
+  </div>
+  <div onclick="$('#main_item').load('update_log.html',function(){after_load('update_log');});$('#context_menu').removeClass('on');">
+    <i class="material-icons"></i><span>업데이트 기록</span>
+    <span class="shortcut"></span>
+  </div>
 </div>

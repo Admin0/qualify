@@ -1,14 +1,13 @@
 /* ------------------------------------------------------------------- */
 /* ***** context-menu ***** */
 /* ------------------------------------------------------------------- */
-#context_menu {
+#context_menu, .context_menu {
   z-index: 5;
   position: fixed;
   opacity: 0;
   visibility: hidden;
   cursor: default;
-  padding: .5em 0;
-  color: rgba(0, 0, 0, .5);
+  /* color: rgba(0, 0, 0, .5); */
   background-color: #fff;
   /* border: 1px solid #bbb; */
   border-radius: 3px;
@@ -17,12 +16,61 @@
   transition-property: opacity, transform, margin, visibility;
   top: 50%;
   font-size: 14px;
-  width: 250px;
+  width: fit-content;
+  min-width: 350px;
   transform: perspective(500px) rotateX(15deg);
   margin-top: -2em;
 }
 
-#context_menu.on {
+.context_menu {
+  position: absolute;
+  /*left: calc(100% - .5em);*/
+  min-width: 50px;
+  white-space: nowrap;
+  transform: none;
+  margin-top: 0;
+}
+
+#context_menu>div,
+.context_menu>div {
+  padding: .5em 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.general__dark #context_menu>div,
+.general__dark .context_menu>div {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+#context_menu>div:last-child,
+.context_menu>div:last-child {
+  border-bottom: none;
+}
+
+#context_menu>div>*,
+.context_menu>div>* {
+  padding: .5em 1em .5em 1em;
+  margin: 0;
+  text-decoration: none;
+}
+
+#context_menu>div>*:not(.context_disable),
+.context_menu>div>*:not(.context_disable) {
+  /* color: #000; */
+}
+
+#context_menu>div>*:not(.context_disable):hover,
+.context_menu>div>*:not(.context_disable):hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#context_menu>div>*:not(.context_disable):hover>.context_menu, .context_menu:hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+#context_menu.on,
+.context_menu:hover {
   transform: none;
   transform-origin: 50% 100%;
   margin-top: 0;
@@ -30,28 +78,23 @@
   opacity: 1;
 }
 
-#context_menu div {
-  padding: .5em 1em;
-  margin: 0;
-  font-weight: 700;
-}
-
-#context_menu div:hover {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-#context_menu hr {
-  opacity: .5;
-  margin: .5em 0;
-}
-
 #context_menu div i {
-  /* opacity: .75; */
+  opacity: .75;
+  width: 20px;
   font-size: 20px;
+  /* margin-bottom: -2px; */
 }
-#context_menu .shortcut::before{
-  content: "(";
+
+#context_menu .shortcut {
+  position: absolute;
+  margin-right: 2em;
+  right: 0;
 }
-#context_menu .shortcut::after{
-  content: ")";
+
+#context_menu .shortcut::before {
+  /* content: "("; */
+}
+
+#context_menu .shortcut::after {
+  /* content: ")"; */
 }

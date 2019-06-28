@@ -104,7 +104,8 @@
 }
 
 /* context */
-.general__dark #context_menu {
+.general__dark #context_menu,
+.general__dark .context_menu {
   background: #424242;
   color: rgb(189, 193, 198);
   ;

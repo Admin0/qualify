@@ -1,15 +1,12 @@
 function context_menu() {
-
   var c = $("#context_menu");
   var target = $(this);
   var output = "";
 
   $("body").on("contextmenu", function(event) {
     event.preventDefault();
-
     if (!is_mobile) {
       function set_location() {
-
         var context_x,
           context_y,
           con_sub_x,
@@ -29,20 +26,23 @@ function context_menu() {
           'top': context_y + "px"
         }).addClass("on");
         $('.context_menu').parent().hover(function() { //하위 메뉴 항목
-          if ($(document).width() - c.outerWidth() - target.children().last().outerWidth() > event.pageX) {
+          if ($(document).width() - c.outerWidth() - $(this).children().last().outerWidth() > event.pageX) {
             con_sub_x = 'calc(100% - .5em)';
           } else {
-            con_sub_x = 'calc(' + (-target.children().last().outerWidth()) + 'px + .5em)';
+            con_sub_x = 'calc(' + (-$(this).children().last().outerWidth()) + 'px + .5em)';
           }
-          if ($(window).height() - target.children().last().outerHeight() - target.position().top > event.pageY - $(document).scrollTop()) {
-            con_sub_y = '-7px';
+          if ($(window).height() - $(this).children().last().outerHeight() - $(this).position().top >
+            event.pageY) {
+            con_sub_y = $(this).position().top - 7 + 'px';
           } else {
-            con_sub_y = $(window).height() - c.position().top - target.position().top - target.children().last().outerHeight() + 'px';
+            con_sub_y = $(window).height() - c.position().top - $(this).children().last().outerHeight() + "px";
           }
-          target.children().last().css({
+          $(this).children().last().css({
             'left': con_sub_x,
             'top': con_sub_y
           });
+        }).on("click", function(event) {
+          c.removeClass("on");
         });
       }
       set_location();
@@ -66,5 +66,6 @@ function context_menu() {
       //    $('#output_for_context_menu').html('3');
       c.removeClass("on");
     }
+    c.removeClass("on");
   });
 }
