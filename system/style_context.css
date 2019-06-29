@@ -18,13 +18,12 @@
   font-size: 14px;
   width: fit-content;
   min-width: 350px;
-  transform: perspective(500px) rotateX(15deg);
+  transform: perspective(1000px) rotateX(15deg);
   margin-top: -2em;
 }
 
 .context_menu {
   position: absolute;
-  /*left: calc(100% - .5em);*/
   min-width: 50px;
   white-space: nowrap;
   transform: none;

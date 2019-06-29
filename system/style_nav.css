@@ -204,6 +204,13 @@ nav #nav_item_list {
   padding-bottom: 16px;
 }
 
+nav hr {
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12) inset;
+  margin: 16px 0;
+  border: none;
+  height: 1px;
+}
+
 nav #nav_menu {
   padding-top: 14px;
 }

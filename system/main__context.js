@@ -25,18 +25,18 @@ function context_menu() {
           'left': context_x + "px",
           'top': context_y + "px"
         }).addClass("on");
-        $('.context_menu').parent().hover(function() { //하위 메뉴 항목
+        $('section.context_menu').parent().hover(function() { //하위 메뉴 항목
           if ($(document).width() - c.outerWidth() - $(this).children().last().outerWidth() > event.pageX) {
             con_sub_x = 'calc(100% - .5em)';
           } else {
             con_sub_x = 'calc(' + (-$(this).children().last().outerWidth()) + 'px + .5em)';
           }
-          if ($(window).height() - $(this).children().last().outerHeight() - $(this).position().top >
-            event.pageY) {
+          if ($(document).height() - $(this).position().top > $(this).children().last().outerHeight()) {
             con_sub_y = $(this).position().top - 7 + 'px';
           } else {
             con_sub_y = $(window).height() - c.position().top - $(this).children().last().outerHeight() + "px";
           }
+          console.log($(window).height() - $(this).children().last().outerHeight() - $(this).position().top);
           $(this).children().last().css({
             'left': con_sub_x,
             'top': con_sub_y
