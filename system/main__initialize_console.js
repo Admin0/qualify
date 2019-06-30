@@ -122,6 +122,7 @@ function console_event(code) {
 
       $('nav').removeClass('shadow-right');
       $('header').removeClass('shadow-bottom');
+      console_event(",.");
       break;
     case "f":
       if (!$("#item_list h2").hasClass("slided")) {
@@ -160,6 +161,30 @@ function console_event(code) {
         history.pushState(null, null, url);
       } else {
         toast("이동할 수 있는 다음 항목이 없습니다.");
+      }
+      break;
+    case ",.":
+      var t = $("section.targeted");
+      if (t.prev('section.item').length != 0 && t.prev('section.item').attr('locked') != "true") {
+        $("nav .prev").removeClass("disabled");
+        $("#context_menu .prev").removeClass("disabled");
+      } else {
+        $("nav .prev").addClass("disabled");
+        $("#context_menu .prev").addClass("disabled");
+      }
+      if (t.next('section.item').length != 0 && t.next('section.item').attr('locked') != "true") {
+        $("nav .next").removeClass("disabled");
+        $("#context_menu .next").removeClass("disabled");
+      } else {
+        $("nav .next").addClass("disabled");
+        $("#context_menu .next").addClass("disabled");
+      }
+      if ($('#main_item .contents').hasClass('on')) {
+        $("#context_menu .open").removeClass("disabled");
+        $("#context_menu .exit").removeClass("disabled");
+      } else {
+        $("#context_menu .open").addClass("disabled");
+        $("#context_menu .exit").addClass("disabled");
       }
       break;
     case "d":

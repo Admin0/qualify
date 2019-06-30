@@ -119,6 +119,8 @@ function scroll_at_open() {
       load($(target).attr("name"), $(target).attr("round"));
       console.log("load at open: " + $(target).attr("name") + ", " + $(target).attr("round"));
     }, 0)
+  } else {
+    console_event(",.");
   }
 }
 

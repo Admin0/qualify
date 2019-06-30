@@ -76,7 +76,7 @@ nav:not(.fold) a {
   text-overflow: ellipsis;
 }
 
-nav a:hover {
+nav .item:not(.disabled) a:hover {
   background: rgba(158, 158, 158, .2);
   box-shadow: none;
   z-index: 1

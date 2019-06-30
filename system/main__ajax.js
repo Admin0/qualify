@@ -27,6 +27,9 @@ function after_load(full_id) {
     scrollTop: 0
   }, pageYOffset / 2);
 
+  // next | prev able test
+  console_event(",.");
+
   // x axis scroller reload (sub__scroll.js)
   if (!is_mobile) {
     $('.contents').hScroll(300); // You can pass (optionally) scrolling amount

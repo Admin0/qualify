@@ -69,7 +69,7 @@
     }, {
       "title": "필답-2018-1",
       "icon": "test_tube",
-      "locked": true
+      "locked": false
     }, {
       "title": "필답-2018-4",
       "icon": "test_tube",
@@ -81,6 +81,10 @@
     }, {
       "title": "후기",
       "icon": "contract"
+    }, {
+      "title": "필답-2019-2",
+      "icon": "test_tube",
+      "locked": true
     }, {
       "title": "작업",
       "icon": "water"
@@ -172,13 +176,17 @@
     }, {
       "title": "필답-2018-2",
       "icon": "fire_extinguisher",
-      "locked": true
+      "locked": false
     }, {
       "title": "필답-2018-4",
       "icon": "fire_extinguisher",
       "locked": true
     }, {
       "title": "필답-2019-1",
+      "icon": "fire_extinguisher",
+      "locked": true
+    }, {
+      "title": "필답-2019-2",
       "icon": "fire_extinguisher",
       "locked": true
     }, {
@@ -235,13 +243,17 @@
     }, {
       "title": "작업-2018-2",
       "icon": "exit_sign",
-      "locked": true
+      "locked": false
     }, {
       "title": "작업-2018-4",
       "icon": "exit_sign",
       "locked": true
     }, {
       "title": "작업-2019-1",
+      "icon": "exit_sign",
+      "locked": true
+    }, {
+      "title": "작업-2019-2",
       "icon": "exit_sign",
       "locked": true
     }]

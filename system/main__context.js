@@ -36,7 +36,6 @@ function context_menu() {
           } else {
             con_sub_y = $(window).height() - c.position().top - $(this).children().last().outerHeight() + "px";
           }
-          console.log($(window).height() - $(this).children().last().outerHeight() - $(this).position().top);
           $(this).children().last().css({
             'left': con_sub_x,
             'top': con_sub_y

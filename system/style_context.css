@@ -53,17 +53,17 @@
   text-decoration: none;
 }
 
-#context_menu>div>*:not(.context_disable),
-.context_menu>div>*:not(.context_disable) {
+#context_menu>div>*:not(.disabled),
+.context_menu>div>*:not(.disabled) {
   /* color: #000; */
 }
 
-#context_menu>div>*:not(.context_disable):hover,
-.context_menu>div>*:not(.context_disable):hover {
+#context_menu>div>*:not(.disabled):hover,
+.context_menu>div>*:not(.disabled):hover {
   background: rgba(0, 0, 0, 0.2);
 }
 
-#context_menu>div>*:not(.context_disable):hover>.context_menu, .context_menu:hover {
+#context_menu>div>*:not(.disabled):hover>.context_menu, .context_menu:hover {
   opacity: 1;
   visibility: visible;
 }

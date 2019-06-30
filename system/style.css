@@ -193,8 +193,9 @@ header:hover #print_icon {
   opacity: 1;
 }
 
-.disabled {
-  color: rgba(255, 255, 255, 0.3) !important;
+.disabled,
+.disabled a {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .hide {
@@ -726,6 +727,6 @@ div#splash svg {
   }
 
   footer {
-    box-shadow: none!important;
+    box-shadow: none !important;
   }
 }

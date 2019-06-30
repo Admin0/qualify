@@ -27,6 +27,7 @@ footer {
   right: 0;
   color: #888;
   font-size: 8pt;
+  box-shadow: none!important;
 }
 
 footer:after {
