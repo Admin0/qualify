@@ -125,6 +125,12 @@
   box-shadow: 0 0px #212121;
 }
 
+/* .disabled */
+.disabled,
+.disabled a {
+  color: rgba(255, 255, 255, 0.3)!important;
+}
+
 /* .targeted */
 .general__dark .targeted {
   background: rgba(158, 158, 158, .2) !important;
