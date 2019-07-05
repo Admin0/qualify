@@ -130,11 +130,19 @@ body.page {
   margin-bottom: 1em;
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: normal;
-  width: fit-content;
+  /* width: fit-content; */
 }
 
 /* .multiple_choice */
-.contents.multiple_choice .q_wrap .answer {}
+.contents.multiple_choice .q_wrap .answer ol.inline {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.contents.multiple_choice .q_wrap .answer ol.inline li {
+  margin-right: 2em;
+  flex: auto;
+}
 
 .q_wrap .comment {
   font-size: .75em;
