@@ -130,16 +130,20 @@ body.page {
   margin-bottom: 1em;
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: normal;
-  /* width: fit-content; */
+  width: fit-content;
 }
 
 /* .multiple_choice */
-.contents.multiple_choice .q_wrap .answer ol.inline {
+.contents.multiple_choice .q_wrap .answer.inline {
+  width: 100%;
+}
+
+.contents.multiple_choice .q_wrap .answer.inline ol {
   display: flex;
   flex-flow: wrap;
 }
 
-.contents.multiple_choice .q_wrap .answer ol.inline li {
+.contents.multiple_choice .q_wrap .answer.inline ol li {
   margin-right: 2em;
   flex: auto;
 }
