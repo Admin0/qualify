@@ -43,6 +43,14 @@ shortcut.add("F", function() {
   console_event("f");
 });
 
+shortcut.add("1", function() {
+  console_event("1");
+});
+
+shortcut.add("F1", function() {
+  console_event("1");
+});
+
 $(document).keyup(function(event) {
   // console.log("key is up");
   event.preventDefault();
@@ -88,9 +96,6 @@ $(document).keyup(function(event) {
         break;
       case 78: // n
         console_event("n");
-        break;
-      case 49: // 1
-        console_event("1");
         break;
       case 220: // \
         console_event("helper");

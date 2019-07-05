@@ -26,9 +26,16 @@
   color: rgb(189, 193, 198);
 }
 
-.general__dark.answer__quiz .q_wrap .answer {
+.general__dark.answer__quiz .q_wrap .answer,
+.general__dark .contents.multiple_choice .q_wrap .answer li[checked],
+.general__dark.answer__quiz .contents.multiple_choice .q_wrap:hover .answer li[checked] {
   background: #424242C0;
   outline-color: #424242C0;
+}
+
+.general__dark:not(.answer__quiz) .contents.multiple_choice .q_wrap .answer li[checked],
+.general__dark.answer__quiz .contents.multiple_choice .q_wrap:hover .answer li[checked] {
+  color: #c8b900;
 }
 
 /* imgs */
@@ -128,7 +135,7 @@
 /* .disabled */
 .general__dark .disabled,
 .general__dark .disabled a {
-  color: rgba(255, 255, 255, 0.3)!important;
+  color: rgba(255, 255, 255, 0.3) !important;
 }
 
 /* .targeted */

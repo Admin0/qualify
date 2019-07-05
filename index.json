@@ -379,6 +379,16 @@
       "icon": "oil_pump"
     }]
   },
+  "공인중개사": {
+    "title": "공인중개사 <span class='translation'>(추가중)</span>",
+    "contents": [{
+      "title": "2018-1-1"
+    }, {
+      "title": "2018-2-1"
+    }, {
+      "title": "2018-2-2"
+    }]
+  },
   "화약류제조기사": {
     "title": "화약류제조기사 <span class='translation'>(준비중) (2020년 2회까지 필기 3과목 면제)</span>"
   },
