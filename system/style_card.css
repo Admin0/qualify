@@ -36,12 +36,12 @@ body.page {
   counter-reset: numList;
 }
 
-.contents ol>li:before {
+.contents div:not(.h):not(.hc)>ol>li:before {
   counter-increment: numList;
   content: counter(numList);
 }
 
-.contents ol>li:before,
+.contents div:not(.h):not(.hc)>ol>li:before,
 .contents .encircled {
   font-size: 0.75em;
   margin: 0 .5em 0 -1.85em;
@@ -130,7 +130,7 @@ body.page {
   margin-bottom: 1em;
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: normal;
-  width: fit-content;
+  /* width: fit-content; */
 }
 
 /* .multiple_choice */
@@ -266,25 +266,53 @@ body.page {
   width: calc(100% - 1em - 2px);
 }
 
+/* v mean vertical */
+.contents .q_list.v ol,
+.contents .q_list.v ul {
+  display: block;
+}
+
 .contents .q_list li {
   flex: auto;
   padding-left: 1.65em;
 }
 
-.contents .q_list ul li {
+.contents .q_list:not(.v) ul li {
   flex: auto;
   padding-left: .5em;
   list-style: none;
 }
 
-.contents .q_list.ul li:before,
-.contents .q_list ul li:before {
+.contents .q_list.v ul {
+  padding-left: 1.5em;
+}
+
+.contents .q_list.v ul li {
+  padding-left: 0;
+}
+
+.contents .q_list.ul:not(.v) li:before {
   display: none;
 }
 
-.contents .q_list.ul li:not(:last-child):after,
-.contents .q_list ul li:not(:last-child):after {
+.contents .q_list.ul:not(.v) li:not(:last-child):after {
   content: ", ";
+}
+
+/* h mean hangul */
+.contents .h li {
+  list-style: hangul;
+}
+
+.contents .h li,
+.contents .hc li {
+  padding: 0;
+  margin-left: 1.5em;
+}
+
+/* hc mean hangul-consonant */
+.contents .hc li {
+  list-style: hangul-consonant;
 }
 
 #card_title {

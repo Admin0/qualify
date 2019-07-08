@@ -39,6 +39,11 @@
 }
 
 body:not(.answer__quiz) .contents.multiple_choice .q_wrap .answer li[checked],
-.answer__quiz.answer__quiz .contents.multiple_choice .q_wrap:hover .answer li[checked] {
+.answer__quiz .contents.multiple_choice .q_wrap:hover .answer li[checked] {
   color: #2196f3;
+}
+
+body.general__dark:not(.answer__quiz) .contents.multiple_choice .q_wrap .answer li[checked],
+.general__dark.answer__quiz.answer__quiz .contents.multiple_choice .q_wrap:hover .answer li[checked] {
+  color: #c8b900;
 }

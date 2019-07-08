@@ -126,6 +126,7 @@ body.fold {
 #item_list h2 {
   width: 100%;
   position: relative;
+  cursor: pointer;
 }
 
 #item_list h2 a.btn_item_fold {

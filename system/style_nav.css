@@ -202,6 +202,7 @@ nav.fold #to_github {
 nav #nav_item_list {
   box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12) inset;
   padding-bottom: 16px;
+  will-change: transform;
 }
 
 nav hr {
