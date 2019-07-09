@@ -28,13 +28,13 @@
 .answer__quiz .contents.multiple_choice .q_wrap .answer li[checked] {
   opacity: 1;
   background: none;
-  outline: .5em solid #fff0;
+  outline: 0 solid #fff0;
 }
 
 .contents.multiple_choice .q_wrap .answer li[checked],
 .answer__quiz .contents.multiple_choice .q_wrap:hover .answer li[checked] {
   background: #FFFACDC0;
-  outline: .5em solid #FFFACDC0;
+  outline: .25em solid #FFFACDC0;
   width: fit-content;
 }
 
@@ -43,7 +43,22 @@ body:not(.answer__quiz) .contents.multiple_choice .q_wrap .answer li[checked],
   color: #2196f3;
 }
 
+body:not(.answer__quiz) .contents.multiple_choice .q_wrap .answer li[checked]::before,
+.answer__quiz .contents.multiple_choice .q_wrap:hover .answer li[checked]::before {
+  border-color: #2196f3;
+  background: #2196f3;
+  color: #FFFACDC0;
+  font-weight: bold;
+}
+
 body.general__dark:not(.answer__quiz) .contents.multiple_choice .q_wrap .answer li[checked],
 .general__dark.answer__quiz.answer__quiz .contents.multiple_choice .q_wrap:hover .answer li[checked] {
   color: #c8b900;
+}
+
+body.general__dark:not(.answer__quiz) .contents.multiple_choice .q_wrap .answer li[checked]::before,
+.general__dark.answer__quiz.answer__quiz .contents.multiple_choice .q_wrap:hover .answer li[checked]::before {
+  border-color: #c8b900;
+  background: #c8b900;
+  color: #424242C0;
 }

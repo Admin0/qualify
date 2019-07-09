@@ -4,10 +4,10 @@
 
   <div class="q_wrap">
     <div class="question">
-      직경과 유속이 일정할 때 입구유속 50kN/m2, 출구유속 90kN/m2, 출구-입구=10m 펌프가 물에 한 일 이 150J/kg이라면 마찰손실은?
+      직경과 유속이 일정할 때 입구유속 $\pu{50 kN/m2}$, 출구유속 $\pu{90 kN/m2}$, $\pu{\text{출구} - \text{입구} = 10 m}$ 펌프가 물에 한 일 이 $\pu{150 J/kg}$이라면 마찰손실은?
     </div>
     <div class="answer">
-      F = 150 - 40 - 98 = 12 J/kg
+      $\ce{ F = 150 - 40 - 98 = 12 J/kg }$
     </div>
     <div class="comment">
       $\ce{}$
@@ -16,10 +16,19 @@
 
   <div class="q_wrap">
     <div class="question">
-      매우 큰 용광로에 r=10cm인 구가 들어가 있다. 노의 온도 1027℃, 구의 온도 127℃ ε구=0.5, ε노=0.8, σ=5.676×10-8W/K4 · m2 일 때 q를 구하여라.
+      매우 큰 용광로에 $\pu{r = 10 cm}$인 구가 들어가 있다. 노의 온도 $1027℃$, 구의 온도 $\ce{127℃, ε_\text{구} = 0.5, ε_\text{노} = 0.8, σ = 5.676×10^{-8} W/K4·m^2}$ 일 때 $q$를 구하여라.
     </div>
     <div class="answer">
-
+      큰 공동 내의 작은 물체일 때, <br>
+      $
+      q = 4.88A_1\varepsilon_1\left[\left(\frac{T_1}{100}\right)^4 - \left(\frac{T_2}{100}\right)^4\right] \pu{(kcal/h)} = 5.676\times 10^{-8}A_1\varepsilon_1\left[\left(\frac{T_1}{100}\right)^4 - \left(\frac{T_2}{100}\right)^4\right] \pu{(W)}
+      \text{ 이므로,}
+      $
+    </div>
+    <div class="answer">
+      $
+      q = \ce{5.676\times 10^{-8} W/K^4*m^2 \times [4\pi \times (0.1 m)^2] \times [0.5] \times [400^4 - 1300^4]K^4 = -10094.51 W}
+      $
     </div>
     <div class="comment">
       $\ce{}$ </div>
@@ -30,7 +39,7 @@
       펌프를 사용하는 베르누이 식을 적고, 각각의 수두 명칭을 쓰시오.
     </div>
     <div class="answer">
-
+      $\ce{\eta W_{p} = \underset{\text{압력 수두}}{\cfrac{\Delta P}{\rho }} + \underset{\text{속도 수두}}{\cfrac{\Delta u^{2}}{2}} + \underset{\text{위치 수두}}{g\Delta Z} + \underset{\text{마찰 수두}}{h_{f}}}$
     </div>
     <div class="comment">
       $\ce{}$ </div>
@@ -38,8 +47,15 @@
 
   <div class="q_wrap">
     <div class="question">
-      속도 구배에 따른 전단응력의 변화 그래프에서 각각의 유체 찾기
-      가. Newton, 나. bingham, 다. Pseudo, 라. Dilitant
+      속도 구배에 따른 전단응력의 변화 그래프에서 각각의 유체를 찾으시오.
+      <div class="q_list h">
+        <ol>
+          <li>Newton</li>
+          <li>bingham</li>
+          <li>Pseudo</li>
+          <li>Dilitant</li>
+        </ol>
+      </div>
     </div>
     <div class="answer">
 
@@ -54,7 +70,13 @@
       지상 20m 높이의 급수탑에 5m/s 유속으로 물을 퍼올리고자 한다. 물의 온도가 일정하고 수송중에 마찰손실을 무시한다면 펌프가 한 일을 구하여라.
     </div>
     <div class="answer">
-
+      $
+      \begin{align*}
+      \ce{\eta W_{p} &= \cfrac{\Delta P}{\rho } + \cfrac{\Delta u^{2}}{2} + g\Delta Z + h_{f}} \\
+      &= \left[0\right] + \left[\frac{\pu{(5 m)2}}{2}\right] + \left[\pu{9.8 m/s \times 20 m}\right] + \left[0\right] \\
+      &= \pu{208.5 J/kg}
+      \end{align*}
+      $
     </div>
     <div class="comment">
       $\ce{}$
@@ -66,7 +88,9 @@
       D=0.4mm, Q=1cm3/s, ρO2=1.33kg/m3, μ=0.021cP, L=3cm일 때, 마찰손실을 kgf · m/kg으로 구하여라.
     </div>
     <div class="answer">
-
+      $
+      h_f = 4f\dfrac{L}{D}\dfrac{u^2}{2} \\
+      $
     </div>
     <div class="comment">
       $\ce{}$
@@ -75,13 +99,12 @@
 
   <div class="q_wrap">
     <div class="question">
-      f=0.01, ρ=0.8, μ=1cP, u=5cm/s 일 때 직경을 구하여라.
+      $\ce{$f$ = 0.01, ρ = 0.8, μ = 1 cP, u = 5 cm/s}$ 일 때 직경을 구하여라.
     </div>
     <div class="answer">
-
+      $\ce{4 cm}$
     </div>
     <div class="comment">
-      $\ce{}$
     </div>
   </div>
 
@@ -90,7 +113,7 @@
       가시영역 하나의 파장에 대한 휘도를 관측 Wien식을 사용하는 온도계는?
     </div>
     <div class="answer">
-
+      광온도계, 방사온도계
     </div>
     <div class="comment">
       $\ce{}$
@@ -102,17 +125,16 @@
       벤젠 40mol%, 톨루엔 60mol%인 혼합용액 100kmol을 증류하였을 때, 관출액의 벤젠 조성이 20mol%였다. P벤젠sat=1180mmHg, P톨루엔sat=481mmHg 일 때, 관출량을 구하시오.
     </div>
     <div class="answer">
-
+      $\ce{47.62 kmol}$
     </div>
     <div class="comment">
-      $\ce{}$
+
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question">
-      내경 40mm, 외경 60mm, To=1200℃, Ti=200℃ ho=100kcal/m2 · hr · ℃,
-      k=50kcal/m · hr · ℃, To쪽 온도는?
+      내경 $\ce{40 mm}$, 외경 $\ce{60 mm}$, $T_\ce{o} = 1200℃$, $T_\ce{i} = 200℃$ $h_\ce{o} = \ce{100 kcal/m2 · hr · ℃}$, $k = \ce{50 kcal/m · hr · ℃},\ T_\ce{o}$쪽 온도는?
     </div>
     <div class="answer">
 
@@ -125,8 +147,16 @@
   <div class="q_wrap">
     <div class="question">
       초산 24.6kg, 물 80kg, ether 100kg일 때, 추출되는 초산의 양을 구하시오.
+      $\begin{array}{|c|c|c|c|c|c|} \hline
+      \text{isopropyl ether 속 초산의 분율} & 0.03 & 0.045 & 0.063 & 0.07 & 0.078 & 0.086 & 0.106 \\ \hline
+      \text{물속 초산의 분율} & 0.1 &
+      0.15 & 0.19 & 0.22 & 0.24 & 0.26 & 0.3 \\ \hline
+      \end{array}$
     </div>
     <div class="answer">
+      $\text{분배율}\ m = \cfrac{\text{추출상 조성 } Y}{\text{추잔상 조성 } X} \Longrightarrow m=\cfrac{\tfrac{0.03}{0.1} +\tfrac{0.045}{0.15} +\tfrac{0.06}{0.2} +\tfrac{0.075}{0.25}... + ...\tfrac{0.106}{0.3}}{7} = 0.32$
+      $\text{추출율} = 1-\cfrac{1}{1+\tfrac{S\cdot m}{B}} ,\ ( S = \text{추제},\ B = \text{원용매}) \Longrightarrow 1-\cfrac{1}{1+\tfrac{100\times 0.32}{80}} = 0.2857$
+      $\therefore \pu{24.6 kg} \times 0.2857 = \pu{7.03 kg}$
 
     </div>
     <div class="comment">
@@ -154,8 +184,21 @@
     <div class="question">
       외부유체의 온도변화 140℃에서 90℃, 내부 유체의 온도변화 40℃에서 70℃일 때, 병류와 향류에서의 온도차를 구하여라.
     </div>
-    <div class="answer">
-
+    <div class="sub q_wrap">
+      <div class="question sub">병류</div>
+      <div class="answer">
+        $\ce{
+        \Delta T_1 = 20^\circ C, \Delta T_2 = 100^\circ C \\
+        \Delta T_\ce{LM} = \frac{100^\circ C - 20^\circ C}{\ln{\frac{\ce{100^\circ C}}{\ce{20^\circ C}}}} = 49.71^\circ C
+        }$
+      </div>
+      <div class="question sub">향류</div>
+      <div class="answer">
+        $\ce{
+        \Delta T_1 = 50^\circ C, \Delta T_2 = 70^\circ C \\
+        \Delta T_\ce{LM} = \frac{70^\circ C - 50^\circ C}{\ln{\frac{\ce{70^\circ C}}{\ce{50^\circ C}}}} = 59.44^\circ C
+        }$
+      </div>
     </div>
     <div class="comment">
       $\ce{}$
@@ -164,7 +207,7 @@
 
   <div class="q_wrap">
     <div class="question">
-
+      ?
     </div>
     <div class="answer">
 

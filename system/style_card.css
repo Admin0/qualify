@@ -143,8 +143,13 @@ body.page {
   flex-flow: wrap;
 }
 
+.contents.multiple_choice .q_wrap .answer ol li {
+  margin-left: -1.75em;
+  padding: 0 .5em 0 1.75em;
+}
+
 .contents.multiple_choice .q_wrap .answer.inline ol li {
-  margin-right: 2em;
+  margin-right: 2.25em;
   flex: auto;
 }
 
