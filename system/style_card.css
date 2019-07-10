@@ -313,6 +313,7 @@ body.page {
 .contents .hc li {
   padding: 0;
   margin-left: 1.5em;
+  margin-right: 1em;
 }
 
 /* hc mean hangul-consonant */
