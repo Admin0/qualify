@@ -36,12 +36,12 @@ body.page {
   counter-reset: numList;
 }
 
-.contents div:not(.h):not(.hc)>ol>li:before {
+.contents div:not(.h):not(.hc):not(.disc)>ol>li:before {
   counter-increment: numList;
   content: counter(numList);
 }
 
-.contents div:not(.h):not(.hc)>ol>li:before,
+.contents div:not(.h):not(.hc):not(.disc)>ol>li:before,
 .contents .encircled {
   font-size: 0.75em;
   margin: 0 .5em 0 -1.85em;
@@ -134,23 +134,24 @@ body.page {
 }
 
 /* .multiple_choice */
-.contents.multiple_choice .q_wrap .answer.inline {
-  width: 100%;
+.contents.multiple_choice .q_wrap .answer ol {
+  padding-left: 0;
 }
 
 .contents.multiple_choice .q_wrap .answer.inline ol {
   display: flex;
-  flex-flow: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .contents.multiple_choice .q_wrap .answer ol li {
-  margin-left: -1.75em;
-  padding: 0 .5em 0 1.75em;
+  /* margin-left: -1.75em; */
+  /* margin-left: -1.65em; */
+  padding: 0 .5em 0 1.65em;
 }
 
 .contents.multiple_choice .q_wrap .answer.inline ol li {
-  margin-right: 2.25em;
-  flex: auto;
+  /* margin-right: 2.25em; */
 }
 
 .q_wrap .comment {
@@ -246,7 +247,7 @@ body.page {
 }
 
 /* .q_list */
-.contents .q_list ._head,
+.contents .q_list .head,
 .contents .q_list.head {
   text-align: center;
   font-weight: bold;
@@ -257,7 +258,8 @@ body.page {
 .contents .q_list ol,
 .contents .q_list ul {
   display: flex;
-  flex-flow: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding-left: 0;
   margin: 0;
 }
@@ -278,12 +280,10 @@ body.page {
 }
 
 .contents .q_list li {
-  flex: auto;
   padding-left: 1.65em;
 }
 
 .contents .q_list:not(.v) ul li {
-  flex: auto;
   padding-left: .5em;
   list-style: none;
 }
@@ -304,21 +304,26 @@ body.page {
   content: ", ";
 }
 
-/* h mean hangul */
-.contents .h li {
-  list-style: hangul;
-}
-
 .contents .h li,
-.contents .hc li {
+.contents .hc li,
+.contents .disc li {
   padding: 0;
   margin-left: 1.5em;
   margin-right: 1em;
 }
 
+/* h mean hangul */
+.contents .h li {
+  list-style: hangul;
+}
+
 /* hc mean hangul-consonant */
 .contents .hc li {
   list-style: hangul-consonant;
+}
+
+.contents .disc li {
+  list-style: disc;
 }
 
 #card_title {

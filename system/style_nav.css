@@ -129,7 +129,7 @@ nav h3 a.btn_item_open {
   position: absolute !important;
   right: 0;
   opacity: 0;
-  color: rgba(0, 0, 0, 0.38);
+  /* color: rgba(0, 0, 0, 0.38); */
   top: .4em;
   z-index: 1;
   width: 20px;
