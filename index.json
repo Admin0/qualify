@@ -382,11 +382,29 @@
   "공인중개사": {
     "title": "공인중개사",
     "contents": [{
-      "title": "2018-1-1"
+      "title": "2015-1-1",
+      "icon": "landscape"
     }, {
-      "title": "2018-2-1"
+      "title": "2015-2-1",
+      "icon": "location_city"
     }, {
-      "title": "2018-2-2"
+      "title": "2016-1-1",
+      "icon": "landscape"
+    }, {
+      "title": "2016-2-1",
+      "icon": "location_city"
+    }, {
+      "title": "2017-1-1",
+      "icon": "landscape"
+    }, {
+      "title": "2018-1-1",
+      "icon": "landscape"
+    }, {
+      "title": "2018-2-1",
+      "icon": "location_city"
+    }, {
+      "title": "2018-2-2",
+      "icon": "location_city"
     }]
   },
   "화약류제조기사": {
