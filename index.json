@@ -382,6 +382,12 @@
   "공인중개사": {
     "title": "공인중개사",
     "contents": [{
+      "title": "2013-1-1",
+      "icon": "landscape"
+    }, {
+      "title": "2013-2-1",
+      "icon": "location_city"
+    }, {
       "title": "2014-1-1",
       "icon": "landscape"
     }, {
@@ -402,6 +408,12 @@
     }, {
       "title": "2017-1-1",
       "icon": "landscape"
+    }, {
+      "title": "2017-2-1",
+      "icon": "location_city"
+    }, {
+      "title": "2017-2-2",
+      "icon": "location_city"
     }, {
       "title": "2018-1-1",
       "icon": "landscape"

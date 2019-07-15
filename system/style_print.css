@@ -149,6 +149,16 @@ header>h1 {
   font-weight: normal;
 }
 
+.contents.multiple_choice .q_wrap .answer li[checked] {
+  color: #2196f3!important;
+}
+
+.contents.multiple_choice .q_wrap .answer li[checked]::before {
+  border-color: #2196f3!important;
+  background: #2196f3!important;
+  color: #FFFACDC0!important;
+}
+
 .q_wrap .comment {
   font-size: .75em;
   /* font-style: italic; */
