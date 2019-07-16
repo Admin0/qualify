@@ -1,4 +1,4 @@
-<script src="/qualify/system/main__card.js" defer></script>
+$<script src="/qualify/system/main__card.js" defer></script>
 
 <div class="contents">
 
@@ -27,7 +27,7 @@
     </div>
     <div class="answer">
       $
-      q = \ce{5.676\times 10^{-8} W/K^4*m^2 \times [4\pi \times (0.1 m)^2] \times [0.5] \times [400^4 - 1300^4]K^4 = -10094.51 W}
+      q = \ce{5.676 W/K^4*m^2 \times \left[4\pi \times (0.1 m)^2\right] \times [0.5] \times \left[\left( \frac{\pu{ 1300K }}{\pu{ 100 }} \right)^4 - \left( \frac{\pu{ 400K }}{\pu{ 100 }} \right)^4\right] = 10094.51 W}
       $
     </div>
     <div class="comment">
@@ -51,13 +51,21 @@
       <div class="q_list h">
         <ol>
           <li>Newton</li>
-          <li>bingham</li>
+          <li>Bingham</li>
           <li>Pseudo</li>
           <li>Dilitant</li>
         </ol>
       </div>
     </div>
     <div class="answer">
+      $
+      (\tau - k)^n = \mu\frac{du}{dy}
+      $
+      <br>
+      Newton: $k = 0, n = 0$ <br>
+      Bingham: $k \ne 0, n \ne 0$ <br>
+      Pseudo: $k = 0, n \gt 0$ <br>
+      Dilitant: $k = 0, n \lt 0$
 
     </div>
     <div class="comment">
@@ -89,11 +97,11 @@
     </div>
     <div class="answer">
       $
-      \ce{$v$ = \frac{1 cm^3/s}{\pi (0.04 cm)^2} = 198.9437 cm/s}, \\
-      \ce{Re = \frac{$D v \rho$}{\mu} = \frac{0.04 cm \times 198.9437 cm/s \times 1.33 kg/m^3}{0.021 cP}} = 50.3991 &lt; 2100, \\
-      f = \frac{64}{\ce{Re}} = 1.2699, \\
+      \ce{$v$ = \frac{1 cm^3/s}{\pi/4 (0.04 cm)^2} = 795.7748 cm/s}, \\
+      \ce{Re = \frac{$D v \rho$}{\mu} = \frac{0.04 cm \times 795.7748 cm/s \times 1.33 kg/m^3}{0.021 cP}} = 201.5964 &lt; 2100, \\
+      f = \frac{16}{\ce{Re}} = 1.2699, \\
 
-\begin{align*}
+      \begin{align*}
       h_f &= 4f\dfrac{L}{D}\dfrac{u^2}{2} \\
       &= \ce{4 \times 1.2699 \times \frac{3 cm}{0.04 cm}\frac{(1.9894 m/s)^2}{2}} \\
       &= \ce{76.92 kgf · m/kg}
@@ -124,7 +132,7 @@
       가시영역 하나의 파장에 대한 휘도를 관측 Wien식을 사용하는 온도계는?
     </div>
     <div class="answer">
-      광온도계, 방사온도계
+      광온도계
     </div>
     <div class="comment">
       $\ce{}$
@@ -133,13 +141,24 @@
 
   <div class="q_wrap">
     <div class="question">
-      벤젠 40mol%, 톨루엔 60mol%인 혼합용액 100kmol을 증류하였을 때, 관출액의 벤젠 조성이 20mol%였다. P벤젠sat=1180mmHg, P톨루엔sat=481mmHg 일 때, 관출량을 구하시오.
+      벤젠 40 mol%, 톨루엔 60 mol%인 혼합용액 100 kmol을 증류하였을 때, 관출액의 벤젠 조성이 20 mol%였다. $\ce{P_{bz}^{sat} = 1180 mmHg, P_{tol}^{sat} = 481 mmHg}$ 일 때, 관출량 D을 구하시오.
     </div>
     <div class="answer">
-      $\ce{47.62 kmol}$
+      $\ce{
+      P_A = $x$_{bz}*P_{bz}^{sat} = 0.4 \times 1180 mmHg = 472 mmHg \\
+      P_B = $x$_{tol}*P_{tol}^{sat} = 0.4 \times 481 mmHg = 288.6 mmHg \\\\
+
+      \alpha_{AB} = \frac{ \frac{$y$_A}{$y$_B} }{ \frac{$x$_A}{$x$_B} } = \frac{ \frac{$y$_A}{1 - $y$_A} }{ \frac{$x$_A}{1 - $x$_A} } \Longrightarrow \alpha_{AB} = \frac{P_A}{P_B} = 1.64 \\\\
+
+      y = \frac{\alpha $x$}{1 + (\alpha - 1)$x$} = \frac{1.64 \times 0.4}{1 + (1.64 - 1) \times 0.4} = 0.52 \\
+      40 kmol = 0.52 D + 0.2 W \Longrightarrow W = 200 kmol - 2.6 D \\
+      60 kmol = 0.48 D + 0.8 W \Longrightarrow W = 60 kmol - 0.71 D + 0.8(200 kmol - 2.6 D) \\\\
+
+      \therefore D = 72.99 kmol
+      }$
     </div>
     <div class="comment">
-
+      47.62 kmol ??
     </div>
   </div>
 
@@ -148,10 +167,21 @@
       내경 $\ce{40 mm}$, 외경 $\ce{60 mm}$, $T_\ce{o} = 1200℃$, $T_\ce{i} = 200℃$ $h_\ce{o} = \ce{100 kcal/m2 · hr · ℃}$, $k = \ce{50 kcal/m · hr · ℃},\ T_\ce{o}$쪽 온도는?
     </div>
     <div class="answer">
-      $\ce{348.4^\circ C}$
+      $\ce{
+      \bar{D_L} = \frac{0.06 m - 0.04 m}{\ln{0.06 m/0.04 m}} = 0.049 m \\
+
+      \begin{align*}
+      $U_o$ &= \frac{1}{$\frac{1}{h_o}$ + $\frac{l}{k}\left(\frac{D_o}{\bar{D_L}}\right)$ + $\frac{1}{h_i}\left(\frac{D_o}{D_i}\right)$} \\
+      & = \frac{1}{\frac{1}{100 kcal/m^2*hr*^\circ C} + \frac{0.01 m}{50 kcal/m*hr*^\circ C}\left(\frac{0.06 m}{0.049 m}\right) + \frac{1}{1000 kcal/m^2*hr*^\circ C}\left(\frac{0.06 m}{0.04 m}\right)} \\ & = 85.1434 kcal/m^2*hr*^\circ C \\
+      \end{align*}\\
+
+      $\frac{q}{A_o} = U_o \bar{\Delta D_L} = h_o \Delta T_o $ \\
+      \Longrightarrow \Delta T_o = \frac{U_o}{h_o}\bar{\Delta D_L} = 851.434^\circ C \\
+      \therefore T_o - \Delta T_o = 1200^\circ C - 851.434^\circ C = 348.57^\circ C
+      }$
     </div>
     <div class="comment">
-      
+
     </div>
   </div>
 
@@ -165,7 +195,7 @@
       \end{array}$
     </div>
     <div class="answer">
-      $\text{분배율}\ m = \cfrac{\text{추출상 조성 } Y}{\text{추잔상 조성 } X} \Longrightarrow m=\cfrac{\tfrac{0.03}{0.1} +\tfrac{0.045}{0.15} +\tfrac{0.06}{0.2} +\tfrac{0.075}{0.25}... + ...\tfrac{0.106}{0.3}}{7} = 0.32$
+      $\text{분배율}\ m = \cfrac{\text{추출상 조성 } Y}{\text{추잔상 조성 } X} \Longrightarrow m=\cfrac{\tfrac{0.03}{0.1} +\tfrac{0.045}{0.15} +\tfrac{0.063}{0.19} … + … \tfrac{0.106}{0.3}}{7} = 0.32$
       $\text{추출율} = 1-\cfrac{1}{1+\tfrac{S\cdot m}{B}} ,\ ( S = \text{추제},\ B = \text{원용매}) \Longrightarrow 1-\cfrac{1}{1+\tfrac{100\times 0.32}{80}} = 0.2857$
       $\therefore \pu{24.6 kg} \times 0.2857 = \pu{7.03 kg}$
 
@@ -210,6 +240,11 @@
         \Delta T_\ce{LM} = \frac{70^\circ C - 50^\circ C}{\ln{\frac{\ce{70^\circ C}}{\ce{50^\circ C}}}} = 59.44^\circ C
         }$
       </div>
+    </div>
+    <div class="answer">
+      $\ce{
+      \therefore \Delta T = 49.71^\circ C - 59.44^\circ C = 9.73^\circ C
+      }$
     </div>
     <div class="comment">
       $\ce{}$
