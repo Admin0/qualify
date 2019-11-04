@@ -1,6 +1,25 @@
 {
-  "화학분석기사": {
-    "title": "화학분석기사 ★",
+  "화학분석기사-필기": {
+    "title": "화학분석기사 필기 ★ <span class='translation'>(준비중)</span>",
+    "contents": [{
+      "title": "2006-4",
+      "icon": "test_tube"
+    }, {
+      "title": "2011-1",
+      "icon": "test_tube"
+    }, {
+      "title": "2017-1",
+      "icon": "test_tube"
+    }, {
+      "title": "2017-4",
+      "icon": "test_tube"
+    }, {
+      "title": "2018-1",
+      "icon": "test_tube"
+    }]
+  },
+  "화학분석기사-실기": {
+    "title": "화학분석기사 실기 ★",
     "contents": [{
       "title": "필답-2006-4",
       "icon": "test_tube"
@@ -90,8 +109,11 @@
       "icon": "water"
     }]
   },
-  "위험물산업기사": {
-    "title": "위험물산업기사",
+  "위험물산업기사-필기": {
+    "title": "위험물산업기사 필기 ★ <span class='translation'>(준비중)</span>"
+  },
+  "위험물산업기사-실기": {
+    "title": "위험물산업기사 실기",
     "contents": [{
       "title": "요약-지정수량",
       "icon": "poison"
@@ -267,8 +289,11 @@
       "locked": true
     }]
   },
-  "화공기사": {
-    "title": "화공기사 ★",
+  "화공기사-필기": {
+    "title": "화공기사 필기 ★ <span class='translation'>(준비중)</span>"
+  },
+  "화공기사-실기": {
+    "title": "화공기사 실기 ★",
     "contents": [{
       "title": "필답-1999-1",
       "icon": "water"

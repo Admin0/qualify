@@ -6,6 +6,11 @@
   .ad {
     display: none;
   }
+
+  p {
+    font-size: .75em;
+    opacity: .75;
+  }
 </style>
 
 <div class="contents">
@@ -111,6 +116,7 @@
     <h3>realtor</h3>
 
     <pre class="copy c310" data-clipboard-target=".c310">([0-9]+\.\s)(.*)\r\n\s*\r\n.*(①|❶)</pre>
+    <pre class="copy c312" data-clipboard-target=".c312">([0-9]+\.\s)(.*)\r\n.*\r\n.*(①|❶)</pre>
     <pre class="copy c311" data-clipboard-target=".c311">&nbsp;
   &lt;div class="q_wrap">
     &lt;div class="question">
@@ -127,7 +133,7 @@
   &dollar;3</pre>
     <br>
 
-    <pre class="copy c312" data-clipboard-target=".c312">([0-9]+\.\s)(.*)\r\n.*(①|❶)</pre>
+    <pre class="copy c322" data-clipboard-target=".c322">([0-9]+\.\s)(.*)\r\n.*(①|❶)</pre>
     <pre class="copy c313" data-clipboard-target=".c313">&nbsp;
   &lt;div class="q_wrap">
     &lt;div class="question">
@@ -143,6 +149,7 @@
     <br>
 
     <pre class="copy c316" data-clipboard-target=".c316">([⑤❺][\s].*)</pre>
+    <pre class="copy c325" data-clipboard-target=".c325">([④❹][\s].*)</pre>
     <pre class="copy c317" data-clipboard-target=".c317">      &dollar;1
       &lt;/ol>
     &lt;/div>
@@ -160,8 +167,12 @@
     <pre class="copy c321" data-clipboard-target=".c321">        &lt;li>&dollar;1&lt;/li></pre>
     <br>
 
-    <pre class="copy c322" data-clipboard-target=".c322">(&lt;li>&lt;/li>\r\n\s*&lt;/ol>\r\n\s*&lt;/div>\r\n\s*&lt;/div>\r\n\s*&lt;div class="answer)(">)</pre>
+    <pre class="copy c352" data-clipboard-target=".c352">(&lt;li>&lt;/li>\r\n\s*&lt;/ol>\r\n\s*&lt;/div>\r\n\s*&lt;/div>\r\n\s*&lt;div class="answer)(">)</pre>
     <pre class="copy c323" data-clipboard-target=".c323">$1 inline$2</pre>
+    <br>
+
+    <pre class="copy c362" data-clipboard-target=".c362">(.과목.*)</pre>
+    <pre class="copy c363" data-clipboard-target=".c363">&lt;div class="q_list head">제$1&lt;/div></pre>
     <br>
 
     <span class="copy c330" data-clipboard-target=".c330">甲</span>
@@ -219,6 +230,52 @@
   &lt;/div></pre>
     <br>
   </div>
+  <div class="q_wrap">
 
+    <h3>written test</h3>
+
+    <p>문제를 한줄로 정리</p>
+    <pre class="copy c420" data-clipboard-target=".c420">([0-9]+\.\s.*)\r\n\s*([^가].*)</pre>
+    <pre class="copy c421" data-clipboard-target=".c421">$1$2</pre>
+    <br>
+
+    <p>문제 클래스 열기 적용</p>
+    <pre class="copy c410" data-clipboard-target=".c410">([0-9]+\.\s)(.*)\r\n\s*\r\n.*(①|❶)</pre>
+    <pre class="copy c411" data-clipboard-target=".c411"> &lt;div class="q_wrap">
+       &lt;div class="question">
+         $2
+       &lt;/div></pre>
+    <br>
+
+    <p>문제 클래스 닫기 적용</p>
+    <pre class="copy c420" data-clipboard-target=".c420">(라\..*)</pre>
+    <pre class="copy c421" data-clipboard-target=".c421">$1
+    &lt;/ol>
+    &lt;/div>
+    &lt;div class="comment">
+
+    &lt;/div>
+    &lt;/div></pre>
+    <br>
+
+    <p>답 클래스 적용</p>
+    <pre class="copy c430" data-clipboard-target=".c430">(가\.|나\.|\n다\.|라\.)((.*)\s+(?=나\.다\.라\.)|(.*))</pre>
+    <pre class="copy c431" data-clipboard-target=".c431">&nbsp;
+          &lt;div class="q_wrap">
+            &lt;div class="question">
+              &dollar;2
+              &lt;div class="q_list hc">
+                &lt;ol>
+                  &lt;li>&lt;/li>
+                  &lt;li>&lt;/li>
+                  &lt;li>&lt;/li>
+                  &lt;li>&lt;/li>
+                &lt;/ol>
+              &lt;/div>
+            &lt;/div>
+          &dollar;3</pre>
+    <br>
+
+  </div>
 
 </div>
