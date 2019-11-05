@@ -249,6 +249,7 @@ body.page {
 /* .q_list */
 .contents .q_list .head,
 .contents .q_list.head {
+  display: block;
   text-align: center;
   font-weight: bold;
 }

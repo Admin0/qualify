@@ -3,25 +3,25 @@
     "title": "화학분석기사 필기 ★ <span class='translation'>(준비중)</span>",
     "contents": [{
       "title": "2006-4",
-      "icon": "test_tube"
+      "icon": "work_off"
     }, {
       "title": "2011-1",
-      "icon": "test_tube"
+      "icon": "work_off"
     }, {
       "title": "2011-4",
-      "icon": "test_tube"
+      "icon": "work_off"
     }, {
       "title": "2012-1",
-      "icon": "test_tube"
+      "icon": "work_off"
     }, {
       "title": "2017-1",
-      "icon": "test_tube"
+      "icon": "work_off"
     }, {
       "title": "2017-4",
-      "icon": "test_tube"
+      "icon": "work_off"
     }, {
       "title": "2018-1",
-      "icon": "test_tube"
+      "icon": "work_off"
     }]
   },
   "화학분석기사-실기": {
@@ -305,7 +305,7 @@
     "title": "화공기사 필기 ★ <span class='translation'>(준비중)</span>",
     "contents": [{
       "title": "2019-1",
-      "icon": "water"
+      "icon": "work_off"
     }]
   },
   "화공기사-실기": {
@@ -478,8 +478,12 @@
   "화약류제조기사": {
     "title": "화약류제조기사 <span class='translation'>(준비중) (2020년 2회까지 필기 3과목 면제)</span>"
   },
-  "품질경영기사": {
-    "title": "품질경영기사 <span class='translation'>(준비중)</span>"
+  "품질경영기사-필기": {
+    "title": "품질경영기사 필기 <span class='translation'>(준비중)</span>",
+    "contents": [{
+      "title": "2018-1",
+      "icon": "work_off"
+    }]
   },
   "산업안전기사": {
     "title": "산업안전기사 ★ <span class='translation'>(준비중)</span>"
