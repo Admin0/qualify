@@ -157,6 +157,9 @@
       "title": "필답-2011-4",
       "icon": "fire_extinguisher"
     }, {
+      "title": "작업-2011-4",
+      "icon": "exit_sign"
+    }, {
       "title": "필답-2012-1",
       "icon": "fire_extinguisher"
     }, {
@@ -244,6 +247,9 @@
       "title": "필답-2017-1",
       "icon": "fire_extinguisher"
     }, {
+      "title": "작업-2017-1",
+      "icon": "exit_sign"
+    }, {
       "title": "필답-2017-2",
       "icon": "fire_extinguisher"
     }, {
@@ -296,7 +302,11 @@
     }]
   },
   "화공기사-필기": {
-    "title": "화공기사 필기 ★ <span class='translation'>(준비중)</span>"
+    "title": "화공기사 필기 ★ <span class='translation'>(준비중)</span>",
+    "contents": [{
+      "title": "2019-1",
+      "icon": "water"
+    }]
   },
   "화공기사-실기": {
     "title": "화공기사 실기 ★",
