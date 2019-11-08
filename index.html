@@ -22,6 +22,7 @@
   <script src="system/main__context.js"></script>
   <script src="system/main.js"></script>
   <script src="system/sub__clipboard.min.js"></script>
+  <script src="system/sub__timer.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js'></script>
   <script src="system/sub__mathjax.js" async></script>
   <script src="system/sub__scroll.js" async></script>
@@ -49,6 +50,7 @@
   <header>
     <h1>
       <i id="nav_on" onclick="if($('nav').attr('class')!='on'){$('nav, #nav_bg').addClass('on');}else{$('nav, #nav_bg').removeClass('on');};" class="material-icons">menu</i><span id="title"><span class="hide_mobile"></span>#qualify</span>
+      <span id="timer" class="timer" onclick="start = Date.now(); toast('초읽기가 초기화되었습니다.','timer')">0:00:00</span><i class="material-icons timer" style="margin-right:.25em;" onclick="start = Date.now();">timer</i>
       <i id="print_icon" onclick="window.print();" class="material-icons hide_mobile">print</i>
     </h1>
   </header>
