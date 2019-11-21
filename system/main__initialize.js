@@ -13,7 +13,7 @@ for (var i = 0; i < custom_icon_list.length; i++) {
     url: "/qualify/system/icons/" + custom_icon_list[i] + ".svg",
     type: 'get',
     dataType: 'text',
-    async: false,
+    async: true,
     success: function(data) {
       custom_icon_set.push(data);
     }
