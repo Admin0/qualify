@@ -1,27 +1,33 @@
-var is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+const is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
 const custom_icon_list = [
-  "certificate","contract","deer","exit_sign","fire_extinguisher","kicking",
-  "microsoft_access","microsoft_excel","microsoft_office","microsoft_word",
-  "oil_industry","oil_pump","poison",
-  "share__facebook","share__kakaolink","share__twitter",
-  "star","test_tube","water"
+  "certificate", "contract", "deer", "exit_sign", "fire_extinguisher", "kicking",
+  "microsoft_access", "microsoft_excel", "microsoft_office", "microsoft_word",
+  "oil_industry", "oil_pump", "poison",
+  "share__facebook", "share__kakaolink", "share__twitter",
+  "star", "test_tube", "water"
 ];
+var custom_icon_set = [];
+for (var i = 0; i < custom_icon_list.length; i++) {
+  $.ajax({
+    url: "/qualify/system/icons/" + custom_icon_list[i] + ".svg",
+    type: 'get',
+    dataType: 'text',
+    async: false,
+    success: function(data) {
+      custom_icon_set.push(data);
+    }
+  });
+}
+
+console.log(custom_icon_set);
 
 function get_icon(name) {
   var result = name;
   // var scriptUrl = "somefile.php?name=" + name;
   for (var i = 0; i < custom_icon_list.length; i++) {
     if (name == custom_icon_list[i]) {
-      $.ajax({
-        url: "/qualify/system/icons/" + name + ".svg",
-        type: 'get',
-        dataType: 'text',
-        async: false,
-        success: function(data) {
-          result = data;
-        }
-      });
+      result = custom_icon_set[i];
       break;
     }
   }
@@ -29,7 +35,7 @@ function get_icon(name) {
 }
 
 function slide(target, wanna_fold) {
-  var time = 10;
+  const time = 10;
   switch (wanna_fold != null ? wanna_fold : !$("#" + target).hasClass("slided")) {
     case true:
       // console.log("true");
