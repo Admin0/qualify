@@ -1,19 +1,30 @@
 var is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
+const custom_icon_list = [
+  "certificate","contract","deer","exit_sign","fire_extinguisher","kicking",
+  "microsoft_access","microsoft_excel","microsoft_office","microsoft_word",
+  "oil_industry","oil_pump","poison",
+  "share__facebook","share__kakaolink","share__twitter",
+  "star","test_tube","water"
+];
+
 function get_icon(name) {
-  var result = null;
-  var scriptUrl = "somefile.php?name=" + name;
-  $.ajax({
-    url: "/qualify/system/icons/" + name + ".svg",
-    type: 'get',
-    dataType: 'text',
-    async: false,
-    success: function(data) {
-      result = data;
+  var result = name;
+  // var scriptUrl = "somefile.php?name=" + name;
+  for (var i = 0; i < custom_icon_list.length; i++) {
+    if (name == custom_icon_list[i]) {
+      $.ajax({
+        url: "/qualify/system/icons/" + name + ".svg",
+        type: 'get',
+        dataType: 'text',
+        async: false,
+        success: function(data) {
+          result = data;
+        }
+      });
+      break;
     }
-  }).fail(function() {
-    result = name;
-  });
+  }
   return result;
 }
 
