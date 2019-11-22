@@ -13,14 +13,14 @@ for (var i = 0; i < custom_icon_list.length; i++) {
     url: "/qualify/system/icons/" + custom_icon_list[i] + ".svg",
     type: 'get',
     dataType: 'text',
-    async: true,
+    async: false,
     success: function(data) {
-      custom_icon_set.push(data);
+      custom_icon_set[i] = data;
     }
   });
 }
 
-console.log(custom_icon_set);
+// console.log(custom_icon_set);
 
 function get_icon(name) {
   var result = name;
