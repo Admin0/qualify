@@ -311,6 +311,9 @@
       "title": "작업-2019-4",
       "icon": "exit_sign",
       "locked": true
+    }, {
+      "title": "후기",
+      "icon": "contract"
     }]
   },
   "화공기사-필기": {
