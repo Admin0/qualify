@@ -659,6 +659,7 @@ div#splash svg {
 
   #toast {
     padding: 1em 1.5em 1em .75em;
+    border-radius: 0;
     min-width: 100%;
     max-width: 100%;
     bottom: 0;
