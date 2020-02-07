@@ -1,4 +1,4 @@
-var start = Date.now();
+var start = window.localStorage["timer"] || Date.now();
 setInterval(function() {
   var delta = Date.now() - start;
   output = (Math.floor(delta / 1000));
