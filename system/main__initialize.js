@@ -1,7 +1,7 @@
 const is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
 const custom_icon_list = [
-  "certificate", "contract", "deer", "exit_sign", "fire_extinguisher", "kicking",
+  "certificate", "contract", "deer", "exit_sign", "fire_extinguisher", "gears", "kicking",
   "microsoft_access", "microsoft_excel", "microsoft_office", "microsoft_powerpoint", "microsoft_word",
   "oil_industry", "oil_pump", "poison",
   "share__facebook", "share__kakaolink", "share__twitter",

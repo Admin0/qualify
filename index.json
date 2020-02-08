@@ -123,7 +123,7 @@
     "title": "위험물산업기사 필기 ★ <span class='translation'>(준비중)</span>"
   },
   "위험물산업기사-실기": {
-    "title": "위험물산업기사 실기",
+    "title": "위험물산업기사 실기 ★",
     "contents": [{
       "title": "요약-지정수량",
       "icon": "poison"
@@ -495,10 +495,10 @@
     "title": "화약류제조기사 <span class='translation'>(준비중) (2020년 2회까지 필기 3과목 면제)</span>"
   },
   "품질경영기사-필기": {
-    "title": "품질경영기사 필기 <span class='translation'>(준비중)</span>",
+    "title": "품질경영기사 필기",
     "contents": [{
       "title": "2018-1",
-      "icon": "work_off"
+      "icon": "gears"
     }]
   },
   "산업안전기사": {
