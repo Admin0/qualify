@@ -10,6 +10,7 @@
 @import url('style_share.css');
 @import url('style_context.css');
 @import url('style_card.css');
+@import url('style_toast.css');
 
 ::selection {
   background: rgba(0, 0, 0, 0);
@@ -450,60 +451,6 @@ footer {
 
 #tooltip_text {
   white-space: pre-line;
-}
-
-/* ------------------------------------------------------------------- */
-/* ***** toast ***** */
-/* ------------------------------------------------------------------- */
-#toast {
-  line-height: 1;
-  position: fixed;
-  background-color: #424242;
-  color: rgba(255, 255, 255, .9);
-  fill: rgba(255, 255, 255, .9);
-  padding: 1em 1.5em 1em .75em;
-  min-width: 350px;
-  max-width: calc(100% - 2em);
-  bottom: 1em;
-  z-index: 5;
-}
-
-#toast i.material-icons {
-  font-size: 20px;
-  margin-bottom: 1px;
-}
-
-@keyframes snackbar_on {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-#toast.on {
-  animation-name: snackbar_on;
-  animation-duration: .3s;
-}
-
-@keyframes snackbar_off {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-#toast.off {
-  opacity: 0;
-  visibility: none;
-  animation-name: snackbar_off;
-  animation-duration: .3s;
-  z-index: 0;
 }
 
 hr {
