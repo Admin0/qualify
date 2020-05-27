@@ -27,6 +27,10 @@ if (is_card) { //단일 페이지일 경우.
   (adsbygoogle = window.adsbygoogle || []).push({});
 
   // add important header items
+  const viewport = document.createElement('meta');
+  viewport.name = 'viewport';
+  viewport.content = "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no";
+  document.head.appendChild(viewport);
   const card_style = document.createElement('link');
   card_style.href = '/qualify/system/style_card.css';
   card_style.rel = "stylesheet";

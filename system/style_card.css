@@ -428,7 +428,37 @@ body.page {
 }
 
 /* ***** mobile ***** */
+@media handheld, only screen and (max-device-width:240mm) {
+  body.page {
+    width: calc(100% - 2em);
+    height: auto;
+    margin: 0;
+    padding: 1em;
+    box-shadow: none;
+    font-size: 1em;
+  }
+
+  .page .contents:not(.on) {
+    column-width: 34em;
+    max-width: none;
+    font-size: 1em;
+    margin: 1em;
+    font-size: 1em;
+  }
+}
+
 @media handheld, only screen and (max-device-width:480px), only screen and (max-device-width:320px), screen and (max-width:600px) {
+
+  /*  page */
+  body.page {
+    font-size: 1em;
+  }
+
+  .page .contents:not(.on) {
+    column-count: 1;
+  }
+
+  /* not page */
   section .contents h4 {
     margin-left: 0;
     padding: 0.5em 1em !important;
@@ -446,7 +476,7 @@ body.page {
     padding: 1em;
   }
 
-  .q_wrap {
+  .q_wrap, .contents:not(.on) .q_wrap {
     padding: 0;
   }
 
@@ -461,16 +491,16 @@ body.page {
     left: inherit;
   }
 
-  .contents.on .q_wrap .question:not(.sub) {
+  .contents .q_wrap .question:not(.sub) {
     text-indent: 1.5em;
   }
 
-  .contents.on .q_wrap .question:not(.sub)>* {
+  .contents .q_wrap .question:not(.sub)>* {
     text-indent: 0;
   }
 
-  .contents.on .q_wrap h3:first-child,
-  .contents.on .q_wrap p:first-child {
+  .contents .q_wrap h3:first-child,
+  .contents .q_wrap p:first-child {
     text-indent: 1.5em;
   }
 

@@ -61,6 +61,11 @@
       McCabe-Thiele법에서 최소이론단수를 구하기 위한 공급선의 방정식에서 q의 식과 의미를 쓰시오.
     </div>
     <div class="answer">
+      q = 1 : 주어진 원료가 끓는점의 순수 액상 (포화액체) <br>
+      q &gt; 1: 원료가 끓는점 미만의 액체 <br>
+      0 &lt; q &lt; 1 : 액상과 기상이 균형을 이룬 상평형 상태 <br>
+      q = 0 : 원료가 끓는점의 포화 기체 <br>
+      q &lt; 0 : 원료가 끓는점을 넘은 기체
     </div>
     <div class="comment">
       1) q = 1 : saturated-liquid (q가 1이면 L'=L+F, 즉 모두 액체로 내려간다.) <br>
@@ -91,22 +96,30 @@
     </div>
     <div class="sub q_wrap">
       <div class="question sub">R → ∞</div>
-      <div class="answer"></div>
+      <div class="answer">플러그 흐름 반응기 (Plug Flow Reactor, PFR)</div>
       <div class="question sub">R → 0</div>
-      <div class="answer"></div>
+      <div class="answer">혼합 흐름 반응기 (Mixed Flow Reactor, MFR) or 연속 교반 탱크 반응기(Continuous stirred tank reactor, CSTR)</div>
     </div>
     <div class="comment">
-      $\ce{}$
     </div>
   </div>
 
   <!-- 5 -->
   <div class="q_wrap">
     <div class="question">
-      수소기체가 물 100 kg에 녹아 있다. 20℃에서 평형에 있고, 전압은 760 mmHg이고, 수소의 분압은 200 mmHg이다. 물에 용해된 수소는 몇 kg인가?(단, 20℃에서 수소의 헨리상수 $H = 5.17 \times 10^7$이다.)
+      수소기체가 물 100 kg에 녹아 있다. 20℃에서 평형에 있고, 전압은 760 mmHg이고, 수소의 분압은 200 mmHg이다. 물에 용해된 수소는 몇 kg인가?(단, 20℃에서 수소의 헨리상수 $H = 5.19 \times 10^7$이다.)
     </div>
     <div class="answer">
-
+      $
+      H = \pu{ 5.19E7 atm } \times \dfrac{\pu{ 760 mmHg }}{\pu{ 1 atm }} = \pu{ 3.9444E16 mmHg } \\
+      n_\ce{H2O} = \pu{ 100 kg } \times \dfrac{\pu{ 1 kmol }}{\pu{ 18 kg }} = \pu{ \dfrac{ 50 }{ 9 } kmol } \\
+      P_\ce{H2} = H\cdot x_\ce{H2} \Longrightarrow x_\ce{H2} = \dfrac{\pu{ 200 mmHg }}{\pu{ 3.9444E10 mmHg }} = \pu{ 5.0705E-9 } \\
+      \begin{align*}
+      x_\ce{H2} &= \dfrac{ n_\ce{H2} }{ n_\ce{H2O} + n_\ce{H2}} (\text{분모의 } n_\ce{H2} \text{는 } n_\ce{H2O} \text{에 비해 너무 작으므로 무시 가능하다.}) \\
+      \Longrightarrow \pu{ 5.0705E-9 } &= \dfrac{ n_\ce{H2} }{ 50/9\ \pu{ kmol } } \\
+      \end{align*}
+      \therefore n_\ce{H2} = \pu{ 2.8169E-8 kmol }
+      $
     </div>
     <div class="comment">
       $\ce{}$
@@ -134,18 +147,8 @@
     <div class="answer">
       $
       \begin{align*}
-      \Delta P &= gR(\rho_A - \rho_B) \\
-      & = \ce{(9.8 m/s^2) \times (0.200 m) \times (13 600 - 1 000) kg/m^3} \\
-      & = \pu{24 696 kg/m*s^2} \\
-      \end{align*} \\
-
-      \Delta \dfrac{P}{\rho} = \dfrac{\Delta u^2}{2} \\
-      \therefore u = \sqrt{ 2\times \dfrac{\ce{24 696 kg/m*s^2}}{\ce{1 000 kg/m^3}} } = \ce{1.5336 m/s} \\
-      $
-      $
-      \begin{align*}
-      Q &= C_v \times A_2 \times u_2 \\
-      &=C_v \times \left(π \times \left(\tfrac{D_2}{2}\right)^2\right) \times \left(\frac{u_1}{1-(D_2/D_1)^4}\right)^{0.5} \\
+      Q &= C_v \times A \times u \\
+      &= C_v \times \frac{π \times {D_2}^2}{4} \times \sqrt{2gΔH \cdot \frac{\Delta \rho}{1-\left(\frac{D_2}{D_1}\right)^4}} \\
       &= \pu{0.003395 m3/s}
       \end{align*}
       $
@@ -174,10 +177,11 @@
       Soret effect(Thermo Diffusion)와 Dufour effect(Diffusion Thermal)에 대해서 설명하시오.
     </div>
     <div class="answer">
-
+      Soret effect(Thermo Diffusion)는 액체 혼합물 중에 온도 기울기가 있으면 물질의 확산이 일어나서 농도 기울기가 생기는 현상. <br>
+      Dufour effect(Diffusion Thermal)는 액체 혼합물 중에 농도 기울기가 있어 물질이 서로 확산하면 온도 기울기가 생기는 현상. Soret effect(Thermo Diffusion)의 반대 개념. <br>
     </div>
     <div class="comment">
-      $\ce{}$
+      2002 기출 문제가 18년 만에 다시 출제되었다.
     </div>
   </div>
 

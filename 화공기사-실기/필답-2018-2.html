@@ -109,10 +109,10 @@
 
   <div class="q_wrap">
     <div class="question">
-      길이의 기본 단위를 L, 질량을 M, 시간을 t라고 할 때 점도의 차원을 나타내시오. [3점]
+      길이의 기본 단위를 L, 질량을 M, 시간을 T라고 할 때 점도의 차원을 나타내시오. [3점]
     </div>
     <div class="answer">
-
+      Dimension of viscosity = M/LT
     </div>
     <div class="comment">
       $\ce{}$
@@ -136,7 +136,16 @@
       전압이 760 mmHg이며 수소의 분압이 250 mmHg이다. 물 100 kg에 대해 수소는 몇 kg 녹아있는지 구하시오. ($H = 5.19 \times 10^7 \pu{atm}$) [4점]
     </div>
     <div class="answer">
-
+      $
+      H = \pu{ 5.19E7 atm } \times \dfrac{\pu{ 760 mmHg }}{\pu{ 1 atm }} = \pu{ 3.9444E16 mmHg } \\
+      n_\ce{H2O} = \pu{ 100 kg } \times \dfrac{\pu{ 1 kmol }}{\pu{ 18 kg }} = \pu{ \dfrac{ 50 }{ 9 } kmol } \\
+      P_\ce{H2} = H\cdot x_\ce{H2} \Longrightarrow x_\ce{H2} = \dfrac{\pu{ 250 mmHg }}{\pu{ 3.9444E10 mmHg }} = \pu{ 6.3381E-9 } \\
+      \begin{align*}
+      x_\ce{H2} &= \dfrac{ n_\ce{H2} }{ n_\ce{H2O} + n_\ce{H2}} (\text{분모의 } n_\ce{H2} \text{는 } n_\ce{H2O} \text{에 비해 너무 작으므로 무시 가능하다.}) \\
+      \Longrightarrow \pu{ 6.3381E-9 } &= \dfrac{ n_\ce{H2} }{ 50/9\ \pu{ kmol } } \\
+      \end{align*}
+      \therefore n_\ce{H2} = \pu{ 3.5212E-8 kmol }
+      $
     </div>
     <div class="comment">
       $\ce{}$
@@ -160,7 +169,7 @@
       화학공장에서 많이 쓰이고, 유체흐름 직경과 관직경이 거의 동일하며 유체 흐름을 바꾸지 않는 밸브는? [3점]
     </div>
     <div class="answer">
-
+      플러그 밸브.
     </div>
     <div class="comment">
       $\ce{}$
