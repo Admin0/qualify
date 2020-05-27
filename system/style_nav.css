@@ -238,7 +238,7 @@ nav #nav_menu {
 
 #setting input[checked]+dt {
   font-weight: 700;
-  color: #000;
+  /* color: #000; */
   text-decoration: none;
 }
 
@@ -370,11 +370,17 @@ nav.fold #setting_bt:hover {
 }
 
 #setting .setting_item.disabled {
+  background: none;
   cursor: default;
 }
 
+.general__dark #setting .setting_item.disabled {
+  background: #2a2a2a;
+}
+
 #setting .setting_item.disabled>* {
-  color: rgba(0, 0, 0, .5) !important;
+  /* color: rgba(0, 0, 0, .5) !important; */
+  opacity: .7;
 }
 
 #setting .setting_item:hover {
@@ -383,6 +389,10 @@ nav.fold #setting_bt:hover {
 
 #setting .setting_item.disabled:hover {
   background: none;
+}
+
+.general__dark #setting .setting_item.disabled:hover {
+  background: #2a2a2a;
 }
 
 #setting .setting_title {

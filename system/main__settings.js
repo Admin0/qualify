@@ -1,10 +1,8 @@
 function setting() {
 
   var item = [
-    "general__dark",
+    "general__dark", "general__dark_auto",
     "answer__serif", "answer__quiz",
-    // "cccv", "cccv__style", "cccv__to_here",
-    "dev__login"
   ];
 
   function check_setting() {
@@ -37,13 +35,21 @@ function setting() {
       }
     }
     // 개별 적용
-    css_option("general__dark", "answer__serif", "answer__quiz");
+    css_option("general__dark", "general__dark_auto", "answer__serif", "answer__quiz");
+
+    if (window.localStorage["general__dark_auto"] == "true") { //다크 모드 자동 적용
+      $("#general__dark").addClass("disabled");
+    } else {
+      $("#general__dark").removeClass("disabled");
+    }
 
     if (window.localStorage["general__dark"] == "true") {
       $("meta[name='theme-color']").attr("content", "rgba(50, 54, 57, 1)");
     } else {
       $("meta[name='theme-color']").attr("content", "#ffffff");
     }
+
+
 
   }
   check_setting();
@@ -77,6 +83,16 @@ function setting() {
         window.localStorage["theme_color__i"] = color.i;
       }
 
+      // 개별 적용 (클릭 즉시 적용)
+      if (window.localStorage["general__dark_auto"] == "true") { //다크 모드 자동 적용
+        var hour = new Date().getHours();
+        if (hour >= 18 || hour < 6) {
+          window.localStorage["general__dark"] = "true";
+        } else {
+          window.localStorage["general__dark"] = "false";
+        }
+      }
+
       // filter();
       // columns();
       check_setting();
@@ -88,6 +104,17 @@ function setting() {
 $(document).ready(function() {
   // browser_alert();
   // contextmenu();
+
+  if (window.localStorage["general__dark_auto"] == undefined || window.localStorage["general__dark_auto"] == "true") {
+    window.localStorage["general__dark_auto"] = "true";
+    var hour = new Date().getHours();
+    if (hour >= 18 || hour < 6) {
+      window.localStorage["general__dark"] = "true";
+    } else {
+      window.localStorage["general__dark"] = "false";
+    }
+  }
+
   setting();
 
 });
