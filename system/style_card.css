@@ -224,6 +224,11 @@ body.page {
   border: 0;
 }
 
+.contents table th.no-border,
+.contents table td.no-border {
+  border-top: 0;
+  border-bottom: 0;
+}
 .contents table.center th,
 .contents table.center td,
 .contents table tr.center th,
