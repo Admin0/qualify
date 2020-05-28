@@ -161,7 +161,9 @@ body.page {
   font-family: 'Noto Sans KR', sans-serif;
 }
 
-.q_wrap .comment svg {
+.q_wrap .comment svg,
+.q_wrap .comment svg line,
+.q_wrap .comment svg path {
   stroke: #2196f3;
 }
 

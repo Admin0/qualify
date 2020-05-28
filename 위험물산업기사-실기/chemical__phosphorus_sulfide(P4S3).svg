@@ -1,14 +1,25 @@
 <?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:cml="http://www.xml-cml.org/schema" width="152.095" height="142.289" x="0" y="0" viewBox="0 0 152.095 132.289" font-family="sans-serif" stroke-width="1" stroke-linecap="round">
-  <line x1="105.7" y1="81.8" x2="100.5" y2="91.0" stroke-width="2.0"/>
-  <line x1="94.1" y1="89.3" x2="94.1" y2="53.0" stroke-width="2.0"/>
-  <line x1="100.7" y1="51.2" x2="105.5" y2="59.3" stroke-width="2.0"/>
-  <line x1="51.5" y1="51.3" x2="46.5" y2="59.9" stroke-width="2.0"/>
-  <line x1="46.5" y1="82.4" x2="51.5" y2="91.0" stroke-width="2.0"/>
-  <line x1="71.0" y1="102.3" x2="81.1" y2="102.3" stroke-width="2.0"/>
-  <line x1="81.1" y1="40.0" x2="71.0" y2="40.0" stroke-width="2.0"/>
-  <line x1="51.5" y1="77.2" x2="64.5" y2="84.0" stroke-width="2.0"/>
-  <line x1="87.5" y1="83.9" x2="100.7" y2="76.7" stroke-width="2.0"/>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:cml="http://www.xml-cml.org/schema"
+  width="152.095"
+  height="142.289"
+  x="0"
+  y="0"
+  viewBox="0 0 152.095 132.289"
+  font-family="sans-serif"
+  stroke-width="1"
+  stroke-linecap="round">
+  <line x1="105.7" y1="81.8" x2="100.5" y2="91.0" stroke="rgb(0,0,0)" stroke-width="2.0"/>
+  <line x1="94.1" y1="89.3" x2="94.1" y2="53.0" stroke="rgb(0,0,0)" stroke-width="2.0"/>
+  <line x1="100.7" y1="51.2" x2="105.5" y2="59.3" stroke="rgb(0,0,0)" stroke-width="2.0"/>
+  <line x1="51.5" y1="51.3" x2="46.5" y2="59.9" stroke="rgb(0,0,0)" stroke-width="2.0"/>
+  <line x1="46.5" y1="82.4" x2="51.5" y2="91.0" stroke="rgb(0,0,0)" stroke-width="2.0"/>
+  <line x1="71.0" y1="102.3" x2="81.1" y2="102.3" stroke="rgb(0,0,0)" stroke-width="2.0"/>
+  <line x1="81.1" y1="40.0" x2="71.0" y2="40.0" stroke="rgb(0,0,0)" stroke-width="2.0"/>
+  <line x1="51.5" y1="77.2" x2="64.5" y2="84.0" stroke="rgb(0,0,0)" stroke-width="2.0"/>
+  <line x1="87.5" y1="83.9" x2="100.7" y2="76.7" stroke="rgb(0,0,0)" stroke-width="2.0"/>
   <text x="106.094693" y="78.535156" fill="rgb(255,127,0)" stroke="rgb(255,127,0)" stroke-width="1" font-size="16">P</text>
   <text x="88.069217" y="110.288834" fill="rgb(255,127,0)" stroke="rgb(255,127,0)" stroke-width="1" font-size="16">P</text>
   <text x="88.069217" y="48.000000" fill="rgb(255,127,0)" stroke="rgb(255,127,0)" stroke-width="1" font-size="16">P</text>

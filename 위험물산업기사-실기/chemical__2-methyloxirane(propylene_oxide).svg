@@ -11,10 +11,10 @@
   font-family="sans-serif"
   stroke-width="1"
   stroke-linecap="round">
-  <line x1="103.4" y1="46.5" x2="80.0" y2="60.0" stroke-width="2"/>
-  <line x1="80.0" y1="60.0" x2="60.0" y2="94.6" stroke-width="2"/>
-  <line x1="60.0" y1="94.6" x2="46.5" y2="71.3" stroke-width="2"/>
-  <line x1="53.0" y1="60.0" x2="80.0" y2="60.0" stroke-width="2"/>
+  <line x1="103.4" y1="46.5" x2="80.0" y2="60.0" stroke="rgb(0,0,0)" stroke-width="2"/>
+  <line x1="80.0" y1="60.0" x2="60.0" y2="94.6" stroke="rgb(0,0,0)" stroke-width="2"/>
+  <line x1="60.0" y1="94.6" x2="46.5" y2="71.3" stroke="rgb(0,0,0)" stroke-width="2"/>
+  <line x1="53.0" y1="60.0" x2="80.0" y2="60.0" stroke="rgb(0,0,0)" stroke-width="2"/>
   <text x="110.641016" y="48.000000" fill="rgb(102,102,102)" stroke="rgb(102,102,102)" stroke-width="1" font-size="16">CH</text>
   <text x="134.641016" y="51.680000" fill="rgb(102,102,102)" stroke="rgb(102,102,102)" stroke-width="1" font-size="13">3</text>
   <text x="34.000000" y="68.000000" fill="rgb(255,12,12)" stroke="rgb(255,12,12)" stroke-width="1" font-size="16">O</text>

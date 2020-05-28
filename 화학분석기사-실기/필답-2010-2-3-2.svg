@@ -1,6 +1,6 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="822px" height="220px" viewBox="-0.5 -0.5 822 220" style="fill:none;"><defs/>
-  <g><path d="M 50.19 109.1 L 93.82 109.1" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 99.07 109.1 L 92.07 112.6 L 93.82 109.1 L 92.07 105.6 Z" stroke-miterlimit="10" pointer-events="none"/>
+  <g><path d="M 50.19 109.1 L 93.82 109.1" stroke="rgb(0,0,0)"  stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 99.07 109.1 L 92.07 112.6 L 93.82 109.1 L 92.07 105.6 Z" stroke="rgb(0,0,0)"  stroke-miterlimit="10" pointer-events="none"/>
     <g transform="translate(84.5,88.5)">
       <switch>
         <foreignObject style="overflow:visible;" pointer-events="all" width="11" height="11" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
@@ -23,7 +23,7 @@
         </foreignObject>
         <text x="16" y="19" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text>
       </switch>
-    </g><path d="M 219.67 109 L 283.3 109" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 288.55 109 L 281.55 112.5 L 283.3 109 L 281.55 105.5 Z" stroke-miterlimit="10" pointer-events="none"/><rect x="100" y="79" width="120" height="60" pointer-events="none"/>
+    </g><path d="M 219.67 109 L 283.3 109" stroke="rgb(0,0,0)"  stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 288.55 109 L 281.55 112.5 L 283.3 109 L 281.55 105.5 Z" stroke="rgb(0,0,0)"  stroke-miterlimit="10" pointer-events="none"/><rect x="100" y="79" width="120" height="60" pointer-events="none"/>
     <g transform="translate(105.5,94.5)">
       <switch>
         <foreignObject style="overflow:visible;" pointer-events="all" width="107" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
@@ -34,7 +34,7 @@
         </foreignObject>
         <text x="54" y="19" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text>
       </switch>
-    </g><path d="M 319.67 89 L 354.97 89" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 360.22 89 L 353.22 92.5 L 354.97 89 L 353.22 85.5 Z" stroke-miterlimit="10" pointer-events="none"/><path d="M 319.67 129 L 354.97 129" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 360.22 129 L 353.22 132.5 L 354.97 129 L 353.22 125.5 Z" stroke-miterlimit="10" pointer-events="none"/><path d="M 310 69 L 330 109 L 310 149 L 290 109 Z" stroke-miterlimit="10" pointer-events="none"/><path d="M 361.33 89 L 361.33 35.37" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 361.33 30.12 L 364.83 37.12 L 361.33 35.37 L 357.83 37.12 Z" stroke-miterlimit="10" pointer-events="none"/><rect x="340" y="87" width="50" height="10" transform="rotate(-45,365,92)" pointer-events="none"/><path d="M 361.33 129 L 361.33 182.63" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 361.33 187.88 L 357.83 180.88 L 361.33 182.63 L 364.83 180.88 Z" stroke-miterlimit="10" pointer-events="none"/><rect x="340" y="121" width="50" height="10" transform="rotate(-135,365,126)" pointer-events="none"/><path d="M 361.33 29 L 423.3 30.51" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 428.55 30.64 L 421.47 33.97 L 423.3 30.51 L 421.64 26.97 Z" stroke-miterlimit="10" pointer-events="none"/><rect x="333" y="21" width="50" height="10" transform="rotate(-45,358,26)" pointer-events="none"/><path d="M 361.33 189 L 423.3 189" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 428.55 189 L 421.55 192.5 L 423.3 189 L 421.55 185.5 Z" stroke-miterlimit="10" pointer-events="none"/><rect x="333" y="188" width="50" height="10" transform="rotate(-135,358,193)" pointer-events="none"/><path d="M 489.67 30.67 L 543.3 30.67" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 548.55 30.67 L 541.55 34.17 L 543.3 30.67 L 541.55 27.17 Z" stroke-miterlimit="10" pointer-events="none"/><rect x="430" y="0" width="60" height="60" pointer-events="none"/>
+    </g><path d="M 319.67 89 L 354.97 89" stroke="rgb(0,0,0)"  stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 360.22 89 L 353.22 92.5 L 354.97 89 L 353.22 85.5 Z" stroke="rgb(0,0,0)"  stroke-miterlimit="10" pointer-events="none"/><path d="M 319.67 129 L 354.97 129" stroke="rgb(0,0,0)"  stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 360.22 129 L 353.22 132.5 L 354.97 129 L 353.22 125.5 Z" stroke="rgb(0,0,0)"  stroke-miterlimit="10" pointer-events="none"/><path d="M 310 69 L 330 109 L 310 149 L 290 109 Z" stroke="rgb(0,0,0)"  stroke-miterlimit="10" pointer-events="none"/><path d="M 361.33 89 L 361.33 35.37" stroke="rgb(0,0,0)"  stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 361.33 30.12 L 364.83 37.12 L 361.33 35.37 L 357.83 37.12 Z" stroke="rgb(0,0,0)"  stroke-miterlimit="10" pointer-events="none"/><rect x="340" y="87" width="50" height="10" transform="rotate(-45,365,92)" pointer-events="none"/><path d="M 361.33 129 L 361.33 182.63" stroke="rgb(0,0,0)"  stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 361.33 187.88 L 357.83 180.88 L 361.33 182.63 L 364.83 180.88 Z" stroke="rgb(0,0,0)"  stroke-miterlimit="10" pointer-events="none"/><rect x="340" y="121" width="50" height="10" transform="rotate(-135,365,126)" pointer-events="none"/><path d="M 361.33 29 L 423.3 30.51" stroke="rgb(0,0,0)"  stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 428.55 30.64 L 421.47 33.97 L 423.3 30.51 L 421.64 26.97 Z" stroke="rgb(0,0,0)"  stroke-miterlimit="10" pointer-events="none"/><rect x="333" y="21" width="50" height="10" transform="rotate(-45,358,26)" pointer-events="none"/><path d="M 361.33 189 L 423.3 189" stroke="rgb(0,0,0)"  stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 428.55 189 L 421.55 192.5 L 423.3 189 L 421.55 185.5 Z" stroke="rgb(0,0,0)"  stroke-miterlimit="10" pointer-events="none"/><rect x="333" y="188" width="50" height="10" transform="rotate(-135,358,193)" pointer-events="none"/><path d="M 489.67 30.67 L 543.3 30.67" stroke="rgb(0,0,0)"  stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 548.55 30.67 L 541.55 34.17 L 543.3 30.67 L 541.55 27.17 Z" stroke="rgb(0,0,0)"  stroke-miterlimit="10" pointer-events="none"/><rect x="430" y="0" width="60" height="60" pointer-events="none"/>
     <g transform="translate(430.5,8.5)">
       <switch>
         <foreignObject style="overflow:visible;" pointer-events="all" width="56" height="40" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
@@ -45,7 +45,7 @@
         </foreignObject>
         <text x="28" y="26" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text>
       </switch>
-    </g><path d="M 489.67 189 L 543.3 189" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 548.55 189 L 541.55 192.5 L 543.3 189 L 541.55 185.5 Z" stroke-miterlimit="10" pointer-events="none"/><rect x="430" y="159" width="60" height="60" pointer-events="none"/>
+    </g><path d="M 489.67 189 L 543.3 189" stroke="rgb(0,0,0)"  stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 548.55 189 L 541.55 192.5 L 543.3 189 L 541.55 185.5 Z" stroke="rgb(0,0,0)"  stroke-miterlimit="10" pointer-events="none"/><rect x="430" y="159" width="60" height="60" pointer-events="none"/>
     <g transform="translate(432.5,174.5)">
       <switch>
         <foreignObject style="overflow:visible;" pointer-events="all" width="52" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
@@ -68,7 +68,7 @@
         </foreignObject>
         <text x="30" y="19" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text>
       </switch>
-    </g><path d="M 609.67 30.67 L 669.67 30.67 L 669.67 72.63" stroke-miterlimit="10" pointer-events="none"/><path d="M 669.67 77.88 L 666.17 70.88 L 669.67 72.63 L 673.17 70.88 Z" stroke-miterlimit="10" pointer-events="none"/><rect x="550" y="0" width="60" height="60" pointer-events="none"/>
+    </g><path d="M 609.67 30.67 L 669.67 30.67 L 669.67 72.63" stroke="rgb(0,0,0)"  stroke-miterlimit="10" pointer-events="none"/><path d="M 669.67 77.88 L 666.17 70.88 L 669.67 72.63 L 673.17 70.88 Z" stroke="rgb(0,0,0)"  stroke-miterlimit="10" pointer-events="none"/><rect x="550" y="0" width="60" height="60" pointer-events="none"/>
     <g transform="translate(550.5,8.5)">
       <switch>
         <foreignObject style="overflow:visible;" pointer-events="all" width="56" height="40" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
@@ -79,7 +79,7 @@
         </foreignObject>
         <text x="28" y="26" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text>
       </switch>
-    </g><path d="M 609.67 189 L 669.67 189 L 669.67 145.37" stroke-miterlimit="10" pointer-events="none"/><path d="M 669.67 140.12 L 673.17 147.12 L 669.67 145.37 L 666.17 147.12 Z" stroke-miterlimit="10" pointer-events="none"/><rect x="550" y="159" width="60" height="60" pointer-events="none"/>
+    </g><path d="M 609.67 189 L 669.67 189 L 669.67 145.37" stroke="rgb(0,0,0)"  stroke-miterlimit="10" pointer-events="none"/><path d="M 669.67 140.12 L 673.17 147.12 L 669.67 145.37 L 666.17 147.12 Z" stroke="rgb(0,0,0)"  stroke-miterlimit="10" pointer-events="none"/><rect x="550" y="159" width="60" height="60" pointer-events="none"/>
     <g transform="translate(550.5,167.5)">
       <switch>
         <foreignObject style="overflow:visible;" pointer-events="all" width="56" height="40" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
@@ -90,7 +90,7 @@
         </foreignObject>
         <text x="28" y="26" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text>
       </switch>
-    </g><path d="M 699.67 109 L 753.3 109" stroke-miterlimit="10" pointer-events="none"/><path d="M 758.55 109 L 751.55 112.5 L 753.3 109 L 751.55 105.5 Z" stroke-miterlimit="10" pointer-events="none"/><rect x="640" y="79" width="60" height="60" pointer-events="none"/>
+    </g><path d="M 699.67 109 L 753.3 109" stroke="rgb(0,0,0)"  stroke-miterlimit="10" pointer-events="none"/><path d="M 758.55 109 L 751.55 112.5 L 753.3 109 L 751.55 105.5 Z" stroke="rgb(0,0,0)"  stroke-miterlimit="10" pointer-events="none"/><rect x="640" y="79" width="60" height="60" pointer-events="none"/>
     <g transform="translate(640.5,87.5)">
       <switch>
         <foreignObject style="overflow:visible;" pointer-events="all" width="56" height="40" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
@@ -112,7 +112,7 @@
         </foreignObject>
         <text x="22" y="19" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text>
       </switch>
-    </g><rect x="247.5" y="37" width="10" height="60" pointer-events="none"/><path d="M 237.5 90.63 L 237.5 43.37" stroke-miterlimit="10" pointer-events="none"/><path d="M 237.5 95.88 L 234 88.88 L 237.5 90.63 L 241 88.88 Z" stroke-miterlimit="10" pointer-events="none"/><path d="M 237.5 38.12 L 241 45.12 L 237.5 43.37 L 234 45.12 Z" stroke-miterlimit="10" pointer-events="none"/>
+    </g><rect x="247.5" y="37" width="10" height="60" pointer-events="none"/><path d="M 237.5 90.63 L 237.5 43.37" stroke="rgb(0,0,0)"  stroke-miterlimit="10" pointer-events="none"/><path d="M 237.5 95.88 L 234 88.88 L 237.5 90.63 L 241 88.88 Z" stroke="rgb(0,0,0)"  stroke-miterlimit="10" pointer-events="none"/><path d="M 237.5 38.12 L 241 45.12 L 237.5 43.37 L 234 45.12 Z" stroke="rgb(0,0,0)"  stroke-miterlimit="10" pointer-events="none"/>
     <g transform="translate(235.5,1.5)">
       <switch>
         <foreignObject style="overflow:visible;" pointer-events="all" width="33" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">

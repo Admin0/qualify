@@ -1,6 +1,6 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="272px" height="271px" viewBox="-0.5 -0.5 272 271" style="fill:none;"><defs/>
-  <g><path d="M 70 200 L 190 200 L 250 40" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><path d="M 30 240 L 270 240" stroke-miterlimit="10" pointer-events="none"/><path d="M 30 240 L 30 0" stroke-miterlimit="10" pointer-events="none"/>
+  <g><path d="M 70 200 L 190 200 L 250 40" stroke="rgb(0,0,0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><path d="M 30 240 L 270 240" stroke-miterlimit="10" pointer-events="none"/><path d="M 30 240 L 30 0" stroke-miterlimit="10" pointer-events="none"/>
     <g transform="translate(101.5,253.5)">
       <switch>
         <foreignObject style="overflow:visible;" pointer-events="all" width="96" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
@@ -33,5 +33,5 @@
         </foreignObject>
         <text x="28" y="22" text-anchor="middle" font-size="16px" font-family="Helvetica">[Not supported by viewer]</text>
       </switch>
-    </g><path d="M 155 200 Q 190 200 205 160" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="6 6" pointer-events="none"/></g>
+    </g><path d="M 155 200 Q 190 200 205 160" stroke="rgb(0,0,0)" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="6 6" pointer-events="none"/></g>
 </svg>

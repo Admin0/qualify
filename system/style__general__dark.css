@@ -42,10 +42,15 @@
 .general__dark .contents .img,
 .general__dark .contents img,
 .general__dark .contents svg,
+.general__dark .contents svg line,
 .general__dark .contents object {
   fill: rgb(189, 193, 198);
   stroke: rgb(189, 193, 198);
   color: rgb(189, 193, 198);
+}
+
+.general__dark .contents svg path {
+  stroke: rgb(189, 193, 198);
 }
 
 .general__dark .material-icons svg {
@@ -58,7 +63,9 @@
   color: #c8b900;
 }
 
-.general__dark .q_wrap .comment svg {
+.general__dark .q_wrap .comment svg,
+.general__dark .q_wrap .comment svg line,
+.general__dark .q_wrap .comment svg path {
   color: #c8b900;
   stroke: #c8b900;
 }
