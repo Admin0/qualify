@@ -9,28 +9,27 @@
   <meta name="theme-color" content="#ffffff" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="shortcut icon" href="favicon.ico">
-  <meta name="msapplication-TileImage" content="../images/icon__qualify.png">
-  <link rel="apple-touch-icon" href="../images/icon__qualify.png">
-  <link rel="icon" type="image/png" href="../images/icon__qualify.png">
+  <meta name="msapplication-TileImage" content="../images/icon__qualify.webp">
+  <link rel="apple-touch-icon" href="../images/icon__qualify.webp">
+  <link rel="icon" type="image/webp" href="../images/icon__qualify.webp">
   <link rel="stylesheet" href="system/style.css">
   <link rel="stylesheet" href="system/style_print.css" media="print">
-	<link rel="manifest" href="manifest.json">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="system/main__ajax.js"></script>
-  <script src="system/main__initialize.js"></script>
-  <script src="system/main__settings.js"></script>
-  <script src="system/main__nav.js"></script>
-  <script src="system/main__context.js"></script>
-  <script src="system/main.js"></script>
-  <script src="system/sub__clipboard.min.js"></script>
-  <script src="system/sub__timer.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js'></script>
-  <script src="system/sub__mathjax.js" async></script>
-  <script src="system/sub__scroll.js" async></script>
-  <script src="system/sub__shortcut.js" async></script>
+  <link rel="manifest" href="manifest.json">
+  <script src="system/sub__jquery.js" defer></script>
+  <script src="system/main__ajax.js" defer></script>
+  <script src="system/main__initialize.js" defer></script>
+  <script src="system/main__settings.js" defer></script>
+  <script src="system/main__nav.js" defer></script>
+  <script src="system/main__context.js" defer></script>
+  <script src="system/main.js" defer></script>
+  <script src="system/sub__timer.js" defer></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js' defer></script>
+  <script src="system/sub__mathjax.js" defer></script>
+  <script src="system/sub__scroll.js" defer></script>
+  <script src="system/sub__shortcut.js" defer></script>
   <!-- sharer -->
-  <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+  <script src="system/sub__share_kakao.js" defer></script>
+  <script src="system/sub__clipboard.js" defer></script>
 
   <!-- adsense -->
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -131,9 +130,7 @@
   </dl>
 
   <footer class="shadow-top">
-    <p class="copyright">© 2018-<script>
-        document.write(new Date().getFullYear());
-      </script> JinH</p>
+    <p class="copyright">© 2018-<span id="year"></span> JinH</p>
   </footer>
 
 </body>

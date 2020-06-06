@@ -225,3 +225,5 @@ $(window).on('load', function() {
   }, 0);
   // imgReady();
 });
+
+document.getElementById("year").innerHTML = new Date().getFullYear();
