@@ -1,13 +1,13 @@
 function nav_expand() {
   $("nav, #sub_header, #nav_footer > i").removeClass("fold");
   $("body").removeClass("fold");
-  window.localStorage['nav_fold'] = "false";
+  localStorage['nav_fold'] = "false";
 }
 
 function nav_fold() {
   $("nav, #sub_header, #nav_footer > i").addClass("fold");
   $("body").addClass("fold");
-  window.localStorage['nav_fold'] = "true";
+  localStorage['nav_fold'] = "true";
 }
 
 function nav_create() {
@@ -15,21 +15,21 @@ function nav_create() {
   var nav_w = 300;
   var nav_w_folded = 68;
 
-  if (window.localStorage['nav_fold'] == "true" && !is_mobile) {
+  if (localStorage['nav_fold'] == "true" && !is_mobile) {
     nav_fold();
   } else {
     nav_expand();
   }
 
   $("#nav_footer").on("click", function() {
-    if (window.localStorage['nav_fold'] != "true" && !is_mobile) {
+    if (localStorage['nav_fold'] != "true" && !is_mobile) {
       nav_fold();
     } else {
       nav_expand();
     }
   });
 
-  $('nav').append('<div id="tooltip_nav"><div id="tooltip_nav_text"></div><div id="tooltip_nav_before"></div></div>');
+  // $('nav').append('<div id="tooltip_nav"><div id="tooltip_nav_text"></div><div id="tooltip_nav_before"></div></div>');
 
   // $("#tooltip_nav").append($("#tooltip_before"));
   function tooltip_nav(type, target) {

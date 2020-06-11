@@ -193,31 +193,32 @@ function console_event(code) {
       }
       break;
     case "d":
-      if (window.localStorage["general__dark"] != "true") {
+      localStorage.general__dark_auto = "false";
+      if (localStorage.general__dark != "true") {
         $("meta[name='theme-color']").attr("content", "rgba(50, 54, 57, 1)");
         $('body').addClass("general__dark");
-        window.localStorage["general__dark"] = "true"
+        localStorage.general__dark = "true"
         toast("다크 모드가 적용되었습니다.");
       } else {
         $("meta[name='theme-color']").attr("content", "#ffffff");
         $('body').removeClass("general__dark");
-        window.localStorage["general__dark"] = "false"
+        localStorage.general__dark = "false"
         toast("다크 모드가 해제되었습니다.");
       }
       break;
     case "a":
-      if (window.localStorage["answer__quiz"] != "true") {
+      if (localStorage.answer__quiz != "true") {
         $('body').addClass("answer__quiz");
-        window.localStorage["answer__quiz"] = "true"
+        localStorage.answer__quiz = "true"
         toast("퀴즈 모드가 적용되었습니다.");
       } else {
         $('body').removeClass("answer__quiz");
-        window.localStorage["answer__quiz"] = "false"
+        localStorage.answer__quiz = "false"
         toast("퀴즈 모드가 해제되었습니다.");
       }
       break;
     case "n":
-      if (window.localStorage['nav_fold'] == "true" && !is_mobile) {
+      if (localStorage['nav_fold'] == "true" && !is_mobile) {
         nav_expand();
       } else {
         nav_fold();

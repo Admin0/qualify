@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 
 <head>
   <title>#qualify</title>
@@ -15,7 +15,8 @@
   <link rel="stylesheet" href="system/style.css">
   <link rel="stylesheet" href="system/style_print.css" media="print">
   <link rel="manifest" href="manifest.json">
-  <script src="system/sub__jquery.js" defer></script>
+  <script defer src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- <script src="system/sub__jquery.js" defer></script> -->
   <script src="system/main__ajax.js" defer></script>
   <script src="system/main__initialize.js" defer></script>
   <script src="system/main__settings.js" defer></script>
@@ -26,7 +27,7 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js' defer></script>
   <script src="system/sub__mathjax.js" defer></script>
   <script src="system/sub__scroll.js" defer></script>
-  <script src="system/sub__shortcut.js" defer></script>
+  <script src="system/sub__shortcut.min.js" defer></script>
   <!-- sharer -->
   <script src="system/sub__share_kakao.js" defer></script>
   <script src="system/sub__clipboard.js" defer></script>
@@ -38,11 +39,14 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39552694-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-39552694-1');
-    </script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-39552694-1');
+  </script>
 </head>
 
 <body>
@@ -50,7 +54,7 @@
   <header>
     <h1>
       <i id="nav_on" onclick="if($('nav').attr('class')!='on'){$('nav, #nav_bg').addClass('on');}else{$('nav, #nav_bg').removeClass('on');};" class="material-icons">menu</i><span id="title"><span class="hide_mobile"></span>#qualify</span>
-      <span id="timer" class="timer" onclick="start = window.localStorage['timer'] = Date.now(); toast('초읽기가 초기화되었습니다.','timer')">0:00:00</span><i class="material-icons timer" style="margin-right:.25em;" onclick="start = Date.now();">timer</i>
+      <span id="timer" class="timer" onclick="start = localStorage['timer'] = Date.now(); toast('초읽기가 초기화되었습니다.','timer')">0:00:00</span><i class="material-icons timer" style="margin-right:.25em;" onclick="start = Date.now();">timer</i>
       <i id="print_icon" onclick="window.print();" class="material-icons hide_mobile">print</i>
     </h1>
   </header>
@@ -76,6 +80,10 @@
       <div id="nav_menu"></div>
     </div>
     <div id='nav_footer'><i class='material-icons'>chevron_left</i></div>
+    <div id="tooltip_nav">
+      <div id="tooltip_nav_text"></div>
+      <div id="tooltip_nav_before"></div>
+    </div>
   </nav>
 
   <div id="splash">

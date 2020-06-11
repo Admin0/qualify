@@ -55,7 +55,7 @@ function slide(target, wanna_fold) {
       });
       $("#" + target + " i").text("unfold_more");
       $("#" + target).addClass("slided");
-      window.localStorage["item_" + target + "_is_folded"] = "true";
+      localStorage["item_" + target + "_is_folded"] = "true";
       break;
     case false:
       // console.log("false");
@@ -75,27 +75,29 @@ function slide(target, wanna_fold) {
       });
       $("#" + target + " i").text("unfold_less");
       $("#" + target).removeClass("slided");
-      window.localStorage["item_" + target + "_is_folded"] = "false";
+      localStorage["item_" + target + "_is_folded"] = "false";
       break;
     default:
   }
 }
 
 function check_item_folded() {
-  $("#nav_item_list h2").each(function(index) {
-    if (window.localStorage["item_" + $(this).attr("id") + "_is_folded"] == "true") {
-      // console.log(window.localStorage["item_" + $(this).attr("id") + "_is_folded"]);
-      $("#item_list section." + $(this).attr("id")).hide();
-      $("#nav_item_list h3." + $(this).attr("id")).hide();
-      $("#" + $(this).attr("id") + " i").text("unfold_more");
-      $("#" + $(this).attr("id")).addClass("slided");
+  $("#item_list h2").each(function(index) {
+    let id = $(this).attr("id");
+    // console.log(id);
+    if (localStorage["item_" + id + "_is_folded"] == "true") {
+      // console.log(localStorage["item_" + id + "_is_folded"]);
+      $("#item_list section." + id).hide();
+      $("#nav_item_list h3." + id).hide();
+      $("#" + id + " i").text("unfold_more");
+      $("#" + id).addClass("slided");
     }
   });
 }
 
 function load_navigat_title(key, val) {
   $("<h2/>", {
-    "id": key,
+    "id": "nav_"+key ,
     "class": key,
     "onclick": "slide(\"" + key + "\")",
     html: "<a href='#" + key + "'>" + val.title + (val.contents != null ? " <span class='translation'>(" + val.contents.length + ")</span>" : "") + "</a>"

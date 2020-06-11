@@ -10,7 +10,7 @@ function setting() {
     $("#setting .setting_item input").prev("i").remove();
 
     for (i = 0; i < item.length; i++) {
-      if (window.localStorage[item[i]] == "true") {
+      if (localStorage[item[i]] == "true") {
         $("#" + item[i] + " input").attr("checked", true);
       } else {
         $("#" + item[i] + " input").attr("checked", false);
@@ -27,7 +27,7 @@ function setting() {
 
     function css_option() {
       for (var i = 0; i < arguments.length; i++) {
-        if (window.localStorage[arguments[i]] == "true") {
+        if (localStorage[arguments[i]] == "true") {
           $('body').addClass(arguments[i]);
         } else {
           $('body').removeClass(arguments[i]);
@@ -37,13 +37,13 @@ function setting() {
     // 개별 적용
     css_option("general__dark", "general__dark_auto", "answer__serif", "answer__quiz");
 
-    if (window.localStorage["general__dark_auto"] == "true") { //다크 모드 자동 적용
+    if (localStorage.general__dark_auto == "true") { //다크 모드 자동 적용
       $("#general__dark").addClass("disabled");
     } else {
       $("#general__dark").removeClass("disabled");
     }
 
-    if (window.localStorage["general__dark"] == "true") {
+    if (localStorage.general__dark == "true") {
       $("meta[name='theme-color']").attr("content", "rgba(50, 54, 57, 1)");
     } else {
       $("meta[name='theme-color']").attr("content", "#ffffff");
@@ -72,24 +72,24 @@ function setting() {
     // console.log($(this).hasClass("disabled"));
     if (!$(this).hasClass("disabled")) {
       var i = $("#setting > .setting_item").index(this);
-      if (window.localStorage[item[i]] == "true") {
-        window.localStorage[item[i]] = "false"
+      if (localStorage[item[i]] == "true") {
+        localStorage[item[i]] = "false"
       } else {
-        window.localStorage[item[i]] = "true"
+        localStorage[item[i]] = "true"
       }
       toast("설정이 저장되었습니다.", "save");
 
-      if ($(this)[0] == $("#theme_color")[0] && window.localStorage["theme_color"] == "true") {
-        window.localStorage["theme_color__i"] = color.i;
+      if ($(this)[0] == $("#theme_color")[0] && localStorage.theme_color == "true") {
+        localStorage.theme_color__i = color.i;
       }
 
       // 개별 적용 (클릭 즉시 적용)
-      if (window.localStorage["general__dark_auto"] == "true") { //다크 모드 자동 적용
+      if (localStorage.general__dark_auto == "true") { //다크 모드 자동 적용
         var hour = new Date().getHours();
         if (hour >= 18 || hour < 6) {
-          window.localStorage["general__dark"] = "true";
+          localStorage.general__dark = "true";
         } else {
-          window.localStorage["general__dark"] = "false";
+          localStorage.general__dark = "false";
         }
       }
 
@@ -105,13 +105,13 @@ $(document).ready(function() {
   // browser_alert();
   // contextmenu();
 
-  if (window.localStorage["general__dark_auto"] == undefined || window.localStorage["general__dark_auto"] == "true") {
-    window.localStorage["general__dark_auto"] = "true";
+  if (localStorage.general__dark_auto == undefined || localStorage.general__dark_auto == "true") {
+    localStorage.general__dark_auto = "true";
     var hour = new Date().getHours();
     if (hour >= 18 || hour < 6) {
-      window.localStorage["general__dark"] = "true";
+      localStorage.general__dark = "true";
     } else {
-      window.localStorage["general__dark"] = "false";
+      localStorage.general__dark = "false";
     }
   }
 

@@ -55,6 +55,7 @@ nav {
 
 nav #nav {
   width: 100%;
+  position: relative;
   height: calc(100% - 46px);
   overflow-y: auto;
   overflow-x: hidden;
@@ -152,15 +153,17 @@ nav #nav_header {
   justify-content: space-between;
   background: #fafafa;
   box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12) inset;
-  position: relative;
+  position: fixed;
+  width:300px;
   padding: 10px 0;
   color: rgba(0, 0, 0, .54);
   white-space: nowrap;
-  transition: .3s;
+  transition: .3s;z-index: 1;
 }
 
 nav.fold #nav_header {
   padding: 10px 0 46px;
+  width: 68px;
 }
 
 #to_github {
@@ -203,6 +206,7 @@ nav #nav_item_list {
   box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12) inset;
   padding-bottom: 16px;
   will-change: transform;
+  margin-top: 64px;
 }
 
 nav hr {
@@ -279,10 +283,6 @@ nav #nav_menu {
   visibility: visible;
   opacity: 1;
   right: -8px;
-}
-
-nav.fold #nav_header {
-  /*display: block;*/
 }
 
 nav #nav_header span {
