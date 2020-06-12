@@ -154,11 +154,12 @@ nav #nav_header {
   background: #fafafa;
   box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12) inset;
   position: fixed;
-  width:300px;
+  width: 300px;
   padding: 10px 0;
   color: rgba(0, 0, 0, .54);
   white-space: nowrap;
-  transition: .3s;z-index: 1;
+  transition: .3s;
+  z-index: 1;
 }
 
 nav.fold #nav_header {
@@ -528,6 +529,10 @@ nav.fold #nav h2 a {
 
   nav #nav_header {
     padding: 6px 0;
+  }
+
+  nav #nav_menu {
+    margin-top: 64px;
   }
 
   nav #nav_footer {

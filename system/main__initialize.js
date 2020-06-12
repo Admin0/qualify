@@ -3,34 +3,35 @@ console.log('init.js delay: ' + (-time.start + time.init0) + ' ms');
 
 const is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-const custom_icon_list = [
-  "certificate", "contract", "deer", "exit_sign", "fire_extinguisher", "gears", "kicking",
-  "microsoft_access", "microsoft_excel", "microsoft_office", "microsoft_powerpoint", "microsoft_word",
-  "oil_industry", "oil_pump", "poison",
-  "share__facebook", "share__kakaolink", "share__twitter",
-  "star", "test_tube", "water"
-];
-var custom_icon_set = [];
-for (var i = 0; i < custom_icon_list.length; i++) {
-  $.ajax({
-    url: "/qualify/system/icons/" + custom_icon_list[i] + ".svg",
-    type: 'get',
-    dataType: 'text',
-    async: false,
-    success: function(data) {
-      custom_icon_set[i] = data;
-    }
-  });
-}
+// const custom_icon_list = [
+//   "certificate", "contract", "deer", "exit_sign", "fire_extinguisher", "gears", "kicking",
+//   "microsoft_access", "microsoft_excel", "microsoft_office", "microsoft_powerpoint", "microsoft_word",
+//   "oil_industry", "oil_pump", "poison",
+//   "share__facebook", "share__kakaolink", "share__twitter",
+//   "star", "test_tube", "water"
+// ];
+// var custom_icon_set = [];
+// for (var i = 0; i < custom_icon_list.length; i++) {
+//   $.ajax({
+//     url: "/qualify/system/icons/" + custom_icon_list[i] + ".svg",
+//     type: 'get',
+//     dataType: 'text',
+//     async: false,
+//     success: function(data) {
+//       custom_icon_set[i] = data;
+//     }
+//   });
+// }
 
+$.getScript("system/main__initialize_icons.js");
 // console.log(custom_icon_set);
 
 function get_icon(name) {
-  var result = name;
-  // var scriptUrl = "somefile.php?name=" + name;
-  for (var i = 0; i < custom_icon_list.length; i++) {
-    if (name == custom_icon_list[i]) {
-      result = custom_icon_set[i];
+  let result = name;
+  const l = custom_icon.length;
+  for (let i = 0; i < l; i++) {
+    if (name == custom_icon[i][0]) {
+      result = custom_icon[i][1];
       break;
     }
   }
@@ -167,13 +168,13 @@ $(document).ready(function() {
   });
   $("#context_menu").load("system/module/context_menu.html");
 
-  $("div#splash").removeClass("on");
+  // $("div#splash").removeClass("on");
 
   console.log('modul load done: ' + (Date.now() - time.init0) + ' ms');
   $.getScript("system/main__initialize_console.js");
 });
 
 $(window).on('load', function() {
-  // $("div#splash").fadeOut();
-  console.log('splash removed: '+(Date.now() - time.init0)+' ms');
+  $("div#splash").fadeOut();
+  console.log('splash removed: ' + (Date.now() - time.init0) + ' ms');
 })
