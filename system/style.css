@@ -542,9 +542,16 @@ div#splash {
   height: 100%;
   left: 0;
   top: 0;
-  z-index: 6;
   background: #fff;
   text-align: center;
+  z-index: -1;
+  transition: 1s;
+  opacity: 0;
+}
+
+div#splash.on {
+  z-index: 6;
+  opacity: 1;
 }
 
 div#splash svg {

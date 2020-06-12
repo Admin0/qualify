@@ -1,3 +1,5 @@
+console.log('main.js start: ' + (Date.now() - time.init0) + ' ms');
+
 function toast(msg, icon, time) {
   if (icon == null) {
     icon = "priority_high";
@@ -205,6 +207,8 @@ $(window).scroll(function() {
 function clear() {
   $('.contents').html("");
 }
+
+console.log('main.js done: ' + (Date.now() - time.init0) + ' ms');
 
 $(window).resize(function() {
   // columns();

@@ -1,3 +1,6 @@
+const time = {};
+time.start = localStorage.timer || Date.now(); // sub_timer.js와  연계되었습니다.
+
 const ad =
   '<section class="ad">' +
   '<!-- qualify 반응형 -->' +

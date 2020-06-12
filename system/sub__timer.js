@@ -1,6 +1,6 @@
-const start = localStorage.timer || Date.now();
+// const start = localStorage.timer || Date.now();
 setInterval(function() {
-  let delta = Date.now() - start;
+  let delta = Date.now() - time.start;
   output = (Math.floor(delta / 1000));
   let sec = (output % 60 < 10 ? "0" + output % 60 : output % 60)
   let min_raw = Math.floor(delta / 1000 / 60)

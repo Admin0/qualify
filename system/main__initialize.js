@@ -1,3 +1,6 @@
+time.init0 = Date.now();
+console.log('init.js delay: ' + (-time.start + time.init0) + ' ms');
+
 const is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
 const custom_icon_list = [
@@ -81,23 +84,20 @@ function slide(target, wanna_fold) {
   }
 }
 
-function check_item_folded() {
-  $("#item_list h2").each(function(index) {
-    let id = $(this).attr("id");
-    // console.log(id);
-    if (localStorage["item_" + id + "_is_folded"] == "true") {
-      // console.log(localStorage["item_" + id + "_is_folded"]);
-      $("#item_list section." + id).hide();
-      $("#nav_item_list h3." + id).hide();
-      $("#" + id + " i").text("unfold_more");
-      $("#" + id).addClass("slided");
-    }
-  });
+function check_item_folded(key) {
+  // console.log('dom_key: ' + key);
+  if (localStorage["item_" + key + "_is_folded"] == "true") {
+    // console.log(localStorage["item_" + key + "_is_folded"]);
+    $("#item_list section." + key).hide();
+    $("#nav_item_list h3." + key).hide();
+    $("#" + key + " i").text("unfold_more");
+    $("#" + key).addClass("slided");
+  }
 }
 
 function load_navigat_title(key, val) {
   $("<h2/>", {
-    "id": "nav_"+key ,
+    "id": "nav_" + key,
     "class": key,
     "onclick": "slide(\"" + key + "\")",
     html: "<a href='#" + key + "'>" + val.title + (val.contents != null ? " <span class='translation'>(" + val.contents.length + ")</span>" : "") + "</a>"
@@ -142,28 +142,38 @@ function load_content_items(category, item) {
 function initialize() {
   $.getJSON("index.json", function(data) {
     // var items = [];
+    // console.log(data);
     $.each(data, function(key, val) {
       load_content_title(key, val);
       load_navigat_title(key, val);
       $.each(val.contents, function(index, element) {
+        // if (localStorage["item_" + key + "_is_folded"] != "true") //감춰진 항목은 시작시 로드 안하게??
         load_content_items(key, element);
         load_navigat_items(key, element);
       });
+      // console.log(key);
+      check_item_folded(key);
     });
-    check_item_folded();
   });
+  console.log('init(inner) done: ' + (Date.now() - time.init0) + ' ms');
 }
 
 $(document).ready(function() {
   initialize();
+  console.log('init done: ' + (Date.now() - time.init0) + ' ms');
   $("#nav_menu").load("system/module/nav_menu.html");
   $("#share").load("system/module/share.html", function() {
     nav_create();
   });
   $("#context_menu").load("system/module/context_menu.html");
+
+  $("div#splash").removeClass("on");
+
+  console.log('modul load done: ' + (Date.now() - time.init0) + ' ms');
   $.getScript("system/main__initialize_console.js");
 });
 
 $(window).on('load', function() {
-  $("div#splash").fadeOut();
+  // $("div#splash").fadeOut();
+  console.log('splash removed: '+(Date.now() - time.init0)+' ms');
 })
