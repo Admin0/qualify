@@ -26,9 +26,14 @@ function after_load(full_id) {
   $('#item_list #' + full_id + ', #nav_item_list .' + full_id + ', #nav_menu .' + full_id).addClass('targeted');
 
   // scroll to top for mobile
-  $('html, body').animate({
-    scrollTop: 0
-  }, pageYOffset / 2);
+  window.scroll({
+    top: 0,
+    // left: 0,
+    behavior: 'smooth'
+  });
+  // $('html, body').animate({
+  //   scrollTop: 0
+  // }, pageYOffset / 5);
 
   // next | prev able test
   console_event(",.");
