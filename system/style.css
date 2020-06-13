@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Serif+KR');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Serif+KR&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
 /*@import url(iconfont/material-icons.css);*/
 /* @import url('style_card.css'); */
@@ -46,10 +46,6 @@
   opacity: 0;
 }
 
-input::selection, textarea::selection {
-  background: rgba(0, 0, 0, .2);
-}
-
 body {
   padding: 0 0 0 300px;
   margin: 56px 0 0;
@@ -62,15 +58,6 @@ body {
 
 h2 {
   margin: 1em 0;
-}
-
-.tip:hover {
-  opacity: .5;
-}
-
-body.columns {
-  max-width: 100%;
-  padding-left: calc(1em + 300px);
 }
 
 body.fold {
@@ -317,36 +304,10 @@ h4:first-of-type {
   margin-top: .5em
 }
 
-#img_wrap, #movie_wrap {
-  display: none;
-  /*opacity: 0;*/
-  transition: .25s;
-  position: fixed;
-  z-index: 5;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, .5);
-  text-align: center
-}
-
-#movie_wrap>iframe {
-  width: 90%;
-  position: relative
-}
-
 .shadow {
   box-shadow: 0 2px 5px rgba(0, 0, 0, .25);
   border-radius: 3px;
   background: #fff;
-}
-
-#img_wrap>img {
-  /* 클릭했을 때 크게 보이는 것 */
-  max-width: 90%;
-  max-height: 90%;
-  position: relative
 }
 
 .material-icons {
@@ -580,27 +541,6 @@ div#splash svg {
     text-align: center;
     white-space: nowrap;
     margin: 14px 1em 14px 3em;
-  }
-
-  #sub_header {
-    padding-left: 0 !important;
-    width: 100% !important
-  }
-
-  #column_bt {
-    display: none;
-  }
-
-  #sub_header .filter_bt {
-    padding: 12px 18px
-  }
-
-  #column_bt i, #sub_header i {
-    margin: 0
-  }
-
-  #sub_header .filter_bt span:not(.ink_bar) {
-    display: none
   }
 
   #toast {
