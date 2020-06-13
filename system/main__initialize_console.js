@@ -1,6 +1,6 @@
 shortcut.add("Ctrl+Q", function() {
   $("[locked=true]").each(function() {
-    $(this).attr("onclick", "load('" + $(this).attr("name") + "','" + $(this).attr("round") + "')");
+    $(this).children("a, h3").attr("onclick", "load('" + $(this).attr("name") + "','" + $(this).attr("round") + "')");
     // console.log(this);
   });
   $("[locked=true] i").text("lock_open");
@@ -13,10 +13,6 @@ shortcut.add("Ctrl+Shift+A", function() {
     $(".ad").remove();
     toast("광고가 해제되었습니다.");
   }
-});
-
-shortcut.add("Q", function() {
-  console_event("q");
 });
 
 shortcut.add("Q", function() {

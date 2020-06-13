@@ -14,11 +14,12 @@
   left: 1em;
   z-index: 40;
   border-radius: 3px;
+  display: flex;
+  align-items: center;
 }
 
 #toast i.material-icons {
   font-size: 20px;
-  margin-bottom: 1px;
   margin-right: .5em;
 }
 
