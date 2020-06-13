@@ -294,11 +294,11 @@
     }, {
       "title": "필답-2019-1",
       "icon": "fire_extinguisher",
-      "locked": true
+      "locked": false
     }, {
       "title": "작업-2019-1",
       "icon": "exit_sign",
-      "locked": true
+      "locked": false
     }, {
       "title": "필답-2019-2",
       "icon": "fire_extinguisher",
@@ -318,6 +318,10 @@
     }, {
       "title": "후기",
       "icon": "contract"
+    }, {
+      "title": "필답-2020-1",
+      "icon": "fire_extinguisher",
+      "locked": true
     }]
   },
   "화공기사-필기": {
