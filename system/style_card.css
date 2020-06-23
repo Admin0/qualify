@@ -435,7 +435,7 @@ body.page {
 }
 
 /* ***** mobile ***** */
-@media handheld, only screen and (max-device-width:240mm) {
+@media handheld, only screen and (max-width:240mm) {
   body.page {
     width: calc(100% - 2em);
     height: auto;

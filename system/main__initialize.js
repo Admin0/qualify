@@ -23,11 +23,11 @@ const is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini
 //   });
 // }
 
+let custom_icon = [];
 $.getScript("system/main__initialize_icons.js");
-// console.log(custom_icon_set);
 
 function get_icon(name) {
-  let result = name;
+  let result = (custom_icon[0] == undefined) ? "error" : name;
   const l = custom_icon.length;
   for (let i = 0; i < l; i++) {
     if (name == custom_icon[i][0]) {
