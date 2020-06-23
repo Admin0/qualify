@@ -73,11 +73,7 @@ function load(id, content) {
       });
 
       // adsense
-      $("#main_item .contents").append(ad).prepend(ad);
-      (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-8175591114279139",
-        enable_page_level_ads: true
-      });
+      $("#main_item .contents").prepend(ad).append(ad);
     }
   });
 }
