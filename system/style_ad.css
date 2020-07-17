@@ -6,7 +6,7 @@
   margin-top: 0;
 }
 
-.contents .ad.top {
+/* .contents .ad.top {
   position: absolute;
   min-height: 280px;
 }
@@ -14,4 +14,4 @@
 .contents .ad.top+.q_list .head, .contents .ad.top+.q_list.head,
 .contents .ad.top+.q_wrap {
   margin-top: calc(280px + .5em);
-}
+} */

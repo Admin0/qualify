@@ -80,7 +80,7 @@ function load(id, content) {
 
       let question_i = $('#main_item .contents .q_wrap').length;
       if (question_i > 30) {
-        $("#main_item .contents .q_wrap:nth(" + (Math.floor(question_i / 2) - 1) + ")").after("middle");
+        $("#main_item .contents .q_wrap:nth(" + (Math.floor(question_i / 2) - 1) + ")").after(ad("middle"));
       }
     }
   });
