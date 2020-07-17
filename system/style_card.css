@@ -173,10 +173,6 @@ body.page {
 }
 
 /* ad: 광고가 끼면 first-child 선택자가 안 먹기 때문에 first-of-type 으로 우회합니당^^ */
-.contents .ad {
-  margin: 1em 0;
-}
-
 .q_wrap:first-of-type {
   margin-top: 0;
 }

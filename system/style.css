@@ -11,6 +11,7 @@
 @import url('style_context.css');
 @import url('style_card.css');
 @import url('style_toast.css');
+@import url('style_ad.css');
 
 ::selection {
   background: rgba(0, 0, 0, 0);

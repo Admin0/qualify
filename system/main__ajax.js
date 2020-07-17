@@ -1,19 +1,22 @@
 const time = {};
 time.start = localStorage.timer || Date.now(); // sub_timer.js와  연계되었습니다.
 
-const ad =
-  '<section class="ad">' +
-  '<!-- qualify 반응형 -->' +
-  '<ins class="adsbygoogle"' +
-  '     style="display:block"' +
-  '     data-ad-client="ca-pub-8175591114279139"' +
-  '     data-ad-slot="5452657644"' +
-  '     data-ad-format="auto"' +
-  '     data-full-width-responsive="true"></ins>' +
-  '<script>' +
-  '(adsbygoogle = window.adsbygoogle || []).push({});' +
-  '</script>' +
-  '</section>'
+function ad(custom_class) {
+  let ad =
+    '<section class="ad ' + custom_class + '">' +
+    '<!-- qualify 반응형 -->' +
+    '<ins class="adsbygoogle"' +
+    '     style="display:block"' +
+    '     data-ad-client="ca-pub-8175591114279139"' +
+    '     data-ad-slot="5452657644"' +
+    '     data-ad-format="auto"' +
+    '     data-full-width-responsive="true"></ins>' +
+    '<script>' +
+    '(adsbygoogle = window.adsbygoogle || []).push({});' +
+    '</script>' +
+    '</section>'
+  return ad;
+}
 
 function after_load(full_id) {
   $('#title').html(full_id);
@@ -73,11 +76,11 @@ function load(id, content) {
       });
 
       // adsense
-      $("#main_item .contents").prepend(ad).append(ad);
+      $("#main_item .contents").prepend(ad("top")).append(ad("bottom"));
 
       let question_i = $('#main_item .contents .q_wrap').length;
       if (question_i > 30) {
-        $("#main_item .contents .q_wrap:nth(" + (Math.floor(question_i / 2) - 1) + ")").after(ad);
+        $("#main_item .contents .q_wrap:nth(" + (Math.floor(question_i / 2) - 1) + ")").after("middle");
       }
     }
   });

@@ -1,16 +1,17 @@
-#ad {
-  position: fixed;
-  overflow: visible;
-  z-index: 4;
-  top: 0;
-  right: 0;
-  width: 300px;
-  height: 100%;
-  background: #fff;
-  border-left: solid 1px var(--black-transparent-12, rgba(0, 0, 0, .12));
-  transition: .3s;
-  display: flex;
-  align-items: center;
+.contents .ad {
+  margin: 1em 0;
+}
 
-  display: none;
+.contents .ad.top {
+  margin-top: 0;
+}
+
+.contents .ad.top {
+  position: absolute;
+  min-height: 280px;
+}
+
+.contents .ad.top+.q_list .head, .contents .ad.top+.q_list.head,
+.contents .ad.top+.q_wrap {
+  margin-top: calc(280px + .5em);
 }
