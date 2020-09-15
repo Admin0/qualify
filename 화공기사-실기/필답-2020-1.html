@@ -82,6 +82,7 @@
       최소유동화 속도의 재현성을 좀 더 정확하게 입증하기 위한 방법과 압력강하 및 층높이(y축), 공탑속도(x축)에서 최소유동화 속도 그래프를 완성하시오.
     </div>
     <div class="answer">
+      방법: 고정층 및 유동층에서의 압력강하 곡선의 교점에서 $V_{0M} 값을 구한다.
 
     </div>
     <div class="comment">
@@ -96,9 +97,9 @@
     </div>
     <div class="sub q_wrap">
       <div class="question sub">R → ∞</div>
-      <div class="answer">플러그 흐름 반응기 (Plug Flow Reactor, PFR)</div>
-      <div class="question sub">R → 0</div>
       <div class="answer">혼합 흐름 반응기 (Mixed Flow Reactor, MFR) or 연속 교반 탱크 반응기(Continuous stirred tank reactor, CSTR)</div>
+      <div class="question sub">R → 0</div>
+      <div class="answer">플러그 흐름 반응기 (Plug Flow Reactor, PFR)</div>
     </div>
     <div class="comment">
     </div>
@@ -117,8 +118,9 @@
       \begin{align*}
       x_\ce{H2} &= \dfrac{ n_\ce{H2} }{ n_\ce{H2O} + n_\ce{H2}} (\text{분모의 } n_\ce{H2} \text{는 } n_\ce{H2O} \text{에 비해 너무 작으므로 무시 가능하다.}) \\
       \Longrightarrow \pu{ 5.0705E-9 } &= \dfrac{ n_\ce{H2} }{ 50/9\ \pu{ kmol } } \\
-      \end{align*}
-      \therefore n_\ce{H2} = \pu{ 2.8169E-8 kmol }
+      \end{align*} \\
+      \therefore n_\ce{H2} = \pu{ 2.8169E-8 kmol } \\
+      \Longrightarrow w_\ce{H2} = \pu{ 2.8169E-8 kmol } \times \pu{2.01588 kg/kmol} = \pu{5.6785E-8 kg}
       $
     </div>
     <div class="comment">
@@ -132,7 +134,12 @@
       1차계에서 입력이 단위계단 함수로 주어질 경우, 전환률이 95%일 때 경과시간을 로 나타내면 어떻게 되는가?
     </div>
     <div class="answer">
-
+$\text{1차 공정의 전달함수} G(s) = \dfrac{T(s)}{T_i (s)} = \dfrac{1}{\tau s + 1} \\
+\text{출력함수} T(s) = G(s)T_i (S) = \dfrac{1}{\tau s + 1} \cdot \dfrac{1}{s} \\
+T(s) \text{를 역라플라스 변환하면, } T(s) =  \dfrac{1}{s(\tau s + 1)} =  \left(\dfrac{1}{s} - \dfrac{1}{ s + \tfrac{1}{\tau}}\right) \text{이므로, } \\
+T(t) = (1-e^{-t/\tau}). \\
+t = 3\tau \text{일 때, } T(t) = 0.95\text{이므로, 경과시간 }t = 3\tau.
+$
     </div>
     <div class="comment">
       $\ce{}$
