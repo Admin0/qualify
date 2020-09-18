@@ -172,8 +172,8 @@ body.page {
   text-decoration: underline;
 }
 
-/* ad: 광고가 끼면 first-child 선택자가 안 먹기 때문에 first-of-type 으로 우회합니당^^ */
-.q_wrap:first-of-type {
+.ad.top+.q_wrap,
+.ad.top+.q_list.head {
   margin-top: 0;
 }
 
@@ -225,6 +225,7 @@ body.page {
   border-top: 0;
   border-bottom: 0;
 }
+
 .contents table.center th,
 .contents table.center td,
 .contents table tr.center th,
