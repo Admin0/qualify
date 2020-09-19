@@ -101,7 +101,7 @@ function load_navigat_title(key, val) {
     "id": "nav_" + key,
     "class": key,
     "onclick": "slide(\"" + key + "\")",
-    html: "<a href='#" + key + "'>" + val.title + (val.contents != null ? " <span class='translation'>(" + val.contents.length + ")</span>" : "") + "</a>"
+    html: "<a>" + val.title + (val.contents != null ? " <span class='translation'>(" + val.contents.length + ")</span>" : "") + "</a>"
   }).appendTo("#nav_item_list").append("<a class='btn_item_fold'><i class='material-icons'>unfold_less</i></a>");
 }
 
