@@ -63,7 +63,9 @@ nav #nav {
 }
 
 nav a {
-  margin: -.5em 0;
+  width: 100%;
+  margin: 0;
+  /* margin: -.5em 0; */
   font-size: 16px;
   display: block;
   /*text-overflow: ellipsis;*/
@@ -93,7 +95,7 @@ nav h2:first-of-type {
 
 nav h3.item {
   position: relative;
-  margin: 8px 0;
+  margin: 0;
   padding: 0
 }
 
@@ -131,7 +133,7 @@ nav h3 a.btn_item_open {
   right: 0;
   opacity: 0;
   /* color: rgba(0, 0, 0, 0.38); */
-  top: .4em;
+  /* top: .4em; */
   z-index: 1;
   width: 20px;
   overflow: visible;
@@ -462,11 +464,13 @@ nav.fold #nav a span {
 
 nav #nav h2, nav #nav h3 {
   transition: .3s;
+  display: flex;
+  align-items: center;
 }
 
 nav #nav h2 {
   height: 40px;
-  margin: 16px 0 0;
+  margin: 8px 0 0;
   position: relative
 }
 

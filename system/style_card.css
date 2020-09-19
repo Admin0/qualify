@@ -45,7 +45,7 @@ body.page {
 .contents .encircled {
   font-size: 0.75em;
   margin: 0 .5em 0 -1.85em;
-  border: 0.5px solid;
+  border: 1px solid;
   border-radius: 50%;
   width: 1.2em;
   height: 1.2em;

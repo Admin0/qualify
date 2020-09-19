@@ -23,8 +23,8 @@ const is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini
 //   });
 // }
 
-let custom_icon = [];
-$.getScript("system/main__initialize_icons.js");
+// let custom_icon = [];
+// $.getScript("system/main__initialize_icons.js");
 
 function get_icon(name) {
   let result = (custom_icon[0] == undefined) ? "error" : name;
