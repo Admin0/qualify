@@ -49,6 +49,7 @@
   color: rgb(189, 193, 198);
 }
 
+.general__dark .contents svg rect[stroke="#000000"],
 .general__dark .contents svg path {
   stroke: rgb(189, 193, 198);
 }
