@@ -36,12 +36,13 @@ body.page {
   counter-reset: numList;
 }
 
-.contents div:not(.h):not(.hc):not(.disc)>ol>li:before {
+.contents *:not(.h):not(.hc):not(.disc)>ol>li:before {
   counter-increment: numList;
   content: counter(numList);
 }
 
-.contents div:not(.h):not(.hc):not(.disc)>ol>li:before,
+/* .contents div:not(.h):not(.hc):not(.disc)>ol>li:before, */
+.contents ol>li:before,
 .contents .encircled {
   font-size: 0.75em;
   margin: 0 .5em 0 -1.85em;
