@@ -205,13 +205,32 @@
       <h4>1) 주인자의 최적해 추정(변향인자가 없거나 변향인자가 유의하지 않을 때)</h4>
       $ \mu(A_i) = \bar{x}_{i\cdot\cdot} \pm t_{1 - \alpha/2}(\nu_e)\sqrt{\frac{V_e}{mr}}$
       <h4>2) 혼합모형의 모수인자 최적해 추정(교호작용이 유의하지 않을 때 또는 난괴법)</h4>
+      $ \mu(A_{i\cdot\cdot}) = \bar{x}_{i\cdot\cdot} \pm t_{1 - \alpha/2}(\nu^*)\sqrt{\frac{V_B + (l-1)V_e}{N}} $
+      <p class="comment">자유도의 계산: 정수로 반올림한다. <br> $\nu^* = \frac{(V_B + \nu_AV_e)^2}{\frac{(V_B)^2}{\nu_B}+\frac{(\nu_AV_e)}{\nu_e}}$</p>
       <h4>3) 혼합모형의 모수인자 최적해 추정(교호작용이 유의할 때)</h4>
+      $ \mu(A_{i\cdot\cdot}) = \bar{x}_{i\cdot\cdot} \pm t_{1 - \alpha/2}(\nu^*)\sqrt{\frac{V_B + lV_{A \times B}-V_e}{N}} $
+      <p class="comment">1차 1인자인 단일 분할법의 경우(교호작용이 유의하지 않을 때). <br>
+        $ \mu(A_{i\cdot\cdot}) = \bar{x}_{i\cdot\cdot} \pm t_{1 - \alpha/2}(\nu^*)\sqrt{\frac{V_R + (l-1)V_{e_1}}{N}} $ <br>
+        $ \mu(A_{i\cdot\cdot}) = \bar{x}_{i\cdot\cdot} \pm t_{1 - \alpha/2}(\nu^*)\sqrt{\frac{V_R + (m-1)V_{e_2}}{N}} $
+      </p>
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question ">
       <h3>수준간 차의 측정</h3>
+      <p>$ \mu(A_i) - \mu(A_i^\prime) $</p>
+      <p>모수모형과 혼합모형에서 교호작용이 유의하지 않을 경우 및 난괴법의 모수인자에 대한 차의 추정방법은 같다.</p>
+
+      <h4>1) 반복수가 동일할 때 </h4>
+      <p>$ (\bar{x}_{i\cdot\cdot}-\bar{x}'_{i\cdot\cdot}) \pm t_{a-\alpha/2}(\nu_e)\sqrt{\frac{2V_e}{mr}} $</p>
+      <p class="comment">모수모형은 교호작용이 유의해도 같은 식이 적용된다.</p>
+
+      <h4>2) 반복수가 동일하지 않을 때 </h4>
+      <p>$ (\bar{x}_{i\cdot}-\bar{x}'_{i\cdot}) \pm t_{a-\alpha/2}(\nu_e)\sqrt{V_e\left(\frac{1}{r}+\frac{1}{r'}\right)} $</p>
+
+      <h4>3) 혼합모형에서 교호작용이 유의할 때 </h4>
+      <p>$ (\bar{x}_{i\cdot\cdot}-\bar{x}'_{i\cdot\cdot}) \pm t_{a-\alpha/2}(\nu_{A \times B})\sqrt{\frac{2V_{A \times B}}{mr}} $</p>
 
     </div>
   </div>
@@ -219,7 +238,10 @@
   <div class="q_wrap">
     <div class="question ">
       <h3>유의한 인자가 2개 이상일 때의 점추정</h3>
+      <p>유의한 인자모형을 구조모형에 표기한 후 분리하여 점추정치를 구한다.</p>
+      <h4>1) 반복있는 2원배치에서 인자 $A, B$와 교호작용 $A \times B$가 모두 유의할 때 </h4>
 
+      <h4>2) 반복있는 2원배치나 반복없는 2월배치에서 인자 $A, B$가 유의하고, 교호작용이 유의하지 않을 때</h4>
     </div>
   </div>
 
