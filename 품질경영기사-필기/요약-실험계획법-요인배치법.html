@@ -59,7 +59,7 @@
       <h4>2) 급간변동의 계산</h4>
       <ol>
         <li>1원 배치: $S_A = \frac{\sum T_{i\cdot}^2}{r}-CT$</li>
-        <li>반복있는 2원 배치: : $S_{AB} = \frac{\sum\sum T_{ij\cot}^2}{r}-CT$</li>
+        <li>반복있는 2원 배치: $S_{AB} = \frac{\sum\sum T_{ij\cot}^2}{r}-CT$</li>
         <li>반복있는 3원 배치: $S_{ABC} = \frac{\sum\sum\sum T_{ijk\cot}^2}{r}-CT$</li>
       </ol>
       <h4>3) 교호작용의 변동계산</h4>
@@ -73,17 +73,17 @@
   <div class="q_wrap">
     <div class="question ">
       <h3>자유도(DF)의 계산</h3>
-      <h3>1) 총 자유도</h3>
+      <h4>1) 총 자유도</h4>
       <p>$\nu_T = l \times m \times n \times \dots \times r-1 = N - 1$</p>
       <p class="comment">단, 결측이 있는 경우, 총 자유도에서 결측치를 뺀다.</p>
-      <h3>2) 반복이 있는 경우 오차의 자유도 </h3>
+      <h4>2) 반복이 있는 경우 오차의 자유도 </h4>
       <p>$\nu_e = lmn\dots (r-1) \rightarrow $ 수준수(반복수 $- 1$)</p>
-      <h3>3) 반복이 없는 경우 오차의 자유도 </h3>
+      <h4>3) 반복이 없는 경우 오차의 자유도 </h4>
       <p>$\nu_e = (l-1)(m-1)(n-1)\dots \rightarrow$ 최종교호작용</p>
       <p class="comment">반복이 있을 때의 최종교호작용의 자유도와 같다.</p>
-      <h3>4) 요인의 자유도</h3>
+      <h4>4) 요인의 자유도</h4>
       <p>$\nu_\text{요인} = \text{수준수} - 1$</p>
-      <h3>5) 최종교호작용의 자유도</h3>
+      <h4>5) 최종교호작용의 자유도</h4>
       <p>$\nu_{\text{요인}\times\text{요인'}} = \nu_\text{요인} \times \nu_\text{요인'}$</p>
     </div>
   </div>
@@ -240,43 +240,71 @@
       <h3>유의한 인자가 2개 이상일 때의 점추정</h3>
       <p>유의한 인자모형을 구조모형에 표기한 후 분리하여 점추정치를 구한다.</p>
       <h4>1) 반복있는 2원배치에서 인자 $A, B$와 교호작용 $A \times B$가 모두 유의할 때 </h4>
-
+      <p>$\bar{x}_{ij} \pm t_{1-\alpha /2}(\nu_e)\sqrt{V_e\dfrac{1}{r}+\dfrac{1}{r'}}$</p>
       <h4>2) 반복있는 2원배치나 반복없는 2월배치에서 인자 $A, B$가 유의하고, 교호작용이 유의하지 않을 때</h4>
+      <p>$\bar{x}_{i\cdot\cdot} + \bar{x}_{\cdot j\cdot} - \bar{\bar{x}} \pm t_{1-\alpha/2}(\nu_e)\sqrt{\dfrac{V_e}{n_e}}$</p>
+      <p>(단, $\dfrac{1}{n_e}=\frac{1}{mr}+\dfrac{1}{lr}-\dfrac{1}{lmr}$이다.)</p>
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question ">
       <h3>변량인자의 분산의 추정</h3>
-
+      <h4>1) 2원배치일 때 </h4>
+      <p>$\hat{\sigma}^2_B=\dfrac{V_B-V_e}{l} \text{ or } \dfrac{V_B - V_e}{lr}$</p>
+      <h4>2) 반복있는 혼합모형 2원배치</h4>
+      <p>교호작용 추정</p>
+      <p>$\hat{\sigma}^2_{A \times B}=\dfrac{V_{A \times B}-V_e}{r}$</p>
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question ">
       <h3>오차분산의 추정</h3>
-
+      <p>$\dfrac{S_e}{\chi^2_{1-\alpha/2}(\nu_e)}\le\sigma^2_e \le \dfrac{S_e}{\chi^2_{\alpha/2}(V_e)}$</p>
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question ">
       <h3>등분산의 검정(반복있는 2원배치)</h3>
-
+      <ul>
+        <li>각 급별로 범위 $R$을 계산한다.</li>
+        <li>$\bar{\bar{R}}=\dfrac{\sum\sum R_{ij}}{lm}$를 계산한다 </li>
+        <li>$UCL_R=D_4\bar{\bar{R}}$보다 큰 $R_{ij}$가 하나도 없을 때 등분산성이 성립한다.</li>
+      </ul>
     </div>
+    <div class="comment">단, $D_4$는 반복수 $r$일 때의 값이다.</div>
   </div>
 
   <div class="q_wrap">
     <div class="question ">
       <h3>오차항에 풀링</h3>
-
+      <ol>
+        <li>실험의 목적을 고려한다.</li>
+        <li>기술적, 통계적인 면을 고려한다.</li>
+        <li>제2종 과오를 고려한다. </li>
+      </ol>
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question ">
       <h3>Yates의 결측치의 추정법</h3>
-
+      <p>반복없는 모수모형 2원배치만 적용된다.</p>
+      <h4>1) 결측치가 1개인 경우 </h4>
+      <p>$y=\dfrac{lT_{i\cdot}'+mT_{\cdot j}'-T'}{(l-1)(m-1)}$</p>
+      <div class="comment">총 자유도의 오차 자유도가 1 적어진다.</div>
+      <h4>2) 결측치가 2개인 경우 </h4>
+      <p>$y_1(l-1)(m-1)+y_2=lT'_{i\cdot}+mT_{\cdot j}'-T'$</p>
+      <p>$y_1+y_2(l-1)(m-1)=lT''_{i\cdot}+mT_{\cdot j}'' -T'$</p>
+      <div class="comment">
+        <ol>
+          <li>반복없는 일원배치의 결측치: 반복이 다를 일원배치로 분산분석한다.</li>
+          <li>반복있는 이원배치의 결측치: 그 급간의 평균으로 추정한다.</li>
+          <li>결측치가 발생하면 정도가 나빠지고, 해석이 복잡하므로 가급적 재실험이 바람직하다.</li>
+        </ol>
+      </div>
     </div>
   </div>
 
