@@ -206,7 +206,7 @@ body:not(.answer__quiz) .contents.multiple_choice .q_wrap .answer li[checked]::b
   margin-bottom: 0;
 }
 
-.contents table {
+/* .contents table {
   border-collapse: collapse;
   font-size: inherit;
 }
@@ -215,7 +215,7 @@ body:not(.answer__quiz) .contents.multiple_choice .q_wrap .answer li[checked]::b
 .contents table td {
   border: 1px solid;
   padding: 0.25em 0.75em;
-}
+} */
 
 #card_title {
   text-align: center;

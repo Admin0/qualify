@@ -34,7 +34,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      1 : 망목 / 2 : 망소 / 3: 망대
     </div>
   </div>
 
@@ -48,9 +48,9 @@
           <th rowspan="2">합계</th>
         </tr>
         <tr>
-          <td>$A_1$</td>
-          <td>$A_2$</td>
-          <td>$A_3$</td>
+          <th>$A_1$</th>
+          <th>$A_2$</th>
+          <th>$A_3$</th>
         </tr>
         <tr>
           <td>$B_1$(오전)</td>
@@ -112,7 +112,10 @@
       </ol>
     </div>
     <div class="comment">
-
+      $
+      A \times C = (ab^2)\times(ab^2c^2)=a^2b^4c^2=(a^2bc^2)2=ab^2c \\
+      A \times C^2 = (ab^2)\times(ab^2c^2)^2=a^3b^6c^4=c
+      $
     </div>
   </div>
 
@@ -135,24 +138,27 @@
 
   <div class="q_wrap">
     <div class="question">
-      요인 A, B, C를 택하여 3회 반복의 지분실험을 하였을 때 , 요인 C(AB)의 자유도($V_{C(AB)}$)와 자유도($V_e$)는 각각 얼마인가? (단, 요인 A, B, C는 각각 4수준, 3수준, 2수준이며, 모두 변량요인이다.)
+      요인 A, B, C를 택하여 3회 반복의 지분실험을 하였을 때 , 요인 C(AB)의 자유도($\nu_{C(AB)}$)와 오차항의 자유도($\nu_e$)는 각각 얼마인가? (단, 요인 A, B, C는 각각 4수준, 3수준, 2수준이며, 모두 변량요인이다.)
     </div>
     <div class="answer inline">
       <ol>
-        <li> $V_C(AB)=12, V_e=24$ </li>
-        <li checked> $V_C(AB)=12, V_e=48$</li>
-        <li> $V_C(AB)=24, V_e=12$ </li>
-        <li> $V_C(AB)=24, V_e=48$ </li>
+        <li> $\nu_{C(AB)}=12, \nu_e=24$ </li>
+        <li checked> $\nu_{C(AB)}=12, \nu_e=48$</li>
+        <li> $\nu_{C(AB)}=24, \nu_e=12$ </li>
+        <li> $\nu_{C(AB)}=24, \nu_e=48$ </li>
       </ol>
     </div>
     <div class="comment">
-
+      $
+      \nu_{C(AB)} = lm(n-1) \\
+      \nu_e = lmn(r-1)
+      $
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question">
-      반복 없는 3요인 실험(3요인 모두 모수)에서 l=3, m=3, n=2일 때 $V_{A×C}$값은?
+      반복 없는 3요인 실험(3요인 모두 모수)에서 $l=3, m=3, n=2$일 때 $\nu_{A×C}$값은?
     </div>
     <div class="answer inline">
       <ol>
@@ -169,7 +175,7 @@
 
   <div class="q_wrap">
     <div class="question">
-      다음의 표는 반복이 2회인 22형 요인실험이다. 요인 A와 B의 상호작용의 효과는?
+      다음의 표는 반복이 2회인 $2^2$형 요인실험이다. 요인 A와 B의 상호작용의 효과는?
       <table class="center">
         <tr>
           <th>요인</th>
@@ -182,8 +188,8 @@
           <td>82</td>
         </tr>
         <tr>
-          <td>31</td>
-          <td>82</td>
+          <td>45</td>
+          <td>110</td>
         </tr>
         <tr>
           <td rowspan="2">$B_1$</td>
@@ -205,7 +211,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      $A\times B = \frac{1}{2r}[(a-1)(b-1)]$
     </div>
   </div>
 
@@ -298,7 +304,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      $F_0 = \dfrac{V_a}{V_{A\times B}}$
     </div>
   </div>
 
@@ -325,9 +331,9 @@
       <table class="inline">
         <caption>블록 1</caption>
         <tr>
-          <td>$A_1$</td>
-          <td>$A_2$</td>
-          <td>$A_3$</td>
+          <th>$A_1$</th>
+          <th>$A_2$</th>
+          <th>$A_3$</th>
         </tr>
         <tr>
           <td>47</td>
@@ -338,9 +344,9 @@
       <table class="inline">
         <caption>블록 2</caption>
         <tr>
-          <td>$A_1$</td>
-          <td>$A_2$</td>
-          <td>$A_3$</td>
+          <th>$A_1$</th>
+          <th>$A_2$</th>
+          <th>$A_3$</th>
         </tr>
         <tr>
           <td>46</td>
@@ -447,7 +453,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      $r^2 = \left(\dfrac{S_{(xy)}}{\sqrt{S_{(xx)}S_{(yy)}}}\right)^2 = \dfrac{S_R}{S_{(yy)}} = 0.9466$
     </div>
   </div>
 

@@ -71,6 +71,12 @@
   stroke: #c8b900;
 }
 
+/* table */
+.general__dark table th {
+  background-image: repeating-linear-gradient(45deg, rgb(189, 193, 198) 0, rgb(189, 193, 198) 0.8px, transparent 0, transparent 50%) !important;
+  text-shadow: -1px -1px 0 rgba(50, 54, 57, 1), 1px -1px 0 rgba(50, 54, 57, 1), -1px 1px 0 rgba(50, 54, 57, 1), 1px 1px 0 rgba(50, 54, 57, 1) !important;
+}
+
 /* nav */
 .general__dark nav {
   border-right: solid 1px var(--black-transparent-12, rgba(30, 34, 37, .45));

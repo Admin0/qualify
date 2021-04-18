@@ -30,6 +30,14 @@ body.page {
   line-height: 1.5;
 }
 
+.contents h4 {
+  margin: 2em 0 0
+}
+
+.contents .sub h4:first-of-type {
+  margin-top: 0;
+}
+
 .contents ol {
   list-style: none;
   padding-left: 1.65em;
@@ -92,6 +100,10 @@ body.page {
   position: relative;
   padding: 0 2em 0 3em;
   margin: 3em 0;
+  /* counter-reset: question_sub; */
+}
+
+.q_wrap:not(.sub) {
   counter-reset: question_sub;
 }
 
@@ -114,16 +126,16 @@ body.page {
   margin: 0;
 }
 
-.q_wrap .question.sub {
+.q_wrap .sub .question {
   position: relative;
   margin-top: 1.5em;
 }
 
-.q_wrap .question.sub::before {
+.q_wrap.sub::before {
   content: "("counter(question_sub) ") ";
   counter-increment: question_sub;
   position: absolute;
-  right: calc(100% + .5em);
+  right: calc(100% - 1.25em);
 }
 
 .q_wrap .answer {
@@ -199,7 +211,9 @@ body.page {
   margin-top: .25em;
   border-collapse: collapse;
   font-size: 1em;
+  font-weight: normal;
   text-indent: 0;
+  border: 1px solid;
 }
 
 .contents table .small {
@@ -212,9 +226,22 @@ body.page {
 
 .contents table th,
 .contents table td {
-  border: 1px solid;
+  border-width: 1px;
+  border-style: solid dashed;
   padding: 0.25em 0.5em;
 }
+
+.contents table th {
+  background-size: 5px 5px;
+  background-image: repeating-linear-gradient(-45deg, gray 0, gray 0.5px, transparent 0, transparent 50%);
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+/* .contents table.inline {
+  display: inline-table;
+}
+
+.contents table.inline:first-of-type {} */
 
 .contents table.no-border th,
 .contents table.no-border td {

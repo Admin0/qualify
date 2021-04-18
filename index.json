@@ -109,13 +109,17 @@
     }, {
       "title": "필답-2019-2",
       "icon": "test_tube",
-      "locked": true
+      "locked": false
     }, {
       "title": "필답-2019-4",
       "icon": "test_tube",
       "locked": true
     }, {
       "title": "필답-2020-1",
+      "icon": "test_tube",
+      "locked": true
+    }, {
+      "title": "필답-2020-2",
       "icon": "test_tube",
       "locked": true
     }, {

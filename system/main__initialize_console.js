@@ -126,7 +126,7 @@ function console_event(code) {
       console_event(",.");
       break;
     case "f":
-      if (!$("#item_list h2").hasClass("slided")) {
+      if ($("#item_list h2:not(.slided)").length != 0) {
         $("#item_list h2").each(function() {
           slide($(this).attr("id"), true);
           toast("목록을 모두 접었습니다.", "unfold_less");

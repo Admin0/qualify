@@ -297,14 +297,6 @@ nav h3 .material-icons>svg {
   max-width: none;
 }
 
-h4 {
-  margin: 2em 0 0
-}
-
-h4:first-of-type {
-  margin-top: .5em
-}
-
 .shadow {
   box-shadow: 0 2px 5px rgba(0, 0, 0, .25);
   border-radius: 3px;
