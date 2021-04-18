@@ -180,6 +180,10 @@ body.page {
   stroke: #2196f3;
 }
 
+.q_wrap .comment table th {
+  background-image: repeating-linear-gradient(-45deg, #2196f3 0, #2196f3 0.8px, transparent 0, transparent 50%) !important;
+}
+
 .q_wrap .comment a {
   color: inherit;
   text-decoration: underline;
@@ -237,11 +241,9 @@ body.page {
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
-/* .contents table.inline {
+.contents table.inline {
   display: inline-table;
 }
-
-.contents table.inline:first-of-type {} */
 
 .contents table.no-border th,
 .contents table.no-border td {

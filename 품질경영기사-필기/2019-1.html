@@ -328,32 +328,34 @@
   <div class="q_wrap">
     <div class="question">
       벼 품종 $A_1, A_2, A_3$의 단위당 수햑량을 비교하기 위하여 2개의 블록으로 층별하여 난괴법 실험을 하였다. 각 품종별 단위당 수확량이 다음과 같은 때 블록별($B$) 제곱합 $S_B$는 약 얼마인가?
-      <table class="inline">
-        <caption>블록 1</caption>
-        <tr>
-          <th>$A_1$</th>
-          <th>$A_2$</th>
-          <th>$A_3$</th>
-        </tr>
-        <tr>
-          <td>47</td>
-          <td>43</td>
-          <td>50</td>
-        </tr>
-      </table>
-      <table class="inline">
-        <caption>블록 2</caption>
-        <tr>
-          <th>$A_1$</th>
-          <th>$A_2$</th>
-          <th>$A_3$</th>
-        </tr>
-        <tr>
-          <td>46</td>
-          <td>44</td>
-          <td>48</td>
-        </tr>
-      </table>
+      <div class="">
+        <table class="inline">
+          <caption>블록 1</caption>
+          <tr>
+            <th>$A_1$</th>
+            <th>$A_2$</th>
+            <th>$A_3$</th>
+          </tr>
+          <tr>
+            <td>47</td>
+            <td>43</td>
+            <td>50</td>
+          </tr>
+        </table>
+        <table class="inline">
+          <caption>블록 2</caption>
+          <tr>
+            <th>$A_1$</th>
+            <th>$A_2$</th>
+            <th>$A_3$</th>
+          </tr>
+          <tr>
+            <td>46</td>
+            <td>44</td>
+            <td>48</td>
+          </tr>
+        </table>
+      </div>
     </div>
     <div class="answer inline">
       <ol>
@@ -508,13 +510,13 @@
       </ol>
     </div>
     <div class="comment">
-
+      $c \pm u_{a-\alpha /2}\sqrt{c}=16 \pm 1.96 \times \sqrt{16} = (8.16~23.84)$
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question">
-      T제품의 개당 검사비용은 1000원이고 부적합품 혼입으로 인한 손실은 개당 1500원이다. 이 제품의 임계부적합품률은 약 얼마인가?
+      T제품의 개당 검사비용은 1,000 원이고 부적합품 혼입으로 인한 손실은 개당 1,500 원이다. 이 제품의 임계부적합품률은 약 얼마인가?
     </div>
     <div class="answer inline">
       <ol>
@@ -525,7 +527,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      임계부적합품률 $P_b = \dfrac{a (\text{검사비용})}{b (\text{부적함품손입손실})}$
     </div>
   </div>
 
@@ -542,13 +544,16 @@
       </ol>
     </div>
     <div class="comment">
-
+      <ol>
+        <li>100 건당 부적합 수 : 푸아송분포</li>
+        <li>부적합품률퍼센트 : 이항분포</li>
+      </ol>
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question">
-      공정이 안정상태에 있는 어떤 -R관리도에서 n=4, =23.50, =3.09 이었다. 이 관리도의 관리한계를 연장하여 공정을 관리할 때, 값이 20.26인 경우 어떤 행동을 취해야 하는가? (단, n=4일 때 A2=0.73 이다.)
+      공정이 안정상태에 있는 어떤 $\bar{X}-R$관리도에서 $n=4, \bar{\bar{X}}=23.50, \bar{R}=3.09$ 이었다. 이 관리도의 관리한계를 연장하여 공정을 관리할 때, $\bar{X}$ 값이 20.26인 경우 어떤 행동을 취해야 하는가? (단, $n=4$일 때 $A+2=0.73$ 이다.)
     </div>
     <div class="answer inline">
       <ol>
@@ -559,17 +564,18 @@
       </ol>
     </div>
     <div class="comment">
-
+      $L_{CL} = \bar{\bar{x}}-A_2\bar{R} = 23.50 - 0.73 \times 3.09 = 21.2442 \\
+      \bar{X} \lt L_{CL} = \text{관리이상상태로 판정한다.}$
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question">
-      상관에 관한 검정 결과 모상관계수 ρ≠0라는 결과가 나왔다. 이결과가 의미하는 것으로 맞는 것은?
+      상관에 관한 검정 결과 모상관계수 $ρ≠0$라는 결과가 나왔다. 이결과가 의미하는 것으로 맞는 것은?
     </div>
     <div class="answer inline">
       <ol>
-        <li> H0를 채택하는 것을 의미한다.</li>
+        <li> $H_0$를 채택하는 것을 의미한다.</li>
         <li> 상관관계가 없다는 것을 의미한다.</li>
         <li checked> 상관관계가 있다는 것은 의미한다.</li>
         <li> 재검정이 필요하다는 것을 의미한다.</li>
@@ -593,13 +599,13 @@
       </ol>
     </div>
     <div class="comment">
-
+      OC 곡선에 의한 샘플링 검사를 하면 나쁜 로트를 합격시키는 위험은 $\beta$만큼 존재한다.
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question">
-      평균값 400g 이하인 로트는 될 수 있는 한 합격시키고, 평균값 420g 이상인 경우 불합격 시키려고 한다. 과거의 경험으로 표준 편차는 10g으로 조사되었다. 이때 α=0.05, β=0.1을 만족시키기 위해서 시료의 크기(n)를 얼마로 하는 것이 좋은가? (단, Kα=1.64, Kβ=1.28이다.)
+      평균값 400 g 이하인 로트는 될 수 있는 한 합격시키고, 평균값 420 g 이상인 경우 불합격 시키려고 한다. 과거의 경험으로 표준 편차는 10 g 으로 조사되었다. 이때 $α=0.05, β=0.1$을 만족시키기 위해서 시료의 크기($n$)를 얼마로 하는 것이 좋은가? (단, $K_α=1.64, K_β=1.28$이다.)
     </div>
     <div class="answer inline">
       <ol>
@@ -610,7 +616,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      $n = \left(\dfrac{1.64 + 1.28}{420 - 400}\right) \times 10^2 = 2.13 = 3$
     </div>
   </div>
 
@@ -619,9 +625,9 @@
       컴퓨터 주변기기 제조업자는 인터넷 광고 사이트에 배너광고를 하려고 계획 중이다. 이 사이트에 접속하는 사용자 1000명을 임의 주출하여 사용자 특성을 조사한 결과가 표와 강을 때, 설명으로 틀린 것은?
       <table class="center">
         <tr>
-          <td>구분</td>
-          <td>30세 미만</td>
-          <td>30세 이상</td>
+          <th>구분</th>
+          <th>30세 미만</th>
+          <th>30세 이상</th>
         </tr>
         <tr>
           <td>남</td>
@@ -661,24 +667,38 @@
       </ol>
     </div>
     <div class="comment">
-
+      L-S => 최대 최소 <br>
+      <table>
+        <tr>
+          <th>CL</th>
+          <td>$\bar{M} = \dfrac{\bar{L}+\bar{S}}{2}$</td>
+        </tr>
+        <tr>
+          <th>UCL</th>
+          <td>$\bar{M} + A_9\bar{R}$</td>
+        </tr>
+        <tr>
+          <th>LCL</th>
+          <td>$\bar{M} - A_9\bar{R}$</td>
+        </tr>
+      </table>
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question">
-      우리 회사에 부품을 납품하는 협력업체의 품질이 점점 나빠지고 있다. 이 협력업체의 품질을 조사하기 위하여 제조 공정으로부터 n=10의 샘플을 취하였더니 x=3개의 부적합품이 발견되었다. 이때 모부적합품률을 추정하기 위한 $\hat{p}$의 식은? (단, N의 로트의 크기이다.)
+      우리 회사에 부품을 납품하는 협력업체의 품질이 점점 나빠지고 있다. 이 협력업체의 품질을 조사하기 위하여 제조 공정으로부터 $n=10$의 샘플을 취하였더니 $x=3$개의 부적합품이 발견되었다. 이때 모부적합품률을 추정하기 위한 $\hat{p}$의 식은? (단, N의 로트의 크기이다.)
     </div>
     <div class="answer inline">
       <ol>
-        <li> N-x </li>
-        <li> N-n</li>
-        <li> x/N </li>
-        <li checked> x/n</li>
+        <li>$ N-x$ </li>
+        <li>$ N-n$</li>
+        <li> $\dfrac{x}{N}$ </li>
+        <li checked> $\dfrac{x}{n}$</li>
       </ol>
     </div>
     <div class="comment">
-
+      $\hat{p} = \dfrac{x}{n}$
     </div>
   </div>
 
@@ -688,14 +708,14 @@
     </div>
     <div class="answer inline">
       <ol>
-        <li> 나쁜 로트(lot)가 합격할 확률이다.)</li>
+        <li> 나쁜 로트(lot)가 합격할 확률이다.</li>
         <li checked> 귀무가설이 옳은데 기각할 확률이다.</li>
         <li> 공정에 이상이 있는데 없다고 판정할 확률이다.</li>
         <li> 관리도에서 3σ 한계 대신 2σ 한계를 쓰면, a는 감소한다.</li>
       </ol>
     </div>
     <div class="comment">
-
+      1, 3 = β / 4 = 증가
     </div>
   </div>
 
@@ -729,13 +749,13 @@
       </ol>
     </div>
     <div class="comment">
-
+      1 : 특수한 경우에만 성립한다.
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question">
-      A 업종에 종사하는 종업원의 임금 실태를 조사하기 n이하여 표본의 크기 120명을 조사하였더니 평균 98.87만원, 표준편차 8.56만원이었다. 이들 종업원 전체 평균임금을 유의수준 1%로 추정하면 신뢰구간은 약 얼마인가? (단, u_{0.99}=2.33, u_{0.995}=2.58이다.)
+      A 업종에 종사하는 종업원의 임금 실태를 조사하기 n이하여 표본의 크기 120명을 조사하였더니 평균 98.87만원, 표준편차 8.56만원이었다. 이들 종업원 전체 평균임금을 유의수준 1%로 추정하면 신뢰구간은 약 얼마인가? (단, $u_{0.99}=2.33, u_{0.995}=2.58$이다.)
     </div>
     <div class="answer inline">
       <ol>
@@ -746,17 +766,27 @@
       </ol>
     </div>
     <div class="comment">
-
+      $\bar{x} = u_{1-\alpha /2}\dfrac{\sigma}{\sqrt{n}}$
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question">
       원료 A와 원료 B에서 만들어지는 제품의 순도를 측정한 결과 다음과 같다. 원료 A로부터 만들어지는 제품의 분산을 $σ_A^2$이라 하고, 원료 B로부터 만들어지는 제품의 분산을 $σ_B^2$ 이라할 때, 유의수준 0.05로 $σ_A^2=σ_B^2$ 인가를 검정하는데 필요한 $F_0$ 의 값은 약 얼마인가?
-      <div class="q_list hc">
-        <pre>[원료A]    74.9%     75.0%     75.4%
-[원료B]    75.0%     76.0%     75.5%</pre>
-      </div>
+      <table>
+        <tr>
+          <th>원료A</th>
+          <td>74.9%</td>
+          <td>75.0%</td>
+          <td>75.4%</td>
+        </tr>
+        <tr>
+          <th>원료B</th>
+          <td>75.0%</td>
+          <td>76.0%</td>
+          <td>75.5%</td>
+        </tr>
+      </table>
     </div>
     <div class="answer inline">
       <ol>
@@ -767,7 +797,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      $F_0 = \dfrac{V_A}{V_B} = \dfrac{0.07}{0.25} = 0.280$
     </div>
   </div>
 
@@ -778,13 +808,16 @@
     <div class="answer inline">
       <ol>
         <li> t분포 </li>
-        <li> $X^2$분포</li>
+        <li> $\chi^2$분포</li>
         <li> F분포 </li>
         <li checked> 정규분포</li>
       </ol>
     </div>
     <div class="comment">
-
+      모평균의 검정 <ul>
+        <li>$\sigma$ 기지 : 정규분포</li>
+        <li>$\sigma$ 미지 : t분포</li>
+      </ul>
     </div>
   </div>
 
@@ -801,7 +834,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      군구분이 나쁘다 $ = 0.8 \leqq C_f \leqq 1.2 = $ 군간변동이 작다
     </div>
   </div>
 
@@ -811,14 +844,15 @@
     </div>
     <div class="answer inline">
       <ol>
-        <li> $A=h_A+gㆍσㆍn_{cum}$ </li>
-        <li> $A=-h_A+gㆍσㆍn_{cum}$</li>
-        <li checked> $A=h_Aㆍσ+gㆍσㆍn_{cum}$ </li>
-        <li> $A=-h_Aㆍσ+gㆍσㆍn_{cum}$</li>
+        <li> $A=h_A+g\cdot σ\cdot n_{cum}$ </li>
+        <li> $A=-h_A+g\cdot σ\cdot n_{cum}$</li>
+        <li checked> $A=h_A\cdot σ+g\cdot σ\cdot n_{cum}$ </li>
+        <li> $A=-h_A\cdot σ+g\cdot σ\cdot n_{cum}$</li>
       </ol>
     </div>
     <div class="comment">
-
+      합격판정선 $A=h_A\cdot σ+g\cdot σ\cdot n_{cum}$ <br>
+      불합격판정선 $R=-h_R\cdot σ+g\cdot σ\cdot n_{cum}$<br>
     </div>
   </div>
 
@@ -856,7 +890,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      노력도, 숙련도, 작업조건, 일관성
     </div>
   </div>
 
@@ -890,7 +924,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      2: 미세동작분석
     </div>
   </div>
 
@@ -903,17 +937,17 @@
         <li> 회귀분석 </li>
         <li> 시계열분석</li>
         <li checked> 분산분석 </li>
-        <li> 점문가의견법</li>
+        <li> 전문가의견법</li>
       </ol>
     </div>
     <div class="comment">
-
+      3: 실험계획법에서 평균치 검정에 해당한다.
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question">
-      부품 Y가공 작업에 대하여 1주일 3600분 동안 관측한 결과, Y가공작업의 실동률은 80%, 생산량은 576개, 작업수행도는 120%로 평가되었다. 외경법에 의한 여유율이 10%일 때, Y가공작업의 단위당 표준시간은?
+      부품 Y가공 작업에 대하여 1주일 3,600분 동안 관측한 결과, Y가공작업의 실동률은 80%, 생산량은 576개, 작업수행도는 120%로 평가되었다. 외경법에 의한 여유율이 10%일 때, Y가공작업의 단위당 표준시간은?
     </div>
     <div class="answer inline">
       <ol>
@@ -924,7 +958,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      단위당 $ST = \frac{3 600}{576}\times 1.2 \times 0.8 \times (1+0.1) = \pu{6.6 min}$
     </div>
   </div>
 
@@ -933,10 +967,10 @@
       기계 M으로 다음과 같은 3가지 제품을 생산하는 작업장에서 SPT(Shortest Processing Time) 규칙으로 처리순서를 정했을 때, 평균지체시간(Average Job Tardiness)은?
       <table class="center">
         <tr>
-          <td>구분</td>
-          <td>제품1</td>
-          <td>제품2</td>
-          <td>제품3</td>
+          <th>구분</th>
+          <th>제품1</th>
+          <th>제품2</th>
+          <th>제품3</th>
         </tr>
         <tr>
           <td>처리시간</td>
@@ -974,7 +1008,7 @@
         <li> DRP </li>
         <li> MRP</li>
         <li checked> ERP </li>
-        <li> MRPII</li>
+        <li> MRP II</li>
       </ol>
     </div>
     <div class="comment">
@@ -1022,7 +1056,8 @@
       </ol>
     </div>
     <div class="comment">
-
+      발주점 $(OP) = \bar{D_L}+ $ 안전계수 $(u_{a-\alpha})\times \sqrt{L} \times $ 표준편차 $(\sigma_L)$ <br>
+      $ OP = (45 \times 2) + 1.65 \times \sqrt{2} \times 1.25 \times 5 = 104.58 = 105 $
     </div>
   </div>
 
@@ -1039,7 +1074,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      불량, 재고, 과잉생산, 가공, 동작, 운반, 대기
     </div>
   </div>
 
@@ -1219,7 +1254,7 @@
 
   <div class="q_wrap">
     <div class="question">
-      부하의 평균(μx)이 1, 표준편차(σx)가 0.4, 재료강도의 표준편차(σy)가 0.4이고, μx와 μy로부터의 거리인 nx와 ny가 각각 2인 경우 안전계수를 1.52로 하고 싶다면, 재료의 평균강도(μy)는 약 얼마가 되어야 하는가? (단, 재료의 강도와 여기에 걸리는 부하는 정규분포를 따른다.)
+      부하의 평균($μ_x$)이 1, 표준편차($σ_x$)가 0.4, 재료강도의 표준편차($σ_y$)가 0.4이고, μ$_x와$ μ_y로$부터의$ 거리인 n$_x와$ n$_y가$ 각각 2인 경우 안전계수를 1.52로 하고 싶다면, 재료의 평균강도($μ_y$)는 약 얼마가 되어야 하는가? (단, 재료의 강도와 여기에 걸리는 부하는 정규분포를 따른다.)
     </div>
     <div class="answer inline">
       <ol>
@@ -1230,7 +1265,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      $m = \dfrac{\mu_y - n_y\sigma_y}{\mu_x+n_x\sigma_x} = 1.52 \\ \therefore \mu_y = 3.536$
     </div>
   </div>
 
@@ -1247,21 +1282,27 @@
       </ol>
     </div>
     <div class="comment">
-
+      $MTBF = \dfrac{1}{\lambda_s}$
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question">
       샘플 54개에 대한 수명시험결과 표와 같은 데이터를 얻었다. 구간 4~5시간에서의 고장률은 약 얼마인가?
-      <div class="q_list hc">
-        <ol>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ol>
-      </div>
+      <table class="center">
+        <tr>
+          <th>시간간격 </th>
+          <th>고장개수 </th>
+        </tr>
+        <tr>
+          <td>0~1 <br>1~2 <br>2~3 <br>3~4 <br>4~5 <br>5~6<br>6~7 <br>7~8</td>
+          <td>2 <br>5 <br>10 <br>16 <br>9<br>7<br>4 <br>1</td>
+        </tr>
+        <tr>
+          <td>계</td>
+          <td>54</td>
+        </tr>
+      </table>
     </div>
     <div class="answer inline">
       <ol>
@@ -1272,24 +1313,24 @@
       </ol>
     </div>
     <div class="comment">
-
+      $\lambda(t) = \dfrac{n(t)-n(t+\Delta t)}{n(t)\cdot \Delta t} = \dfrac{9}{21 \times 1} = \pu{0.4286/hr}$
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question">
-      수명분포가 지수분포인 부품 n개에 대한 수명시험 중 고장난 부품은 교체하고 미리 정한 시간 t0에서 시험을 중단하였다. 시간 t0에서의 고장개수가 총 r개 일 때, 고장률의 추정 값은?
+      수명분포가 지수분포인 부품 $n$개에 대한 수명시험 중 고장난 부품은 교체하고 미리 정한 시간 $t_0$에서 시험을 중단하였다. 시간 $t_0$에서의 고장개수가 총 $r$개 일 때, 고장률의 추정 값은?
     </div>
     <div class="answer inline">
       <ol>
-        <li checked> </li>
-        <li></li>
-        <li> </li>
-        <li></li>
+        <li checked>$\dfrac{r}{nt_0}$ </li>
+        <li>$\dfrac{r}{\sum T_i + (n-r)t_0}$ </li>
+        <li>$\dfrac{n}{nt_0}$ </li>
+        <li>$\dfrac{n}{\sum T_i + (n-r)t_0}$</li>
       </ol>
     </div>
     <div class="comment">
-
+      $\lambda=\dfrac{r}{T}=\dfrac{r}{nt_0}$
     </div>
   </div>
 
@@ -1297,11 +1338,11 @@
     <div class="question">
       신뢰성 시험을 실시하는 적합한 이유를 다음에서 모두 나열한 것은?
       <div class="q_list hc">
-        <ol>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+        <ol class="hc">
+          <li>MTBF 추정을 위하여 </li>
+          <li>설정된 신뢰성 요구조건을 만족하는지 확인하기 위하여 </li>
+          <li>설계의 약점을 밝히기 위하여 </li>
+          <li>제조품의 수입이나 보증을 위하여 </li>
         </ol>
       </div>
     </div>
@@ -1331,7 +1372,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      $A=\dfrac{MTBF}{MTBF+MTTR}$
     </div>
   </div>
 
@@ -1348,28 +1389,21 @@
       </ol>
     </div>
     <div class="comment">
-
+      우발고장기간은 고장률이 일정한 구간으로서 고장확률 밀도함수는 지수분포를 따른다.
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question">
       다음 시스템의 고장목(Fault tree)을 신뢰성 블록도로 가장 적절하게 표현한 것은?
-      <div class="q_list hc">
-        <ol>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ol>
-      </div>
+      <div class="load">품질경영기사-필기\block_logic_or_abc.svg </div>
     </div>
     <div class="answer inline">
       <ol>
-        <li></li>
-        <li checked></li>
-        <li></li>
-        <li></li>
+        <li class="load">품질경영기사-필기\block_abc.svg</li>
+        <li class="load" checked>품질경영기사-필기\block_a-b-c.svg</li>
+        <li class="load">품질경영기사-필기\block_ab-c.svg</li>
+        <li class="load">품질경영기사-필기\block_a-bc.svg</li>
       </ol>
     </div>
     <div class="comment">
@@ -1383,10 +1417,10 @@
     </div>
     <div class="answer inline">
       <ol>
-        <li> X=lnt, Y=ln(1-F(t))</li>
-        <li> X=lnt, Y=ln</li>
-        <li> X=lnt, Y=lnln(1-F(t))</li>
-        <li checked> X=lnt, Y=lnln</li>
+        <li> $X=\ln{t}, Y=\ln{(1-F(t))}$</li>
+        <li> $X=\ln{t}, Y=\ln{\left(\dfrac{1}{1-F(t)}\right)}$</li>
+        <li> $X=\ln{t}, Y=\ln{\ln{(1-F(t))}}$</li>
+        <li checked> $X=\ln{t}, Y=\ln{\ln{\left(\dfrac{1}{1-F(t)}\right)}}$</li>
       </ol>
     </div>
     <div class="comment">
