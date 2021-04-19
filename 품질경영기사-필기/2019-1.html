@@ -1430,24 +1430,24 @@
 
   <div class="q_wrap">
     <div class="question">
-      10℃ 법칙이 적용되는 경우에, 가속온도 100℃에서 수명시험을 하고 추정한 평균수명이 1500시간이다. 만약 가속계수가 32인 경우 정상사용 조건 50℃에서의 평균수명은?
+      10℃ 법칙이 적용되는 경우에, 가속온도 100℃에서 수명시험을 하고 추정한 평균수명이 1,500시간이다. 만약 가속계수가 32인 경우 정상사용 조건 50℃에서의 평균수명은?
     </div>
     <div class="answer inline">
       <ol>
-        <li> 3000시간 </li>
-        <li> 4800시간</li>
-        <li checked> 48000시간 </li>
-        <li> 60000시간</li>
+        <li> 3,000시간 </li>
+        <li> 4,800시간</li>
+        <li checked> 48,000시간 </li>
+        <li> 60,000시간</li>
       </ol>
     </div>
     <div class="comment">
-
+      $\theta_n = 2^\alpha \times \theta_s = 2^5 \times 1,500 = 48,000 $
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question">
-      중앙값순위(median rank)표에서 샘플수(n)가 10개, 고장순번(i)이 1일 때, 첫 번째 고장발생시간에서 불신뢰도 F(ti)는 약 얼마인가?
+      중앙값순위(median rank)표에서 샘플수(n)가 10개, 고장순번(i)이 1일 때, 첫 번째 고장발생시간에서 불신뢰도 $F(t_i)$는 약 얼마인가?
     </div>
     <div class="answer inline">
       <ol>
@@ -1458,7 +1458,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      $F(t) = \dfrac{i-0.3}{n+0.4} = \dfrac{1-0.3}{10+0.4} = 0.0673$
     </div>
   </div>
 
@@ -1475,7 +1475,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      신뢰도 배분은 과거 고장률이 없어도 된다.
     </div>
   </div>
 
@@ -1492,13 +1492,13 @@
       </ol>
     </div>
     <div class="comment">
-
+      $ MTBF_s = \left(1+\dfrac{1}{2}+\dfrac{1}{3}\right)MTBF = 91,666.667 $
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question">
-      어떤 부품의 수명이 와이블분포를 따를 때 사용시간 1500시간에서의 고장률은 약 얼마인가? (단, 형상모수는 4, 척도모수는 1000, 위치모수는 1000이다.)
+      어떤 부품의 수명이 와이블분포를 따를 때 사용시간 1,500시간에서의 고장률은 약 얼마인가? (단, 형상모수는 4, 척도모수는 1,000, 위치모수는 1,000이다.)
     </div>
     <div class="answer inline">
       <ol>
@@ -1509,7 +1509,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      $\lambda(t) = \left(\dfrac{m}{\eta}\right)\left(\dfrac{t-r}{\eta}\right)^{m-1}$
     </div>
   </div>
 
@@ -1526,7 +1526,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      k out of n 시스템이란 n 중 k 개 이산 생존하면 시스템이 생존한다는 의미이며, 신뢰도와 불신뢰도의 확률로 나타내므로 이에 대응하는 분포는 이항분포이다.
     </div>
   </div>
 
@@ -1543,7 +1543,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      1 감소형 / 2 증가형 / 3 일정형 / 4 해당사항 없음
     </div>
   </div>
 
@@ -1551,14 +1551,32 @@
     <div class="question">
       어떤 장치의 고장 후 수리시간 t는 다음과 같은 피라미터의 값을 갖는 대수정규분포를 한다고 알려져 있다. 이 장치의 40시간에서 보전도 M(t=40)은 약 얼마인가? (단, 표준화상수 u값 계산시 소수 셋째자리 이하는 버린다.)
       <div class="q_list hc">
-        <ol>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ol>
+        $ Y=\ln{t}, \mu_Y = 2.5, \sigma_Y = 0.86 $
       </div>
+      <div class="load">품질경영기사-필기\2018-1-78.svg</div>
     </div>
+    <table>
+      <tr>
+        <th>$\mu$</th>
+        <th>$P_r$</th>
+      </tr>
+      <tr>
+        <td>1.34</td>
+        <td>0.0901</td>
+      </tr>
+      <tr>
+        <td>1.36</td>
+        <td>0.0869</td>
+      </tr>
+      <tr>
+        <td>1.38</td>
+        <td>0.0383</td>
+      </tr>
+      <tr>
+        <td>1.40</td>
+        <td>0.0808</td>
+      </tr>
+    </table>
     <div class="answer inline">
       <ol>
         <li> 0.9099 </li>
@@ -1568,7 +1586,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      $ M(t=40)=P_r\left(u<\dfrac{\ln{40}+2.5}{0.86}\right)=P_r(u<1.38)=1 - 0.0838=0.9162 $ </div>
     </div>
   </div>
 
@@ -1585,7 +1603,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      $R(t)+F(t) \rightarrow F(t)=1-R(t)$
     </div>
   </div>
 
@@ -1595,14 +1613,15 @@
     </div>
     <div class="answer inline">
       <ol>
-        <li> λ0=ARL, λ1=LTFD </li>
-        <li> λ0=AQL, λ1=LTFD</li>
-        <li checked> λ0=ARL, λ1=LTFR </li>
-        <li> λ0=AQL, λ1=LTFR</li>
+        <li>$ λ_0$=ARL, $λ_1$=LTFD </li>
+        <li>$ λ_0$=AQL, $λ_1$=LTFD</li>
+        <li checked>$ λ_0$=ARL, $λ_1$=LTFR </li>
+        <li>$ λ_0$=AQL, $λ_1$=LTFR</li>
       </ol>
     </div>
     <div class="comment">
-
+      고장률 $\lambda_0$ :ARL(합격신뢰성수) <br>
+      고장률 $\lambda_1$ :LTFR(로트허용고장률)
     </div>
   </div>
 
@@ -1680,7 +1699,7 @@
 
   <div class="q_wrap">
     <div class="question">
-      어떤 제품의 규격이 8.500~8.550mm이고, σ=0.015일 때, 공정능력지수(Cp)는 약 얼마인가?
+      어떤 제품의 규격이 8.500~8.550 mm이고, σ=0.015일 때, 공정능력지수(Cp)는 약 얼마인가?
     </div>
     <div class="answer inline">
       <ol>
@@ -1691,7 +1710,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      $C_p = \dfrac{T}{6\sigma}=\dfrac{U_L}{6\sigma}$
     </div>
   </div>
 
@@ -1717,10 +1736,9 @@
       다음은 국내 아무개 그룹 회장이 펼치고 있는 내용이다. 임직원에게 무엇을 불어넣기 위한 노력의 일환인가?
       <div class="q_list hc">
         <ol>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>회장이 일일 고객 상담요원으로 봉사한다.</li>
+          <li>고객 A/S 센터를 찾아 고객과의 대화를 마련한다.</li>
+          <li>갤재서류대표이사 다음에 고객결재란을 마련하여 고객의 입장에서 의사결정을 평가하도록 한다.</li>
         </ol>
       </div>
     </div>
