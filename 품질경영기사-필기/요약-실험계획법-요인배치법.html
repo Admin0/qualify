@@ -1,7 +1,7 @@
 <script src="/qualify/system/main__card.js" defer></script>
 <style media="screen">
-  .q_wrap .question {
-    font-weight: inherit;
+  .answer__quiz .q_wrap .comment {
+    opacity: 1;
   }
 
   table {
@@ -11,19 +11,18 @@
 <div class="contents">
 
   <div class="q_wrap">
-    <div class="question ">
-      <h3>구조모형의 법칙</h3>
-
-      <h4>1) 데이터의 구조식</h4>
-
+    <h3>구조모형의 법칙</h3>
+    <div class="q_wrap sub">
+      <h4>데이터의 구조식</h4>
       <ol>
         <li>1원배치: $ x_{ij} = \mu + a_i + e_{ij} $</li>
         <li>2원배치: $ x_{ij} = \mu + a_i + b_j + e_{ij} $</li>
         <li>3원배치: $ x_{ij} = \mu + a_i + b_j + (ab)_{ij} + e_{ijk} $</li>
       </ol>
       <div class="comment">구조식에 최종 교호작용이 있으면 반복이 있다는 뜻이다.</div>
-
-      <h4>2) 평균치의 구조식 </h4>
+    </div>
+    <div class="q_wrap sub">
+      <h4>평균치의 구조식 </h4>
       <ol>
         <li>$ \bar{x}_{i\cdot} = \mu + a_i + \bar{b} + (a\bar{b})_{i\cdot} + \bar{e}_{i\cdot} $</li>
         <li>$ \bar{\bar{x}}=\mu + \bar{b}+\bar{\bar{c}} $</li>
@@ -39,9 +38,11 @@
   </div>
 
   <div class="q_wrap">
-    <div class="question ">
-      <h3>귀무가설과 대립가설</h3>
+    <h3>귀무가설과 대립가설</h3>
+    <div class="q_wrap sub">
       <p>$ H_0 : a_1 = a_2 = \dots = a_n \text{ 또는 } \sigma^2_A = 0 $</p>
+    </div>
+    <div class="q_wrap sub">
       <p>$ H_1 : $ 모두 $0$은 아니다. 또는 $ \sigma^2_A > 0 $</p>
     </div>
   </div>
@@ -49,53 +50,70 @@
   <div class="q_wrap">
     <div class="question ">
       <h3>제곱합(SS <span class="translation">sum of squares</span>)의 계산</h3>
-      <h4>1) 전체변동 및 주인자변동의 계산</h4>
-      <ol>
-        <li>$CT$<span class="translation">(Correction Term: 수정항)</span> $ = T^2/N$</li>
-        <li>총변동: $S_T = \sum\sum x_{ij}^2 - CT$</li>
-        <li>반복없는 2원배치 인자 A: $S_A = \frac{\sum T_{i\cdot}^2}{m} - CT$</li>
-        <li>반복없는 2원배치 인자 B: $S_B = \frac{\sum T_{\cdot j}^2}{l} - CT$</li>
-      </ol>
-      <h4>2) 급간변동의 계산</h4>
-      <ol>
-        <li>1원 배치: $S_A = \frac{\sum T_{i\cdot}^2}{r}-CT$</li>
-        <li>반복있는 2원 배치: $S_{AB} = \frac{\sum\sum T_{ij\cot}^2}{r}-CT$</li>
-        <li>반복있는 3원 배치: $S_{ABC} = \frac{\sum\sum\sum T_{ijk\cot}^2}{r}-CT$</li>
-      </ol>
-      <h4>3) 교호작용의 변동계산</h4>
-      <ol>
-        <li>$ S_{A \times B} = S_{AB} - S_A - S_B $</li>
-        <li>$ S_{A \times B \times C } = S_{ABC} - S_A - S_B - S_C - S_{A \times B} - S_{A \times C} - S_{B \times CB} $</li>
-      </ol>
+      <div class="q_wrap sub">
+        <h4>전체변동 및 주인자변동의 계산</h4>
+        <ol>
+          <li>$CT$<span class="translation">(Correction Term: 수정항)</span> $ = T^2/N$</li>
+          <li>총변동: $S_T = \sum\sum x_{ij}^2 - CT$</li>
+          <li>반복없는 2원배치 인자 A: $S_A = \frac{\sum T_{i\cdot}^2}{m} - CT$</li>
+          <li>반복없는 2원배치 인자 B: $S_B = \frac{\sum T_{\cdot j}^2}{l} - CT$</li>
+        </ol>
+      </div>
+      <div class="q_wrap sub">
+        <h4>급간변동의 계산</h4>
+        <ol>
+          <li>1원 배치: $S_A = \frac{\sum T_{i\cdot}^2}{r}-CT$</li>
+          <li>반복있는 2원 배치: $S_{AB} = \frac{\sum\sum T_{ij\cot}^2}{r}-CT$</li>
+          <li>반복있는 3원 배치: $S_{ABC} = \frac{\sum\sum\sum T_{ijk\cot}^2}{r}-CT$</li>
+        </ol>
+      </div>
+      <div class="q_wrap sub">
+        <h4>교호작용의 변동계산</h4>
+        <ol>
+          <li>$ S_{A \times B} = S_{AB} - S_A - S_B $</li>
+          <li>$ S_{A \times B \times C } = S_{ABC} - S_A - S_B - S_C - S_{A \times B} - S_{A \times C} - S_{B \times CB} $</li>
+        </ol>
+      </div>
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question ">
       <h3>자유도(DF)의 계산</h3>
-      <h4>1) 총 자유도</h4>
-      <p>$\nu_T = l \times m \times n \times \dots \times r-1 = N - 1$</p>
-      <p class="comment">단, 결측이 있는 경우, 총 자유도에서 결측치를 뺀다.</p>
-      <h4>2) 반복이 있는 경우 오차의 자유도 </h4>
-      <p>$\nu_e = lmn\dots (r-1) \rightarrow $ 수준수(반복수 $- 1$)</p>
-      <h4>3) 반복이 없는 경우 오차의 자유도 </h4>
-      <p>$\nu_e = (l-1)(m-1)(n-1)\dots \rightarrow$ 최종교호작용</p>
-      <p class="comment">반복이 있을 때의 최종교호작용의 자유도와 같다.</p>
-      <h4>4) 요인의 자유도</h4>
-      <p>$\nu_\text{요인} = \text{수준수} - 1$</p>
-      <h4>5) 최종교호작용의 자유도</h4>
-      <p>$\nu_{\text{요인}\times\text{요인'}} = \nu_\text{요인} \times \nu_\text{요인'}$</p>
+      <div class="q_wrap sub">
+        <h4>총 자유도</h4>
+        <p>$\nu_T = l \times m \times n \times \dots \times r-1 = N - 1$</p>
+        <p class="comment">단, 결측이 있는 경우, 총 자유도에서 결측치를 뺀다.</p>
+      </div>
+      <div class="q_wrap sub">
+        <h4>반복이 있는 경우 오차의 자유도 </h4>
+        <p>$\nu_e = lmn\dots (r-1) \rightarrow $ 수준수(반복수 $- 1$)</p>
+      </div>
+      <div class="q_wrap sub">
+        <h4>반복이 없는 경우 오차의 자유도 </h4>
+        <p>$\nu_e = (l-1)(m-1)(n-1)\dots \rightarrow$ 최종교호작용</p>
+        <p class="comment">반복이 있을 때의 최종교호작용의 자유도와 같다.</p>
+      </div>
+      <div class="q_wrap sub">
+        <h4>요인의 자유도</h4>
+        <p>$\nu_\text{요인} = \text{수준수} - 1$</p>
+        <h4>5) 최종교호작용의 자유도</h4>
+        <p>$\nu_{\text{요인}\times\text{요인'}} = \nu_\text{요인} \times \nu_\text{요인'}$</p>
+      </div>
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question ">
       <h3>제곱평균(MS<span class="translation">mean square</span>)의 계산</h3>
-      <h3>1) 제곱평균의 계산식</h3>
-      $V_\text{요인} = \dfrac{S_\text{요인}}{\nu_\text{요인}}$
-      <h3>2) 오차항에 유의하지 않은 인자를 풀링했을 때</h3>
-      $V_e' = \dfrac{S_e + \sum S_\text{pooling}}{\nu_e + \sum \nu_\text{pooling}}$
-
+      <div class="q_wrap sub">
+        <h3>제곱평균의 계산식</h3>
+        $V_\text{요인} = \dfrac{S_\text{요인}}{\nu_\text{요인}}$
+      </div>
+      <div class="q_wrap sub">
+        <h3>오차항에 유의하지 않은 인자를 풀링했을 때</h3>
+        $V_e' = \dfrac{S_e + \sum S_\text{pooling}}{\nu_e + \sum \nu_\text{pooling}}$
+      </div>
     </div>
   </div>
 
