@@ -1,7 +1,7 @@
 <script src="/qualify/system/main__card.js" defer></script>
 <style media="screen">
-  .q_wrap .question {
-    font-weight: inherit;
+  .answer__quiz .q_wrap .comment {
+    opacity: 1;
   }
 
   table {
@@ -9,25 +9,89 @@
   }
 </style>
 <div class="contents">
+
   <div class="q_wrap">
-    <div class="question ">
-      <h3>실험계획법의 기본원리</h3>
+    <h3>실험계획법 (DOE : Design of Experiment)의 정의</h3>
+    <p>실험에 대한 합리적 계획 방법의 설계로 해결하고자 하는 문제에 대해 실험을 어떻게 행하고 데이타를 어떻게 취하며, 어떤 통계적 방법으로 데이타를 분석하면 최소의 실험횟수를 통한 최소의 비용으로 최대의 정보를 얻을 수 있는 효율적 실험을 설계할 수 있는가를 계획하는 것을 실험계획법이라고 한다.</p>
+  </div>
+
+  <div class="q_wrap">
+    <h3>목적 <span class="comment">2019-2</span></h3>
+    <div class="q_wrap sub">
+      <h4>검정과 추정</h4>
+      <p>어떤 요인이 실험 특성치에 유효한 영향을 주고 있는가를 파악하고 그 영향력의 정도를 알기 위하여.
+      </p>
+    </div>
+    <div class="q_wrap sub">
+      <h4>오차항 추정</h4>
+      <p>작은 영향을 미치는 요인의 전체적 영향정도를 파악키 위해.</p>
+    </div>
+    <div class="q_wrap sub">
+      <h4>최적반응 조건의 결정</h4>
+      <p>유효한 영향을 미치는 요인의 가장 바람직한 반응을 하는 조건을 파악하기 위하여</p>
+    </div>
+    <div class="comment"></div>
+  </div>
+
+  <div class="q_wrap">
+    <h3>단계 </h3>
+    <ol>
+      <li>요인선별 (Screening)</li>
+      <li>특성화 (Characterization)</li>
+      <li>최적화 (Optimization)</li>
+    </ol>
+  </div>
+
+  <div class="q_wrap">
+    <h3>순서 </h3>
+    <ol>
+      <li>실험목적 설정</li>
+      <li>특성치의 선택</li>
+      <li>인자와 인자 수준의 선택</li>
+      <li>실험의 배치와 실험순서의 랜덤화</li>
+      <li>실험의 실시</li>
+      <li>데이타의 분석</li>
+      <li>분석결과의 해석과 조치</li>
+    </ol>
+  </div>
+
+  <div class="q_wrap">
+    <h3>실험계획법의 기본원리</h3>
+    <div class="q_wrap sub">
+      <h4>랜덤화의 원리</h4>
+      <p>뽑혀진 인자 외에 통제하지 못 한 기타 원인들이 실험결과에 편기되게 영향 을 미치는 것을 방지하려는 것으로 실험순서를, 무작위로 정하는 원리이다.
+      </p>
       <ol>
-        <li>랜덤화의 원리</li>
-        <li>반복의 원리</li>
-        <li>블록화의 원리</li>
-        <li>직교의 원리</li>
-        <li>교략의 원리</li>
+        <li>완전 랜덤화법： 원1, 2원, 3 원 다원, 배치법</li>
+        <li>부분 랜덤화법 분할법</li>
       </ol>
+    </div>
+    <div class="q_wrap sub">
+      <h4>반복의 원리</h4>
+      <p>동일조건하의 실험을 2 회 이상 행하여 실험의 정도를 높이려는 원리이다. 반복을 시켜줌으로써 오차항의 자유도를 크게 해줄 수 있으며 오차분산이 정도, 높게 추정됨으로써 실험결과의 신뢰성을 높일 수 있다.</p>
+    </div>
+    <div class="q_wrap sub">
+      <h4>블록화의 원리</h4>
+      <p>실험 전체를 시간적 공간적으로, 분할하여 블럭으로 만들어주면 각, 블럭 내 에서는 실험 환경이 균일하게 되어 정도 높은 결과를 얻을 수 있다. [예] 난괴법</p>
+    </div>
+    <div class="q_wrap sub">
+      <h4>교락의 원리 </h4>
+      <p>해석할 필요가 없는 2 인자 교호작용이나 고차의 교호작용을 블럭과 교락시키는 방법으로 검출할 , 필요가 없는 요인의 효과가 블럭의 효과와 교락하게 됨으로써 실험의 효율 및 정도를 높일 수 있다.</p>
+    </div>
+    <div class="q_wrap sub">
+      <h4>직교의 원리</h4>
+      <p>배치된 요인간에 직교성을 갖도록 실험계획하여 데이터를 취하면 같은, 실험횟수라도 검출력이 높은 검정을 할 수 있고 정도, 높은 추정을 할 수 있다.</p>
     </div>
   </div>
 
   <div class="q_wrap">
-    <div class="question ">
-      <h3>실험계획법에 의한 분류</h3>
-      <h4>1) 완비형 시험계획법</h4>
+    <h3>실험계획법에 의한 분류</h3>
+    <div class="q_wrap sub">
+      <h4>완비형 시험계획법</h4>
       <p>요인배치법, 난괴법, 라틴 방격법</p>
-      <h4>2) 불완비형 실험계획법 </h4>
+    </div>
+    <div class="q_wrap sub">
+      <h4>불완비형 실험계획법 </h4>
       <ol>
         <li>실험이 랜덤이 아니거나 일부수준의 조합이 실험이 이루어지지 않은 경우</li>
         <li>분할법, 일부실시법, 교락법, 유덴방격법 등</li>
@@ -36,78 +100,80 @@
   </div>
 
   <div class="q_wrap">
-    <div class="question ">
-      <h3>인자의 분류</h3>
-      <h4>1) 모수인자 </h4>
+    <h3>인자의 분류</h3>
+    <div class="q_wrap sub">
+      <h4>모수인자 </h4>
       <ol>
         <li>제어인자: 최적수준의 선택이 의미가 있는 인자 </li>
         <li>표시인자: 제어인자와의 교호작용만 의미가 있는 인자 </li>
       </ol>
-      <h4>2) 변량인자</h4>
+    </div>
+    <div class="q_wrap sub">
+      <h4>변량인자</h4>
       <ol>
         <li>블록인자: 단지 실험의 정도를 높임을 목적으로 하는 인자</li>
         <li>집단인자: 로트, 작업자 등의 산포의 해석을 목적으로 하는 인자</li>
       </ol>
-      <h4>3) 보조인자 </h4>
+    </div>
+    <div class="q_wrap sub">
+      <h4>보조인자 </h4>
       <p>단순히 참고용으로 사용하기 위한 인자</p>
     </div>
   </div>
 
   <div class="q_wrap">
-    <div class="question ">
-      <h3>모수인자와 변량인자의 비교</h3>
-      <table class="center">
-        <tr>
-          <th>구분</th>
-          <th>모수인자</th>
-          <th>변량인자</th>
-        </tr>
-        <tr>
-          <td>$a_i$의 기대가</td>
-          <td>$ E(a_i) = a_i $</td>
-          <td>$ E(a_i) = 0 $</td>
-        </tr>
-        <tr>
-          <td>$a_i$의 평균</td>
-          <td>$ \bar{a}_i = 0 \\ \Sigma{a_i} = 0 $</td>
-          <td>$ \bar{a}_i \neq 0 \\ \Sigma{a_i} \neq 0 $</td>
-        </tr>
-        <tr>
-          <td>$a_i$의 분산</td>
-          <td>$ V(a_i) = 0 $</td>
-          <td>$ V(a_i) = \sigma^2_A $</td>
-        </tr>
-        <tr>
-          <td>$a_A^2$</td>
-          <td>$ E\left(\dfrac{1}{l-1}\sum{a_i^2}\right) $</td>
-          <td>$ E\left(\dfrac{1}{l-1}\sum{a_i - \bar{a}^2}\right) $</td>
-        </tr>
-      </table>
-    </div>
+    <h3>모수인자와 변량인자의 비교</h3>
+    <table class="center">
+      <tr>
+        <th>구분</th>
+        <th>모수인자</th>
+        <th>변량인자</th>
+      </tr>
+      <tr>
+        <td>$a_i$의 기대가</td>
+        <td>$ E(a_i) = a_i $</td>
+        <td>$ E(a_i) = 0 $</td>
+      </tr>
+      <tr>
+        <td>$a_i$의 평균</td>
+        <td>$ \bar{a}_i = 0 \\ \Sigma{a_i} = 0 $</td>
+        <td>$ \bar{a}_i \neq 0 \\ \Sigma{a_i} \neq 0 $</td>
+      </tr>
+      <tr>
+        <td>$a_i$의 분산</td>
+        <td>$ V(a_i) = 0 $</td>
+        <td>$ V(a_i) = \sigma^2_A $</td>
+      </tr>
+      <tr>
+        <td>$a_A^2$</td>
+        <td>$ E\left(\dfrac{1}{l-1}\sum{a_i^2}\right) $</td>
+        <td>$ E\left(\dfrac{1}{l-1}\sum{a_i - \bar{a}^2}\right) $</td>
+      </tr>
+    </table>
   </div>
 
   <div class="q_wrap">
-    <div class="question ">
-      <h3>구조모형에 의한 분류</h3>
-      <ol>
-        <li>모수모형: 모수인자로 구성된 모형</li>
-        <li>변량모형: 변량인자로 구성된 모형</li>
-        <li>혼합모형: 모수인자와 변량인자가 혼합된 구조모형</li>
-      </ol>
-    </div>
+    <h3>구조모형에 의한 분류</h3>
+    <ol>
+      <li>모수모형: 모수인자로 구성된 모형</li>
+      <li>변량모형: 변량인자로 구성된 모형</li>
+      <li>혼합모형: 모수인자와 변량인자가 혼합된 구조모형</li>
+    </ol>
   </div>
 
   <div class="q_wrap">
-    <div class="question ">
-      <h3>오차항의 특성</h3>
-      <h4>1) 오차항의 일반식</h4>
+    <h3>오차항의 특성</h3>
+    <div class="q_wrap sub">
+      <h4>오차항의 일반식</h4>
       <ol>
         <li>정규성: $N~(0, \sigma^2_e)$</li>
         <li>독립성: $e_{ij}\neq e_{ij}$</li>
         <li>등분산성: $V(e_{ij})=\sigma^2_e$</li>
         <li>불편성: $E(e_{ij})=0$</li>
       </ol>
-      <h4>2) 오차항의 특성</h4>
+    </div>
+    <div class="q_wrap sub">
+      <h4>오차항의 특성</h4>
       <ol>
         <li>$ \sigma_e^2 = E(e_{ij}^2) $</li>
         <li>$ \sigma_e^2 = E\left(\dfrac{1}{lr-1}\sum\limits_i\sum\limits_j{(e_{ij} - \bar{\bar{e}})^2}\right) $</li>
