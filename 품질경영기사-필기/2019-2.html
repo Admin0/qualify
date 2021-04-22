@@ -110,7 +110,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      $\hat{\sigma_A^2} = \dfrac{V_A - V_e}{r} = \dfrac{\frac{1.979}{3} - \frac{0.169}{20}}{6} = 0.1085$
     </div>
   </div>
 
@@ -299,7 +299,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      데이터의 구조로 보았을 때 모수모령(인자 A가 모수인자)라는 것을 알 수 있다.
     </div>
   </div>
 
@@ -354,7 +354,8 @@
       </ol>
     </div>
     <div class="comment">
-
+      $ V_e = \dfrac{84}{28} = 3.0 \\
+      F_B = \dfrac{11.0}{3.0} = 3.67 $
     </div>
   </div>
 
@@ -550,7 +551,7 @@
         <tr>
           <td>배치</td>
           <td>B</td>
-          <td>B</td>
+          <td>A</td>
           <td>e</td>
           <td>C</td>
         </tr>
@@ -565,7 +566,8 @@
       </ol>
     </div>
     <div class="comment">
-
+      오차항이 3번열에 하나 배치되어 있다. 3수준계 직교배열표는 한 열의 자유도가 2이다. <br>
+      $(L_\text{[실험=행]}\text{[수준]}^\text{[인자=열]})$
     </div>
   </div>
 
@@ -659,7 +661,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      2. $E(\bar{x})\pm 3D(\bar{x})$ <br>
     </div>
   </div>
 
@@ -676,7 +678,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      $u_0 = \dfrac{c-m}{\sqrt{m}} = \dfrac{12-16}{\sqrt{16}} = -1$
     </div>
   </div>
   <div class="q_wrap">
@@ -685,14 +687,15 @@
     </div>
     <div class="answer inline">
       <ol>
-        <li checked> $k_A=k_B$일 것</li>
-        <li> $n_A=n_B$일 것</li>
+        <li checked> $ k_A=k_B\text{일 것}$ </li>
+        <li>$ n_A=n_B \text{일 것}$ </li>
         <li> $\bar{R_A}, \bar{R_B}$ 는 유의 차이가 없을 것</li>
         <li> 두 개의 관리도는 관리상태에 있을 것</li>
       </ol>
     </div>
     <div class="comment">
-
+      1. $ k_A=k_B$가 충분히 클 것. <br>
+      5. 본래의 분포 상태가 대략적인 정규분포를 하고 있을 것.
     </div>
   </div>
 
@@ -709,7 +712,14 @@
       </ol>
     </div>
     <div class="comment">
-
+      <ol>
+        <li>가설 설정 $H_0: \mu = \mu_0, \ H_1: \mu \ne \mu_0$</li>
+        <li>유의 수준 $\alpha = 0.05$</li>
+        <li>검정통계량 $u_0 = \dfrac{\bar{\alpha}-\mu}{\frac{\sigma}{\sqrt{m}}} = \dfrac{15.08-15.02}{\frac{0.03}{\sqrt{9}}} = 6$</li>
+        <li>기각역 $u_{1-\frac{\alpha}{2}} = 1.96$</li>
+        <li>$u_0 = 6 > u_{1-\frac{\alpha}{2}} = 1.96$</li>
+        $\therefore H_0$ 기각, $H_1$ 채택.
+      </ol>
     </div>
   </div>
 
@@ -726,7 +736,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      p = 불량률(계수) , X-R = 평균치(계량)
     </div>
   </div>
 
@@ -829,7 +839,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      생산자 위험 $\alpha$ 는 그래프의 위에서 선까지의 거리이다.
     </div>
   </div>
 
@@ -880,13 +890,13 @@
       </ol>
     </div>
     <div class="comment">
-
+      2. 상황에 따라 다름.
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question">
-      어떤 제품의 품질 특성치는 평균 μ, 분산 σ2인 정규분포를 따른다. 20개의 제품을 표본으로 취하여 품질 특성치를 측정한 결과 평균 10, 표준편차 3을 얻었다. 분산 σ2에 대한 95% 신뢰구간은 약 얼마인가? (단, X20.975(19)=32.852, X20.025(19)=8.907이다.)
+      어떤 제품의 품질 특성치는 평균 μ, 분산 σ2인 정규분포를 따른다. 20개의 제품을 표본으로 취하여 품질 특성치를 측정한 결과 평균 10, 표준편차 3을 얻었다. 분산 σ2에 대한 95% 신뢰구간은 약 얼마인가? (단, $ X^2_{0.975}(19)=32.852,\ X^2_{0.025}(19)=8.907$이다.)
     </div>
     <div class="answer inline">
       <ol>
@@ -1508,35 +1518,35 @@
   <div class="q_wrap">
     <div class="question">
       다음 FT(Fault Tree)도에서 시스템의 고장확률은 얼마인가? (단, 각 구성품의 고장은 서로 독립이며, 주어진 수치는 각 구성품의 고장확률이다.)
-<table>
-  <tr>
-    <th>실험번호 </th>
-    <th>1</th>
-    <th>2</th>
-    <th>3</th>
-    <th>4</th>
-  </tr>
-  <tr>
-    <th rowspan="2">기본표시 </th>
-    <td>a</td>
-    <td>b</td>
-    <td>a</td>
-    <td>a</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td>b</td>
-    <td>b²</td>
-  </tr>
-  <tr>
-    <th>배치</th>
-    <td>B</td>
-    <td>A</td>
-    <td>e</td>
-    <td>C</td>
-  </tr>
-</table>
+      <table>
+        <tr>
+          <th>실험번호 </th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+        </tr>
+        <tr>
+          <th rowspan="2">기본표시 </th>
+          <td>a</td>
+          <td>b</td>
+          <td>a</td>
+          <td>a</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>b</td>
+          <td>b²</td>
+        </tr>
+        <tr>
+          <th>배치</th>
+          <td>B</td>
+          <td>A</td>
+          <td>e</td>
+          <td>C</td>
+        </tr>
+      </table>
     </div>
     <div class="answer inline">
       <ol>
@@ -1571,14 +1581,22 @@
   <div class="q_wrap">
     <div class="question">
       10개의 샘플에 대한 수명시험을 50시간 동안 실시하였더니, 다음 표와 같은 고장시간 자료를 얻었다. 그리고 고장난 샘플은 새 것으로 교체하지 않았다. 평균수명의 점추정치는 얼마인가?
-      <div class="q_list hc">
-        <ol>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ol>
-      </div>
+      <table>
+        <tr>
+          <th>i</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+        </tr>
+        <tr>
+          <td>$t_i$</td>
+          <td>15</td>
+          <td>20</td>
+          <td>50</td>
+          <td>40</td>
+        </tr>
+      </table>
     </div>
     <div class="answer inline">
       <ol>
@@ -1597,12 +1615,7 @@
     <div class="question">
       와이블 분포의 확률밀도함수가 다음과 같을 때 설명 중 틀린 것은? (단, m은 형상모수, η은 척도모수이다.)
       <div class="q_list hc">
-        <ol>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ol>
+        $f(t) = \dfrac{m}{\eta}\left(\dfrac{t}{\eta}\right)^{m-1}\cdot e^{-\left(\frac{t}{m}\right)^m}$
       </div>
     </div>
     <div class="answer inline">
@@ -1641,10 +1654,10 @@
     </div>
     <div class="answer inline">
       <ol>
-        <li>  </li>
-        <li checked> </li>
-        <li>  </li>
-        <li> </li>
+        <li>$ \hat{\lambda} = \dfrac{nt_0}{r}$</li>
+        <li checked>$ \hat{\lambda} = \dfrac{r}{\sum\limits_{i=1}^{r}{t_i}+(n-r)t_0}$</li>
+        <li>$ \hat{\lambda} = \dfrac{\sum\limits_{i=1}^{r}{t_i}}{r}$</li>
+        <li>$ \hat{\lambda} = \dfrac{\sum\limits_{i=1}^{r}{t_i}+(n-r)t_0}{r}$</li>
       </ol>
     </div>
     <div class="comment">
@@ -1779,12 +1792,7 @@
     <div class="question">
       다음은 제조물책임법 제1조에 관한 사항이다. ㉠과 ㉡에 해당하는 용어로 맞는 것은?
       <div class="q_list hc">
-        <ol>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ol>
+        이 법은 제조물의 결함으로 인하여 발샌한 손해에 대한 ( ㉠ ) 등의 손해배상책임을 규정함으로써 피해자의 보호를 도모하고 국민생활의 ( ㉡ ) 향상과 국민경제의 건전한 발전에 기여함을 목적으로 한다.
       </div>
     </div>
     <div class="answer inline">
@@ -1819,7 +1827,7 @@
 
   <div class="q_wrap">
     <div class="question">
-      부품 A는 N(2.5, 0.032), 부품 B는 N(2.4, 0.022), 부품 C는 N(2.4, 0.042), 부품 D는 N(3.0, 0.012)인 정규분포를 따른다. 이 4개를 부품이 직렬로 결합되는 경우 조립품의 표준편차는 약 얼마인가? (단, 부품 A, B, C, D는 서로 독립이다.)
+      부품 A는 $N(2.5, 0.032^)$, 부품 B는 $N(2.4, 0.02^2)$, 부품 C는 $N(2.4, 0.04^2)$, 부품 D는 $N(3.0, 0.01^2)$인 정규분포를 따른다. 이 4개를 부품이 직렬로 결합되는 경우 조립품의 표준편차는 약 얼마인가? (단, 부품 A, B, C, D는 서로 독립이다.)
     </div>
     <div class="answer inline">
       <ol>
@@ -1973,13 +1981,8 @@
   <div class="q_wrap">
     <div class="question">
       다음은 키크 패트릭(Kirk Patrick)의 품질비용에 관한 그래프이다. 각 비용곡선의 명칭으로 맞는 것은?
-      <div class="q_list hc">
-        <ol>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ol>
+      <div class="load">
+        품질경영기사-필기\2018-1-82.svg
       </div>
     </div>
     <div class="answer inline">
@@ -1991,7 +1994,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      품질경영기사-필기\2018-1-82-2.svg
     </div>
   </div>
 
