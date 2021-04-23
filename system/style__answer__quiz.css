@@ -43,6 +43,18 @@ body:not(.answer__quiz) .contents.multiple_choice .q_wrap .answer li[checked],
   color: #2196f3;
 }
 
+.contents.multiple_choice .q_wrap .question .answer {
+  color: #2196f3;
+}
+
+.answer__quiz .contents.multiple_choice .q_wrap .question .answer {
+  opacity: 0;
+}
+
+.answer__quiz .contents.multiple_choice .q_wrap:hover .question .answer {
+  opacity: 1;
+}
+
 body:not(.answer__quiz) .contents.multiple_choice .q_wrap .answer li[checked]::before,
 .answer__quiz .contents.multiple_choice .q_wrap:hover .answer li[checked]::before {
   border-color: #2196f3;
@@ -53,6 +65,10 @@ body:not(.answer__quiz) .contents.multiple_choice .q_wrap .answer li[checked]::b
 
 body.general__dark:not(.answer__quiz) .contents.multiple_choice .q_wrap .answer li[checked],
 .general__dark.answer__quiz.answer__quiz .contents.multiple_choice .q_wrap:hover .answer li[checked] {
+  color: #c8b900;
+}
+
+.general__dark .contents.multiple_choice .q_wrap .question .answer {
   color: #c8b900;
 }
 

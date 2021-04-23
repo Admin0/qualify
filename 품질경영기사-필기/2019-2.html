@@ -144,42 +144,42 @@
           <th>$F_{0, 95}$</th>
         </tr>
         <tr>
-          <td>T</td>
+          <td>A</td>
           <td>1.893</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td><span class="answer">3</span></td>
+          <td><span class="answer">0.631</span></td>
+          <td><span class="answer">318.5</span></td>
           <td>6.59</td>
         </tr>
         <tr>
           <td>B(A)</td>
           <td>0.748</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td><span class="answer">4</span></td>
+          <td><span class="answer">0.187</span></td>
+          <td><span class="answer">93.5</span></td>
           <td>3.01</td>
         </tr>
         <tr>
           <td>C(AB)</td>
           <td>0.344</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td><span class="answer">8</span></td>
+          <td><span class="answer">0.042</span></td>
+          <td><span class="answer">20.9</span></td>
           <td>2.59</td>
         </tr>
         <tr>
           <td>e</td>
           <td>0.032</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td><span class="answer">16</span></td>
+          <td><span class="answer">0.002</span></td>
+          <td><span class="answer"></span></td>
           <td></td>
         </tr>
         <tr>
           <td>T</td>
           <td>3.017</td>
-          <td></td>
-          <td></td>
+          <td><span class="answer">32</span></td>
+          <td><span class="answer"></span></td>
           <td></td>
           <td></td>
         </tr>
@@ -701,7 +701,7 @@
 
   <div class="q_wrap">
     <div class="question">
-      Y 제조공정에서 제조되는 부품의 특성치를 장기간에 걸쳐 통계적으로 해석하여 본 결과 μ = 15.02 mm, σ = 0.03 mm인 것을 알았다. 이 공정에서 오늘 제조한 부품 9개에 대하여 특성치를 측정한 결과 $ \bar{X} = \pu{15.08 mm}$인 것을 알았다. 유의수준을 5%로 잡고 평균에 변화가 있는가를 검정하면?
+      Y 제조공정에서 제조되는 부품의 특성치를 장기간에 걸쳐 통계적으로 해석하여 본 결과 μ = 15.02 mm, σ = 0.03 mm인 것을 알았다. 이 공정에서 오늘 제조한 부품 9개에 대하여 특성치를 측정한 결과 $ \bar{x} = \pu{15.08 mm}$인 것을 알았다. 유의수준을 5%로 잡고 평균에 변화가 있는가를 검정하면?
     </div>
     <div class="answer inline">
       <ol>
@@ -715,7 +715,7 @@
       <ol>
         <li>가설 설정 $H_0: \mu = \mu_0, \ H_1: \mu \ne \mu_0$</li>
         <li>유의 수준 $\alpha = 0.05$</li>
-        <li>검정통계량 $u_0 = \dfrac{\bar{\alpha}-\mu}{\frac{\sigma}{\sqrt{m}}} = \dfrac{15.08-15.02}{\frac{0.03}{\sqrt{9}}} = 6$</li>
+        <li>검정통계량 $u_0 = \dfrac{\bar{x}-\mu}{\frac{\sigma}{\sqrt{m}}} = \dfrac{15.08-15.02}{\frac{0.03}{\sqrt{9}}} = 6$</li>
         <li>기각역 $u_{1-\frac{\alpha}{2}} = 1.96$</li>
         <li>$u_0 = 6 > u_{1-\frac{\alpha}{2}} = 1.96$</li>
         $\therefore H_0$ 기각, $H_1$ 채택.
@@ -763,10 +763,10 @@
     </div>
     <div class="answer inline">
       <ol>
-        <li> $\bar{X}＜S_L+kσ$이면 합격 </li>
-        <li checked>  $\bar{X}≥S_L+kσ$이면 합격</li>
-        <li> $\bar{X}＜m_o+G_oσ$이면 합격 </li>
-        <li>  $\bar{X}≥m_o+G_oσ$이면 합격</li>
+        <li> $\bar{X}＜S_L+kσ \text{이면 합격}$</li>
+        <li checked>$\bar{X}≥S_L+kσ \text{이면 합격}$</li>
+        <li>$\bar{X}＜m_o+G_oσ \text{이면 합격}$</li>
+        <li>$\bar{X}≥m_o+G_oσ \text{이면 합격}$</li>
       </ol>
     </div>
     <div class="comment">
@@ -947,14 +947,14 @@
 
   <div class="q_wrap">
     <div class="question">
-      계수형 축차 샘플링 검사 방식(KS Q ISO 8422 : 2006)에서 누적 샘플크기(ncum)가 중 지시 누적 샘플크기(중지값)(nt)보다 작을 때 합격판정개수를 구하는 식으로 맞는 것은?
+      계수형 축차 샘플링 검사 방식(KS Q ISO 8422 : 2006)에서 누적 샘플크기($n_{cum}$)가 중 지시 누적 샘플크기(중지값)($n_t$)보다 작을 때 합격판정개수를 구하는 식으로 맞는 것은?
     </div>
     <div class="answer inline">
       <ol>
-        <li> 합격판정개수 A=hA+gncum 소수점 이하는 올린다.</li>
-        <li> 합격판정게수 A=hA+gcum 소수점 이하는 버린다.</li>
-        <li> 합격판정개수 A=-hA+gcum 소수점 이하는 올린다.</li>
-        <li checked> 합격판정게수 A=-hA+gncum 소수점 이하는 버린다.</li>
+        <li> 합격판정개수 $A=h_A+gn_{cum}$ 소수점 이하는 올린다.</li>
+        <li> 합격판정게수 $A=h_A+g_{cum}$ 소수점 이하는 버린다.</li>
+        <li> 합격판정개수 $A=-h_A+g_{cum}$ 소수점 이하는 올린다.</li>
+        <li checked> 합격판정게수 $A=-h_A+gn_{cum}$ 소수점 이하는 버린다.</li>
       </ol>
     </div>
     <div class="comment">
@@ -1650,7 +1650,7 @@
 
   <div class="q_wrap">
     <div class="question">
-      지수분포를 따르는 어떤 부품을 n개 택하여 t0지점까지 수명시험한 결과 r개의 고장시간이 t1, t2, ㆍㆍㆍ, t0에서 일어났다고 한다면, 고장률 λ의 추정식으로 맞는 것은?
+      지수분포를 따르는 어떤 부품을 n개 택하여 t0지점까지 수명시험한 결과 r개의 고장시간이 $t_1, t_2, \cdots, t_0$에서 일어났다고 한다면, 고장률 λ의 추정식으로 맞는 것은?
     </div>
     <div class="answer inline">
       <ol>
