@@ -178,7 +178,7 @@
         <tr>
           <td>T</td>
           <td>3.017</td>
-          <td><span class="answer">32</span></td>
+          <td><span class="answer">31</span></td>
           <td><span class="answer"></span></td>
           <td></td>
           <td></td>
@@ -188,7 +188,7 @@
     <div class="answer inline">
       <ol>
         <li> 요인 A의 자유도는 3이다.</li>
-        <li checked> 요차항의 자유도는 15이다.</li>
+        <li checked> 오차항의 자유도는 15이다.</li>
         <li> 요인B(A)의 자유도는 4이다.</li>
         <li> 요인 B(A)의 분산비 검정은 요인 C(AB)의 분산으로 검정한다.</li>
       </ol>
@@ -275,7 +275,7 @@
     </div>
     <div class="answer inline">
       <ol>
-        <li checked> 교호작용의 유ㆍ무를 알 수 있다.</li>
+        <li checked> 교호작용의 유·무를 알 수 있다.</li>
         <li> 결측치가 있어도 그대로 해설할 수 있다.</li>
         <li> 특성치는 랜덤한 순서에 의해 구해야 한다.</li>
         <li> 반복의 수가 모든 수준에 대하여 같지 않아도 된다.</li>
@@ -529,14 +529,14 @@
       $L_9(3^4)$형 직교배열표를 사용해 다음과 같은 결과를 얻었다. 오차항의 자유도는 얼마인가?
       <table class="center">
         <tr>
-          <th>실험번호</th>
+          <th>실험번호 </th>
           <th>1</th>
           <th>2</th>
           <th>3</th>
           <th>4</th>
         </tr>
         <tr>
-          <td rowspan="2">기본표시</td>
+          <th rowspan="2">기본표시 </th>
           <td>a</td>
           <td>b</td>
           <td>a</td>
@@ -546,10 +546,10 @@
           <td></td>
           <td></td>
           <td>b</td>
-          <td>$b^2$</td>
+          <td>b²</td>
         </tr>
         <tr>
-          <td>배치</td>
+          <th>배치</th>
           <td>B</td>
           <td>A</td>
           <td>e</td>
@@ -694,7 +694,7 @@
       </ol>
     </div>
     <div class="comment">
-      1. $ k_A=k_B$가 충분히 클 것. <br>
+      1. $ k_A, k_B$가 충분히 클 것. <br>
       5. 본래의 분포 상태가 대략적인 정규분포를 하고 있을 것.
     </div>
   </div>
@@ -896,7 +896,7 @@
 
   <div class="q_wrap">
     <div class="question">
-      어떤 제품의 품질 특성치는 평균 μ, 분산 σ2인 정규분포를 따른다. 20개의 제품을 표본으로 취하여 품질 특성치를 측정한 결과 평균 10, 표준편차 3을 얻었다. 분산 σ2에 대한 95% 신뢰구간은 약 얼마인가? (단, $ X^2_{0.975}(19)=32.852,\ X^2_{0.025}(19)=8.907$이다.)
+      어떤 제품의 품질 특성치는 평균 μ, 분산 $σ^2$인 정규분포를 따른다. 20개의 제품을 표본으로 취하여 품질 특성치를 측정한 결과 평균 10, 표준편차 3을 얻었다. 분산 $σ^2$에 대한 95% 신뢰구간은 약 얼마인가? (단, $ \chi^2_{0.975}(19)=32.852,\ \chi^2_{0.025}(19)=8.907$이다.)
     </div>
     <div class="answer inline">
       <ol>
@@ -907,7 +907,9 @@
       </ol>
     </div>
     <div class="comment">
-
+      $\dfrac{S}{\chi^2_{1-\frac{\alpha}{2}}(\nu)} \le \sigma^2 \dfrac{S}{\chi^2_{\frac{\alpha}{2}}(\nu)} \\
+      V = \dfrac{S}{n-1} \Longrightarrow S = (n-1)V = 19\times 3^2 \\
+      \dfrac{19\times 3^2}{32.52} \le \sigma^2 \dfrac{19\times 3^2}{8.907} $
     </div>
   </div>
 
@@ -924,7 +926,8 @@
       </ol>
     </div>
     <div class="comment">
-
+      $\beta_\bar{x} = \pm \mu_{1-\frac{\alpha}{2}}\dfrac{\sigma}{\sqrt{n}} \\
+      n = \left(\dfrac{1.96 \times 0.1}{0.05}\right)^2=15.3664$
     </div>
   </div>
 
@@ -941,30 +944,30 @@
       </ol>
     </div>
     <div class="comment">
-
+      평균 샘플 크기 : 1회 > 2회 > 다회 > 축차
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question">
-      계수형 축차 샘플링 검사 방식(KS Q ISO 8422 : 2006)에서 누적 샘플크기($n_{cum}$)가 중 지시 누적 샘플크기(중지값)($n_t$)보다 작을 때 합격판정개수를 구하는 식으로 맞는 것은?
+      계수형 축차 샘플링 검사 방식(KS Q ISO 8422 : 2006)에서 누적 샘플크기($n_\text{cum}$)가 중지시 누적 샘플크기(중지값)($n_t$)보다 작을 때 합격판정개수를 구하는 식으로 맞는 것은?
     </div>
     <div class="answer inline">
       <ol>
-        <li> 합격판정개수 $A=h_A+gn_{cum}$ 소수점 이하는 올린다.</li>
-        <li> 합격판정게수 $A=h_A+g_{cum}$ 소수점 이하는 버린다.</li>
-        <li> 합격판정개수 $A=-h_A+g_{cum}$ 소수점 이하는 올린다.</li>
-        <li checked> 합격판정게수 $A=-h_A+gn_{cum}$ 소수점 이하는 버린다.</li>
+        <li> 합격판정개수 $A=h_A+gn_\text{cum}$ 소수점 이하는 올린다.</li>
+        <li> 합격판정게수 $A=h_A+g_\text{cum}$ 소수점 이하는 버린다.</li>
+        <li> 합격판정개수 $A=-h_A+g_\text{cum}$ 소수점 이하는 올린다.</li>
+        <li checked> 합격판정게수 $A=-h_A+gn_\text{cum}$ 소수점 이하는 버린다.</li>
       </ol>
     </div>
-    <div class="comment">
-
+    <div class="comment load">
+      품질경영기사-필기\graph__sqc_sequential_sampling_graph.svg
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question">
-      –R관리도에서  =741,  =27.4, k=25, n=5일 때, LCL은 약 얼마인가? (단, n=5인 경우, A=1.342, A2=0.577, A3=1.427, A4=0.691이다.)
+      $\bar{X}–R$관리도에서  $\sum{\bar{X}}=741,\ \bar{R}=27.4,\ k=25,\ n=5$일 때, $L_{CL}$은 약 얼마인가? (단, $n=5$인 경우,\ $ A=1.342,\ A_2=0.577,\ A_3=1.427,\ A_4=0.691$이다.)
     </div>
     <div class="answer inline">
       <ol>
@@ -975,13 +978,18 @@
       </ol>
     </div>
     <div class="comment">
-
+      $
+      \bar{M_e} \pm m_3 \cdot 3\dfrac{\sigma}{\sqrt{m}}\Longrightarrow\ \sigma= \dfrac{\bar{R}}{d_2} \\
+      \bar{M_e} \pm m_3 \cdot 3\dfrac{\bar{R}}{\sqrt{m}\cdot d_2}\Longrightarrow\ 3\dfrac{1}{\sqrt{m}\cdot d_2} = A_2 \\
+      \bar{M_e} \pm m_3 \cdot A_2\bar{R}\Longrightarrow\ m_3 \cdot A_2 = A_4 \\
+      \bar{M_e} \pm A_4 \bar{R} = \dfrac{741}{25}-0.691\times 27.4
+      $
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question">
-      n=5이고, 관리상한(UCL)은 43.44, 관리하한(LCL)은 16.56인  관리도가 있다. 공정의 분포가 N(30, 102)일 때, 이 관리도에서 점 Xi가 관리한계 밖으로 나올 확률은 얼마인가? (문제 오류로 모두 정답처리 되었습니다.)
+      n=5이고, 관리상한(UCL)은 43.44, 관리하한(LCL)은 16.56인  $\bar{X}$ 관리도가 있다. 공정의 분포가 $N(30, 10^2)$일 때, 이 관리도에서 점 $X_i$가 관리한계 밖으로 나올 확률은 얼마인가? (문제 오류로 모두 정답처리 되었습니다.)
       <div class="load"> 품질경영기사-필기\img__normal_distribution.svg </div>
     </div>
     <div class="answer inline">
@@ -993,7 +1001,8 @@
       </ol>
     </div>
     <div class="comment">
-
+      공정분포를 정규분포로 이동 <br>
+      $\dfrac{x_i - \mu}{\sigma},\ \dfrac{\bar{x} - \mu}{\frac{\sigma}{\sqrt{n}}}$
     </div>
   </div>
 
@@ -1014,7 +1023,11 @@
       </ol>
     </div>
     <div class="comment">
-
+      퍼트 (Program evaluation and review technique) : 프로그램 평가 및 재검토 기술 <br>
+      <a href="https://ko.wikipedia.org/wiki/%ED%8D%BC%ED%8A%B8">위키백과 퍼트</a><br><br>
+      the Critical Path Method or CPM <br>
+      이거도 비슷한 일정관리 기법이다.<br><br>
+      둘 다 간트기법의 단점을 보완한다... 라고 합니다.
     </div>
   </div>
 
@@ -1031,7 +1044,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      복합작업분석(다중활동분석, 연합활동분석)을 한사람 또는 복수인원인 작업자가 한 대 또는 여러 대의 기계를 사용해서 작업할 때의 상태를 분석, 기록하여 작업을 개선을 하는 것.
     </div>
   </div>
 
@@ -1048,7 +1061,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      2 : 테일러 시스템
     </div>
   </div>
 
@@ -1065,7 +1078,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      긴급율 CR = 잔여납기일수 / 자녀자겁일수
     </div>
   </div>
 
@@ -1082,7 +1095,14 @@
       </ol>
     </div>
     <div class="comment">
-
+      안전재고 및 안전조달기간, 자재명세서 BOM를 입력한다.<br><br>
+      * MRP시스템(Material Requirement Planning System :자재소요계획) <br>
+      전산화(電算化)된 프로그램을 이용하여 재고관리와 생산일정을 계획하고 통제하며, EOQ/ROP의 재고방식에서 문제시 되는 과잉재고나 재고부족현상을 최소화하고, 적량의 품목을 적시에 주문하여 적정 재고수준을 통제하기 위한 시스템이다. <br>
+      ** MRP 시스템의 효과 : 시스템이 관리과제에 합치되며, 재료비를 절감하고, 생산성향상에 이바지한다. 그리고 재고에 대한 비용을 절감하며 간접인원에 대해 능률을 향상시킬수 있다. <br>
+      <br>
+      *JIT(Just In Tine)시스템 <br>
+      '도요다 생산방식'의 일환으로 전개된 소로트 생산을 중심으로 한 JIT시스템은 생산에 필요한 부품을 필요한 시기에 필요한 만큼 생산공정이나 현장에 인도하여 적시에 생산하는 방식이다. <br>
+      **JIT시스템의 구성: 핵심이 되는 간판방식(Kanban System)의 정보시스템의 주축을 이루고 있으며, 발주점 방식을 응용한 것이다. 또한 최소화를 위해 눈으로 보는관리방식을 채용, 요구량만 확보하는 방식이므로Pull시스템이라 할 수 있다.
     </div>
   </div>
 
@@ -1099,7 +1119,13 @@
       </ol>
     </div>
     <div class="comment">
-
+      TPM(Total Productive Maintenance) : 전원참가설비관리<br><br>
+      일상보전 : 청소, 급우, 증체, 사용조건의 준수, 일상점검 <br>
+      정기보전 : 정기점검, 검사, 정기정비(Time Based) <br>
+      예지보전 : 경향검사, 이상탐색(설비진단기술, Condition Based) <br>
+      사후보전 : 고장의 조기발견과 대책, 연락, 돌발수리 <br>
+      개량보전 : 강도향상, 부하경감, 정도향상, 속도향상, 준비작업간소화,
+      CO-MO개발, 검사, 정비작업의 개선
     </div>
   </div>
 
@@ -1167,7 +1193,14 @@
       </ol>
     </div>
     <div class="comment">
-
+      경제적 주문량(EOQ : Economic Order Quantity) <br>
+      $EOQ = \sqrt{\dfrac{2\times D \times S}{H}}$ <br>
+      D = 연간수요량 (unit) <br>
+      S = 주문당비용 (\$) <br>
+      C = 단위당비용 (\$) <br>
+      I = 재고유지비 (%) <br>
+      H = 재고유지비 (\$) <br>
+      $EOQ = \sqrt{\dfrac{2\times 10 000 \times 20 000}{0.02 \times 5 000}}=2 000$
     </div>
   </div>
 
@@ -1184,7 +1217,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      모듈러(소품종대량생산 수요변동에 대응하기 위함 ) ↔ 그룹(GT, 다품종소량생산에서 유사한 가공품들을 집약하여 효율 높임 )
     </div>
   </div>
 
@@ -1195,13 +1228,13 @@
     <div class="answer inline">
       <ol>
         <li> 교량, 댐, 고속도로 건설 등을 프로젝트 생산이라 할 수 있으며, 시간과 비용이 많이 든다.</li>
-        <li checked> 선박, 토목, 특수기계 제조, 맞춤의류, 자동차수리업 등에서 볼 수 있는 개별생산은 수료변화에 대한 유연성이 높으며 생산성 향상과 관리가 용이하다.</li>
+        <li checked> 선박, 토목, 특수기계 제조, 맞춤의류, 자동차수리업 등에서 볼 수 있는 개별생산은 수요변화에 대한 유연성이 높으며 생산성 향상과 관리가 용이하다.</li>
         <li> 로트 크기가 작은 소로트생산은 개별생산에 가깝고 로트 크기가 큰 대로트생산은 연속생산에 가까워서 로트생산시스템은 개별생산과 연속생산의 중간 형태라고 볼 수 있다.</li>
         <li> 시멘트, 비료 등의 장치산업이나 TV, 자동차 등을 대량으로 생산하는 조립업체에서 볼 수 있는 연속생산은 품질유지 및 생산성 향상이 용이한 반면에 수요에 대한 적응력이 떨어진다.</li>
       </ol>
     </div>
     <div class="comment">
-
+      유연성 o / 생산성 관리 용이 x
     </div>
   </div>
 
@@ -1218,7 +1251,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      1. 끌어당기기 방식임.
     </div>
   </div>
 
@@ -1252,7 +1285,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      2. 발견적 의사 결정법.
     </div>
   </div>
 
@@ -1269,7 +1302,8 @@
       </ol>
     </div>
     <div class="comment">
-
+      시간가동률 = (실제가동시간)/부하시간 <br>
+      $A = \dfrac{450-30-30-30}{450}$
     </div>
   </div>
 
@@ -1286,7 +1320,17 @@
       </ol>
     </div>
     <div class="comment">
-
+      ​여유시간의 분류 <br>
+      <br>
+      ​1) 일반여유: 모든 작업에서 일반적으로 부여 <br>
+      - 인적여유(Person allowances) : 물마시기, 화장실 가기, <br>
+      - 피로여유(Fatigue allowances) : 정신적, 육체적 피로를 회복시키기 위한 여유 <br>
+      - 불가피한 지연여유 (Unavoidable allowances) : 설비의 유지보수, 기계의 정지, 조장의 작업지시 등 작업자와 관련없이 발생 <br>
+      <br>
+      2) 특수여유:​ 특수 상황에서 부여 <br>
+      - 작업자 한명이 동일한 기계를 여러대 담당할 때 발생하는 기계유휴에 의한 생산량 감소를 보상하기 위한 기계간섭여유 <br>
+      - 조작업의 경우 작업자 상호간의 보조를 맞추기 위한 지연을 보상하는 조 여유 <br>
+      - 작업능률이 100%에 도달하기 위해 필요한 물량에 미달이 되어 물량을 생산하는 경우 부여하는 소로트 여유  ​
     </div>
   </div>
 
@@ -1320,7 +1364,15 @@
       </ol>
     </div>
     <div class="comment">
-
+      한계이익 marginal profit<br>
+      <br>
+      이익에 고정비를 더한 액수. <br>
+      보통 다음 식으로 산출된다. <br>
+      <br>
+      한계이익 = 매출액 - 변동비 <br>
+      <br>
+      한계이익이 클수록 이익을 가져올 가능성이 크다. <br>
+      한계이익/매출액*100을 한계이익률이라 한다. 한계이익률은 제품별로도 간단히 계산할 수 있으므로 제품의 채산성을 검토할 때 흔히 쓰인다. 경영계획서에서는 이 한계이익을 검토해서 손익의 변화를 추측하거나 조업도(생산량)의 방침을 결정한다.
     </div>
   </div>
 
@@ -1347,7 +1399,7 @@
 
   <div class="q_wrap">
     <div class="question">
-      샘플 5개를 수명시험하여 간편법에 의해 와이블 모수를 측정하였더니 m=2, t0=ηm=90시간, r=0이었다. 이 샘플의 평균수명은 약 얼마인가? (단, Γ(1.2)=0.9182, Γ(1.3)=0.8873, Γ(1.5)=0.8362이다.)
+      샘플 5개를 수명시험하여 간편법에 의해 와이블 모수를 측정하였더니 $m=2,\ t_0=η^m=90\text{시간},\ r=0$이었다. 이 샘플의 평균수명은 약 얼마인가? (단, $Γ(1.2)=0.9182,\ Γ(1.3)=0.8873,\ Γ(1.5)=0.8362$이다.)
     </div>
     <div class="answer inline">
       <ol>
@@ -1358,7 +1410,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      $\text{평균수명 } E_t = \eta \Gamma (1+\frac{1}{m})$
     </div>
   </div>
 
@@ -1368,14 +1420,15 @@
     </div>
     <div class="answer inline">
       <ol>
-        <li> 신점도 </li>
+        <li> 산점도 </li>
         <li> 회귀분석</li>
-        <li> 검ㆍ추정 </li>
+        <li> 검·추정 </li>
         <li checked> FMEA/FTA</li>
       </ol>
     </div>
     <div class="comment">
-
+      FMEA : 정성적, 상향식 <br>
+      FTA : 정량적, 하향식, 부울대수이용
     </div>
   </div>
 
@@ -1392,24 +1445,26 @@
       </ol>
     </div>
     <div class="comment">
-
+      $A = \dfrac{MTBF}{MTBF+MTTR} = \dfrac{\mu}{\lambda+\mu(\text{고장율})}$
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question">
-      지수분포의 수명을 갖는 n개의 부품에 대하여 수명시험을 실시하여 r개의 부품이 고장날 때 시험을 중단하였다. 이 부품의 평균수명을 θ라고 할 때, Ho:θ≤θ:0 vs H1:θ＞θo의 기각역은? (단, T는 총 시험시간이고, 유의수준은 α이다.)
+      지수분포의 수명을 갖는 n개의 부품에 대하여 수명시험을 실시하여 r개의 부품이 고장날 때 시험을 중단하였다. 이 부품의 평균수명을 θ라고 할 때, $H_0:θ≤θ:0$ vs $H_1:θ＞θ_0$의 기각역은? (단, T는 총 시험시간이고, 유의수준은 α이다.)
     </div>
     <div class="answer inline">
       <ol>
-        <li>  </li>
-        <li> </li>
-        <li checked>  </li>
-        <li> </li>
+        <li>$\dfrac{T}{\theta_0}\gt \chi_{1-\alpha}^2(r)$</li>
+        <li>$\theta_0 T\gt \chi_{1-\alpha}^2(r)$</li>
+        <li checked>$\dfrac{2T}{\theta_0}\gt \chi_{1-\alpha}^2(2r)$</li>
+        <li>$2\theta_0 T\gt \chi_{1-\alpha}^2(2r)$</li>
       </ol>
     </div>
     <div class="comment">
-
+      고장날 때 시험을 중단 → 정수중단 = (2r) <br>
+      정시중단이라면 (2r+2)가 된다. <br>
+      $ \dfrac{2T}{\chi^2_{1-\frac{\alpha}{2}}(2r)}\lt \theta \lt \dfrac{2T}{\chi^2_{\frac{\alpha}{2}}(2r)} $
     </div>
   </div>
 
@@ -1460,24 +1515,25 @@
       </ol>
     </div>
     <div class="comment">
-
+      $MTBF_S = \dfrac{1}{\lambda}\left(1 + \dfrac{1}{2} + \dfrac{1}{3} + \dfrac{1}{4} + \cdots + \dfrac{1}{n} \right)$
     </div>
   </div>
 
   <div class="q_wrap">
     <div class="question">
-      지수분포 f(t)=λe-λt의 분산으로 맞는 것은?
+      지수분포 $f(t)=λ_e^{-λ_t}$의 분산으로 맞는 것은?
     </div>
     <div class="answer inline">
       <ol>
-        <li checked>  </li>
-        <li> 1/λ</li>
-        <li> 2/λ </li>
-        <li> </li>
+        <li checked> $\dfrac{1}{\lambda^2}$ </li>
+        <li>$\dfrac{1}{\lambda}$</li>
+        <li>$\dfrac{2}{\lambda}$</li>
+        <li> $\dfrac{1}{2\lambda}$ </li>
       </ol>
     </div>
     <div class="comment">
-
+      $E(t) = \dfrac{1}{\lambda},\ D(t)=\dfrac{1}{\lambda} \\
+      V = \dfrac{1}{\lambda}\dfrac{1}{\lambda} = \dfrac{1}{\lambda^2}$
     </div>
   </div>
 
@@ -1494,7 +1550,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      $R(t) = e^{-\lambda t}$
     </div>
   </div>
 
@@ -1518,35 +1574,7 @@
   <div class="q_wrap">
     <div class="question">
       다음 FT(Fault Tree)도에서 시스템의 고장확률은 얼마인가? (단, 각 구성품의 고장은 서로 독립이며, 주어진 수치는 각 구성품의 고장확률이다.)
-      <table>
-        <tr>
-          <th>실험번호 </th>
-          <th>1</th>
-          <th>2</th>
-          <th>3</th>
-          <th>4</th>
-        </tr>
-        <tr>
-          <th rowspan="2">기본표시 </th>
-          <td>a</td>
-          <td>b</td>
-          <td>a</td>
-          <td>a</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td>b</td>
-          <td>b²</td>
-        </tr>
-        <tr>
-          <th>배치</th>
-          <td>B</td>
-          <td>A</td>
-          <td>e</td>
-          <td>C</td>
-        </tr>
-      </table>
+      <div class="load">품질경영기사-필기\2019-2-71.svg</div>
     </div>
     <div class="answer inline">
       <ol>
@@ -1567,14 +1595,14 @@
     </div>
     <div class="answer inline">
       <ol>
-        <li> 고장시간 데이터 ti를 적은 것부터 크기순으로 나열한다.</li>
-        <li checked> In t0=1.0과  과의 교점을 m 추정점이라 한다.</li>
+        <li> 고장시간 데이터 $t_i$를 적은 것부터 크기순으로 나열한다.</li>
+        <li checked> $\ln{t_0}=\ln{\ln{\frac{1}{1-F(t)}}}=1.0$과  과의 교점을 m 추정점이라 한다.</li>
         <li> 타점의 직선과 F(t)=63%와 만나는 점의 아래 측 t눈금의 특성수명 η의 추정치로 한다.</li>
         <li> m 추정점에서 타점의 직선과 평행선을 그을 때, 그 평행선이 In t=0.0과 만나는 점을 우측으로 연장하여 μ/η와 σ/η의 값을 읽는다.</li>
       </ol>
     </div>
     <div class="comment">
-
+      t_0 = 0 과의 교점이 m이다.
     </div>
   </div>
 
@@ -1593,7 +1621,7 @@
           <td>$t_i$</td>
           <td>15</td>
           <td>20</td>
-          <td>50</td>
+          <td>25</td>
           <td>40</td>
         </tr>
       </table>
@@ -1607,7 +1635,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      $\text{평균수명 } = \dfrac{15+20+25+40+6\times 50}{4}$
     </div>
   </div>
 
@@ -1712,7 +1740,8 @@
       </ol>
     </div>
     <div class="comment">
-
+      $R_S = R_1 + R_2 + \cdots + R_n \\
+      R_S = R^10 \Longrightarrow R = R_S^{1/10} = 0.95^{0.1}$
     </div>
   </div>
 
@@ -1761,9 +1790,9 @@
     <div class="answer inline">
       <ol>
         <li> 생산설비에 관한 계측</li>
-        <li> 자재ㆍ에너지에 관한 계측</li>
+        <li> 자재·에너지에 관한 계측</li>
         <li> 작업결과나 성적에 관한 계측</li>
-        <li checked> 연구ㆍ실험실에서의 시험연구 계측</li>
+        <li checked> 연구·실험실에서의 시험연구 계측</li>
       </ol>
     </div>
     <div class="comment">
@@ -1827,7 +1856,7 @@
 
   <div class="q_wrap">
     <div class="question">
-      부품 A는 $N(2.5, 0.032^)$, 부품 B는 $N(2.4, 0.02^2)$, 부품 C는 $N(2.4, 0.04^2)$, 부품 D는 $N(3.0, 0.01^2)$인 정규분포를 따른다. 이 4개를 부품이 직렬로 결합되는 경우 조립품의 표준편차는 약 얼마인가? (단, 부품 A, B, C, D는 서로 독립이다.)
+      부품 A는 $N(2.5, 0.03^2)$, 부품 B는 $N(2.4, 0.02^2)$, 부품 C는 $N(2.4, 0.04^2)$, 부품 D는 $N(3.0, 0.01^2)$인 정규분포를 따른다. 이 4개를 부품이 직렬로 결합되는 경우 조립품의 표준편차는 약 얼마인가? (단, 부품 A, B, C, D는 서로 독립이다.)
     </div>
     <div class="answer inline">
       <ol>
@@ -1849,7 +1878,7 @@
     <div class="answer inline">
       <ol>
         <li> 실행 가능한 내용일 것</li>
-        <li> 기록내용이 구체적ㆍ객관적일 것</li>
+        <li> 기록내용이 구체적·객관적일 것</li>
         <li> 직관적으로 보기 쉬운 표현을 할 것</li>
         <li checked> 장기적인 관점보다 단기적인 관점에서 추진할 것</li>
       </ol>
@@ -1872,7 +1901,43 @@
       </ol>
     </div>
     <div class="comment">
-
+      <table class="center">
+        <tr>
+          <th>$S_U-S_L \\= T$</th>
+          <th>$C_p$</th>
+          <th>부적합품률 </th>
+        </tr>
+        <tr>
+          <td>$\pm 1 \sigma$</td>
+          <td>0.33</td>
+          <td>31.73%</td>
+        </tr>
+        <tr>
+          <td>$\pm 2 \sigma$</td>
+          <td>0.67</td>
+          <td>4.55%</td>
+        </tr>
+        <tr>
+          <td>$\pm 3 \sigma$</td>
+          <td>1.00</td>
+          <td>0.27%</td>
+        </tr>
+        <tr>
+          <td>$\pm 4 \sigma$</td>
+          <td>1.33</td>
+          <td>63 ppm</td>
+        </tr>
+        <tr>
+          <td>$\pm 5 \sigma$</td>
+          <td>1.67</td>
+          <td>0.57 ppm</td>
+        </tr>
+        <tr>
+          <td>$\pm 6 \sigma$</td>
+          <td>2.00</td>
+          <td>0.002 ppm</td>
+        </tr>
+      </table>
     </div>
   </div>
 
@@ -1923,7 +1988,7 @@
       </ol>
     </div>
     <div class="comment">
-
+      3. 최고관리자의 역할
     </div>
   </div>
 
@@ -1984,6 +2049,7 @@
       <div class="load">
         품질경영기사-필기\2018-1-82.svg
       </div>
+      그림 해설 : ABCD --> _ABC
     </div>
     <div class="answer inline">
       <ol>
@@ -1993,7 +2059,7 @@
         <li> A:평가비용, B:예방비용, C:준비비용</li>
       </ol>
     </div>
-    <div class="comment">
+    <div class="comment load">
       품질경영기사-필기\2018-1-82-2.svg
     </div>
   </div>
