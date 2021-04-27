@@ -127,13 +127,17 @@
 }
 
 #tooltip_before, #tooltip_nav_before {
-  border-color: #424242 transparent transparent;
+  border-color: #424242 transparent transparent transparent;
   border-width: 1ex 1ex 0;
   border-style: solid;
   content: " ";
   position: absolute;
   left: calc(50% - .5em);
   bottom: -.9ex
+}
+
+#tooltip_nav_before {
+  border-color: #424242 transparent transparent;
 }
 
 #tooltip_text {
