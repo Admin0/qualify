@@ -166,6 +166,7 @@ header>h1 {
   font-weight: normal;
 }
 
+body:not(.answer__quiz) .contents.multiple_choice .q_wrap .question .answer,
 body:not(.answer__quiz) .contents.multiple_choice .q_wrap .answer li[checked] {
   color: #2196f3 !important;
 }
@@ -216,7 +217,6 @@ body:not(.answer__quiz) .contents.multiple_choice .q_wrap .answer li[checked]::b
   border: 1px solid;
   padding: 0.25em 0.75em;
 } */
-
 #card_title {
   text-align: center;
   font-size: 1.25em;
@@ -228,10 +228,18 @@ body:not(.answer__quiz) .contents.multiple_choice .q_wrap .answer li[checked]::b
 }
 
 .img, img, .svg, svg, object, .load {
+  /* .img, img, .svg, svg, object { */
   max-width: 100%;
   height: inherit;
   margin-left: 0;
+  /* margin-bottom: -25%; */
   transition: .25s fill;
+  transform: scale(0.85);
+  transform-origin: center left;
+}
+
+.contents .question .load {
+  /* margin: -7.5% auto -12.5%; */
 }
 
 .btn_card_print {

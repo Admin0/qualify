@@ -82,7 +82,7 @@
 }
 
 .general__dark .q_wrap .comment table th {
-  background-image: repeating-linear-gradient(45deg, #c8b900 0, #c8b900 0.8px, transparent 0, transparent 50%) !important;
+  background-image: repeating-linear-gradient(45deg, #c8b900 0, #c8b900 0.5px, transparent 0, transparent 50%) !important;
 }
 
 /* nav */

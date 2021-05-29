@@ -181,7 +181,7 @@ body.page {
 }
 
 .q_wrap .comment table th {
-  background-image: repeating-linear-gradient(-45deg, #2196f3 0, #2196f3 0.8px, transparent 0, transparent 50%) !important;
+  background-image: repeating-linear-gradient(-45deg, #2196f3 0, #2196f3 0.5px, transparent 0, transparent 50%) !important;
 }
 
 .q_wrap .comment a {
@@ -384,7 +384,7 @@ body.page {
 }
 
 .contents .question .load {
-  margin: auto;
+  margin: 1em auto;
 }
 
 .contents svg {
