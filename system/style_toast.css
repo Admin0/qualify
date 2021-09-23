@@ -93,6 +93,8 @@
   }
 
   #toast.off {
+    opacity: 1;
+    visibility: visible;
     bottom: -56px;
     opacity: 1;
     animation-name: snackbar_off;
