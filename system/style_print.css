@@ -7,7 +7,7 @@
 header #print_icon,
 header .timer,
 nav,
-section.ad,
+section.ad, .adsbygoogle,
 section#item_list,
 footer .copyright {
   display: none;

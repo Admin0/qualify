@@ -625,8 +625,15 @@
       "locked": true
     }]
   },
-  "산업안전기사": {
-    "title": "산업안전기사 ★ <span class='translation'>(준비중)</span>"
+  "산업안전기사-실기": {
+    "title": "산업안전기사 실기 ★",
+    "contents": [{
+      "title": "필답-2015-3",
+      "icon": "poison"
+    }, {
+      "title": "후기",
+      "icon": "contract"
+    }]
   },
   "정보처리기사": {
     "title": "정보처리기사 ★ <span class='translation'>(준비중)</span>"

@@ -73,7 +73,7 @@ body.page {
   column-gap: 10mm;
   margin: 16pt auto;
   font-size: 8pt;
-  column-fill: auto;
+  column-fill: balance;
 }
 
 .contents::after {
