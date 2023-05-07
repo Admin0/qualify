@@ -10,7 +10,7 @@ nav,
 section.ad, .adsbygoogle,
 section#item_list,
 footer .copyright {
-  display: none;
+  display: none !important;
 }
 
 body {

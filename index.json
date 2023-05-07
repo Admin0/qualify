@@ -629,10 +629,14 @@
     "title": "산업안전기사 실기 ★",
     "contents": [{
       "title": "필답-2015-3",
-      "icon": "poison"
+      "icon": "exit_sign"
     }, {
       "title": "후기",
       "icon": "contract"
+    }, {
+      "title": "필답-2023-1",
+      "icon": "exit_sign",
+      "locked": true
     }]
   },
   "정보처리기사": {
