@@ -654,6 +654,9 @@
   "기타": {
     "title": "기타 ★ <span class='translation'>(취득 후기)</span>",
     "contents": [{
+      "title": "소방안전관리자-2급",
+      "icon": "contract"
+    }, {
       "title": "컴퓨터활용능력-1급",
       "icon": "contract"
     }, {
