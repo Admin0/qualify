@@ -93,10 +93,10 @@
     </div>
     <div class="answer inline">
       <ol>
-        <li>$\nu_{e_1})=(l-1)(m-1)$</li>
-        <li checked>$v_{e2})=l(m-1)(n-1)$</li>
-        <li>$v_{A×C})=(l-1)(n-1)$</li>
-        <li>$v_{B×C})=(m-1)(n-1)$</li>
+        <li>$\nu_{e_1}=(l-1)(m-1)$</li>
+        <li checked>$\nu_{e_2}=l(m-1)(n-1)$</li>
+        <li>$\nu_{A×C}=(l-1)(n-1)$</li>
+        <li>$\nu_{B×C}=(m-1)(n-1)$</li>
       </ol>
     </div>
     <div class="comment">
@@ -221,1791 +221,1823 @@
       <div class="comment">
       </div>
     </div>
-
-    <!-- 9 -->
-    <div class="q_wrap">
-      <div class="question">
-        3개의 공정(A)에서 나오는 제품의 부적합 품률이 작업 시간별(B)로 차이가 있는지 알아보기 위하여 오전, 오후, 야간 근무조에서 공정라인별로 각각 100개씩 조사하여 다음과 같은 데이터가 얻어졌다.
-        이 데이터를 이용하여 B1수준의 모부적 합품률 P(B1)의 95% 신뢰구간을 구하면 약 얼마인가? (단, Ve=0.0732이다.)
-
-        <table class="center">
-          <tr>
-            <th rowspan="2">공정 →<br>↓ 작업시간 </th>
-            <th colspan="3">공정</th>
-          </tr>
-          <tr>
-            <th>A1</th>
-            <th>A2</th>
-            <th>A3</th>
-          </tr>
-          <tr>
-            <td>B1(오전)</td>
-            <td>5</td>
-            <td>3</td>
-            <td>8</td>
-          </tr>
-          <tr>
-            <td>B2(오후)</td>
-            <td>8</td>
-            <td>5</td>
-            <td>13</td>
-          </tr>
-          <tr>
-            <td>B3(야간)</td>
-            <td>10</td>
-            <td>6</td>
-            <td>15</td>
-          </tr>
-        </table>
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>(1.235%, 6.222%) </li>
-          <li>(1.787%, 7.393%)</li>
-          <li>(2.015%, 8.005%) </li>
-          <li checked>(2.272%, 8.395%)</li>
-        </ol>
-      </div>
-      <div class="comment">
-        $\hat{P(B_1)} = \frac{16}{300}\plusminus u_{1-0.05/2}\sqrt{\frac{V_c}{lr}}$
-      </div>
-    </div>
-
-    <!-- 10 -->
-    <div class="q_wrap">
-      <div class="question">
-        3수준 선점도에 대한 설명으로 틀린 것 은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li checked>선의 자유도는 2이다.</li>
-          <li>점의 자유도는 2이다.</li>
-          <li>점은 하나의 열에 대응된다.</li>
-          <li>선은 점과 점 사이에 교호작용을 나타낸다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-        선점도 <br>
-        . 점하다는 하나의 요인을 나타낸다. <br>
-        . 점을 연결하는 선은 교호작용의 관계를 나타낸다. <br>
-        . 선과 점은 하나당 자유도 1을 갖고 하나의 열에 대응한다. <br>
-      </div>
-    </div>
-
-    <!-- 11 -->
-    <div class="q_wrap">
-      <div class="question">
-        $2^2$형 실험에서 반복 r=4일 때 T_{11ㆍ}=165, T_{12ㆍ}=84, T_{21ㆍ}=352, T_{22ㆍ}=134일 떄, 교호작용의 제곱합 (SA×B)의 값은 약 얼마인가?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>83.313 </li>
-          <li>126.125</li>
-          <li checked>1173.063 </li>
-          <li>3510.563</li>
-        </ol>
-      </div>
-      <div class="comment">
-        $S_{A\timesB} = \frac{1}{\text{실험총 수}}[\text{높은 수준 수}-\text{낮은 수준 수}]^2$
-      </div>
-    </div>
-
-    <!-- 12 -->
-    <div class="q_wrap">
-      <div class="question">
-        실험계획 시 실험에 직접 취급되는 요인은 매우 다양하다. 실험에 직접 취급되는 요인으로 적용하기 어려운 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>실험의 효율을 올리기 위해서 실험환경을 층별한 요인</li>
-          <li checked>실험의 목적을 달성하기 위하여 이와 직결된 실험의 반응치</li>
-          <li>실험용기, 실험시기 등과 같이 다른 요인에 영향을 줄 가능성이 있는 요인</li>
-          <li>주효과의 해석은 의미가 없지만 제어요인과 교호작용 효과의 해석을 목적으로 하는 요인</li>
-        </ol>
-      </div>
-      <div class="comment">
-        실험의 목적을 달성하기 위하여 직결된 실험의 요인(factor, X)이 맞다. 반응치는 Y이므로 X에 의해 결정되는 변수이다.
-      </div>
-    </div>
-
-    <!-- 13 -->
-    <div class="q_wrap">
-      <div class="question">
-        다음의 표는 요인 A,B에 대한 반복 없는 모수모형 2요인실험의 분산분석표이다. 이 실험의 품질특성은 망대특성이라고 할 때 틀린 것은?
-        <table class="center">
-          <tr>
-            <th>수준</th>
-            <th>A1</th>
-            <th>A2</th>
-            <th>A3</th>
-            <th>A4</th>
-          </tr>
-          <tr>
-            <td>B1</td>
-            <td>16</td>
-            <td>26</td>
-            <td>30</td>
-            <td>20</td>
-          </tr>
-          <tr>
-            <td>B2</td>
-            <td>13</td>
-            <td>22</td>
-            <td>20</td>
-            <td>17</td>
-          </tr>
-          <tr>
-            <td>B3</td>
-            <td>7</td>
-            <td>9</td>
-            <td>19</td>
-            <td>5</td>
-          </tr>
-        </table>
-        <table class="center">
-          <tr>
-            <th>요인</th>
-            <th>SS</th>
-            <th>DF</th>
-            <th>MS</th>
-            <th>F_0</th>
-            <th>F_0.95</th>
-          </tr>
-          <tr>
-            <td>A</td>
-            <td>344</td>
-            <td>2</td>
-            <td>172</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>B</td>
-            <td>222</td>
-            <td>3</td>
-            <td>74</td>
-            <td>7.929</td>
-            <td>4.75</td>
-          </tr>
-          <tr>
-            <td>e</td>
-            <td>56</td>
-            <td>6</td>
-            <td>9.333</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>T</td>
-            <td>622</td>
-            <td>11</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </table>
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>최적해의 점 추정치는이며 점 추정치는 29이다.</li>
-          <li checked>모평균의 95% 신뢰구간을 위한이다.</li>
-          <li>t0.975(6)=2.447일 때 최적조건에서의 모평균의 신뢰구간은 약 23.71~34.29이다.</li>
-          <li>유의수준 5%로 요인 A,B는 모두 유의하며, 망대특성이므로 최적해는이다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-        모평균에 대한 추정을 분산 $Var(bar{x_3\bullet} + bar{x_\bullet 1} - bar{bar{x}})$으로 하지는 않는다.
-      </div>
-    </div>
-
-    <!-- 14 -->
-    <div class="q_wrap">
-      <div class="question">
-        완전랜덤화법(completely randomizeddesign)을 이용하여 l개의 실험조건에서 각각 m번씩 실험하여 얻은 관측치를 분석하기 위하여 다음과 같은 수학적인 모형을 세웠다. 모형의 설명 중
-        틀린
-        것은?
-        <div class="q_list hc">
-         $$ X_{ij} = \mu + \alpha_i + e_{ij} $$
-         (단, $i = 1, 2, \dotdotdot, l$이고, $j = 1, 2, \dotdotdot, m$이다.)
-        </div>
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>μ는 실험전체의 모평균을 나타낸다.</li>
-          <li>Xij는 i번째 실험조건에서 j번째 관측치를 나타낸다.</li>
-          <li>ai는 i번째 실험조건의 영향 또는 치우침을 나타낸다.</li>
-          <li checked>eij는 오차를 나타내며 상호 종속적인 관계를 가지고 분포한다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <!-- 15 -->
-    <div class="q_wrap">
-      <div class="question">
-        4개의 처리를 각각 n회씩 반복하여 평균치를 얻었다. 대비(contrast)가 될 수 없는 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li></li>
-          <li checked></li>
-          <li></li>
-          <li></li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <!-- 16 -->
-    <div class="q_wrap">
-      <div class="question">
-        회귀선에 의하여 설명되지 않는 편차를 전차(residual)라고 한다. 이 잔차 (ei)의 성질을 설명한 내용 중 틀린 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>잔차들의 합은 영이다. 즉,</li>
-          <li>잔차들의 xi에 의한 가중합은 영이다. 즉,</li>
-          <li checked>잔차들의 제곱과의 가중합은 영이다. 즉,</li>
-          <li>잔차들의(회귀직선추정식)에 의한 가중합은 영이다. 즉,</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <!-- 17 -->
-    <div class="q_wrap">
-      <div class="question">
-        A요인을 4수준, B요인을 2수준, C요인을 2수준, 반복 2회의 지분실험법을 행하고 분산분석표를 작성한 결과 다음과 같았다. 이 때의 값은 약 얼마인가?
-        <div class="q_list hc">
-          <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ol>
-        </div>
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>0.0394 </li>
-          <li checked>0.0557</li>
-          <li>0.1113 </li>
-          <li>0.1484</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <!-- 18 -->
-    <div class="q_wrap">
-      <div class="question">
-        라틴방격법을 설명한 내용 중 틀린 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li checked>3×3 라틴방격은 9가지의 상이한 배치가 존재한다.</li>
-          <li>라틴방격법에서 각 처리는 모든 행과 열에 꼭 한번 씩 나타나 있다.</li>
-          <li>제1행, 제1열이 자연수 순서로 나열되어 있는 라틴방격을 표준라틴방격이라 한다.</li>
-          <li>라틴방격법은 4각형속에 라틴문자 A,B,C를 나열하여 4각형을 만들어 사용해서 라틴방격이란 이름이 붙게 되었다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <!-- 19 -->
-    <div class="q_wrap">
-      <div class="question">
-        반복이 없는 3요인실험에서 분석결과 교호작용은 모두 유의하지 않았다.의 신뢰구간 추정을 할 때에 사용되는 유효반복수(ne)의 값은? (단, A,B,C요인의 수준 수는 각각 3,4,5이다.)
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>4.50 </li>
-          <li>4.98</li>
-          <li checked>8.57 </li>
-          <li>9.00</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <!-- 20 -->
-    <div class="q_wrap">
-      <div class="question">
-        1요인실험에서 완전 랜덤화 모형과 2요인실험의 난괴법에 관한 설명으로 틀린 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>난괴법에서 변량요인 B에 대한 모평균을 추정하는 것은 의미가 없다.</li>
-          <li>난괴법은 A요인의 모수요인, B는 변량요인이며 반복이 없는 경우를 지칭한다.</li>
-          <li checked>난괴법에서 변량요인 B를 실험일 또는 실험장소 등인 경우로 선택할 때 집단요인이 된다.</li>
-          <li>k개의 처리를 r회 반복 실험하는 경우에 오차항의 자유도는 1요인실험이 난괴법 보다 r-1이 크다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-
-    <span class="q_list head">제2과목 : 통계적품질관리</span>
-
-
-    <div class="q_wrap">
-      <div class="question">
-        로트별 합격품질한계(AQL)지표형 샘플링검사 방식(KS Q ISO 2859-1 :2014)의 내용 중 맞는 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li checked>다회 샘플링 형식으로 5회를 적용</li>
-          <li>수월한 검사에서 조건부 합격제도의 활용</li>
-          <li>R10 등비급수를 활용한 체계적 수치표의 구성</li>
-          <li>보통검사에서 까다로운 검사로의 엄격도 조정에 전환점수제도 적용</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        샘플링검사의 선택조건으로 틀린 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>실시하기 쉽고 관리하기 쉬울 것</li>
-          <li>목적에 맞고 경제적인 면을 고려할 것</li>
-          <li checked>샘플링을 실시하는 사람에 따라 차이가 있을 것</li>
-          <li>공정이나 대상물 변화에 따라 바꿀 수 있을 것</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        Y제품의 인장강도의 평균값이 450kg/cm2이상인 로트는 통과시키고, 420kg/cm2이하인 로트는 통과시키지 않도록 하는 계량 규준형 1회 샘플링 검사법을 설계하고자 한다. 샘플링검사에서 로트의
-        평균값이 420kg/cm2이하인 로트가 운 좋게 합격될 확률을 0.10이하로, 로트의 평균값이 450kg/cm2이상인 로트가 잘못되어 불합격될 확률을 0.05이하로 하고 싶다. 다음 설명 중 틀린
-        것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>생산자 위험은 5%이다.</li>
-          <li>소비자 위험은 10%이다.</li>
-          <li>로트의 평균값을 보증하는 방식이다.</li>
-          <li checked>시료의 크기와 상한합격판정값을 구하여야 한다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        부적합품률에 대한 계량형 축차 샘플링 검사 방식의 표준번호로 맞는 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>KS Q ISO 0001 </li>
-          <li>KS Q ISO 8422</li>
-          <li>KS Q ISO 9001 </li>
-          <li checked>KS Q ISO 8423</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        A사에서 생산하는 강철봉의 길이는 평균 2.8m, 표준편차 0.20m인 정규분포를 따르는 것으로 알려져 있다. 25개의 강철봉의 길이를 측정하여 구한 평균이 2.72m라면 평균이 작아졌다고 할 수
-        있는가를
-        유의수준 5%로 검정할 때, 기각역(R)과 검정통계량 (u0)의 값은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li checked>R={u＜-1.645}, u0=-2.0 </li>
-          <li>R={u＜-1.96}, u0=-2.0</li>
-          <li>R={u＞1.645}, u0=2.0 </li>
-          <li>R={u＞1.96}, u0=2.0</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        임의의 두 사상 A, B가 독립사상이 되기 위한 조건은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li></li>
-          <li>P(A∩B)=P(A)+P(B)</li>
-          <li>P(A∪B)=P(A)ㆍP(B)</li>
-          <li checked>P(A∩B)=P(A)ㆍP(B)</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        로트의 평균치를 보증하는 계수 및 계량 규준형 1회 샘플링검사(KS Q 0001:2013)에서 특성치가 망대특성일 때, 설명 중 맞는 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>AOQL이 주어져야 한다.</li>
-          <li checked>OC곡선은 특성치의 평균 m의 증가함수이다.</li>
-          <li>OC곡선의 Y축은 평균치의 값으로 나타낸다.</li>
-          <li>OC곡선의 X축은 로트의부적합품률(p)이 된다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        어느 주물공장에서 제조한 제품의 무게는 정규분포를 한다고 한다. 이 제품의 모평균 μ를 구간 추정하기 위해 모집단에서 6개를 무작위로표본 추출하였더니 다음과 같다. 이 제품의 95% 신뢰구간은 약
-        얼마인가? (단, t0.975(5)=2.571이다.)
-        <div class="q_list hc">
-          <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ol>
-        </div>
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li checked>(69.02, 75.31) </li>
-          <li>(73.08, 79.90)</li>
-          <li>(75.50, 78.90) </li>
-          <li>(80.65, 86.90)</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        적합도 검정에 대한 설명 중 틀린 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>적합도 검정은 계수형 자료에 주로 사용된다.</li>
-          <li>적합도 검정의 검정통계량은 카이제곱분포 (X2)를 따른다.</li>
-          <li checked>적합도 검정 시 확률 Pi가정된 값이 주어진 경우 유의수준 α에서 기각역은 X21-a/2(k-1)이다.</li>
-          <li>적합도 검정 시 확률 Pi의 가정된 값이 주어지지 않은 경우, 자유도 v=k-p-1(p는 parameter의 수이다.)를 따른다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        모상관계수의 유무에 관한 검정으로 활용되는 검정통계량으로 틀린 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>r0=r </li>
-          <li checked></li>
-          <li></li>
-          <li></li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        통계적 가설검정에서 유의수준에 대한 설명으로 틀린 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>검정에 앞서 미리 정하여 두는 위험률이다.</li>
-          <li checked>일반적으로 제2종의 과오를 범하는 확률을 의미한다.</li>
-          <li>1에서 유의수준을 빼고 100%를 곱하면 신뢰율이 된다.</li>
-          <li>통계적 가설검정에서 귀무가설이 옮음에도 불구하고 기각할 확률이다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        과거 우리 회사에서 생산하는 A제품의 표면에는 평균 6개(m=6)의 핀홀(pinhole)이 있었다. 최근 새로운 도장 설비로 교체를 한 후 핀홀의 수를 확인 하였더니 x=1이었다. 위험률 5%에서
-        모부적합수는 작아졌다고 할 수 있는가?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>커졌다고 할 수 있다. </li>
-          <li checked>작아졌다고 할 수 있다.</li>
-          <li>작아졌다고 할 수 없다. </li>
-          <li>현재로서는 알 수 없다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        3σ관리한계를 적용하는 부분군의 크기(n) 4인관리도에서 UCL=13, LCL=4일 때, 이 로트 개개의 표준편차 (σx)는 얼마인가?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>1.5 </li>
-          <li>2.25</li>
-          <li checked>3 </li>
-          <li>4</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        평균치와 분산이 같은 확률 분포는?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>정규분포 </li>
-          <li>이항분포</li>
-          <li>지수분포 </li>
-          <li checked>푸아송분포</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        p관리도에 관한 설명으로 틀린 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>이항분포를 따르는 계수치 데이터에 적용된다.</li>
-          <li checked>부분군의 크기는 가급적 n=0.1/p ~ 0.5/p를 만족하도록 설정한다.</li>
-          <li>부분군의 크기가 일정할 때는 np고나리도를 활용하는 것이 작성 및 활용상 용이하다.</li>
-          <li>일반적으로 부적합품률에는 많은 특성이 하나의 관리도 속에 포함되므로관리도 보다 해석이 어려울 수 있다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        관리도에서의 산포를, 군간산포를, 군내산포를로 표현할때 틀린 것은? (단, k는 부분군의 수, n은 부분군의 크기, d2는 부분군의 크기가 n일 때의 값이다.)
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li checked></li>
-          <li></li>
-          <li></li>
-          <li>완전한 관리상태일 때 σb2=0</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        관리도에 대한 설명으로 틀린 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>관리도에서 부분군의 크기 n이 증가하면 관리한계는 좁아진다.</li>
-          <li>관리도는 중심값과 산포를 동시에 관리할 수 있는 관리도이다.</li>
-          <li checked>하루 생산량이 아주 적어 합리적인 군으로 나눌 수 없는 경우에관리도를 적용한다.</li>
-          <li>관리도는 로트가 정규분포를 따른다는 가정이 필요하며 계량치 데이터에 적용가능하다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        10톤씩 적재하는 100대의 화차에서 5대의 화차를 샘플링하여 각 화차로부터 3인크리먼트씩 랜덤하게 시료를 채취하는 샘플링 방법은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>집락 샘플링 </li>
-          <li>층별 샘플링</li>
-          <li>계통 샘플링 </li>
-          <li checked>2단계 샘플링</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        관리도에 관한 설명으로 틀린 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>관리도의 검출력은 x관리도보다 좋다.</li>
-          <li checked>관리한계를 2σ한계로 좁히면 제1종 오류가 감소한다.</li>
-          <li>c관리도는 각 부분군에 대한 샘플의 크기가 반드시 일정해야 한다.</li>
-          <li>u관리도에서 부분군이 샘플의 수가 다르면 관리한계는 요철형이 된다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        두 모집단에서 각각 n1=5, n2=6으로 추출하여 어떤 특정치를 측정한 결과가 다음의 데이터와 같았다. 모분산비의 검정을 위한 검정통계량은 약 얼마인가?
-        <div class="q_list hc">
-          <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ol>
-        </div>
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>2.08 </li>
-          <li>2.80</li>
-          <li checked>3.08 </li>
-          <li>3.80</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-
-    <span class="q_list head">제3과목 : 생산시스템</span>
-
-
-    <div class="q_wrap">
-      <div class="question">
-        두 대의 기계를 거쳐 수행되는 작업들의 총작업시간을 최소화하는 투입순서를 결정하는데 가장 중요한 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>작업의 납기순서 </li>
-          <li>투입되는 작업자의 수</li>
-          <li checked>공정별ㆍ작업별 소요시간 </li>
-          <li>시스템 내 평균 작업 수</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        분산구매제도의 장점으로 맞는 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>거래처가 한정되어 있어 품질관리가 수월해진다.</li>
-          <li checked>공장을 둘러싼 지역사회와 좋은 관계를 창조, 유지할 수 있고 지역사회에 경제적 기여를 할 수 있다.</li>
-          <li>구매활동의 평가가 치밀할 수 있으므로 높은 성과를 얻을 수 있는 효율적인 관리가 가능하다.</li>
-          <li>회사의 요구를 집중시킬 수 있으므로 대량구매에 따른 구매가격의 인하가 가능해진다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        각 부서별로 보전업무 담당자를 배치하여 보전활동을 실시하는 보전조직의 형태는?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>집중보전 </li>
-          <li checked>부문보전</li>
-          <li>지역보전 </li>
-          <li>절충보전</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        재고 저장공간을 품목별로 두 칸으로 나누고, 윗칸에는 운전재고를, 아랫칸에는 재주문점에 해당하는 재고를 쌓아둠으로써, 윗칸에 재고가 없으면 재주문점에 이르렀음을 시각적으로 파악할 수 있는 방법은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>EPQ </li>
-          <li>정기발주방식</li>
-          <li>콕(cock)시스템 </li>
-          <li checked>더블빈(double-bin)법</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        설비 선정 시 표준품을 대량으로 연속 생산할 경우 어떤 기계설비를 사용하는 것이 유리한가?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>범용기계설비</li>
-          <li checked>전용기계설비</li>
-          <li>GT(Group Technology)</li>
-          <li>FMS(Flexible Manufacturing System)</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        표준시간 산정기법 중 F.W Taylor의 과학적 관리에서 이용한 기법은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>PTS법 </li>
-          <li checked>Stop Watch법</li>
-          <li>실적자료법 </li>
-          <li>Work Sampling법</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        작업자 공정분석에 관한 설명으로 틀린 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>창고, 보전계의 업무와 경로 개선에 적용된다.</li>
-          <li checked>제품과 부품의 개선 및 설계를 위한 분석이다.</li>
-          <li>기계와 작업자 공정의 관계를 분석하는데 편리하다.</li>
-          <li>이동하면서 작업하는 작업자의 작업위치, 작업순서, 작업동작 개선을 위한 분석이다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        생산시스템의 투입(input)단계에 대한 설명으로 가장 적합한 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>변환을 통하여 새로운 가치를 창출하는 단계이다.</li>
-          <li>필요로 하는 재화나 서비스를 산출하는 단계이다.</li>
-          <li>기업의 부가가치창출 활동이 이루어지는 구조적 단계이다.</li>
-          <li checked>가치창출을 위하여 인간, 물자, 설비, 정보, 에너지 등이 필요한 단계이다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        공정 간의 균형을 위해 애로공정을 합리적으로 해결하는 방법에 속하지 않은 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li checked>부하거리법 </li>
-          <li>라인밸런싱</li>
-          <li>시뮬레이션 </li>
-          <li>대기행렬이론</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        라이트(J.M.Wright)가 주장한 채찍효과의 대처방안으로 틀린 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>변동폭의 감소(reducing variability)</li>
-          <li>리드타임의 단축(lead time reducing)</li>
-          <li>전략적 파트너십(strategic partnership)</li>
-          <li checked>불확실성의 증가(increasing uncertainty)</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        변동하는 수요에 대응하여 생산율ㆍ재고수준ㆍ고용수준ㆍ하청 등의 관리가능 변수를 최적으로 결합하기 위한 용도로 수립되는 계획은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>소일정계획(detail scheduling)</li>
-          <li>대일정계획(master scheduling)</li>
-          <li>주일정계획(master productionschedule)</li>
-          <li checked>총괄생산계획(aggregate productionplanning)</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        최소자승법에 의한 예측의 설명으로 틀린 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li checked>예측오차의 합을 최소화시킨다.</li>
-          <li>예측오차의제곱의 합을 최소화시킨다.</li>
-          <li>예측오차는 실제치와 예측치의 차이이다.</li>
-          <li>회귀선, 추세선, 예측선은 같은 의미이다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        PERT에서 어떤 요소작업을 정상작업으로 수행하면 5일에 2500만원이 소요되고 특급작업으로 수행하면 3일에 3000만원이 소요된다. 비용구배(Cost Slope)는 얼마인가?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>100만원/일 </li>
-          <li>167만원/일</li>
-          <li checked>250만원/일 </li>
-          <li>500만원/일</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        제품-생산량(P-Q)분석에서 제품과 설비배치유형을 맞게 연결시킨 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>다품종 소량생산-흐름식배치</li>
-          <li>다품종 소량생산-제품별배치</li>
-          <li>소품종 대량생산-공정별배치</li>
-          <li checked>소품종 대량생산-제품별배치</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        제품별로 수요량, 생산량, 생산능력이 다를 경우 최적의 제품조합(ProductMix)을 구하는 데 적용하는 기법은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>ABC분석</li>
-          <li>PERT/CPM</li>
-          <li checked>LP(Linear Programming)</li>
-          <li>SDR(Search Decision Rule)</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        설비 고장과 관련하여 물리적 잠재결함의 유형에 해당되는 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>기능이 부족하여 놓친다.</li>
-          <li>이 정도는 문제없다고 무시해 버린다.</li>
-          <li checked>분석하거나 진단하지 않으면 알 수 없는 내부결함이다.</li>
-          <li>눈에 보이는 데도 불구하고 무관심해서 보려고 하지 않는다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        JIT를 적용하는 생산현장에서 부품의 수요율이 1분당 3개이고, 용기당 30개의 부품을 담을 수 있을 때 필요한 간판의 수와 최대재고수는? (단, 작업장의 리드타임은 100분이다.)
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>간판수=5, 최대재고수=100</li>
-          <li>간판수=10, 최대재고수=200</li>
-          <li checked>간판수=10, 최대재고수=300</li>
-          <li>간판수=20, 최대재고수=400</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        위치고정형 배치가 적절한 산업은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li checked>스키장 </li>
-          <li>휴대폰제조</li>
-          <li>출판업 </li>
-          <li>금형제작업</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        발주점 방식과 MRP방식을 비교한 것으로 틀린 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li checked>발주점 방식은 수요패턴이 산발적이지만 MRP방식은 연속적이다.</li>
-          <li>발주점 방식의 발주개념은 보충개념이나 MRP방식의 경우 소요개념이다.</li>
-          <li>발주점 방식의 수요예측자료는 과거의 수요실적에 기반을 두지만, MRP방식은 주일정계획에 의한 수요에 의존한다.</li>
-          <li>발주점 방식에서 발주량의 크기는 경제적주문량으로 일괄적이지만, MRP방식에서는 소요량으로 임의적이다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        어떤 조립라인 작업에 있어서 1일 생산량 500개, 근무시간 8시간, 중식을 포함한 휴식시간은 100분일 때, 최종공정에서 피치마크상 완성품이 없는 경우 3%라인 정지율이 4%일 때 피치타임은 약
-        얼마인가?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li checked>0.708분 </li>
-          <li>0.793분</li>
-          <li>0.875분 </li>
-          <li>0.975분</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-
-    <span class="q_list head">제4과목 : 신뢰성관리</span>
-
-
-    <div class="q_wrap">
-      <div class="question">
-        신뢰도가 각각 0.9인 부품 3개를 그림과 같이 연결하였을 때 이 시스템의 신뢰도는 얼마인가?
-        <div class="q_list hc">
-          <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ol>
-        </div>
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>0.729 </li>
-          <li checked>0.891</li>
-          <li>0.990 </li>
-          <li>0.999</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        신뢰도가 0.95인 부품이 직렬로 결합되어 시스템을 구성한다면, 시스템의 목표 신뢰도 0.90을 만족시키기 위한 부품의 수는?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li checked>2개 </li>
-          <li>3개</li>
-          <li>4개 </li>
-          <li>5개</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        부품에 가해지는 부하(y)는 평균이 25000, 표준편차가 4272인 정규분포를 따르며, 부품의 강도(x)는 평균이 50000이다. 신뢰도 0.999가 요구될 때 부품강도의 표준편차는 약 얼마인가?
-        (단,
-        P(Z≥-3.1)=0.999이다.)
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li checked>6840psi </li>
-          <li>7840psi</li>
-          <li>9850psi </li>
-          <li>13680psi</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        평균수명이 4000시간인 2개의 부품이 병렬결합된 시스템의 평균수명은 몇 시간인가?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>2000 </li>
-          <li>4000</li>
-          <li checked>6000 </li>
-          <li>8000</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        비기억(memoryless)특성을 가짐으로 수리가능한 시스템의 가용도(availability)분석에 가장 많이 사용되는 수명분포는?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>감마분포 </li>
-          <li>와이블분포</li>
-          <li checked>지수분포 </li>
-          <li>대수정규분포</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        신뢰성시험에 대한 설명 중 틀린 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>현장시험(Field Test)은 실제 사용 상태에서 실시하는 시험이다.</li>
-          <li>가속수명시험은 고장매커니즘을 촉진하기 위해 가혹한 환경조건에서 실시하는 시험이다.</li>
-          <li checked>정수중단시험은 규정된 시험시간 또는 고장발생수에 도달하면 시험을 종결하는 방식이다.</li>
-          <li>단계 스트레스시험이란 아이템에 대하여 등 간격으로 여러 증가하는 스트레스 수준을 순차적으로 적용하는 시험이다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        용어-신인성 및 서비스 품질(KS A3004:2002)규격에서 아이템의 고장 확률 또는 기능열화를 줄이기 위해 미리 정해진 간격 또는 규정된 기준에 따라 수행되는 보전을 뜻하는 용어는?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>원격보전 </li>
-          <li>제어보전</li>
-          <li checked>예방보전 </li>
-          <li>개량보전</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        고장률 곡선에서 초기에 발생하는 고장률 함수의 특성은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>AFR(average failure rate)</li>
-          <li>CFR(constant failure rate)</li>
-          <li>IFR(increasing failure rate)</li>
-          <li checked>DFR(decreasing failure rate)</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        신뢰성을 향상시키는 설계방법이 아닌 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>스트레스를 분산시킨다.</li>
-          <li checked>사용하는 부품의 수를 늘린다.</li>
-          <li>부품에 걸리는 스트레스를 경감시킨다.</li>
-          <li>스트레스에 대한 안전계수를 크게 한다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        지수분포를 따르는 부품 10개에 대해 고장이 나면 즉시 교체가 되는 수명시험으로 100시간에서 중지하였다. 이 시간 동안 고장 난 부품이 4개로 고장이 각각 10, 30, 70, 90시간에서
-        발생하였다.
-        이 부품에 대한 t0=100시간에서의 누적고장률 H(t)는 얼마인가?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>0.33/hr </li>
-          <li checked>0.40/hr</li>
-          <li>0.50/hr </li>
-          <li>0.67/hr</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        그림에서 A,B,C의 고장확률이 각각 0.02, 0.1, 0.05인 경우 정상사상의 고장 확률은?
-        <div class="q_list hc">
-          <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ol>
-        </div>
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li checked>0.0001 </li>
-          <li>0.1621</li>
-          <li>0.8379 </li>
-          <li>0.9999</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        부품의 단가는 400원이고, 시험하는 전체 부품의 시간당 시험비는 60원이다. 총시험시간(T)을 200시간으로 수명시험을 할 때, 어느 것이 가장 경제적인가?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li checked>샘플 5개를 40시간 시험한다.</li>
-          <li>샘플 10개를 20시간 시험한다.</li>
-          <li>샘플 20개를 10시간 시험한다.</li>
-          <li>샘플 40개를 5시간 시험한다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        MTTF 산출식으로 맞는 것은? (단, R(t) : 신뢰도함수, f(t) : 고장밀도함수이다.)
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li checked></li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        다음 FMEA의 절차를 순서대로 나열한 것은?
-        <div class="q_list hc">
-          <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ol>
-        </div>
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>㉠-㉡-㉢-㉣-㉤ </li>
-          <li>㉢-㉤-㉠-㉣-㉡</li>
-          <li>㉣-㉤-㉡-㉠-㉢ </li>
-          <li checked>㉠-㉣-㉡-㉢-㉤</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        표본의 크기가 n일 때 시간 t를 지정하여 그 시간까지 고장수를 r로 한다면 수명 t에 대한 신뢰도 R(t)의 추정식은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li></li>
-          <li checked></li>
-          <li></li>
-          <li></li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        시스템의 고장율이 0.03/hr이고 수리율이 0.1/hr인 경우, 시스템의 가용도는? (단, 고장시간과 수리시간은 지수분포를 따른다.)
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>13/3 </li>
-          <li>13/10</li>
-          <li>3/13 </li>
-          <li checked>10/13</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        가속수명시험의 시험조건 사이에 가속성이 성립한다는 것을 확률용지에서 어떻게 확인할 수 있는가?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li checked>확률용지에서 각 시험조건의 수명분포 추정선들이 서로 평행이다.</li>
-          <li>확률용지에서 각 시험조건의 수명분포 추정선들이 서로 직교한다.</li>
-          <li>확률용지에서 각 시험조건의 수명분포로 추정선들이 상호 무상관이다.</li>
-          <li>확률용지에서 각 시험조건의 수명분포 추정선들의 절편이 서로 동일하다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        샘플 10개에 대한 수명시험에서 얻은 데이터는 다음과 같다. 중앙순위법(median rank)을 이용한 t=40시간에서의 누적고장확률 (F(t))의 값은 약 얼마인가?
-        <div class="q_list hc">
-          <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ol>
-        </div>
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>0.450 </li>
-          <li checked>0.452</li>
-          <li>0.455 </li>
-          <li>0.500</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        고장밀도함수가 지수분포에 따르는 부품을 100시간 사용하였을 때, 신뢰도가 0.96인 경우 순간고장률은 약 얼마인가?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>1.05×10-3/시간 </li>
-          <li>2.02×10-4시간</li>
-          <li checked>4.08×10-4시간 </li>
-          <li>5.13×10-4시간</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        지수분포의 확률지에 관한 설명으로 틀린 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>회귀선의 기울기를 구하면 평균고장률이 된다.</li>
-          <li>세로축은 누적고장률, 가로축은 고장시간을 타점하도록 되어 있다.</li>
-          <li>타점결과 원점을 지나는 직선의 형태가 되면 지수분포라 볼 수 있다.</li>
-          <li checked>누적고장률의 추정은 t시간까지의 고장회수의 역수를 취하여 이루어진다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-
-    <span class="q_list head">제5과목 : 품질경영</span>
-
-
-    <div class="q_wrap">
-      <div class="question">
-        문서관리의 근본적 목적으로 맞는 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>정확한 정보가 기록으로 남도록 하기 위하여</li>
-          <li>문제가 발생하는 경우 근거로 사용하여야 하기 때문에</li>
-          <li checked>올바른 문서만이 필요한 장소에서 사용되어 지도록 하기 위하여</li>
-          <li>외부기관의 심사에 대비하여 체계적으로 업무가 진행되고 있음을 보장하기 위하여</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        품질경영시스템-요구사항(KS Q ISO9001:2015)에서 품질경영원칙이 아닌 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>리더십 </li>
-          <li>고객중시</li>
-          <li>프로세스 접근법 </li>
-          <li checked>품질방침 및 품질목표</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        다음 조건하에서 계측시스템의 산포(σm)는 약 얼마인가?
-        <div class="q_list hc">
-          <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ol>
-        </div>
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>0.78 </li>
-          <li>0.84</li>
-          <li>0.87 </li>
-          <li checked>0.94</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        산업표준화법에서 지정하고 있는 산업표준화의 대상에 해당되지 않는 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>광공업품의 시험, 분석, 감정, 부호, 단위</li>
-          <li>광공업품의 생산방법, 설계방법, 제도방법</li>
-          <li>구축물과 그 밖의 공작물의 설계, 시공방법</li>
-          <li checked>전기통선 관련 서비스의 제공절차, 체계, 평가방법</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        품질관리에 일반적으로 사용되는 용어에 대한 설명으로 틀린 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>6시그마 수준 : 부적합품(불량품)의 수가 1백만개 당 3~4개 정도로 부적합품이 거의 발생하지 않는 상태를 의미한다.</li>
-          <li>DPMO : 100만번의 기회 당 부적합 발생건수를 뜻하는 용어이며 DPMO는 시그마수준이 높을수록 작아진다.</li>
-          <li>부적합비용 : 나쁜 품질에 의해 발생되는 비용으로 실패비용이라고도 하며, 내부 실패비용과 외부실패비용으로 구분한다.</li>
-          <li checked>예방비용 : 제품이나 서비스가 제대로 작동되는지 검사하는 것과 관련된 비용과 검사, 실험실 실험, 현장실험 등에 해당하는 비용이다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        계량의 기본단위로 맞는 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>길이 : mm </li>
-          <li>질량 : g</li>
-          <li>시간 : mm </li>
-          <li checked>물질량 : mol</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        회사정책과 관리, 감독, 작업조건 등을 종업원의 불만요인으로, 성취감, 인정, 직무, 책임감, 향상, 개인진보의 가능성 등을 만족요인으로 주장한 동기부여 이론은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>Maslow 이론 </li>
-          <li checked>Herzberg 이론</li>
-          <li>McGregor 이론 </li>
-          <li>Cleland 와 Kocaoglu이론</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        부적합품 손실금액, 부적합품수, 부적합수 등을 요인별, 현상별, 공정별, 품종별등으로 분류해서 크기의 차례로 늘어놓은 그림을 무엇이라 하는가?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>산점도 </li>
-          <li checked>파레토도</li>
-          <li>그래프 </li>
-          <li>특성요인도</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        내부고객 및 외부고객에 관한 설명으로 틀린 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li checked>고객중심의 품질경영은 고객을 외부고객으로만 규정하고 종업원이 고객에게 최선을 다할 것을 강조하는 것이 무엇보다도 중요하다.</li>
-          <li>데밍은 전통적인 조직의 경계를 철폐하여 완제품의 최종소비자인 고객과 같은 외부고객은 물론 앞 공정에서 생산한 부품이나 구성품을 사용하는 후 공정, 즉 내부고객의 중요성을 강조하였다.</li>
-          <li>생산과정의 후 공정에서 일하는 작업자는 앞 공정의 고객이 된다. 이러한 관점에서 기업 내부에도 업무의 흐름에 따라 내부고객들과 유기적으로 연결되어 있으며 외부고객이란 단기 부가가치 선상의
-            최후에
-            위치해 있는 내부고객을 의미하는 것과 같다.</li>
-          <li>전통적으로 고객은 제품의 개발과정에서 대개가 제외되었다. 그러나 경쟁이 치열하게 전개되는 시장에서 이러한 방법을 고수하는 것은 위험하다. 종합적 품질경영에서 외부고객의 요구를 규명하는 것은
-            제품개발과정에서 자연스러운 현상이다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        공정의 산포가 규격의 최대, 최소치의 차보다 충분히 작고 중심이 안정된 경우의 조치사항으로 틀린 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>현행 제조공정의 관리를 계속한다.</li>
-          <li>검사주기를 늘리거나 간소화 한다.</li>
-          <li checked>실험을 계획하여 공정의 산포를 감소시킨다.</li>
-          <li>관리한계를 벗어나는 제품은 원인을 철저히 규명하여야 한다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        전기조립품을 제조하는 공장에서 공정이 안정되어 있는가를 판단하기 위해 n=5, k=20의관리도를 작성하였다. 그 결과을 얻었으며 공정이 안정된 것으로 판정되었다. 이 때 공정능력지수(CP)가 1인
-        경우
-        규정공차 (U-L)는 약 얼마인가? (단, n=5일 때, d2=2.326이다.)
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>1.368 </li>
-          <li>3.180</li>
-          <li checked>4.102 </li>
-          <li>8.204</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        6시그마 추진을 위한 교육을 받고 현조직에서 업무를 수행하면서 동시에 개선 활동팀에 참여하여 부분적인 업무를 수행하는 초급단계 요원은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>챔피언(Champion)</li>
-          <li checked>그린벨트(Green Belt)</li>
-          <li>블랙벨트(Black Belt)</li>
-          <li>마스터블랙벨트(Master Black Belt)</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        품질분임조 활동의 문제해결 과정에서 목표설정의 기준으로 틀린 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>간단명료한 목표설정</li>
-          <li>분임조 수준에 맞는 목표설정</li>
-          <li checked>독창적이고 혁신적인 목표설정</li>
-          <li>구체적이고 달성 가능한 목표설정</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        소비자의 안전에 위해를 주거나 줄 우려가 있는 제품을 기업이 공개적으로 회수해서 수리ㆍ교환ㆍ환불해 줌으로써 피해를 사전에 예방하는 직접적인 안전 확보제도를 무엇이라 하는가?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>제품보증제도 </li>
-          <li checked>리콜(recall)제도</li>
-          <li>제조물책임제도 </li>
-          <li>종합적 품질관리(TQC)제도</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        문제가 되고 있는 사상 가운데서 대응되는 요소를 찾아내어 이것을 행과 열로 배치하고, 그 교점에 각 요소간의 연관 유무나 관련정도를 표시함으로써 이원적인 배치에서 문제의 소재나 문제의 형태를 탐색하는
-        신
-        QC 수법 중 하나는?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>PDPC법 </li>
-          <li>연관도법</li>
-          <li>계통도법 </li>
-          <li checked>매트릭스도법</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        파이겐바움(A.V. Feigenbacum)이 제시한 품질에 영향을 주는 요소인 9M에 해당되지 않는 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>Men </li>
-          <li>Motivation</li>
-          <li>Markets </li>
-          <li checked>Monitoring</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        서비스에 대한 고객의 기대에 대한 설명으로 틀린 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>바람직한 서비스 수준(desired servicelevel)은 고객이 제공받기를 희망하는 서비스 수준이다.</li>
-          <li checked>고객이 지각하는 서비스 수준이 허용서비스 수준(adepuate service level)이하일때 기업은 고객을 독점하게 된다.</li>
-          <li>서비스 품질에 대한 고객의 기대는 고객이 그런대로 받아들일 수 있다고 생각하는 최저한의 품질수준이다.</li>
-          <li>서비스 품질에 대한 고객의 기대는 허용 서비스 수준(adequate service level)과 바람직한 서비스 수준(desired servicelevel)이 존재하며 그 차이가 허용차
-            영역(zone of tolerance)이다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        품질전략의 계획 수립 시 경영환경과 기업역량의 관계를 연결하여 무엇이 핵심역량이고 무엇을 보완해야 하는지를 결정하는 것이 필요하다. 이때 내부환경적 측면의 기준으로 거리가 먼 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>경영자의 리더십</li>
-          <li>조직의 신제품개발 능력</li>
-          <li checked>경쟁사 또는 경쟁공장의 동향</li>
-          <li>조직의 표준화 수준 및 실행 정도</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        품질코스트(Q-cost)와 해당내역의 연결이 잘못된 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li checked>A코스트-품질교육 코스트</li>
-          <li>P코스트-품질기술 코스트</li>
-          <li>F코스트-A/S수리 코스트</li>
-          <li>F코스트-부적합대책 코스트</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
-    </div>
-
-    <div class="q_wrap">
-      <div class="question">
-        사내표준에 대한 설명으로 틀린 것은?
-      </div>
-      <div class="answer inline">
-        <ol>
-          <li>사내표준은 성문화된 자료로 존재하여야 한다.</li>
-          <li checked>사내표준의 개정은 기간을 정해 정기적으로 실시한다.</li>
-          <li>사내표준은 조직원 누구나 활용할 수 있도록 하여야 한다.</li>
-          <li>회사의 경영자가 솔선하여 사내규격의 유지와 실시를 촉진시켜야 한다.</li>
-        </ol>
-      </div>
-      <div class="comment">
-
-      </div>
+  </div>
+
+  <!-- 9 -->
+  <div class="q_wrap">
+    <div class="question">
+      3개의 공정(A)에서 나오는 제품의 부적합 품률이 작업 시간별(B)로 차이가 있는지 알아보기 위하여 오전, 오후, 야간 근무조에서 공정라인별로 각각 100개씩 조사하여 다음과 같은 데이터가 얻어졌다.
+      이 데이터를 이용하여 B1수준의 모부적 합품률 P(B1)의 95% 신뢰구간을 구하면 약 얼마인가? (단, Ve=0.0732이다.)
+
+      <table class="center">
+        <tr>
+          <th rowspan="2">공정 →<br>↓ 작업시간 </th>
+          <th colspan="3">공정</th>
+        </tr>
+        <tr>
+          <th>A1</th>
+          <th>A2</th>
+          <th>A3</th>
+        </tr>
+        <tr>
+          <td>B1(오전)</td>
+          <td>5</td>
+          <td>3</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>B2(오후)</td>
+          <td>8</td>
+          <td>5</td>
+          <td>13</td>
+        </tr>
+        <tr>
+          <td>B3(야간)</td>
+          <td>10</td>
+          <td>6</td>
+          <td>15</td>
+        </tr>
+      </table>
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>(1.235%, 6.222%) </li>
+        <li>(1.787%, 7.393%)</li>
+        <li>(2.015%, 8.005%) </li>
+        <li checked>(2.272%, 8.395%)</li>
+      </ol>
+    </div>
+    <div class="comment">
+      $\hat{P(B_1)} = \frac{16}{300}\pm u_{1-0.05/2}\sqrt{\frac{V_c}{lr}}$
     </div>
   </div>
+
+  <!-- 10 -->
+  <div class="q_wrap">
+    <div class="question">
+      3수준 선점도에 대한 설명으로 틀린 것 은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li checked>선의 자유도는 2이다.</li>
+        <li>점의 자유도는 2이다.</li>
+        <li>점은 하나의 열에 대응된다.</li>
+        <li>선은 점과 점 사이에 교호작용을 나타낸다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+      선점도 <br>
+      . 점하다는 하나의 요인을 나타낸다. <br>
+      . 점을 연결하는 선은 교호작용의 관계를 나타낸다. <br>
+      . 선과 점은 하나당 자유도 1을 갖고 하나의 열에 대응한다. <br>
+    </div>
+  </div>
+
+  <!-- 11 -->
+  <div class="q_wrap">
+    <div class="question">
+      $2^2$형 실험에서 반복 r=4일 때 T_{11ㆍ}=165, T_{12ㆍ}=84, T_{21ㆍ}=352, T_{22ㆍ}=134일 떄, 교호작용의 제곱합 (SA×B)의 값은 약 얼마인가?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>83.313 </li>
+        <li>126.125</li>
+        <li checked>1173.063 </li>
+        <li>3510.563</li>
+      </ol>
+    </div>
+    <div class="comment">
+      $S_{A\times B} = \cfrac{1}{\text{실험총 수}}\bigg[\text{높은 수준 수}-\text{낮은 수준 수}\bigg]^2$
+    </div>
+  </div>
+
+  <!-- 12 -->
+  <div class="q_wrap">
+    <div class="question">
+      실험계획 시 실험에 직접 취급되는 요인은 매우 다양하다. 실험에 직접 취급되는 요인으로 적용하기 어려운 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>실험의 효율을 올리기 위해서 실험환경을 층별한 요인</li>
+        <li checked>실험의 목적을 달성하기 위하여 이와 직결된 실험의 반응치</li>
+        <li>실험용기, 실험시기 등과 같이 다른 요인에 영향을 줄 가능성이 있는 요인</li>
+        <li>주효과의 해석은 의미가 없지만 제어요인과 교호작용 효과의 해석을 목적으로 하는 요인</li>
+      </ol>
+    </div>
+    <div class="comment">
+      실험의 목적을 달성하기 위하여 직결된 실험의 요인(factor, X)이 맞다. 반응치는 Y이므로 X에 의해 결정되는 변수이다.
+    </div>
+  </div>
+
+  <!-- 13 -->
+  <div class="q_wrap">
+    <div class="question">
+      다음의 표는 요인 A,B에 대한 반복 없는 모수모형 2요인실험의 분산분석표이다. 이 실험의 품질특성은 망대특성이라고 할 때 틀린 것은?
+      <table class="center">
+        <tr>
+          <th>수준</th>
+          <th>A1</th>
+          <th>A2</th>
+          <th>A3</th>
+          <th>A4</th>
+        </tr>
+        <tr>
+          <td>B1</td>
+          <td>16</td>
+          <td>26</td>
+          <td>30</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>B2</td>
+          <td>13</td>
+          <td>22</td>
+          <td>20</td>
+          <td>17</td>
+        </tr>
+        <tr>
+          <td>B3</td>
+          <td>7</td>
+          <td>9</td>
+          <td>19</td>
+          <td>5</td>
+        </tr>
+      </table>
+      <table class="center">
+        <tr>
+          <th>요인</th>
+          <th>SS</th>
+          <th>DF</th>
+          <th>MS</th>
+          <th>F_0</th>
+          <th>F_0.95</th>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>344</td>
+          <td>2</td>
+          <td>172</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>B</td>
+          <td>222</td>
+          <td>3</td>
+          <td>74</td>
+          <td>7.929</td>
+          <td>4.75</td>
+        </tr>
+        <tr>
+          <td>e</td>
+          <td>56</td>
+          <td>6</td>
+          <td>9.333</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>T</td>
+          <td>622</td>
+          <td>11</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>최적해의 점 추정치는이며 점 추정치는 29이다.</li>
+        <li checked>모평균의 95% 신뢰구간을 위한이다.</li>
+        <li>t0.975(6)=2.447일 때 최적조건에서의 모평균의 신뢰구간은 약 23.71~34.29이다.</li>
+        <li>유의수준 5%로 요인 A,B는 모두 유의하며, 망대특성이므로 최적해는이다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+      모평균에 대한 추정을 분산 $Var(\bar{x_3\cdot} + \bar{x\cdot_1} - \bar{\bar{x}})$으로 하지는 않는다.
+    </div>
+  </div>
+
+  <!-- 14 -->
+  <div class="q_wrap">
+    <div class="question">
+      완전랜덤화법(completely randomizeddesign)을 이용하여 l개의 실험조건에서 각각 m번씩 실험하여 얻은 관측치를 분석하기 위하여 다음과 같은 수학적인 모형을 세웠다. 모형의 설명 중
+      틀린
+      것은?
+      <div class="q_list hc">
+        $ X_{ij} = \mu + \alpha_i + e_{ij} $
+        <br>
+        (단, $i = 1, 2, \cdots, l$이고, $j = 1, 2, \cdots, m$이다.)
+      </div>
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>μ는 실험전체의 모평균을 나타낸다.</li>
+        <li>Xij는 i번째 실험조건에서 j번째 관측치를 나타낸다.</li>
+        <li>ai는 i번째 실험조건의 영향 또는 치우침을 나타낸다.</li>
+        <li checked>eij는 오차를 나타내며 상호 종속적인 관계를 가지고 분포한다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <!-- 15 -->
+  <div class="q_wrap">
+    <div class="question">
+      4개의 처리를 각각 n회씩 반복하여 평균치를 얻었다. 대비(contrast)가 될 수 없는 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>$\bar{y_1}-\bar{y_3}$</li>
+        <li checked>$\bar{y_1}-\bar{y_2}+\bar{y_3}+\bar{y_4}$</li>
+        <li>$\bar{y_1}+\bar{y_2}-\bar{y_3}-\bar{y_4}$</li>
+        <li>$\bar{y_1}+\bar{y_2}+\bar{y_3}-\bar{y_4}$</li>
+      </ol>
+    </div>
+    <div class="comment">
+      대비가 되려면 정수계수의 합이 0이 되어야 한다.
+    </div>
+  </div>
+
+  <!-- 16 -->
+  <div class="q_wrap">
+    <div class="question">
+      회귀선에 의하여 설명되지 않는 편차 $y_i - \hat{y}$를 잔차(residual)라고 한다. 이 잔차 ($e_i$)의 성질을 설명한 내용 중 틀린 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>잔차들의 합은 영이다. 즉, $\sum e_i = 0$</li>
+        <li>잔차들의 $x_i$에 의한 가중합은 영이다. 즉, $\sum x_i e_i = 0$</li>
+        <li checked>잔차들의 제곱과 $(y_i - \bar{y})$의 가중합은 영이다. 즉, $\sum (y_i - \bar y){e_i}^2 = 0$</li>
+        <li>잔차들의(회귀직선추정식)에 의한 가중합은 영이다. 즉, $\sum \hat ye_i = 0$</li>
+      </ol>
+    </div>
+    <div class="comment">
+      잔차들의 제곱과 $(y_i - bar{y})$의 가중합은 0이다.
+    </div>
+  </div>
+
+  <!-- 17 -->
+  <div class="q_wrap">
+    <div class="question">
+      A요인을 4수준, B요인을 2수준, C요인을 2수준, 반복 2회의 지분실험법을 행하고 분산분석표를 작성한 결과 다음과 같았다. 이 때의 $\hat{\sigma}^2$ 값은 약 얼마인가?
+      <table class="center">
+        <tr>
+          <th>인자</th>
+          <th>SS</th>
+          <th>DF</th>
+          <th>MS</th>
+        </tr>
+        <tr>
+          <td>A</td>
+          <td>1.8950</td>
+          <td>3</td>
+          <td>0.63167</td>
+        </tr>
+        <tr>
+          <td>B(A)</td>
+          <td>0.7458</td>
+          <td>4</td>
+          <td>0.18645</td>
+        </tr>
+        <tr>
+          <td>C(AB)</td>
+          <td>0.3409</td>
+          <td>8</td>
+          <td>0.042613</td>
+        </tr>
+        <tr>
+          <td>e</td>
+          <td>0.0193</td>
+          <td>16</td>
+          <td>0.001206</td>
+        </tr>
+      </table>
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>0.0394 </li>
+        <li checked>0.0557</li>
+        <li>0.1113 </li>
+        <li>0.1484</li>
+      </ol>
+    </div>
+    <div class="comment">
+      $\hat{\sigma}^2 = \cfrac{V_A - V_{B(A)}}{mnr}$
+    </div>
+  </div>
+
+  <!-- 18 -->
+  <div class="q_wrap">
+    <div class="question">
+      라틴방격법을 설명한 내용 중 틀린 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li checked>3×3 라틴방격은 9가지의 상이한 배치가 존재한다.</li>
+        <li>라틴방격법에서 각 처리는 모든 행과 열에 꼭 한번 씩 나타나 있다.</li>
+        <li>제1행, 제1열이 자연수 순서로 나열되어 있는 라틴방격을 표준라틴방격이라 한다.</li>
+        <li>라틴방격법은 4각형속에 라틴문자 A,B,C를 나열하여 4각형을 만들어 사용해서 라틴방격이란 이름이 붙게 되었다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <!-- 19 -->
+  <div class="q_wrap">
+    <div class="question">
+      반복이 없는 3요인실험에서 분석결과 교호작용은 모두 유의하지 않았다. $\hat{\mu}(A_i C_k)$의 신뢰구간 추정을 할 때에 사용되는 유효반복수($n_e$)의 값은? (단, A,B,C요인의 수준 수는 각각 3,4,5이다.)
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>4.50 </li>
+        <li>4.98</li>
+        <li checked>8.57 </li>
+        <li>9.00</li>
+      </ol>
+    </div>
+    <div class="comment">
+      총 실험 횟수 / (각 인자의 유효자유도의 합 + 1)
+    </div>
+  </div>
+
+  <!-- 20 -->
+  <div class="q_wrap">
+    <div class="question">
+      1요인실험에서 완전 랜덤화 모형과 2요인실험의 난괴법에 관한 설명으로 틀린 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>난괴법에서 변량요인 B에 대한 모평균을 추정하는 것은 의미가 없다.</li>
+        <li>난괴법은 A요인의 모수요인, B는 변량요인이며 반복이 없는 경우를 지칭한다.</li>
+        <li checked>난괴법에서 변량요인 B를 실험일 또는 실험장소 등인 경우로 선택할 때 집단요인이 된다.</li>
+        <li>k개의 처리를 r회 반복 실험하는 경우에 오차항의 자유도는 1요인실험이 난괴법 보다 r-1이 크다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+      난괴법에서 변량요인 B를 실험일 또는 실험장소 등인 경우로 선택항 때 블록요인이 된다.
+    </div>
+  </div>
+
+
+  <span class="q_list head">제2과목 : 통계적품질관리</span>
+
+
+  <div class="q_wrap">
+    <div class="question">
+      로트별 합격품질한계(AQL)지표형 샘플링검사 방식(KS Q ISO 2859-1 :2014)의 내용 중 맞는 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li checked>다회 샘플링 형식으로 5회를 적용</li>
+        <li>수월한 검사에서 조건부 합격제도의 활용</li>
+        <li>R10 등비급수를 활용한 체계적 수치표의 구성</li>
+        <li>보통검사에서 까다로운 검사로의 엄격도 조정에 전환점수제도 적용</li>
+      </ol>
+    </div>
+    <div class="comment">
+      다회 샘플링 형식으로 3회~5회를 적용한다.
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      샘플링검사의 선택조건으로 틀린 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>실시하기 쉽고 관리하기 쉬울 것</li>
+        <li>목적에 맞고 경제적인 면을 고려할 것</li>
+        <li checked>샘플링을 실시하는 사람에 따라 차이가 있을 것</li>
+        <li>공정이나 대상물 변화에 따라 바꿀 수 있을 것</li>
+      </ol>
+    </div>
+    <div class="comment">
+      샘플링을 실시하는 사람에 따라 차이가 있어서는 안 된다
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      Y제품의 인장강도의 평균값이 450kg/cm2이상인 로트는 통과시키고, 420kg/cm2이하인 로트는 통과시키지 않도록 하는 계량 규준형 1회 샘플링 검사법을 설계하고자 한다. 샘플링검사에서 로트의
+      평균값이 420kg/cm2이하인 로트가 운 좋게 합격될 확률을 0.10이하로, 로트의 평균값이 450kg/cm2이상인 로트가 잘못되어 불합격될 확률을 0.05이하로 하고 싶다. 다음 설명 중 틀린
+      것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>생산자 위험은 5%이다.</li>
+        <li>소비자 위험은 10%이다.</li>
+        <li>로트의 평균값을 보증하는 방식이다.</li>
+        <li checked>시료의 크기와 상한합격판정값을 구하여야 한다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+      시료의 크기와 상하한합격판정값을 구하여야 한다.
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      부적합품률에 대한 계량형 축차 샘플링 검사 방식의 표준번호로 맞는 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>KS Q ISO 0001 </li>
+        <li>KS Q ISO 8422</li>
+        <li>KS Q ISO 9001 </li>
+        <li checked>KS Q ISO 8423</li>
+      </ol>
+    </div>
+    <div class="comment">
+      계량형 축차 샘플링검사
+      Q ISO 8423에서 구정한다.
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      A사에서 생산하는 강철봉의 길이는 평균 2.8m, 표준편차 0.20m인 정규분포를 따르는 것으로 알려져 있다. 25개의 강철봉의 길이를 측정하여 구한 평균이 2.72m라면 평균이 작아졌다고 할 수
+      있는가를
+      유의수준 5%로 검정할 때, 기각역(R)과 검정통계량 (u0)의 값은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li checked>R={u＜-1.645}, u0=-2.0 </li>
+        <li>R={u＜-1.96}, u0=-2.0</li>
+        <li>R={u＞1.645}, u0=2.0 </li>
+        <li>R={u＞1.96}, u0=2.0</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      임의의 두 사상 A, B가 독립사상이 되기 위한 조건은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li></li>
+        <li>P(A∩B)=P(A)+P(B)</li>
+        <li>P(A∪B)=P(A)ㆍP(B)</li>
+        <li checked>P(A∩B)=P(A)ㆍP(B)</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      로트의 평균치를 보증하는 계수 및 계량 규준형 1회 샘플링검사(KS Q 0001:2013)에서 특성치가 망대특성일 때, 설명 중 맞는 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>AOQL이 주어져야 한다.</li>
+        <li checked>OC곡선은 특성치의 평균 m의 증가함수이다.</li>
+        <li>OC곡선의 Y축은 평균치의 값으로 나타낸다.</li>
+        <li>OC곡선의 X축은 로트의부적합품률(p)이 된다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      어느 주물공장에서 제조한 제품의 무게는 정규분포를 한다고 한다. 이 제품의 모평균 μ를 구간 추정하기 위해 모집단에서 6개를 무작위로표본 추출하였더니 다음과 같다. 이 제품의 95% 신뢰구간은 약
+      얼마인가? (단, t0.975(5)=2.571이다.)
+      <div class="q_list hc">
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </div>
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li checked>(69.02, 75.31) </li>
+        <li>(73.08, 79.90)</li>
+        <li>(75.50, 78.90) </li>
+        <li>(80.65, 86.90)</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      적합도 검정에 대한 설명 중 틀린 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>적합도 검정은 계수형 자료에 주로 사용된다.</li>
+        <li>적합도 검정의 검정통계량은 카이제곱분포 (X2)를 따른다.</li>
+        <li checked>적합도 검정 시 확률 Pi가정된 값이 주어진 경우 유의수준 α에서 기각역은 X21-a/2(k-1)이다.</li>
+        <li>적합도 검정 시 확률 Pi의 가정된 값이 주어지지 않은 경우, 자유도 v=k-p-1(p는 parameter의 수이다.)를 따른다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      모상관계수의 유무에 관한 검정으로 활용되는 검정통계량으로 틀린 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>r0=r </li>
+        <li checked></li>
+        <li></li>
+        <li></li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <!-- 31 -->
+  <div class="q_wrap">
+    <div class="question">
+      통계적 가설검정에서 유의수준에 대한 설명으로 틀린 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>검정에 앞서 미리 정하여 두는 위험률이다.</li>
+        <li checked>일반적으로 제2종의 과오를 범하는 확률을 의미한다.</li>
+        <li>1에서 유의수준을 빼고 100%를 곱하면 신뢰율이 된다.</li>
+        <li>통계적 가설검정에서 귀무가설이 옮음에도 불구하고 기각할 확률이다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+      일반적으로 제1종의 과오를 범하는 확률을 의미한다.
+    </div>
+  </div>
+
+  <!-- 32 -->
+  <div class="q_wrap">
+    <div class="question">
+      과거 우리 회사에서 생산하는 A제품의 표면에는 평균 6개(m=6)의 핀홀(pinhole)이 있었다. 최근 새로운 도장 설비로 교체를 한 후 핀홀의 수를 확인 하였더니 x=1이었다. 위험률 5%에서
+      모부적합수는 작아졌다고 할 수 있는가?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>커졌다고 할 수 있다. </li>
+        <li checked>작아졌다고 할 수 있다.</li>
+        <li>작아졌다고 할 수 없다. </li>
+        <li>현재로서는 알 수 없다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+      $u_0 = \cfrac{c-m}{\sqrt{m}} = -2.04$, 정규분포에서 유의수준(위험율) 5%(한쪽, 왼쪽기준)의 값은-1.645 이므로 -2.04 &gt; -1.645이므로 대립가설을 채택한다.
+    </div>
+  </div>
+
+  <!-- 33 -->
+  <div class="q_wrap">
+    <div class="question">
+      3σ관리한계를 적용하는 부분군의 크기(n) 4인관리도에서 UCL=13, LCL=4일 때, 이 로트 개개의 표준편차 (σx)는 얼마인가?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>1.5 </li>
+        <li>2.25</li>
+        <li checked>3 </li>
+        <li>4</li>
+      </ol>
+    </div>
+    <div class="comment">
+      13 - 4 = 9 = 3σ
+    </div>
+  </div>
+
+  <!-- 34 -->
+  <div class="q_wrap">
+    <div class="question">
+      평균치와 분산이 같은 확률 분포는?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>정규분포 </li>
+        <li>이항분포</li>
+        <li>지수분포 </li>
+        <li checked>푸아송분포</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <!-- 35 -->
+  <div class="q_wrap">
+    <div class="question">
+      p관리도에 관한 설명으로 틀린 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>이항분포를 따르는 계수치 데이터에 적용된다.</li>
+        <li checked>부분군의 크기는 가급적 n=0.1/p ~ 0.5/p를 만족하도록 설정한다.</li>
+        <li>부분군의 크기가 일정할 때는 np고나리도를 활용하는 것이 작성 및 활용상 용이하다.</li>
+        <li>일반적으로 부적합품률에는 많은 특성이 하나의 관리도 속에 포함되므로관리도 보다 해석이 어려울 수 있다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+      부분군의 크기는 가급적 n = 0.1/p ~ 0.5/p를 민족하도록 설정하는 것은 np관리도의 특성이다.
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      $\bar{X}-R$ 관리도에서의 $\bar{x}$산포를 $\sigma_\bar{x}^2$, 군간산포를 $\sigma_b^2$, 군내산포를 $\sigma_w^2$로 표현할때 틀린 것은? (단, k는 부분군의 수, n은 부분군의 크기, d2는 부분군의 크기가 n일 때의 값이다.)
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li checked>$\hat{\sigma_b} = \cfrac{\bar{R}}{d_2}$</li>
+        <li>$\sigma_\bar{x}^2 = \sigma_b^2 + \cfrac{\sigma_w^2}{n}$</li>
+        <li>$\sigma_\bar{x}^2 = \cfrac{\sum\limits^k_{i=1}\big(\bar{x}-\bar{\bar{x}}\big)^2}{k-1}$</li>
+        <li>완전한 관리상태일 때 $σ_b^2=0$</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      관리도에 대한 설명으로 틀린 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>관리도에서 부분군의 크기 n이 증가하면 관리한계는 좁아진다.</li>
+        <li>관리도는 중심값과 산포를 동시에 관리할 수 있는 관리도이다.</li>
+        <li checked>하루 생산량이 아주 적어 합리적인 군으로 나눌 수 없는 경우에관리도를 적용한다.</li>
+        <li>관리도는 로트가 정규분포를 따른다는 가정이 필요하며 계량치 데이터에 적용가능하다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+      하루 생산량이 아주 적이 합리적인 군으로 나늘 수 없는 경우에 x-R관리도를 적용한다.
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      10톤씩 적재하는 100대의 화차에서 5대의 화차를 샘플링하여 각 화차로부터 3인크리먼트씩 랜덤하게 시료를 채취하는 샘플링 방법은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>집락 샘플링 </li>
+        <li>층별 샘플링</li>
+        <li>계통 샘플링 </li>
+        <li checked>2단계 샘플링</li>
+      </ol>
+    </div>
+    <div class="comment">
+      2단계 샘플링 : 모집단 N의 로프가 N_i 개씩의 제품이 들어있는 M상자의 부로트로 나누어져 있을 때
+      랜덤하게 m개의 상자를 뽑괴 각 상자로부터 n_i 개의 제품을 랜덤하게 뽑는 경우를 말한다
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      관리도에 관한 설명으로 틀린 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>관리도의 검출력은 x관리도보다 좋다.</li>
+        <li checked>관리한계를 2σ한계로 좁히면 제1종 오류가 감소한다.</li>
+        <li>c관리도는 각 부분군에 대한 샘플의 크기가 반드시 일정해야 한다.</li>
+        <li>u관리도에서 부분군이 샘플의 수가 다르면 관리한계는 요철형이 된다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+      관리한계를 2시그마 한계로 좁히면 제1종 오류 알파는 증가한다.
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      두 모집단에서 각각 n1=5, n2=6으로 추출하여 어떤 특정치를 측정한 결과가 다음의 데이터와 같았다. 모분산비의 검정을 위한 검정통계량은 약 얼마인가?
+      <div class="q_list hc">
+        $$\sum x_1 = -3$$
+        $$\sum x_1^2 = 99$$
+        $$\sum x_2 = -3$$
+        $$\sum x_1^2 = 41$$
+
+      </div>
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>2.08 </li>
+        <li>2.80</li>
+        <li checked>3.08 </li>
+        <li>3.80</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+
+  <span class="q_list head">제3과목 : 생산시스템</span>
+
+
+  <div class="q_wrap">
+    <div class="question">
+      두 대의 기계를 거쳐 수행되는 작업들의 총작업시간을 최소화하는 투입순서를 결정하는데 가장 중요한 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>작업의 납기순서 </li>
+        <li>투입되는 작업자의 수</li>
+        <li checked>공정별ㆍ작업별 소요시간 </li>
+        <li>시스템 내 평균 작업 수</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      분산구매제도의 장점으로 맞는 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>거래처가 한정되어 있어 품질관리가 수월해진다.</li>
+        <li checked>공장을 둘러싼 지역사회와 좋은 관계를 창조, 유지할 수 있고 지역사회에 경제적 기여를 할 수 있다.</li>
+        <li>구매활동의 평가가 치밀할 수 있으므로 높은 성과를 얻을 수 있는 효율적인 관리가 가능하다.</li>
+        <li>회사의 요구를 집중시킬 수 있으므로 대량구매에 따른 구매가격의 인하가 가능해진다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      각 부서별로 보전업무 담당자를 배치하여 보전활동을 실시하는 보전조직의 형태는?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>집중보전 </li>
+        <li checked>부문보전</li>
+        <li>지역보전 </li>
+        <li>절충보전</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      재고 저장공간을 품목별로 두 칸으로 나누고, 윗칸에는 운전재고를, 아랫칸에는 재주문점에 해당하는 재고를 쌓아둠으로써, 윗칸에 재고가 없으면 재주문점에 이르렀음을 시각적으로 파악할 수 있는 방법은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>EPQ </li>
+        <li>정기발주방식</li>
+        <li>콕(cock)시스템 </li>
+        <li checked>더블빈(double-bin)법</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      설비 선정 시 표준품을 대량으로 연속 생산할 경우 어떤 기계설비를 사용하는 것이 유리한가?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>범용기계설비</li>
+        <li checked>전용기계설비</li>
+        <li>GT(Group Technology)</li>
+        <li>FMS(Flexible Manufacturing System)</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      표준시간 산정기법 중 F.W Taylor의 과학적 관리에서 이용한 기법은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>PTS법 </li>
+        <li checked>Stop Watch법</li>
+        <li>실적자료법 </li>
+        <li>Work Sampling법</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      작업자 공정분석에 관한 설명으로 틀린 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>창고, 보전계의 업무와 경로 개선에 적용된다.</li>
+        <li checked>제품과 부품의 개선 및 설계를 위한 분석이다.</li>
+        <li>기계와 작업자 공정의 관계를 분석하는데 편리하다.</li>
+        <li>이동하면서 작업하는 작업자의 작업위치, 작업순서, 작업동작 개선을 위한 분석이다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      생산시스템의 투입(input)단계에 대한 설명으로 가장 적합한 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>변환을 통하여 새로운 가치를 창출하는 단계이다.</li>
+        <li>필요로 하는 재화나 서비스를 산출하는 단계이다.</li>
+        <li>기업의 부가가치창출 활동이 이루어지는 구조적 단계이다.</li>
+        <li checked>가치창출을 위하여 인간, 물자, 설비, 정보, 에너지 등이 필요한 단계이다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      공정 간의 균형을 위해 애로공정을 합리적으로 해결하는 방법에 속하지 않은 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li checked>부하거리법 </li>
+        <li>라인밸런싱</li>
+        <li>시뮬레이션 </li>
+        <li>대기행렬이론</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      라이트(J.M.Wright)가 주장한 채찍효과의 대처방안으로 틀린 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>변동폭의 감소(reducing variability)</li>
+        <li>리드타임의 단축(lead time reducing)</li>
+        <li>전략적 파트너십(strategic partnership)</li>
+        <li checked>불확실성의 증가(increasing uncertainty)</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      변동하는 수요에 대응하여 생산율ㆍ재고수준ㆍ고용수준ㆍ하청 등의 관리가능 변수를 최적으로 결합하기 위한 용도로 수립되는 계획은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>소일정계획(detail scheduling)</li>
+        <li>대일정계획(master scheduling)</li>
+        <li>주일정계획(master productionschedule)</li>
+        <li checked>총괄생산계획(aggregate productionplanning)</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      최소자승법에 의한 예측의 설명으로 틀린 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li checked>예측오차의 합을 최소화시킨다.</li>
+        <li>예측오차의제곱의 합을 최소화시킨다.</li>
+        <li>예측오차는 실제치와 예측치의 차이이다.</li>
+        <li>회귀선, 추세선, 예측선은 같은 의미이다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      PERT에서 어떤 요소작업을 정상작업으로 수행하면 5일에 2500만원이 소요되고 특급작업으로 수행하면 3일에 3000만원이 소요된다. 비용구배(Cost Slope)는 얼마인가?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>100만원/일 </li>
+        <li>167만원/일</li>
+        <li checked>250만원/일 </li>
+        <li>500만원/일</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      제품-생산량(P-Q)분석에서 제품과 설비배치유형을 맞게 연결시킨 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>다품종 소량생산-흐름식배치</li>
+        <li>다품종 소량생산-제품별배치</li>
+        <li>소품종 대량생산-공정별배치</li>
+        <li checked>소품종 대량생산-제품별배치</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      제품별로 수요량, 생산량, 생산능력이 다를 경우 최적의 제품조합(ProductMix)을 구하는 데 적용하는 기법은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>ABC분석</li>
+        <li>PERT/CPM</li>
+        <li checked>LP(Linear Programming)</li>
+        <li>SDR(Search Decision Rule)</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      설비 고장과 관련하여 물리적 잠재결함의 유형에 해당되는 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>기능이 부족하여 놓친다.</li>
+        <li>이 정도는 문제없다고 무시해 버린다.</li>
+        <li checked>분석하거나 진단하지 않으면 알 수 없는 내부결함이다.</li>
+        <li>눈에 보이는 데도 불구하고 무관심해서 보려고 하지 않는다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      JIT를 적용하는 생산현장에서 부품의 수요율이 1분당 3개이고, 용기당 30개의 부품을 담을 수 있을 때 필요한 간판의 수와 최대재고수는? (단, 작업장의 리드타임은 100분이다.)
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>간판수=5, 최대재고수=100</li>
+        <li>간판수=10, 최대재고수=200</li>
+        <li checked>간판수=10, 최대재고수=300</li>
+        <li>간판수=20, 최대재고수=400</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      위치고정형 배치가 적절한 산업은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li checked>스키장 </li>
+        <li>휴대폰제조</li>
+        <li>출판업 </li>
+        <li>금형제작업</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      발주점 방식과 MRP방식을 비교한 것으로 틀린 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li checked>발주점 방식은 수요패턴이 산발적이지만 MRP방식은 연속적이다.</li>
+        <li>발주점 방식의 발주개념은 보충개념이나 MRP방식의 경우 소요개념이다.</li>
+        <li>발주점 방식의 수요예측자료는 과거의 수요실적에 기반을 두지만, MRP방식은 주일정계획에 의한 수요에 의존한다.</li>
+        <li>발주점 방식에서 발주량의 크기는 경제적주문량으로 일괄적이지만, MRP방식에서는 소요량으로 임의적이다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      어떤 조립라인 작업에 있어서 1일 생산량 500개, 근무시간 8시간, 중식을 포함한 휴식시간은 100분일 때, 최종공정에서 피치마크상 완성품이 없는 경우 3%라인 정지율이 4%일 때 피치타임은 약
+      얼마인가?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li checked>0.708분 </li>
+        <li>0.793분</li>
+        <li>0.875분 </li>
+        <li>0.975분</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+
+  <span class="q_list head">제4과목 : 신뢰성관리</span>
+
+
+  <div class="q_wrap">
+    <div class="question">
+      신뢰도가 각각 0.9인 부품 3개를 그림과 같이 연결하였을 때 이 시스템의 신뢰도는 얼마인가?
+      <div class="q_list hc">
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </div>
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>0.729 </li>
+        <li checked>0.891</li>
+        <li>0.990 </li>
+        <li>0.999</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      신뢰도가 0.95인 부품이 직렬로 결합되어 시스템을 구성한다면, 시스템의 목표 신뢰도 0.90을 만족시키기 위한 부품의 수는?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li checked>2개 </li>
+        <li>3개</li>
+        <li>4개 </li>
+        <li>5개</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      부품에 가해지는 부하(y)는 평균이 25000, 표준편차가 4272인 정규분포를 따르며, 부품의 강도(x)는 평균이 50000이다. 신뢰도 0.999가 요구될 때 부품강도의 표준편차는 약 얼마인가?
+      (단,
+      P(Z≥-3.1)=0.999이다.)
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li checked>6840psi </li>
+        <li>7840psi</li>
+        <li>9850psi </li>
+        <li>13680psi</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      평균수명이 4000시간인 2개의 부품이 병렬결합된 시스템의 평균수명은 몇 시간인가?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>2000 </li>
+        <li>4000</li>
+        <li checked>6000 </li>
+        <li>8000</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      비기억(memoryless)특성을 가짐으로 수리가능한 시스템의 가용도(availability)분석에 가장 많이 사용되는 수명분포는?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>감마분포 </li>
+        <li>와이블분포</li>
+        <li checked>지수분포 </li>
+        <li>대수정규분포</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      신뢰성시험에 대한 설명 중 틀린 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>현장시험(Field Test)은 실제 사용 상태에서 실시하는 시험이다.</li>
+        <li>가속수명시험은 고장매커니즘을 촉진하기 위해 가혹한 환경조건에서 실시하는 시험이다.</li>
+        <li checked>정수중단시험은 규정된 시험시간 또는 고장발생수에 도달하면 시험을 종결하는 방식이다.</li>
+        <li>단계 스트레스시험이란 아이템에 대하여 등 간격으로 여러 증가하는 스트레스 수준을 순차적으로 적용하는 시험이다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      용어-신인성 및 서비스 품질(KS A3004:2002)규격에서 아이템의 고장 확률 또는 기능열화를 줄이기 위해 미리 정해진 간격 또는 규정된 기준에 따라 수행되는 보전을 뜻하는 용어는?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>원격보전 </li>
+        <li>제어보전</li>
+        <li checked>예방보전 </li>
+        <li>개량보전</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      고장률 곡선에서 초기에 발생하는 고장률 함수의 특성은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>AFR(average failure rate)</li>
+        <li>CFR(constant failure rate)</li>
+        <li>IFR(increasing failure rate)</li>
+        <li checked>DFR(decreasing failure rate)</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      신뢰성을 향상시키는 설계방법이 아닌 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>스트레스를 분산시킨다.</li>
+        <li checked>사용하는 부품의 수를 늘린다.</li>
+        <li>부품에 걸리는 스트레스를 경감시킨다.</li>
+        <li>스트레스에 대한 안전계수를 크게 한다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      지수분포를 따르는 부품 10개에 대해 고장이 나면 즉시 교체가 되는 수명시험으로 100시간에서 중지하였다. 이 시간 동안 고장 난 부품이 4개로 고장이 각각 10, 30, 70, 90시간에서
+      발생하였다.
+      이 부품에 대한 t0=100시간에서의 누적고장률 H(t)는 얼마인가?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>0.33/hr </li>
+        <li checked>0.40/hr</li>
+        <li>0.50/hr </li>
+        <li>0.67/hr</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      그림에서 A,B,C의 고장확률이 각각 0.02, 0.1, 0.05인 경우 정상사상의 고장 확률은?
+      <div class="q_list hc">
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </div>
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li checked>0.0001 </li>
+        <li>0.1621</li>
+        <li>0.8379 </li>
+        <li>0.9999</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      부품의 단가는 400원이고, 시험하는 전체 부품의 시간당 시험비는 60원이다. 총시험시간(T)을 200시간으로 수명시험을 할 때, 어느 것이 가장 경제적인가?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li checked>샘플 5개를 40시간 시험한다.</li>
+        <li>샘플 10개를 20시간 시험한다.</li>
+        <li>샘플 20개를 10시간 시험한다.</li>
+        <li>샘플 40개를 5시간 시험한다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      MTTF 산출식으로 맞는 것은? (단, R(t) : 신뢰도함수, f(t) : 고장밀도함수이다.)
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li checked></li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      다음 FMEA의 절차를 순서대로 나열한 것은?
+      <div class="q_list hc">
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </div>
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>㉠-㉡-㉢-㉣-㉤ </li>
+        <li>㉢-㉤-㉠-㉣-㉡</li>
+        <li>㉣-㉤-㉡-㉠-㉢ </li>
+        <li checked>㉠-㉣-㉡-㉢-㉤</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      표본의 크기가 n일 때 시간 t를 지정하여 그 시간까지 고장수를 r로 한다면 수명 t에 대한 신뢰도 R(t)의 추정식은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li></li>
+        <li checked></li>
+        <li></li>
+        <li></li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      시스템의 고장율이 0.03/hr이고 수리율이 0.1/hr인 경우, 시스템의 가용도는? (단, 고장시간과 수리시간은 지수분포를 따른다.)
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>13/3 </li>
+        <li>13/10</li>
+        <li>3/13 </li>
+        <li checked>10/13</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      가속수명시험의 시험조건 사이에 가속성이 성립한다는 것을 확률용지에서 어떻게 확인할 수 있는가?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li checked>확률용지에서 각 시험조건의 수명분포 추정선들이 서로 평행이다.</li>
+        <li>확률용지에서 각 시험조건의 수명분포 추정선들이 서로 직교한다.</li>
+        <li>확률용지에서 각 시험조건의 수명분포로 추정선들이 상호 무상관이다.</li>
+        <li>확률용지에서 각 시험조건의 수명분포 추정선들의 절편이 서로 동일하다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      샘플 10개에 대한 수명시험에서 얻은 데이터는 다음과 같다. 중앙순위법(median rank)을 이용한 t=40시간에서의 누적고장확률 (F(t))의 값은 약 얼마인가?
+      <div class="q_list hc">
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </div>
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>0.450 </li>
+        <li checked>0.452</li>
+        <li>0.455 </li>
+        <li>0.500</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      고장밀도함수가 지수분포에 따르는 부품을 100시간 사용하였을 때, 신뢰도가 0.96인 경우 순간고장률은 약 얼마인가?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>1.05×10-3/시간 </li>
+        <li>2.02×10-4시간</li>
+        <li checked>4.08×10-4시간 </li>
+        <li>5.13×10-4시간</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      지수분포의 확률지에 관한 설명으로 틀린 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>회귀선의 기울기를 구하면 평균고장률이 된다.</li>
+        <li>세로축은 누적고장률, 가로축은 고장시간을 타점하도록 되어 있다.</li>
+        <li>타점결과 원점을 지나는 직선의 형태가 되면 지수분포라 볼 수 있다.</li>
+        <li checked>누적고장률의 추정은 t시간까지의 고장회수의 역수를 취하여 이루어진다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+
+  <span class="q_list head">제5과목 : 품질경영</span>
+
+
+  <div class="q_wrap">
+    <div class="question">
+      문서관리의 근본적 목적으로 맞는 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>정확한 정보가 기록으로 남도록 하기 위하여</li>
+        <li>문제가 발생하는 경우 근거로 사용하여야 하기 때문에</li>
+        <li checked>올바른 문서만이 필요한 장소에서 사용되어 지도록 하기 위하여</li>
+        <li>외부기관의 심사에 대비하여 체계적으로 업무가 진행되고 있음을 보장하기 위하여</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      품질경영시스템-요구사항(KS Q ISO9001:2015)에서 품질경영원칙이 아닌 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>리더십 </li>
+        <li>고객중시</li>
+        <li>프로세스 접근법 </li>
+        <li checked>품질방침 및 품질목표</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      다음 조건하에서 계측시스템의 산포(σm)는 약 얼마인가?
+      <div class="q_list hc">
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </div>
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>0.78 </li>
+        <li>0.84</li>
+        <li>0.87 </li>
+        <li checked>0.94</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      산업표준화법에서 지정하고 있는 산업표준화의 대상에 해당되지 않는 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>광공업품의 시험, 분석, 감정, 부호, 단위</li>
+        <li>광공업품의 생산방법, 설계방법, 제도방법</li>
+        <li>구축물과 그 밖의 공작물의 설계, 시공방법</li>
+        <li checked>전기통선 관련 서비스의 제공절차, 체계, 평가방법</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      품질관리에 일반적으로 사용되는 용어에 대한 설명으로 틀린 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>6시그마 수준 : 부적합품(불량품)의 수가 1백만개 당 3~4개 정도로 부적합품이 거의 발생하지 않는 상태를 의미한다.</li>
+        <li>DPMO : 100만번의 기회 당 부적합 발생건수를 뜻하는 용어이며 DPMO는 시그마수준이 높을수록 작아진다.</li>
+        <li>부적합비용 : 나쁜 품질에 의해 발생되는 비용으로 실패비용이라고도 하며, 내부 실패비용과 외부실패비용으로 구분한다.</li>
+        <li checked>예방비용 : 제품이나 서비스가 제대로 작동되는지 검사하는 것과 관련된 비용과 검사, 실험실 실험, 현장실험 등에 해당하는 비용이다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      계량의 기본단위로 맞는 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>길이 : mm </li>
+        <li>질량 : g</li>
+        <li>시간 : mm </li>
+        <li checked>물질량 : mol</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      회사정책과 관리, 감독, 작업조건 등을 종업원의 불만요인으로, 성취감, 인정, 직무, 책임감, 향상, 개인진보의 가능성 등을 만족요인으로 주장한 동기부여 이론은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>Maslow 이론 </li>
+        <li checked>Herzberg 이론</li>
+        <li>McGregor 이론 </li>
+        <li>Cleland 와 Kocaoglu이론</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      부적합품 손실금액, 부적합품수, 부적합수 등을 요인별, 현상별, 공정별, 품종별등으로 분류해서 크기의 차례로 늘어놓은 그림을 무엇이라 하는가?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>산점도 </li>
+        <li checked>파레토도</li>
+        <li>그래프 </li>
+        <li>특성요인도</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      내부고객 및 외부고객에 관한 설명으로 틀린 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li checked>고객중심의 품질경영은 고객을 외부고객으로만 규정하고 종업원이 고객에게 최선을 다할 것을 강조하는 것이 무엇보다도 중요하다.</li>
+        <li>데밍은 전통적인 조직의 경계를 철폐하여 완제품의 최종소비자인 고객과 같은 외부고객은 물론 앞 공정에서 생산한 부품이나 구성품을 사용하는 후 공정, 즉 내부고객의 중요성을 강조하였다.</li>
+        <li>생산과정의 후 공정에서 일하는 작업자는 앞 공정의 고객이 된다. 이러한 관점에서 기업 내부에도 업무의 흐름에 따라 내부고객들과 유기적으로 연결되어 있으며 외부고객이란 단기 부가가치 선상의
+          최후에
+          위치해 있는 내부고객을 의미하는 것과 같다.</li>
+        <li>전통적으로 고객은 제품의 개발과정에서 대개가 제외되었다. 그러나 경쟁이 치열하게 전개되는 시장에서 이러한 방법을 고수하는 것은 위험하다. 종합적 품질경영에서 외부고객의 요구를 규명하는 것은
+          제품개발과정에서 자연스러운 현상이다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      공정의 산포가 규격의 최대, 최소치의 차보다 충분히 작고 중심이 안정된 경우의 조치사항으로 틀린 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>현행 제조공정의 관리를 계속한다.</li>
+        <li>검사주기를 늘리거나 간소화 한다.</li>
+        <li checked>실험을 계획하여 공정의 산포를 감소시킨다.</li>
+        <li>관리한계를 벗어나는 제품은 원인을 철저히 규명하여야 한다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      전기조립품을 제조하는 공장에서 공정이 안정되어 있는가를 판단하기 위해 n=5, k=20의관리도를 작성하였다. 그 결과을 얻었으며 공정이 안정된 것으로 판정되었다. 이 때 공정능력지수(CP)가 1인
+      경우
+      규정공차 (U-L)는 약 얼마인가? (단, n=5일 때, d2=2.326이다.)
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>1.368 </li>
+        <li>3.180</li>
+        <li checked>4.102 </li>
+        <li>8.204</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      6시그마 추진을 위한 교육을 받고 현조직에서 업무를 수행하면서 동시에 개선 활동팀에 참여하여 부분적인 업무를 수행하는 초급단계 요원은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>챔피언(Champion)</li>
+        <li checked>그린벨트(Green Belt)</li>
+        <li>블랙벨트(Black Belt)</li>
+        <li>마스터블랙벨트(Master Black Belt)</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      품질분임조 활동의 문제해결 과정에서 목표설정의 기준으로 틀린 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>간단명료한 목표설정</li>
+        <li>분임조 수준에 맞는 목표설정</li>
+        <li checked>독창적이고 혁신적인 목표설정</li>
+        <li>구체적이고 달성 가능한 목표설정</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      소비자의 안전에 위해를 주거나 줄 우려가 있는 제품을 기업이 공개적으로 회수해서 수리ㆍ교환ㆍ환불해 줌으로써 피해를 사전에 예방하는 직접적인 안전 확보제도를 무엇이라 하는가?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>제품보증제도 </li>
+        <li checked>리콜(recall)제도</li>
+        <li>제조물책임제도 </li>
+        <li>종합적 품질관리(TQC)제도</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      문제가 되고 있는 사상 가운데서 대응되는 요소를 찾아내어 이것을 행과 열로 배치하고, 그 교점에 각 요소간의 연관 유무나 관련정도를 표시함으로써 이원적인 배치에서 문제의 소재나 문제의 형태를 탐색하는
+      신
+      QC 수법 중 하나는?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>PDPC법 </li>
+        <li>연관도법</li>
+        <li>계통도법 </li>
+        <li checked>매트릭스도법</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      파이겐바움(A.V. Feigenbacum)이 제시한 품질에 영향을 주는 요소인 9M에 해당되지 않는 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>Men </li>
+        <li>Motivation</li>
+        <li>Markets </li>
+        <li checked>Monitoring</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      서비스에 대한 고객의 기대에 대한 설명으로 틀린 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>바람직한 서비스 수준(desired servicelevel)은 고객이 제공받기를 희망하는 서비스 수준이다.</li>
+        <li checked>고객이 지각하는 서비스 수준이 허용서비스 수준(adepuate service level)이하일때 기업은 고객을 독점하게 된다.</li>
+        <li>서비스 품질에 대한 고객의 기대는 고객이 그런대로 받아들일 수 있다고 생각하는 최저한의 품질수준이다.</li>
+        <li>서비스 품질에 대한 고객의 기대는 허용 서비스 수준(adequate service level)과 바람직한 서비스 수준(desired servicelevel)이 존재하며 그 차이가 허용차
+          영역(zone of tolerance)이다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      품질전략의 계획 수립 시 경영환경과 기업역량의 관계를 연결하여 무엇이 핵심역량이고 무엇을 보완해야 하는지를 결정하는 것이 필요하다. 이때 내부환경적 측면의 기준으로 거리가 먼 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>경영자의 리더십</li>
+        <li>조직의 신제품개발 능력</li>
+        <li checked>경쟁사 또는 경쟁공장의 동향</li>
+        <li>조직의 표준화 수준 및 실행 정도</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      품질코스트(Q-cost)와 해당내역의 연결이 잘못된 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li checked>A코스트-품질교육 코스트</li>
+        <li>P코스트-품질기술 코스트</li>
+        <li>F코스트-A/S수리 코스트</li>
+        <li>F코스트-부적합대책 코스트</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+
+  <div class="q_wrap">
+    <div class="question">
+      사내표준에 대한 설명으로 틀린 것은?
+    </div>
+    <div class="answer inline">
+      <ol>
+        <li>사내표준은 성문화된 자료로 존재하여야 한다.</li>
+        <li checked>사내표준의 개정은 기간을 정해 정기적으로 실시한다.</li>
+        <li>사내표준은 조직원 누구나 활용할 수 있도록 하여야 한다.</li>
+        <li>회사의 경영자가 솔선하여 사내규격의 유지와 실시를 촉진시켜야 한다.</li>
+      </ol>
+    </div>
+    <div class="comment">
+
+    </div>
+  </div>
+</div>
