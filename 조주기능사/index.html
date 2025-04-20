@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#프로젝트: 디오니소스</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>조주기능사 실기 레시피</h1>
+
+        <div id="cocktail-display">
+            <h3>제시된 칵테일 작품을 조주하여 제출하세요</h3>
+            <p id="cocktail-name"></p>
+        </div>
+        <div id="user-input">
+            <h2 for="method"><span class="material-symbols-outlined">pan_tool</span> 조주법</h2>
+            <div id="method" class="card-container"></div>
+            <br>
+            <h2 for="glass"> <span class="material-symbols-outlined">local_bar</span> 글라스 </h2>
+            <div id="glass" class="card-container"></div>
+            <br>
+            <h2 for="garnish"> <span class="material-symbols-outlined">nutrition</span> 가니쉬</h2>
+            <div id="garnish" class="card-container"></div>
+            <br>
+            <h2 for="ingredients"> <span class="material-symbols-outlined">liquor</span> 재료</h2>
+            <div id="ingredients" class="card-container"></div>
+        </div>
+        <div class="submit-container">
+            <button id="submit-answer">제출</button>
+            <label><input type="checkbox" id="new-cocktail-on-submit"> 제출 시 다른 칵테일 제시</label>
+        </div>
+        <button id="re-roll"
+            onclick="initializeQuiz(document.getElementById('select_cocktail_no').value); document.getElementById('select_cocktail_no').value='';">지금
+            바로 다른 칵테일
+            제시</button> <input id="select_cocktail_no">
+        <div id="result">
+            <h2>결과</h2>
+            <p id="message"></p>
+            <div id="answer-table"></div>
+            <p>점수: <span id="score">0</span></p>
+        </div>
+        <!-- 추가 -->
+        <div id="recipe-list-container">
+            <h2>레시피 목록</h2>
+            <ul id="recipe-list"></ul>
+        </div>
+        <button id="recipe-button">레시피</button>
+    </div>
+    <script src="sub__recipe_list.js"></script>
+
+</html>

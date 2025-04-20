@@ -1,0 +1,206 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 5em 10em 25em;
+}
+
+.container {
+  /* max-width: 600px; */
+  margin: 0 auto;
+}
+
+body .material-symbols-outlined {
+  font-size: 1.125em;
+  vertical-align: text-bottom;
+}
+
+h1,
+h2 {
+  /* text-align: center; */
+}
+
+#cocktail-name {
+  font-size: 5em;
+  font-weight: bold;
+  text-decoration: underline;
+  /* margin-bottom: 20px; */
+}
+#cocktail-name .subtitle {
+  font-size: 0.5em;
+  /* opacity:.5; */
+  color: #888;
+  font-weight: normal;
+  font-style: italic;
+}
+#cocktail-name::before,
+#cocktail-name::after {
+  content: "✨";
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(150px, 1fr)
+  ); /* 카드의 최소 너비를 150px로 설정 */
+  gap: 10px; /* 카드 간 간격 */
+}
+
+.card {
+  /* width: 100px; */
+  /* height: 200px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 수평 가운데 정렬 */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none; /* 텍스트 선택 방지 */
+}
+
+.card input[type="checkbox"] {
+  display: none; /* 체크박스 숨김 */
+}
+
+.card:has(input[type="checkbox"]:checked) {
+  background-color: #e0f7fa; /* 예시: 배경색 변경 */
+  border-color: #0097a7; /* 예시: 테두리 색상 변경 */
+}
+
+.card label {
+  cursor: pointer;
+}
+
+.card img {
+  width: 128px;
+  image-rendering: pixelated;
+}
+.card span {
+  font-size: 14px;
+  margin: 1em 0;
+}
+
+#submit-answer {
+  font-size: 1.5em;
+  display: block;
+  width: 20em;
+  max-width: 100%;
+  margin: 5em auto;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+#message {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.correct {
+  background-color: lightgreen;
+}
+
+.incorrect {
+  background-color: lightcoral;
+}
+
+#answer-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#answer-table th,
+#answer-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#answer-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+#recipe-list-container {
+  --recipe-list-width: 450px;
+  position: fixed;
+  left: calc(var(--recipe-list-width) * -1 - 2em);
+  /* 초기 위치 (숨김) */
+  top: 0;
+  width: var(--recipe-list-width);
+  height: 100%;
+  background-color: #f0f0f0;
+  transition: left 0.3s ease; /* 슬라이드 효과 */
+  /* padding: 1em; */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  overflow: scroll;
+  z-index: 10;
+}
+
+#recipe-list-container.on {
+  left: 0; /* 표시 위치 */
+}
+
+#recipe-list-container::-webkit-scrollbar {
+  display: none;
+}
+#recipe-list-container h2 {
+  padding-left: 1em;
+}
+#recipe-list {
+  list-style: none;
+  padding: 0;
+}
+
+#recipe-list li:not(.recipe-detail li) {
+  padding: 1em 1.5em;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd; /* 각 항목 구분선 추가 */
+}
+
+#recipe-list li:not(.recipe-detail li):hover {
+  background-color: #e0e0e0;
+}
+
+#recipe-button {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.recipe-detail {
+  padding: 0 1em;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+}
+
+.recipe-detail p {
+  margin: 5px 0;
+}
+#recipe-list .recipe-detail ul {
+}
+#recipe-list .recipe-detail li {
+  margin: 0;
+  padding: 0.5em;
+}
+
+#result {
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 20em);
+}
