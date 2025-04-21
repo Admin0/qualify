@@ -17,12 +17,12 @@
       "name": "Old-fashioned"
     },
     "Collins Glass": { "img": "class_collins", "name": "Collins" },
-    "Champagne Glass (saucer형)": { "img": "none", "name": "Champagne" },
-    "Flute Champagne Glass": { "img": "none", "name": "Flute Champagne" },
-    "White Wine Glass": { "img": "none", "name": "White Wine" },
-    "Sherry Glass(2oz)": { "img": "none", "name": "Sherry" },
-    "Stemed Liqueur Glass": { "img": "none", "name": "Liqueur" },
-    "Sour Glass": { "img": "none", "name": "Sour" }
+    "Champagne Glass (saucer형)": { "img": "class_champagnesaucer", "name": "Champagne (saucer)" },
+    "Flute Champagne Glass": { "img": "class_champagneflute", "name": "Flute Champagne" },
+    "White Wine Glass": { "img": "class_whitewine", "name": "White Wine" },
+    "Sherry Glass (2 oz)": { "img": "class_sherry", "name": "Sherry" },
+    "Stemed Liqueur Glass": { "img": "class_liqueur", "name": "Liqueur" },
+    "Sour Glass": { "img": "class_sour", "name": "Sour" }
   },  
   "가니쉬": {
     "없음": { "img": "none" },
@@ -44,32 +44,44 @@
     "Wedge": { "img": "none" }
   },
   "재료": [
-    "Brandy",
     "Bourbon Whiskey",
+    "Scotch Whisky",
+
+    "Brandy",
+    "Apple Brandy",
+    "Cherry Flavored Brandy",
+    "Apricot Flavored Brandy",
+
     "Dry Gin",
+
+    "Light Rum",
+    "Coconut Flavored Rum",
+
+    "Vodka",
+
+    "Tequila",
+
+
     "Sweet Vermouth",
     "Dry Vermouth",
-    "Vodka",
     "Coffee Liqueur",
     "Coffee Liqueur (Kahlúa)",
-    "Tequila",
-    "Scotch Whisky",
     "Drambuie",
-    "Light Rum",
-    "Flavored Brandy",
     "Midori (Melon Liqueur)",
-    "Coconut Flavored Rum",
     "Banana Liqueur",
     "Bacardi Rum White",
     "Triple Sec",
     "Cointreau or Triple Sec",
     "Apple Pucker (Sour apple Liqueur)",
     "Campari",
-    "Apple Brandy",
     "Benedictine DOM",
     "Blue Curacao",
     "White Wine",
     "Angostura Bitters",
+    "Bailey's Irish Cream Liqueur",
+    "Grand Marnier",
+    "Créme de Cassis",
+
     "Gam Hong Ro(40도)",
     "Andong Soju(35도)",
     "Jindo Hong Ju(40도)",
@@ -81,27 +93,25 @@
     "Crème De Cacao (White)",
     "Crème De Cacao (Brown)",
 
+    "Grenadine Syrup",
+    "Raspberry Syrup",
+
     "Lemon Juice",
     "Lime Juice",
-    "Grenadine Syrup",
     "Orange Juice",
     "Pineapple Juice",
-    "Soda Water",
+    "Cranberry Juice",
+    "Grapefruit Juice",
+    "White Grape Juice (청포도주스)",
+    "Fresh squeezed Lemon",
 
+    "Soda Water",
+    "Sprite",
+    "Ginger ale",
     "Light Milk",
     "Cola",
     "Sweet & Sour mix",
-    "Bailey's Irish Cream Liqueur",
-    "Grand Marnier",
     "Pina Colada Mix",
-    "Cranberry Juice",
-    "Grapefruit Juice",
-    "Sprite",
-    "Créme de Cassis",
-    "Raspberry Syrup",
-    "White Grape Juice (청포도주스)",
-    "Fresh squeezed Lemon",
-    "Ginger ale",
 
     "Powdered Sugar"
   ]

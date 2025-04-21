@@ -1,6 +1,6 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 5em 10em 25em;
+  font-size: 0.85em;
 }
 
 .container {
@@ -46,7 +46,7 @@ select {
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
-    minmax(150px, 1fr)
+    minmax(100px, 1fr)
   ); /* 카드의 최소 너비를 150px로 설정 */
   gap: 10px; /* 카드 간 간격 */
 }
@@ -63,6 +63,7 @@ select {
   text-align: center;
   cursor: pointer;
   user-select: none; /* 텍스트 선택 방지 */
+  /* overflow: hidden; */
 }
 
 .card input[type="checkbox"] {
@@ -79,12 +80,20 @@ select {
 }
 
 .card img {
-  width: 128px;
+  /* width: 128px; */
   image-rendering: pixelated;
 }
 .card span {
   font-size: 14px;
-  margin: 1em 0;
+  margin: 0.5em 0 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+
+.card:hover span {
+  overflow: visible;
 }
 
 #submit-answer {

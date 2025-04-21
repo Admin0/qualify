@@ -1,5 +1,6 @@
 {
     "IDX.aI.enableInlineCompletion": true,
     "IDX.aI.enableCodebaseIndexing": true,
-    "svg.preview.background": "transparent"
+    "svg.preview.background": "transparent",
+    "liveServer.settings.port": 5502
 }

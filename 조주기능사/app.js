@@ -253,7 +253,14 @@ function displayFeedback(isCorrect, userAnswer, cocktail) {
     row.appendChild(labelCell);
 
     const correctGarnishCell = document.createElement("td");
-    correctGarnishCell.textContent = correctGarnish.join(", ");
+    correctGarnishCell.textContent = correctGarnish
+      .map((garnish) => {
+        const preparation = cocktail.recipe.가니쉬[garnish];
+        return preparation
+          ? `${garnish} ${preparation}`
+          : `${garnish}`;
+      })
+      .join(", ");
     row.appendChild(correctGarnishCell);
 
     const userGarnishCCell = document.createElement("td");
