@@ -1,0 +1,15 @@
+@media only screen and (max-width:1080px) {
+    body {
+      margin: 1em;
+    }
+    #cocktail-name {
+        font-size: 3em;
+    }
+  }
+  
+  @media handheld, only screen and (max-width:720px) {
+    header .timer {
+      display: none;
+    }
+  }
+  

@@ -17,13 +17,19 @@
       "name": "Old-fashioned"
     },
     "Collins Glass": { "img": "class_collins", "name": "Collins" },
-    "Champagne Glass (saucer형)": { "img": "class_champagnesaucer", "name": "Champagne (saucer)" },
-    "Flute Champagne Glass": { "img": "class_champagneflute", "name": "Flute Champagne" },
+    "Champagne Glass (saucer형)": {
+      "img": "class_champagnesaucer",
+      "name": "Champagne (saucer)"
+    },
+    "Flute Champagne Glass": {
+      "img": "class_champagneflute",
+      "name": "Flute Champagne"
+    },
     "White Wine Glass": { "img": "class_whitewine", "name": "White Wine" },
     "Sherry Glass (2 oz)": { "img": "class_sherry", "name": "Sherry" },
     "Stemed Liqueur Glass": { "img": "class_liqueur", "name": "Liqueur" },
     "Sour Glass": { "img": "class_sour", "name": "Sour" }
-  },  
+  },
   "가니쉬": {
     "없음": { "img": "none" },
     "Cherry": { "img": "garnish_cherry" },
@@ -35,7 +41,7 @@
     "Apple": { "img": "garnish_apple" },
     "Nutmeg Powder": { "img": "garnish_nutmegpowder" },
     "Salt": { "img": "garnish_salt" }
-    },
+  },
   "가니쉬_손질": {
     "없음": { "img": "none" },
     "Slice": { "img": "none" },
@@ -43,76 +49,110 @@
     "Twist of peel": { "img": "none" },
     "Wedge": { "img": "none" }
   },
-  "재료": [
-    "Bourbon Whiskey",
-    "Scotch Whisky",
-
-    "Brandy",
-    "Apple Brandy",
-    "Cherry Flavored Brandy",
-    "Apricot Flavored Brandy",
-
-    "Dry Gin",
-
-    "Light Rum",
-    "Coconut Flavored Rum",
-
-    "Vodka",
-
-    "Tequila",
-
-
-    "Sweet Vermouth",
-    "Dry Vermouth",
-    "Coffee Liqueur",
-    "Coffee Liqueur (Kahlúa)",
-    "Drambuie",
-    "Midori (Melon Liqueur)",
-    "Banana Liqueur",
-    "Bacardi Rum White",
-    "Triple Sec",
-    "Cointreau or Triple Sec",
-    "Apple Pucker (Sour apple Liqueur)",
-    "Campari",
-    "Benedictine DOM",
-    "Blue Curacao",
-    "White Wine",
-    "Angostura Bitters",
-    "Bailey's Irish Cream Liqueur",
-    "Grand Marnier",
-    "Créme de Cassis",
-
-    "Gam Hong Ro(40도)",
-    "Andong Soju(35도)",
-    "Jindo Hong Ju(40도)",
-    "Geumsan Insamju (43도)",
-    "Sunwoonsan bokbunja wine",
-
-    "Créme de Menthe (White)",
-    "Crème De Menthe (Green)",
-    "Crème De Cacao (White)",
-    "Crème De Cacao (Brown)",
-
-    "Grenadine Syrup",
-    "Raspberry Syrup",
-
-    "Lemon Juice",
-    "Lime Juice",
-    "Orange Juice",
-    "Pineapple Juice",
-    "Cranberry Juice",
-    "Grapefruit Juice",
-    "White Grape Juice (청포도주스)",
-    "Fresh squeezed Lemon",
-
-    "Soda Water",
-    "Sprite",
-    "Ginger ale",
-    "Light Milk",
-    "Cola",
-    "Sweet & Sour mix",
-    "Pina Colada Mix",
-
-    "Powdered Sugar"
-  ]
+  "재료": {
+    "Bourbon Whiskey": { "img": ["버번위스키0"] },
+    "Scotch Whisky": {
+      "img": [
+        "스카치위스키0",
+        "스카치위스키1",
+        "스카치위스키2",
+        "스카치위스키3"
+      ]
+    },
+    "Brandy": { "img": ["브랜디0", "브랜디1", "브랜디2"] },
+    "Apple Brandy": { "img": ["애플브랜디0", "애플브랜디1"] },
+    "Cherry Flavored Brandy": {
+      "img": ["체리_리큐어1", "체리_리큐어2", "체리_리큐어3", "체리_리큐어4"]
+    },
+    "Apricot Flavored Brandy": {
+      "img": [
+        "애프리콧0",
+        "애프리콧_리큐어1",
+        "애프리콧_리큐어2",
+        "애프리콧_리큐어3"
+      ]
+    },
+    "Dry Gin": {
+      "img": ["드라이진0", "드라이진1", "드라이진2", "드라이진3", "드라이진4"]
+    },
+    "Light Rum": { "img": ["화이트럼0"] },
+    "Coconut Flavored Rum": { "img": ["코코넛_리큐어0"] },
+    "Vodka": { "img": ["보드카0", "보드카1", "보드카2", "보드카3"] },
+    "Tequila": { "img": ["데킬라0", "데킬라1", "데킬라2"] },
+    "Sweet Vermouth": { "img": ["스위트베르무트0", "스위트베르무트1"] },
+    "Dry Vermouth": { "img": ["드라이_베르무트0", "드라이_베르무트1"] },
+    "Coffee Liqueur": { "img": ["커피_리큐어0"] },
+    "Coffee Liqueur (Kahlúa)": { "img": ["커피_리큐어0"] },
+    "Drambuie": { "img": ["드람부이0", "드람부이1"] },
+    "Midori (Melon Liqueur)": {
+      "img": ["멜론_리큐어", "멜론_리큐어0", "멜론_리큐어1", "멜론_리큐어2"]
+    },
+    "Banana Liqueur": {
+      "img": ["바나나_리큐어0", "바나나_리큐어1", "바나나_리큐어2"]
+    },
+    "Bacardi Rum White": {
+      "img": [
+        "바카디럼__화이트럼0",
+        "바카디럼__화이트럼1",
+        "바카디럼__화이트럼2"
+      ]
+    },
+    "Triple Sec": { "img": ["트리플_섹0", "트리플_섹1", "트리플_섹2"] },
+    "Cointreau": {
+      "img": ["쿠앵트로0"]
+    },
+    "Apple Pucker (Sour apple Liqueur)": { "img": ["애플_퍼커0"] },
+    "Campari": { "img": ["캄파리0"] },
+    "Benedictine DOM": { "img": ["베네딕틴0"] },
+    "Blue Curacao": {
+      "img": ["블루_큐라소0", "블루_큐라소1", "블루_큐라소2", "블루_큐라소3"]
+    },
+    "White Wine": { "img": ["화이트와인1", "화이트와인2", "화이트와인3"] },
+    "Angostura Bitters": { "img": ["앙고스투라비터0"] },
+    "Bailey's Irish Cream Liqueur": { "img": ["베일리스0", "베일리스1"] },
+    "Grand Marnier": { "img": ["그랑_마니에르0"] },
+    "Créme de Cassis": {
+      "img": [
+        "크림_드_카시스0",
+        "크림_드_카시스1",
+        "크림_드_카시스2",
+        "크림_드_카시스3"
+      ]
+    },
+    "Gam Hong Ro(40도)": { "img": ["감흥로0"] },
+    "Andong Soju(35도)": { "img": ["안동소주0", "안동소주1"] },
+    "Jindo Hong Ju(40도)": { "img": ["진도홍주0"] },
+    "Geumsan Insamju (43도)": { "img": ["금산인삼주0", "금산인삼주1"] },
+    "Sunwoonsan bokbunja wine": {
+      "img": ["선운산_복분자주0", "선운산_복분자주1"]
+    },
+    "Créme de Menthe (White)": { "img": ["민트_화이트0", "민트_화이트1"] },
+    "Crème De Menthe (Green)": {
+      "img": ["민트_그린0", "민트_그린1", "민트_그린2"]
+    },
+    "Crème De Cacao (White)": {
+      "img": ["카카오_화이트0", "카카오_화이트1", "카카오_화이트2"]
+    },
+    "Crème De Cacao (Brown)": {
+      "img": ["카카오_브라운0", "카카오_브라운1", "카카오_브라운2"]
+    },
+    "Grenadine Syrup": { "img": ["그레나딘시럽0"] },
+    "Raspberry Syrup": { "img": ["라즈베리_시럽1"] },
+    "Lemon Juice": { "img": ["레몬주스"] },
+    "Lime Juice": { "img": ["라임주스"] },
+    "Orange Juice": { "img": ["오렌지주스"] },
+    "Pineapple Juice": { "img": ["파인애플주스0", "파인애플주스1"] },
+    "Cranberry Juice": { "img": ["크랜베리_주스0"] },
+    "Grapefruit Juice": { "img": ["자몽_주스0"] },
+    "White Grape Juice (청포도주스)": { "img": ["청포도주스0"] },
+    "Fresh squeezed Lemon": { "img": [] },
+    "Soda Water": { "img": ["토닉워터_소다워터_진저에일0"] },
+    "Sprite": { "img": [] },
+    "Ginger ale": { "img": [] },
+    "Light Milk": { "img": ["우유"] },
+    "Cola": { "img": [] },
+    "Sweet & Sour mix": { "img": ["스위트_앤_사워_믹스1"] },
+    "Pina Colada Mix": { "img": ["피나콜라다_믹스0"] },
+    "Powdered Sugar": { "img": [] }
+  }
 }

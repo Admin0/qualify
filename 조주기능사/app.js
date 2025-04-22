@@ -51,11 +51,20 @@ function displayCocktail(cocktail, materialData) {
     .join("");
 
   const ingredientsDiv = document.getElementById("ingredients");
-  ingredientsDiv.innerHTML = materialData.재료
+  ingredientsDiv.innerHTML = Object.keys(materialData.재료)
     .map((ingredient) => {
-      const isChecked =
-        cocktail.recipe.재료 && cocktail.recipe.재료.hasOwnProperty(ingredient);
-      return `<label class="card"><input type="checkbox" name="ingredient" value="${ingredient}" ${""}>${ingredient}</label>`;
+      const imgList = materialData.재료[ingredient].img;
+      let imgSrc = "imgs/none.png";
+      if (imgList && imgList.length > 0) {
+        const randomIndex = Math.floor(Math.random() * imgList.length);
+        imgSrc = `imgs_재료/${imgList[randomIndex]}.png`;
+      }
+
+      return `<label class="card">
+                <img src="${imgSrc}" alt="${ingredient}" class="ingredient-image">
+                <input type="checkbox" name="ingredient" value="${ingredient}">
+                <span>${ingredient}</span>
+              </label>`;
     })
     .join("");
 }
