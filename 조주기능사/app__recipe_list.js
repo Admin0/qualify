@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", async () => {
-  const recipeButton = document.getElementById("recipe-button");
-  const recipeListContainer = document.getElementById("recipe-list-container");
   const recipeList = document.getElementById("recipe-list");
 
   // 레시피 목록 생성
@@ -53,17 +51,4 @@ document.addEventListener("DOMContentLoaded", async () => {
   // console.log(recipes);
   createRecipeList(recipes);
 
-  recipeButton.addEventListener("click", () => {
-    recipeListContainer.classList.toggle("on");
-  });
-
-  // 외부 클릭 시 레시피 목록 닫기
-  document.addEventListener("click", (event) => {
-    if (
-      !recipeButton.contains(event.target) &&
-      !recipeListContainer.contains(event.target)
-    ) {
-      recipeListContainer.classList.remove("on");
-    }
-  });
 });

@@ -67,6 +67,8 @@ function displayCocktail(cocktail, materialData) {
               </label>`;
     })
     .join("");
+
+
 }
 
 function collectUserAnswer() {
@@ -102,7 +104,7 @@ function checkAnswer(userAnswer, cocktail) {
     isIngredientsCorrect;
 
   console.table({
-    선택지: ["조주법", "글라스", "가니쉬", "재료"],
+    카테고리: ["조주법", "글라스", "가니쉬", "재료"],
     선택: [
       userAnswer.method,
       userAnswer.glass,
@@ -127,17 +129,6 @@ function checkAnswer(userAnswer, cocktail) {
   return isCorrect;
 }
 
-let score = 0; // 점수
-let totalQuestions = 0; // 전체 문제 수
-let attemptedQuestions = 0; // 풀이한 문제 수
-
-function displayScore() {
-  const scoreElement = document.getElementById("score");
-  const percentage =
-    attemptedQuestions > 0 ? Math.round((score / attemptedQuestions) * 100) : 0;
-  scoreElement.textContent = `${percentage}% (${score}/${attemptedQuestions})`;
-}
-
 async function initializeQuiz(index) {
   try {
     const [recipeData, materialData] = await Promise.all([
@@ -160,39 +151,15 @@ async function initializeQuiz(index) {
       cocktail = getRandomCocktail(cocktails);
     }
     displayCocktail(cocktail, materialData);
+    initializeHighlightRecipeItems(cocktail, recipeData);    // initializeHighlightRecipeItems 함수를 여기서 호출하고 cocktails 데이터를 전달합니다.
 
-    displayScore();
     const newCocktailCheckbox = document.getElementById(
       "new-cocktail-on-submit"
-    );
-    newCocktailCheckbox.checked = JSON.parse(
-      localStorage.getItem("newCocktailOnSubmit") || "false"
     );
 
     const submitButton = document.getElementById("submit-answer");
     const nextQuestionCheckbox = document.getElementById("next-question");
     const form = document.getElementById("quiz-form");
-
-    submitButton.addEventListener("click", () => {
-      const userAnswer = collectUserAnswer();
-      const isCorrect = checkAnswer(userAnswer, cocktail);
-      if (isCorrect) score++;
-      attemptedQuestions++;
-      displayScore();
-      displayFeedback(isCorrect, userAnswer, cocktail);
-
-      if (document.getElementById("new-cocktail-on-submit").checked)
-        initializeQuiz();
-      localStorage.setItem(
-        "newCocktailOnSubmit",
-        JSON.stringify(newCocktailCheckbox.checked)
-      );
-      if (form) {
-        form.querySelectorAll("input:not([type=checkbox])").forEach((input) => {
-          input.value = "";
-        });
-      }
-    });
 
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   } catch (error) {
@@ -202,7 +169,76 @@ async function initializeQuiz(index) {
   }
 }
 
-function displayFeedback(isCorrect, userAnswer, cocktail) {
+function initializeHighlightRecipeItems(cocktail, recipeData) {
+
+  const checkboxes = document.querySelectorAll('#user-input input[type="checkbox"]');
+  checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener('change', (event) => {
+
+      // 정답 처리 로직
+      const userAnswer = collectUserAnswer();
+      const isCorrect = checkAnswer(userAnswer, cocktail);
+      displayFeedback(isCorrect, userAnswer, cocktail);
+
+      // console.log("Checkbox changed: ", event.target.value);
+
+      const cocktailsListOn = [];  // 뭐 하나라도 포함되는 거
+      const cocktailsListFit = []; // 전부 포함하는 거
+
+      for (const cocktailName of Object.keys(recipeData)) {
+        const recipe = recipeData[cocktailName];
+        let on = false;
+        let fit = true;
+        document.querySelectorAll("#recipe-list > li")[recipe.번호 - 1].classList.remove("fit", "on");
+
+        if (userAnswer.method) {
+          if (userAnswer.method == recipe.조주법) {
+            on = true;
+          } else {
+            fit = false;
+          }
+        }
+
+        if (userAnswer.glass) {
+          if (userAnswer.glass == recipe.글라스) {
+            on = true;
+          } else {
+            fit = false;
+          }
+        }
+
+        if (userAnswer.garnish.length > 0) {
+          if (userAnswer.garnish.some(ingredient => Object.keys(recipe.가니쉬).includes(ingredient))) { // 하나라도 포함되면
+            on = true;
+          } else {
+            fit = false;
+          }
+        }
+
+        if (userAnswer.ingredients.length > 0) {
+          if (userAnswer.ingredients.some(ingredient => Object.keys(recipe.재료).includes(ingredient))) { // 하나라도 포함되면
+            on = true;
+          } else {
+            fit = false;
+          }
+        }
+        console.log(userAnswer.ingredients.length);
+
+        if (on) {
+          cocktailsListOn.push(cocktailName);
+          document.querySelectorAll("#recipe-list > li")[recipe.번호 - 1].classList.add("on");
+        }
+        if (fit) {
+          cocktailsListFit.push(cocktailName);
+          document.querySelectorAll("#recipe-list > li")[recipe.번호 - 1].classList.add("fit");
+        }
+      }
+      console.log("Matching cocktails: ", cocktailsListOn, cocktailsListFit);
+    });
+  });
+}
+
+function displayFeedback(isCorrect, userAnswer, cocktail) { // Keep this function as is, it's for quiz feedback
   const resultDiv = document.getElementById("result");
   const message = isCorrect ? "정답입니다!" : "오답입니다.";
   resultDiv.querySelector("#message").textContent = message;
@@ -276,9 +312,8 @@ function displayFeedback(isCorrect, userAnswer, cocktail) {
     const userGarnishCText = userGarnish
       .map((garnish) => {
         const isCorrect = correctGarnish.includes(garnish);
-        return `<span style="background-color: ${
-          isCorrect ? "lightgreen" : "lightcoral"
-        }; padding: 2px;">${garnish}</span>`;
+        return `<span style="background-color: ${isCorrect ? "lightgreen" : "lightcoral"
+          }; padding: 2px;">${garnish}</span>`;
       })
       .join(", ");
     userGarnishCCell.innerHTML = userGarnishCText;
@@ -311,9 +346,8 @@ function displayFeedback(isCorrect, userAnswer, cocktail) {
     const userIngredientsText = userIngredients
       .map((ingredient) => {
         const isCorrect = correctIngredients.includes(ingredient);
-        return `<span style="background-color: ${
-          isCorrect ? "lightgreen" : "lightcoral"
-        }; padding: 2px;">${ingredient}</span>`;
+        return `<span style="background-color: ${isCorrect ? "lightgreen" : "lightcoral"
+          }; padding: 2px;">${ingredient}</span>`;
       })
       .join(", ");
     userIngredientsCell.innerHTML = userIngredientsText;
@@ -333,4 +367,6 @@ function displayFeedback(isCorrect, userAnswer, cocktail) {
   answerTable.appendChild(table);
 }
 
-document.addEventListener("DOMContentLoaded", initializeQuiz);
+document.addEventListener("DOMContentLoaded", () => {
+  initializeQuiz();
+});

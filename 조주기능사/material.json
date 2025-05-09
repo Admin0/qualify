@@ -97,10 +97,7 @@
         "바카디럼__화이트럼2"
       ]
     },
-    "Triple Sec": { "img": ["트리플_섹0", "트리플_섹1", "트리플_섹2"] },
-    "Cointreau": {
-      "img": ["쿠앵트로0"]
-    },
+    "Triple Sec": { "img": ["트리플_섹0", "트리플_섹1", "트리플_섹2", "쿠앵트로0"] },
     "Apple Pucker (Sour apple Liqueur)": { "img": ["애플_퍼커0"] },
     "Campari": { "img": ["캄파리0"] },
     "Benedictine DOM": { "img": ["베네딕틴0"] },
@@ -122,7 +119,7 @@
     "Gam Hong Ro(40도)": { "img": ["감흥로0"] },
     "Andong Soju(35도)": { "img": ["안동소주0", "안동소주1"] },
     "Jindo Hong Ju(40도)": { "img": ["진도홍주0"] },
-    "Geumsan Insamju (43도)": { "img": ["금산인삼주0", "금산인삼주1"] },
+    "Geumsan Insamju (43도)": { "img": ["금산인삼주0"] },
     "Sunwoonsan bokbunja wine": {
       "img": ["선운산_복분자주0", "선운산_복분자주1"]
     },
@@ -145,14 +142,14 @@
     "Cranberry Juice": { "img": ["크랜베리_주스0"] },
     "Grapefruit Juice": { "img": ["자몽_주스0"] },
     "White Grape Juice (청포도주스)": { "img": ["청포도주스0"] },
-    "Fresh squeezed Lemon": { "img": [] },
-    "Soda Water": { "img": ["토닉워터_소다워터_진저에일0"] },
-    "Sprite": { "img": [] },
-    "Ginger ale": { "img": [] },
+    "Fresh squeezed Lemon": { "img": ["레몬"] },
+    "Soda Water": { "img": ["소다워터0"] },
+    "Sprite": { "img": ["스프라이트0"] },
+    "Ginger ale": { "img": ["진저에일0"] },
     "Light Milk": { "img": ["우유"] },
-    "Cola": { "img": [] },
+    "Cola": { "img": ["콜라"] },
     "Sweet & Sour mix": { "img": ["스위트_앤_사워_믹스1"] },
     "Pina Colada Mix": { "img": ["피나콜라다_믹스0"] },
-    "Powdered Sugar": { "img": [] }
+    "Powdered Sugar": { "img": ["설탕"] }
   }
 }
