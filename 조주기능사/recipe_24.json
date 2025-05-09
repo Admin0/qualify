@@ -3,12 +3,17 @@
     "번호": 1,
     "조주법": "Float",
     "글라스": "Stemed Liqueur Glass",
-    "가니쉬": { "없음": "" },
+    "가니쉬": {
+      "없음": ""
+    },
     "재료": {
       "Grenadine Syrup": "1/3 part",
       "Crème De Menthe (Green)": "1/3 part",
       "Brandy": "1/3 part"
-    }
+    },
+    "TMI": [
+      "칵테일의 여왕"
+    ]
   },
   "Manhattan": {
     "번호": 2,
@@ -21,7 +26,10 @@
       "Bourbon Whiskey": "1 1/2 oz",
       "Sweet Vermouth": "3/4 oz",
       "Angostura Bitters": "1 dash"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Dry Martini": {
     "번호": 3,
@@ -33,7 +41,10 @@
     "재료": {
       "Dry Gin": "2 oz",
       "Dry Vermouth": "1/3 oz"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Old Fashioned": {
     "번호": 4,
@@ -48,193 +59,283 @@
       "Powdered Sugar": "1 tsp",
       "Angostura Bitters": "1 dash",
       "Soda Water": "1/2 oz"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Brandy Alexander": {
     "번호": 5,
     "조주법": "Shake",
     "글라스": "Cocktail Glass",
-    "가니쉬": { "Nutmeg Powder": "" },
+    "가니쉬": {
+      "Nutmeg Powder": ""
+    },
     "재료": {
       "Brandy": "3/4 oz",
       "Crème De Cacao (Brown)": "3/4 oz",
       "Light Milk": "3/4 oz"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Singapore Sling": {
     "번호": 6,
     "조주법": "Shake/Build",
     "글라스": "Footed Pilsner Glass",
-    "가니쉬": { "Orange": "Slice", "Cherry": "" },
+    "가니쉬": {
+      "Orange": "Slice",
+      "Cherry": ""
+    },
     "재료": {
       "Dry Gin": "1 1/2 oz",
       "Powdered Sugar": "1 tsp",
       "Lemon Juice": "1/2 oz",
       "Soda Water": "Fill",
       "Cherry Flavored Brandy": "On Top with 1/2 oz"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Black Russian": {
     "번호": 7,
     "조주법": "Build",
     "글라스": "Old-fashioned Glass",
-    "가니쉬": { "없음": "" },
+    "가니쉬": {
+      "없음": ""
+    },
     "재료": {
       "Vodka": "1 oz",
       "Coffee Liqueur": "1/2 oz"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Margarita": {
     "번호": 8,
     "조주법": "Shake",
     "글라스": "Cocktail Glass",
-    "가니쉬": { "Salt": "Rimming" },
+    "가니쉬": {
+      "Salt": "Rimming"
+    },
     "재료": {
       "Tequila": "1 1/2 oz",
       "Triple Sec": "1/2 oz",
       "Lime Juice": "1/2 oz"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Rusty Nail": {
     "번호": 9,
     "조주법": "Build",
     "글라스": "Old-fashioned Glass",
-    "가니쉬": { "없음": "" },
+    "가니쉬": {
+      "없음": ""
+    },
     "재료": {
       "Scotch Whisky": "1 oz",
       "Drambuie": "1/2 oz"
-    }
+    },
+    "TMI": [
+      "[스카치 위스키]와 [드람부이] 둘 다 [러스티 네일]에만 사용된다."
+    ]
   },
   "Whiskey Sour": {
     "번호": 10,
     "조주법": "Shake/Build",
     "글라스": "Sour Glass",
-    "가니쉬": { "Lemon": "Slice", "Cherry": "" },
+    "가니쉬": {
+      "Lemon": "Slice",
+      "Cherry": ""
+    },
     "재료": {
       "Bourbon Whiskey": "1 1/2 oz",
       "Lemon Juice": "1/2 oz",
       "Powdered Sugar": "1 tsp",
       "Soda Water": "On top with 1 oz"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "New York": {
     "번호": 11,
     "조주법": "Shake",
     "글라스": "Cocktail Glass",
-    "가니쉬": { "Lemon": "Twist of peel" },
+    "가니쉬": {
+      "Lemon": "Twist of peel"
+    },
     "재료": {
       "Bourbon Whiskey": "1 1/2 oz",
       "Lime Juice": "1/2  oz",
       "Powdered Sugar": "1 tsp",
       "Grenadine Syrup": "1/2 tsp"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Daiquiri": {
     "번호": 12,
     "조주법": "Shake",
     "글라스": "Cocktail Glass",
-    "가니쉬": { "없음": "" },
+    "가니쉬": {
+      "없음": ""
+    },
     "재료": {
       "Light Rum": "1 3/4 oz",
       "Lime Juice": "3/4  oz",
       "Powdered Sugar": "1 tsp"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "B-52": {
     "번호": 13,
     "조주법": "Float",
     "글라스": "Sherry Glass (2 oz)",
-    "가니쉬": { "없음": "" },
+    "가니쉬": {
+      "없음": ""
+    },
     "재료": {
       "Coffee Liqueur": "1/3 part",
       "Bailey's Irish Cream Liqueur": "1/3 part",
       "Grand Marnier": "1/3 part"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "June Bug": {
     "번호": 14,
     "조주법": "Shake",
     "글라스": "Collins Glass",
-    "가니쉬": { "Pineapple": "Wedge", "Cherry": "" },
+    "가니쉬": {
+      "Pineapple": "Wedge",
+      "Cherry": ""
+    },
     "재료": {
       "Midori (Melon Liqueur)": "1 oz",
       "Coconut Flavored Rum": "1/2 oz",
       "Banana Liqueur": "1/2 oz",
       "Pineapple Juice": "2 oz",
       "Sweet & Sour mix": "2 oz"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Bacardi Cocktail": {
     "번호": 15,
     "조주법": "Shake",
     "글라스": "Cocktail Glass",
-    "가니쉬": { "없음": "" },
+    "가니쉬": {
+      "없음": ""
+    },
     "재료": {
       "Bacardi Rum White": "1 3/4 oz",
       "Lime Juice": "3/4  oz",
       "Grenadine Syrup": "1 tsp"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Cuba Libre": {
     "번호": 16,
     "조주법": "Build",
     "글라스": "Highball Glass",
-    "가니쉬": { "Lemon": "Wedge" },
+    "가니쉬": {
+      "Lemon": "Wedge"
+    },
     "재료": {
       "Light Rum": "1 1/2 oz",
       "Lime Juice": "1/2  oz",
       "Cola": "Fill"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Grasshopper": {
     "번호": 17,
     "조주법": "Shake",
     "글라스": "Champagne Glass (saucer형)",
-    "가니쉬": { "없음": "" },
+    "가니쉬": {
+      "없음": ""
+    },
     "재료": {
       "Crème De Menthe (Green)": "l oz",
       "Crème De Cacao (White)": "1 oz",
       "Light Milk": "1 oz"
-    }
+    },
+    "TMI": [
+      "[접시형 샴페인잔]은 [그래스 호퍼]에만 사용한다."
+    ]
   },
   "Seabreeze": {
     "번호": 18,
     "조주법": "Build",
     "글라스": "Highball Glass",
-    "가니쉬": { "Lime": "Wedge", "Lemon": "Wedge" },
+    "가니쉬": {
+      "Lime": "Wedge",
+      "Lemon": "Wedge"
+    },
     "재료": {
       "Vodka": "1 1/2 oz",
       "Cranberry Juice": "3 oz",
       "Grapefruit Juice": "1/2 oz"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Apple Martini": {
     "번호": 19,
     "조주법": "Shake",
     "글라스": "Cocktail Glass",
-    "가니쉬": { "Apple": "Slice" },
+    "가니쉬": {
+      "Apple": "Slice"
+    },
     "재료": {
       "Vodka": "l oz",
       "Apple Pucker (Sour apple Liqueur)": "1 oz",
       "Lime Juice": "1/2 oz"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Negroni": {
     "번호": 20,
     "조주법": "Build",
     "글라스": "Old-fashioned Glass",
-    "가니쉬": { "Lemon": "Twist of peel" },
+    "가니쉬": {
+      "Lemon": "Twist of peel"
+    },
     "재료": {
       "Dry Gin": "3/4 oz",
       "Sweet Vermouth": "3/4 oz",
       "Campari": "3/4 oz"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Long Island Iced Tea": {
     "번호": 21,
     "조주법": "Build",
     "글라스": "Collins Glass",
-    "가니쉬": { "Lime": "Wedge", "Lemon": "Wedge" },
+    "가니쉬": {
+      "Lime": "Wedge",
+      "Lemon": "Wedge"
+    },
     "재료": {
       "Dry Gin": "1/2 oz",
       "Vodka": "1/2 oz",
@@ -243,24 +344,35 @@
       "Triple Sec": "1/2 oz",
       "Sweet & Sour Mix": "1 1/2 oz",
       "Cola": "On Top"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Sidecar": {
     "번호": 22,
     "조주법": "Shake",
     "글라스": "Cocktail Glass",
-    "가니쉬": { "없음": "" },
+    "가니쉬": {
+      "없음": ""
+    },
     "재료": {
       "Brandy": "1 oz",
       "Triple Sec": "1 oz",
       "Lemon Juice": "1/4 oz"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Mai-Tai": {
     "번호": 23,
     "조주법": "Blend",
     "글라스": "Footed Pilsner Glass",
-    "가니쉬": { "Pineapple": "Wedge", "Cherry": "" },
+    "가니쉬": {
+      "Pineapple": "Wedge",
+      "Cherry": ""
+    },
     "재료": {
       "Light Rum": "1 1/4 oz",
       "Triple Sec": "3/4 oz",
@@ -268,186 +380,271 @@
       "Pineapple Juice": "1 oz",
       "Orange Juice": "1 oz",
       "Grenadine Syrup": "1/4 oz"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Pina Colada": {
     "번호": 24,
     "조주법": "Blend",
     "글라스": "Footed Pilsner Glass",
-    "가니쉬": { "Pineapple": "Wedge", "Cherry": "" },
+    "가니쉬": {
+      "Pineapple": "Wedge",
+      "Cherry": ""
+    },
     "재료": {
       "Light Rum": "1 1/4 oz",
       "Pina Colada Mix": "2 oz",
       "Pineapple Juice": "2 oz"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Cosmopolitan Cocktail": {
     "번호": 25,
     "조주법": "Shake",
     "글라스": "Cocktail Glass",
-    "가니쉬": { "Lime": "Twist of peel", "Lemon": "Twist of peel" },
+    "가니쉬": {
+      "Lime": "Twist of peel",
+      "Lemon": "Twist of peel"
+    },
     "재료": {
       "Vodka": "1 oz",
       "Triple Sec": "1/2 oz",
       "Lime Juice": "1/2 oz",
       "Cranberry Juice": "1/2 oz"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Moscow Mule": {
     "번호": 26,
     "조주법": "Build",
     "글라스": "Highball Glass",
-    "가니쉬": { "Lime": "Slice", "Lemon": "Slice" },
+    "가니쉬": {
+      "Lime": "Slice",
+      "Lemon": "Slice"
+    },
     "재료": {
       "Vodka": "1 1/2 oz",
       "Lime Juice": "1/2 oz",
       "Ginger ale": "Fill"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Apricot Cocktail": {
     "번호": 27,
     "조주법": "Shake",
     "글라스": "Cocktail Glass",
-    "가니쉬": { "없음": "" },
+    "가니쉬": {
+      "없음": ""
+    },
     "재료": {
       "Apricot Flavored Brandy": "1 1/2 oz",
       "Dry Gin": "1 tsp",
       "Lemon Juice": "1/2 oz",
       "Orange Juice": "1/2 oz"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Honeymoon Cocktail": {
     "번호": 28,
     "조주법": "Shake",
     "글라스": "Cocktail Glass",
-    "가니쉬": { "없음": "" },
+    "가니쉬": {
+      "없음": ""
+    },
     "재료": {
       "Apple Brandy": "3/4 oz",
       "Benedictine DOM": "3/4 oz",
       "Triple Sec": "1/4 oz",
       "Lemon Juice": "1/2 oz"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Blue Hawaiian": {
     "번호": 29,
     "조주법": "Blend",
     "글라스": "Footed Pilsner Glass",
-    "가니쉬": { "Pineapple": "Wedge", "Cherry": "" },
+    "가니쉬": {
+      "Pineapple": "Wedge",
+      "Cherry": ""
+    },
     "재료": {
       "Light Rum": "1 oz",
       "Blue Curacao": "1 oz",
       "Coconut Flavored Rum": "1 oz",
       "Pineapple Juice": "2 1/2 oz"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Kir": {
     "번호": 30,
     "조주법": "Build",
     "글라스": "White Wine Glass",
-    "가니쉬": { "Lemon": "Twist of peel" },
+    "가니쉬": {
+      "Lemon": "Twist of peel"
+    },
     "재료": {
       "White Wine": "3 oz",
       "Crème de Cassis": "1/2 oz"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Tequila Sunrise": {
     "번호": 31,
     "조주법": "Build/Float",
     "글라스": "Footed Pilsner Glass",
-    "가니쉬": { "없음": "" },
+    "가니쉬": {
+      "없음": ""
+    },
     "재료": {
       "Tequila": "1 1/2 oz",
       "Orange Juice": "Fill",
       "Grenadine Syrup": "1/2 oz"
-    }
+    },
+    "TMI": [
+      "[소금 리밍] 가니시는 [테킬라 선라이즈]에만 사용한다."
+    ]
   },
   "힐링 (Healing)": {
     "번호": 32,
     "조주법": "Shake",
     "글라스": "Cocktail Glass",
-    "가니쉬": { "Lemon": "Twist of peel" },
+    "가니쉬": {
+      "Lemon": "Twist of peel"
+    },
     "재료": {
       "Gam Hong Ro(40도)": "1 1/2 oz",
       "Benedictine DOM": "1/3 oz",
       "Crème de Cassis": "1/3 oz",
       "Sweet & Sour mix": "1 oz"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "진도 (Jindo)": {
     "번호": 33,
     "조주법": "Shake",
     "글라스": "Cocktail Glass",
-    "가니쉬": { "없음": "" },
+    "가니쉬": {
+      "없음": ""
+    },
     "재료": {
       "Jindo Hong Ju(40도)": "1 oz",
       "Crème De Menthe (White)": "1/2 oz",
       "White Grape Juice (청포도주스)": "3/4 oz",
       "Raspberry Syrup": "1/2 oz"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "풋사랑 (Puppy Love)": {
     "번호": 34,
     "조주법": "Shake",
     "글라스": "Cocktail Glass",
-    "가니쉬": { "Apple": "Slice"},
+    "가니쉬": {
+      "Apple": "Slice"
+    },
     "재료": {
       "Andong Soju(35도)": "1 oz",
       "Triple Sec": "1/3 oz",
       "Apple Pucker (Sour apple Liqueur)": "1 oz",
       "Lime Juice": "1/3 oz"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "금산 (Geumsan)": {
     "번호": 35,
     "조주법": "Shake",
     "글라스": "Cocktail Glass",
-    "가니쉬": { "없음": "" },
+    "가니쉬": {
+      "없음": ""
+    },
     "재료": {
       "Geumsan Insamju (43도)": "1 1/2 oz",
       "Coffee Liqueur (Kahlúa)": "1/2 oz",
       "Apple Pucker (Sour apple Liqueur)": "3/4 oz",
       "Lime Juice": "1 tsp"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "고창 (Gochang)": {
     "번호": 36,
     "조주법": "Stir",
     "글라스": "Flute Champagne Glass",
-    "가니쉬": { "없음": "" },
+    "가니쉬": {
+      "없음": ""
+    },
     "재료": {
       "Sunwoonsan bokbunja wine": "2 oz",
       "Triple Sec": "1/2 oz",
       "Sprite": "2 oz"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Gin Fizz": {
     "번호": 37,
     "조주법": "Shake/Build",
     "글라스": "Highball Glass",
-    "가니쉬": { "Lemon": "Slice"},
+    "가니쉬": {
+      "Lemon": "Slice"
+    },
     "재료": {
       "Dry Gin": "1 1/2 oz",
       "Lemon Juice": "1/2 oz",
       "Powdered Sugar": "1 tsp",
       "Soda Water": "Fill"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Fresh Lemon Squash": {
     "번호": 38,
     "조주법": "Build",
     "글라스": "Highball Glass",
-    "가니쉬": { "Lemon": "Slice"},
+    "가니쉬": {
+      "Lemon": "Slice"
+    },
     "재료": {
       "Fresh squeezed Lemon": "1/2 ea",
       "Powdered Sugar": "2 tsp",
       "Soda Water": "Fill"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Virgin Fruit Punch": {
     "번호": 39,
     "조주법": "Blend",
     "글라스": "Footed Pilsner Glass",
-    "가니쉬": { "Pineapple": "Wedge", "Cherry": "" },
+    "가니쉬": {
+      "Pineapple": "Wedge",
+      "Cherry": ""
+    },
     "재료": {
       "Orange Juice": "1 oz",
       "Pineapple Juice": "1 oz",
@@ -455,17 +652,25 @@
       "Grapefruit Juice": "1 oz",
       "Lemon Juice": "1/2 oz",
       "Grenadine Syrup": "1/2 oz"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   },
   "Boulevardier": {
     "번호": 40,
     "조주법": "Stir",
     "글라스": "Old-fashioned Glass",
-    "가니쉬": { "Orange": "Twist of peel" },
+    "가니쉬": {
+      "Orange": "Twist of peel"
+    },
     "재료": {
       "Bourbon Whiskey": "1 oz",
       "Sweet Vermouth": "1 oz",
       "Campari": "1 oz"
-    }
+    },
+    "TMI": [
+      ""
+    ]
   }
 }

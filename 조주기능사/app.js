@@ -21,9 +21,14 @@ function displayCocktail(cocktail, materialData) {
   ).innerHTML = `${cocktail.name} <sup class="subtitle">#${cocktail.recipe.번호}</sup>`;
 
   const MethodDiv = document.getElementById("method");
-  MethodDiv.innerHTML = materialData.조주법
-    .map((method) => {
-      return `<label class="card"><input type="checkbox" name="method" value="${method}">${method}</label>`;
+  // MethodDiv.innerHTML = materialData.조주법
+  MethodDiv.innerHTML = Object.entries(materialData.조주법)
+    .map(([method, data]) => {
+      const img = data.img;
+      return `<label class="card">
+                <img src="imgs/${img}.png" alt="${method}" class="glass-image">
+                <input type="checkbox" name="method" value="${method}"><span>${method}</span>
+                </label>`;
     })
     .join("");
 

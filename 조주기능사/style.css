@@ -184,8 +184,10 @@ select {
 #recipe-list li:not(.recipe-detail li) {
   padding: 1em 1.5em;
   cursor: pointer;
-  border-bottom: 1px solid #ddd;
-  /* 각 항목 구분선 추가 */
+  border-top: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #recipe-list li:not(.recipe-detail li):hover {
@@ -200,11 +202,37 @@ select {
   background-color: lightgreen;
 }
 
+#recipe-list li {
+  position: relative;
+}
+
+#recipe-list img:not(#recipe-list li:hover img, #recipe-list li.on img) {
+  filter: grayscale(1);
+}
+
 .recipe-detail {
-  padding: 0 1em;
-  background-color: #fff;
+  width: clac(100% - 3em);
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 1.5em);
+  padding: 1em 1.5em;
+  background-color: #eee;
   border: 1px solid #ddd;
-  margin-top: 5px;
+  margin-left: -1.5em;
+  /* line-height: 2; */
+  /* margin-top: 5px; */
+}
+
+#recipe-list li:hover .recipe-detail {
+  display: block;
+}
+
+#recipe-list li ul {
+  padding-left: 1.5em;
+}
+
+#recipe-list li ul li::marker {
+  text-align: right;
 }
 
 .recipe-detail p {
@@ -214,8 +242,7 @@ select {
 #recipe-list .recipe-detail ul {}
 
 #recipe-list .recipe-detail li {
-  margin: 0;
-  padding: 0.5em;
+  padding: .25em 0;
 }
 
 #result {}
