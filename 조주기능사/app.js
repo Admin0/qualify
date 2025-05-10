@@ -1,11 +1,11 @@
 // app.js
 
 function loadCocktailData() {
-  return fetch("recipe_24.json").then((response) => response.json());
+  return fetch("data__recipe_24.json").then((response) => response.json());
 }
 
 function loadMaterialData() {
-  return fetch("material.json").then((response) => response.json());
+  return fetch("data__material.json").then((response) => response.json());
 }
 
 function getRandomCocktail(recipes) {
@@ -62,7 +62,7 @@ function displayCocktail(cocktail, materialData) {
       let imgSrc = "imgs/none.png";
       if (imgList && imgList.length > 0) {
         const randomIndex = Math.floor(Math.random() * imgList.length);
-        imgSrc = `imgs_재료/${imgList[randomIndex]}.png`;
+        imgSrc = `imgs__ingredient/${imgList[randomIndex]}.png`;
       }
 
       return `<label class="card">

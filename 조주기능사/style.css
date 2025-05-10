@@ -127,6 +127,7 @@ select {
 }
 
 #message {
+  font-size: 1.5em;
   margin-top: 10px;
   font-weight: bold;
 }
@@ -169,6 +170,28 @@ select {
   font-weight: bold;
 }
 
+
+/* ****************************************************** */
+/* ********************* re-roll ************************ */
+/* ****************************************************** */
+#re-roll-container {
+  font-size: 1.25em;
+  margin-top: 1em;
+
+}
+
+#re-roll {
+  font-size: 1em;
+}
+
+#re-roll-container input{
+  width: 3em;
+  font-size: 1em;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid #888;
+}
+
 /* ****************************************************** */
 /* ******************** recipe list ********************* */
 /* ****************************************************** */
@@ -177,17 +200,11 @@ select {
   list-style: none;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 4fr));
-  gap: 10px;
 }
 
 #recipe-list li:not(.recipe-detail li) {
   padding: 1em 1.5em;
-  cursor: pointer;
-  border-top: 1px solid #ddd;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  cursor: default;
 }
 
 #recipe-list li:not(.recipe-detail li):hover {
@@ -211,7 +228,6 @@ select {
 }
 
 .recipe-detail {
-  width: clac(100% - 3em);
   display: none;
   position: absolute;
   bottom: calc(100% + 1.5em);
@@ -219,8 +235,28 @@ select {
   background-color: #eee;
   border: 1px solid #ddd;
   margin-left: -1.5em;
+  text-align: left;
+  width: 300px;
   /* line-height: 2; */
   /* margin-top: 5px; */
+}
+
+.recipe-detail:before {
+  content: "";
+  position: absolute;
+  top: calc(100%);
+  left: calc(50% - 1em);
+  border: 1em solid #ddd;
+  border-color: #ddd transparent transparent transparent;
+}
+
+.recipe-detail:after {
+  content: "";
+  position: absolute;
+  top: calc(100% - 1.4px);
+  left: calc(50% - 1em);
+  border: 1em solid #eee;
+  border-color: #eee transparent transparent transparent;
 }
 
 #recipe-list li:hover .recipe-detail {

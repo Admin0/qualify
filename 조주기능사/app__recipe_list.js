@@ -1,12 +1,14 @@
 document.addEventListener("DOMContentLoaded", async () => {
   const recipeList = document.getElementById("recipe-list");
+  recipeList.classList.add("card-container");
 
   // 레시피 목록 생성
   function createRecipeList(recipes) {
     Object.keys(recipes).forEach((cocktailName) => {
       const listItem = document.createElement("li");
+      listItem.classList.add("card");
       listItem.innerHTML = `
-                <img src="imgs_cocktail/cocktail_${recipes[cocktailName].번호}.png" alt="${cocktailName}" class="glass-image">
+                <img src="imgs__cocktail/cocktail_${recipes[cocktailName].번호}.png" alt="${cocktailName}" class="glass-image">
                 ${cocktailName} (#${recipes[cocktailName].번호})
                 `;
 
@@ -53,7 +55,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   // 레시피 데이터 로드 및 목록 생성
-  const response = await fetch("recipe_24.json"); // await 추가
+  const response = await fetch("data__recipe_24.json"); // await 추가
   const recipes = await response.json(); // await 추가
   // console.log(recipes);
   createRecipeList(recipes);

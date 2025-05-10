@@ -24,47 +24,47 @@
   },
   "글라스": {
     "Cocktail Glass": {
-      "img": "class_cocktail",
+      "img": "glass_cocktail",
       "name": "Cocktail"
     },
     "Footed Pilsner Glass": {
-      "img": "class_pilsner",
-      "name": "Pilsner"
+      "img": "glass_pilsner",
+      "name": "Footed Pilsner"
     },
     "Highball Glass": {
-      "img": "class_highball",
+      "img": "glass_highball",
       "name": "Highball"
     },
     "Old-fashioned Glass": {
-      "img": "class_oldfashioned",
+      "img": "glass_oldfashioned",
       "name": "Old-fashioned"
     },
     "Collins Glass": {
-      "img": "class_collins",
+      "img": "glass_collins",
       "name": "Collins"
     },
     "Champagne Glass (saucer형)": {
-      "img": "class_champagnesaucer",
+      "img": "glass_champagnesaucer",
       "name": "Champagne (saucer)"
     },
     "Flute Champagne Glass": {
-      "img": "class_champagneflute",
+      "img": "glass_champagneflute",
       "name": "Flute Champagne"
     },
     "White Wine Glass": {
-      "img": "class_whitewine",
+      "img": "glass_whitewine",
       "name": "White Wine"
     },
     "Sherry Glass (2 oz)": {
-      "img": "class_sherry",
+      "img": "glass_sherry",
       "name": "Sherry"
     },
     "Stemed Liqueur Glass": {
-      "img": "class_liqueur",
+      "img": "glass_liqueur",
       "name": "Liqueur"
     },
     "Sour Glass": {
-      "img": "class_sour",
+      "img": "glass_sour",
       "name": "Sour"
     }
   },
@@ -207,11 +207,6 @@
       ]
     },
     "Coffee Liqueur": {
-      "img": [
-        "커피_리큐어0"
-      ]
-    },
-    "Coffee Liqueur (Kahlúa)": {
       "img": [
         "커피_리큐어0"
       ]
