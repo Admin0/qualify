@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       listItem.classList.add("card");
       listItem.innerHTML = `
                 <img src="imgs__cocktail/cocktail_${recipes[cocktailName].번호}.png" alt="${cocktailName}" class="glass-image">
-                ${cocktailName} (#${recipes[cocktailName].번호})
+                <span>${cocktailName} (#${recipes[cocktailName].번호})</span>
                 `;
 
       // 상세 정보 영역 추가
@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       // detailDiv.style.display = "none";
 
       detailDiv.innerHTML = `
+      <h3>#${recipes[cocktailName].번호} ${cocktailName}</h3>
                 <p><strong>조주법:</strong> ${recipes[cocktailName].조주법}</p>
                 <p><strong>글라스:</strong> ${recipes[cocktailName].글라스}</p>
                 <p><strong>가니쉬:</strong> <ul>${Object.entries(recipes[cocktailName].가니쉬)
