@@ -375,3 +375,14 @@ function displayFeedback(isCorrect, userAnswer, cocktail) { // Keep this functio
 document.addEventListener("DOMContentLoaded", () => {
   initializeQuiz();
 });
+
+// Global site tag (gtag.js) - Google Analytics
+$.getScript("//www.googletagmanager.com/gtag/js?id=UA-39552694-1", function() {
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'UA-39552694-1');
+});
