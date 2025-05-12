@@ -223,7 +223,7 @@ select {
   position: relative;
 }
 
-#recipe-list img:not(#recipe-list li:hover img, #recipe-list li.on img) {
+#recipe-list img:not(#recipe-list li:hover img, #recipe-list li.on img, #recipe-list li.fit img) {
   filter: grayscale(1);
 }
 

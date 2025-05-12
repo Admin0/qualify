@@ -78,25 +78,31 @@
     "Green Olive": {
       "img": "garnish_greenolive"
     },
-    "Orange": {
-      "img": "garnish_orange"
+    "Lemon Slice": {
+      "img": "garnish_lemon_slice"
     },
-    "Pineapple": {
-      "img": "garnish_pineapple"
+    "Lemon Wedge": {
+      "img": "garnish_lemon_wedge"
     },
-    "Lemon": {
-      "img": "garnish_lemon"
+    "Lemon Twist of peel": {
+      "img": "garnish_lemon_peel"
     },
-    "Lime": {
-      "img": "garnish_lime"
+    "Orange Slice": {
+      "img": "garnish_orange_slice"
     },
-    "Apple": {
-      "img": "garnish_apple"
+    "Orange Twist of peel": {
+      "img": "garnish_orange_peel"
+    },
+    "Pineapple Wedge": {
+      "img": "garnish_pine_wedge"
+    },
+    "Apple Slice": {
+      "img": "garnish_apple_slice"
     },
     "Nutmeg Powder": {
       "img": "garnish_nutmegpowder"
     },
-    "Salt": {
+    "Salt Rimming": {
       "img": "garnish_salt"
     }
   },

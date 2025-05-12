@@ -93,11 +93,21 @@ function collectUserAnswer() {
 }
 
 function checkAnswer(userAnswer, cocktail) {
+
+  const ingredients = cocktail.recipe.재료;
+
   const isMethodCorrect = userAnswer.method === cocktail.recipe.조주법;
+
   const isGlassCorrect = userAnswer.glass === cocktail.recipe.글라스;
-  const isGarnishCorrect =
-    JSON.stringify(userAnswer.garnish.sort()) ===
-    JSON.stringify(Object.keys(cocktail.recipe.가니쉬).sort());
+
+  const garnish = Object.keys(cocktail.recipe.가니쉬).map((garnish) => {
+    const preparation = cocktail.recipe.가니쉬[garnish];
+    return preparation
+      ? `${garnish} ${preparation}`
+      : `${garnish}`;
+  });
+  const isGarnishCorrect = JSON.stringify(userAnswer.garnish.sort()) === JSON.stringify(garnish);
+
   const isIngredientsCorrect =
     JSON.stringify(userAnswer.ingredients.sort()) ===
     JSON.stringify(Object.keys(cocktail.recipe.재료).sort());
@@ -119,7 +129,8 @@ function checkAnswer(userAnswer, cocktail) {
     정답: [
       cocktail.recipe.조주법,
       cocktail.recipe.글라스,
-      Object.keys(cocktail.recipe.가니쉬).join(", "),
+      // Object.keys(cocktail.recipe.가니쉬).join(", "),
+      garnish.join(", "),
       Object.keys(cocktail.recipe.재료).join(", "),
     ],
     "정답 여부": [
@@ -212,22 +223,34 @@ function initializeHighlightRecipeItems(cocktail, recipeData) {
           }
         }
 
+        const garnish = Object.keys(recipe.가니쉬).map((garnish) => {
+          const preparation = recipe.가니쉬[garnish];
+          return preparation
+            ? `${garnish} ${preparation}`
+            : `${garnish}`;
+        });
         if (userAnswer.garnish.length > 0) {
-          if (userAnswer.garnish.some(ingredient => Object.keys(recipe.가니쉬).includes(ingredient))) { // 하나라도 포함되면
+          if (userAnswer.garnish.every(i => garnish.includes(i))) { // 전부 포함되면
+
+          } else if (userAnswer.garnish.some(i => garnish.includes(i))) { // 하나라도 포함되면
             on = true;
+            fit = false;
           } else {
             fit = false;
           }
         }
 
         if (userAnswer.ingredients.length > 0) {
-          if (userAnswer.ingredients.some(ingredient => Object.keys(recipe.재료).includes(ingredient))) { // 하나라도 포함되면
+          if (userAnswer.ingredients.every(ingredient => Object.keys(recipe.재료).includes(ingredient))) { // 전부 포함되면
+
+          } else if (userAnswer.ingredients.some(ingredient => Object.keys(recipe.재료).includes(ingredient))) { // 하나라도 포함되면
             on = true;
+            fit = false;
           } else {
             fit = false;
           }
         }
-        console.log(userAnswer.ingredients.length);
+        // console.log(userAnswer.ingredients.length);
 
         if (on) {
           cocktailsListOn.push(cocktailName);
@@ -318,7 +341,7 @@ function displayFeedback(isCorrect, userAnswer, cocktail) { // Keep this functio
       .map((garnish) => {
         const isCorrect = correctGarnish.includes(garnish);
         return `<span style="background-color: ${isCorrect ? "lightgreen" : "lightcoral"
-          }; padding: 2px;">${garnish}</span>`;
+          }; padding: 2px; margin:-2px">${garnish}</span>`;
       })
       .join(", ");
     userGarnishCCell.innerHTML = userGarnishCText;
@@ -344,24 +367,49 @@ function displayFeedback(isCorrect, userAnswer, cocktail) { // Keep this functio
     row.appendChild(labelCell);
 
     const correctIngredientsCell = document.createElement("td");
-    correctIngredientsCell.textContent = correctIngredients.join(", ");
+    const correctIngredientsList = document.createElement("ul");
+    correctIngredientsList.style.listStyle = "none"; // Remove bullet points
+    correctIngredientsList.style.padding = "0";
+    correctIngredientsList.style.margin = "0";
+    correctIngredients.forEach((ingredient) => {
+      const listItem = document.createElement("li");
+      const volume = cocktail.recipe.재료[ingredient];
+      listItem.textContent = volume ? `${ingredient} ${volume}` : `${ingredient}`;
+      correctIngredientsList.appendChild(listItem);
+    });
+    correctIngredientsCell.appendChild(correctIngredientsList);
     row.appendChild(correctIngredientsCell);
 
     const userIngredientsCell = document.createElement("td");
-    const userIngredientsText = userIngredients
-      .map((ingredient) => {
-        const isCorrect = correctIngredients.includes(ingredient);
-        return `<span style="background-color: ${isCorrect ? "lightgreen" : "lightcoral"
-          }; padding: 2px;">${ingredient}</span>`;
-      })
-      .join(", ");
-    userIngredientsCell.innerHTML = userIngredientsText;
+    const userIngredientsList = document.createElement("ul");
+    userIngredientsList.style.listStyle = "none"; // Remove bullet points
+    userIngredientsList.style.padding = "0";
+    userIngredientsList.style.margin = "0";
+    // userIngredients
+    //   .map((ingredient) => {
+    //     return `<span style="background-color: ${isCorrect ? "lightgreen" : "lightcoral"
+    //       }; padding: 2px;">${ingredient}</span>`;
+    //   })
+    //   .join(", ");
+    // userIngredientsCell.innerHTML = userIngredientsText;
+    // row.appendChild(userIngredientsCell);
+
+    userIngredients.forEach((ingredient) => {
+      const listItem = document.createElement("li");
+      const isCorrect = correctIngredients.includes(ingredient);
+      // listItem.style.backgroundColor = isCorrect ? "lightgreen" : "lightcoral";
+      // listItem.style.display = "inline-block"
+      listItem.innerHTML = `<span style="padding: 0 2px; background-color: ${isCorrect ? "lightgreen" : "lightcoral"}">${ingredient}</span>`;
+      userIngredientsList.appendChild(listItem);
+    });
+    userIngredientsCell.appendChild(userIngredientsList);
     row.appendChild(userIngredientsCell);
 
     const isIngredientsCorrect =
       JSON.stringify(userIngredients.sort()) ===
       JSON.stringify(correctIngredients.sort());
     row.classList.add(isIngredientsCorrect ? "correct" : "incorrect");
+
     return row;
   };
 
@@ -374,15 +422,4 @@ function displayFeedback(isCorrect, userAnswer, cocktail) { // Keep this functio
 
 document.addEventListener("DOMContentLoaded", () => {
   initializeQuiz();
-});
-
-// Global site tag (gtag.js) - Google Analytics
-$.getScript("//www.googletagmanager.com/gtag/js?id=UA-39552694-1", function() {
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
-  gtag('config', 'UA-39552694-1');
 });
