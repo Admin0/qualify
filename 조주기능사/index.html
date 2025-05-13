@@ -13,6 +13,16 @@
         crossorigin="anonymous"></script>
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SF40SJ437M"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-SF40SJ437M');
+</script>
+
 <body>
     <h1>조주기능사 국가기술자격 실기시험문제: 칵테일 과제</h1>
     <h3>※ 제시된 칵테일 작품을 조주하여 제출하세요.</h3>
@@ -54,22 +64,12 @@
         <div id="re-roll-container">
             <button id="re-roll"
                 onclick="initializeQuiz(document.getElementById('select_cocktail_no').value); document.getElementById('select_cocktail_no').value='';">
-                한 문제 더 </button> <span>( 번호 지정 #<input id="select_cocktail_no"> )</span>
+                한 문제 더 </button> <span>( <label>번호 지정</label> #<input id="select_cocktail_no"> )</span>
         </div>
 
         <h2>🍸 칵테일 목록 🍸</h2>
         <ul id="recipe-list"></ul>
         <script src="app__recipe_list.js"></script>
     </section>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SF40SJ437M"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-SF40SJ437M');
-    </script>
 
 </html>

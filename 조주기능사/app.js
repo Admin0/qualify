@@ -261,7 +261,7 @@ function initializeHighlightRecipeItems(cocktail, recipeData) {
           document.querySelectorAll("#recipe-list > li")[recipe.번호 - 1].classList.add("fit");
         }
       }
-      console.log("Matching cocktails: ", cocktailsListOn, cocktailsListFit);
+      // console.log("Matching cocktails: ", cocktailsListOn, cocktailsListFit);
     });
   });
 }
@@ -319,44 +319,67 @@ function displayFeedback(isCorrect, userAnswer, cocktail) { // Keep this functio
     )
   );
 
-  const ccreateGarnishRow = (userGarnish, correctGarnish) => {
+  const createGarnishRow = (userGarnish, correctGarnish) => {
     const row = document.createElement("tr");
     const labelCell = document.createElement("td");
     labelCell.textContent = "가니쉬";
     row.appendChild(labelCell);
 
+    // const correctGarnishCell = document.createElement("td");
+    // correctGarnishCell.textContent = correctGarnish
+    //   .map((garnish) => {
+    //     const preparation = cocktail.recipe.가니쉬[garnish];
+    //     return preparation
+    //       ? `${garnish} ${preparation}`
+    //       : `${garnish}`;
+    //   })
+    //   .join(", ");
+    // row.appendChild(correctGarnishCell);
+
     const correctGarnishCell = document.createElement("td");
-    correctGarnishCell.textContent = correctGarnish
-      .map((garnish) => {
-        const preparation = cocktail.recipe.가니쉬[garnish];
-        return preparation
-          ? `${garnish} ${preparation}`
-          : `${garnish}`;
-      })
-      .join(", ");
+    const correctGarnishList = document.createElement("ul");
+    correctGarnishList.style.listStyle = "none"; // Remove bullet points
+    correctGarnishList.style.padding = "0";
+    correctGarnishList.style.margin = "0";
+
+    correctGarnish.forEach((garnish) => {
+      const listItem = document.createElement("li");
+      listItem.textContent =  garnish;
+      correctGarnishList.appendChild(listItem);
+    });
+    correctGarnishCell.appendChild(correctGarnishList);
     row.appendChild(correctGarnishCell);
 
-    const userGarnishCCell = document.createElement("td");
-    const userGarnishCText = userGarnish
-      .map((garnish) => {
-        const isCorrect = correctGarnish.includes(garnish);
-        return `<span style="background-color: ${isCorrect ? "lightgreen" : "lightcoral"
-          }; padding: 2px; margin:-2px">${garnish}</span>`;
-      })
-      .join(", ");
-    userGarnishCCell.innerHTML = userGarnishCText;
-    row.appendChild(userGarnishCCell);
+    const userGarnishCell = document.createElement("td");
+    const userGarnishList = document.createElement("ul");
+    userGarnishList.style.listStyle = "none"; // Remove bullet points
+    userGarnishList.style.padding = "0";
+    userGarnishList.style.margin = "0";
+    userGarnish.forEach((garnish) => {
+      const listItem = document.createElement("li");
+      const isCorrect = correctGarnish.includes(garnish);
+      listItem.innerHTML = `<span style="padding: 0 2px; background-color: ${isCorrect ? "lightgreen" : "lightcoral"}">${garnish}</span>`;
+      userGarnishList.appendChild(listItem);
+    });
+    userGarnishCell.appendChild(userGarnishList);
+    row.appendChild(userGarnishCell);
 
     const isGarnishCorrect =
       JSON.stringify(userGarnish.sort()) ===
       JSON.stringify(correctGarnish.sort());
     row.classList.add(isGarnishCorrect ? "correct" : "incorrect");
+
     return row;
   };
 
   const userGarnish = userAnswer.garnish;
-  const correctGarnish = Object.keys(cocktail.recipe.가니쉬);
-  tbody.appendChild(ccreateGarnishRow(userGarnish, correctGarnish));
+  const correctGarnish = Object.keys(cocktail.recipe.가니쉬).map((garnish) => {
+    const preparation = cocktail.recipe.가니쉬[garnish];
+    return preparation
+      ? `${garnish} ${preparation}`
+      : `${garnish}`;
+  });
+  tbody.appendChild(createGarnishRow(userGarnish, correctGarnish));
   table.appendChild(tbody);
   answerTable.appendChild(table);
 
@@ -385,20 +408,9 @@ function displayFeedback(isCorrect, userAnswer, cocktail) { // Keep this functio
     userIngredientsList.style.listStyle = "none"; // Remove bullet points
     userIngredientsList.style.padding = "0";
     userIngredientsList.style.margin = "0";
-    // userIngredients
-    //   .map((ingredient) => {
-    //     return `<span style="background-color: ${isCorrect ? "lightgreen" : "lightcoral"
-    //       }; padding: 2px;">${ingredient}</span>`;
-    //   })
-    //   .join(", ");
-    // userIngredientsCell.innerHTML = userIngredientsText;
-    // row.appendChild(userIngredientsCell);
-
     userIngredients.forEach((ingredient) => {
       const listItem = document.createElement("li");
       const isCorrect = correctIngredients.includes(ingredient);
-      // listItem.style.backgroundColor = isCorrect ? "lightgreen" : "lightcoral";
-      // listItem.style.display = "inline-block"
       listItem.innerHTML = `<span style="padding: 0 2px; background-color: ${isCorrect ? "lightgreen" : "lightcoral"}">${ingredient}</span>`;
       userIngredientsList.appendChild(listItem);
     });

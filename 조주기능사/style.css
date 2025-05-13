@@ -44,12 +44,6 @@ h2 {
   content: "✨";
 }
 
-select {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-}
-
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit,
@@ -170,6 +164,9 @@ select {
   font-weight: bold;
 }
 
+section#user-input{
+  margin-bottom: 5em;
+}
 
 /* ****************************************************** */
 /* ********************* re-roll ************************ */
