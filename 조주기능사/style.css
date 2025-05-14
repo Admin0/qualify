@@ -134,10 +134,15 @@ h2 {
   background-color: lightcoral;
 }
 
+#answer-table {
+  max-width: 600px;
+  width: 100%;
+  margin: 10px auto 0;
+}
+
 #answer-table table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 10px;
 }
 
 #answer-table th:nth-child(1) {
@@ -164,7 +169,7 @@ h2 {
   font-weight: bold;
 }
 
-section#user-input{
+section#user-input {
   margin-bottom: 5em;
 }
 
@@ -181,7 +186,7 @@ section#user-input{
   font-size: 1em;
 }
 
-#re-roll-container input{
+#re-roll-container input {
   width: 3em;
   font-size: 1em;
   outline: none;
