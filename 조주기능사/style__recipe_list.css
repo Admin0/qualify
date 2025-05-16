@@ -1,0 +1,307 @@
+:root {
+  --method-img: url("imgs/glass.png");
+  --glass-img: url("imgs/glass.png");
+  --garnish-img: url("imgs/glass.png");
+  --recipe-img: url("imgs/cocktail.png");
+}
+
+#method .card .glass-image {
+  background-image: var(--method-img);
+}
+
+#method .card .glass-image.method_b-f {
+  background-position: calc(var(--img-w) * -1) calc(var(--img-h) * -4);
+}
+
+#method .card .glass-image.method_blend {
+  background-position: calc(var(--img-w) * 0) calc(var(--img-h) * -4);
+}
+
+#method .card .glass-image.method_build {
+  background-position: calc(var(--img-w) * -2) calc(var(--img-h) * -3);
+}
+
+#method .card .glass-image.method_float {
+  background-position: calc(var(--img-w) * 0) calc(var(--img-h) * -3);
+}
+
+#method .card .glass-image.method_s-b {
+  background-position: calc(var(--img-w) * -4) calc(var(--img-h) * -3);
+}
+
+#method .card .glass-image.method_shake {
+  background-position: calc(var(--img-w) * -3) calc(var(--img-h) * -3);
+}
+
+#method .card .glass-image.method_stir {
+  background-position: calc(var(--img-w) * -1) calc(var(--img-h) * -3);
+}
+
+
+#glass .card .glass-image {
+  background-image: var(--glass-img);
+}
+
+#glass .card .glass-image.glass_cocktail {
+  background-position: calc(var(--img-w) * 0) calc(var(--img-h) * 0);
+}
+
+#glass .card .glass-image.glass_pilsner {
+  background-position: calc(var(--img-w) * -1) calc(var(--img-h) * 0);
+}
+
+#glass .card .glass-image.glass_highball {
+  background-position: calc(var(--img-w) * -2) calc(var(--img-h) * 0);
+}
+
+#glass .card .glass-image.glass_oldfashioned {
+  background-position: calc(var(--img-w) * -3) calc(var(--img-h) * 0);
+}
+
+#glass .card .glass-image.glass_collins {
+  background-position: calc(var(--img-w) * -4) calc(var(--img-h) * 0);
+}
+
+#glass .card .glass-image.glass_champagnesaucer {
+  background-position: calc(var(--img-w) * 0) calc(var(--img-h) * -1);
+}
+
+#glass .card .glass-image.glass_champagneflute {
+  background-position: calc(var(--img-w) * -1) calc(var(--img-h) * -1);
+}
+
+#glass .card .glass-image.glass_whitewine {
+  background-position: calc(var(--img-w) * -2) calc(var(--img-h) * -1);
+}
+
+#glass .card .glass-image.glass_sherry {
+  background-position: calc(var(--img-w) * -3) calc(var(--img-h) * -1);
+}
+
+#glass .card .glass-image.glass_liqueur {
+  background-position: calc(var(--img-w) * -4) calc(var(--img-h) * -1);
+}
+
+#glass .card .glass-image.glass_sour {
+  background-position: calc(var(--img-w) * 0) calc(var(--img-h) * -2);
+}
+
+
+
+#garnish .card .glass-image {
+  background-image: var(--garnish-img);
+}
+
+#garnish .card .glass-image.garnish_apple_slice {
+  background-position: calc(var(--img-w) * -2) calc(var(--img-h) * -5);
+}
+
+#garnish .card .glass-image.garnish_cherry {
+  background-position: calc(var(--img-w) * 0) calc(var(--img-h) * -5);
+}
+
+#garnish .card .glass-image.garnish_nutmegpowder {
+  background-position: calc(var(--img-w) * -3) calc(var(--img-h) * -7);
+}
+
+#garnish .card .glass-image.garnish_greenolive {
+  background-position: calc(var(--img-w) * -1) calc(var(--img-h) * -5);
+}
+
+#garnish .card .glass-image.garnish_lemon_peel {
+  background-position: calc(var(--img-w) * -1) calc(var(--img-h) * -6);
+}
+
+#garnish .card .glass-image.garnish_lemon_slice {
+  background-position: calc(var(--img-w) * -2) calc(var(--img-h) * -6);
+}
+
+#garnish .card .glass-image.garnish_lemon_wedge {
+  background-position: calc(var(--img-w) * 0) calc(var(--img-h) * -6);
+}
+
+#garnish .card .glass-image.garnish_orange_peel {
+  background-position: calc(var(--img-w) * -1) calc(var(--img-h) * -7);
+}
+
+#garnish .card .glass-image.garnish_orange_slice {
+  background-position: calc(var(--img-w) * -2) calc(var(--img-h) * -7);
+}
+
+#garnish .card .glass-image.garnish_pine_wedge {
+  background-position: calc(var(--img-w) * 0) calc(var(--img-h) * -7);
+}
+
+#garnish .card .glass-image.garnish_salt {
+  background-position: calc(var(--img-w) * -3) calc(var(--img-h) * -6);
+}
+
+#garnish .card .glass-image.none {
+  background-position: calc(var(--img-w) * -1) calc(var(--img-h) * -2);
+}
+
+
+
+#recipe-list .card .glass-image {
+  background-image: var(--recipe-img);
+}
+
+#recipe-list .card:nth-child(1) .glass-image {
+  background-position: calc(var(--img-w) * 0) calc(var(--img-w) * 0);
+}
+
+#recipe-list .card:nth-child(2) .glass-image {
+  background-position: calc(var(--img-w) * -1) calc(var(--img-w) * 0);
+}
+
+#recipe-list .card:nth-child(3) .glass-image {
+  background-position: calc(var(--img-w) * -2) calc(var(--img-w) * 0);
+}
+
+#recipe-list .card:nth-child(4) .glass-image {
+  background-position: calc(var(--img-w) * -3) calc(var(--img-w) * 0);
+}
+
+#recipe-list .card:nth-child(5) .glass-image {
+  background-position: calc(var(--img-w) * -4) calc(var(--img-w) * 0);
+}
+
+#recipe-list .card:nth-child(6) .glass-image {
+  background-position: calc(var(--img-w) * 0) calc(var(--img-w) * -1);
+}
+
+#recipe-list .card:nth-child(7) .glass-image {
+  background-position: calc(var(--img-w) * -1) calc(var(--img-w) * -1);
+}
+
+#recipe-list .card:nth-child(8) .glass-image {
+  background-position: calc(var(--img-w) * -2) calc(var(--img-w) * -1);
+}
+
+#recipe-list .card:nth-child(9) .glass-image {
+  background-position: calc(var(--img-w) * -3) calc(var(--img-w) * -1);
+}
+
+#recipe-list .card:nth-child(10) .glass-image {
+  background-position: calc(var(--img-w) * -4) calc(var(--img-w) * -1);
+}
+
+#recipe-list .card:nth-child(11) .glass-image {
+  background-position: calc(var(--img-w) * 0) calc(var(--img-w) * -2);
+}
+
+#recipe-list .card:nth-child(12) .glass-image {
+  background-position: calc(var(--img-w) * -1) calc(var(--img-w) * -2);
+}
+
+#recipe-list .card:nth-child(13) .glass-image {
+  background-position: calc(var(--img-w) * -2) calc(var(--img-w) * -2);
+}
+
+#recipe-list .card:nth-child(14) .glass-image {
+  background-position: calc(var(--img-w) * -3) calc(var(--img-w) * -2);
+}
+
+#recipe-list .card:nth-child(15) .glass-image {
+  background-position: calc(var(--img-w) * -4) calc(var(--img-w) * -2);
+}
+
+#recipe-list .card:nth-child(16) .glass-image {
+  background-position: calc(var(--img-w) * 0) calc(var(--img-w) * -3);
+}
+
+#recipe-list .card:nth-child(17) .glass-image {
+  background-position: calc(var(--img-w) * -1) calc(var(--img-w) * -3);
+}
+
+#recipe-list .card:nth-child(18) .glass-image {
+  background-position: calc(var(--img-w) * -2) calc(var(--img-w) * -3);
+}
+
+#recipe-list .card:nth-child(19) .glass-image {
+  background-position: calc(var(--img-w) * -3) calc(var(--img-w) * -3);
+}
+
+#recipe-list .card:nth-child(20) .glass-image {
+  background-position: calc(var(--img-w) * -4) calc(var(--img-w) * -3);
+}
+
+#recipe-list .card:nth-child(21) .glass-image {
+  background-position: calc(var(--img-w) * 0) calc(var(--img-w) * -4);
+}
+
+#recipe-list .card:nth-child(22) .glass-image {
+  background-position: calc(var(--img-w) * -1) calc(var(--img-w) * -4);
+}
+
+#recipe-list .card:nth-child(23) .glass-image {
+  background-position: calc(var(--img-w) * -2) calc(var(--img-w) * -4);
+}
+
+#recipe-list .card:nth-child(24) .glass-image {
+  background-position: calc(var(--img-w) * -3) calc(var(--img-w) * -4);
+}
+
+#recipe-list .card:nth-child(25) .glass-image {
+  background-position: calc(var(--img-w) * -4) calc(var(--img-w) * -4);
+}
+
+#recipe-list .card:nth-child(26) .glass-image {
+  background-position: calc(var(--img-w) * 0) calc(var(--img-w) * -5);
+}
+
+#recipe-list .card:nth-child(27) .glass-image {
+  background-position: calc(var(--img-w) * -1) calc(var(--img-w) * -5);
+}
+
+#recipe-list .card:nth-child(28) .glass-image {
+  background-position: calc(var(--img-w) * -2) calc(var(--img-w) * -5);
+}
+
+#recipe-list .card:nth-child(29) .glass-image {
+  background-position: calc(var(--img-w) * -3) calc(var(--img-w) * -5);
+}
+
+#recipe-list .card:nth-child(30) .glass-image {
+  background-position: calc(var(--img-w) * -4) calc(var(--img-w) * -5);
+}
+
+#recipe-list .card:nth-child(31) .glass-image {
+  background-position: calc(var(--img-w) * 0) calc(var(--img-w) * -6);
+}
+
+#recipe-list .card:nth-child(32) .glass-image {
+  background-position: calc(var(--img-w) * -1) calc(var(--img-w) * -6);
+}
+
+#recipe-list .card:nth-child(33) .glass-image {
+  background-position: calc(var(--img-w) * -2) calc(var(--img-w) * -6);
+}
+
+#recipe-list .card:nth-child(34) .glass-image {
+  background-position: calc(var(--img-w) * -3) calc(var(--img-w) * -6);
+}
+
+#recipe-list .card:nth-child(35) .glass-image {
+  background-position: calc(var(--img-w) * -4) calc(var(--img-w) * -6);
+}
+
+#recipe-list .card:nth-child(36) .glass-image {
+  background-position: calc(var(--img-w) * 0) calc(var(--img-w) * -7);
+}
+
+#recipe-list .card:nth-child(37) .glass-image {
+  background-position: calc(var(--img-w) * -1) calc(var(--img-w) * -7);
+}
+
+#recipe-list .card:nth-child(38) .glass-image {
+  background-position: calc(var(--img-w) * -2) calc(var(--img-w) * -7);
+}
+
+#recipe-list .card:nth-child(39) .glass-image {
+  background-position: calc(var(--img-w) * -3) calc(var(--img-w) * -7);
+}
+
+#recipe-list .card:nth-child(40) .glass-image {
+  background-position: calc(var(--img-w) * -4) calc(var(--img-w) * -7);
+}

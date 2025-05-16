@@ -1,0 +1,312 @@
+:root {
+  --color-border: #ddd;
+  --color-table-hd: #f2f2f2;
+  --color-correct: lightgreen;
+  --color-semicorrect: lightgoldenrodyellow;
+  --color-incorrect: lightcoral;
+  --color-select-bg: #e0f7fa;
+  --color-select-border: #0097a7;
+  --color-tooltip-bg: #f2f2f2;
+  --color-tooltip-border: #ddd;
+
+  --img-w: 64px;
+  --img-h: 64px;
+}
+
+body {
+  margin: 10em 20vw 2em;
+  font-size: 0.75em;
+  font-family: "Noto Sans KR", sans-serif;
+  /* font-stretch: condensed; */
+}
+
+.container {
+  /* max-width: 600px; */
+  margin: 0 auto;
+}
+
+body .material-symbols-outlined {
+  font-size: 1.125em;
+  vertical-align: text-bottom;
+}
+
+h1,
+h2 {
+  /* text-align: center; */
+}
+
+#cocktail-name {
+  font-size: 5em;
+  font-weight: bold;
+  text-decoration: underline;
+  /* margin-bottom: 20px; */
+}
+
+.subtitle,
+#cocktail-name .subtitle {
+  font-size: 0.5em;
+  /* opacity:.5; */
+  color: #888;
+  font-weight: normal;
+  font-style: italic;
+}
+
+#cocktail-name::before,
+#cocktail-name::after {
+  content: "✨";
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  /* 카드의 최소 너비를 150px로 설정 */
+  gap: 10px;
+  /* 카드 간 간격 */
+}
+
+.card {
+  /* width: 100px; */
+  /* height: 200px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* 수평 가운데 정렬 */
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  /* 텍스트 선택 방지 */
+  overflow: hidden;
+}
+
+.card input[type="checkbox"] {
+  display: none;
+  /* 체크박스 숨김 */
+}
+
+.card:has(input[type="checkbox"]:checked),
+#recipe-list li:not(.recipe-detail li):hover {
+  background-color: var(--color-select-bg);
+  border-color: var(--color-select-border);
+}
+
+.card label {
+  cursor: pointer;
+}
+
+.card img {
+  /* max-width: 100%; */
+  max-height: 200px;
+  /* image-rendering: pixelated; */
+}
+
+.card .glass-image {
+  width: var(--img-w);
+  height: var(--img-h);
+}
+
+#ingredients .card img {
+  height: 200px;
+}
+
+.card span {
+  margin: 0.5em 0 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+
+#ingredients .card span {
+  visibility: hidden;
+}
+
+#ingredients .card:hover span {
+  visibility: visible;
+}
+
+.card:hover {
+  overflow: visible;
+}
+
+.card:hover span {
+  /* overflow: visible; */
+}
+
+#message {
+  font-size: 1.5em;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.correct {
+  background-color: var(--color-correct);
+}
+
+.incorrect {
+  background-color: var(--color-incorrect);
+}
+
+#answer-table {
+  max-width: 600px;
+  width: 100%;
+  margin: 10px auto 0;
+}
+
+#answer-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#answer-table th:nth-child(1) {
+  width: 20%;
+}
+
+#answer-table th:nth-child(2) {
+  width: 40%;
+}
+
+#answer-table th:nth-child(3) {
+  width: 40%;
+}
+
+#answer-table th,
+#answer-table td {
+  border: 1px solid var(--color-border);
+  padding: 8px;
+  text-align: left;
+}
+
+#answer-table th {
+  background-color: var(--color-table-hd);
+  font-weight: bold;
+}
+
+section#user-input {
+  margin-bottom: 5em;
+}
+
+/* ****************************************************** */
+/* ********************* re-roll ************************ */
+/* ****************************************************** */
+#re-roll-container {
+  font-size: 1.25em;
+  margin-top: 1em;
+}
+
+#re-roll {
+  font-size: 1em;
+}
+
+#re-roll-container input {
+  width: 3em;
+  font-size: 1em;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid #888;
+}
+
+/* ****************************************************** */
+/* ******************** recipe list ********************* */
+/* ****************************************************** */
+
+#recipe-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+}
+
+#recipe-list li:not(.recipe-detail li) {
+  padding: 1em 1.5em;
+  cursor: default;
+}
+
+#recipe-list li.on {
+  background-color: var(--color-semicorrect);
+}
+
+#recipe-list li.fit {
+  background-color: var(--color-correct);
+}
+
+#recipe-list li {
+  position: relative;
+}
+
+#recipe-list .glass-image:not(#recipe-list li:hover .glass-image,
+  #recipe-list li.on .glass-image,
+  #recipe-list li.fit .glass-image) {
+  filter: grayscale(1);
+}
+
+.recipe-detail {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 1.5em);
+  padding: 0em 1.5em 0.5em;
+  background-color: var(--color-tooltip-bg);
+  border: 1px solid var(--color-tooltip-border);
+  border-radius: 1em;
+  text-align: left;
+  width: 300px;
+}
+
+.recipe-detail:before {
+  content: "";
+  position: absolute;
+  top: calc(100%);
+  left: calc(50% - 1em);
+  border: 1em solid var(--color-tooltip-border);
+  border-color: var(--color-tooltip-border) transparent transparent transparent;
+}
+
+.recipe-detail:after {
+  content: "";
+  position: absolute;
+  top: calc(100% - 1.4px);
+  left: calc(50% - 1em);
+  border: 1em solid var(--color-tooltip-bg);
+  border-color: var(--color-tooltip-bg) transparent transparent transparent;
+}
+
+#recipe-list li:hover .recipe-detail {
+  display: block;
+}
+
+#recipe-list li ul {
+  padding-left: 1.5em;
+}
+
+#recipe-list li ul li::marker {
+  text-align: right;
+}
+
+.recipe-detail p {
+  margin: 5px 0;
+}
+
+#recipe-list .recipe-detail ul {}
+
+#recipe-list .recipe-detail li {
+  padding: 0.25em 0;
+}
+
+#result {}
+
+#result h2 {
+  font-size: 3em;
+  margin-top: 2em;
+}
+
+#copyright{
+  margin: 10em auto 2em;
+  font-size: 1.5em;
+  text-align: center;
+}
+#copyright a {
+  font-style: normal;
+  text-decoration: none;
+  color: inherit;
+}

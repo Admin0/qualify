@@ -26,7 +26,7 @@ function displayCocktail(cocktail, materialData) {
     .map(([method, data]) => {
       const img = data.img;
       return `<label class="card">
-                <img src="imgs/${img}.png" alt="${method}" class="glass-image">
+                <div class="glass-image ${img}"></div>
                 <input type="checkbox" name="method" value="${method}"><span>${method}</span>
                 </label>`;
     })
@@ -37,7 +37,7 @@ function displayCocktail(cocktail, materialData) {
     .map(([glass, data]) => {
       const img = data.img;
       return `<label class="card">
-                <img src="imgs/${img}.png" alt="${glass}" class="glass-image">
+                <div class="glass-image ${img}"></div>
                 <input type="checkbox" name="glass" value="${glass}">
                 <span>${data.name}</span></label>`;
     })
@@ -48,7 +48,7 @@ function displayCocktail(cocktail, materialData) {
     .map(([garnish, data]) => {
       const img = data.img;
       return `<label class="card">
-                <img src="imgs/${img}.png" alt="${garnish}" class="glass-image">
+                <div class="glass-image ${img}"></div>
                 <input type="checkbox" name="garnish" value="${garnish}">
                 <span>${garnish}</span>
               </label>`;
@@ -358,7 +358,7 @@ function displayFeedback(isCorrect, userAnswer, cocktail) { // Keep this functio
     userGarnish.forEach((garnish) => {
       const listItem = document.createElement("li");
       const isCorrect = correctGarnish.includes(garnish);
-      listItem.innerHTML = `<span style="padding: 0 2px; background-color: ${isCorrect ? "lightgreen" : "lightcoral"}">${garnish}</span>`;
+      listItem.innerHTML = `<span style="padding: 0 2px; background-color: ${isCorrect ? "var(--color-correct)" : "var(--color-incorrect)"}">${garnish}</span>`;
       userGarnishList.appendChild(listItem);
     });
     userGarnishCell.appendChild(userGarnishList);
@@ -411,7 +411,7 @@ function displayFeedback(isCorrect, userAnswer, cocktail) { // Keep this functio
     userIngredients.forEach((ingredient) => {
       const listItem = document.createElement("li");
       const isCorrect = correctIngredients.includes(ingredient);
-      listItem.innerHTML = `<span style="padding: 0 2px; background-color: ${isCorrect ? "lightgreen" : "lightcoral"}">${ingredient}</span>`;
+      listItem.innerHTML = `<span style="padding: 0 2px; background-color: ${isCorrect ? "var(--color-correct)" : "var(--color-incorrect)"}">${ingredient}</span>`;
       userIngredientsList.appendChild(listItem);
     });
     userIngredientsCell.appendChild(userIngredientsList);

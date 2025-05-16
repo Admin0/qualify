@@ -7,11 +7,14 @@ document.addEventListener("DOMContentLoaded", async () => {
     Object.keys(recipes).forEach((cocktailName) => {
       const listItem = document.createElement("li");
       listItem.classList.add("card");
+      // listItem.innerHTML = `
+      //           <img src="imgs__cocktail/cocktail_${recipes[cocktailName].번호}.png" alt="${cocktailName}" class="glass-image">
+      //           <span>${cocktailName} (#${recipes[cocktailName].번호})</span>
+      //           `;
       listItem.innerHTML = `
-                <img src="imgs__cocktail/cocktail_${recipes[cocktailName].번호}.png" alt="${cocktailName}" class="glass-image">
+                <div class="glass-image"></div>
                 <span>${cocktailName} (#${recipes[cocktailName].번호})</span>
                 `;
-
       // 상세 정보 영역 추가
       const detailDiv = document.createElement("div");
       detailDiv.classList.add("recipe-detail");

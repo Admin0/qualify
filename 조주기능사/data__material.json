@@ -13,13 +13,13 @@
       "img": "method_shake"
     },
     "Shake/Build": {
-      "img": "method_s+b"
+      "img": "method_s-b"
     },
     "Blend": {
       "img": "method_blend"
     },
     "Build/Float": {
-      "img": "method_b+f"
+      "img": "method_b-f"
     }
   },
   "글라스": {

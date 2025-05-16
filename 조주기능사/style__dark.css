@@ -1,0 +1,63 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-border: #555555;
+    --color-table-hd: #888;
+    --color-correct: SeaGreen;
+    --color-semicorrect: DarkGoldenrod;
+    --color-incorrect: FireBrick;
+    --color-select-bg: #2a3e4a;
+    --color-select-border: #4f6b80;
+    --color-tooltip-bg: #1e1e1e;
+    --color-tooltip-border: #555;
+
+    --method-img: url("imgs/glass_dark.png");
+    --glass-img: url("imgs/glass_dark.png");
+    --garnish-img: url("imgs/glass_dark.png");
+    --recipe-img: url("imgs/cocktail_dark.png");
+  }
+
+  body {
+    background-color: #1e1e1e;
+    color: #cccccc;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #e0e0e0;
+    /* Slightly lighter for headings */
+  }
+
+  a {
+    color: #90caf9;
+    /* Light blue for links */
+  }
+
+  a:hover {
+    color: #bbdefb;
+    /* Lighter blue on hover */
+  }
+
+  button,
+  input[type="text"],
+  input[type="number"],
+  select,
+  textarea {
+    background-color: #333333;
+    color: #cccccc;
+  }
+
+  button:hover {
+    background-color: #555555;
+  }
+
+  .card:has(input[type="checkbox"]:checked),
+  #recipe-list li:not(.recipe-detail li):hover {
+    background-color: var(--color-select-bg);
+    border-color: var(--color-select-border);
+  }
+
+}
