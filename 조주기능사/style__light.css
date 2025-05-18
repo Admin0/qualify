@@ -26,13 +26,14 @@ body {
 }
 
 body .material-icons {
-  font-size: 1.125em;
-  vertical-align: text-bottom;
+  font-size: 1.25em;
+  vertical-align: bottom;
 }
 
-h1,
-h2 {
-  /* text-align: center; */
+h1 {}
+
+h2 span {
+  margin-right: .5em;
 }
 
 #cocktail-name {
@@ -62,6 +63,10 @@ h2 {
   /* 카드의 최소 너비를 150px로 설정 */
   gap: 10px;
   /* 카드 간 간격 */
+}
+
+.card-container:not(#ingredients) .card {
+  image-rendering: pixelated;
 }
 
 .card {
@@ -315,15 +320,16 @@ section#user-input {
   padding: 0 .5em;
   min-width: 1em;
   height: 2em;
-  background-color: #ddd;
+  background-color: var(--color-tooltip-bg);
   border-radius: 1em;
   vertical-align: middle;
   align-content: center;
   margin: .25em;
+  border: 1px solid var(--color-border);
 }
 
 #result .btn:hover {
-  background-color: #aaa;
+  background-color: var(--color-tooltip-border);
 }
 
 #result h2 {

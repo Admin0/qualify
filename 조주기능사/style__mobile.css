@@ -13,16 +13,13 @@
 
 @media handheld,
 only screen and (max-width:720px) {
-  header .timer {
-    display: none;
+  h1 {
+    font-size: 1.25em;
   }
 }
 
 @media handheld,
 only screen and (max-width:425px) {
-  header .timer {
-    display: none;
-  }
 
   #recipe-list li:nth-child(3n) .recipe-detail {
     right: 0;
@@ -30,6 +27,10 @@ only screen and (max-width:425px) {
 
   #recipe-list li:nth-child(3n-2) .recipe-detail:nth-child(3n) {
     left: 0;
+  }
+
+  select#select_cocktail_no {
+    width: calc(100% - 1em);
   }
 
 }

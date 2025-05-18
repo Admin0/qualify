@@ -374,17 +374,17 @@
     },
     "Lemon Juice": {
       "img": [
-        "레몬주스"
+        "주스__레몬"
       ]
     },
     "Lime Juice": {
       "img": [
-        "라임주스"
+        "주스__라임"
       ]
     },
     "Orange Juice": {
       "img": [
-        "오렌지주스"
+        "주스__오렌지"
       ]
     },
     "Pineapple Juice": {
@@ -406,11 +406,6 @@
     "White Grape Juice (청포도주스)": {
       "img": [
         "청포도주스0"
-      ]
-    },
-    "Fresh squeezed Lemon": {
-      "img": [
-        "레몬"
       ]
     },
     "Soda Water": {
@@ -446,6 +441,11 @@
     "Pina Colada Mix": {
       "img": [
         "피나콜라다_믹스0"
+      ]
+    },
+    "Fresh squeezed Lemon": {
+      "img": [
+        "레몬"
       ]
     },
     "Powdered Sugar": {
