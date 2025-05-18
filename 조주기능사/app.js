@@ -8,13 +8,6 @@ function loadMaterialData() {
   return fetch("data__material.json").then((response) => response.json());
 }
 
-function getRandomCocktail(recipes) {
-  const cocktailNames = Object.keys(recipes);
-  const randomIndex = Math.floor(Math.random() * cocktailNames.length);
-  const randomCocktailName = cocktailNames[randomIndex];
-  return { name: randomCocktailName, recipe: recipes[randomCocktailName] };
-}
-
 function displayCocktail(cocktail, materialData) {
   document.getElementById(
     "cocktail-name"
@@ -155,29 +148,20 @@ async function initializeQuiz(index) {
       throw new Error("Failed to load data");
     }
     const cocktails = recipeData;
-    totalQuestions = Object.keys(cocktails).length;
+    const totalQuestions = Object.keys(cocktails).length;
     let cocktail;
-    index = index - 1;
-    if (index !== undefined && index >= 0 && index < totalQuestions) {
-      cocktail = {
-        name: Object.keys(cocktails)[index],
-        recipe: Object.values(cocktails)[index],
-      };
-    } else {
-      cocktail = getRandomCocktail(cocktails);
-    }
+    index = (index == undefined || index < 0 || index > totalQuestions) ? Math.floor(Math.random() * totalQuestions) : index;
+    cocktail = {
+      name: Object.keys(cocktails)[index - 1],
+      recipe: Object.values(cocktails)[index - 1],
+    };
+
     displayCocktail(cocktail, materialData);
     initializeHighlightRecipeItems(cocktail, recipeData);    // initializeHighlightRecipeItems 함수를 여기서 호출하고 cocktails 데이터를 전달합니다.
-
-    const newCocktailCheckbox = document.getElementById(
-      "new-cocktail-on-submit"
-    );
-
-    const submitButton = document.getElementById("submit-answer");
-    const nextQuestionCheckbox = document.getElementById("next-question");
-    const form = document.getElementById("quiz-form");
-
+    initializePageSelector(index, recipeData);
+    
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
   } catch (error) {
     console.error("Error initializing quiz:", error);
     document.getElementById("message").textContent =
@@ -344,7 +328,7 @@ function displayFeedback(isCorrect, userAnswer, cocktail) { // Keep this functio
 
     correctGarnish.forEach((garnish) => {
       const listItem = document.createElement("li");
-      listItem.textContent =  garnish;
+      listItem.textContent = garnish;
       correctGarnishList.appendChild(listItem);
     });
     correctGarnishCell.appendChild(correctGarnishList);
@@ -430,6 +414,36 @@ function displayFeedback(isCorrect, userAnswer, cocktail) { // Keep this functio
   tbody.appendChild(createIngredientsRow(userIngredients, correctIngredients));
   table.appendChild(tbody);
   answerTable.appendChild(table);
+}
+
+function initializePageSelector(index, recipeData) {
+  const sel = document.getElementById("select_cocktail_no");
+
+  if (sel.options.length <= Object.keys(recipeData).length) {
+    for (const cocktailName of Object.keys(recipeData)) {
+      const recipe = recipeData[cocktailName];
+
+      const opt = document.createElement("option");
+      opt.value = recipe.번호;
+      opt.text = `${recipe.번호} ${cocktailName}`;
+      document.getElementById("select_cocktail_no").add(opt);
+
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    }
+
+    // 버튼 이벤트 할당
+    document.getElementById("re-roll-next").addEventListener("click", () => {
+      const sel = document.getElementById("select_cocktail_no").selectedIndex + 1;
+      // sel[sel.selectedIndex == 39 ? 0 : sel.selectedIndex + 1].selected = true;
+      initializeQuiz(sel == 40 ? 1 : sel + 1);
+    })
+
+    document.getElementById("re-roll-prev").addEventListener("click", () => {
+      const sel = document.getElementById("select_cocktail_no").selectedIndex + 1;
+      initializeQuiz(sel == 1 ? 40 : sel - 1);
+    })
+  }
+  sel.options[index - 1].selected = true;
 }
 
 document.addEventListener("DOMContentLoaded", () => {

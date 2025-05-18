@@ -25,7 +25,7 @@ body {
   margin: 0 auto;
 }
 
-body .material-symbols-outlined {
+body .material-icons {
   font-size: 1.125em;
   vertical-align: text-bottom;
 }
@@ -184,6 +184,10 @@ h2 {
   font-weight: bold;
 }
 
+#answer-table:not(:hover) .incorrect td:nth-last-of-type(2) {
+  color: transparent;
+}
+
 section#user-input {
   margin-bottom: 5em;
 }
@@ -293,18 +297,46 @@ section#user-input {
   padding: 0.25em 0;
 }
 
-#result {}
+#re-roll-container {
+  text-align: center;
+}
+
+#re-roll-container select {
+  font-size: 1em;
+  margin: .5em;
+  padding: .25em;
+  vertical-align: middle;
+}
+
+#result .btn {
+  font-size: 1.25em;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  min-width: 1em;
+  height: 2em;
+  background-color: #ddd;
+  border-radius: 1em;
+  vertical-align: middle;
+  align-content: center;
+  margin: .25em;
+}
+
+#result .btn:hover {
+  background-color: #aaa;
+}
 
 #result h2 {
   font-size: 3em;
   margin-top: 2em;
 }
 
-#copyright{
+#copyright {
   margin: 10em auto 2em;
-  font-size: 1.5em;
+  font-size: 1.25em;
   text-align: center;
 }
+
 #copyright a {
   font-style: normal;
   text-decoration: none;

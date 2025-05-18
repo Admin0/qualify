@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta property="og:title" content="#프로젝트: 디오니소스" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:description" name="description" content="조주기능사 국가기술자격 실기시험문제: 칵테일 과제 도우미. #조주기능사" />
     <title>#프로젝트: 디오니소스</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
@@ -33,16 +35,16 @@
     </section>
 
     <section id="user-input">
-        <h2 for="method"><span class="material-symbols-outlined">pan_tool</span> 조주법</h2>
+        <h2 for="method"><span class="material-icons">pan_tool</span> 조주법</h2>
         <div id="method" class="card-container"></div>
         <br>
-        <h2 for="glass"> <span class="material-symbols-outlined">local_bar</span> 글라스 </h2>
+        <h2 for="glass"> <span class="material-icons">local_bar</span> 글라스 </h2>
         <div id="glass" class="card-container"></div>
         <br>
-        <h2 for="garnish"> <span class="material-symbols-outlined">nutrition</span> 가니쉬</h2>
+        <h2 for="garnish"> <span class="material-icons">nutrition</span> 가니쉬</h2>
         <div id="garnish" class="card-container"></div>
         <br>
-        <h2 for="ingredients"> <span class="material-symbols-outlined">liquor</span> 재료</h2>
+        <h2 for="ingredients"> <span class="material-icons">liquor</span> 재료</h2>
         <div id="ingredients" class="card-container"></div>
     </section>
 
@@ -63,9 +65,12 @@
         <!-- <p>점수: <span id="score">0</span></p> -->
 
         <div id="re-roll-container">
-            <button id="re-roll"
-                onclick="initializeQuiz(document.getElementById('select_cocktail_no').value); document.getElementById('select_cocktail_no').value='';">
-                한 문제 더 </button> <span>( <label>번호 지정</label> #<input id="select_cocktail_no"> )</span>
+            <!-- <button id="re-roll" onclick="initializeQuiz(document.getElementById('select_cocktail_no').value);">
+                한 문제 더 </button>  -->
+            <select onchange="initializeQuiz(this.value)" type="" id="select_cocktail_no"></select>
+            <span id="re-roll-prev" class="material-icons btn"> navigate_before </span>
+            <span id="re-roll-next" class="material-icons btn"> navigate_next </span>
+            <span id="re-roll" class="btn" onclick="initializeQuiz();"><span class="material-icons"> shuffle </span> 아무거나</span>
         </div>
 
         <h2>🍸 칵테일 목록 🍸</h2>
@@ -73,5 +78,6 @@
         <script src="app__recipe_list.js"></script>
     </section>
 
-    <section id="copyright"><a href="//jinh.kr/">ⓒ 2025 JinH</a></section>
+    <section id="copyright"><a href="//jinh.kr/">ⓒ 2025 JinH</a> / <a href="//jinh.kr/qualify/">#qualify</a></section>
+
 </html>
