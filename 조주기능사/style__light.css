@@ -132,10 +132,6 @@ h2 span {
   visibility: visible;
 }
 
-.card:hover {
-  overflow: visible;
-}
-
 .card:hover span {
   /* overflow: visible; */
 }
@@ -278,6 +274,10 @@ section#user-input {
   left: calc(50% - 1em);
   border: 1em solid var(--color-tooltip-bg);
   border-color: var(--color-tooltip-bg) transparent transparent transparent;
+}
+
+#recipe-list .card:hover {
+  overflow: visible;
 }
 
 #recipe-list li:hover .recipe-detail {

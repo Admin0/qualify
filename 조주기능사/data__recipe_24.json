@@ -264,7 +264,8 @@
       "Cola": "Fill"
     },
     "TMI": [
-      "표준레시피에 따르면 이건 특이하게 [라임 웨지]를 쓰면 안 된다. 엄격하네."
+      "표준레시피에 따르면 이건 특이하게 [라임 웨지]를 쓰면 안 된다. 엄격하네.",
+      "재료 암기: C(쿠바)/L²(리브레)"
     ]
   },
   "Grasshopper": {
@@ -344,7 +345,7 @@
       "Light Rum": "1/2 oz",
       "Tequila": "1/2 oz",
       "Triple Sec": "1/2 oz",
-      "Sweet & Sour Mix": "1 1/2 oz",
+      "Sweet & Sour mix": "1 1/2 oz",
       "Cola": "On Top"
     },
     "TMI": [
