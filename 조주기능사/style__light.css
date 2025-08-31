@@ -124,12 +124,37 @@ h2 span {
   width: 100%;
 }
 
-#ingredients .card span {
+#ingredients .card span,
+#ingredients .card .ingredient_detail {
   visibility: hidden;
 }
 
-#ingredients .card:hover span {
+#ingredients .card:hover span,
+#ingredients .card:hover .ingredient_detail {
   visibility: visible;
+}
+
+#ingredients .card .ingredient_detail {
+  position: fixed;
+  right: 2.5em;
+  bottom: 2.5em;
+  border: 1px solid silver;
+  border-radius: 1em;
+  padding: 2em;
+  width: calc(20vw - 10em);
+  max-width: 600px;
+  height: 40vw;
+  max-height: 1200px;
+  background-color: #8880;
+  overflow: hidden; 
+  display: flex;
+  justify-content: center;
+}
+
+#ingredients .card .ingredient_detail img {
+  height: 100%;
+  max-height: 100%;
+  width: fit-content;
 }
 
 .card:hover span {

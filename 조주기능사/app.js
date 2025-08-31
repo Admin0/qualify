@@ -62,6 +62,7 @@ function displayCocktail(cocktail, materialData) {
                 <img src="${imgSrc}" alt="${ingredient}" class="ingredient-image">
                 <input type="checkbox" name="ingredient" value="${ingredient}">
                 <span>${ingredient}</span>
+                <div class="ingredient_detail"><img src="${imgSrc}" alt="${ingredient}" class="ingredient-image"></div>
               </label>`;
     })
     .join("");
