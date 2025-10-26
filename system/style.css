@@ -258,12 +258,18 @@ li a:hover {
   background: rgba(0, 0, 0, .05);
 }
 
-h2, h3, h2 a, h3 a {
+h2,
+h3,
+h2 a,
+h3 a {
   color: rgba(0, 0, 0, .54);
   /* transition: .25s; */
 }
 
-.contents h2, .contents h3, .contents h2 a, .contents h3 a {
+.contents h2,
+.contents h3,
+.contents h2 a,
+.contents h3 a {
   color: rgba(0, 0, 0, .98);
   /* transition: .25s; */
 }
@@ -347,7 +353,9 @@ input[type="checkbox"] {
   /* background: rgba(158, 158, 158, .2) !important; */
 }
 
-.targeted a, .targeted i, .targeted i svg {
+.targeted a,
+.targeted i,
+.targeted i svg {
   fill: #2196f3;
   color: #2196f3;
 }
@@ -364,7 +372,8 @@ footer {
 /* ------------------------------------------------------------------- */
 /* ***** tooltip ***** */
 /* ------------------------------------------------------------------- */
-#tooltip, #tooltip_nav {
+#tooltip,
+#tooltip_nav {
   color: #fff;
   position: absolute;
   top: 0;
@@ -386,7 +395,8 @@ footer {
   z-index: 4;
 }
 
-#tooltip_before, #tooltip_nav_before {
+#tooltip_before,
+#tooltip_nav_before {
   border-color: #424242 transparent transparent;
   border-width: 1ex 1ex 0;
   border-style: solid;
@@ -418,7 +428,8 @@ hr {
   display: none;
 }
 
-.for_dev:not(.on):not(h3), nav .for_dev {
+.for_dev:not(.on):not(h3),
+nav .for_dev {
   background: #fea;
 }
 
@@ -507,4 +518,10 @@ div#splash svg {
   width: 64px;
   height: 64px;
   fill: gold;
+}
+
+@media only screen and (min-width:1920px) {
+  #main_item .contents {
+    column-width: 45em;
+  }
 }
